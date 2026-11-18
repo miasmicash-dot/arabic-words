@@ -9,11 +9,11 @@ crons = ["0 * * * *"]
 # Replace REPLACE_WITH_KV_ID with the id printed by `npx wrangler kv namespace create SUBS`
 [[kv_namespaces]]
 binding = "SUBS"
-id = "REPLACE_WITH_KV_ID"
+id = "c82b04bb25e9475abb9e31660fcc3a68"
 
 [vars]
 # The address where the app is hosted (no trailing slash). Use "*" only while testing.
-ALLOWED_ORIGIN = "*"
+ALLOWED_ORIGIN = "https://miasmicash-dot.github.io"
 
 # Secrets (set with `npx wrangler secret put NAME`, never put these in this file):
 #   VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY, VAPID_SUBJECT
