@@ -1,0 +1,1017 @@
+[
+ {
+  "id": "k-noun-مصعد",
+  "type": "noun",
+  "english": "elevator, lift",
+  "arabic": [
+   "مصعد"
+  ],
+  "translit": [
+   "mis'ad"
+  ],
+  "vocalized": "مِصْعَد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3101,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-مصفوفة",
+  "type": "noun",
+  "english": "matrix",
+  "arabic": [
+   "مصفوفة"
+  ],
+  "translit": [
+   "masfuufa"
+  ],
+  "vocalized": "مَصْفُوفَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3102,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-مضبوط",
+  "type": "adj",
+  "english": "exact, precise, accurate",
+  "arabic": [
+   "مضبوط"
+  ],
+  "translit": [
+   "madbuut"
+  ],
+  "vocalized": "مَضْبُوط",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3103,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-مضحك",
+  "type": "adj",
+  "english": "funny, comical",
+  "arabic": [
+   "مضحك"
+  ],
+  "translit": [
+   "mudhik"
+  ],
+  "vocalized": "مُضْحِك",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3104,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-مضغ",
+  "type": "noun",
+  "english": "chewing, mastication",
+  "arabic": [
+   "مضغ"
+  ],
+  "translit": [
+   "madgh"
+  ],
+  "vocalized": "مَضْغ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3105,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-مطاردة",
+  "type": "noun",
+  "english": "chase",
+  "arabic": [
+   "مطاردة"
+  ],
+  "translit": [
+   "mutaarada"
+  ],
+  "vocalized": "مُطارَدَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3106,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-مطاط",
+  "type": "noun",
+  "english": "rubber",
+  "arabic": [
+   "مطاط"
+  ],
+  "translit": [
+   "mattaat"
+  ],
+  "vocalized": "مَطَّاط",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3107,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-مطران",
+  "type": "noun",
+  "english": "metropolitan",
+  "arabic": [
+   "مطران"
+  ],
+  "translit": [
+   "mutraan"
+  ],
+  "vocalized": "مُطْرَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3108,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-مظاهرة",
+  "type": "noun",
+  "english": "demonstration",
+  "arabic": [
+   "مظاهرة"
+  ],
+  "translit": [
+   "muzaahara"
+  ],
+  "vocalized": "مُظَاهَرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3109,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-مظلة",
+  "type": "noun",
+  "english": "umbrella",
+  "arabic": [
+   "مظلة"
+  ],
+  "translit": [
+   "mazalla"
+  ],
+  "vocalized": "مَظَلَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3110,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-مظلم",
+  "type": "adj",
+  "english": "dark",
+  "arabic": [
+   "مظلم"
+  ],
+  "translit": [
+   "muzlim"
+  ],
+  "vocalized": "مُظْلِم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3111,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-معادلة",
+  "type": "noun",
+  "english": "equivalence, equality",
+  "arabic": [
+   "معادلة"
+  ],
+  "translit": [
+   "mu'aadala"
+  ],
+  "vocalized": "مُعَادَلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3112,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-معاملة",
+  "type": "noun",
+  "english": "treatment, handling",
+  "arabic": [
+   "معاملة"
+  ],
+  "translit": [
+   "mu'aamala"
+  ],
+  "vocalized": "مُعَامَلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3113,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-معانقة",
+  "type": "noun",
+  "english": "embrace",
+  "arabic": [
+   "معانقة"
+  ],
+  "translit": [
+   "mu'aanaqa"
+  ],
+  "vocalized": "مُعَانَقَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3114,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-معاهدة",
+  "type": "noun",
+  "english": "treaty",
+  "arabic": [
+   "معاهدة"
+  ],
+  "translit": [
+   "mu'aahada"
+  ],
+  "vocalized": "مُعَاهَدَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3115,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-معجزة",
+  "type": "noun",
+  "english": "miracle",
+  "arabic": [
+   "معجزة"
+  ],
+  "translit": [
+   "mu'jiza"
+  ],
+  "vocalized": "مُعْجِزَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3116,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-معدات",
+  "type": "noun",
+  "english": "equipment",
+  "arabic": [
+   "معدات"
+  ],
+  "translit": [
+   "mu'addaat"
+  ],
+  "vocalized": "مُعَدَّات",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3117,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-معضلة",
+  "type": "noun",
+  "english": "problem",
+  "arabic": [
+   "معضلة"
+  ],
+  "translit": [
+   "mu'dila"
+  ],
+  "vocalized": "مُعْضِلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3118,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-معكرونة",
+  "type": "noun",
+  "english": "macaroni",
+  "arabic": [
+   "معكرونة"
+  ],
+  "translit": [
+   "ma'karuuna"
+  ],
+  "vocalized": "مَعْكَرُونَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3119,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-معلق",
+  "type": "adj",
+  "english": "suspended",
+  "arabic": [
+   "معلق"
+  ],
+  "translit": [
+   "mu'allaq"
+  ],
+  "vocalized": "مُعَلَّق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3120,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-معلومات",
+  "type": "noun",
+  "english": "information, data",
+  "arabic": [
+   "معلومات"
+  ],
+  "translit": [
+   "ma'luumaat"
+  ],
+  "vocalized": "مَعْلُومَات",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3121,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-معماري",
+  "type": "adj",
+  "english": "architectural",
+  "arabic": [
+   "معماري"
+  ],
+  "translit": [
+   "mi'maariyy"
+  ],
+  "vocalized": "مِعْمَارِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3122,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-مغادرة",
+  "type": "noun",
+  "english": "departure",
+  "arabic": [
+   "مغادرة"
+  ],
+  "translit": [
+   "mughaadara"
+  ],
+  "vocalized": "مُغَادَرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3123,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-مغامرة",
+  "type": "noun",
+  "english": "adventure, hazard, risk",
+  "arabic": [
+   "مغامرة"
+  ],
+  "translit": [
+   "mughaamara"
+  ],
+  "vocalized": "مُغَامَرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3124,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-مغزي",
+  "type": "noun",
+  "english": "significance",
+  "arabic": [
+   "مغزى"
+  ],
+  "translit": [
+   "maghzaa"
+  ],
+  "vocalized": "مَغْزًى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3125,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-مغلف",
+  "type": "noun",
+  "english": "envelope",
+  "arabic": [
+   "مغلف"
+  ],
+  "translit": [
+   "mughallaf"
+  ],
+  "vocalized": "مُغَلَّف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3126,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-مغناطيسي",
+  "type": "adj",
+  "english": "magnetic",
+  "arabic": [
+   "مغناطيسي"
+  ],
+  "translit": [
+   "mighnaatiisiyy"
+  ],
+  "vocalized": "مِغْنَاطِيسِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3127,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-مفتش",
+  "type": "noun",
+  "english": "inspector, examiner",
+  "arabic": [
+   "مفتش"
+  ],
+  "translit": [
+   "mufattish"
+  ],
+  "vocalized": "مُفَتِّش",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3128,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-مفرط",
+  "type": "adj",
+  "english": "excessive",
+  "arabic": [
+   "مفرط"
+  ],
+  "translit": [
+   "mufrit"
+  ],
+  "vocalized": "مُفْرِط",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3129,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-مقايضة",
+  "type": "noun",
+  "english": "barter",
+  "arabic": [
+   "مقايضة"
+  ],
+  "translit": [
+   "muqaayada"
+  ],
+  "vocalized": "مُقَايَضَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3130,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-مقبس",
+  "type": "noun",
+  "english": "socket",
+  "arabic": [
+   "مقبس"
+  ],
+  "translit": [
+   "miqbas"
+  ],
+  "vocalized": "مِقْبَس",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3131,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-مقبض",
+  "type": "noun",
+  "english": "handle",
+  "arabic": [
+   "مقبض"
+  ],
+  "translit": [
+   "maqbad"
+  ],
+  "vocalized": "مَقْبَض",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3132,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-مقدمة",
+  "type": "noun",
+  "english": "forefront",
+  "arabic": [
+   "مقدمة"
+  ],
+  "translit": [
+   "muqaddima"
+  ],
+  "vocalized": "مُقَدِّمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3133,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-مقرف",
+  "type": "adj",
+  "english": "disgusting",
+  "arabic": [
+   "مقرف"
+  ],
+  "translit": [
+   "muqrif"
+  ],
+  "vocalized": "مُقْرِف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3134,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-مقص",
+  "type": "noun",
+  "english": "scissors",
+  "arabic": [
+   "مقص"
+  ],
+  "translit": [
+   "miqass"
+  ],
+  "vocalized": "مِقَصّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3135,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-مقصف",
+  "type": "noun",
+  "english": "buffet, cafeteria, snack bar",
+  "arabic": [
+   "مقصف"
+  ],
+  "translit": [
+   "maqsaf"
+  ],
+  "vocalized": "مَقْصَف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3136,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-مقطورة",
+  "type": "noun",
+  "english": "trailer",
+  "arabic": [
+   "مقطورة"
+  ],
+  "translit": [
+   "maqtuura"
+  ],
+  "vocalized": "مَقْطُورَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3137,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-مقنع",
+  "type": "adj",
+  "english": "persuasive",
+  "arabic": [
+   "مقنع"
+  ],
+  "translit": [
+   "muqni'"
+  ],
+  "vocalized": "مُقْنِع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3138,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-مكتشف",
+  "type": "noun",
+  "english": "discoverer",
+  "arabic": [
+   "مكتشف"
+  ],
+  "translit": [
+   "muktashif"
+  ],
+  "vocalized": "مُكْتَشِف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3139,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-مكشوف",
+  "type": "adj",
+  "english": "exposed",
+  "arabic": [
+   "مكشوف"
+  ],
+  "translit": [
+   "makshuuf"
+  ],
+  "vocalized": "مَكْشُوف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3140,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-ملاح",
+  "type": "noun",
+  "english": "sailor",
+  "arabic": [
+   "ملاح"
+  ],
+  "translit": [
+   "mallaah"
+  ],
+  "vocalized": "مَلَّاح",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3141,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-ملاحة",
+  "type": "noun",
+  "english": "navigation",
+  "arabic": [
+   "ملاحة"
+  ],
+  "translit": [
+   "milaaha"
+  ],
+  "vocalized": "مِلَاحَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3142,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-ملاحظة",
+  "type": "noun",
+  "english": "remark",
+  "arabic": [
+   "ملاحظة"
+  ],
+  "translit": [
+   "mulaahaza"
+  ],
+  "vocalized": "مُلَاحَظَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3143,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-ملاحقة",
+  "type": "noun",
+  "english": "pursuit",
+  "arabic": [
+   "ملاحقة"
+  ],
+  "translit": [
+   "mulaahaqa"
+  ],
+  "vocalized": "مُلَاحَقَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3144,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-ملازم",
+  "type": "noun",
+  "english": "lieutenant",
+  "arabic": [
+   "ملازم"
+  ],
+  "translit": [
+   "mulaazim"
+  ],
+  "vocalized": "مُلَازِم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3145,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-ملحد",
+  "type": "adj",
+  "english": "atheistic",
+  "arabic": [
+   "ملحد"
+  ],
+  "translit": [
+   "mulhid"
+  ],
+  "vocalized": "مُلْحِد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3146,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-ملحمة",
+  "type": "noun",
+  "english": "epic",
+  "arabic": [
+   "ملحمة"
+  ],
+  "translit": [
+   "malhama"
+  ],
+  "vocalized": "مَلْحَمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3147,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-ملحن",
+  "type": "noun",
+  "english": "composer",
+  "arabic": [
+   "ملحن"
+  ],
+  "translit": [
+   "mulahhin"
+  ],
+  "vocalized": "مُلَحِّن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3148,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-ملعون",
+  "type": "adj",
+  "english": "cursed, damned",
+  "arabic": [
+   "ملعون"
+  ],
+  "translit": [
+   "mal'uun"
+  ],
+  "vocalized": "مَلْعُون",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3149,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-ملفوف",
+  "type": "adj",
+  "english": "wrapped",
+  "arabic": [
+   "ملفوف"
+  ],
+  "translit": [
+   "malfuuf"
+  ],
+  "vocalized": "مَلْفُوف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3150,
+  "level": "C1"
+ }
+]

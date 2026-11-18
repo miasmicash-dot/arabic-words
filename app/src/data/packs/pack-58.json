@@ -1,0 +1,1074 @@
+[
+ {
+  "id": "k-adj-عاطفي",
+  "type": "adj",
+  "english": "emotional",
+  "arabic": [
+   "عاطفي"
+  ],
+  "translit": [
+   "'aatifiyy"
+  ],
+  "vocalized": "عَاطِفِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2851,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-عاهرة",
+  "type": "noun",
+  "english": "adulteress",
+  "arabic": [
+   "عاهرة"
+  ],
+  "translit": [
+   "'aahira"
+  ],
+  "vocalized": "عَاهِرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2852,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-عبادة",
+  "type": "noun",
+  "english": "worship",
+  "arabic": [
+   "عبادة"
+  ],
+  "translit": [
+   "'ibaada"
+  ],
+  "vocalized": "عِبَادَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2853,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-عبقري",
+  "type": "adj",
+  "english": "genius",
+  "arabic": [
+   "عبقري"
+  ],
+  "translit": [
+   "'abqariyy"
+  ],
+  "vocalized": "عَبْقَرِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2854,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-عبودية",
+  "type": "noun",
+  "english": "slavery",
+  "arabic": [
+   "عبودية"
+  ],
+  "translit": [
+   "'ubuudiyya"
+  ],
+  "vocalized": "عُبُودِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2855,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-عجين",
+  "type": "noun",
+  "english": "dough",
+  "arabic": [
+   "عجين"
+  ],
+  "translit": [
+   "'ajiin"
+  ],
+  "vocalized": "عَجِين",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2856,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-عد",
+  "type": "noun",
+  "english": "counting",
+  "arabic": [
+   "عد"
+  ],
+  "translit": [
+   "'add"
+  ],
+  "vocalized": "عَدّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2857,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-عدسة",
+  "type": "noun",
+  "english": "lens",
+  "arabic": [
+   "عدسة"
+  ],
+  "translit": [
+   "'adasa"
+  ],
+  "vocalized": "عَدَسَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2858,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-عراقي",
+  "type": "adj",
+  "english": "iraqi",
+  "arabic": [
+   "عراقي"
+  ],
+  "translit": [
+   "'iraaqiyy"
+  ],
+  "vocalized": "عِرَاقِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2859,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-عرقي",
+  "type": "adj",
+  "english": "ethnic, racial",
+  "arabic": [
+   "عرقي"
+  ],
+  "translit": [
+   "'irqiyy"
+  ],
+  "vocalized": "عِرْقِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2860,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-عريان",
+  "type": "adj",
+  "english": "naked, nude",
+  "arabic": [
+   "عريان"
+  ],
+  "translit": [
+   "'uryaan"
+  ],
+  "vocalized": "عُرْيَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2861,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-عزلة",
+  "type": "noun",
+  "english": "isolation",
+  "arabic": [
+   "عزلة"
+  ],
+  "translit": [
+   "'uzla"
+  ],
+  "vocalized": "عُزْلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2862,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-عصبة",
+  "type": "noun",
+  "english": "faction",
+  "arabic": [
+   "عصبة"
+  ],
+  "translit": [
+   "'usba"
+  ],
+  "vocalized": "عُصْبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2863,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-عصبي",
+  "type": "adj",
+  "english": "nervous, neural",
+  "arabic": [
+   "عصبي"
+  ],
+  "translit": [
+   "'asabiyy"
+  ],
+  "vocalized": "عَصَبِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2864,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-عصري",
+  "type": "adj",
+  "english": "modern",
+  "arabic": [
+   "عصري"
+  ],
+  "translit": [
+   "'asriyy"
+  ],
+  "vocalized": "عَصْرِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2865,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-عض",
+  "type": "verb",
+  "english": "bite",
+  "arabic": [
+   "عض"
+  ],
+  "translit": [
+   "'adda"
+  ],
+  "vocalized": "عَضَّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أعض",
+   "he": "هو يعض",
+   "she": "هي تعض",
+   "we": "نحن نعض",
+   "they": "هم يعضون"
+  },
+  "frequencyRank": 2866,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-عضوي",
+  "type": "adj",
+  "english": "organic",
+  "arabic": [
+   "عضوي"
+  ],
+  "translit": [
+   "'udwiyy"
+  ],
+  "vocalized": "عُضْوِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2867,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-عطر",
+  "type": "noun",
+  "english": "perfume, scent",
+  "arabic": [
+   "عطر"
+  ],
+  "translit": [
+   "'itr"
+  ],
+  "vocalized": "عِطْر",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2868,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-عظمة",
+  "type": "noun",
+  "english": "greatness",
+  "arabic": [
+   "عظمة"
+  ],
+  "translit": [
+   "'azama"
+  ],
+  "vocalized": "عَظَمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2869,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-عفوي",
+  "type": "adj",
+  "english": "spontaneous",
+  "arabic": [
+   "عفوي"
+  ],
+  "translit": [
+   "'afwiyy"
+  ],
+  "vocalized": "عَفْوِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2870,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-عقدة",
+  "type": "noun",
+  "english": "complex",
+  "arabic": [
+   "عقدة"
+  ],
+  "translit": [
+   "'uqda"
+  ],
+  "vocalized": "عُقْدَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2871,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-عقرب",
+  "type": "noun",
+  "english": "scorpion",
+  "arabic": [
+   "عقرب"
+  ],
+  "translit": [
+   "'aqrab"
+  ],
+  "vocalized": "عَقْرَب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2872,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-علبة",
+  "type": "noun",
+  "english": "can",
+  "arabic": [
+   "علبة"
+  ],
+  "translit": [
+   "'ulba"
+  ],
+  "vocalized": "عُلْبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2873,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-علف",
+  "type": "noun",
+  "english": "fodder, provender",
+  "arabic": [
+   "علف"
+  ],
+  "translit": [
+   "'alaf"
+  ],
+  "vocalized": "عَلَف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2874,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-علق",
+  "type": "verb",
+  "english": "cling",
+  "arabic": [
+   "علق"
+  ],
+  "translit": [
+   "'aliqa"
+  ],
+  "vocalized": "عَلِقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "conjugations": {
+   "I": "أنا أعلق",
+   "he": "هو يعلق",
+   "she": "هي تعلق",
+   "we": "نحن نعلق",
+   "they": "هم يعلقون"
+  },
+  "frequencyRank": 2875,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-علية",
+  "type": "noun",
+  "english": "attic",
+  "arabic": [
+   "علية"
+  ],
+  "translit": [
+   "'illiyya"
+  ],
+  "vocalized": "عِلِّيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2876,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-عمارة",
+  "type": "noun",
+  "english": "building",
+  "arabic": [
+   "عمارة"
+  ],
+  "translit": [
+   "'imaara"
+  ],
+  "vocalized": "عِمَارَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2877,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-عمودي",
+  "type": "adj",
+  "english": "vertical",
+  "arabic": [
+   "عمودي"
+  ],
+  "translit": [
+   "'amuudiyy"
+  ],
+  "vocalized": "عَمُودِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2878,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-عمومي",
+  "type": "adj",
+  "english": "public",
+  "arabic": [
+   "عمومي"
+  ],
+  "translit": [
+   "'umuumiyy"
+  ],
+  "vocalized": "عُمُومِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2879,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-عناق",
+  "type": "noun",
+  "english": "embracement",
+  "arabic": [
+   "عناق"
+  ],
+  "translit": [
+   "'inaaq"
+  ],
+  "vocalized": "عِنَاق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2880,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-عناية",
+  "type": "noun",
+  "english": "attention",
+  "arabic": [
+   "عناية"
+  ],
+  "translit": [
+   "'inaaya"
+  ],
+  "vocalized": "عِنَايَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2881,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-عنيد",
+  "type": "adj",
+  "english": "stubborn, obstinate",
+  "arabic": [
+   "عنيد"
+  ],
+  "translit": [
+   "'aniid"
+  ],
+  "vocalized": "عَنِيد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2882,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-غائم",
+  "type": "adj",
+  "english": "overcast, clouded",
+  "arabic": [
+   "غائم"
+  ],
+  "translit": [
+   "ghaa'im"
+  ],
+  "vocalized": "غَائِم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2883,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-غاضب",
+  "type": "adj",
+  "english": "angry, furious",
+  "arabic": [
+   "غاضب"
+  ],
+  "translit": [
+   "ghaadib"
+  ],
+  "vocalized": "غاضِب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2884,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-غباء",
+  "type": "noun",
+  "english": "stupidity, foolishness",
+  "arabic": [
+   "غباء"
+  ],
+  "translit": [
+   "ghabaa'"
+  ],
+  "vocalized": "غَبَاء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2885,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-غبي",
+  "type": "adj",
+  "english": "stupid",
+  "arabic": [
+   "غبي"
+  ],
+  "translit": [
+   "ghabiyy"
+  ],
+  "vocalized": "غَبِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2886,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-غثيان",
+  "type": "noun",
+  "english": "nausea",
+  "arabic": [
+   "غثيان"
+  ],
+  "translit": [
+   "ghathayaan"
+  ],
+  "vocalized": "غَثَيَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2887,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-غجري",
+  "type": "adj",
+  "english": "gypsy",
+  "arabic": [
+   "غجري"
+  ],
+  "translit": [
+   "ghajariyy"
+  ],
+  "vocalized": "غَجَرِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2888,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-غرابة",
+  "type": "noun",
+  "english": "strangeness, oddness",
+  "arabic": [
+   "غرابة"
+  ],
+  "translit": [
+   "gharaaba"
+  ],
+  "vocalized": "غَرَابَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2889,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-غرام",
+  "type": "noun",
+  "english": "gram",
+  "arabic": [
+   "غرام"
+  ],
+  "translit": [
+   "ghraam"
+  ],
+  "vocalized": "غْرَام",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2890,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-غسالة",
+  "type": "noun",
+  "english": "washing machine",
+  "arabic": [
+   "غسالة"
+  ],
+  "translit": [
+   "ghassaala"
+  ],
+  "vocalized": "غَسَّالَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2891,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-غطس",
+  "type": "verb",
+  "english": "immerse, dip",
+  "arabic": [
+   "غطس"
+  ],
+  "translit": [
+   "ghatasa"
+  ],
+  "vocalized": "غَطَسَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أغطس",
+   "he": "هو يغطس",
+   "she": "هي تغطس",
+   "we": "نحن نغطس",
+   "they": "هم يغطسون"
+  },
+  "frequencyRank": 2892,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-غطي",
+  "type": "verb",
+  "english": "wrap up",
+  "arabic": [
+   "غطى"
+  ],
+  "translit": [
+   "ghattaa"
+  ],
+  "vocalized": "غَطَّى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أغطي",
+   "he": "هو يغطي",
+   "she": "هي تغطي",
+   "we": "نحن نغطي",
+   "they": "هم يغطون"
+  },
+  "frequencyRank": 2893,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-غلاية",
+  "type": "noun",
+  "english": "kettle",
+  "arabic": [
+   "غلاية"
+  ],
+  "translit": [
+   "ghallaaya"
+  ],
+  "vocalized": "غَلَّايَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2894,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-غلف",
+  "type": "verb",
+  "english": "envelop, enfold",
+  "arabic": [
+   "غلف"
+  ],
+  "translit": [
+   "ghallafa"
+  ],
+  "vocalized": "غَلَّفَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أغلف",
+   "he": "هو يغلف",
+   "she": "هي تغلف",
+   "we": "نحن نغلف",
+   "they": "هم يغلفون"
+  },
+  "frequencyRank": 2895,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-غليان",
+  "type": "noun",
+  "english": "boiling",
+  "arabic": [
+   "غليان"
+  ],
+  "translit": [
+   "ghalayaan"
+  ],
+  "vocalized": "غَلَيَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2896,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-غليظ",
+  "type": "adj",
+  "english": "thick",
+  "arabic": [
+   "غليظ"
+  ],
+  "translit": [
+   "ghaliiz"
+  ],
+  "vocalized": "غَلِيظ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2897,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-غمر",
+  "type": "verb",
+  "english": "flood",
+  "arabic": [
+   "غمر"
+  ],
+  "translit": [
+   "ghamara"
+  ],
+  "vocalized": "غَمَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أغمر",
+   "he": "هو يغمر",
+   "she": "هي تغمر",
+   "we": "نحن نغمر",
+   "they": "هم يغمرون"
+  },
+  "frequencyRank": 2898,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-غمس",
+  "type": "verb",
+  "english": "dip, plunge",
+  "arabic": [
+   "غمس"
+  ],
+  "translit": [
+   "ghamasa"
+  ],
+  "vocalized": "غَمَسَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أغمس",
+   "he": "هو يغمس",
+   "she": "هي تغمس",
+   "we": "نحن نغمس",
+   "they": "هم يغمسون"
+  },
+  "frequencyRank": 2899,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-فارة",
+  "type": "noun",
+  "english": "mouse",
+  "arabic": [
+   "فأرة"
+  ],
+  "translit": [
+   "fa'ra"
+  ],
+  "vocalized": "فَأْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2900,
+  "level": "C2"
+ }
+]

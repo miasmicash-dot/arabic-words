@@ -1,0 +1,1094 @@
+[
+ {
+  "id": "k-noun-نقابة",
+  "type": "noun",
+  "english": "syndicate, union",
+  "arabic": [
+   "نقابة"
+  ],
+  "translit": [
+   "niqaaba"
+  ],
+  "vocalized": "نِقَابَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3201,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-نقر",
+  "type": "verb",
+  "english": "tap",
+  "arabic": [
+   "نقر"
+  ],
+  "translit": [
+   "naqara"
+  ],
+  "vocalized": "نَقَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنقر",
+   "he": "هو ينقر",
+   "she": "هي تنقر",
+   "we": "نحن ننقر",
+   "they": "هم ينقرون"
+  },
+  "frequencyRank": 3202,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-نقي",
+  "type": "adj",
+  "english": "pure",
+  "arabic": [
+   "نقي"
+  ],
+  "translit": [
+   "naqiyy"
+  ],
+  "vocalized": "نَقِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3203,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-نكتة",
+  "type": "noun",
+  "english": "joke",
+  "arabic": [
+   "نكتة"
+  ],
+  "translit": [
+   "nukta"
+  ],
+  "vocalized": "نُكْتَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3204,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-نمساوي",
+  "type": "adj",
+  "english": "austrian",
+  "arabic": [
+   "نمساوي"
+  ],
+  "translit": [
+   "nimsaawiyy"
+  ],
+  "vocalized": "نِمْسَاوِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3205,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-نموذجي",
+  "type": "adj",
+  "english": "exemplary",
+  "arabic": [
+   "نموذجي"
+  ],
+  "translit": [
+   "namuudhajiyy"
+  ],
+  "vocalized": "نَمُوذَجِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3206,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-نميمة",
+  "type": "noun",
+  "english": "gossip",
+  "arabic": [
+   "نميمة"
+  ],
+  "translit": [
+   "namiima"
+  ],
+  "vocalized": "نَمِيمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3207,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-نوبة",
+  "type": "noun",
+  "english": "shift",
+  "arabic": [
+   "نوبة"
+  ],
+  "translit": [
+   "nawba"
+  ],
+  "vocalized": "نَوْبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3208,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-هاتفي",
+  "type": "adj",
+  "english": "telephonic",
+  "arabic": [
+   "هاتفي"
+  ],
+  "translit": [
+   "haatifiyy"
+  ],
+  "vocalized": "هَاتِفِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3209,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-هارب",
+  "type": "noun",
+  "english": "fugitive",
+  "arabic": [
+   "هارب"
+  ],
+  "translit": [
+   "haarib"
+  ],
+  "vocalized": "هَارِب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3210,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-هاو",
+  "type": "noun",
+  "english": "amateur",
+  "arabic": [
+   "هاو"
+  ],
+  "translit": [
+   "haawin"
+  ],
+  "vocalized": "هَاوٍ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3211,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-هبط",
+  "type": "verb",
+  "english": "descend, come down",
+  "arabic": [
+   "هبط"
+  ],
+  "translit": [
+   "habata"
+  ],
+  "vocalized": "هَبَطَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أهبط",
+   "he": "هو يهبط",
+   "she": "هي تهبط",
+   "we": "نحن نهبط",
+   "they": "هم يهبطون"
+  },
+  "frequencyRank": 3212,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-هجرة",
+  "type": "noun",
+  "english": "emigration, migration",
+  "arabic": [
+   "هجرة"
+  ],
+  "translit": [
+   "hijra"
+  ],
+  "vocalized": "هِجْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3213,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-هزة",
+  "type": "noun",
+  "english": "shock",
+  "arabic": [
+   "هزة"
+  ],
+  "translit": [
+   "hazza"
+  ],
+  "vocalized": "هَزَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3214,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-هزلي",
+  "type": "adj",
+  "english": "comical",
+  "arabic": [
+   "هزلي"
+  ],
+  "translit": [
+   "hazliyy"
+  ],
+  "vocalized": "هَزْلِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3215,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-هزم",
+  "type": "verb",
+  "english": "defeat",
+  "arabic": [
+   "هزم"
+  ],
+  "translit": [
+   "hazama"
+  ],
+  "vocalized": "هَزَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أهزم",
+   "he": "هو يهزم",
+   "she": "هي تهزم",
+   "we": "نحن نهزم",
+   "they": "هم يهزمون"
+  },
+  "frequencyRank": 3216,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-هزيمة",
+  "type": "noun",
+  "english": "defeat",
+  "arabic": [
+   "هزيمة"
+  ],
+  "translit": [
+   "haziima"
+  ],
+  "vocalized": "هَزِيمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3217,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-هلاك",
+  "type": "noun",
+  "english": "death",
+  "arabic": [
+   "هلاك"
+  ],
+  "translit": [
+   "halaak"
+  ],
+  "vocalized": "هَلَاك",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3218,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-هندسة",
+  "type": "noun",
+  "english": "engineering",
+  "arabic": [
+   "هندسة"
+  ],
+  "translit": [
+   "handasa"
+  ],
+  "vocalized": "هَنْدَسَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3219,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-هندي",
+  "type": "adj",
+  "english": "indian",
+  "arabic": [
+   "هندي"
+  ],
+  "translit": [
+   "hindiyy"
+  ],
+  "vocalized": "هِنْدِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3220,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-هواية",
+  "type": "noun",
+  "english": "hobby",
+  "arabic": [
+   "هواية"
+  ],
+  "translit": [
+   "hiwaaya"
+  ],
+  "vocalized": "هِوَايَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3221,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-هولندي",
+  "type": "adj",
+  "english": "dutch",
+  "arabic": [
+   "هولندي"
+  ],
+  "translit": [
+   "huulandiyy"
+  ],
+  "vocalized": "هُولَنْدِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3222,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-هيبة",
+  "type": "noun",
+  "english": "fear, awe",
+  "arabic": [
+   "هيبة"
+  ],
+  "translit": [
+   "hayba"
+  ],
+  "vocalized": "هَيْبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3223,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-هيدروجين",
+  "type": "noun",
+  "english": "hydrogen",
+  "arabic": [
+   "هيدروجين"
+  ],
+  "translit": [
+   "hidrojeen"
+  ],
+  "vocalized": "هِيدْرُوجِين",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3224,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-هيمنة",
+  "type": "noun",
+  "english": "control",
+  "arabic": [
+   "هيمنة"
+  ],
+  "translit": [
+   "haymana"
+  ],
+  "vocalized": "هَيْمَنَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3225,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-واجهة",
+  "type": "noun",
+  "english": "face",
+  "arabic": [
+   "واجهة"
+  ],
+  "translit": [
+   "waajiha"
+  ],
+  "vocalized": "وَاجِهَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3226,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-وارث",
+  "type": "adj",
+  "english": "heir, inheritor",
+  "arabic": [
+   "وارث"
+  ],
+  "translit": [
+   "waarith"
+  ],
+  "vocalized": "وَارِث",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3227,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-وافر",
+  "type": "adj",
+  "english": "abundant",
+  "arabic": [
+   "وافر"
+  ],
+  "translit": [
+   "waafir"
+  ],
+  "vocalized": "وَافِر",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3228,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-وجبة",
+  "type": "noun",
+  "english": "meal, repast",
+  "arabic": [
+   "وجبة"
+  ],
+  "translit": [
+   "wajba"
+  ],
+  "vocalized": "وَجْبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3229,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-وحد",
+  "type": "verb",
+  "english": "unify, unite",
+  "arabic": [
+   "وحد"
+  ],
+  "translit": [
+   "wahhada"
+  ],
+  "vocalized": "وَحَّدَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أوحد",
+   "he": "هو يوحد",
+   "she": "هي توحد",
+   "we": "نحن نوحد",
+   "they": "هم يوحدون"
+  },
+  "frequencyRank": 3230,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-وحشي",
+  "type": "adj",
+  "english": "wild",
+  "arabic": [
+   "وحشي"
+  ],
+  "translit": [
+   "wahshiyy"
+  ],
+  "vocalized": "وَحْشِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3231,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-وديعة",
+  "type": "noun",
+  "english": "deposit",
+  "arabic": [
+   "وديعة"
+  ],
+  "translit": [
+   "wadii'a"
+  ],
+  "vocalized": "وَدِيعَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3232,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-وراثة",
+  "type": "noun",
+  "english": "inheritance",
+  "arabic": [
+   "وراثة"
+  ],
+  "translit": [
+   "wiraatha"
+  ],
+  "vocalized": "وِرَاثَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3233,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-ورك",
+  "type": "noun",
+  "english": "hip",
+  "arabic": [
+   "ورك"
+  ],
+  "translit": [
+   "warik"
+  ],
+  "vocalized": "وَرِك",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3234,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-وريث",
+  "type": "noun",
+  "english": "heir",
+  "arabic": [
+   "وريث"
+  ],
+  "translit": [
+   "wariith"
+  ],
+  "vocalized": "وَرِيث",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3235,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-وزع",
+  "type": "verb",
+  "english": "distribute",
+  "arabic": [
+   "وزع"
+  ],
+  "translit": [
+   "wazza'a"
+  ],
+  "vocalized": "وَزَّعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أوزع",
+   "he": "هو يوزع",
+   "she": "هي توزع",
+   "we": "نحن نوزع",
+   "they": "هم يوزعون"
+  },
+  "frequencyRank": 3236,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-وزن",
+  "type": "noun",
+  "english": "weight",
+  "arabic": [
+   "وزن"
+  ],
+  "translit": [
+   "wazn"
+  ],
+  "vocalized": "وَزْن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3237,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-وسادة",
+  "type": "noun",
+  "english": "cushion, pillow",
+  "arabic": [
+   "وسادة"
+  ],
+  "translit": [
+   "wisaada"
+  ],
+  "vocalized": "وِسَادَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3238,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-وسع",
+  "type": "verb",
+  "english": "extend",
+  "arabic": [
+   "وسع"
+  ],
+  "translit": [
+   "wasi'a"
+  ],
+  "vocalized": "وَسِعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أسع",
+   "he": "هو يسع",
+   "she": "هي تسع",
+   "we": "نحن نسع",
+   "they": "هم يسعون"
+  },
+  "frequencyRank": 3239,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-وسيم",
+  "type": "adj",
+  "english": "handsome, elegant",
+  "arabic": [
+   "وسيم"
+  ],
+  "translit": [
+   "wasiim"
+  ],
+  "vocalized": "وَسِيم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3240,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-وشاح",
+  "type": "noun",
+  "english": "sash",
+  "arabic": [
+   "وشاح"
+  ],
+  "translit": [
+   "wishaah"
+  ],
+  "vocalized": "وِشَاح",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3241,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-وشم",
+  "type": "noun",
+  "english": "tattoo",
+  "arabic": [
+   "وشم"
+  ],
+  "translit": [
+   "washm"
+  ],
+  "vocalized": "وَشْم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3242,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-وصي",
+  "type": "verb",
+  "english": "advise",
+  "arabic": [
+   "وصى"
+  ],
+  "translit": [
+   "wassaa"
+  ],
+  "vocalized": "وَصَّى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أوصي",
+   "he": "هو يوصي",
+   "she": "هي توصي",
+   "we": "نحن نوصي",
+   "they": "هم يوصون"
+  },
+  "frequencyRank": 3243,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-وظف",
+  "type": "verb",
+  "english": "employ",
+  "arabic": [
+   "وظف"
+  ],
+  "translit": [
+   "wazzafa"
+  ],
+  "vocalized": "وَظَّفَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أوظف",
+   "he": "هو يوظف",
+   "she": "هي توظف",
+   "we": "نحن نوظف",
+   "they": "هم يوظفون"
+  },
+  "frequencyRank": 3244,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-وعظ",
+  "type": "verb",
+  "english": "preach",
+  "arabic": [
+   "وعظ"
+  ],
+  "translit": [
+   "wa'aza"
+  ],
+  "vocalized": "وَعَظَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أعظ",
+   "he": "هو يعظ",
+   "she": "هي تعظ",
+   "we": "نحن نعظ",
+   "they": "هم يعظون"
+  },
+  "frequencyRank": 3245,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-وغد",
+  "type": "noun",
+  "english": "scoundrel",
+  "arabic": [
+   "وغد"
+  ],
+  "translit": [
+   "waghd"
+  ],
+  "vocalized": "وَغْد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3246,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-وقح",
+  "type": "adj",
+  "english": "shameless",
+  "arabic": [
+   "وقح"
+  ],
+  "translit": [
+   "waqih"
+  ],
+  "vocalized": "وَقِح",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3247,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-وقع",
+  "type": "verb",
+  "english": "fall down, fall",
+  "arabic": [
+   "وقع"
+  ],
+  "translit": [
+   "waqa'a"
+  ],
+  "vocalized": "وَقَعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أقع",
+   "he": "هو يقع",
+   "she": "هي تقع",
+   "we": "نحن نقع",
+   "they": "هم يقعون"
+  },
+  "frequencyRank": 3248,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-وقفة",
+  "type": "noun",
+  "english": "stop",
+  "arabic": [
+   "وقفة"
+  ],
+  "translit": [
+   "waqfa"
+  ],
+  "vocalized": "وَقْفَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3249,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-وليمة",
+  "type": "noun",
+  "english": "banquet",
+  "arabic": [
+   "وليمة"
+  ],
+  "translit": [
+   "waliima"
+  ],
+  "vocalized": "وَلِيمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3250,
+  "level": "C1"
+ }
+]

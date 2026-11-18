@@ -1,0 +1,1063 @@
+[
+ {
+  "id": "k-noun-قرصان",
+  "type": "noun",
+  "english": "pirate",
+  "arabic": [
+   "قرصان"
+  ],
+  "translit": [
+   "qursaan"
+  ],
+  "vocalized": "قُرْصَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2951,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-قسيس",
+  "type": "noun",
+  "english": "clergyman, priest",
+  "arabic": [
+   "قسيس"
+  ],
+  "translit": [
+   "qissiis"
+  ],
+  "vocalized": "قِسِّيس",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2952,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-قشر",
+  "type": "noun",
+  "english": "peel",
+  "arabic": [
+   "قشر"
+  ],
+  "translit": [
+   "qishr"
+  ],
+  "vocalized": "قِشْر",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2953,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-قشرة",
+  "type": "noun",
+  "english": "shell",
+  "arabic": [
+   "قشرة"
+  ],
+  "translit": [
+   "qishra"
+  ],
+  "vocalized": "قِشْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2954,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-قص",
+  "type": "verb",
+  "english": "cut",
+  "arabic": [
+   "قص"
+  ],
+  "translit": [
+   "qassa"
+  ],
+  "vocalized": "قَصَّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أقص",
+   "he": "هو يقص",
+   "she": "هي تقص",
+   "we": "نحن نقص",
+   "they": "هم يقصون"
+  },
+  "frequencyRank": 2955,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-قضيب",
+  "type": "noun",
+  "english": "rod",
+  "arabic": [
+   "قضيب"
+  ],
+  "translit": [
+   "qadiib"
+  ],
+  "vocalized": "قَضِيب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2956,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-قطيع",
+  "type": "noun",
+  "english": "herd",
+  "arabic": [
+   "قطيع"
+  ],
+  "translit": [
+   "qatii'"
+  ],
+  "vocalized": "قَطِيع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2957,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-قفزة",
+  "type": "noun",
+  "english": "jump",
+  "arabic": [
+   "قفزة"
+  ],
+  "translit": [
+   "qafza"
+  ],
+  "vocalized": "قَفْزَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2958,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-قلي",
+  "type": "verb",
+  "english": "fry",
+  "arabic": [
+   "قلى"
+  ],
+  "translit": [
+   "qalaa"
+  ],
+  "vocalized": "قَلَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أقلي",
+   "he": "هو يقلي",
+   "she": "هي تقلي",
+   "we": "نحن نقلي",
+   "they": "هم يقلون"
+  },
+  "frequencyRank": 2959,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-قمرة",
+  "type": "noun",
+  "english": "cabin",
+  "arabic": [
+   "قمرة"
+  ],
+  "translit": [
+   "qumra"
+  ],
+  "vocalized": "قُمْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2960,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-قمري",
+  "type": "adj",
+  "english": "lunar",
+  "arabic": [
+   "قمري"
+  ],
+  "translit": [
+   "qamariyy"
+  ],
+  "vocalized": "قَمَرِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2961,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-قنصل",
+  "type": "noun",
+  "english": "consul",
+  "arabic": [
+   "قنصل"
+  ],
+  "translit": [
+   "qunsul"
+  ],
+  "vocalized": "قُنْصُل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2962,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-قومية",
+  "type": "noun",
+  "english": "nationalism",
+  "arabic": [
+   "قومية"
+  ],
+  "translit": [
+   "qawmiyya"
+  ],
+  "vocalized": "قَوْمِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2963,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-قيثارة",
+  "type": "noun",
+  "english": "guitar",
+  "arabic": [
+   "قيثارة"
+  ],
+  "translit": [
+   "qiithaara"
+  ],
+  "vocalized": "قِيثَارَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2964,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-كابوس",
+  "type": "noun",
+  "english": "nightmare",
+  "arabic": [
+   "كابوس"
+  ],
+  "translit": [
+   "kaabuus"
+  ],
+  "vocalized": "كَابُوس",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2965,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-كاتدرائية",
+  "type": "noun",
+  "english": "cathedral",
+  "arabic": [
+   "كاتدرائية"
+  ],
+  "translit": [
+   "kaatidraa'iyya"
+  ],
+  "vocalized": "كَاتِدْرَائِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2966,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-كاثوليكي",
+  "type": "adj",
+  "english": "catholic",
+  "arabic": [
+   "كاثوليكي"
+  ],
+  "translit": [
+   "kaathuuliikiyy"
+  ],
+  "vocalized": "كَاثُولِيكِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2967,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-كاسيت",
+  "type": "noun",
+  "english": "cassette",
+  "arabic": [
+   "كاسيت"
+  ],
+  "translit": [
+   "kaasiit"
+  ],
+  "vocalized": "كَاسِيت",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2968,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-كافا",
+  "type": "verb",
+  "english": "remunerate",
+  "arabic": [
+   "كافأ"
+  ],
+  "translit": [
+   "kaafa'a"
+  ],
+  "vocalized": "كَافَأَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أكافئ",
+   "he": "هو يكافئ",
+   "she": "هي تكافئ",
+   "we": "نحن نكافئ",
+   "they": "هم يكافئون"
+  },
+  "frequencyRank": 2969,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-كاهن",
+  "type": "noun",
+  "english": "priest",
+  "arabic": [
+   "كاهن"
+  ],
+  "translit": [
+   "kaahin"
+  ],
+  "vocalized": "كَاهِن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2970,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-كبح",
+  "type": "verb",
+  "english": "curb",
+  "arabic": [
+   "كبح"
+  ],
+  "translit": [
+   "kabaha"
+  ],
+  "vocalized": "كَبَحَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أكبح",
+   "he": "هو يكبح",
+   "she": "هي تكبح",
+   "we": "نحن نكبح",
+   "they": "هم يكبحون"
+  },
+  "frequencyRank": 2971,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-كبرياء",
+  "type": "noun",
+  "english": "pride, arrogance, haughtiness",
+  "arabic": [
+   "كبرياء"
+  ],
+  "translit": [
+   "kibriyaa'"
+  ],
+  "vocalized": "كِبْرِيَاء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2972,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-كبريت",
+  "type": "noun",
+  "english": "sulfur",
+  "arabic": [
+   "كبريت"
+  ],
+  "translit": [
+   "kibriit"
+  ],
+  "vocalized": "كِبْرِيت",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2973,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-كبس",
+  "type": "verb",
+  "english": "press, squeeze",
+  "arabic": [
+   "كبس"
+  ],
+  "translit": [
+   "kabasa"
+  ],
+  "vocalized": "كَبَسَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أكبس",
+   "he": "هو يكبس",
+   "she": "هي تكبس",
+   "we": "نحن نكبس",
+   "they": "هم يكبسون"
+  },
+  "frequencyRank": 2974,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-كتابي",
+  "type": "adj",
+  "english": "written",
+  "arabic": [
+   "كتابي"
+  ],
+  "translit": [
+   "kitaabiyy"
+  ],
+  "vocalized": "كِتَابِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2975,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-كتان",
+  "type": "noun",
+  "english": "flax",
+  "arabic": [
+   "كتان"
+  ],
+  "translit": [
+   "kattaan"
+  ],
+  "vocalized": "كَتَّان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2976,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-كتلة",
+  "type": "noun",
+  "english": "clump",
+  "arabic": [
+   "كتلة"
+  ],
+  "translit": [
+   "kutla"
+  ],
+  "vocalized": "كُتْلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2977,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-كثرة",
+  "type": "noun",
+  "english": "abundance",
+  "arabic": [
+   "كثرة"
+  ],
+  "translit": [
+   "kathra"
+  ],
+  "vocalized": "كَثْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2978,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-كحولي",
+  "type": "adj",
+  "english": "alcoholic",
+  "arabic": [
+   "كحولي"
+  ],
+  "translit": [
+   "kuhuuliyy"
+  ],
+  "vocalized": "كُحُولِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2979,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-كذبة",
+  "type": "noun",
+  "english": "lie",
+  "arabic": [
+   "كذبة"
+  ],
+  "translit": [
+   "kadhba"
+  ],
+  "vocalized": "كَذْبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2980,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-كرامة",
+  "type": "noun",
+  "english": "dignity",
+  "arabic": [
+   "كرامة"
+  ],
+  "translit": [
+   "karaama"
+  ],
+  "vocalized": "كَرَامَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2981,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-كربون",
+  "type": "noun",
+  "english": "carbon",
+  "arabic": [
+   "كربون"
+  ],
+  "translit": [
+   "karbuun"
+  ],
+  "vocalized": "كَرْبُون",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2982,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-كرز",
+  "type": "noun",
+  "english": "cherry",
+  "arabic": [
+   "كرز"
+  ],
+  "translit": [
+   "karaz"
+  ],
+  "vocalized": "كَرَز",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2983,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-كرنب",
+  "type": "noun",
+  "english": "cabbage, kale",
+  "arabic": [
+   "كرنب"
+  ],
+  "translit": [
+   "kurunb"
+  ],
+  "vocalized": "كُرُنْب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2984,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-كسر",
+  "type": "verb",
+  "english": "break, smash",
+  "arabic": [
+   "كسر"
+  ],
+  "translit": [
+   "kasara"
+  ],
+  "vocalized": "كَسَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أكسر",
+   "he": "هو يكسر",
+   "she": "هي تكسر",
+   "we": "نحن نكسر",
+   "they": "هم يكسرون"
+  },
+  "frequencyRank": 2985,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-كسول",
+  "type": "adj",
+  "english": "lazy, indolent",
+  "arabic": [
+   "كسول"
+  ],
+  "translit": [
+   "kasuul"
+  ],
+  "vocalized": "كَسُول",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2986,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-كشك",
+  "type": "noun",
+  "english": "kiosk, booth",
+  "arabic": [
+   "كشك"
+  ],
+  "translit": [
+   "kushk"
+  ],
+  "vocalized": "كُشْك",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2987,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-كعك",
+  "type": "noun",
+  "english": "cake",
+  "arabic": [
+   "كعك"
+  ],
+  "translit": [
+   "ka'k"
+  ],
+  "vocalized": "كَعْك",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2988,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-كفاءة",
+  "type": "noun",
+  "english": "proficiency",
+  "arabic": [
+   "كفاءة"
+  ],
+  "translit": [
+   "kafaa'a"
+  ],
+  "vocalized": "كَفَاءَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2989,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-كفالة",
+  "type": "noun",
+  "english": "guarantee, warranty",
+  "arabic": [
+   "كفالة"
+  ],
+  "translit": [
+   "kafaala"
+  ],
+  "vocalized": "كَفَالَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2990,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-كل",
+  "type": "noun",
+  "english": "every",
+  "arabic": [
+   "كل"
+  ],
+  "translit": [
+   "kull"
+  ],
+  "vocalized": "كُلّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2991,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-كندي",
+  "type": "adj",
+  "english": "canadian",
+  "arabic": [
+   "كندي"
+  ],
+  "translit": [
+   "kanadiyy"
+  ],
+  "vocalized": "كَنَدِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2992,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-كوخ",
+  "type": "noun",
+  "english": "hut, shack, hutch",
+  "arabic": [
+   "كوخ"
+  ],
+  "translit": [
+   "kuukh"
+  ],
+  "vocalized": "كُوخ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2993,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-كوميديا",
+  "type": "noun",
+  "english": "comedy",
+  "arabic": [
+   "كوميديا"
+  ],
+  "translit": [
+   "koomiidiyaa"
+  ],
+  "vocalized": "كُومِيدِيَا",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2994,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-كوني",
+  "type": "adj",
+  "english": "cosmic",
+  "arabic": [
+   "كوني"
+  ],
+  "translit": [
+   "kawniyy"
+  ],
+  "vocalized": "كَوْنِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2995,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-كيمياء",
+  "type": "noun",
+  "english": "chemistry",
+  "arabic": [
+   "كيمياء"
+  ],
+  "translit": [
+   "kiimiyaa'"
+  ],
+  "vocalized": "كِيمِيَاء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2996,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-لافتة",
+  "type": "noun",
+  "english": "billboard, signboard, placard",
+  "arabic": [
+   "لافتة"
+  ],
+  "translit": [
+   "laafita"
+  ],
+  "vocalized": "لَافِتَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2997,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-لامع",
+  "type": "adj",
+  "english": "brilliant",
+  "arabic": [
+   "لامع"
+  ],
+  "translit": [
+   "laami'"
+  ],
+  "vocalized": "لَامِع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2998,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-لاهوتي",
+  "type": "adj",
+  "english": "theological",
+  "arabic": [
+   "لاهوتي"
+  ],
+  "translit": [
+   "laahuutiyy"
+  ],
+  "vocalized": "لَاهُوتِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2999,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-لتر",
+  "type": "noun",
+  "english": "litre",
+  "arabic": [
+   "لتر"
+  ],
+  "translit": [
+   "litr"
+  ],
+  "vocalized": "لِتْر",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3000,
+  "level": "A1"
+ }
+]

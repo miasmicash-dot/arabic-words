@@ -1,0 +1,1099 @@
+[
+ {
+  "id": "k-adj-سطحي",
+  "type": "adj",
+  "english": "superficial",
+  "arabic": [
+   "سطحي"
+  ],
+  "translit": [
+   "sathiyy"
+  ],
+  "vocalized": "سَطْحِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2751,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-سعال",
+  "type": "noun",
+  "english": "cough",
+  "arabic": [
+   "سعال"
+  ],
+  "translit": [
+   "su'aal"
+  ],
+  "vocalized": "سُعَال",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2752,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-سفارة",
+  "type": "noun",
+  "english": "embassy",
+  "arabic": [
+   "سفارة"
+  ],
+  "translit": [
+   "sifaara"
+  ],
+  "vocalized": "سِفَارَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2753,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-سفلي",
+  "type": "adj",
+  "english": "lower",
+  "arabic": [
+   "سفلي"
+  ],
+  "translit": [
+   "sufliyy"
+  ],
+  "vocalized": "سُفْلِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2754,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-سكب",
+  "type": "verb",
+  "english": "pour, spill",
+  "arabic": [
+   "سكب"
+  ],
+  "translit": [
+   "sakaba"
+  ],
+  "vocalized": "سَكَبَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أسكب",
+   "he": "هو يسكب",
+   "she": "هي تسكب",
+   "we": "نحن نسكب",
+   "they": "هم يسكبون"
+  },
+  "frequencyRank": 2755,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-سكران",
+  "type": "adj",
+  "english": "drunk, intoxicated, inebriated",
+  "arabic": [
+   "سكران"
+  ],
+  "translit": [
+   "sakraan"
+  ],
+  "vocalized": "سَكْرَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2756,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-سلافي",
+  "type": "adj",
+  "english": "slavic",
+  "arabic": [
+   "سلافي"
+  ],
+  "translit": [
+   "slaafiyy"
+  ],
+  "vocalized": "سْلَافِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2757,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-سلب",
+  "type": "verb",
+  "english": "strip, rob",
+  "arabic": [
+   "سلب"
+  ],
+  "translit": [
+   "salaba"
+  ],
+  "vocalized": "سَلَبَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أسلب",
+   "he": "هو يسلب",
+   "she": "هي تسلب",
+   "we": "نحن نسلب",
+   "they": "هم يسلبون"
+  },
+  "frequencyRank": 2758,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-سلبي",
+  "type": "adj",
+  "english": "negative, electronegative",
+  "arabic": [
+   "سلبي"
+  ],
+  "translit": [
+   "salbiyy"
+  ],
+  "vocalized": "سَلْبِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2759,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-سليل",
+  "type": "noun",
+  "english": "descendant",
+  "arabic": [
+   "سليل"
+  ],
+  "translit": [
+   "saliil"
+  ],
+  "vocalized": "سَلِيل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2760,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-سمعي",
+  "type": "adj",
+  "english": "auditory",
+  "arabic": [
+   "سمعي"
+  ],
+  "translit": [
+   "sam'iyy"
+  ],
+  "vocalized": "سَمْعِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2761,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-سميك",
+  "type": "adj",
+  "english": "deep",
+  "arabic": [
+   "سميك"
+  ],
+  "translit": [
+   "samiik"
+  ],
+  "vocalized": "سَمِيك",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2762,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-سمين",
+  "type": "adj",
+  "english": "fat",
+  "arabic": [
+   "سمين"
+  ],
+  "translit": [
+   "samiin"
+  ],
+  "vocalized": "سَمِين",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2763,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-سويدي",
+  "type": "adj",
+  "english": "swedish",
+  "arabic": [
+   "سويدي"
+  ],
+  "translit": [
+   "suwaydiyy"
+  ],
+  "vocalized": "سُوَيْدِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2764,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-سويسري",
+  "type": "adj",
+  "english": "swiss",
+  "arabic": [
+   "سويسري"
+  ],
+  "translit": [
+   "swiisriyy"
+  ],
+  "vocalized": "سْوِيسْرِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2765,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-سياج",
+  "type": "noun",
+  "english": "fence",
+  "arabic": [
+   "سياج"
+  ],
+  "translit": [
+   "siyaaj"
+  ],
+  "vocalized": "سِيَاج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2766,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-سياحة",
+  "type": "noun",
+  "english": "tourism",
+  "arabic": [
+   "سياحة"
+  ],
+  "translit": [
+   "siyaaha"
+  ],
+  "vocalized": "سِيَاحَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2767,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-شاحب",
+  "type": "adj",
+  "english": "pale",
+  "arabic": [
+   "شاحب"
+  ],
+  "translit": [
+   "shaahib"
+  ],
+  "vocalized": "شَاحِب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2768,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-شتم",
+  "type": "verb",
+  "english": "curse, insult",
+  "arabic": [
+   "شتم"
+  ],
+  "translit": [
+   "shatama"
+  ],
+  "vocalized": "شَتَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أشتم",
+   "he": "هو يشتم",
+   "she": "هي تشتم",
+   "we": "نحن نشتم",
+   "they": "هم يشتمون"
+  },
+  "frequencyRank": 2769,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-شتوي",
+  "type": "adj",
+  "english": "wintry",
+  "arabic": [
+   "شتوي"
+  ],
+  "translit": [
+   "shatawiyy"
+  ],
+  "vocalized": "شَتَوِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2770,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-شجاع",
+  "type": "adj",
+  "english": "brave, courageous",
+  "arabic": [
+   "شجاع"
+  ],
+  "translit": [
+   "shujaa'"
+  ],
+  "vocalized": "شُجَاع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2771,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-شجيرة",
+  "type": "noun",
+  "english": "shrub, bush",
+  "arabic": [
+   "شجيرة"
+  ],
+  "translit": [
+   "shujayra"
+  ],
+  "vocalized": "شُجَيْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2772,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-شحم",
+  "type": "noun",
+  "english": "fat, grease",
+  "arabic": [
+   "شحم"
+  ],
+  "translit": [
+   "shahm"
+  ],
+  "vocalized": "شَحْم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2773,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-شراع",
+  "type": "noun",
+  "english": "sail",
+  "arabic": [
+   "شراع"
+  ],
+  "translit": [
+   "shiraa'"
+  ],
+  "vocalized": "شِرَاع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2774,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-شرعية",
+  "type": "noun",
+  "english": "legitimacy",
+  "arabic": [
+   "شرعية"
+  ],
+  "translit": [
+   "shar'iyya"
+  ],
+  "vocalized": "شَرْعِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2775,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-شريان",
+  "type": "noun",
+  "english": "artery",
+  "arabic": [
+   "شريان"
+  ],
+  "translit": [
+   "shiryaan"
+  ],
+  "vocalized": "شِرْيَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2776,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-شطرنج",
+  "type": "noun",
+  "english": "chess",
+  "arabic": [
+   "شطرنج"
+  ],
+  "translit": [
+   "shitranj"
+  ],
+  "vocalized": "شِطْرَنْج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2777,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-شظية",
+  "type": "noun",
+  "english": "splinter, sliver",
+  "arabic": [
+   "شظية"
+  ],
+  "translit": [
+   "shaziyya"
+  ],
+  "vocalized": "شَظِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2778,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-شعبية",
+  "type": "noun",
+  "english": "popularity",
+  "arabic": [
+   "شعبية"
+  ],
+  "translit": [
+   "sha'biyya"
+  ],
+  "vocalized": "شَعْبِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2779,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-شعلة",
+  "type": "noun",
+  "english": "flame",
+  "arabic": [
+   "شعلة"
+  ],
+  "translit": [
+   "shu'la"
+  ],
+  "vocalized": "شُعْلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2780,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-شفافية",
+  "type": "noun",
+  "english": "transparency",
+  "arabic": [
+   "شفافية"
+  ],
+  "translit": [
+   "shaffaafiyya"
+  ],
+  "vocalized": "شَفَّافِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2781,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-شفة",
+  "type": "noun",
+  "english": "lip",
+  "arabic": [
+   "شفة"
+  ],
+  "translit": [
+   "shafa"
+  ],
+  "vocalized": "شَفَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2782,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-شفرة",
+  "type": "noun",
+  "english": "code",
+  "arabic": [
+   "شفرة"
+  ],
+  "translit": [
+   "shifra"
+  ],
+  "vocalized": "شِفْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2783,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-شفقة",
+  "type": "noun",
+  "english": "pity",
+  "arabic": [
+   "شفقة"
+  ],
+  "translit": [
+   "shafaqa"
+  ],
+  "vocalized": "شَفَقَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2784,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-شفهي",
+  "type": "adj",
+  "english": "oral",
+  "arabic": [
+   "شفهي"
+  ],
+  "translit": [
+   "shafahiyy"
+  ],
+  "vocalized": "شَفَهِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2785,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-شقة",
+  "type": "noun",
+  "english": "apartment, flat",
+  "arabic": [
+   "شقة"
+  ],
+  "translit": [
+   "shaqqa"
+  ],
+  "vocalized": "شَقَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2786,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-شكر",
+  "type": "verb",
+  "english": "thank",
+  "arabic": [
+   "شكر"
+  ],
+  "translit": [
+   "shakara"
+  ],
+  "vocalized": "شَكَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أشكر",
+   "he": "هو يشكر",
+   "she": "هي تشكر",
+   "we": "نحن نشكر",
+   "they": "هم يشكرون"
+  },
+  "frequencyRank": 2787,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-شم",
+  "type": "verb",
+  "english": "smell, sniff",
+  "arabic": [
+   "شم"
+  ],
+  "translit": [
+   "shamma"
+  ],
+  "vocalized": "شَمَّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أشم",
+   "he": "هو يشم",
+   "she": "هي تشم",
+   "we": "نحن نشم",
+   "they": "هم يشمون"
+  },
+  "frequencyRank": 2788,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-شمع",
+  "type": "noun",
+  "english": "wax",
+  "arabic": [
+   "شمع"
+  ],
+  "translit": [
+   "sham'"
+  ],
+  "vocalized": "شَمْع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2789,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-شوكولاتة",
+  "type": "noun",
+  "english": "chocolate",
+  "arabic": [
+   "شوكولاتة"
+  ],
+  "translit": [
+   "shukuulaata"
+  ],
+  "vocalized": "شُوكُولَاتَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2790,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-صابون",
+  "type": "noun",
+  "english": "soap",
+  "arabic": [
+   "صابون"
+  ],
+  "translit": [
+   "saabuun"
+  ],
+  "vocalized": "صَابُون",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2791,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-صاح",
+  "type": "verb",
+  "english": "yell, shout",
+  "arabic": [
+   "صاح"
+  ],
+  "translit": [
+   "saaha"
+  ],
+  "vocalized": "صَاحَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أصيح",
+   "he": "هو يصيح",
+   "she": "هي تصيح",
+   "we": "نحن نصيح",
+   "they": "هم يصيحون"
+  },
+  "frequencyRank": 2792,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-صادف",
+  "type": "verb",
+  "english": "encounter, meet",
+  "arabic": [
+   "صادف"
+  ],
+  "translit": [
+   "saadafa"
+  ],
+  "vocalized": "صَادَفَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أصادف",
+   "he": "هو يصادف",
+   "she": "هي تصادف",
+   "we": "نحن نصادف",
+   "they": "هم يصادفون"
+  },
+  "frequencyRank": 2793,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-صارع",
+  "type": "verb",
+  "english": "wrestle, grapple",
+  "arabic": [
+   "صارع"
+  ],
+  "translit": [
+   "saara'a"
+  ],
+  "vocalized": "صَارَعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "conjugations": {
+   "I": "أنا أصارع",
+   "he": "هو يصارع",
+   "she": "هي تصارع",
+   "we": "نحن نصارع",
+   "they": "هم يصارعون"
+  },
+  "frequencyRank": 2794,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-صاغ",
+  "type": "verb",
+  "english": "form, shape",
+  "arabic": [
+   "صاغ"
+  ],
+  "translit": [
+   "saagha"
+  ],
+  "vocalized": "صَاغَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أصوغ",
+   "he": "هو يصوغ",
+   "she": "هي تصوغ",
+   "we": "نحن نصوغ",
+   "they": "هم يصوغون"
+  },
+  "frequencyRank": 2795,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-صاف",
+  "type": "adj",
+  "english": "pure",
+  "arabic": [
+   "صاف"
+  ],
+  "translit": [
+   "saafin"
+  ],
+  "vocalized": "صَافٍ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2796,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-صامت",
+  "type": "adj",
+  "english": "silent",
+  "arabic": [
+   "صامت"
+  ],
+  "translit": [
+   "saamit"
+  ],
+  "vocalized": "صَامِت",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2797,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-صبغ",
+  "type": "verb",
+  "english": "dye",
+  "arabic": [
+   "صبغ"
+  ],
+  "translit": [
+   "sabagha"
+  ],
+  "vocalized": "صَبَغَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أصبغ",
+   "he": "هو يصبغ",
+   "she": "هي تصبغ",
+   "we": "نحن نصبغ",
+   "they": "هم يصبغون"
+  },
+  "frequencyRank": 2798,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-صبغة",
+  "type": "noun",
+  "english": "dye",
+  "arabic": [
+   "صبغة"
+  ],
+  "translit": [
+   "sibgha"
+  ],
+  "vocalized": "صِبْغَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2799,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-صخرة",
+  "type": "noun",
+  "english": "rock",
+  "arabic": [
+   "صخرة"
+  ],
+  "translit": [
+   "sakhra"
+  ],
+  "vocalized": "صَخْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2800,
+  "level": "A1"
+ }
+]

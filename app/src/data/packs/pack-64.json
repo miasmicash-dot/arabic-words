@@ -1,0 +1,1047 @@
+[
+ {
+  "id": "k-adj-ممتع",
+  "type": "adj",
+  "english": "enjoyable",
+  "arabic": [
+   "ممتع"
+  ],
+  "translit": [
+   "mumti'"
+  ],
+  "vocalized": "مُمْتِع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3151,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-ممتلئ",
+  "type": "adj",
+  "english": "full, replete",
+  "arabic": [
+   "ممتلئ"
+  ],
+  "translit": [
+   "mumtali'"
+  ],
+  "vocalized": "مُمْتَلِئ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3152,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-ممل",
+  "type": "adj",
+  "english": "tiresome, boring",
+  "arabic": [
+   "ممل"
+  ],
+  "translit": [
+   "mumill"
+  ],
+  "vocalized": "مُمِلّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3153,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-مناخي",
+  "type": "adj",
+  "english": "climatic",
+  "arabic": [
+   "مناخي"
+  ],
+  "translit": [
+   "manaakhiyy"
+  ],
+  "vocalized": "مَنَاخِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3154,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-مناظرة",
+  "type": "noun",
+  "english": "debate",
+  "arabic": [
+   "مناظرة"
+  ],
+  "translit": [
+   "munaazara"
+  ],
+  "vocalized": "مُنَاظَرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3155,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-منافسة",
+  "type": "noun",
+  "english": "competition",
+  "arabic": [
+   "منافسة"
+  ],
+  "translit": [
+   "munaafasa"
+  ],
+  "vocalized": "مُنَافَسَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3156,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-مناقشة",
+  "type": "noun",
+  "english": "argument, debate, controversy",
+  "arabic": [
+   "مناقشة"
+  ],
+  "translit": [
+   "munaaqasha"
+  ],
+  "vocalized": "مُنَاقَشَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3157,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-مناورة",
+  "type": "noun",
+  "english": "manoeuvre, maneuver",
+  "arabic": [
+   "مناورة"
+  ],
+  "translit": [
+   "munaawara"
+  ],
+  "vocalized": "مُنَاوَرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3158,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-منتجع",
+  "type": "noun",
+  "english": "resort",
+  "arabic": [
+   "منتجع"
+  ],
+  "translit": [
+   "muntaja'"
+  ],
+  "vocalized": "مُنْتَجَع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3159,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-منجم",
+  "type": "noun",
+  "english": "astrologer",
+  "arabic": [
+   "منجم"
+  ],
+  "translit": [
+   "munajjim"
+  ],
+  "vocalized": "مُنَجِّم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3160,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-منحني",
+  "type": "noun",
+  "english": "curve, bend",
+  "arabic": [
+   "منحنى"
+  ],
+  "translit": [
+   "munhanaa"
+  ],
+  "vocalized": "مُنْحَنًى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3161,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-منشفة",
+  "type": "noun",
+  "english": "towel",
+  "arabic": [
+   "منشفة"
+  ],
+  "translit": [
+   "minshafa"
+  ],
+  "vocalized": "مِنْشَفَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3162,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-منطقي",
+  "type": "adj",
+  "english": "logical",
+  "arabic": [
+   "منطقي"
+  ],
+  "translit": [
+   "mantiqiyy"
+  ],
+  "vocalized": "مَنْطِقِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3163,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-مهارة",
+  "type": "noun",
+  "english": "skill",
+  "arabic": [
+   "مهارة"
+  ],
+  "translit": [
+   "mahaara"
+  ],
+  "vocalized": "مَهَارَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3164,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-مهجور",
+  "type": "adj",
+  "english": "deserted, abandoned",
+  "arabic": [
+   "مهجور"
+  ],
+  "translit": [
+   "mahjuur"
+  ],
+  "vocalized": "مَهْجُور",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3165,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-مهني",
+  "type": "adj",
+  "english": "professional",
+  "arabic": [
+   "مهني"
+  ],
+  "translit": [
+   "mihaniyy"
+  ],
+  "vocalized": "مِهَنِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3166,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-موازنة",
+  "type": "noun",
+  "english": "equilibrium",
+  "arabic": [
+   "موازنة"
+  ],
+  "translit": [
+   "muwaazana"
+  ],
+  "vocalized": "مُوَازَنَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3167,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-مواطنة",
+  "type": "noun",
+  "english": "citizenship",
+  "arabic": [
+   "مواطنة"
+  ],
+  "translit": [
+   "muwaatana"
+  ],
+  "vocalized": "مُوَاطَنَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3168,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-موافقة",
+  "type": "noun",
+  "english": "approval, agreement",
+  "arabic": [
+   "موافقة"
+  ],
+  "translit": [
+   "muwaafaqa"
+  ],
+  "vocalized": "مُوَافَقَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3169,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-موثوق",
+  "type": "adj",
+  "english": "reliable",
+  "arabic": [
+   "موثوق"
+  ],
+  "translit": [
+   "mawthuuq"
+  ],
+  "vocalized": "مَوْثُوق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3170,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-موجة",
+  "type": "noun",
+  "english": "wave",
+  "arabic": [
+   "موجة"
+  ],
+  "translit": [
+   "mawja"
+  ],
+  "vocalized": "مَوْجَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3171,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-موضوعي",
+  "type": "adj",
+  "english": "objective",
+  "arabic": [
+   "موضوعي"
+  ],
+  "translit": [
+   "mawduu'iyy"
+  ],
+  "vocalized": "مَوْضُوعِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3172,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-موقد",
+  "type": "noun",
+  "english": "fireplace, hearth, stove",
+  "arabic": [
+   "موقد"
+  ],
+  "translit": [
+   "mawqid"
+  ],
+  "vocalized": "مَوْقِد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3173,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-مول",
+  "type": "verb",
+  "english": "finance, fund",
+  "arabic": [
+   "مول"
+  ],
+  "translit": [
+   "mawwala"
+  ],
+  "vocalized": "مَوَّلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أمول",
+   "he": "هو يمول",
+   "she": "هي تمول",
+   "we": "نحن نمول",
+   "they": "هم يمولون"
+  },
+  "frequencyRank": 3174,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-ميدالية",
+  "type": "noun",
+  "english": "medal",
+  "arabic": [
+   "ميدالية"
+  ],
+  "translit": [
+   "miidaaliya"
+  ],
+  "vocalized": "مِيدَالِيَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3175,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-ميزانية",
+  "type": "noun",
+  "english": "budget",
+  "arabic": [
+   "ميزانية"
+  ],
+  "translit": [
+   "miizaaniyya"
+  ],
+  "vocalized": "مِيزَانِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3176,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-ميكروفون",
+  "type": "noun",
+  "english": "microphone",
+  "arabic": [
+   "ميكروفون"
+  ],
+  "translit": [
+   "miikruufuun"
+  ],
+  "vocalized": "مِيكْرُوفُون",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3177,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-ناد",
+  "type": "noun",
+  "english": "club",
+  "arabic": [
+   "ناد"
+  ],
+  "translit": [
+   "naadin"
+  ],
+  "vocalized": "نَادٍ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3178,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-نادل",
+  "type": "noun",
+  "english": "waiter",
+  "arabic": [
+   "نادل"
+  ],
+  "translit": [
+   "naadil"
+  ],
+  "vocalized": "نَادِل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3179,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-ناضج",
+  "type": "adj",
+  "english": "ripe",
+  "arabic": [
+   "ناضج"
+  ],
+  "translit": [
+   "naadij"
+  ],
+  "vocalized": "نَاضِج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3180,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-ناعم",
+  "type": "adj",
+  "english": "smooth",
+  "arabic": [
+   "ناعم"
+  ],
+  "translit": [
+   "naa'im"
+  ],
+  "vocalized": "نَاعِم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3181,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-ناقد",
+  "type": "noun",
+  "english": "critic",
+  "arabic": [
+   "ناقد"
+  ],
+  "translit": [
+   "naaqid"
+  ],
+  "vocalized": "نَاقِد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3182,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-نباتي",
+  "type": "adj",
+  "english": "vegetarian",
+  "arabic": [
+   "نباتي"
+  ],
+  "translit": [
+   "nabaatiyy"
+  ],
+  "vocalized": "نَبَاتِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3183,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-نبرة",
+  "type": "noun",
+  "english": "stress, accent",
+  "arabic": [
+   "نبرة"
+  ],
+  "translit": [
+   "nabra"
+  ],
+  "vocalized": "نَبْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3184,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-نبيذ",
+  "type": "noun",
+  "english": "wine",
+  "arabic": [
+   "نبيذ"
+  ],
+  "translit": [
+   "nabiidh"
+  ],
+  "vocalized": "نَبِيذ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3185,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-نتن",
+  "type": "adj",
+  "english": "stinky, fetid",
+  "arabic": [
+   "نتن"
+  ],
+  "translit": [
+   "natin"
+  ],
+  "vocalized": "نَتِن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3186,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-نحت",
+  "type": "noun",
+  "english": "carving",
+  "arabic": [
+   "نحت"
+  ],
+  "translit": [
+   "naht"
+  ],
+  "vocalized": "نَحْت",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3187,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-نحيل",
+  "type": "adj",
+  "english": "thin",
+  "arabic": [
+   "نحيل"
+  ],
+  "translit": [
+   "nahiil"
+  ],
+  "vocalized": "نَحِيل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3188,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-نخبة",
+  "type": "noun",
+  "english": "elite",
+  "arabic": [
+   "نخبة"
+  ],
+  "translit": [
+   "nukhba"
+  ],
+  "vocalized": "نُخْبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 3189,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-ندوة",
+  "type": "noun",
+  "english": "seminar, symposium",
+  "arabic": [
+   "ندوة"
+  ],
+  "translit": [
+   "nadwa"
+  ],
+  "vocalized": "نَدْوَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3190,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-نزهة",
+  "type": "noun",
+  "english": "pleasure trip",
+  "arabic": [
+   "نزهة"
+  ],
+  "translit": [
+   "nuzha"
+  ],
+  "vocalized": "نُزْهَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3191,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-نسق",
+  "type": "verb",
+  "english": "order, set up",
+  "arabic": [
+   "نسق"
+  ],
+  "translit": [
+   "nasaqa"
+  ],
+  "vocalized": "نَسَقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنسق",
+   "he": "هو ينسق",
+   "she": "هي تنسق",
+   "we": "نحن ننسق",
+   "they": "هم ينسقون"
+  },
+  "frequencyRank": 3192,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-نسيان",
+  "type": "noun",
+  "english": "oblivion",
+  "arabic": [
+   "نسيان"
+  ],
+  "translit": [
+   "nisyaan"
+  ],
+  "vocalized": "نِسْيَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3193,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-نشوة",
+  "type": "noun",
+  "english": "ecstasy",
+  "arabic": [
+   "نشوة"
+  ],
+  "translit": [
+   "nashwa"
+  ],
+  "vocalized": "نَشْوَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3194,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-نظارة",
+  "type": "noun",
+  "english": "spectacles, glasses, eyeglasses",
+  "arabic": [
+   "نظارة"
+  ],
+  "translit": [
+   "nazzaara"
+  ],
+  "vocalized": "نَظَّارَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3195,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-نظري",
+  "type": "adj",
+  "english": "theoretical",
+  "arabic": [
+   "نظري"
+  ],
+  "translit": [
+   "nazariyy"
+  ],
+  "vocalized": "نَظَرِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3196,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-نظم",
+  "type": "verb",
+  "english": "organize, arrange",
+  "arabic": [
+   "نظم"
+  ],
+  "translit": [
+   "nazama"
+  ],
+  "vocalized": "نَظَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنظم",
+   "he": "هو ينظم",
+   "she": "هي تنظم",
+   "we": "نحن ننظم",
+   "they": "هم ينظمون"
+  },
+  "frequencyRank": 3197,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-نعاس",
+  "type": "noun",
+  "english": "drowsiness",
+  "arabic": [
+   "نعاس"
+  ],
+  "translit": [
+   "nu'aas"
+  ],
+  "vocalized": "نُعَاس",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 3198,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-نغمة",
+  "type": "noun",
+  "english": "tone",
+  "arabic": [
+   "نغمة"
+  ],
+  "translit": [
+   "naghma"
+  ],
+  "vocalized": "نَغْمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 3199,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-نفخ",
+  "type": "verb",
+  "english": "blow up, inflate",
+  "arabic": [
+   "نفخ"
+  ],
+  "translit": [
+   "nafakha"
+  ],
+  "vocalized": "نَفَخَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنفخ",
+   "he": "هو ينفخ",
+   "she": "هي تنفخ",
+   "we": "نحن ننفخ",
+   "they": "هم ينفخون"
+  },
+  "frequencyRank": 3200,
+  "level": "B2"
+ }
+]

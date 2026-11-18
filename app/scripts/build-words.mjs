@@ -21,7 +21,7 @@
 //   3. the consonants of the transliteration match the consonants of the Arabic spelling;
 //   4. verbs: all five present-tense forms exist and the "he" form matches a buckwalter present-tense stem.
 //
-// Usage: node scripts/build-words.mjs <source folder> [minWords=2000] [packSize=50] [maxTotalWithBuiltIn=3000]
+// Usage: node scripts/build-words.mjs <source folder> [minWords=2000] [packSize=50] [maxTotalWithBuiltIn=all]
 import { createReadStream, readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, unlinkSync } from 'node:fs'
 import { createInterface } from 'node:readline'
 import { resolve, dirname } from 'node:path'
@@ -32,7 +32,7 @@ const here = dirname(fileURLToPath(import.meta.url))
 const SRC = resolve(process.argv[2] ?? '.')
 const MIN = +(process.argv[3] ?? 2000)
 /** total words wanted in the app, built-in words included (the most common words are kept) */
-const MAX_TOTAL = +(process.argv[5] ?? 3000)
+const MAX_TOTAL = +(process.argv[5] ?? 100000)
 /** independent sources each meaning needs (besides Wiktionary's Arabic entry) */
 const NEED = +(process.argv[6] ?? 2)
 const SIZE = +(process.argv[4] ?? 50)
