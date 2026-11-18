@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { db, DEFAULT_SETTINGS, type StudyCard, type Word } from '../db'
 import { answerCard, getSession, getStats, previewIntervals } from '../scheduler'
 import { updateDueCount } from '../push'
+import { markWatered } from '../garden/service'
 
 const LABELS = { 1: 'Again', 2: 'Hard', 3: 'Good', 4: 'Easy' } as const
 const COLORS = { 1: '#dc2626', 2: '#d97706', 3: '#0f766e', 4: '#2563eb' } as const
@@ -29,9 +30,10 @@ export default function Review() {
 
   useEffect(() => {
     if (queue && queue.length === 0) {
+      if (done > 0) markWatered()
       getStats(new Date()).then((s) => updateDueCount(s.dueNow).catch(() => {}))
     }
-  }, [queue])
+  }, [queue]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!queue) return <p className="muted">Loading…</p>
   if (queue.length === 0) {
@@ -39,7 +41,7 @@ export default function Review() {
       <div className="card p-8 text-center space-y-3">
         <div className="text-4xl">🎉</div>
         <div className="text-xl font-bold">Session complete</div>
-        <div className="muted">{done} cards reviewed</div>
+        <div className="muted">{done} cards reviewed{done > 0 ? ' · your plant has been watered 💧' : ''}</div>
         <Link to="/" className="btn inline-block">Back home</Link>
       </div>
     )

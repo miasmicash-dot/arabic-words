@@ -1,13 +1,19 @@
 import { useEffect, useState } from 'react'
 import { DEFAULT_SETTINGS, db, type Settings as S } from '../db'
 import { disableReminders, enableReminders, isIosNotInstalled, pushSupported } from '../push'
+import { GoalPicker } from '../garden/GardenPanel'
+import { loadGarden, setGoal, setMuted, startGarden, syncGarden } from '../garden/service'
+import type { GardenState } from '../garden/state'
 
 export default function Settings() {
   const [s, setS] = useState<S>(DEFAULT_SETTINGS)
   const [msg, setMsg] = useState('')
+  const [garden, setGarden] = useState<GardenState | null>(null)
+  const [editGoal, setEditGoal] = useState(false)
 
   useEffect(() => {
     db.settings.get('main').then((x) => x && setS(x))
+    syncGarden().then(() => loadGarden()).then(setGarden)
   }, [])
 
   async function save(patch: Partial<S>) {
@@ -36,6 +42,7 @@ export default function Settings() {
     if (!confirm('Delete all progress and start over?')) return
     await db.cards.clear()
     await db.reviews.clear()
+    await db.garden.clear()
     location.reload()
   }
 
@@ -84,6 +91,45 @@ export default function Settings() {
           {s.remindersEnabled ? 'Turn reminders off' : 'Turn reminders on'}
         </button>
         {msg && <p className="text-sm muted">{msg}</p>}
+      </div>
+
+      <div className="card p-4 space-y-3">
+        <div className="font-semibold text-sm">Garden</div>
+        {garden ? (
+          <>
+            <div className="text-sm">
+              Goal for this seed: <b>{garden.goalWords} words</b>
+              {garden.finishedTrees.length > 0 && <span className="muted"> · {garden.finishedTrees.length} finished tree{garden.finishedTrees.length > 1 ? 's' : ''}</span>}
+            </div>
+            {editGoal ? (
+              <GoalPicker
+                title="New goal"
+                note="Your plant keeps the stage it has already reached."
+                initial={garden.goalWords}
+                onPick={async (g) => {
+                  await setGoal(g)
+                  setGarden({ ...garden, goalWords: g })
+                  setEditGoal(false)
+                }}
+              />
+            ) : (
+              <button className="btn ghost w-full" onClick={() => setEditGoal(true)}>Change goal</button>
+            )}
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={!garden.soundMuted}
+                onChange={async (e) => {
+                  await setMuted(!e.target.checked)
+                  setGarden({ ...garden, soundMuted: !e.target.checked })
+                }}
+              />
+              Nature sounds (birds, wind, crickets)
+            </label>
+          </>
+        ) : (
+          <GoalPicker title="Pick a goal to plant your first seed" onPick={async (g) => { await startGarden(g); setGarden(await loadGarden()) }} />
+        )}
       </div>
 
       <button className="btn ghost w-full" onClick={resetAll}>Reset all progress</button>

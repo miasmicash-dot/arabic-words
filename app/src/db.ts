@@ -1,5 +1,6 @@
 import Dexie, { type EntityTable } from 'dexie'
 import type { Card as FsrsCard } from 'ts-fsrs'
+import type { GardenState } from './garden/state'
 
 export type WordType = 'noun' | 'verb' | 'adj' | 'phrase' | 'number'
 export type Direction = 'en-ar' | 'ar-en'
@@ -72,11 +73,18 @@ export const DEFAULT_SETTINGS: Settings = {
   directions: ['en-ar', 'ar-en'],
 }
 
+/** The single persisted garden (gamified home scene). */
+export interface GardenRecord {
+  id: 'main'
+  state: GardenState
+}
+
 class VocabDB extends Dexie {
   words!: EntityTable<Word, 'id'>
   cards!: EntityTable<StudyCard, 'id'>
   reviews!: EntityTable<ReviewLog, 'id'>
   settings!: EntityTable<Settings, 'id'>
+  garden!: EntityTable<GardenRecord, 'id'>
 
   constructor() {
     super('arabic-srs')
@@ -85,6 +93,14 @@ class VocabDB extends Dexie {
       cards: 'id, wordId, direction, due, introduced',
       reviews: '++id, cardId, wordId, reviewedAt',
       settings: 'id',
+    })
+    // v2 adds the garden table. The other stores are unchanged, so existing data on the phone is kept.
+    this.version(2).stores({
+      words: 'id, type, frequencyRank, topic',
+      cards: 'id, wordId, direction, due, introduced',
+      reviews: '++id, cardId, wordId, reviewedAt',
+      settings: 'id',
+      garden: 'id',
     })
   }
 }

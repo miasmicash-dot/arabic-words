@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { HashRouter, NavLink, Route, Routes } from 'react-router-dom'
 import { boot } from './boot'
 import Home from './pages/Home'
@@ -6,6 +6,8 @@ import Review from './pages/Review'
 import Progress from './pages/Progress'
 import Words from './pages/Words'
 import Settings from './pages/Settings'
+
+const GardenPreview = lazy(() => import('./pages/GardenPreview'))
 
 const tabs = [
   ['/', 'Home'],
@@ -29,6 +31,7 @@ export default function App() {
           <Route path="/progress" element={<Progress />} />
           <Route path="/words" element={<Words />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/garden-preview" element={<Suspense fallback={null}><GardenPreview /></Suspense>} />
         </Routes>
       </div>
       <nav

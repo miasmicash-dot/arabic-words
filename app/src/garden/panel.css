@@ -1,0 +1,21 @@
+.gp-skeleton { width: 100%; aspect-ratio: 1000 / 720; border-radius: 18px; background: linear-gradient(#cfe6ea, #eef0d6 55%, #a8d06f 56%); opacity: .6; }
+.gp-mute {
+  position: absolute; top: 8px; right: 8px; width: 38px; height: 38px; border-radius: 999px;
+  background: rgba(255, 255, 255, .72); border: 1px solid rgba(0, 0, 0, .08); font-size: 18px; line-height: 1;
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); cursor: pointer;
+}
+.gp-bar { height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.gp-bar > div { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #8cc63f, #3f9b4f); transition: width 1.2s ease; }
+
+.gp-cele {
+  position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 24px;
+  background: rgba(10, 20, 15, .45); animation: gp-fade .4s ease both; overflow: hidden;
+}
+.gp-cele-card { max-width: 340px; width: 100%; padding: 24px; text-align: center; display: grid; gap: 8px; animation: gp-pop .6s cubic-bezier(.2, 1.4, .4, 1) both; }
+.gp-bit { position: absolute; top: -40px; font-size: 26px; animation: gp-fall 3s linear infinite; pointer-events: none; }
+.gp-bit-1 { font-size: 20px; }
+.gp-bit-2 { font-size: 32px; }
+@keyframes gp-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes gp-pop { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+@keyframes gp-fall { from { transform: translateY(0) rotate(0deg); } to { transform: translateY(110vh) rotate(540deg); } }
+@media (prefers-reduced-motion: reduce) { .gp-bit { display: none; } .gp-cele-card { animation: none; } }

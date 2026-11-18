@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { db, DEFAULT_SETTINGS } from '../db'
 import { getSession, getStats, type Stats } from '../scheduler'
+import GardenPanel from '../garden/GardenPanel'
 
 export default function Home() {
   const [stats, setStats] = useState<Stats | null>(null)
@@ -23,13 +24,14 @@ export default function Home() {
   return (
     <div className="space-y-4">
       <h1 className="text-2xl font-bold">مرحباً 👋</h1>
+      <GardenPanel />
       <div className="card p-6 text-center space-y-3">
         <div className="text-5xl font-bold">{total}</div>
         <div className="muted">
           {due} to review · {fresh} new today
         </div>
         <Link to="/review" className="btn inline-block" style={{ pointerEvents: total ? 'auto' : 'none', opacity: total ? 1 : 0.5 }}>
-          {total ? 'Start review' : 'All done for today 🎉'}
+          {total ? 'Start review 💧' : 'All done for today 🎉'}
         </Link>
       </div>
       {stats && (
