@@ -4,6 +4,7 @@ import { memo, useEffect, useMemo, useState } from 'react'
 import { brush, mix, rng, type P } from './ink'
 import { LINES, yAt } from './Landscape'
 import './critters.css'
+import { Nova, NOVA } from './Critters'
 import type { Palette } from './palette'
 
 type Shade = (c: string) => string
@@ -233,9 +234,46 @@ export function Ferret({ s, ink, act }: { s: Shade; ink: string; act?: boolean }
   )
 }
 
-export type AnimalKind = 'fox' | 'rabbit' | 'deer' | 'squirrel' | 'hedgehog' | 'horse' | 'foal' | 'elephant' | 'calf' | 'skunk' | 'ferret'
+/** Nova walking: a small dilute-calico cat, white with grey and cream patches, tail held up. */
+export function NovaWalk({ s, ink }: { s: Shade; ink: string }) {
+  const sid = useSid()
+  const w = s(NOVA.white)
+  const g = s(NOVA.grey)
+  const cr = s(NOVA.cream)
+  const body = 'M-20,-13 C-21,-22 -6,-24 8,-23 C16,-22 20,-18 19,-13 C18,-9 14,-8 10,-8 L-14,-8 C-18,-8 -20,-10 -20,-13Z'
+  return (
+    <g className="gs-bob gs-bob-slow">
+      <defs><clipPath id={`${sid}-nw`}><path d={body} /></clipPath></defs>
+      <Leg d="M-15,-9 L-17,0" cls="gs-leg" delay={0} color={g} />
+      <Leg d="M11,-9 L12,0" cls="gs-leg" delay={-0.25} color={w} />
+      <path d="M-19,-15 C-27,-18 -30,-28 -26,-35 C-25,-37 -23,-36 -23.6,-34" stroke={g} strokeWidth={3.4} fill="none" strokeLinecap="round" className="gs-tail" />
+      <path d={body} fill={w} />
+      <g clipPath={`url(#${sid}-nw)`}>
+        <path d="M-22,-26 C-14,-26 -4,-27 2,-22 C0,-17 -8,-15 -14,-15 C-18,-15 -22,-17 -22,-20Z" fill={g} />
+        <path d="M2,-24 C8,-25 14,-23 16,-19 C12,-16 6,-17 3,-19Z" fill={cr} />
+        <path d="M-22,-14 C-18,-16 -12,-14 -11,-10 C-14,-7 -20,-7 -22,-9Z" fill={cr} />
+      </g>
+      <path d={body} fill="none" stroke={ink} strokeWidth={1.2} />
+      <Leg d="M-19,-9 L-20,0" cls="gs-leg" delay={-0.25} color={w} />
+      <Leg d="M15,-9 L15,0" cls="gs-leg" delay={0} color={w} />
+      {/* head */}
+      <path d="M17,-26 L18,-33 L22,-28Z" fill={g} stroke={ink} strokeWidth={0.9} strokeLinejoin="round" />
+      <path d="M24,-28 L28,-33 L28.4,-25Z" fill={cr} stroke={ink} strokeWidth={0.9} strokeLinejoin="round" />
+      <path d="M15,-21 C15,-27 19,-29 23,-29 C28,-29 31,-26 31,-21 C31,-17 28,-15 24,-15 C19,-15 15,-17 15,-21Z" fill={w} />
+      <path d="M15,-21 C15,-27 19,-29 22.4,-29 C22,-25 21,-22 19,-20 C17,-19.6 15.6,-20 15,-21Z" fill={g} />
+      <path d="M23.4,-29 C27,-29 30,-27 30.6,-23 C28,-22.6 25.6,-24 24.4,-26Z" fill={cr} />
+      <path d="M15,-21 C15,-27 19,-29 23,-29 C28,-29 31,-26 31,-21 C31,-17 28,-15 24,-15 C19,-15 15,-17 15,-21Z" fill="none" stroke={ink} strokeWidth={1.1} />
+      <ellipse cx={26.6} cy={-22.6} rx={1.3} ry={1.5} fill={NOVA.eye} stroke={ink} strokeWidth={0.4} />
+      <path d="M26.8,-23.8 L26.8,-21.4" stroke="#141414" strokeWidth={0.8} strokeLinecap="round" />
+      <path d="M30.2,-19.6 L31.4,-19.6 L30.8,-18.8Z" fill={s('#d98a92')} />
+      <path d="M29,-18.6 l6,-0.8 M29,-18 l6,0.8" stroke={ink} strokeWidth={0.3} opacity={0.7} />
+    </g>
+  )
+}
+
+export type AnimalKind = 'nova' | 'fox' | 'rabbit' | 'deer' | 'squirrel' | 'hedgehog' | 'horse' | 'foal' | 'elephant' | 'calf' | 'skunk' | 'ferret'
 /** Animals that wander along the path. */
-export const ANIMALS: AnimalKind[] = ['rabbit', 'hedgehog', 'fox', 'squirrel', 'deer', 'ferret', 'skunk']
+export const ANIMALS: AnimalKind[] = ['rabbit', 'nova', 'hedgehog', 'fox', 'squirrel', 'deer', 'ferret', 'skunk']
 
 type Line = 'path' | 'mid' | 'far'
 const SPEC: Record<AnimalKind, { line: Line; scale: number; dur: number }> = {
@@ -243,6 +281,7 @@ const SPEC: Record<AnimalKind, { line: Line; scale: number; dur: number }> = {
   rabbit: { line: 'path', scale: 0.95, dur: 15 },
   deer: { line: 'mid', scale: 0.55, dur: 34 },
   squirrel: { line: 'path', scale: 1, dur: 10 },
+  nova: { line: 'path', scale: 0.85, dur: 20 },
   hedgehog: { line: 'path', scale: 0.9, dur: 30 },
   horse: { line: 'mid', scale: 0.42, dur: 15 },
   foal: { line: 'mid', scale: 0.27, dur: 15 },
@@ -267,7 +306,7 @@ export const PATH_CSS = (['path', 'mid', 'far'] as const)
   .join('\n')
 
 /** How long each animal stops for when tapped (ms). */
-const REACT_MS: Partial<Record<AnimalKind, number>> = { skunk: 3600, ferret: 1800, horse: 1600, foal: 1600, elephant: 2400, calf: 1200, hedgehog: 2400, fox: 1200, rabbit: 900, deer: 1600, squirrel: 900 }
+const REACT_MS: Partial<Record<AnimalKind, number>> = { nova: 5200, skunk: 3600, ferret: 1800, horse: 1600, foal: 1600, elephant: 2400, calf: 1200, hedgehog: 2400, fox: 1200, rabbit: 900, deer: 1600, squirrel: 900 }
 
 function Body({ kind, pal, act }: { kind: AnimalKind; pal: Palette; act: boolean }) {
   const s = pal.shade
@@ -292,6 +331,18 @@ function Body({ kind, pal, act }: { kind: AnimalKind; pal: Palette; act: boolean
       return <Deer s={s} ink={ink} />
     case 'squirrel':
       return <g className={act ? 'gs-bighop' : undefined}><Squirrel s={s} ink={ink} /></g>
+    case 'nova':
+      // tapped: she sits down right there and grooms, and a few hearts float up
+      return act ? (
+        <g>
+          <g transform="scale(0.95)"><Nova s={s} ink={ink} groom /></g>
+          {[0, 1, 2].map((i) => (
+            <path key={i} className="cr-heart" style={{ animationDelay: `${i * 0.35}s` }} transform={`translate(${(i - 1) * 9},-52)`} d="M0,3 C-6,-2 -4,-7 0,-4 C4,-7 6,-2 0,3Z" fill="#ff7a9a" stroke="#c2405f" strokeWidth={0.5} />
+          ))}
+        </g>
+      ) : (
+        <NovaWalk s={s} ink={ink} />
+      )
     case 'hedgehog':
       return <g className={act ? 'gs-curl' : undefined}><Hedgehog s={s} ink={ink} /></g>
   }

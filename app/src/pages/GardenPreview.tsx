@@ -8,9 +8,12 @@ import type { ForestTree, GardenDevOptions, GardenSceneProps, GrowthStage, Weath
 import { applyMood, moodOf, restoreMood } from '../garden/theme'
 import Whisper from '../garden/Whisper'
 import { setPlayerName } from '../intro/player'
+import { SPECIES } from '../garden/scene/Critters'
+import { celebrate } from '../confetti'
+import { RATINGS } from './Review'
 
 const WEATHERS: Weather[] = ['sunny', 'partly-cloudy', 'overcast', 'drought']
-const ANIMALS = ['fox', 'rabbit', 'deer', 'squirrel', 'hedgehog', 'skunk', 'ferret', 'horse', 'elephant'] as const
+const ANIMALS = ['nova', 'fox', 'rabbit', 'deer', 'squirrel', 'hedgehog', 'skunk', 'ferret', 'horse', 'elephant'] as const
 const FAR = ['horses', 'elephants', 'chase'] as const
 const EGGS_KEY = 'garden-eggs-playground'
 const TIMES: [string, number][] = [
@@ -80,6 +83,8 @@ export default function GardenPreview() {
   const [eggsVersion, setEggsVersion] = useState(0)
   const [big, setBig] = useState(q.get('big') === '1')
   const [cover, setCover] = useState(q.get('cover') === '1')
+  const [egg, setEgg] = useState<GardenDevOptions['egg']>()
+  const [apples, setApples] = useState(0)
 
   // time-lapse: speed = game hours per real second
   useEffect(() => {
@@ -111,7 +116,7 @@ export default function GardenPreview() {
     return out
   }, [forest])
 
-  const dev: GardenDevOptions = { aurora, shader, moonPhase: phase ?? undefined, today, eggsKey: EGGS_KEY, walker, far, squirrel, eggsVersion, occlusion: cover ? 1 : undefined }
+  const dev: GardenDevOptions = { aurora, shader, moonPhase: phase ?? undefined, today, eggsKey: EGGS_KEY, walker, far, squirrel, eggsVersion, occlusion: cover ? 1 : undefined, egg, apples }
 
   // preview the whole app's colours for this garden while the playground is open
   const [themeAll, setThemeAll] = useState(true)
@@ -130,7 +135,9 @@ export default function GardenPreview() {
     const items: { label: string; p: SP }[] =
       gallery === 'stages'
         ? ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] as GrowthStage[]).map((s) => ({ label: `stage ${s}`, p: { stage: s, trees: s === 11 ? demoForest : [] } }))
-        : gallery === 'weather'
+        : gallery === 'sky'
+          ? SKIES.flatMap((k) => [11, 21.5].map((t) => ({ label: `${k} ${t}h`, p: { sky: k, timeOfDay: t } as SP })))
+          : gallery === 'weather'
           ? WEATHERS.flatMap((w) => [11, 21.5].map((t) => ({ label: `${w} ${t}h`, p: { weather: w, timeOfDay: t } as SP })))
           : gallery === 'time'
             ? TIMES.map(([n, t]) => ({ label: n, p: { timeOfDay: t } as SP }))
@@ -139,7 +146,7 @@ export default function GardenPreview() {
       <div className="grid grid-cols-2 gap-2">
         {items.map((it) => (
           <div key={it.label}>
-            <GardenScene stage={stage} health={health} dead={dead} weather={weather} timeOfDay={time} trees={trees} muted waterPulse={0} dev={dev} {...it.p} />
+            <GardenScene stage={stage} health={health} dead={dead} weather={weather} sky={sky} timeOfDay={time} trees={trees} muted waterPulse={0} dev={dev} {...it.p} />
             <div className="text-xs muted">{it.label}</div>
           </div>
         ))}
@@ -203,9 +210,10 @@ export default function GardenPreview() {
         </div>
       </Section>
 
-      <Section title="Weather">
+      <Section title="Study activity and real weather">
+        <div className="text-xs muted">How well she has been studying. Only a long break (drought) changes the look: dry ground.</div>
         <Chips items={WEATHERS} value={weather} onPick={setWeather} />
-        <div className="text-xs muted">Real sky (looks only)</div>
+        <div className="text-xs muted">Real local weather (looks only, from her location when allowed): GPU rain, snow and wind gusts. A rainbow appears when rain clears in the day.</div>
         <Chips items={SKIES} value={sky} onPick={setSky} />
       </Section>
 
@@ -236,13 +244,22 @@ export default function GardenPreview() {
       </Section>
 
       <Section title="Wildlife">
-        <Chips items={ANIMALS} onPick={(k) => setWalker({ kind: k, id: Date.now() })} label={(k) => `${{ fox: '🦊', rabbit: '🐇', deer: '🦌', squirrel: '🐿️', hedgehog: '🦔', skunk: '🦨', ferret: '🐾', horse: '🐎', elephant: '🐘' }[k]} ${k}`} />
+        <Chips items={ANIMALS} onPick={(k) => setWalker({ kind: k, id: Date.now() })} label={(k) => `${{ nova: '🐈', fox: '🦊', rabbit: '🐇', deer: '🦌', squirrel: '🐿️', hedgehog: '🦔', skunk: '🦨', ferret: '🐾', horse: '🐎', elephant: '🐘' }[k]} ${k}`} />
         <div className="text-sm font-semibold pt-1">In the distance</div>
         <Chips items={FAR} onPick={(k) => setFar({ event: k, id: Date.now() })} label={(k) => ({ horses: '🐎 mare & foal', elephants: '🐘 elephant family', chase: '🦊🐇 a chase' })[k]} />
+        <div className="text-sm font-semibold pt-1">Around the plant</div>
+        <div className="flex flex-wrap gap-2">
+          <button className="btn ghost" onClick={() => { setStage(11); setApples(Date.now()) }}>🍎 Horse eats fallen apples (full-grown tree)</button>
+        </div>
         <p className="text-xs muted">
-          Tap any animal and it reacts (the skunk is a bad idea). The monkeys in the far trees and the frog are tappable too. The healthier the garden, the more
-          animals come: below about 85% health the big animals, monkeys and chases stay away; below 35% nothing comes at all.
+          Tap any animal and it reacts: the skunk stomps angrily, then sprays. Nova wanders by now and then like the other animals; tap her and she sits down to groom, with a few hearts. The frog catches (silent) flies by itself.
+          Animals depend on health only: below about 85% the big animals, monkeys and chases stay away, below 35% hardly anything comes, and at night only bats, a moth,
+          the badger, the owl and fireflies are out.
         </p>
+        <details className="text-xs">
+          <summary className="cursor-pointer font-semibold">All {SPECIES.length} species in the garden</summary>
+          <p className="muted pt-1">{SPECIES.join(' · ')}</p>
+        </details>
       </Section>
 
       <Section title={`Day-to-day stories · ${dayOffset === 0 ? 'today' : `day +${dayOffset}`} (${today})`}>
@@ -273,6 +290,39 @@ export default function GardenPreview() {
           </li>
           <li>🐌 A snail crosses the path on grey days. 🐸 Tap the frog. 🦉 Tap the owl at night.</li>
         </ul>
+      </Section>
+
+      <Section title="Hidden secrets">
+        <div className="flex flex-wrap gap-2">
+          <button className="btn ghost" onClick={() => setEgg({ kind: 'rainbow', id: Date.now() })}>🌈 Rainbow</button>
+          <button className="btn ghost" onClick={() => setEgg({ kind: 'hearts', id: Date.now() })}>💕 Nova's hearts</button>
+          <button className="btn ghost" onClick={() => setEgg({ kind: 'hay', id: Date.now() })}>🌾 Hay shower</button>
+          <button className="btn ghost" onClick={() => setEgg({ kind: 'clover', id: Date.now() })}>🍀 Lucky clover</button>
+          <button className="btn ghost" onClick={() => { try { localStorage.removeItem('garden-clover') } catch { /* ignore */ } location.reload() }}>Hide the clover again</button>
+        </div>
+        <ul className="text-xs muted space-y-1">
+          <li>🌈 Tap the plant 7 times quickly, or wait for real rain to clear in the day.</li>
+          <li>💕 Tap Nova. 🌾 Tap the farmer's hat on the fence 3 times (it spins on every tap).</li>
+          <li>🍀 Find the four-leaf clover in the long grass, bottom right.</li>
+          <li>🐒 Tap the monkeys, 🐸 the frog, 🦉 the owl at night, and any animal walking by.</li>
+        </ul>
+      </Section>
+
+      <Section title="Rewards and lessons">
+        <div className="flex flex-wrap gap-2">
+          <button className="btn ghost" onClick={(e) => celebrate('small', { x: e.clientX, y: e.clientY })}>🎉 Small win (new word)</button>
+          <button className="btn ghost" onClick={() => celebrate('big')}>🎊 Big win (session done, new stage, new pack)</button>
+          <button className="btn ghost" onClick={() => window.dispatchEvent(new Event('show-tutorial'))}>📖 Show the welcome tour</button>
+        </div>
+        <div className="grid grid-cols-2 gap-2">
+          {([1, 2, 3, 4] as const).map((g) => (
+            <div key={g} className="rate" style={{ ['--c' as string]: RATINGS[g].color, cursor: 'default' }}>
+              <b>{RATINGS[g].icon} {RATINGS[g].label}</b>
+              <small>{RATINGS[g].help}</small>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs muted">The answer buttons as they look in a review. A word never comes back sooner than an hour.</p>
       </Section>
 
       <Section title={`Mood of the whole app · ${mood.mood}`}>
@@ -322,7 +372,7 @@ export default function GardenPreview() {
           <button className="btn ghost" onClick={() => setMuted((m) => !m)}>{muted ? '🔇 Sound off' : '🔊 Sound on'}</button>
         </div>
         <div className="flex flex-wrap gap-2 text-xs">
-          {['stages', 'weather', 'time', 'health'].map((g) => (
+          {['stages', 'weather', 'sky', 'time', 'health'].map((g) => (
             <a key={g} className="btn ghost" style={{ padding: '6px 10px' }} href={`#/garden-preview?gallery=${g}&stage=${stage}`} onClick={() => setTimeout(() => location.reload(), 0)}>
               Gallery: {g}
             </a>

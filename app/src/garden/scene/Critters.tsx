@@ -452,12 +452,12 @@ function Bat({ ink }: { ink: string }) {
 // ---------- Nova the cat ----------
 
 /** Nova is a dilute calico: a white cat with soft blue-grey and cream (blonde) patches, and green eyes. */
-const NOVA = { white: '#f6f2ec', grey: '#9ea3aa', greyDark: '#83888f', cream: '#ecc995', eye: '#9cc46a' }
+export const NOVA = { white: '#f6f2ec', grey: '#9ea3aa', greyDark: '#83888f', cream: '#ecc995', eye: '#9cc46a' }
 const BODY = 'M-13,0 C-16,-10 -12,-22 -2,-26 C6,-28 12,-22 12,-12 C12,-6 11,-2 9,0Z'
 const HAUNCH = 'M-14,0 C-16,-8 -10,-13 -4,-12 C1,-11 2,-5 0,0Z'
 const HEAD = 'M-2.4,-32 C-2.4,-38 2,-41.4 7,-41.4 C12.4,-41.4 16.4,-37.6 16.4,-32 C16.4,-26.6 12.4,-23.4 7,-23.4 C1.8,-23.4 -2.4,-26.6 -2.4,-32Z'
 
-function Nova({ s, ink, groom }: Art & { groom: boolean }) {
+export function Nova({ s, ink, groom }: Art & { groom: boolean }) {
   const sid = useSid()
   const w = s(NOVA.white)
   const g = s(NOVA.grey)
@@ -596,7 +596,7 @@ function Apples({ n, s, ink }: Art & { n: number }) {
 }
 
 /** Once the apple tree is fully grown, apples fall and now and then a horse wanders over to eat them. */
-function AppleVisit({ pal, on }: { pal: Palette; on: boolean }) {
+function AppleVisit({ pal, on, now }: { pal: Palette; on: boolean; now?: number }) {
   const [apples, setApples] = useState(5)
   const [horse, setHorse] = useState(false)
   useEffect(() => {
@@ -617,9 +617,9 @@ function AppleVisit({ pal, on }: { pal: Palette; on: boolean }) {
         t = setTimeout(cycle, 45000 + Math.random() * 30000)
       }, 14000)
     }
-    t = setTimeout(cycle, 8000)
+    t = setTimeout(cycle, now ? 0 : 8000)
     return () => clearTimeout(t)
-  }, [on])
+  }, [on, now])
   const art = { s: pal.shade, ink: pal.c.ink }
   return (
     <g>
@@ -674,18 +674,11 @@ export function FarLife({ pal, life, night, reduced }: { pal: Palette; life: num
 
 // ---------- the whole cast ----------
 
-export function Critters({ pal, life, night, stage, dead, reduced, onEgg }: { pal: Palette; life: number; night: number; stage: number; dead: boolean; reduced: boolean; onEgg: (name: string) => void }) {
+export function Critters({ pal, life, night, stage, dead, reduced, onEgg, appleNow }: { pal: Palette; life: number; night: number; stage: number; dead: boolean; reduced: boolean; onEgg: (name: string) => void; appleNow?: number }) {
   const art = { s: pal.shade, ink: pal.c.ink }
   const ink = pal.c.ink
   const nightOut = night > 0.6
   const [hat, setHat] = useState(0)
-  const [groom, setGroom] = useState(true)
-  // Nova grooms for a while, then looks around, then grooms again
-  useEffect(() => {
-    if (reduced) return
-    const t = setInterval(() => setGroom((g) => !g), 7000)
-    return () => clearInterval(t)
-  }, [reduced])
   if (reduced) return null
   return (
     <g>
@@ -729,15 +722,7 @@ export function Critters({ pal, life, night, stage, dead, reduced, onEgg }: { pa
       {life >= 0.5 && <At x={150} y={572} k={2.1}><Toad {...art} /></At>}
 
       {/* around the plant */}
-      {stage >= 10 && !dead && <AppleVisit pal={pal} on={life >= 0.6 && !nightOut} />}
-      {!dead && life >= 0.2 && (
-        <At x={540} y={590} k={1.99}>
-          <g className="gs-tap" onClick={(e) => { e.stopPropagation(); setGroom((g) => !g); onEgg('nova') }}>
-            <rect x={-16} y={-42} width={34} height={44} fill="transparent" />
-            <Nova {...art} groom={groom} />
-          </g>
-        </At>
-      )}
+      {stage >= 10 && !dead && <AppleVisit pal={pal} on={(life >= 0.6 && !nightOut) || !!appleNow} now={appleNow} />}
       {!nightOut && life >= 0.6 && <At x={690} y={520} k={2.47}><Hummingbird ink={ink} /></At>}
 
       {/* foreground */}

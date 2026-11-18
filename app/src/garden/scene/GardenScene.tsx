@@ -217,6 +217,9 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
     lastSky.current = sky
   }, [sky, day])
   useEffect(() => {
+    if (dev?.egg) setEggFx(dev.egg)
+  }, [dev?.egg])
+  useEffect(() => {
     if (!eggFx) return
     const t = setTimeout(() => setEggFx(null), eggFx.kind === 'rainbow' ? 10500 : 2600)
     return () => clearTimeout(t)
@@ -401,7 +404,7 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
               />
             )}
             {nightLife && !reduced && vital > 0.5 && <Fireflies />}
-            <Critters pal={pal} life={vital} night={night} stage={stage} dead={dead} reduced={reduced} onEgg={onEgg} />
+            <Critters pal={pal} life={vital} night={night} stage={stage} dead={dead} reduced={reduced} onEgg={onEgg} appleNow={dev?.apples} />
             {!reduced && <EggEffects fx={eggFx} />}
             {weather === 'drought' && !reduced && <Dust />}
             {!reduced && <Swirls count={Math.max(0, swirlCount)} ink={pal.c.ink} />}
