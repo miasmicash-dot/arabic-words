@@ -1,0 +1,2968 @@
+[
+ {
+  "id": "n-water",
+  "type": "noun",
+  "english": "water",
+  "arabic": [
+   "ماء"
+  ],
+  "translit": [
+   "maa'a"
+  ]
+ },
+ {
+  "id": "v-eat",
+  "type": "verb",
+  "english": "eat",
+  "arabic": [
+   "أكل"
+  ],
+  "translit": [],
+  "conjugations": {
+   "I": "أنا آكل",
+   "he": "هو يأكل",
+   "she": "هي تأكل",
+   "we": "نحن نأكل",
+   "they": "هم يأكلون"
+  }
+ },
+ {
+  "id": "a-gait",
+  "type": "adj",
+  "english": "gait",
+  "arabic": [
+   "مشية"
+  ],
+  "translit": []
+ },
+ {
+  "id": "p-whats-your-name",
+  "type": "phrase",
+  "english": "whats your name?",
+  "arabic": [
+   "ما اسمك؟"
+  ],
+  "translit": [
+   "ma ismuka"
+  ]
+ },
+ {
+  "id": "num-1",
+  "type": "number",
+  "english": "1",
+  "arabic": [
+   "واحد"
+  ],
+  "translit": [
+   "wahid"
+  ]
+ },
+ {
+  "id": "n-sky",
+  "type": "noun",
+  "english": "sky",
+  "arabic": [
+   "سماء"
+  ],
+  "translit": [
+   "samaa'a"
+  ]
+ },
+ {
+  "id": "v-see",
+  "type": "verb",
+  "english": "see",
+  "arabic": [
+   "رأى"
+  ],
+  "translit": [],
+  "conjugations": {
+   "I": "أنا أرى",
+   "he": "هو يرى",
+   "she": "هي ترى",
+   "we": "نحن نرى",
+   "they": "هم يرون"
+  }
+ },
+ {
+  "id": "a-a-lot",
+  "type": "adj",
+  "english": "a lot",
+  "arabic": [
+   "كثيراً"
+  ],
+  "translit": []
+ },
+ {
+  "id": "p-what-is-this",
+  "type": "phrase",
+  "english": "what is this?",
+  "arabic": [
+   "ما هذا؟"
+  ],
+  "translit": [
+   "ma hadha"
+  ]
+ },
+ {
+  "id": "num-2",
+  "type": "number",
+  "english": "2",
+  "arabic": [
+   "إثنان"
+  ],
+  "translit": [
+   "ithnaan"
+  ]
+ },
+ {
+  "id": "n-ice-cream",
+  "type": "noun",
+  "english": "ice cream",
+  "arabic": [
+   "مثلجات",
+   "أيس كريم"
+  ],
+  "translit": [
+   "muthallajaatun"
+  ]
+ },
+ {
+  "id": "v-walk",
+  "type": "verb",
+  "english": "walk",
+  "arabic": [
+   "مشي"
+  ],
+  "translit": [],
+  "conjugations": {
+   "I": "أنا أمشي",
+   "he": "هو يمشي",
+   "she": "هي تمشي",
+   "we": "نحن نمشي",
+   "they": "هم يمشون"
+  }
+ },
+ {
+  "id": "a-few",
+  "type": "adj",
+  "english": "few",
+  "arabic": [
+   "قليل"
+  ],
+  "translit": []
+ },
+ {
+  "id": "p-is-this",
+  "type": "phrase",
+  "english": "is this...",
+  "arabic": [
+   "اهذا؟"
+  ],
+  "translit": [
+   "ahadha"
+  ]
+ },
+ {
+  "id": "num-3",
+  "type": "number",
+  "english": "3",
+  "arabic": [
+   "ثلاثة"
+  ],
+  "translit": [
+   "thalatha"
+  ]
+ },
+ {
+  "id": "n-book",
+  "type": "noun",
+  "english": "book",
+  "arabic": [
+   "كتاب"
+  ],
+  "translit": [
+   "kitab"
+  ]
+ },
+ {
+  "id": "v-write",
+  "type": "verb",
+  "english": "write",
+  "arabic": [
+   "كتب"
+  ],
+  "translit": [],
+  "conjugations": {
+   "I": "أنا أكتب",
+   "he": "هو يكتب",
+   "she": "هي تكتب",
+   "we": "نحن نكتب",
+   "they": "هم يكتبون"
+  }
+ },
+ {
+  "id": "p-who-is-this",
+  "type": "phrase",
+  "english": "who is this?",
+  "arabic": [
+   "من هذا؟"
+  ],
+  "translit": [
+   "man hadha"
+  ]
+ },
+ {
+  "id": "num-4",
+  "type": "number",
+  "english": "4",
+  "arabic": [
+   "أربعة"
+  ],
+  "translit": [
+   "arba'a"
+  ]
+ },
+ {
+  "id": "n-door",
+  "type": "noun",
+  "english": "door",
+  "arabic": [
+   "باب"
+  ],
+  "translit": [
+   "baab"
+  ]
+ },
+ {
+  "id": "v-drink",
+  "type": "verb",
+  "english": "drink",
+  "arabic": [
+   "شرب"
+  ],
+  "translit": [],
+  "conjugations": {
+   "I": "أنا أشرب",
+   "he": "هو يشرب",
+   "she": "هي تشرب",
+   "we": "نحن نشرب",
+   "they": "هم يشربون"
+  }
+ },
+ {
+  "id": "p-what-is-that",
+  "type": "phrase",
+  "english": "what is that?",
+  "arabic": [
+   "ما ذلك؟"
+  ],
+  "translit": [
+   "ma dhalika"
+  ]
+ },
+ {
+  "id": "num-5",
+  "type": "number",
+  "english": "5",
+  "arabic": [
+   "خمسة"
+  ],
+  "translit": [
+   "khamsa"
+  ]
+ },
+ {
+  "id": "n-window",
+  "type": "noun",
+  "english": "window",
+  "arabic": [
+   "شباك",
+   "نافذة"
+  ],
+  "translit": [
+   "shubaaq",
+   "naafidha"
+  ]
+ },
+ {
+  "id": "v-standing",
+  "type": "verb",
+  "english": "standing",
+  "arabic": [
+   "واقف"
+  ],
+  "translit": [],
+  "conjugations": {
+   "I": "أنا أقف",
+   "he": "هو يقف",
+   "she": "هي تقف",
+   "we": "نحن نقف",
+   "they": "هم يقفون"
+  }
+ },
+ {
+  "id": "p-where",
+  "type": "phrase",
+  "english": "where?",
+  "arabic": [
+   "أين؟"
+  ],
+  "translit": [
+   "ayna"
+  ]
+ },
+ {
+  "id": "num-6",
+  "type": "number",
+  "english": "6",
+  "arabic": [
+   "ستة"
+  ],
+  "translit": [
+   "sitta"
+  ]
+ },
+ {
+  "id": "n-tree",
+  "type": "noun",
+  "english": "tree",
+  "arabic": [
+   "شجرة"
+  ],
+  "translit": [
+   "shajarah"
+  ]
+ },
+ {
+  "id": "v-sitting",
+  "type": "verb",
+  "english": "sitting",
+  "arabic": [
+   "جالس"
+  ],
+  "translit": [],
+  "conjugations": {
+   "I": "أنا أجلس",
+   "he": "هو يجلس",
+   "she": "هي تجلس",
+   "we": "نحن نجلس",
+   "they": "هم يجلسون"
+  }
+ },
+ {
+  "id": "p-what",
+  "type": "phrase",
+  "english": "what?",
+  "arabic": [
+   "ماذا؟"
+  ],
+  "translit": [
+   "madha"
+  ]
+ },
+ {
+  "id": "num-7",
+  "type": "number",
+  "english": "7",
+  "arabic": [
+   "سبعة"
+  ],
+  "translit": [
+   "saba'a"
+  ]
+ },
+ {
+  "id": "n-nose",
+  "type": "noun",
+  "english": "nose",
+  "arabic": [
+   "أنف"
+  ],
+  "translit": [
+   "anf"
+  ]
+ },
+ {
+  "id": "v-working",
+  "type": "verb",
+  "english": "working",
+  "arabic": [
+   "عمل"
+  ],
+  "translit": [],
+  "conjugations": {
+   "I": "أنا أعمل",
+   "he": "هو يعمل",
+   "she": "هي تعمل",
+   "we": "نحن نعمل",
+   "they": "هم يعملون"
+  }
+ },
+ {
+  "id": "p-who",
+  "type": "phrase",
+  "english": "who?",
+  "arabic": [
+   "من؟"
+  ],
+  "translit": [
+   "man"
+  ]
+ },
+ {
+  "id": "num-8",
+  "type": "number",
+  "english": "8",
+  "arabic": [
+   "ثمانية"
+  ],
+  "translit": [
+   "thamaniya"
+  ]
+ },
+ {
+  "id": "n-hand",
+  "type": "noun",
+  "english": "hand",
+  "arabic": [
+   "يد"
+  ],
+  "translit": [
+   "yadd"
+  ]
+ },
+ {
+  "id": "v-sweep",
+  "type": "verb",
+  "english": "sweep",
+  "arabic": [
+   "كنس"
+  ],
+  "translit": [],
+  "conjugations": {
+   "I": "أنا أكنس",
+   "he": "هو يكتسح",
+   "she": "هي تكنس",
+   "we": "نحن نكنس",
+   "they": "هم يكتسحون"
+  }
+ },
+ {
+  "id": "p-where-are-you-from",
+  "type": "phrase",
+  "english": "where are you from?",
+  "arabic": [
+   "من أين أنت؟"
+  ],
+  "translit": [
+   "min ayna anta/ anti"
+  ]
+ },
+ {
+  "id": "num-9",
+  "type": "number",
+  "english": "9",
+  "arabic": [
+   "تسعة"
+  ],
+  "translit": [
+   "tiss'a"
+  ]
+ },
+ {
+  "id": "n-ear",
+  "type": "noun",
+  "english": "ear",
+  "arabic": [
+   "أذن"
+  ],
+  "translit": [
+   "udhun"
+  ]
+ },
+ {
+  "id": "p-i-am-from",
+  "type": "phrase",
+  "english": "i am from...",
+  "arabic": [
+   "أنا من ليفربول"
+  ],
+  "translit": [
+   "ana min lifferbool"
+  ]
+ },
+ {
+  "id": "num-10",
+  "type": "number",
+  "english": "10",
+  "arabic": [
+   "عشرة"
+  ],
+  "translit": [
+   "asharah"
+  ]
+ },
+ {
+  "id": "n-boy",
+  "type": "noun",
+  "english": "boy",
+  "arabic": [
+   "ولد"
+  ],
+  "translit": [
+   "walad"
+  ]
+ },
+ {
+  "id": "p-i-am-from-2",
+  "type": "phrase",
+  "english": "i am from...",
+  "arabic": [
+   "أنا من نوتنغهام."
+  ],
+  "translit": [
+   "ana min nootingham"
+  ]
+ },
+ {
+  "id": "n-school",
+  "type": "noun",
+  "english": "school",
+  "arabic": [
+   "مدرسة"
+  ],
+  "translit": [
+   "madrasa"
+  ]
+ },
+ {
+  "id": "p-did-he-go",
+  "type": "phrase",
+  "english": "did he go...",
+  "arabic": [
+   "اذهب"
+  ],
+  "translit": [
+   "adhahaba"
+  ]
+ },
+ {
+  "id": "n-doctor",
+  "type": "noun",
+  "english": "doctor",
+  "arabic": [
+   "طبيب"
+  ],
+  "translit": [
+   "thabeeb"
+  ]
+ },
+ {
+  "id": "n-bread",
+  "type": "noun",
+  "english": "bread",
+  "arabic": [
+   "خبز"
+  ],
+  "translit": [
+   "khubz"
+  ]
+ },
+ {
+  "id": "n-teacher",
+  "type": "noun",
+  "english": "teacher",
+  "arabic": [
+   "أستاذ",
+   "معلم",
+   "مدرس"
+  ],
+  "translit": [
+   "mudaris"
+  ]
+ },
+ {
+  "id": "n-bathroom",
+  "type": "noun",
+  "english": "bathroom",
+  "arabic": [
+   "حمام"
+  ],
+  "translit": [
+   "hammam"
+  ]
+ },
+ {
+  "id": "n-woman",
+  "type": "noun",
+  "english": "woman",
+  "arabic": [
+   "امرأة"
+  ],
+  "translit": [
+   "imra'aa"
+  ]
+ },
+ {
+  "id": "n-man",
+  "type": "noun",
+  "english": "man",
+  "arabic": [
+   "رجل"
+  ],
+  "translit": [
+   "rajul"
+  ]
+ },
+ {
+  "id": "n-bed",
+  "type": "noun",
+  "english": "bed",
+  "arabic": [
+   "سرير"
+  ],
+  "translit": [
+   "sareer"
+  ]
+ },
+ {
+  "id": "n-second",
+  "type": "noun",
+  "english": "second",
+  "arabic": [
+   "ثانية"
+  ],
+  "translit": [
+   "thaaniya"
+  ]
+ },
+ {
+  "id": "n-hour",
+  "type": "noun",
+  "english": "hour",
+  "arabic": [
+   "ساعة"
+  ],
+  "translit": [
+   "saa'a"
+  ]
+ },
+ {
+  "id": "n-clock",
+  "type": "noun",
+  "english": "clock",
+  "arabic": [
+   "ساعة"
+  ],
+  "translit": [
+   "saa'a"
+  ]
+ },
+ {
+  "id": "n-day",
+  "type": "noun",
+  "english": "day",
+  "arabic": [
+   "يوم"
+  ],
+  "translit": [
+   "yawm"
+  ]
+ },
+ {
+  "id": "n-week",
+  "type": "noun",
+  "english": "week",
+  "arabic": [
+   "أسبوع"
+  ],
+  "translit": [
+   "usbue"
+  ]
+ },
+ {
+  "id": "n-month",
+  "type": "noun",
+  "english": "month",
+  "arabic": [
+   "شهر"
+  ],
+  "translit": [
+   "shahr"
+  ]
+ },
+ {
+  "id": "n-year",
+  "type": "noun",
+  "english": "year",
+  "arabic": [
+   "سنة",
+   "عام"
+  ],
+  "translit": [
+   "sana",
+   "aam"
+  ]
+ },
+ {
+  "id": "n-coffee",
+  "type": "noun",
+  "english": "coffee",
+  "arabic": [
+   "قهوة"
+  ],
+  "translit": [
+   "qahwa"
+  ]
+ },
+ {
+  "id": "n-cat",
+  "type": "noun",
+  "english": "cat",
+  "arabic": [
+   "قط"
+  ],
+  "translit": [
+   "qith"
+  ]
+ },
+ {
+  "id": "n-dog",
+  "type": "noun",
+  "english": "dog",
+  "arabic": [
+   "كلب"
+  ],
+  "translit": [
+   "kalb"
+  ]
+ },
+ {
+  "id": "n-camel",
+  "type": "noun",
+  "english": "camel",
+  "arabic": [
+   "جمل"
+  ],
+  "translit": [
+   "jamal"
+  ]
+ },
+ {
+  "id": "n-horse",
+  "type": "noun",
+  "english": "horse",
+  "arabic": [
+   "حصان"
+  ],
+  "translit": [
+   "hisaan"
+  ]
+ },
+ {
+  "id": "n-donkey",
+  "type": "noun",
+  "english": "donkey",
+  "arabic": [
+   "حمار"
+  ],
+  "translit": [
+   "himaar"
+  ]
+ },
+ {
+  "id": "n-key",
+  "type": "noun",
+  "english": "key",
+  "arabic": [
+   "مفتاح"
+  ],
+  "translit": [
+   "miftaah"
+  ]
+ },
+ {
+  "id": "n-chicken",
+  "type": "noun",
+  "english": "chicken",
+  "arabic": [
+   "دجاجة"
+  ],
+  "translit": [
+   "dajjaj"
+  ]
+ },
+ {
+  "id": "n-rooster",
+  "type": "noun",
+  "english": "rooster",
+  "arabic": [
+   "ديك"
+  ],
+  "translit": [
+   "deek"
+  ]
+ },
+ {
+  "id": "n-house",
+  "type": "noun",
+  "english": "house",
+  "arabic": [
+   "بيت",
+   "منزل",
+   "دار"
+  ],
+  "translit": [
+   "manzil"
+  ]
+ },
+ {
+  "id": "n-pen",
+  "type": "noun",
+  "english": "pen",
+  "arabic": [
+   "قلم"
+  ],
+  "translit": [
+   "qalam"
+  ]
+ },
+ {
+  "id": "n-desk",
+  "type": "noun",
+  "english": "desk",
+  "arabic": [
+   "مكتب"
+  ],
+  "translit": [
+   "maktab"
+  ]
+ },
+ {
+  "id": "n-library",
+  "type": "noun",
+  "english": "library",
+  "arabic": [
+   "مكتبة"
+  ],
+  "translit": [
+   "maktabah"
+  ]
+ },
+ {
+  "id": "n-chair",
+  "type": "noun",
+  "english": "chair",
+  "arabic": [
+   "كرسي"
+  ],
+  "translit": [
+   "kursy"
+  ]
+ },
+ {
+  "id": "n-star",
+  "type": "noun",
+  "english": "star",
+  "arabic": [
+   "نجم"
+  ],
+  "translit": [
+   "najm"
+  ]
+ },
+ {
+  "id": "n-shirt",
+  "type": "noun",
+  "english": "shirt",
+  "arabic": [
+   "قميص"
+  ],
+  "translit": [
+   "qamees"
+  ]
+ },
+ {
+  "id": "n-student",
+  "type": "noun",
+  "english": "student",
+  "arabic": [
+   "طالب",
+   "تلميذ"
+  ],
+  "translit": [
+   "thalib",
+   "talmeed"
+  ]
+ },
+ {
+  "id": "n-handkerchief",
+  "type": "noun",
+  "english": "handkerchief",
+  "arabic": [
+   "منديل"
+  ],
+  "translit": [
+   "mindil"
+  ]
+ },
+ {
+  "id": "n-merchant",
+  "type": "noun",
+  "english": "merchant",
+  "arabic": [
+   "تاجر"
+  ],
+  "translit": [
+   "tajir"
+  ]
+ },
+ {
+  "id": "n-car",
+  "type": "noun",
+  "english": "car",
+  "arabic": [
+   "سيارة"
+  ],
+  "translit": [
+   "sayaara"
+  ]
+ },
+ {
+  "id": "n-lesson",
+  "type": "noun",
+  "english": "lesson",
+  "arabic": [
+   "درس"
+  ],
+  "translit": [
+   "dars"
+  ]
+ },
+ {
+  "id": "n-people",
+  "type": "noun",
+  "english": "people",
+  "arabic": [
+   "ناس"
+  ],
+  "translit": [
+   "naas"
+  ]
+ },
+ {
+  "id": "n-animal",
+  "type": "noun",
+  "english": "animal",
+  "arabic": [
+   "حيوان"
+  ],
+  "translit": [
+   "haywaan"
+  ]
+ },
+ {
+  "id": "n-ant",
+  "type": "noun",
+  "english": "ant",
+  "arabic": [
+   "نمل"
+  ],
+  "translit": [
+   "naml"
+  ]
+ },
+ {
+  "id": "n-butcher",
+  "type": "noun",
+  "english": "butcher",
+  "arabic": [
+   "جزار"
+  ],
+  "translit": [
+   "jazaar"
+  ]
+ },
+ {
+  "id": "n-coat",
+  "type": "noun",
+  "english": "coat",
+  "arabic": [
+   "معطف"
+  ],
+  "translit": [
+   "mi'thaf"
+  ]
+ },
+ {
+  "id": "n-and",
+  "type": "noun",
+  "english": "and",
+  "arabic": [
+   "و"
+  ],
+  "translit": [
+   "wa"
+  ]
+ },
+ {
+  "id": "n-clothes",
+  "type": "noun",
+  "english": "clothes",
+  "arabic": [
+   "ملابس",
+   "ثياب"
+  ],
+  "translit": [
+   "malabis",
+   "thiyaab"
+  ]
+ },
+ {
+  "id": "n-gate",
+  "type": "noun",
+  "english": "gate",
+  "arabic": [
+   "بوابة"
+  ],
+  "translit": [
+   "bawaabah"
+  ]
+ },
+ {
+  "id": "n-elephant",
+  "type": "noun",
+  "english": "elephant",
+  "arabic": [
+   "فيل"
+  ],
+  "translit": [
+   "fil"
+  ]
+ },
+ {
+  "id": "n-bear",
+  "type": "noun",
+  "english": "bear",
+  "arabic": [
+   "دب"
+  ],
+  "translit": [
+   "dub"
+  ]
+ },
+ {
+  "id": "n-bee",
+  "type": "noun",
+  "english": "bee",
+  "arabic": [
+   "نحلة"
+  ],
+  "translit": [
+   "nahla"
+  ]
+ },
+ {
+  "id": "n-bird",
+  "type": "noun",
+  "english": "bird",
+  "arabic": [
+   "طائر"
+  ],
+  "translit": [
+   "thaa'ir"
+  ]
+ },
+ {
+  "id": "n-bull",
+  "type": "noun",
+  "english": "bull",
+  "arabic": [
+   "ثور"
+  ],
+  "translit": [
+   "thur"
+  ]
+ },
+ {
+  "id": "n-butterfly",
+  "type": "noun",
+  "english": "butterfly",
+  "arabic": [
+   "فراشة"
+  ],
+  "translit": [
+   "farashah"
+  ]
+ },
+ {
+  "id": "n-squirrel",
+  "type": "noun",
+  "english": "squirrel",
+  "arabic": [
+   "سنجاب"
+  ],
+  "translit": [
+   "sinjaab"
+  ]
+ },
+ {
+  "id": "n-sugar",
+  "type": "noun",
+  "english": "sugar",
+  "arabic": [
+   "سكر"
+  ],
+  "translit": [
+   "sukkar"
+  ]
+ },
+ {
+  "id": "n-milk",
+  "type": "noun",
+  "english": "milk",
+  "arabic": [
+   "لبن",
+   "حليب"
+  ],
+  "translit": [
+   "laban",
+   "haleeb"
+  ]
+ },
+ {
+  "id": "n-stone",
+  "type": "noun",
+  "english": "stone",
+  "arabic": [
+   "حجر"
+  ],
+  "translit": [
+   "hajr"
+  ]
+ },
+ {
+  "id": "n-people-praying",
+  "type": "noun",
+  "english": "people praying",
+  "arabic": [
+   "مصلّين"
+  ],
+  "translit": [
+   "mussalleen"
+  ]
+ },
+ {
+  "id": "n-moon",
+  "type": "noun",
+  "english": "moon",
+  "arabic": [
+   "قمر"
+  ],
+  "translit": [
+   "qamar"
+  ]
+ },
+ {
+  "id": "n-blue",
+  "type": "noun",
+  "english": "blue",
+  "arabic": [
+   "أزرق"
+  ],
+  "translit": [
+   "azraq"
+  ]
+ },
+ {
+  "id": "n-red",
+  "type": "noun",
+  "english": "red",
+  "arabic": [
+   "أحمر"
+  ],
+  "translit": [
+   "ahmar"
+  ]
+ },
+ {
+  "id": "n-green",
+  "type": "noun",
+  "english": "green",
+  "arabic": [
+   "أخضر"
+  ],
+  "translit": [
+   "akhdar"
+  ]
+ },
+ {
+  "id": "n-black",
+  "type": "noun",
+  "english": "black",
+  "arabic": [
+   "أسود"
+  ],
+  "translit": [
+   "aswad"
+  ]
+ },
+ {
+  "id": "n-white",
+  "type": "noun",
+  "english": "white",
+  "arabic": [
+   "أبيض"
+  ],
+  "translit": [
+   "abyad"
+  ]
+ },
+ {
+  "id": "n-sunday",
+  "type": "noun",
+  "english": "sunday",
+  "arabic": [
+   "الأحد"
+  ],
+  "translit": [
+   "al ahad"
+  ]
+ },
+ {
+  "id": "n-monday",
+  "type": "noun",
+  "english": "monday",
+  "arabic": [
+   "الإثنين"
+  ],
+  "translit": [
+   "al athnayn"
+  ]
+ },
+ {
+  "id": "n-tuesday",
+  "type": "noun",
+  "english": "tuesday",
+  "arabic": [
+   "الثلاثاء"
+  ],
+  "translit": [
+   "athalatha"
+  ]
+ },
+ {
+  "id": "n-wednesday",
+  "type": "noun",
+  "english": "wednesday",
+  "arabic": [
+   "الأربعاء"
+  ],
+  "translit": [
+   "al arba'a"
+  ]
+ },
+ {
+  "id": "n-thursday",
+  "type": "noun",
+  "english": "thursday",
+  "arabic": [
+   "الخميس"
+  ],
+  "translit": [
+   "al khamsa"
+  ]
+ },
+ {
+  "id": "n-friday",
+  "type": "noun",
+  "english": "friday",
+  "arabic": [
+   "جمعة"
+  ],
+  "translit": [
+   "jummah"
+  ]
+ },
+ {
+  "id": "n-saturday",
+  "type": "noun",
+  "english": "saturday",
+  "arabic": [
+   "السبت"
+  ],
+  "translit": [
+   "assabtu"
+  ]
+ },
+ {
+  "id": "n-new",
+  "type": "noun",
+  "english": "new",
+  "arabic": [
+   "جديد"
+  ],
+  "translit": [
+   "jadeed"
+  ]
+ },
+ {
+  "id": "n-old",
+  "type": "noun",
+  "english": "old",
+  "arabic": [
+   "قديم"
+  ],
+  "translit": [
+   "qadeem"
+  ]
+ },
+ {
+  "id": "n-light",
+  "type": "noun",
+  "english": "light",
+  "arabic": [
+   "خفيف"
+  ],
+  "translit": [
+   "khafeef"
+  ]
+ },
+ {
+  "id": "n-heavy",
+  "type": "noun",
+  "english": "heavy",
+  "arabic": [
+   "ثقيل"
+  ],
+  "translit": [
+   "thaqeel"
+  ]
+ },
+ {
+  "id": "n-dirty",
+  "type": "noun",
+  "english": "dirty",
+  "arabic": [
+   "وسخ"
+  ],
+  "translit": [
+   "wasikh"
+  ]
+ },
+ {
+  "id": "n-clean",
+  "type": "noun",
+  "english": "clean",
+  "arabic": [
+   "نظيف"
+  ],
+  "translit": [
+   "natheef"
+  ]
+ },
+ {
+  "id": "n-hot",
+  "type": "noun",
+  "english": "hot",
+  "arabic": [
+   "ساخن"
+  ],
+  "translit": [
+   "saakhin"
+  ]
+ },
+ {
+  "id": "n-cold",
+  "type": "noun",
+  "english": "cold",
+  "arabic": [
+   "بارد"
+  ],
+  "translit": [
+   "baarid"
+  ]
+ },
+ {
+  "id": "n-hot-spicy",
+  "type": "noun",
+  "english": "hot/ spicy",
+  "arabic": [
+   "حار"
+  ],
+  "translit": [
+   "haar"
+  ]
+ },
+ {
+  "id": "n-open",
+  "type": "noun",
+  "english": "open",
+  "arabic": [
+   "مفتوح"
+  ],
+  "translit": [
+   "maftooh"
+  ]
+ },
+ {
+  "id": "n-broken",
+  "type": "noun",
+  "english": "broken",
+  "arabic": [
+   "مكسور"
+  ],
+  "translit": [
+   "maksoor"
+  ]
+ },
+ {
+  "id": "n-pretty",
+  "type": "noun",
+  "english": "pretty",
+  "arabic": [
+   "جميل"
+  ],
+  "translit": [
+   "jameel"
+  ]
+ },
+ {
+  "id": "n-near",
+  "type": "noun",
+  "english": "near",
+  "arabic": [
+   "قريب",
+   "haseeb qareeb"
+  ],
+  "translit": [
+   "qareeb"
+  ]
+ },
+ {
+  "id": "n-far",
+  "type": "noun",
+  "english": "far",
+  "arabic": [
+   "بعيد"
+  ],
+  "translit": [
+   "ba'eed"
+  ]
+ },
+ {
+  "id": "n-big",
+  "type": "noun",
+  "english": "big",
+  "arabic": [
+   "كبير"
+  ],
+  "translit": [
+   "kabeer"
+  ]
+ },
+ {
+  "id": "n-small",
+  "type": "noun",
+  "english": "small",
+  "arabic": [
+   "صغير"
+  ],
+  "translit": [
+   "sagheer"
+  ]
+ },
+ {
+  "id": "n-bag",
+  "type": "noun",
+  "english": "bag",
+  "arabic": [
+   "حقيبة"
+  ],
+  "translit": [
+   "haqeebah"
+  ]
+ },
+ {
+  "id": "n-road",
+  "type": "noun",
+  "english": "road",
+  "arabic": [
+   "شارع"
+  ],
+  "translit": [
+   "shaariun"
+  ]
+ },
+ {
+  "id": "n-tea",
+  "type": "noun",
+  "english": "tea",
+  "arabic": [
+   "شاي"
+  ],
+  "translit": [
+   "shai"
+  ]
+ },
+ {
+  "id": "n-juice",
+  "type": "noun",
+  "english": "juice",
+  "arabic": [
+   "عصير"
+  ],
+  "translit": [
+   "aseer"
+  ]
+ },
+ {
+  "id": "n-fridge",
+  "type": "noun",
+  "english": "fridge",
+  "arabic": [
+   "ثلاجة"
+  ],
+  "translit": [
+   "thalajah"
+  ]
+ },
+ {
+  "id": "n-ice",
+  "type": "noun",
+  "english": "ice",
+  "arabic": [
+   "ثلج"
+  ],
+  "translit": [
+   "thalj"
+  ]
+ },
+ {
+  "id": "n-paper",
+  "type": "noun",
+  "english": "paper",
+  "arabic": [
+   "ورق"
+  ],
+  "translit": [
+   "waraq"
+  ]
+ },
+ {
+  "id": "n-apple-s",
+  "type": "noun",
+  "english": "apple(s)",
+  "arabic": [
+   "تفاحة",
+   "تفاح"
+  ],
+  "translit": [
+   "tufaha",
+   "tufahh"
+  ],
+  "notes": "< plural"
+ },
+ {
+  "id": "n-pomegranate",
+  "type": "noun",
+  "english": "pomegranate",
+  "arabic": [
+   "رمان"
+  ],
+  "translit": [
+   "rumaan"
+  ]
+ },
+ {
+  "id": "n-lion",
+  "type": "noun",
+  "english": "lion",
+  "arabic": [
+   "الأسد"
+  ],
+  "translit": [
+   "asad"
+  ]
+ },
+ {
+  "id": "n-giraffe",
+  "type": "noun",
+  "english": "giraffe",
+  "arabic": [
+   "زرافة"
+  ],
+  "translit": [
+   "zarafah"
+  ]
+ },
+ {
+  "id": "n-sheep",
+  "type": "noun",
+  "english": "sheep",
+  "arabic": [
+   "خروف"
+  ],
+  "translit": [
+   "kharoof"
+  ]
+ },
+ {
+  "id": "n-fish",
+  "type": "noun",
+  "english": "fish",
+  "arabic": [
+   "سمك"
+  ],
+  "translit": [
+   "samak"
+  ]
+ },
+ {
+  "id": "n-falcon",
+  "type": "noun",
+  "english": "falcon",
+  "arabic": [
+   "صقر"
+  ],
+  "translit": [
+   "saqar"
+  ]
+ },
+ {
+  "id": "n-frog",
+  "type": "noun",
+  "english": "frog",
+  "arabic": [
+   "ضفدع"
+  ],
+  "translit": [
+   "dafda'e"
+  ]
+ },
+ {
+  "id": "n-deer",
+  "type": "noun",
+  "english": "deer",
+  "arabic": [
+   "ظبي",
+   "أبوظبي!!!"
+  ],
+  "translit": [
+   "thabee"
+  ]
+ },
+ {
+  "id": "n-sun",
+  "type": "noun",
+  "english": "sun",
+  "arabic": [
+   "شمس"
+  ],
+  "translit": [
+   "shams"
+  ]
+ },
+ {
+  "id": "n-honey",
+  "type": "noun",
+  "english": "honey",
+  "arabic": [
+   "عسل"
+  ],
+  "translit": [
+   "asal"
+  ]
+ },
+ {
+  "id": "n-finger-nail",
+  "type": "noun",
+  "english": "(finger)nail",
+  "arabic": [
+   "ظفر"
+  ],
+  "translit": [
+   "thufr"
+  ]
+ },
+ {
+  "id": "n-room",
+  "type": "noun",
+  "english": "room",
+  "arabic": [
+   "غرفة"
+  ],
+  "translit": [
+   "ghurfa"
+  ]
+ },
+ {
+  "id": "n-gift",
+  "type": "noun",
+  "english": "gift",
+  "arabic": [
+   "هدية"
+  ],
+  "translit": [
+   "hadiya"
+  ]
+ },
+ {
+  "id": "n-banana",
+  "type": "noun",
+  "english": "banana",
+  "arabic": [
+   "موز"
+  ],
+  "translit": [
+   "mowz"
+  ]
+ },
+ {
+  "id": "n-shop",
+  "type": "noun",
+  "english": "shop",
+  "arabic": [
+   "دكان"
+  ],
+  "translit": [
+   "dukaan"
+  ]
+ },
+ {
+  "id": "n-phone",
+  "type": "noun",
+  "english": "phone",
+  "arabic": [
+   "هاتف"
+  ],
+  "translit": [
+   "haatif"
+  ]
+ },
+ {
+  "id": "n-money",
+  "type": "noun",
+  "english": "money",
+  "arabic": [
+   "نقود",
+   "فلوس"
+  ],
+  "translit": [
+   "nuqood",
+   "filoos"
+  ]
+ },
+ {
+  "id": "n-sick",
+  "type": "noun",
+  "english": "sick",
+  "arabic": [
+   "مريض"
+  ],
+  "translit": [
+   "mareedh"
+  ]
+ },
+ {
+  "id": "n-tall",
+  "type": "noun",
+  "english": "tall",
+  "arabic": [
+   "طويل"
+  ],
+  "translit": [
+   "thawil"
+  ]
+ },
+ {
+  "id": "n-short",
+  "type": "noun",
+  "english": "short",
+  "arabic": [
+   "قصير"
+  ],
+  "translit": [
+   "qaseer"
+  ]
+ },
+ {
+  "id": "n-rich",
+  "type": "noun",
+  "english": "rich",
+  "arabic": [
+   "غني"
+  ],
+  "translit": [
+   "ghani"
+  ]
+ },
+ {
+  "id": "n-poor",
+  "type": "noun",
+  "english": "poor",
+  "arabic": [
+   "فقير"
+  ],
+  "translit": [
+   "faqeer"
+  ]
+ },
+ {
+  "id": "n-lunch",
+  "type": "noun",
+  "english": "lunch",
+  "arabic": [
+   "غداء"
+  ],
+  "translit": [
+   "ghada"
+  ]
+ },
+ {
+  "id": "n-mouth",
+  "type": "noun",
+  "english": "mouth",
+  "arabic": [
+   "فم"
+  ],
+  "translit": [
+   "fam"
+  ]
+ },
+ {
+  "id": "n-chest-body",
+  "type": "noun",
+  "english": "chest (body)",
+  "arabic": [
+   "صدر"
+  ],
+  "translit": [
+   "sadr"
+  ]
+ },
+ {
+  "id": "n-back-body",
+  "type": "noun",
+  "english": "back (body)",
+  "arabic": [
+   "ظهر"
+  ],
+  "translit": [
+   "thahr"
+  ]
+ },
+ {
+  "id": "n-air",
+  "type": "noun",
+  "english": "air",
+  "arabic": [
+   "هواء"
+  ],
+  "translit": [
+   "hawa"
+  ]
+ },
+ {
+  "id": "n-gold",
+  "type": "noun",
+  "english": "gold",
+  "arabic": [
+   "ذهب"
+  ],
+  "translit": [
+   "thahab"
+  ]
+ },
+ {
+  "id": "n-rose",
+  "type": "noun",
+  "english": "rose",
+  "arabic": [
+   "زهرة"
+  ],
+  "translit": [
+   "zahra"
+  ]
+ },
+ {
+  "id": "n-guests",
+  "type": "noun",
+  "english": "guests",
+  "arabic": [
+   "ضيوف"
+  ],
+  "translit": [
+   "dhuyoof"
+  ]
+ },
+ {
+  "id": "n-meat",
+  "type": "noun",
+  "english": "meat",
+  "arabic": [
+   "لحمة"
+  ],
+  "translit": [
+   "lahm"
+  ]
+ },
+ {
+  "id": "n-grapes",
+  "type": "noun",
+  "english": "grapes",
+  "arabic": [
+   "عنب"
+  ],
+  "translit": [
+   "anb"
+  ]
+ },
+ {
+  "id": "n-sweet",
+  "type": "noun",
+  "english": "sweet",
+  "arabic": [
+   "حلو"
+  ],
+  "translit": [
+   "halw"
+  ]
+ },
+ {
+  "id": "n-delicious",
+  "type": "noun",
+  "english": "delicious",
+  "arabic": [
+   "لذيذ"
+  ],
+  "translit": [
+   "ladheedh"
+  ]
+ },
+ {
+  "id": "n-girl",
+  "type": "noun",
+  "english": "girl",
+  "arabic": [
+   "بنت"
+  ],
+  "translit": [
+   "bint"
+  ]
+ },
+ {
+  "id": "n-fig",
+  "type": "noun",
+  "english": "fig",
+  "arabic": [
+   "تين"
+  ],
+  "translit": [
+   "teen"
+  ]
+ },
+ {
+  "id": "n-fruit",
+  "type": "noun",
+  "english": "fruit",
+  "arabic": [
+   "فاكهة",
+   "فواكه"
+  ],
+  "translit": [
+   "fakiha",
+   "fawakih"
+  ],
+  "notes": "< plural"
+ },
+ {
+  "id": "n-olive",
+  "type": "noun",
+  "english": "olive",
+  "arabic": [
+   "زيتون"
+  ],
+  "translit": [
+   "zaytoon"
+  ]
+ },
+ {
+  "id": "n-orange",
+  "type": "noun",
+  "english": "orange",
+  "arabic": [
+   "برتقالي"
+  ],
+  "translit": [
+   "burtaqaal"
+  ]
+ },
+ {
+  "id": "n-watermelon",
+  "type": "noun",
+  "english": "watermelon",
+  "arabic": [
+   "بطيخ"
+  ],
+  "translit": [
+   "batheekh"
+  ]
+ },
+ {
+  "id": "n-strawberry",
+  "type": "noun",
+  "english": "strawberry",
+  "arabic": [
+   "فراولة"
+  ],
+  "translit": [
+   "farawila"
+  ]
+ },
+ {
+  "id": "n-in-front-of",
+  "type": "noun",
+  "english": "in front of",
+  "arabic": [
+   "امام"
+  ],
+  "translit": [
+   "amaama"
+  ]
+ },
+ {
+  "id": "n-under",
+  "type": "noun",
+  "english": "under",
+  "arabic": [
+   "تحت"
+  ],
+  "translit": [
+   "tahta"
+  ]
+ },
+ {
+  "id": "n-on",
+  "type": "noun",
+  "english": "on",
+  "arabic": [
+   "على"
+  ],
+  "translit": [
+   "alaa"
+  ]
+ },
+ {
+  "id": "n-between",
+  "type": "noun",
+  "english": "between",
+  "arabic": [
+   "بين"
+  ],
+  "translit": [
+   "bayna"
+  ]
+ },
+ {
+  "id": "n-behind",
+  "type": "noun",
+  "english": "behind",
+  "arabic": [
+   "خلف"
+  ],
+  "translit": [
+   "khalf"
+  ]
+ },
+ {
+  "id": "n-in",
+  "type": "noun",
+  "english": "in",
+  "arabic": [
+   "في"
+  ],
+  "translit": [
+   "fee"
+  ]
+ },
+ {
+  "id": "n-by-next-to",
+  "type": "noun",
+  "english": "by / next to",
+  "arabic": [
+   "بجوار",
+   "بجانب"
+  ],
+  "translit": [
+   "bijiwary",
+   "bijanib"
+  ]
+ },
+ {
+  "id": "n-box",
+  "type": "noun",
+  "english": "box",
+  "arabic": [
+   "صندوق"
+  ],
+  "translit": [
+   "sunduq"
+  ]
+ },
+ {
+  "id": "n-table",
+  "type": "noun",
+  "english": "table",
+  "arabic": [
+   "طاولة"
+  ],
+  "translit": [
+   "thawila"
+  ]
+ },
+ {
+  "id": "n-ball",
+  "type": "noun",
+  "english": "ball",
+  "arabic": [
+   "كرة"
+  ],
+  "translit": [
+   "kura"
+  ]
+ },
+ {
+  "id": "n-bedroom",
+  "type": "noun",
+  "english": "bedroom",
+  "arabic": [
+   "غرف النوم"
+  ],
+  "translit": [
+   "ghuraftun nowm"
+  ]
+ },
+ {
+  "id": "n-sleep",
+  "type": "noun",
+  "english": "sleep",
+  "arabic": [
+   "نوم"
+  ],
+  "translit": [
+   "nowm"
+  ]
+ },
+ {
+  "id": "n-living-room",
+  "type": "noun",
+  "english": "living room",
+  "arabic": [
+   "غرفة الجلوس",
+   "غرفة معيشة"
+  ],
+  "translit": [
+   "ghurfatul julusi",
+   "ghurfatum maeesha"
+  ]
+ },
+ {
+  "id": "n-childrens-room",
+  "type": "noun",
+  "english": "childrens room",
+  "arabic": [
+   "غرفة الأطفال"
+  ],
+  "translit": [
+   "ghurfatul athfaal"
+  ]
+ },
+ {
+  "id": "n-children",
+  "type": "noun",
+  "english": "children",
+  "arabic": [
+   "أطفال"
+  ],
+  "translit": [
+   "athfaal"
+  ]
+ },
+ {
+  "id": "n-dining-room",
+  "type": "noun",
+  "english": "dining room",
+  "arabic": [
+   "غرفة الطعام"
+  ],
+  "translit": [
+   "ghurfatuth tha'am"
+  ]
+ },
+ {
+  "id": "n-toilet",
+  "type": "noun",
+  "english": "toilet",
+  "arabic": [
+   "مرحاض"
+  ],
+  "translit": [
+   "mirhadh"
+  ]
+ },
+ {
+  "id": "n-kitchen",
+  "type": "noun",
+  "english": "kitchen",
+  "arabic": [
+   "مطبخ"
+  ],
+  "translit": [
+   "mathbakh"
+  ]
+ },
+ {
+  "id": "n-garden",
+  "type": "noun",
+  "english": "garden",
+  "arabic": [
+   "حديقة"
+  ],
+  "translit": [
+   "hadiqah"
+  ]
+ },
+ {
+  "id": "n-stairs",
+  "type": "noun",
+  "english": "stairs",
+  "arabic": [
+   "درج"
+  ],
+  "translit": [
+   "darj"
+  ]
+ },
+ {
+  "id": "n-floor",
+  "type": "noun",
+  "english": "floor",
+  "arabic": [
+   "أرضية"
+  ],
+  "translit": [
+   "ardhiya"
+  ]
+ },
+ {
+  "id": "n-university",
+  "type": "noun",
+  "english": "university",
+  "arabic": [
+   "جامعة"
+  ],
+  "translit": [
+   "jaamiah"
+  ]
+ },
+ {
+  "id": "n-classroom",
+  "type": "noun",
+  "english": "classroom",
+  "arabic": [
+   "فصل"
+  ],
+  "translit": [
+   "fasl"
+  ]
+ },
+ {
+  "id": "n-board",
+  "type": "noun",
+  "english": "board",
+  "arabic": [
+   "سبورة"
+  ],
+  "translit": [
+   "saboor"
+  ]
+ },
+ {
+  "id": "n-wardrobe",
+  "type": "noun",
+  "english": "wardrobe",
+  "arabic": [
+   "دولاب"
+  ],
+  "translit": [
+   "dulaab"
+  ]
+ },
+ {
+  "id": "n-corkboard",
+  "type": "noun",
+  "english": "corkboard",
+  "arabic": [
+   "لوحة",
+   "anything hung on the wall"
+  ],
+  "translit": [
+   "lawhat"
+  ]
+ },
+ {
+  "id": "n-broom",
+  "type": "noun",
+  "english": "broom",
+  "arabic": [
+   "مكنسة"
+  ],
+  "translit": [
+   "maknasa"
+  ]
+ },
+ {
+  "id": "n-basket",
+  "type": "noun",
+  "english": "basket",
+  "arabic": [
+   "سلة"
+  ],
+  "translit": [
+   "sala"
+  ]
+ },
+ {
+  "id": "n-fruit-basket",
+  "type": "noun",
+  "english": "fruit basket",
+  "arabic": [
+   "سلة فواكه"
+  ],
+  "translit": [
+   "salatuf fawakih"
+  ]
+ },
+ {
+  "id": "n-rubbish",
+  "type": "noun",
+  "english": "rubbish",
+  "arabic": [
+   "قمامة",
+   "زبالة"
+  ],
+  "translit": [
+   "qamama",
+   "zabala"
+  ],
+  "notes": "<used as an insult"
+ },
+ {
+  "id": "n-rubbish-basket",
+  "type": "noun",
+  "english": "rubbish basket",
+  "arabic": [
+   "سلة قمامة"
+  ],
+  "translit": [
+   "salatu qamama"
+  ]
+ },
+ {
+  "id": "n-fan",
+  "type": "noun",
+  "english": "fan",
+  "arabic": [
+   "مروحة"
+  ],
+  "translit": [
+   "mirwah"
+  ]
+ },
+ {
+  "id": "n-from",
+  "type": "noun",
+  "english": "from",
+  "arabic": [
+   "من"
+  ],
+  "translit": [
+   "man"
+  ]
+ },
+ {
+  "id": "n-to",
+  "type": "noun",
+  "english": "to",
+  "arabic": [
+   "إلى"
+  ],
+  "translit": [
+   "ila"
+  ]
+ },
+ {
+  "id": "n-egypt",
+  "type": "noun",
+  "english": "Egypt",
+  "arabic": [
+   "مصر"
+  ],
+  "translit": [
+   "misr"
+  ]
+ },
+ {
+  "id": "n-japan",
+  "type": "noun",
+  "english": "Japan",
+  "arabic": [
+   "يابان"
+  ],
+  "translit": [
+   "yaban"
+  ]
+ },
+ {
+  "id": "n-china",
+  "type": "noun",
+  "english": "China",
+  "arabic": [
+   "صين"
+  ],
+  "translit": [
+   "seen"
+  ]
+ },
+ {
+  "id": "n-india",
+  "type": "noun",
+  "english": "India",
+  "arabic": [
+   "الهند"
+  ],
+  "translit": [
+   "hind"
+  ]
+ },
+ {
+  "id": "n-left",
+  "type": "noun",
+  "english": "left",
+  "arabic": [
+   "خرج",
+   "klmnop"
+  ],
+  "translit": [
+   "kharaja"
+  ]
+ },
+ {
+  "id": "n-went",
+  "type": "noun",
+  "english": "went",
+  "arabic": [
+   "ذهب"
+  ],
+  "translit": [
+   "dhahab"
+  ]
+ },
+ {
+  "id": "n-manager",
+  "type": "noun",
+  "english": "manager",
+  "arabic": [
+   "مدير"
+  ],
+  "translit": [
+   "mudeer"
+  ]
+ },
+ {
+  "id": "n-market",
+  "type": "noun",
+  "english": "market",
+  "arabic": [
+   "سوق"
+  ],
+  "translit": [
+   "souq"
+  ]
+ },
+ {
+  "id": "n-carrot",
+  "type": "noun",
+  "english": "carrot",
+  "arabic": [
+   "جزر"
+  ],
+  "translit": [
+   "jazar"
+  ]
+ },
+ {
+  "id": "n-potato",
+  "type": "noun",
+  "english": "potato",
+  "arabic": [
+   "بطاطس"
+  ],
+  "translit": [
+   "bathathas"
+  ]
+ },
+ {
+  "id": "n-tomato",
+  "type": "noun",
+  "english": "tomato",
+  "arabic": [
+   "طماطم"
+  ],
+  "translit": [
+   "thamathim"
+  ]
+ },
+ {
+  "id": "n-onion",
+  "type": "noun",
+  "english": "onion",
+  "arabic": [
+   "بصل"
+  ],
+  "translit": [
+   "basal"
+  ]
+ },
+ {
+  "id": "n-lettuce",
+  "type": "noun",
+  "english": "lettuce",
+  "arabic": [
+   "خس"
+  ],
+  "translit": [
+   "khas"
+  ]
+ },
+ {
+  "id": "n-garlic",
+  "type": "noun",
+  "english": "garlic",
+  "arabic": [
+   "ثوم"
+  ],
+  "translit": [
+   "thawm"
+  ]
+ },
+ {
+  "id": "n-mirror",
+  "type": "noun",
+  "english": "mirror",
+  "arabic": [
+   "مرآة"
+  ],
+  "translit": [
+   "mir'atun"
+  ]
+ },
+ {
+  "id": "n-carpet",
+  "type": "noun",
+  "english": "carpet",
+  "arabic": [
+   "سجادة"
+  ],
+  "translit": [
+   "sajada"
+  ]
+ },
+ {
+  "id": "n-some",
+  "type": "noun",
+  "english": "some",
+  "arabic": [
+   "بعض"
+  ],
+  "translit": [
+   "b3d"
+  ]
+ },
+ {
+  "id": "n-immediately",
+  "type": "noun",
+  "english": "immediately",
+  "arabic": [
+   "حالا"
+  ],
+  "translit": [
+   "haala"
+  ]
+ },
+ {
+  "id": "n-here",
+  "type": "noun",
+  "english": "here",
+  "arabic": [
+   "هنا"
+  ],
+  "translit": [
+   "huna"
+  ]
+ },
+ {
+  "id": "n-there",
+  "type": "noun",
+  "english": "there",
+  "arabic": [
+   "هناك"
+  ],
+  "translit": [
+   "hunak"
+  ]
+ },
+ {
+  "id": "n-notebook",
+  "type": "noun",
+  "english": "notebook",
+  "arabic": [
+   "دفتر"
+  ],
+  "translit": [
+   "daftar"
+  ]
+ },
+ {
+  "id": "n-engineer",
+  "type": "noun",
+  "english": "engineer",
+  "arabic": [
+   "مهندس"
+  ],
+  "translit": [
+   "muhandis"
+  ]
+ },
+ {
+  "id": "n-son-of",
+  "type": "noun",
+  "english": "son of",
+  "arabic": [
+   "ابن"
+  ],
+  "translit": [
+   "ibn"
+  ]
+ },
+ {
+  "id": "n-paternal-uncle",
+  "type": "noun",
+  "english": "paternal uncle",
+  "arabic": [
+   "عم"
+  ],
+  "translit": [
+   "amm"
+  ]
+ },
+ {
+  "id": "n-maternal-uncle",
+  "type": "noun",
+  "english": "maternal uncle",
+  "arabic": [
+   "خال"
+  ],
+  "translit": [
+   "khal"
+  ]
+ },
+ {
+  "id": "n-closed",
+  "type": "noun",
+  "english": "closed",
+  "arabic": [
+   "مغلق"
+  ],
+  "translit": [
+   "mughlaq"
+  ]
+ },
+ {
+  "id": "n-iron",
+  "type": "noun",
+  "english": "iron",
+  "arabic": [
+   "مكواة"
+  ],
+  "translit": [
+   "mikwah"
+  ]
+ },
+ {
+  "id": "n-bike",
+  "type": "noun",
+  "english": "bike",
+  "arabic": [
+   "دراجة"
+  ],
+  "translit": [
+   "daraajah"
+  ]
+ },
+ {
+  "id": "n-spoon",
+  "type": "noun",
+  "english": "spoon",
+  "arabic": [
+   "ملعقة"
+  ],
+  "translit": [
+   "milaqah"
+  ]
+ },
+ {
+  "id": "n-pot",
+  "type": "noun",
+  "english": "pot",
+  "arabic": [
+   "قدر"
+  ],
+  "translit": [
+   "qidr"
+  ]
+ },
+ {
+  "id": "n-cow",
+  "type": "noun",
+  "english": "cow",
+  "arabic": [
+   "بقرة"
+  ],
+  "translit": [
+   "baqarah"
+  ]
+ },
+ {
+  "id": "n-foot",
+  "type": "noun",
+  "english": "foot",
+  "arabic": [
+   "رِجْل"
+  ],
+  "translit": [
+   "rijl"
+  ]
+ },
+ {
+  "id": "n-mum",
+  "type": "noun",
+  "english": "mum",
+  "arabic": [
+   "أم"
+  ],
+  "translit": [
+   "umm"
+  ]
+ },
+ {
+  "id": "n-dad",
+  "type": "noun",
+  "english": "dad",
+  "arabic": [
+   "أب"
+  ],
+  "translit": [
+   "abb"
+  ]
+ },
+ {
+  "id": "n-flower",
+  "type": "noun",
+  "english": "flower",
+  "arabic": [
+   "ورد"
+  ],
+  "translit": [
+   "warada"
+  ]
+ },
+ {
+  "id": "n-eye",
+  "type": "noun",
+  "english": "eye",
+  "arabic": [
+   "عين"
+  ],
+  "translit": [
+   "ayn"
+  ]
+ },
+ {
+  "id": "n-hair",
+  "type": "noun",
+  "english": "hair",
+  "arabic": [
+   "شعر"
+  ],
+  "translit": [
+   "sh3r"
+  ]
+ },
+ {
+  "id": "n-fire",
+  "type": "noun",
+  "english": "fire",
+  "arabic": [
+   "نار"
+  ],
+  "translit": [
+   "nar"
+  ]
+ },
+ {
+  "id": "n-war",
+  "type": "noun",
+  "english": "war",
+  "arabic": [
+   "حرب"
+  ],
+  "translit": [
+   "harb"
+  ]
+ },
+ {
+  "id": "n-knife",
+  "type": "noun",
+  "english": "knife",
+  "arabic": [
+   "سكين"
+  ],
+  "translit": [
+   "sikeen"
+  ]
+ },
+ {
+  "id": "n-wind",
+  "type": "noun",
+  "english": "wind",
+  "arabic": [
+   "ريح"
+  ],
+  "translit": [
+   "reeh"
+  ]
+ },
+ {
+  "id": "n-stick",
+  "type": "noun",
+  "english": "stick",
+  "arabic": [
+   "عصا"
+  ],
+  "translit": [
+   "asa"
+  ]
+ },
+ {
+  "id": "n-sandal",
+  "type": "noun",
+  "english": "sandal",
+  "arabic": [
+   "نعل"
+  ],
+  "translit": [
+   "n3l"
+  ]
+ },
+ {
+  "id": "n-water-well",
+  "type": "noun",
+  "english": "(water) well",
+  "arabic": [
+   "بئر"
+  ],
+  "translit": [
+   "bir"
+  ]
+ },
+ {
+  "id": "n-hellfire",
+  "type": "noun",
+  "english": "hellfire",
+  "arabic": [
+   "جهنم"
+  ],
+  "translit": [
+   "jahannam"
+  ]
+ },
+ {
+  "id": "n-farmer",
+  "type": "noun",
+  "english": "farmer",
+  "arabic": [
+   "فلاح"
+  ],
+  "translit": [
+   "fallah"
+  ]
+ },
+ {
+  "id": "n-fast-speed",
+  "type": "noun",
+  "english": "fast (speed)",
+  "arabic": [
+   "سريع"
+  ],
+  "translit": [
+   "saariun"
+  ]
+ },
+ {
+  "id": "n-very",
+  "type": "noun",
+  "english": "very",
+  "arabic": [
+   "جداً"
+  ],
+  "translit": [
+   "jiddan"
+  ]
+ },
+ {
+  "id": "n-as-well",
+  "type": "noun",
+  "english": "as well",
+  "arabic": [
+   "أيضًا"
+  ],
+  "translit": [
+   "aydhan"
+  ]
+ },
+ {
+  "id": "n-priminister",
+  "type": "noun",
+  "english": "priminister",
+  "arabic": [
+   "الوزير"
+  ],
+  "translit": [
+   "wazeer"
+  ]
+ },
+ {
+  "id": "num-0",
+  "type": "number",
+  "english": "0",
+  "arabic": [
+   "صفر"
+  ],
+  "translit": [
+   "sifr"
+  ]
+ }
+]
