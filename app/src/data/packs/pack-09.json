@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-6434",
+  "id": "k-noun-تنمية",
   "type": "noun",
   "english": "development",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6494",
+  "id": "k-noun-دستور",
   "type": "noun",
   "english": "constitution",
   "arabic": [
@@ -42,7 +42,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-618",
+  "id": "k-noun-تدريب",
   "type": "noun",
   "english": "training",
   "arabic": [
@@ -63,7 +63,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1967",
+  "id": "k-verb-قطع",
   "type": "verb",
   "english": "cut, break",
   "arabic": [
@@ -91,7 +91,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2968",
+  "id": "k-noun-انشاء",
   "type": "noun",
   "english": "foundation, creation",
   "arabic": [
@@ -112,7 +112,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5632",
+  "id": "k-noun-بحر",
   "type": "noun",
   "english": "sea",
   "arabic": [
@@ -133,7 +133,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5742",
+  "id": "k-noun-عبارة",
   "type": "noun",
   "english": "expression",
   "arabic": [
@@ -154,7 +154,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-6429",
+  "id": "k-verb-تحول",
   "type": "verb",
   "english": "shift, change",
   "arabic": [
@@ -181,7 +181,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2185",
+  "id": "k-noun-وصول",
   "type": "noun",
   "english": "arrival",
   "arabic": [
@@ -202,7 +202,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4933",
+  "id": "k-noun-جمهور",
   "type": "noun",
   "english": "multitude, throng",
   "arabic": [
@@ -222,7 +222,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3023",
+  "id": "k-noun-شيخ",
   "type": "noun",
   "english": "chief, chieftain, sheik",
   "arabic": [
@@ -243,7 +243,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3149",
+  "id": "k-adj-واسع",
   "type": "adj",
   "english": "spacious",
   "arabic": [
@@ -263,7 +263,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1470",
+  "id": "k-noun-حلقة",
   "type": "noun",
   "english": "ring",
   "arabic": [
@@ -284,7 +284,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4147",
+  "id": "k-noun-تعبير",
   "type": "noun",
   "english": "expression",
   "arabic": [
@@ -305,7 +305,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2155",
+  "id": "k-noun-حركة",
   "type": "noun",
   "english": "movement",
   "arabic": [
@@ -326,7 +326,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1709",
+  "id": "k-noun-اشارة",
   "type": "noun",
   "english": "sign, signal",
   "arabic": [
@@ -347,7 +347,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-6388",
+  "id": "k-verb-تغير",
   "type": "verb",
   "english": "change",
   "arabic": [
@@ -374,7 +374,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-6150",
+  "id": "k-verb-اعلن",
   "type": "verb",
   "english": "announce",
   "arabic": [
@@ -402,7 +402,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-6151",
+  "id": "k-verb-حقق",
   "type": "verb",
   "english": "realize, actualize",
   "arabic": [
@@ -430,7 +430,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-624",
+  "id": "k-noun-امكان",
   "type": "noun",
   "english": "possibility",
   "arabic": [
@@ -450,7 +450,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2717",
+  "id": "k-noun-ممارسة",
   "type": "noun",
   "english": "exercise, practice",
   "arabic": [
@@ -471,7 +471,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-928",
+  "id": "k-noun-شاهد",
   "type": "noun",
   "english": "witness",
   "arabic": [
@@ -491,7 +491,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-146",
+  "id": "k-verb-اعتقد",
   "type": "verb",
   "english": "believe, think",
   "arabic": [
@@ -518,7 +518,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-777",
+  "id": "k-noun-تربية",
   "type": "noun",
   "english": "education",
   "arabic": [
@@ -539,7 +539,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3155",
+  "id": "k-noun-طول",
   "type": "noun",
   "english": "length",
   "arabic": [
@@ -560,7 +560,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-12",
+  "id": "k-verb-تقدم",
   "type": "verb",
   "english": "precede",
   "arabic": [
@@ -587,7 +587,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-5385",
+  "id": "k-verb-قرر",
   "type": "verb",
   "english": "settle",
   "arabic": [
@@ -615,7 +615,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3919",
+  "id": "k-noun-قرية",
   "type": "noun",
   "english": "hamlet",
   "arabic": [
@@ -636,7 +636,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3846",
+  "id": "k-noun-اداء",
   "type": "noun",
   "english": "performance",
   "arabic": [
@@ -657,7 +657,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2195",
+  "id": "k-noun-نشاط",
   "type": "noun",
   "english": "activity",
   "arabic": [
@@ -678,7 +678,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1269",
+  "id": "k-noun-سن",
   "type": "noun",
   "english": "tooth",
   "arabic": [
@@ -699,7 +699,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-1268",
+  "id": "k-adj-شريف",
   "type": "adj",
   "english": "noble",
   "arabic": [
@@ -719,7 +719,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-2390",
+  "id": "k-noun-والد",
   "type": "noun",
   "english": "father",
   "arabic": [
@@ -740,7 +740,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1301",
+  "id": "k-noun-جسم",
   "type": "noun",
   "english": "body",
   "arabic": [
@@ -761,7 +761,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1287",
+  "id": "k-noun-ثقة",
   "type": "noun",
   "english": "reliance, confidence",
   "arabic": [
@@ -782,7 +782,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1087",
+  "id": "k-noun-غرب",
   "type": "noun",
   "english": "west, occident",
   "arabic": [
@@ -803,7 +803,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4729",
+  "id": "k-noun-استمرار",
   "type": "noun",
   "english": "continuation",
   "arabic": [
@@ -823,7 +823,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6541",
+  "id": "k-noun-عنف",
   "type": "noun",
   "english": "violence, force",
   "arabic": [
@@ -844,7 +844,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-2132",
+  "id": "k-verb-نزل",
   "type": "verb",
   "english": "descend, come down",
   "arabic": [
@@ -872,7 +872,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1225",
+  "id": "k-noun-تفسير",
   "type": "noun",
   "english": "explanation",
   "arabic": [
@@ -893,7 +893,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-788",
+  "id": "k-adj-حكومي",
   "type": "adj",
   "english": "governmental",
   "arabic": [
@@ -914,7 +914,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5217",
+  "id": "k-noun-ظاهرة",
   "type": "noun",
   "english": "phenomenon",
   "arabic": [
@@ -935,7 +935,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3138",
+  "id": "k-noun-جسد",
   "type": "noun",
   "english": "body",
   "arabic": [
@@ -956,7 +956,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5097",
+  "id": "k-noun-عاصمة",
   "type": "noun",
   "english": "capital city",
   "arabic": [
@@ -976,7 +976,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5662",
+  "id": "k-noun-عدو",
   "type": "noun",
   "english": "enemy, foe",
   "arabic": [
@@ -997,7 +997,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-149",
+  "id": "k-noun-محل",
   "type": "noun",
   "english": "place, spot, station",
   "arabic": [
@@ -1017,7 +1017,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2382",
+  "id": "k-noun-دائرة",
   "type": "noun",
   "english": "circle",
   "arabic": [
@@ -1038,7 +1038,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5452",
+  "id": "k-noun-واجب",
   "type": "noun",
   "english": "duty, obligation",
   "arabic": [
@@ -1059,7 +1059,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-394",
+  "id": "k-noun-اهتمام",
   "type": "noun",
   "english": "interest",
   "arabic": [
@@ -1080,7 +1080,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5271",
+  "id": "k-noun-معارضة",
   "type": "noun",
   "english": "resistance, opposition",
   "arabic": [

@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-verb-6432",
+  "id": "k-verb-مس",
   "type": "verb",
   "english": "touch",
   "arabic": [
@@ -27,7 +27,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5404",
+  "id": "k-noun-توقيع",
   "type": "noun",
   "english": "signature",
   "arabic": [
@@ -47,7 +47,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6189",
+  "id": "k-noun-الغاء",
   "type": "noun",
   "english": "cancellation",
   "arabic": [
@@ -67,7 +67,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5785",
+  "id": "k-noun-رجاء",
   "type": "noun",
   "english": "hope",
   "arabic": [
@@ -88,7 +88,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4376",
+  "id": "k-adj-عملي",
   "type": "adj",
   "english": "practical, pragmatic",
   "arabic": [
@@ -108,7 +108,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5895",
+  "id": "k-noun-جدار",
   "type": "noun",
   "english": "wall",
   "arabic": [
@@ -129,7 +129,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-653",
+  "id": "k-noun-توافق",
   "type": "noun",
   "english": "harmony",
   "arabic": [
@@ -149,7 +149,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2315",
+  "id": "k-noun-سيادة",
   "type": "noun",
   "english": "mastery, sovereignty",
   "arabic": [
@@ -170,7 +170,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4626",
+  "id": "k-verb-دام",
   "type": "verb",
   "english": "last, endure",
   "arabic": [
@@ -198,7 +198,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-647",
+  "id": "k-noun-سينما",
   "type": "noun",
   "english": "cinema",
   "arabic": [
@@ -218,7 +218,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-205",
+  "id": "k-noun-اختبار",
   "type": "noun",
   "english": "test",
   "arabic": [
@@ -238,7 +238,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-3672",
+  "id": "k-verb-ادر",
   "type": "verb",
   "english": "yield",
   "arabic": [
@@ -265,7 +265,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2341",
+  "id": "k-noun-ناتج",
   "type": "noun",
   "english": "output, yield, product",
   "arabic": [
@@ -286,7 +286,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2811",
+  "id": "k-noun-كمبيوتر",
   "type": "noun",
   "english": "computer",
   "arabic": [
@@ -307,7 +307,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6611",
+  "id": "k-adj-ديني",
   "type": "adj",
   "english": "religious",
   "arabic": [
@@ -327,7 +327,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5314",
+  "id": "k-noun-تحالف",
   "type": "noun",
   "english": "alliance",
   "arabic": [
@@ -348,7 +348,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-826",
+  "id": "k-noun-مدرب",
   "type": "noun",
   "english": "trainer, coach",
   "arabic": [
@@ -369,7 +369,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-5965",
+  "id": "k-adj-جاهل",
   "type": "adj",
   "english": "ignorant",
   "arabic": [
@@ -389,7 +389,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3917",
+  "id": "k-noun-موسيقي",
   "type": "noun",
   "english": "music",
   "arabic": [
@@ -410,7 +410,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5338",
+  "id": "k-noun-تخطيط",
   "type": "noun",
   "english": "planning",
   "arabic": [
@@ -430,7 +430,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1645",
+  "id": "k-noun-راتب",
   "type": "noun",
   "english": "salary, pay",
   "arabic": [
@@ -451,7 +451,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5410",
+  "id": "k-noun-سقوط",
   "type": "noun",
   "english": "fall, downfall",
   "arabic": [
@@ -472,7 +472,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1994",
+  "id": "k-noun-جندي",
   "type": "noun",
   "english": "soldier",
   "arabic": [
@@ -493,7 +493,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1459",
+  "id": "k-noun-انتقال",
   "type": "noun",
   "english": "transfer",
   "arabic": [
@@ -513,7 +513,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2022",
+  "id": "k-noun-عبد",
   "type": "noun",
   "english": "slave",
   "arabic": [
@@ -534,7 +534,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-405",
+  "id": "k-noun-اعتراف",
   "type": "noun",
   "english": "confession",
   "arabic": [
@@ -554,7 +554,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4784",
+  "id": "k-verb-دافع",
   "type": "verb",
   "english": "defend",
   "arabic": [
@@ -582,7 +582,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6162",
+  "id": "k-noun-نفق",
   "type": "noun",
   "english": "tunnel",
   "arabic": [
@@ -602,7 +602,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-799",
+  "id": "k-noun-ركن",
   "type": "noun",
   "english": "corner",
   "arabic": [
@@ -623,7 +623,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-282",
+  "id": "k-noun-راحة",
   "type": "noun",
   "english": "rest",
   "arabic": [
@@ -644,7 +644,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3132",
+  "id": "k-noun-ذهاب",
   "type": "noun",
   "english": "going",
   "arabic": [
@@ -664,7 +664,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4832",
+  "id": "k-verb-تصور",
   "type": "verb",
   "english": "imagine, conceive",
   "arabic": [
@@ -692,7 +692,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4967",
+  "id": "k-verb-شاء",
   "type": "verb",
   "english": "want, wish",
   "arabic": [
@@ -720,7 +720,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2556",
+  "id": "k-verb-دق",
   "type": "verb",
   "english": "crush",
   "arabic": [
@@ -748,7 +748,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3421",
+  "id": "k-noun-تاسيس",
   "type": "noun",
   "english": "founding",
   "arabic": [
@@ -768,7 +768,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3875",
+  "id": "k-noun-قتال",
   "type": "noun",
   "english": "fighting, battle",
   "arabic": [
@@ -789,7 +789,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2846",
+  "id": "k-noun-داع",
   "type": "noun",
   "english": "reason",
   "arabic": [
@@ -809,7 +809,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1848",
+  "id": "k-verb-قاد",
   "type": "verb",
   "english": "lead",
   "arabic": [
@@ -837,7 +837,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3441",
+  "id": "k-noun-تصوير",
   "type": "noun",
   "english": "depiction",
   "arabic": [
@@ -858,7 +858,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5402",
+  "id": "k-noun-رحم",
   "type": "noun",
   "english": "uterus, womb",
   "arabic": [
@@ -878,7 +878,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5417",
+  "id": "k-noun-حذر",
   "type": "noun",
   "english": "caution, care, precaution",
   "arabic": [
@@ -898,7 +898,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2051",
+  "id": "k-noun-صحراء",
   "type": "noun",
   "english": "desert",
   "arabic": [
@@ -919,7 +919,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6135",
+  "id": "k-noun-دلال",
   "type": "noun",
   "english": "coquettishness",
   "arabic": [
@@ -939,7 +939,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5044",
+  "id": "k-noun-وكيل",
   "type": "noun",
   "english": "agent, representative",
   "arabic": [
@@ -960,7 +960,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2675",
+  "id": "k-noun-عقوبة",
   "type": "noun",
   "english": "punishment",
   "arabic": [
@@ -981,7 +981,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2784",
+  "id": "k-noun-متهم",
   "type": "noun",
   "english": "accused",
   "arabic": [
@@ -1001,7 +1001,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1441",
+  "id": "k-verb-ارتفع",
   "type": "verb",
   "english": "lift, rise",
   "arabic": [
@@ -1029,7 +1029,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-27",
+  "id": "k-noun-ثروة",
   "type": "noun",
   "english": "wealth, riches",
   "arabic": [
@@ -1050,7 +1050,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2177",
+  "id": "k-verb-تقبل",
   "type": "verb",
   "english": "accept",
   "arabic": [
@@ -1077,7 +1077,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-560",
+  "id": "k-noun-محام",
   "type": "noun",
   "english": "lawyer, attorney",
   "arabic": [

@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-2467",
+  "id": "k-noun-حجاب",
   "type": "noun",
   "english": "screen",
   "arabic": [
@@ -20,7 +20,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4442",
+  "id": "k-noun-ازالة",
   "type": "noun",
   "english": "removal",
   "arabic": [
@@ -40,7 +40,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2967",
+  "id": "k-noun-جوهر",
   "type": "noun",
   "english": "jewel",
   "arabic": [
@@ -61,7 +61,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2005",
+  "id": "k-noun-ختام",
   "type": "noun",
   "english": "end, conclusion",
   "arabic": [
@@ -81,7 +81,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1858",
+  "id": "k-noun-منافس",
   "type": "noun",
   "english": "rival, competitor",
   "arabic": [
@@ -102,7 +102,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-338",
+  "id": "k-noun-عملة",
   "type": "noun",
   "english": "currency",
   "arabic": [
@@ -123,7 +123,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6563",
+  "id": "k-adj-شرقي",
   "type": "adj",
   "english": "eastern",
   "arabic": [
@@ -143,7 +143,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4968",
+  "id": "k-noun-نزاع",
   "type": "noun",
   "english": "conflict, dispute",
   "arabic": [
@@ -164,7 +164,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2974",
+  "id": "k-noun-مثيل",
   "type": "noun",
   "english": "equal, match",
   "arabic": [
@@ -184,7 +184,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3112",
+  "id": "k-noun-فتوي",
   "type": "noun",
   "english": "fatwa",
   "arabic": [
@@ -204,7 +204,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5900",
+  "id": "k-noun-تصنيف",
   "type": "noun",
   "english": "classification",
   "arabic": [
@@ -225,7 +225,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6508",
+  "id": "k-adj-محتمل",
   "type": "adj",
   "english": "probable",
   "arabic": [
@@ -245,7 +245,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-2316",
+  "id": "k-adj-سري",
   "type": "adj",
   "english": "secret, hidden, clandestine",
   "arabic": [
@@ -265,7 +265,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-89",
+  "id": "k-noun-مكانة",
   "type": "noun",
   "english": "place, location, position",
   "arabic": [
@@ -286,7 +286,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6411",
+  "id": "k-noun-استقلال",
   "type": "noun",
   "english": "independence",
   "arabic": [
@@ -307,7 +307,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3833",
+  "id": "k-noun-غد",
   "type": "noun",
   "english": "tomorrow",
   "arabic": [
@@ -328,7 +328,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3867",
+  "id": "k-adj-جدي",
   "type": "adj",
   "english": "serious, grave, earnest",
   "arabic": [
@@ -348,7 +348,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2152",
+  "id": "k-noun-طور",
   "type": "noun",
   "english": "mountain",
   "arabic": [
@@ -368,7 +368,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-447",
+  "id": "k-verb-قاتل",
   "type": "verb",
   "english": "fight, combat",
   "arabic": [
@@ -396,7 +396,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2437",
+  "id": "k-noun-استقبال",
   "type": "noun",
   "english": "reception",
   "arabic": [
@@ -417,7 +417,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4887",
+  "id": "k-adj-مضاد",
   "type": "adj",
   "english": "anti-",
   "arabic": [
@@ -437,7 +437,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4500",
+  "id": "k-noun-تحسين",
   "type": "noun",
   "english": "betterment, improvement",
   "arabic": [
@@ -458,7 +458,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6383",
+  "id": "k-noun-مساهمة",
   "type": "noun",
   "english": "contribution",
   "arabic": [
@@ -478,7 +478,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4369",
+  "id": "k-noun-جرح",
   "type": "noun",
   "english": "wound",
   "arabic": [
@@ -499,7 +499,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-6641",
+  "id": "k-verb-تزوج",
   "type": "verb",
   "english": "get married",
   "arabic": [
@@ -527,7 +527,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-5800",
+  "id": "k-adj-نادر",
   "type": "adj",
   "english": "rare",
   "arabic": [
@@ -547,7 +547,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-162",
+  "id": "k-noun-ثلث",
   "type": "noun",
   "english": "third",
   "arabic": [
@@ -567,7 +567,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4059",
+  "id": "k-noun-تسليم",
   "type": "noun",
   "english": "rescue",
   "arabic": [
@@ -588,7 +588,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-568",
+  "id": "k-adj-ناجح",
   "type": "adj",
   "english": "successful",
   "arabic": [
@@ -608,7 +608,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3995",
+  "id": "k-noun-كذب",
   "type": "noun",
   "english": "lie, falsehood, untruth",
   "arabic": [
@@ -629,7 +629,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6623",
+  "id": "k-adj-غال",
   "type": "adj",
   "english": "dear, costly",
   "arabic": [
@@ -649,7 +649,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-832",
+  "id": "k-noun-انسحاب",
   "type": "noun",
   "english": "withdrawal, retreat",
   "arabic": [
@@ -670,7 +670,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-2749",
+  "id": "k-adj-بسيط",
   "type": "adj",
   "english": "simple",
   "arabic": [
@@ -690,7 +690,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1187",
+  "id": "k-verb-اتفق",
   "type": "verb",
   "english": "agree",
   "arabic": [
@@ -717,7 +717,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4974",
+  "id": "k-noun-مورد",
   "type": "noun",
   "english": "resource",
   "arabic": [
@@ -738,7 +738,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5416",
+  "id": "k-noun-وضوح",
   "type": "noun",
   "english": "clarity, clearness",
   "arabic": [
@@ -758,7 +758,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5000",
+  "id": "k-noun-لاجئ",
   "type": "noun",
   "english": "refugee",
   "arabic": [
@@ -778,7 +778,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4880",
+  "id": "k-noun-اسير",
   "type": "noun",
   "english": "captive",
   "arabic": [
@@ -799,7 +799,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-1472",
+  "id": "k-adj-حساس",
   "type": "adj",
   "english": "sensitive",
   "arabic": [
@@ -819,7 +819,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2484",
+  "id": "k-verb-انتقل",
   "type": "verb",
   "english": "move",
   "arabic": [
@@ -847,7 +847,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6548",
+  "id": "k-noun-مرسل",
   "type": "noun",
   "english": "transmitter",
   "arabic": [
@@ -867,7 +867,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2660",
+  "id": "k-noun-خاتم",
   "type": "noun",
   "english": "ring",
   "arabic": [
@@ -887,7 +887,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-577",
+  "id": "k-noun-حظر",
   "type": "noun",
   "english": "banning, embargo",
   "arabic": [
@@ -908,7 +908,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4590",
+  "id": "k-noun-قبر",
   "type": "noun",
   "english": "tomb, grave, sepulcher",
   "arabic": [
@@ -929,7 +929,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2419",
+  "id": "k-noun-مقطع",
   "type": "noun",
   "english": "division, part, section",
   "arabic": [
@@ -950,7 +950,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-1782",
+  "id": "k-adj-مستعد",
   "type": "adj",
   "english": "ready",
   "arabic": [
@@ -970,7 +970,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-5233",
+  "id": "k-adj-معقول",
   "type": "adj",
   "english": "reasonable, sensible",
   "arabic": [
@@ -990,7 +990,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5054",
+  "id": "k-noun-مقاطعة",
   "type": "noun",
   "english": "district",
   "arabic": [
@@ -1011,7 +1011,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6676",
+  "id": "k-noun-تقسيم",
   "type": "noun",
   "english": "division",
   "arabic": [
@@ -1032,7 +1032,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6474",
+  "id": "k-adj-نشيط",
   "type": "adj",
   "english": "active, energetic",
   "arabic": [

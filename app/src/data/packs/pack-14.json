@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-verb-2383",
+  "id": "k-verb-تذكر",
   "type": "verb",
   "english": "remember, bear in mind",
   "arabic": [
@@ -28,7 +28,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1574",
+  "id": "k-verb-تجمع",
   "type": "verb",
   "english": "pile up",
   "arabic": [
@@ -55,7 +55,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3060",
+  "id": "k-noun-مسرح",
   "type": "noun",
   "english": "theater",
   "arabic": [
@@ -76,7 +76,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6136",
+  "id": "k-noun-موسم",
   "type": "noun",
   "english": "season",
   "arabic": [
@@ -97,7 +97,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3528",
+  "id": "k-noun-سياق",
   "type": "noun",
   "english": "context",
   "arabic": [
@@ -118,7 +118,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2573",
+  "id": "k-noun-فقه",
   "type": "noun",
   "english": "jurisprudence",
   "arabic": [
@@ -138,7 +138,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-194",
+  "id": "k-noun-رمز",
   "type": "noun",
   "english": "symbol, emblem",
   "arabic": [
@@ -159,7 +159,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-280",
+  "id": "k-noun-صيف",
   "type": "noun",
   "english": "summer",
   "arabic": [
@@ -180,7 +180,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6652",
+  "id": "k-noun-بريد",
   "type": "noun",
   "english": "post, mail",
   "arabic": [
@@ -201,7 +201,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3500",
+  "id": "k-noun-برلمان",
   "type": "noun",
   "english": "parliament",
   "arabic": [
@@ -222,7 +222,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3678",
+  "id": "k-noun-حاج",
   "type": "noun",
   "english": "pilgrim",
   "arabic": [
@@ -242,7 +242,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4569",
+  "id": "k-noun-غاية",
   "type": "noun",
   "english": "end",
   "arabic": [
@@ -263,7 +263,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1929",
+  "id": "k-noun-مهرج",
   "type": "noun",
   "english": "clown",
   "arabic": [
@@ -283,7 +283,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1226",
+  "id": "k-noun-حرارة",
   "type": "noun",
   "english": "heat",
   "arabic": [
@@ -304,7 +304,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4116",
+  "id": "k-verb-قبض",
   "type": "verb",
   "english": "seize, grab",
   "arabic": [
@@ -332,7 +332,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-690",
+  "id": "k-noun-سعة",
   "type": "noun",
   "english": "capacity",
   "arabic": [
@@ -353,7 +353,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-316",
+  "id": "k-noun-خسارة",
   "type": "noun",
   "english": "damage",
   "arabic": [
@@ -374,7 +374,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-547",
+  "id": "k-noun-غرض",
   "type": "noun",
   "english": "target, intention, interest",
   "arabic": [
@@ -395,7 +395,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3988",
+  "id": "k-noun-انتهاء",
   "type": "noun",
   "english": "finishing",
   "arabic": [
@@ -415,7 +415,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-613",
+  "id": "k-noun-لب",
   "type": "noun",
   "english": "core, essence, heart",
   "arabic": [
@@ -436,7 +436,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-6583",
+  "id": "k-verb-شمل",
   "type": "verb",
   "english": "include",
   "arabic": [
@@ -463,7 +463,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4208",
+  "id": "k-noun-نبي",
   "type": "noun",
   "english": "prophet",
   "arabic": [
@@ -484,7 +484,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3610",
+  "id": "k-noun-غضب",
   "type": "noun",
   "english": "anger",
   "arabic": [
@@ -505,7 +505,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3881",
+  "id": "k-noun-غذاء",
   "type": "noun",
   "english": "food, nourishment, sustenance",
   "arabic": [
@@ -526,7 +526,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5293",
+  "id": "k-noun-دعوي",
   "type": "noun",
   "english": "lawsuit",
   "arabic": [
@@ -547,7 +547,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2308",
+  "id": "k-verb-قابل",
   "type": "verb",
   "english": "confront, face",
   "arabic": [
@@ -574,7 +574,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2866",
+  "id": "k-noun-احتمال",
   "type": "noun",
   "english": "possibility, chance, eventuality",
   "arabic": [
@@ -595,7 +595,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4636",
+  "id": "k-noun-سلسلة",
   "type": "noun",
   "english": "chain",
   "arabic": [
@@ -616,7 +616,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3322",
+  "id": "k-adj-شرعي",
   "type": "adj",
   "english": "lawful",
   "arabic": [
@@ -636,7 +636,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-362",
+  "id": "k-adj-صوتي",
   "type": "adj",
   "english": "acoustic",
   "arabic": [
@@ -656,7 +656,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4931",
+  "id": "k-verb-لاحظ",
   "type": "verb",
   "english": "notice",
   "arabic": [
@@ -684,7 +684,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1450",
+  "id": "k-verb-ميز",
   "type": "verb",
   "english": "discriminate, differentiate",
   "arabic": [
@@ -712,7 +712,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4325",
+  "id": "k-noun-اعداد",
   "type": "noun",
   "english": "preparation",
   "arabic": [
@@ -733,7 +733,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2110",
+  "id": "k-verb-واجه",
   "type": "verb",
   "english": "face, confront",
   "arabic": [
@@ -761,7 +761,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-306",
+  "id": "k-noun-تلفزيون",
   "type": "noun",
   "english": "television, tv",
   "arabic": [
@@ -781,7 +781,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2596",
+  "id": "k-verb-تطلب",
   "type": "verb",
   "english": "necessitate",
   "arabic": [
@@ -809,7 +809,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6174",
+  "id": "k-noun-تحليل",
   "type": "noun",
   "english": "analysis",
   "arabic": [
@@ -830,7 +830,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4280",
+  "id": "k-noun-عقيد",
   "type": "noun",
   "english": "colonel",
   "arabic": [
@@ -851,7 +851,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5992",
+  "id": "k-noun-مبادرة",
   "type": "noun",
   "english": "initiative",
   "arabic": [
@@ -872,7 +872,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-968",
+  "id": "k-noun-متر",
   "type": "noun",
   "english": "metre",
   "arabic": [
@@ -893,7 +893,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4769",
+  "id": "k-verb-بات",
   "type": "verb",
   "english": "become",
   "arabic": [
@@ -920,7 +920,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1814",
+  "id": "k-verb-نجح",
   "type": "verb",
   "english": "succeed",
   "arabic": [
@@ -948,7 +948,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6463",
+  "id": "k-noun-تصميم",
   "type": "noun",
   "english": "design, pattern, plan",
   "arabic": [
@@ -969,7 +969,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5685",
+  "id": "k-noun-كاس",
   "type": "noun",
   "english": "cup",
   "arabic": [
@@ -990,7 +990,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4734",
+  "id": "k-adj-امن",
   "type": "adj",
   "english": "safe, secure",
   "arabic": [
@@ -1011,7 +1011,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3456",
+  "id": "k-noun-مقابلة",
   "type": "noun",
   "english": "meeting, encounter",
   "arabic": [
@@ -1032,7 +1032,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4499",
+  "id": "k-noun-نطاق",
   "type": "noun",
   "english": "range, scope",
   "arabic": [
@@ -1052,7 +1052,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4198",
+  "id": "k-noun-استراتيجية",
   "type": "noun",
   "english": "strategy",
   "arabic": [
@@ -1073,7 +1073,7 @@
   "level": "C1"
  },
  {
-  "id": "k-verb-4754",
+  "id": "k-verb-تعلم",
   "type": "verb",
   "english": "learn",
   "arabic": [
@@ -1101,7 +1101,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1036",
+  "id": "k-noun-جريمة",
   "type": "noun",
   "english": "crime, offense",
   "arabic": [

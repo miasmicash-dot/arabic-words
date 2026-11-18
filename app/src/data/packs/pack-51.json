@@ -1,6 +1,26 @@
 [
  {
-  "id": "k-noun-undefined",
+  "id": "k-adj-تافه",
+  "type": "adj",
+  "english": "trivial, petty",
+  "arabic": [
+   "تافه"
+  ],
+  "translit": [
+   "taafih"
+  ],
+  "vocalized": "تَافِه",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2501,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-تاكسي",
   "type": "noun",
   "english": "taxi, cab, taxicab",
   "arabic": [
@@ -17,11 +37,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2501,
+  "frequencyRank": 2502,
   "level": "A1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تبادل",
   "type": "verb",
   "english": "interchange, exchange",
   "arabic": [
@@ -45,11 +65,11 @@
    "we": "نحن نتبادل",
    "they": "هم يتبادلون"
   },
-  "frequencyRank": 2502,
+  "frequencyRank": 2503,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تباهي",
   "type": "verb",
   "english": "brag",
   "arabic": [
@@ -73,11 +93,11 @@
    "we": "نحن نتباهى",
    "they": "هم يتباهون"
   },
-  "frequencyRank": 2503,
+  "frequencyRank": 2504,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تبسيط",
   "type": "noun",
   "english": "simplification",
   "arabic": [
@@ -94,11 +114,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2504,
+  "frequencyRank": 2505,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تبعية",
   "type": "noun",
   "english": "dependency",
   "arabic": [
@@ -114,11 +134,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2505,
+  "frequencyRank": 2506,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تجادل",
   "type": "verb",
   "english": "argue, dispute",
   "arabic": [
@@ -141,11 +161,11 @@
    "we": "نحن نتجادل",
    "they": "هم يتجادلون"
   },
-  "frequencyRank": 2506,
+  "frequencyRank": 2507,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-تجريدي",
   "type": "adj",
   "english": "abstract",
   "arabic": [
@@ -161,11 +181,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2507,
+  "frequencyRank": 2508,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تجول",
   "type": "verb",
   "english": "roam, wander",
   "arabic": [
@@ -189,11 +209,11 @@
    "we": "نحن نتجول",
    "they": "هم يتجولون"
   },
-  "frequencyRank": 2508,
+  "frequencyRank": 2509,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تجويف",
   "type": "noun",
   "english": "cavity",
   "arabic": [
@@ -210,11 +230,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2509,
+  "frequencyRank": 2510,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تحدي",
   "type": "verb",
   "english": "challenge",
   "arabic": [
@@ -237,11 +257,11 @@
    "we": "نحن نتحدى",
    "they": "هم يتحدون"
   },
-  "frequencyRank": 2510,
+  "frequencyRank": 2511,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تحليق",
   "type": "noun",
   "english": "flying, flight",
   "arabic": [
@@ -257,11 +277,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2511,
+  "frequencyRank": 2512,
   "level": "C2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-تحليلي",
   "type": "adj",
   "english": "analytical",
   "arabic": [
@@ -277,11 +297,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2512,
+  "frequencyRank": 2513,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تحمل",
   "type": "verb",
   "english": "tolerate, bear",
   "arabic": [
@@ -305,11 +325,11 @@
    "we": "نحن نتحمل",
    "they": "هم يتحملون"
   },
-  "frequencyRank": 2513,
+  "frequencyRank": 2514,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تحية",
   "type": "noun",
   "english": "greeting",
   "arabic": [
@@ -326,11 +346,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2514,
+  "frequencyRank": 2515,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تخطي",
   "type": "verb",
   "english": "overstep",
   "arabic": [
@@ -354,11 +374,11 @@
    "we": "نحن نتخطى",
    "they": "هم يتخطون"
   },
-  "frequencyRank": 2515,
+  "frequencyRank": 2516,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تدحرج",
   "type": "verb",
   "english": "roll",
   "arabic": [
@@ -382,11 +402,11 @@
    "we": "نحن نتدحرج",
    "they": "هم يتدحرجون"
   },
-  "frequencyRank": 2516,
+  "frequencyRank": 2517,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تذمر",
   "type": "verb",
   "english": "complain, grumble",
   "arabic": [
@@ -410,11 +430,11 @@
    "we": "نحن نتذمر",
    "they": "هم يتذمرون"
   },
-  "frequencyRank": 2517,
+  "frequencyRank": 2518,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تذوق",
   "type": "verb",
   "english": "taste, savour",
   "arabic": [
@@ -438,11 +458,11 @@
    "we": "نحن نتذوق",
    "they": "هم يتذوقون"
   },
-  "frequencyRank": 2518,
+  "frequencyRank": 2519,
   "level": "B1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تراكم",
   "type": "verb",
   "english": "accumulate",
   "arabic": [
@@ -465,11 +485,11 @@
    "we": "نحن نتراكم",
    "they": "هم يتراكمون"
   },
-  "frequencyRank": 2519,
+  "frequencyRank": 2520,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ترام",
   "type": "noun",
   "english": "tram, streetcar",
   "arabic": [
@@ -486,11 +506,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2520,
+  "frequencyRank": 2521,
   "level": "B1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ترقية",
   "type": "noun",
   "english": "upgrade",
   "arabic": [
@@ -506,11 +526,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2521,
+  "frequencyRank": 2522,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-تركي",
   "type": "adj",
   "english": "turkish",
   "arabic": [
@@ -526,11 +546,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2522,
+  "frequencyRank": 2523,
   "level": "A1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تزحلق",
   "type": "verb",
   "english": "slide, ski",
   "arabic": [
@@ -554,11 +574,11 @@
    "we": "نحن نتزحلق",
    "they": "هم يتزحلقون"
   },
-  "frequencyRank": 2523,
+  "frequencyRank": 2524,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تزلج",
   "type": "noun",
   "english": "skiing",
   "arabic": [
@@ -574,11 +594,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2524,
+  "frequencyRank": 2525,
   "level": "B1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تسلق",
   "type": "verb",
   "english": "climb",
   "arabic": [
@@ -602,11 +622,11 @@
    "we": "نحن نتسلق",
    "they": "هم يتسلقون"
   },
-  "frequencyRank": 2525,
+  "frequencyRank": 2526,
   "level": "B1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تسلية",
   "type": "noun",
   "english": "entertainment, amusement",
   "arabic": [
@@ -623,11 +643,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2526,
+  "frequencyRank": 2527,
   "level": "B1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تشاجر",
   "type": "verb",
   "english": "quarrel",
   "arabic": [
@@ -651,11 +671,11 @@
    "we": "نحن نتشاجر",
    "they": "هم يتشاجرون"
   },
-  "frequencyRank": 2527,
+  "frequencyRank": 2528,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تشكيلة",
   "type": "noun",
   "english": "formation",
   "arabic": [
@@ -672,11 +692,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2528,
+  "frequencyRank": 2529,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-تشيكي",
   "type": "adj",
   "english": "czech",
   "arabic": [
@@ -692,11 +712,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2529,
+  "frequencyRank": 2530,
   "level": "B1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تصفية",
   "type": "noun",
   "english": "purification",
   "arabic": [
@@ -712,11 +732,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2530,
+  "frequencyRank": 2531,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تصفيق",
   "type": "noun",
   "english": "applause, clapping",
   "arabic": [
@@ -732,11 +752,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2531,
+  "frequencyRank": 2532,
   "level": "B1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تصليح",
   "type": "noun",
   "english": "fixing, mending",
   "arabic": [
@@ -753,11 +773,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2532,
+  "frequencyRank": 2533,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تصويت",
   "type": "noun",
   "english": "voting",
   "arabic": [
@@ -774,11 +794,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2533,
+  "frequencyRank": 2534,
   "level": "B1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تطوع",
   "type": "verb",
   "english": "volunteer",
   "arabic": [
@@ -801,11 +821,11 @@
    "we": "نحن نتطوع",
    "they": "هم يتطوعون"
   },
-  "frequencyRank": 2534,
+  "frequencyRank": 2535,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تعاطف",
   "type": "noun",
   "english": "sympathy",
   "arabic": [
@@ -821,11 +841,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 2535,
+  "frequencyRank": 2536,
   "level": "B1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تعاون",
   "type": "noun",
   "english": "cooperation",
   "arabic": [
@@ -842,11 +862,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2536,
+  "frequencyRank": 2537,
   "level": "C1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-تعاوني",
   "type": "adj",
   "english": "cooperative",
   "arabic": [
@@ -863,11 +883,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2537,
+  "frequencyRank": 2538,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تعدين",
   "type": "noun",
   "english": "mining",
   "arabic": [
@@ -883,11 +903,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2538,
+  "frequencyRank": 2539,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تعليل",
   "type": "noun",
   "english": "explanation",
   "arabic": [
@@ -904,11 +924,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2539,
+  "frequencyRank": 2540,
   "level": "C2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-تعليمي",
   "type": "adj",
   "english": "educational",
   "arabic": [
@@ -925,11 +945,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2540,
+  "frequencyRank": 2541,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تعميد",
   "type": "noun",
   "english": "baptism",
   "arabic": [
@@ -946,11 +966,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2541,
+  "frequencyRank": 2542,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تعيين",
   "type": "noun",
   "english": "appointment",
   "arabic": [
@@ -967,11 +987,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2542,
+  "frequencyRank": 2543,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تفكك",
   "type": "verb",
   "english": "disassemble, dismantle",
   "arabic": [
@@ -994,11 +1014,11 @@
    "we": "نحن نتفكك",
    "they": "هم يتفككون"
   },
-  "frequencyRank": 2543,
+  "frequencyRank": 2544,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تقاعد",
   "type": "verb",
   "english": "retire",
   "arabic": [
@@ -1022,11 +1042,11 @@
    "we": "نحن نتقاعد",
    "they": "هم يتقاعدون"
   },
-  "frequencyRank": 2544,
+  "frequencyRank": 2545,
   "level": "C2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-تقدمي",
   "type": "adj",
   "english": "progressive",
   "arabic": [
@@ -1043,11 +1063,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2545,
+  "frequencyRank": 2546,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-تقليدي",
   "type": "adj",
   "english": "traditional",
   "arabic": [
@@ -1063,11 +1083,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2546,
+  "frequencyRank": 2547,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تقنية",
   "type": "noun",
   "english": "technology",
   "arabic": [
@@ -1084,11 +1104,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2547,
+  "frequencyRank": 2548,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تكاثر",
   "type": "noun",
   "english": "reproduction",
   "arabic": [
@@ -1104,11 +1124,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 2548,
+  "frequencyRank": 2549,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تكنولوجيا",
   "type": "noun",
   "english": "technology",
   "arabic": [
@@ -1124,27 +1144,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2549,
-  "level": "A1"
- },
- {
-  "id": "k-noun-undefined",
-  "type": "noun",
-  "english": "conditioning",
-  "arabic": [
-   "تكييف"
-  ],
-  "translit": [
-   "takyiif"
-  ],
-  "vocalized": "تَكْيِيف",
-  "verified": [
-   "kelly",
-   "wiktionary-ar",
-   "wiktionary-en",
-   "buckwalter"
-  ],
   "frequencyRank": 2550,
-  "level": "B2"
+  "level": "A1"
  }
 ]

@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-6525",
+  "id": "k-noun-مربع",
   "type": "noun",
   "english": "square",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3165",
+  "id": "k-noun-رحيل",
   "type": "noun",
   "english": "leaving, departure",
   "arabic": [
@@ -42,7 +42,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6127",
+  "id": "k-noun-مولي",
   "type": "noun",
   "english": "lord, master",
   "arabic": [
@@ -62,7 +62,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-3787",
+  "id": "k-verb-اشترك",
   "type": "verb",
   "english": "participate",
   "arabic": [
@@ -90,7 +90,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5266",
+  "id": "k-noun-عفو",
   "type": "noun",
   "english": "pardon, forgiveness, amnesty",
   "arabic": [
@@ -111,7 +111,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2684",
+  "id": "k-noun-ظلمة",
   "type": "noun",
   "english": "darkness",
   "arabic": [
@@ -132,7 +132,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-1088",
+  "id": "k-verb-غادر",
   "type": "verb",
   "english": "leave",
   "arabic": [
@@ -160,7 +160,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4764",
+  "id": "k-noun-ملاك",
   "type": "noun",
   "english": "angel",
   "arabic": [
@@ -181,7 +181,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-4941",
+  "id": "k-adj-متزايد",
   "type": "adj",
   "english": "increasing",
   "arabic": [
@@ -201,7 +201,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-82",
+  "id": "k-noun-ابد",
   "type": "noun",
   "english": "eternity",
   "arabic": [
@@ -221,7 +221,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4714",
+  "id": "k-noun-جسر",
   "type": "noun",
   "english": "bridge",
   "arabic": [
@@ -242,7 +242,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4752",
+  "id": "k-noun-مزرعة",
   "type": "noun",
   "english": "farm",
   "arabic": [
@@ -263,7 +263,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1479",
+  "id": "k-noun-شكوي",
   "type": "noun",
   "english": "complaint",
   "arabic": [
@@ -284,7 +284,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6478",
+  "id": "k-noun-احتياط",
   "type": "noun",
   "english": "precaution, caution, carefulness",
   "arabic": [
@@ -304,7 +304,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1602",
+  "id": "k-noun-بند",
   "type": "noun",
   "english": "clause, article",
   "arabic": [
@@ -324,7 +324,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-5216",
+  "id": "k-verb-سقط",
   "type": "verb",
   "english": "fall, descend",
   "arabic": [
@@ -352,7 +352,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3272",
+  "id": "k-noun-سند",
   "type": "noun",
   "english": "support",
   "arabic": [
@@ -372,7 +372,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4349",
+  "id": "k-noun-تخصيص",
   "type": "noun",
   "english": "allocation, allotment",
   "arabic": [
@@ -393,7 +393,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-951",
+  "id": "k-noun-داء",
   "type": "noun",
   "english": "disease",
   "arabic": [
@@ -414,7 +414,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5601",
+  "id": "k-noun-مجرم",
   "type": "noun",
   "english": "criminal",
   "arabic": [
@@ -435,7 +435,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-579",
+  "id": "k-noun-مؤرخ",
   "type": "noun",
   "english": "historian, chronicler",
   "arabic": [
@@ -455,7 +455,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6160",
+  "id": "k-noun-معبر",
   "type": "noun",
   "english": "crossing",
   "arabic": [
@@ -475,7 +475,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2265",
+  "id": "k-noun-خريطة",
   "type": "noun",
   "english": "map",
   "arabic": [
@@ -496,7 +496,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5577",
+  "id": "k-noun-خطة",
   "type": "noun",
   "english": "plan",
   "arabic": [
@@ -517,7 +517,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-6205",
+  "id": "k-adj-اكاديمي",
   "type": "adj",
   "english": "academic",
   "arabic": [
@@ -538,7 +538,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3243",
+  "id": "k-noun-مقياس",
   "type": "noun",
   "english": "standard, scale",
   "arabic": [
@@ -559,7 +559,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-780",
+  "id": "k-adj-صلب",
   "type": "adj",
   "english": "firm, solid",
   "arabic": [
@@ -580,7 +580,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-6430",
+  "id": "k-adj-خائف",
   "type": "adj",
   "english": "afraid",
   "arabic": [
@@ -600,7 +600,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1703",
+  "id": "k-noun-روضة",
   "type": "noun",
   "english": "kindergarten",
   "arabic": [
@@ -620,7 +620,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2208",
+  "id": "k-noun-شفاء",
   "type": "noun",
   "english": "cure, remedy, medicine",
   "arabic": [
@@ -640,7 +640,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-3734",
+  "id": "k-adj-بيئي",
   "type": "adj",
   "english": "environmental",
   "arabic": [
@@ -660,7 +660,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2957",
+  "id": "k-noun-ادراك",
   "type": "noun",
   "english": "awareness, cognizance",
   "arabic": [
@@ -680,7 +680,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6152",
+  "id": "k-noun-علة",
   "type": "noun",
   "english": "malady",
   "arabic": [
@@ -700,7 +700,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4180",
+  "id": "k-verb-تعب",
   "type": "verb",
   "english": "toil",
   "arabic": [
@@ -727,7 +727,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-616",
+  "id": "k-noun-هامش",
   "type": "noun",
   "english": "margin",
   "arabic": [
@@ -747,7 +747,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-5955",
+  "id": "k-adj-رفيع",
   "type": "adj",
   "english": "thin",
   "arabic": [
@@ -767,7 +767,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1662",
+  "id": "k-noun-فجوة",
   "type": "noun",
   "english": "gap",
   "arabic": [
@@ -787,7 +787,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2879",
+  "id": "k-noun-ميثاق",
   "type": "noun",
   "english": "charter",
   "arabic": [
@@ -808,7 +808,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6497",
+  "id": "k-noun-منبر",
   "type": "noun",
   "english": "pulpit",
   "arabic": [
@@ -828,7 +828,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3369",
+  "id": "k-noun-نسيج",
   "type": "noun",
   "english": "textile, fabric, material",
   "arabic": [
@@ -849,7 +849,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3708",
+  "id": "k-noun-استهلاك",
   "type": "noun",
   "english": "consumption",
   "arabic": [
@@ -870,7 +870,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2274",
+  "id": "k-noun-باشا",
   "type": "noun",
   "english": "pasha",
   "arabic": [
@@ -890,7 +890,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-5059",
+  "id": "k-verb-طبع",
   "type": "verb",
   "english": "print, imprint",
   "arabic": [
@@ -918,7 +918,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-3121",
+  "id": "k-verb-توسع",
   "type": "verb",
   "english": "expand",
   "arabic": [
@@ -946,7 +946,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2926",
+  "id": "k-noun-فراغ",
   "type": "noun",
   "english": "void, vacancy, vacuum",
   "arabic": [
@@ -967,7 +967,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-121",
+  "id": "k-noun-ملحق",
   "type": "noun",
   "english": "supplement, appendix, addendum",
   "arabic": [
@@ -987,7 +987,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-828",
+  "id": "k-verb-اعترف",
   "type": "verb",
   "english": "confess, admit",
   "arabic": [
@@ -1015,7 +1015,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1453",
+  "id": "k-noun-حائط",
   "type": "noun",
   "english": "wall",
   "arabic": [
@@ -1036,7 +1036,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-254",
+  "id": "k-noun-مهر",
   "type": "noun",
   "english": "dowry, dower",
   "arabic": [
@@ -1056,7 +1056,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3687",
+  "id": "k-noun-عشاء",
   "type": "noun",
   "english": "supper, dinner",
   "arabic": [

@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-1784",
+  "id": "k-noun-شريط",
   "type": "noun",
   "english": "tape, ribbon",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4650",
+  "id": "k-noun-تقليد",
   "type": "noun",
   "english": "tradition",
   "arabic": [
@@ -42,7 +42,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-2163",
+  "id": "k-verb-اختلف",
   "type": "verb",
   "english": "disagree",
   "arabic": [
@@ -70,7 +70,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5079",
+  "id": "k-noun-عيد",
   "type": "noun",
   "english": "holiday, festival",
   "arabic": [
@@ -90,7 +90,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-5820",
+  "id": "k-adj-جائز",
   "type": "adj",
   "english": "possible",
   "arabic": [
@@ -110,7 +110,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5646",
+  "id": "k-noun-اقليم",
   "type": "noun",
   "english": "region",
   "arabic": [
@@ -131,7 +131,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1824",
+  "id": "k-noun-وفاة",
   "type": "noun",
   "english": "death, decease",
   "arabic": [
@@ -152,7 +152,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5286",
+  "id": "k-noun-معالجة",
   "type": "noun",
   "english": "processing",
   "arabic": [
@@ -173,7 +173,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-715",
+  "id": "k-noun-لحظة",
   "type": "noun",
   "english": "moment, instant",
   "arabic": [
@@ -194,7 +194,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4378",
+  "id": "k-noun-نموذج",
   "type": "noun",
   "english": "model",
   "arabic": [
@@ -215,7 +215,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6640",
+  "id": "k-noun-غاز",
   "type": "noun",
   "english": "invader",
   "arabic": [
@@ -235,7 +235,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4787",
+  "id": "k-noun-ترجمة",
   "type": "noun",
   "english": "translation",
   "arabic": [
@@ -256,7 +256,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5703",
+  "id": "k-noun-حرية",
   "type": "noun",
   "english": "freedom, liberty",
   "arabic": [
@@ -277,7 +277,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-3129",
+  "id": "k-verb-استخدم",
   "type": "verb",
   "english": "use",
   "arabic": [
@@ -305,7 +305,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3908",
+  "id": "k-noun-نقد",
   "type": "noun",
   "english": "cash",
   "arabic": [
@@ -326,7 +326,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1820",
+  "id": "k-noun-خدمة",
   "type": "noun",
   "english": "service",
   "arabic": [
@@ -347,7 +347,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5696",
+  "id": "k-noun-بركة",
   "type": "noun",
   "english": "blessing, boon",
   "arabic": [
@@ -368,7 +368,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2405",
+  "id": "k-noun-هجوم",
   "type": "noun",
   "english": "attack",
   "arabic": [
@@ -388,7 +388,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3956",
+  "id": "k-noun-جهاد",
   "type": "noun",
   "english": "struggle",
   "arabic": [
@@ -408,7 +408,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-365",
+  "id": "k-adj-مادي",
   "type": "adj",
   "english": "material",
   "arabic": [
@@ -429,7 +429,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2212",
+  "id": "k-noun-سجن",
   "type": "noun",
   "english": "imprisonment",
   "arabic": [
@@ -449,7 +449,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5790",
+  "id": "k-noun-رابط",
   "type": "noun",
   "english": "link",
   "arabic": [
@@ -470,7 +470,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2438",
+  "id": "k-noun-منهج",
   "type": "noun",
   "english": "programme",
   "arabic": [
@@ -490,7 +490,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3804",
+  "id": "k-noun-تل",
   "type": "noun",
   "english": "mound",
   "arabic": [
@@ -511,7 +511,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5398",
+  "id": "k-noun-باحث",
   "type": "noun",
   "english": "researcher",
   "arabic": [
@@ -532,7 +532,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1528",
+  "id": "k-noun-سوء",
   "type": "noun",
   "english": "evil, badness",
   "arabic": [
@@ -553,7 +553,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2239",
+  "id": "k-noun-صف",
   "type": "noun",
   "english": "row",
   "arabic": [
@@ -574,7 +574,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3415",
+  "id": "k-noun-بر",
   "type": "noun",
   "english": "land, dry land",
   "arabic": [
@@ -595,7 +595,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1153",
+  "id": "k-noun-جنة",
   "type": "noun",
   "english": "paradise, heaven",
   "arabic": [
@@ -616,7 +616,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1437",
+  "id": "k-noun-جمعية",
   "type": "noun",
   "english": "association, club, society",
   "arabic": [
@@ -637,7 +637,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4748",
+  "id": "k-noun-صحافة",
   "type": "noun",
   "english": "journalism",
   "arabic": [
@@ -658,7 +658,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-2066",
+  "id": "k-verb-تمكن",
   "type": "verb",
   "english": "master",
   "arabic": [
@@ -685,7 +685,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-773",
+  "id": "k-noun-ضابط",
   "type": "noun",
   "english": "officer",
   "arabic": [
@@ -706,7 +706,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-6695",
+  "id": "k-verb-احب",
   "type": "verb",
   "english": "love, like",
   "arabic": [
@@ -734,7 +734,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-2220",
+  "id": "k-verb-تبع",
   "type": "verb",
   "english": "follow, succeed",
   "arabic": [
@@ -762,7 +762,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5092",
+  "id": "k-noun-شيطان",
   "type": "noun",
   "english": "satan, devil",
   "arabic": [
@@ -783,7 +783,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-5944",
+  "id": "k-adj-حاد",
   "type": "adj",
   "english": "sharp",
   "arabic": [
@@ -803,7 +803,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-4612",
+  "id": "k-adj-هام",
   "type": "adj",
   "english": "important, significant",
   "arabic": [
@@ -823,7 +823,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1738",
+  "id": "k-noun-كون",
   "type": "noun",
   "english": "being",
   "arabic": [
@@ -843,7 +843,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-3600",
+  "id": "k-adj-قانوني",
   "type": "adj",
   "english": "legal",
   "arabic": [
@@ -864,7 +864,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-4108",
+  "id": "k-adj-متوسط",
   "type": "adj",
   "english": "medium",
   "arabic": [
@@ -885,7 +885,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-1902",
+  "id": "k-verb-تناول",
   "type": "verb",
   "english": "take, receive",
   "arabic": [
@@ -912,7 +912,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4110",
+  "id": "k-noun-ريال",
   "type": "noun",
   "english": "riyal",
   "arabic": [
@@ -933,7 +933,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1791",
+  "id": "k-noun-منصب",
   "type": "noun",
   "english": "post, position, office",
   "arabic": [
@@ -954,7 +954,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3577",
+  "id": "k-noun-سيطرة",
   "type": "noun",
   "english": "control",
   "arabic": [
@@ -975,7 +975,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6269",
+  "id": "k-noun-فرع",
   "type": "noun",
   "english": "branch, limb",
   "arabic": [
@@ -996,7 +996,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-5111",
+  "id": "k-adj-ضروري",
   "type": "adj",
   "english": "necessary",
   "arabic": [
@@ -1017,7 +1017,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-2317",
+  "id": "k-adj-صناعي",
   "type": "adj",
   "english": "industrial",
   "arabic": [
@@ -1038,7 +1038,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2174",
+  "id": "k-noun-زعيم",
   "type": "noun",
   "english": "leader",
   "arabic": [
@@ -1059,7 +1059,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2430",
+  "id": "k-noun-اخلاق",
   "type": "noun",
   "english": "morals, ethics",
   "arabic": [

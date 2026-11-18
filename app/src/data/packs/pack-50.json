@@ -1,6 +1,26 @@
 [
  {
-  "id": "k-noun-undefined",
+  "id": "k-adj-بديهي",
+  "type": "adj",
+  "english": "obvious",
+  "arabic": [
+   "بديهي"
+  ],
+  "translit": [
+   "badiihiyy"
+  ],
+  "vocalized": "بَدِيهِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2451,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-بذرة",
   "type": "noun",
   "english": "seed",
   "arabic": [
@@ -17,11 +37,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2451,
+  "frequencyRank": 2452,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-براز",
   "type": "noun",
   "english": "excrement",
   "arabic": [
@@ -37,11 +57,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 2452,
+  "frequencyRank": 2453,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-برازيلي",
   "type": "adj",
   "english": "brazilian",
   "arabic": [
@@ -57,11 +77,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2453,
+  "frequencyRank": 2454,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-براعة",
   "type": "noun",
   "english": "skill",
   "arabic": [
@@ -77,11 +97,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2454,
+  "frequencyRank": 2455,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-برجوازي",
   "type": "adj",
   "english": "bourgeois",
   "arabic": [
@@ -98,11 +118,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2455,
+  "frequencyRank": 2456,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-برعم",
   "type": "noun",
   "english": "bud",
   "arabic": [
@@ -118,11 +138,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2456,
+  "frequencyRank": 2457,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-برهن",
   "type": "verb",
   "english": "prove",
   "arabic": [
@@ -146,11 +166,11 @@
    "we": "نحن نبرهن",
    "they": "هم يبرهنون"
   },
-  "frequencyRank": 2457,
+  "frequencyRank": 2458,
   "level": "C1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-بروتستانتي",
   "type": "adj",
   "english": "protestant",
   "arabic": [
@@ -167,11 +187,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2458,
+  "frequencyRank": 2459,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بروتين",
   "type": "noun",
   "english": "protein",
   "arabic": [
@@ -188,11 +208,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2459,
+  "frequencyRank": 2460,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بروليتاريا",
   "type": "noun",
   "english": "proletariat",
   "arabic": [
@@ -208,11 +228,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2460,
+  "frequencyRank": 2461,
   "level": "C2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-بريدي",
   "type": "adj",
   "english": "postal",
   "arabic": [
@@ -228,11 +248,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2461,
+  "frequencyRank": 2462,
   "level": "A2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-بريطاني",
   "type": "adj",
   "english": "british",
   "arabic": [
@@ -249,11 +269,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2462,
+  "frequencyRank": 2463,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بساطة",
   "type": "noun",
   "english": "simplicity",
   "arabic": [
@@ -269,11 +289,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2463,
+  "frequencyRank": 2464,
   "level": "A1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-بسط",
   "type": "verb",
   "english": "extend, stretch",
   "arabic": [
@@ -296,11 +316,11 @@
    "we": "نحن نبسط",
    "they": "هم يبسطون"
   },
-  "frequencyRank": 2464,
+  "frequencyRank": 2465,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بسكويت",
   "type": "noun",
   "english": "biscuit, cookie",
   "arabic": [
@@ -316,11 +336,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2465,
+  "frequencyRank": 2466,
   "level": "A2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-بصق",
   "type": "verb",
   "english": "spit out",
   "arabic": [
@@ -343,11 +363,11 @@
    "we": "نحن نبصق",
    "they": "هم يبصقون"
   },
-  "frequencyRank": 2466,
+  "frequencyRank": 2467,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بصمة",
   "type": "noun",
   "english": "fingerprint",
   "arabic": [
@@ -363,11 +383,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2467,
+  "frequencyRank": 2468,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-بصير",
   "type": "adj",
   "english": "seeing",
   "arabic": [
@@ -383,11 +403,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2468,
+  "frequencyRank": 2469,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بطارية",
   "type": "noun",
   "english": "battery",
   "arabic": [
@@ -403,11 +423,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2469,
+  "frequencyRank": 2470,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بطالة",
   "type": "noun",
   "english": "unemployment",
   "arabic": [
@@ -423,11 +443,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 2470,
+  "frequencyRank": 2471,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بطانية",
   "type": "noun",
   "english": "blanket",
   "arabic": [
@@ -443,11 +463,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2471,
+  "frequencyRank": 2472,
   "level": "B1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بطة",
   "type": "noun",
   "english": "duck",
   "arabic": [
@@ -464,11 +484,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2472,
+  "frequencyRank": 2473,
   "level": "A2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-بطيء",
   "type": "adj",
   "english": "slow",
   "arabic": [
@@ -484,11 +504,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2473,
+  "frequencyRank": 2474,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بعثة",
   "type": "noun",
   "english": "mission, delegation",
   "arabic": [
@@ -505,11 +525,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2474,
+  "frequencyRank": 2475,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بغاء",
   "type": "noun",
   "english": "prostitution",
   "arabic": [
@@ -525,11 +545,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2475,
+  "frequencyRank": 2476,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-بقي",
   "type": "verb",
   "english": "stay, remain",
   "arabic": [
@@ -553,11 +573,11 @@
    "we": "نحن نبقى",
    "they": "هم يبقون"
   },
-  "frequencyRank": 2476,
+  "frequencyRank": 2477,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بكتيريا",
   "type": "noun",
   "english": "bacteria",
   "arabic": [
@@ -573,11 +593,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2477,
+  "frequencyRank": 2478,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-بكي",
   "type": "verb",
   "english": "cry, weep",
   "arabic": [
@@ -601,11 +621,11 @@
    "we": "نحن نبكي",
    "they": "هم يبكون"
   },
-  "frequencyRank": 2478,
+  "frequencyRank": 2479,
   "level": "B1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بلاستيك",
   "type": "noun",
   "english": "plastic",
   "arabic": [
@@ -622,11 +642,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2479,
+  "frequencyRank": 2480,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بلدة",
   "type": "noun",
   "english": "town",
   "arabic": [
@@ -643,11 +663,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2480,
+  "frequencyRank": 2481,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بلور",
   "type": "noun",
   "english": "crystal",
   "arabic": [
@@ -664,11 +684,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2481,
+  "frequencyRank": 2482,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بلوط",
   "type": "noun",
   "english": "oak",
   "arabic": [
@@ -685,11 +705,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2482,
+  "frequencyRank": 2483,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بناية",
   "type": "noun",
   "english": "building",
   "arabic": [
@@ -706,11 +726,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2483,
+  "frequencyRank": 2484,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بندقية",
   "type": "noun",
   "english": "rifle",
   "arabic": [
@@ -726,11 +746,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 2484,
+  "frequencyRank": 2485,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بنطلون",
   "type": "noun",
   "english": "pants",
   "arabic": [
@@ -746,11 +766,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 2485,
+  "frequencyRank": 2486,
   "level": "A1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-بنفسجي",
   "type": "adj",
   "english": "violet, purple",
   "arabic": [
@@ -766,11 +786,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2486,
+  "frequencyRank": 2487,
   "level": "A2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-بني",
   "type": "verb",
   "english": "build, construct",
   "arabic": [
@@ -794,11 +814,11 @@
    "we": "نحن نبني",
    "they": "هم يبنون"
   },
-  "frequencyRank": 2487,
+  "frequencyRank": 2488,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بهجة",
   "type": "noun",
   "english": "joy",
   "arabic": [
@@ -814,11 +834,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2488,
+  "frequencyRank": 2489,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بهو",
   "type": "noun",
   "english": "hall, foyer",
   "arabic": [
@@ -835,11 +855,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2489,
+  "frequencyRank": 2490,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بهيمة",
   "type": "noun",
   "english": "beast",
   "arabic": [
@@ -855,11 +875,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2490,
+  "frequencyRank": 2491,
   "level": "C1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-بوذي",
   "type": "adj",
   "english": "buddhist",
   "arabic": [
@@ -875,11 +895,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2491,
+  "frequencyRank": 2492,
   "level": "C1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-بولندي",
   "type": "adj",
   "english": "polish",
   "arabic": [
@@ -895,11 +915,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2492,
+  "frequencyRank": 2493,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بيانات",
   "type": "noun",
   "english": "information",
   "arabic": [
@@ -915,11 +935,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 2493,
+  "frequencyRank": 2494,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بيانو",
   "type": "noun",
   "english": "piano",
   "arabic": [
@@ -936,11 +956,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2494,
+  "frequencyRank": 2495,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بيتزا",
   "type": "noun",
   "english": "pizza",
   "arabic": [
@@ -956,11 +976,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2495,
+  "frequencyRank": 2496,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بيرة",
   "type": "noun",
   "english": "beer",
   "arabic": [
@@ -976,11 +996,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 2496,
+  "frequencyRank": 2497,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-بيضة",
   "type": "noun",
   "english": "egg",
   "arabic": [
@@ -997,11 +1017,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2497,
+  "frequencyRank": 2498,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-تاشيرة",
   "type": "noun",
   "english": "visa",
   "arabic": [
@@ -1017,11 +1037,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2498,
+  "frequencyRank": 2499,
   "level": "A2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-تاهب",
   "type": "verb",
   "english": "prepare",
   "arabic": [
@@ -1045,27 +1065,7 @@
    "we": "نحن نتأهب",
    "they": "هم يتأهبون"
   },
-  "frequencyRank": 2499,
-  "level": "C1"
- },
- {
-  "id": "k-adj-undefined",
-  "type": "adj",
-  "english": "trivial, petty",
-  "arabic": [
-   "تافه"
-  ],
-  "translit": [
-   "taafih"
-  ],
-  "vocalized": "تَافِه",
-  "verified": [
-   "kelly",
-   "wiktionary-ar",
-   "wiktionary-en",
-   "buckwalter"
-  ],
   "frequencyRank": 2500,
-  "level": "B2"
+  "level": "C1"
  }
 ]

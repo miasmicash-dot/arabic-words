@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-384",
+  "id": "k-noun-نواة",
   "type": "noun",
   "english": "core, center",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1559",
+  "id": "k-noun-سهولة",
   "type": "noun",
   "english": "ease, facility",
   "arabic": [
@@ -41,7 +41,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3966",
+  "id": "k-noun-مفاجاة",
   "type": "noun",
   "english": "surprise",
   "arabic": [
@@ -62,7 +62,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6584",
+  "id": "k-noun-بلاغ",
   "type": "noun",
   "english": "communiqu",
   "arabic": [
@@ -82,7 +82,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4446",
+  "id": "k-noun-جدول",
   "type": "noun",
   "english": "schedule, table",
   "arabic": [
@@ -103,7 +103,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4855",
+  "id": "k-noun-مجلد",
   "type": "noun",
   "english": "volume",
   "arabic": [
@@ -123,7 +123,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4272",
+  "id": "k-noun-بطن",
   "type": "noun",
   "english": "stomach, abdomen",
   "arabic": [
@@ -144,7 +144,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3087",
+  "id": "k-noun-حزام",
   "type": "noun",
   "english": "belt",
   "arabic": [
@@ -165,7 +165,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4867",
+  "id": "k-noun-دوام",
   "type": "noun",
   "english": "permanence",
   "arabic": [
@@ -186,7 +186,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-6120",
+  "id": "k-adj-ليبرالي",
   "type": "adj",
   "english": "liberal",
   "arabic": [
@@ -206,7 +206,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-6359",
+  "id": "k-verb-اختار",
   "type": "verb",
   "english": "choose",
   "arabic": [
@@ -234,7 +234,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1098",
+  "id": "k-noun-محاسب",
   "type": "noun",
   "english": "accountant",
   "arabic": [
@@ -255,7 +255,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-572",
+  "id": "k-noun-صيد",
   "type": "noun",
   "english": "hunt, hunting, fishing",
   "arabic": [
@@ -275,7 +275,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5732",
+  "id": "k-noun-غلاف",
   "type": "noun",
   "english": "cover",
   "arabic": [
@@ -296,7 +296,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5442",
+  "id": "k-noun-ادعاء",
   "type": "noun",
   "english": "allegation, claim",
   "arabic": [
@@ -316,7 +316,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4228",
+  "id": "k-noun-غلط",
   "type": "noun",
   "english": "error, mistake",
   "arabic": [
@@ -337,7 +337,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-611",
+  "id": "k-noun-سطح",
   "type": "noun",
   "english": "surface",
   "arabic": [
@@ -358,7 +358,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4864",
+  "id": "k-noun-تحصيل",
   "type": "noun",
   "english": "acquisition",
   "arabic": [
@@ -378,7 +378,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-5926",
+  "id": "k-adj-منتشر",
   "type": "adj",
   "english": "prevalent",
   "arabic": [
@@ -398,7 +398,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5083",
+  "id": "k-noun-انفاق",
   "type": "noun",
   "english": "expenditure",
   "arabic": [
@@ -418,7 +418,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1263",
+  "id": "k-noun-جوع",
   "type": "noun",
   "english": "hunger",
   "arabic": [
@@ -439,7 +439,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-6169",
+  "id": "k-verb-ناقش",
   "type": "verb",
   "english": "discuss",
   "arabic": [
@@ -466,7 +466,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-3802",
+  "id": "k-verb-استعمل",
   "type": "verb",
   "english": "use",
   "arabic": [
@@ -494,7 +494,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4078",
+  "id": "k-noun-شجاعة",
   "type": "noun",
   "english": "courage, bravery",
   "arabic": [
@@ -515,7 +515,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5890",
+  "id": "k-noun-تربة",
   "type": "noun",
   "english": "soil, ground",
   "arabic": [
@@ -535,7 +535,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-5962",
+  "id": "k-adj-عليم",
   "type": "adj",
   "english": "learned",
   "arabic": [
@@ -555,7 +555,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-322",
+  "id": "k-noun-مؤامرة",
   "type": "noun",
   "english": "conspiracy",
   "arabic": [
@@ -575,7 +575,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-736",
+  "id": "k-noun-زوال",
   "type": "noun",
   "english": "noon",
   "arabic": [
@@ -595,7 +595,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-5237",
+  "id": "k-verb-اشتري",
   "type": "verb",
   "english": "buy, purchase",
   "arabic": [
@@ -623,7 +623,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6291",
+  "id": "k-noun-مدح",
   "type": "noun",
   "english": "praise",
   "arabic": [
@@ -644,7 +644,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-3168",
+  "id": "k-verb-تغلب",
   "type": "verb",
   "english": "overpower, defeat",
   "arabic": [
@@ -671,7 +671,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3509",
+  "id": "k-noun-تدخين",
   "type": "noun",
   "english": "smoking",
   "arabic": [
@@ -691,7 +691,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3493",
+  "id": "k-noun-فخر",
   "type": "noun",
   "english": "pride",
   "arabic": [
@@ -711,7 +711,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4071",
+  "id": "k-noun-مولد",
   "type": "noun",
   "english": "mawlid",
   "arabic": [
@@ -731,7 +731,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2436",
+  "id": "k-noun-منفعة",
   "type": "noun",
   "english": "benefit",
   "arabic": [
@@ -752,7 +752,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-101",
+  "id": "k-noun-دماغ",
   "type": "noun",
   "english": "brain",
   "arabic": [
@@ -773,7 +773,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-207",
+  "id": "k-noun-تلوث",
   "type": "noun",
   "english": "pollution",
   "arabic": [
@@ -793,7 +793,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1531",
+  "id": "k-noun-تخفيض",
   "type": "noun",
   "english": "lowering",
   "arabic": [
@@ -813,7 +813,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-841",
+  "id": "k-noun-جدوي",
   "type": "noun",
   "english": "benefit",
   "arabic": [
@@ -833,7 +833,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2488",
+  "id": "k-noun-رزق",
   "type": "noun",
   "english": "livelihood",
   "arabic": [
@@ -853,7 +853,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6037",
+  "id": "k-noun-كراهية",
   "type": "noun",
   "english": "aversion, antipathy, dislike",
   "arabic": [
@@ -874,7 +874,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-686",
+  "id": "k-noun-معدن",
   "type": "noun",
   "english": "mineral",
   "arabic": [
@@ -895,7 +895,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2931",
+  "id": "k-noun-معيشة",
   "type": "noun",
   "english": "living, livelihood",
   "arabic": [
@@ -916,7 +916,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5726",
+  "id": "k-noun-مفت",
   "type": "noun",
   "english": "mufti",
   "arabic": [
@@ -936,7 +936,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3698",
+  "id": "k-noun-نصيحة",
   "type": "noun",
   "english": "advice",
   "arabic": [
@@ -957,7 +957,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1447",
+  "id": "k-noun-مسك",
   "type": "noun",
   "english": "grip, hold, seizure",
   "arabic": [
@@ -978,7 +978,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-646",
+  "id": "k-noun-تزايد",
   "type": "noun",
   "english": "increase, increment, growth",
   "arabic": [
@@ -998,7 +998,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2559",
+  "id": "k-noun-ملبس",
   "type": "noun",
   "english": "dress",
   "arabic": [
@@ -1018,7 +1018,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-2137",
+  "id": "k-verb-غلب",
   "type": "verb",
   "english": "defeat, overcome",
   "arabic": [
@@ -1046,7 +1046,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-3706",
+  "id": "k-adj-مرحوم",
   "type": "adj",
   "english": "deceased, late",
   "arabic": [

@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-2913",
+  "id": "k-noun-مشرف",
   "type": "noun",
   "english": "supervisor",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5453",
+  "id": "k-noun-تامين",
   "type": "noun",
   "english": "insurance",
   "arabic": [
@@ -42,7 +42,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-1611",
+  "id": "k-adj-ضخم",
   "type": "adj",
   "english": "big, large, voluminous",
   "arabic": [
@@ -63,7 +63,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2151",
+  "id": "k-noun-رمل",
   "type": "noun",
   "english": "sand",
   "arabic": [
@@ -84,7 +84,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-582",
+  "id": "k-adj-قضائي",
   "type": "adj",
   "english": "judicial",
   "arabic": [
@@ -104,7 +104,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-5049",
+  "id": "k-adj-ثانوي",
   "type": "adj",
   "english": "secondary",
   "arabic": [
@@ -124,7 +124,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-400",
+  "id": "k-noun-فائدة",
   "type": "noun",
   "english": "benefit, profit",
   "arabic": [
@@ -145,7 +145,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3993",
+  "id": "k-noun-سلامة",
   "type": "noun",
   "english": "safety",
   "arabic": [
@@ -165,7 +165,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2767",
+  "id": "k-noun-ترتيب",
   "type": "noun",
   "english": "arrangement, order",
   "arabic": [
@@ -186,7 +186,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4616",
+  "id": "k-noun-اتهام",
   "type": "noun",
   "english": "accusation, charge",
   "arabic": [
@@ -207,7 +207,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5681",
+  "id": "k-noun-ضيف",
   "type": "noun",
   "english": "guest",
   "arabic": [
@@ -227,7 +227,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2513",
+  "id": "k-noun-ارادة",
   "type": "noun",
   "english": "will, intention",
   "arabic": [
@@ -248,7 +248,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4848",
+  "id": "k-verb-منح",
   "type": "verb",
   "english": "give, award",
   "arabic": [
@@ -276,7 +276,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-6283",
+  "id": "k-verb-تخرج",
   "type": "verb",
   "english": "graduate",
   "arabic": [
@@ -303,7 +303,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4579",
+  "id": "k-adj-اصلي",
   "type": "adj",
   "english": "original",
   "arabic": [
@@ -324,7 +324,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-6010",
+  "id": "k-verb-اوضح",
   "type": "verb",
   "english": "clarify, elucidate",
   "arabic": [
@@ -351,7 +351,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5356",
+  "id": "k-noun-سمو",
   "type": "noun",
   "english": "highness",
   "arabic": [
@@ -371,7 +371,7 @@
   "level": "C1"
  },
  {
-  "id": "k-adj-132",
+  "id": "k-adj-شيعي",
   "type": "adj",
   "english": "shiite",
   "arabic": [
@@ -391,7 +391,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3701",
+  "id": "k-adj-ارهابي",
   "type": "adj",
   "english": "terrorist",
   "arabic": [
@@ -412,7 +412,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2530",
+  "id": "k-verb-ربح",
   "type": "verb",
   "english": "win, gain",
   "arabic": [
@@ -440,7 +440,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-699",
+  "id": "k-noun-واد",
   "type": "noun",
   "english": "valley",
   "arabic": [
@@ -461,7 +461,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6659",
+  "id": "k-noun-كهرباء",
   "type": "noun",
   "english": "electricity",
   "arabic": [
@@ -482,7 +482,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1180",
+  "id": "k-noun-صليب",
   "type": "noun",
   "english": "cross",
   "arabic": [
@@ -503,7 +503,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4712",
+  "id": "k-noun-مرور",
   "type": "noun",
   "english": "passage, transit",
   "arabic": [
@@ -524,7 +524,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1672",
+  "id": "k-noun-مقدار",
   "type": "noun",
   "english": "amount, quantity",
   "arabic": [
@@ -545,7 +545,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6674",
+  "id": "k-adj-جاد",
   "type": "adj",
   "english": "serious",
   "arabic": [
@@ -565,7 +565,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4163",
+  "id": "k-noun-فقرة",
   "type": "noun",
   "english": "paragraph",
   "arabic": [
@@ -585,7 +585,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2594",
+  "id": "k-verb-حدد",
   "type": "verb",
   "english": "define",
   "arabic": [
@@ -613,7 +613,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5434",
+  "id": "k-noun-تركيز",
   "type": "noun",
   "english": "concentration",
   "arabic": [
@@ -634,7 +634,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4292",
+  "id": "k-noun-مجمع",
   "type": "noun",
   "english": "assembly",
   "arabic": [
@@ -654,7 +654,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5242",
+  "id": "k-noun-انتظار",
   "type": "noun",
   "english": "waiting",
   "arabic": [
@@ -674,7 +674,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-656",
+  "id": "k-verb-بعث",
   "type": "verb",
   "english": "send",
   "arabic": [
@@ -702,7 +702,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2863",
+  "id": "k-verb-ادخل",
   "type": "verb",
   "english": "insert, include",
   "arabic": [
@@ -730,7 +730,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-217",
+  "id": "k-noun-موعد",
   "type": "noun",
   "english": "appointment",
   "arabic": [
@@ -751,7 +751,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1000",
+  "id": "k-noun-معهد",
   "type": "noun",
   "english": "institute",
   "arabic": [
@@ -772,7 +772,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2052",
+  "id": "k-verb-قضي",
   "type": "verb",
   "english": "fulfill",
   "arabic": [
@@ -799,7 +799,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6396",
+  "id": "k-noun-حفل",
   "type": "noun",
   "english": "celebration",
   "arabic": [
@@ -819,7 +819,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1212",
+  "id": "k-noun-اجابة",
   "type": "noun",
   "english": "reply, response, answer",
   "arabic": [
@@ -840,7 +840,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2708",
+  "id": "k-noun-عميل",
   "type": "noun",
   "english": "client, customer",
   "arabic": [
@@ -860,7 +860,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5101",
+  "id": "k-noun-كمان",
   "type": "noun",
   "english": "violin",
   "arabic": [
@@ -880,7 +880,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-3261",
+  "id": "k-verb-تمتع",
   "type": "verb",
   "english": "enjoy",
   "arabic": [
@@ -908,7 +908,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2175",
+  "id": "k-verb-طلع",
   "type": "verb",
   "english": "go up, ascend",
   "arabic": [
@@ -936,7 +936,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6389",
+  "id": "k-noun-معيار",
   "type": "noun",
   "english": "standard",
   "arabic": [
@@ -957,7 +957,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-982",
+  "id": "k-adj-عارف",
   "type": "adj",
   "english": "knowing",
   "arabic": [
@@ -977,7 +977,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4571",
+  "id": "k-noun-صفقة",
   "type": "noun",
   "english": "bargain",
   "arabic": [
@@ -998,7 +998,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-2178",
+  "id": "k-adj-مفيد",
   "type": "adj",
   "english": "useful, beneficial",
   "arabic": [
@@ -1018,7 +1018,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1591",
+  "id": "k-noun-مكون",
   "type": "noun",
   "english": "constituent, component",
   "arabic": [
@@ -1039,7 +1039,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1954",
+  "id": "k-noun-مقر",
   "type": "noun",
   "english": "abode",
   "arabic": [
@@ -1059,7 +1059,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-5560",
+  "id": "k-verb-اعطي",
   "type": "verb",
   "english": "give",
   "arabic": [
@@ -1087,7 +1087,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3241",
+  "id": "k-noun-ورقة",
   "type": "noun",
   "english": "leaf",
   "arabic": [

@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-verb-6482",
+  "id": "k-verb-منع",
   "type": "verb",
   "english": "prevent, hinder",
   "arabic": [
@@ -28,7 +28,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-3486",
+  "id": "k-adj-معروف",
   "type": "adj",
   "english": "known",
   "arabic": [
@@ -48,7 +48,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-919",
+  "id": "k-verb-صار",
   "type": "verb",
   "english": "become",
   "arabic": [
@@ -76,7 +76,7 @@
   "level": "C1"
  },
  {
-  "id": "k-verb-4301",
+  "id": "k-verb-رفض",
   "type": "verb",
   "english": "reject, refuse",
   "arabic": [
@@ -104,7 +104,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6706",
+  "id": "k-noun-انتاج",
   "type": "noun",
   "english": "production",
   "arabic": [
@@ -125,7 +125,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-956",
+  "id": "k-noun-كتابة",
   "type": "noun",
   "english": "writing",
   "arabic": [
@@ -146,7 +146,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-2285",
+  "id": "k-adj-طبيعي",
   "type": "adj",
   "english": "normal",
   "arabic": [
@@ -167,7 +167,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-14",
+  "id": "k-noun-اعتبار",
   "type": "noun",
   "english": "regard, respect",
   "arabic": [
@@ -187,7 +187,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4839",
+  "id": "k-noun-مسؤول",
   "type": "noun",
   "english": "official, functionary",
   "arabic": [
@@ -208,7 +208,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2160",
+  "id": "k-noun-دفاع",
   "type": "noun",
   "english": "defence, defense",
   "arabic": [
@@ -229,7 +229,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2049",
+  "id": "k-noun-صديق",
   "type": "noun",
   "english": "friend",
   "arabic": [
@@ -250,7 +250,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-4547",
+  "id": "k-verb-وصف",
   "type": "verb",
   "english": "describe, depict",
   "arabic": [
@@ -278,7 +278,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4991",
+  "id": "k-noun-ضرورة",
   "type": "noun",
   "english": "necessity, want",
   "arabic": [
@@ -299,7 +299,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1772",
+  "id": "k-noun-سبيل",
   "type": "noun",
   "english": "way, path, road",
   "arabic": [
@@ -320,7 +320,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-717",
+  "id": "k-noun-بيع",
   "type": "noun",
   "english": "sale",
   "arabic": [
@@ -341,7 +341,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2188",
+  "id": "k-verb-سال",
   "type": "verb",
   "english": "flow, run",
   "arabic": [
@@ -369,7 +369,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3344",
+  "id": "k-noun-اجراء",
   "type": "noun",
   "english": "procedure",
   "arabic": [
@@ -390,7 +390,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-6260",
+  "id": "k-noun-تقديم",
   "type": "noun",
   "english": "offering",
   "arabic": [
@@ -410,7 +410,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6098",
+  "id": "k-noun-اتصال",
   "type": "noun",
   "english": "connection",
   "arabic": [
@@ -431,7 +431,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5777",
+  "id": "k-noun-نفط",
   "type": "noun",
   "english": "oil, petroleum",
   "arabic": [
@@ -451,7 +451,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-554",
+  "id": "k-noun-صباح",
   "type": "noun",
   "english": "morning",
   "arabic": [
@@ -472,7 +472,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-4644",
+  "id": "k-verb-اضاف",
   "type": "verb",
   "english": "add, append",
   "arabic": [
@@ -500,7 +500,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6644",
+  "id": "k-noun-شاعر",
   "type": "noun",
   "english": "poet",
   "arabic": [
@@ -521,7 +521,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6204",
+  "id": "k-noun-محكمة",
   "type": "noun",
   "english": "court",
   "arabic": [
@@ -542,7 +542,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-910",
+  "id": "k-noun-يهودي",
   "type": "noun",
   "english": "jew",
   "arabic": [
@@ -563,7 +563,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3544",
+  "id": "k-noun-مدي",
   "type": "noun",
   "english": "extent, reach, range",
   "arabic": [
@@ -584,7 +584,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2287",
+  "id": "k-noun-محاولة",
   "type": "noun",
   "english": "attempt",
   "arabic": [
@@ -605,7 +605,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6421",
+  "id": "k-noun-عودة",
   "type": "noun",
   "english": "return",
   "arabic": [
@@ -626,7 +626,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-2176",
+  "id": "k-verb-روي",
   "type": "verb",
   "english": "tell, narrate",
   "arabic": [
@@ -654,7 +654,7 @@
   "level": "C2"
  },
  {
-  "id": "k-noun-5091",
+  "id": "k-noun-دنيا",
   "type": "noun",
   "english": "world",
   "arabic": [
@@ -675,7 +675,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4524",
+  "id": "k-adj-شديد",
   "type": "adj",
   "english": "intense, hard, acute",
   "arabic": [
@@ -696,7 +696,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6170",
+  "id": "k-noun-امان",
   "type": "noun",
   "english": "security, safety",
   "arabic": [
@@ -716,7 +716,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-5801",
+  "id": "k-adj-مجرد",
   "type": "adj",
   "english": "abstract",
   "arabic": [
@@ -736,7 +736,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3073",
+  "id": "k-noun-تحديد",
   "type": "noun",
   "english": "definition",
   "arabic": [
@@ -756,7 +756,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-987",
+  "id": "k-adj-محلي",
   "type": "adj",
   "english": "local",
   "arabic": [
@@ -776,7 +776,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-4735",
+  "id": "k-noun-عقل",
   "type": "noun",
   "english": "understanding, reason",
   "arabic": [
@@ -797,7 +797,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1047",
+  "id": "k-noun-شر",
   "type": "noun",
   "english": "evil",
   "arabic": [
@@ -818,7 +818,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5152",
+  "id": "k-noun-ملف",
   "type": "noun",
   "english": "file, dossier",
   "arabic": [
@@ -839,7 +839,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1894",
+  "id": "k-noun-عدل",
   "type": "noun",
   "english": "justice",
   "arabic": [
@@ -860,7 +860,7 @@
   "level": "C1"
  },
  {
-  "id": "k-verb-1465",
+  "id": "k-verb-دعا",
   "type": "verb",
   "english": "call",
   "arabic": [
@@ -888,7 +888,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4606",
+  "id": "k-noun-عيش",
   "type": "noun",
   "english": "living",
   "arabic": [
@@ -908,7 +908,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2626",
+  "id": "k-verb-تعرف",
   "type": "verb",
   "english": "meet",
   "arabic": [
@@ -935,7 +935,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3798",
+  "id": "k-noun-احتلال",
   "type": "noun",
   "english": "occupation",
   "arabic": [
@@ -956,7 +956,7 @@
   "level": "C1"
  },
  {
-  "id": "k-verb-1841",
+  "id": "k-verb-مات",
   "type": "verb",
   "english": "die",
   "arabic": [
@@ -984,7 +984,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1766",
+  "id": "k-noun-جنس",
   "type": "noun",
   "english": "grammatical gender",
   "arabic": [
@@ -1005,7 +1005,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6082",
+  "id": "k-noun-تجربة",
   "type": "noun",
   "english": "experiment, trial",
   "arabic": [
@@ -1026,7 +1026,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5069",
+  "id": "k-noun-اسرة",
   "type": "noun",
   "english": "family",
   "arabic": [
@@ -1047,7 +1047,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4610",
+  "id": "k-noun-ادب",
   "type": "noun",
   "english": "literature",
   "arabic": [
@@ -1068,7 +1068,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4146",
+  "id": "k-noun-مستقبل",
   "type": "noun",
   "english": "future",
   "arabic": [
@@ -1089,7 +1089,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-409",
+  "id": "k-noun-صفة",
   "type": "noun",
   "english": "feature, characteristic",
   "arabic": [

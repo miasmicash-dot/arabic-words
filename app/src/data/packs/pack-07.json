@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-adj-4283",
+  "id": "k-adj-مدني",
   "type": "adj",
   "english": "civilian",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1432",
+  "id": "k-verb-جري",
   "type": "verb",
   "english": "run",
   "arabic": [
@@ -49,7 +49,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-515",
+  "id": "k-noun-اصل",
   "type": "noun",
   "english": "origin, source",
   "arabic": [
@@ -70,7 +70,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-6377",
+  "id": "k-verb-تاب",
   "type": "verb",
   "english": "repent",
   "arabic": [
@@ -97,7 +97,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2404",
+  "id": "k-noun-سر",
   "type": "noun",
   "english": "secret",
   "arabic": [
@@ -118,7 +118,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-3937",
+  "id": "k-verb-شك",
   "type": "verb",
   "english": "doubt",
   "arabic": [
@@ -146,7 +146,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-6320",
+  "id": "k-noun-فكر",
   "type": "noun",
   "english": "thinking",
   "arabic": [
@@ -167,7 +167,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1421",
+  "id": "k-noun-ضغط",
   "type": "noun",
   "english": "pressure, tension",
   "arabic": [
@@ -188,7 +188,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4326",
+  "id": "k-noun-اجتماع",
   "type": "noun",
   "english": "assembly",
   "arabic": [
@@ -209,7 +209,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4234",
+  "id": "k-noun-ساكن",
   "type": "noun",
   "english": "inhabitant",
   "arabic": [
@@ -229,7 +229,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1213",
+  "id": "k-noun-مقالة",
   "type": "noun",
   "english": "article, essay",
   "arabic": [
@@ -250,7 +250,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1686",
+  "id": "k-noun-بنك",
   "type": "noun",
   "english": "bank",
   "arabic": [
@@ -270,7 +270,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-586",
+  "id": "k-noun-تنظيم",
   "type": "noun",
   "english": "organization",
   "arabic": [
@@ -291,7 +291,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6215",
+  "id": "k-noun-مقاومة",
   "type": "noun",
   "english": "resistance",
   "arabic": [
@@ -312,7 +312,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-4750",
+  "id": "k-noun-زواج",
   "type": "noun",
   "english": "marriage",
   "arabic": [
@@ -333,7 +333,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-1430",
+  "id": "k-adj-قادم",
   "type": "adj",
   "english": "coming, approaching",
   "arabic": [
@@ -353,7 +353,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-807",
+  "id": "k-noun-درجة",
   "type": "noun",
   "english": "degree",
   "arabic": [
@@ -374,7 +374,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-67",
+  "id": "k-adj-شعبي",
   "type": "adj",
   "english": "popular",
   "arabic": [
@@ -394,7 +394,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-629",
+  "id": "k-noun-حجم",
   "type": "noun",
   "english": "size, volume",
   "arabic": [
@@ -415,7 +415,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6063",
+  "id": "k-noun-اسلوب",
   "type": "noun",
   "english": "manner, mode, style",
   "arabic": [
@@ -436,7 +436,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4785",
+  "id": "k-noun-شرطة",
   "type": "noun",
   "english": "police",
   "arabic": [
@@ -457,7 +457,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3657",
+  "id": "k-noun-نقطة",
   "type": "noun",
   "english": "dot, point",
   "arabic": [
@@ -478,7 +478,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6370",
+  "id": "k-noun-زراعة",
   "type": "noun",
   "english": "agriculture",
   "arabic": [
@@ -499,7 +499,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-2799",
+  "id": "k-noun-فن",
   "type": "noun",
   "english": "art",
   "arabic": [
@@ -520,7 +520,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5733",
+  "id": "k-noun-ارتفاع",
   "type": "noun",
   "english": "height",
   "arabic": [
@@ -541,7 +541,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6300",
+  "id": "k-noun-مشترك",
   "type": "noun",
   "english": "participant",
   "arabic": [
@@ -561,7 +561,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5471",
+  "id": "k-noun-حساب",
   "type": "noun",
   "english": "account",
   "arabic": [
@@ -582,7 +582,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-721",
+  "id": "k-noun-جنوب",
   "type": "noun",
   "english": "south",
   "arabic": [
@@ -603,7 +603,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1747",
+  "id": "k-noun-ظرف",
   "type": "noun",
   "english": "envelope",
   "arabic": [
@@ -624,7 +624,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5247",
+  "id": "k-noun-ليل",
   "type": "noun",
   "english": "nighttime, night",
   "arabic": [
@@ -645,7 +645,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-260",
+  "id": "k-noun-تفصيل",
   "type": "noun",
   "english": "detail",
   "arabic": [
@@ -665,7 +665,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2129",
+  "id": "k-noun-وطن",
   "type": "noun",
   "english": "nation, home, homeland",
   "arabic": [
@@ -686,7 +686,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-249",
+  "id": "k-noun-معظم",
   "type": "noun",
   "english": "most, majority",
   "arabic": [
@@ -706,7 +706,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1138",
+  "id": "k-noun-طبيعة",
   "type": "noun",
   "english": "nature",
   "arabic": [
@@ -727,7 +727,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-5493",
+  "id": "k-adj-فني",
   "type": "adj",
   "english": "artistic",
   "arabic": [
@@ -747,7 +747,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5702",
+  "id": "k-noun-تاثير",
   "type": "noun",
   "english": "influence, impression",
   "arabic": [
@@ -768,7 +768,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-6329",
+  "id": "k-verb-ارسل",
   "type": "verb",
   "english": "send",
   "arabic": [
@@ -796,7 +796,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-3202",
+  "id": "k-adj-صعب",
   "type": "adj",
   "english": "laborious, hard, difficult",
   "arabic": [
@@ -817,7 +817,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2202",
+  "id": "k-noun-لاعب",
   "type": "noun",
   "english": "player",
   "arabic": [
@@ -838,7 +838,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-839",
+  "id": "k-noun-تطبيق",
   "type": "noun",
   "english": "application",
   "arabic": [
@@ -859,7 +859,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1115",
+  "id": "k-noun-نجاح",
   "type": "noun",
   "english": "success",
   "arabic": [
@@ -880,7 +880,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5925",
+  "id": "k-noun-فرق",
   "type": "noun",
   "english": "difference",
   "arabic": [
@@ -900,7 +900,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-925",
+  "id": "k-noun-زيارة",
   "type": "noun",
   "english": "visit",
   "arabic": [
@@ -921,7 +921,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3530",
+  "id": "k-noun-مقدم",
   "type": "noun",
   "english": "lieutenant colonel",
   "arabic": [
@@ -941,7 +941,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5323",
+  "id": "k-noun-اهمية",
   "type": "noun",
   "english": "importance, significance",
   "arabic": [
@@ -962,7 +962,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3811",
+  "id": "k-noun-لون",
   "type": "noun",
   "english": "color",
   "arabic": [
@@ -983,7 +983,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-161",
+  "id": "k-noun-عنصر",
   "type": "noun",
   "english": "element",
   "arabic": [
@@ -1004,7 +1004,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1966",
+  "id": "k-noun-رؤية",
   "type": "noun",
   "english": "sight, vision",
   "arabic": [
@@ -1024,7 +1024,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-6466",
+  "id": "k-noun-سلاح",
   "type": "noun",
   "english": "weapon, arm",
   "arabic": [
@@ -1045,7 +1045,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5285",
+  "id": "k-noun-مناسبة",
   "type": "noun",
   "english": "occasion",
   "arabic": [

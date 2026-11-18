@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-adj-1637",
+  "id": "k-adj-حي",
   "type": "adj",
   "english": "alive",
   "arabic": [
@@ -20,7 +20,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3772",
+  "id": "k-noun-استثمار",
   "type": "noun",
   "english": "investment",
   "arabic": [
@@ -41,7 +41,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1077",
+  "id": "k-verb-رغب",
   "type": "verb",
   "english": "desire",
   "arabic": [
@@ -69,7 +69,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4782",
+  "id": "k-noun-اطلاق",
   "type": "noun",
   "english": "freeing, liberation",
   "arabic": [
@@ -89,7 +89,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-3630",
+  "id": "k-noun-علاج",
   "type": "noun",
   "english": "therapy",
   "arabic": [
@@ -110,7 +110,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-497",
+  "id": "k-noun-ليلة",
   "type": "noun",
   "english": "night",
   "arabic": [
@@ -131,7 +131,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-3550",
+  "id": "k-adj-جيد",
   "type": "adj",
   "english": "good",
   "arabic": [
@@ -151,7 +151,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2679",
+  "id": "k-noun-جهد",
   "type": "noun",
   "english": "exertion, effort",
   "arabic": [
@@ -172,7 +172,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2236",
+  "id": "k-noun-صناعة",
   "type": "noun",
   "english": "manufacture",
   "arabic": [
@@ -193,7 +193,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-3334",
+  "id": "k-adj-اساسي",
   "type": "adj",
   "english": "fundamental, basic",
   "arabic": [
@@ -213,7 +213,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-748",
+  "id": "k-verb-شرع",
   "type": "verb",
   "english": "begin",
   "arabic": [
@@ -241,7 +241,7 @@
   "level": "C1"
  },
  {
-  "id": "k-verb-2440",
+  "id": "k-verb-طرح",
   "type": "verb",
   "english": "fling, toss",
   "arabic": [
@@ -269,7 +269,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-3927",
+  "id": "k-noun-جمهورية",
   "type": "noun",
   "english": "republic",
   "arabic": [
@@ -290,7 +290,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-4749",
+  "id": "k-adj-يومي",
   "type": "adj",
   "english": "daily",
   "arabic": [
@@ -310,7 +310,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-4622",
+  "id": "k-adj-نووي",
   "type": "adj",
   "english": "atomic, nuclear",
   "arabic": [
@@ -331,7 +331,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4256",
+  "id": "k-noun-اتجاه",
   "type": "noun",
   "english": "direction",
   "arabic": [
@@ -352,7 +352,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6252",
+  "id": "k-noun-شمال",
   "type": "noun",
   "english": "left hand",
   "arabic": [
@@ -372,7 +372,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5768",
+  "id": "k-noun-مسجد",
   "type": "noun",
   "english": "mosque",
   "arabic": [
@@ -393,7 +393,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5738",
+  "id": "k-noun-اصلاح",
   "type": "noun",
   "english": "reform",
   "arabic": [
@@ -414,7 +414,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-5618",
+  "id": "k-noun-منطق",
   "type": "noun",
   "english": "logic",
   "arabic": [
@@ -434,7 +434,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5440",
+  "id": "k-noun-خطوة",
   "type": "noun",
   "english": "step",
   "arabic": [
@@ -455,7 +455,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-5857",
+  "id": "k-adj-تجاري",
   "type": "adj",
   "english": "commercial",
   "arabic": [
@@ -476,7 +476,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3537",
+  "id": "k-noun-مباراة",
   "type": "noun",
   "english": "match, contest",
   "arabic": [
@@ -497,7 +497,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1816",
+  "id": "k-noun-رئاسة",
   "type": "noun",
   "english": "presidency",
   "arabic": [
@@ -518,7 +518,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-528",
+  "id": "k-noun-شبه",
   "type": "noun",
   "english": "similarity",
   "arabic": [
@@ -538,7 +538,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6607",
+  "id": "k-noun-مفهوم",
   "type": "noun",
   "english": "concept, notion",
   "arabic": [
@@ -559,7 +559,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-389",
+  "id": "k-adj-غريب",
   "type": "adj",
   "english": "foreign, exotic",
   "arabic": [
@@ -580,7 +580,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-1295",
+  "id": "k-verb-جلس",
   "type": "verb",
   "english": "sit",
   "arabic": [
@@ -608,7 +608,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5364",
+  "id": "k-noun-تحرير",
   "type": "noun",
   "english": "liberation, release",
   "arabic": [
@@ -629,7 +629,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-3391",
+  "id": "k-noun-عائلة",
   "type": "noun",
   "english": "family",
   "arabic": [
@@ -650,7 +650,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6268",
+  "id": "k-noun-قائد",
   "type": "noun",
   "english": "leader",
   "arabic": [
@@ -671,7 +671,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-349",
+  "id": "k-adj-قومي",
   "type": "adj",
   "english": "national",
   "arabic": [
@@ -692,7 +692,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4382",
+  "id": "k-noun-اقتصاد",
   "type": "noun",
   "english": "economy",
   "arabic": [
@@ -713,7 +713,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-1074",
+  "id": "k-adj-مهم",
   "type": "adj",
   "english": "important",
   "arabic": [
@@ -733,7 +733,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5851",
+  "id": "k-noun-صدق",
   "type": "noun",
   "english": "truthfulness",
   "arabic": [
@@ -753,7 +753,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-252",
+  "id": "k-noun-كلية",
   "type": "noun",
   "english": "college",
   "arabic": [
@@ -774,7 +774,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5381",
+  "id": "k-noun-حضارة",
   "type": "noun",
   "english": "civilization",
   "arabic": [
@@ -795,7 +795,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4341",
+  "id": "k-noun-تجارة",
   "type": "noun",
   "english": "commerce",
   "arabic": [
@@ -816,7 +816,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-758",
+  "id": "k-noun-شبكة",
   "type": "noun",
   "english": "net",
   "arabic": [
@@ -837,7 +837,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6328",
+  "id": "k-noun-مبدا",
   "type": "noun",
   "english": "basis, foundation, principle",
   "arabic": [
@@ -858,7 +858,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2561",
+  "id": "k-noun-خطاب",
   "type": "noun",
   "english": "speech",
   "arabic": [
@@ -879,7 +879,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-2365",
+  "id": "k-adj-اهلي",
   "type": "adj",
   "english": "civil",
   "arabic": [
@@ -899,7 +899,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-3220",
+  "id": "k-verb-توج",
   "type": "verb",
   "english": "crown",
   "arabic": [
@@ -926,7 +926,7 @@
   "level": "C2"
  },
  {
-  "id": "k-adj-800",
+  "id": "k-adj-دقيق",
   "type": "adj",
   "english": "precise, accurate, exact",
   "arabic": [
@@ -946,7 +946,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-5383",
+  "id": "k-verb-حرم",
   "type": "verb",
   "english": "preclude",
   "arabic": [
@@ -974,7 +974,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3048",
+  "id": "k-noun-شهادة",
   "type": "noun",
   "english": "testimony, witness",
   "arabic": [
@@ -994,7 +994,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-5238",
+  "id": "k-adj-تاريخي",
   "type": "adj",
   "english": "historical",
   "arabic": [
@@ -1015,7 +1015,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6493",
+  "id": "k-noun-اختيار",
   "type": "noun",
   "english": "choice",
   "arabic": [
@@ -1036,7 +1036,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2360",
+  "id": "k-noun-حاكم",
   "type": "noun",
   "english": "ruler",
   "arabic": [
@@ -1057,7 +1057,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-831",
+  "id": "k-noun-صراع",
   "type": "noun",
   "english": "conflict",
   "arabic": [

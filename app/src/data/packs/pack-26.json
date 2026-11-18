@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-1319",
+  "id": "k-noun-منظور",
   "type": "noun",
   "english": "perspective",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5191",
+  "id": "k-noun-حادثة",
   "type": "noun",
   "english": "incident",
   "arabic": [
@@ -41,7 +41,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4340",
+  "id": "k-verb-هدد",
   "type": "verb",
   "english": "endanger, imperil",
   "arabic": [
@@ -69,7 +69,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5621",
+  "id": "k-noun-صانع",
   "type": "noun",
   "english": "artisan",
   "arabic": [
@@ -90,7 +90,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-3584",
+  "id": "k-verb-لعب",
   "type": "verb",
   "english": "play",
   "arabic": [
@@ -118,7 +118,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4639",
+  "id": "k-noun-مساواة",
   "type": "noun",
   "english": "equality, equivalence",
   "arabic": [
@@ -139,7 +139,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4281",
+  "id": "k-noun-اجازة",
   "type": "noun",
   "english": "permission",
   "arabic": [
@@ -160,7 +160,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2989",
+  "id": "k-noun-تصدير",
   "type": "noun",
   "english": "export",
   "arabic": [
@@ -180,7 +180,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6015",
+  "id": "k-noun-احتجاج",
   "type": "noun",
   "english": "protest, objection",
   "arabic": [
@@ -201,7 +201,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-4685",
+  "id": "k-adj-ملكي",
   "type": "adj",
   "english": "royal",
   "arabic": [
@@ -221,7 +221,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4103",
+  "id": "k-verb-تجنب",
   "type": "verb",
   "english": "avoid",
   "arabic": [
@@ -249,7 +249,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3656",
+  "id": "k-noun-انقاذ",
   "type": "noun",
   "english": "deliverance, saving, rescue",
   "arabic": [
@@ -269,7 +269,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5024",
+  "id": "k-noun-سقف",
   "type": "noun",
   "english": "ceiling",
   "arabic": [
@@ -290,7 +290,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-2963",
+  "id": "k-verb-عولم",
   "type": "verb",
   "english": "globalize",
   "arabic": [
@@ -317,7 +317,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-3574",
+  "id": "k-verb-طرد",
   "type": "verb",
   "english": "dismiss",
   "arabic": [
@@ -345,7 +345,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5332",
+  "id": "k-noun-متحف",
   "type": "noun",
   "english": "museum",
   "arabic": [
@@ -366,7 +366,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-494",
+  "id": "k-adj-عيني",
   "type": "adj",
   "english": "ocular",
   "arabic": [
@@ -387,7 +387,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2142",
+  "id": "k-noun-خمر",
   "type": "noun",
   "english": "wine",
   "arabic": [
@@ -408,7 +408,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-6272",
+  "id": "k-verb-نفذ",
   "type": "verb",
   "english": "pass through",
   "arabic": [
@@ -436,7 +436,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1360",
+  "id": "k-noun-ريف",
   "type": "noun",
   "english": "rural area, countryside",
   "arabic": [
@@ -457,7 +457,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5600",
+  "id": "k-noun-والدة",
   "type": "noun",
   "english": "mother",
   "arabic": [
@@ -478,7 +478,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5134",
+  "id": "k-noun-تحريم",
   "type": "noun",
   "english": "forbidding",
   "arabic": [
@@ -498,7 +498,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-395",
+  "id": "k-noun-ولادة",
   "type": "noun",
   "english": "birth",
   "arabic": [
@@ -519,7 +519,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4775",
+  "id": "k-verb-اعد",
   "type": "verb",
   "english": "prepare",
   "arabic": [
@@ -547,7 +547,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-5482",
+  "id": "k-verb-تامل",
   "type": "verb",
   "english": "contemplate, regard",
   "arabic": [
@@ -574,7 +574,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2063",
+  "id": "k-noun-تصحيح",
   "type": "noun",
   "english": "correction, rectification",
   "arabic": [
@@ -595,7 +595,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5792",
+  "id": "k-noun-تسويق",
   "type": "noun",
   "english": "marketing",
   "arabic": [
@@ -616,7 +616,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-6496",
+  "id": "k-verb-اتهم",
   "type": "verb",
   "english": "charge, accuse",
   "arabic": [
@@ -644,7 +644,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3046",
+  "id": "k-noun-كسرة",
   "type": "noun",
   "english": "fragment",
   "arabic": [
@@ -664,7 +664,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3797",
+  "id": "k-noun-محفظة",
   "type": "noun",
   "english": "wallet",
   "arabic": [
@@ -685,7 +685,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5856",
+  "id": "k-noun-غطاء",
   "type": "noun",
   "english": "cover",
   "arabic": [
@@ -706,7 +706,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1110",
+  "id": "k-noun-وظيفة",
   "type": "noun",
   "english": "job, occupation",
   "arabic": [
@@ -727,7 +727,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6515",
+  "id": "k-noun-مرمي",
   "type": "noun",
   "english": "target",
   "arabic": [
@@ -748,7 +748,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-2551",
+  "id": "k-adj-متواصل",
   "type": "adj",
   "english": "continuous, uninterrupted, incessant",
   "arabic": [
@@ -768,7 +768,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2321",
+  "id": "k-noun-ذكاء",
   "type": "noun",
   "english": "intelligence",
   "arabic": [
@@ -788,7 +788,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-6586",
+  "id": "k-adj-منخفض",
   "type": "adj",
   "english": "low",
   "arabic": [
@@ -808,7 +808,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5190",
+  "id": "k-noun-زاوية",
   "type": "noun",
   "english": "angle, corner",
   "arabic": [
@@ -829,7 +829,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-5729",
+  "id": "k-verb-تسلم",
   "type": "verb",
   "english": "receive",
   "arabic": [
@@ -856,7 +856,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4515",
+  "id": "k-noun-فلك",
   "type": "noun",
   "english": "orbit",
   "arabic": [
@@ -877,7 +877,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1122",
+  "id": "k-noun-نكاح",
   "type": "noun",
   "english": "marriage",
   "arabic": [
@@ -897,7 +897,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4645",
+  "id": "k-noun-انتقاد",
   "type": "noun",
   "english": "criticism",
   "arabic": [
@@ -918,7 +918,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4391",
+  "id": "k-noun-لحم",
   "type": "noun",
   "english": "meat, flesh",
   "arabic": [
@@ -939,7 +939,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-938",
+  "id": "k-noun-محصول",
   "type": "noun",
   "english": "yield",
   "arabic": [
@@ -960,7 +960,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5270",
+  "id": "k-noun-طوارئ",
   "type": "noun",
   "english": "emergency",
   "arabic": [
@@ -980,7 +980,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2032",
+  "id": "k-noun-ميناء",
   "type": "noun",
   "english": "port, harbor",
   "arabic": [
@@ -1001,7 +1001,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2616",
+  "id": "k-noun-مسار",
   "type": "noun",
   "english": "track, course, line",
   "arabic": [
@@ -1022,7 +1022,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3900",
+  "id": "k-noun-شربة",
   "type": "noun",
   "english": "soup",
   "arabic": [
@@ -1042,7 +1042,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4902",
+  "id": "k-noun-تاخير",
   "type": "noun",
   "english": "delay, postponement",
   "arabic": [
@@ -1063,7 +1063,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-1760",
+  "id": "k-adj-امي",
   "type": "adj",
   "english": "maternal",
   "arabic": [
@@ -1083,7 +1083,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1002",
+  "id": "k-noun-قطار",
   "type": "noun",
   "english": "train",
   "arabic": [

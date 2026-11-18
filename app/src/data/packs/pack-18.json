@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-verb-232",
+  "id": "k-verb-صلي",
   "type": "verb",
   "english": "pray",
   "arabic": [
@@ -28,7 +28,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1402",
+  "id": "k-noun-مركب",
   "type": "noun",
   "english": "ship, boat",
   "arabic": [
@@ -49,7 +49,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-806",
+  "id": "k-verb-مضي",
   "type": "verb",
   "english": "pass",
   "arabic": [
@@ -76,7 +76,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3093",
+  "id": "k-adj-خلفي",
   "type": "adj",
   "english": "back, rear, hind",
   "arabic": [
@@ -96,7 +96,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6428",
+  "id": "k-adj-واقعي",
   "type": "adj",
   "english": "real, actual",
   "arabic": [
@@ -116,7 +116,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3838",
+  "id": "k-noun-مصير",
   "type": "noun",
   "english": "fate",
   "arabic": [
@@ -137,7 +137,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1348",
+  "id": "k-noun-قصر",
   "type": "noun",
   "english": "castle, palace",
   "arabic": [
@@ -158,7 +158,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3710",
+  "id": "k-noun-امتحان",
   "type": "noun",
   "english": "examination",
   "arabic": [
@@ -179,7 +179,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1231",
+  "id": "k-noun-عضوية",
   "type": "noun",
   "english": "membership",
   "arabic": [
@@ -200,7 +200,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5567",
+  "id": "k-noun-محاضرة",
   "type": "noun",
   "english": "lecture",
   "arabic": [
@@ -221,7 +221,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2706",
+  "id": "k-noun-لقب",
   "type": "noun",
   "english": "nickname",
   "arabic": [
@@ -242,7 +242,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1577",
+  "id": "k-noun-مخيم",
   "type": "noun",
   "english": "camp, encampment",
   "arabic": [
@@ -263,7 +263,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3981",
+  "id": "k-noun-صمت",
   "type": "noun",
   "english": "silence",
   "arabic": [
@@ -283,7 +283,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-5463",
+  "id": "k-verb-فلسف",
   "type": "verb",
   "english": "philosophize",
   "arabic": [
@@ -310,7 +310,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-431",
+  "id": "k-noun-شاشة",
   "type": "noun",
   "english": "screen",
   "arabic": [
@@ -330,7 +330,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4939",
+  "id": "k-noun-شغل",
   "type": "noun",
   "english": "occupancy",
   "arabic": [
@@ -351,7 +351,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4613",
+  "id": "k-noun-منتصف",
   "type": "noun",
   "english": "middle",
   "arabic": [
@@ -372,7 +372,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6323",
+  "id": "k-noun-صاروخ",
   "type": "noun",
   "english": "rocket",
   "arabic": [
@@ -393,7 +393,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1374",
+  "id": "k-noun-مجموع",
   "type": "noun",
   "english": "sum",
   "arabic": [
@@ -414,7 +414,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4641",
+  "id": "k-noun-ضحية",
   "type": "noun",
   "english": "victim",
   "arabic": [
@@ -435,7 +435,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4726",
+  "id": "k-noun-دقيقة",
   "type": "noun",
   "english": "minute",
   "arabic": [
@@ -456,7 +456,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4282",
+  "id": "k-noun-كيان",
   "type": "noun",
   "english": "entity",
   "arabic": [
@@ -476,7 +476,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4350",
+  "id": "k-verb-نشا",
   "type": "verb",
   "english": "rise up",
   "arabic": [
@@ -503,7 +503,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2980",
+  "id": "k-noun-تفجير",
   "type": "noun",
   "english": "explosion",
   "arabic": [
@@ -523,7 +523,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-2535",
+  "id": "k-noun-فندق",
   "type": "noun",
   "english": "hotel",
   "arabic": [
@@ -544,7 +544,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3451",
+  "id": "k-noun-مخرج",
   "type": "noun",
   "english": "exit",
   "arabic": [
@@ -565,7 +565,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2098",
+  "id": "k-noun-صلح",
   "type": "noun",
   "english": "reconciliation",
   "arabic": [
@@ -585,7 +585,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3854",
+  "id": "k-noun-ضربة",
   "type": "noun",
   "english": "blow, stroke, hit",
   "arabic": [
@@ -606,7 +606,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5966",
+  "id": "k-noun-مطار",
   "type": "noun",
   "english": "airport, airfield",
   "arabic": [
@@ -627,7 +627,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5709",
+  "id": "k-noun-ذهن",
   "type": "noun",
   "english": "mind",
   "arabic": [
@@ -647,7 +647,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4101",
+  "id": "k-adj-فردي",
   "type": "adj",
   "english": "single",
   "arabic": [
@@ -667,7 +667,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-496",
+  "id": "k-noun-زميل",
   "type": "noun",
   "english": "colleague, fellow",
   "arabic": [
@@ -688,7 +688,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3237",
+  "id": "k-noun-خل",
   "type": "noun",
   "english": "vinegar",
   "arabic": [
@@ -708,7 +708,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2425",
+  "id": "k-noun-اغتيال",
   "type": "noun",
   "english": "assassination",
   "arabic": [
@@ -728,7 +728,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-1130",
+  "id": "k-noun-مصنع",
   "type": "noun",
   "english": "factory, plant",
   "arabic": [
@@ -749,7 +749,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4795",
+  "id": "k-noun-تركيب",
   "type": "noun",
   "english": "synthesis",
   "arabic": [
@@ -769,7 +769,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-3019",
+  "id": "k-verb-شق",
   "type": "verb",
   "english": "split, cleave",
   "arabic": [
@@ -797,7 +797,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-513",
+  "id": "k-noun-صيغة",
   "type": "noun",
   "english": "formula",
   "arabic": [
@@ -817,7 +817,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5630",
+  "id": "k-noun-لواء",
   "type": "noun",
   "english": "brigade",
   "arabic": [
@@ -838,7 +838,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2268",
+  "id": "k-noun-سلف",
   "type": "noun",
   "english": "ancestor",
   "arabic": [
@@ -858,7 +858,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3856",
+  "id": "k-noun-جبل",
   "type": "noun",
   "english": "mountain",
   "arabic": [
@@ -879,7 +879,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2040",
+  "id": "k-noun-مسرحية",
   "type": "noun",
   "english": "play, drama",
   "arabic": [
@@ -900,7 +900,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2249",
+  "id": "k-noun-قرض",
   "type": "noun",
   "english": "loan",
   "arabic": [
@@ -921,7 +921,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6649",
+  "id": "k-noun-الة",
   "type": "noun",
   "english": "instrument",
   "arabic": [
@@ -942,7 +942,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5811",
+  "id": "k-noun-انجاز",
   "type": "noun",
   "english": "achievement",
   "arabic": [
@@ -963,7 +963,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-2591",
+  "id": "k-adj-فضائي",
   "type": "adj",
   "english": "spatial",
   "arabic": [
@@ -983,7 +983,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3496",
+  "id": "k-noun-مسافة",
   "type": "noun",
   "english": "distance, interval",
   "arabic": [
@@ -1004,7 +1004,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4044",
+  "id": "k-adj-الهي",
   "type": "adj",
   "english": "divine",
   "arabic": [
@@ -1024,7 +1024,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5590",
+  "id": "k-noun-مطر",
   "type": "noun",
   "english": "rain",
   "arabic": [
@@ -1045,7 +1045,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4032",
+  "id": "k-adj-مؤقت",
   "type": "adj",
   "english": "temporary",
   "arabic": [

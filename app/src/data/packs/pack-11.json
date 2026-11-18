@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-6333",
+  "id": "k-noun-ولاية",
   "type": "noun",
   "english": "province",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-2451",
+  "id": "k-adj-مباشر",
   "type": "adj",
   "english": "direct",
   "arabic": [
@@ -42,7 +42,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-385",
+  "id": "k-noun-سلطان",
   "type": "noun",
   "english": "power",
   "arabic": [
@@ -63,7 +63,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-1073",
+  "id": "k-verb-رجع",
   "type": "verb",
   "english": "return, come back",
   "arabic": [
@@ -91,7 +91,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4746",
+  "id": "k-noun-موظف",
   "type": "noun",
   "english": "employee",
   "arabic": [
@@ -111,7 +111,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-5072",
+  "id": "k-verb-صنع",
   "type": "verb",
   "english": "make, do",
   "arabic": [
@@ -139,7 +139,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-4359",
+  "id": "k-adj-دائم",
   "type": "adj",
   "english": "lasting",
   "arabic": [
@@ -159,7 +159,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6134",
+  "id": "k-noun-خروج",
   "type": "noun",
   "english": "exit",
   "arabic": [
@@ -180,7 +180,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-4484",
+  "id": "k-verb-سجل",
   "type": "verb",
   "english": "register, enter",
   "arabic": [
@@ -208,7 +208,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3226",
+  "id": "k-noun-طاقة",
   "type": "noun",
   "english": "energy",
   "arabic": [
@@ -229,7 +229,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5953",
+  "id": "k-noun-منتج",
   "type": "noun",
   "english": "product",
   "arabic": [
@@ -250,7 +250,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1529",
+  "id": "k-noun-جريدة",
   "type": "noun",
   "english": "newspaper",
   "arabic": [
@@ -271,7 +271,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2111",
+  "id": "k-noun-شهيد",
   "type": "noun",
   "english": "martyr",
   "arabic": [
@@ -292,7 +292,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4619",
+  "id": "k-noun-قوم",
   "type": "noun",
   "english": "state",
   "arabic": [
@@ -312,7 +312,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5922",
+  "id": "k-noun-سلم",
   "type": "noun",
   "english": "peace",
   "arabic": [
@@ -332,7 +332,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2832",
+  "id": "k-noun-مساحة",
   "type": "noun",
   "english": "area, space",
   "arabic": [
@@ -353,7 +353,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1740",
+  "id": "k-noun-سرعة",
   "type": "noun",
   "english": "speed",
   "arabic": [
@@ -374,7 +374,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-3861",
+  "id": "k-adj-مسلح",
   "type": "adj",
   "english": "armed",
   "arabic": [
@@ -395,7 +395,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-4924",
+  "id": "k-adj-سهل",
   "type": "adj",
   "english": "easy",
   "arabic": [
@@ -416,7 +416,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4851",
+  "id": "k-noun-زي",
   "type": "noun",
   "english": "uniform",
   "arabic": [
@@ -436,7 +436,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-5845",
+  "id": "k-adj-مركزي",
   "type": "adj",
   "english": "central",
   "arabic": [
@@ -456,7 +456,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2592",
+  "id": "k-noun-طعام",
   "type": "noun",
   "english": "food",
   "arabic": [
@@ -477,7 +477,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3140",
+  "id": "k-noun-اله",
   "type": "noun",
   "english": "god, deity, divinity",
   "arabic": [
@@ -497,7 +497,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6697",
+  "id": "k-noun-حبيب",
   "type": "noun",
   "english": "beloved",
   "arabic": [
@@ -518,7 +518,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5510",
+  "id": "k-noun-موضع",
   "type": "noun",
   "english": "position",
   "arabic": [
@@ -539,7 +539,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4794",
+  "id": "k-noun-بقية",
   "type": "noun",
   "english": "rest, remainder",
   "arabic": [
@@ -560,7 +560,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2939",
+  "id": "k-noun-الم",
   "type": "noun",
   "english": "pain",
   "arabic": [
@@ -581,7 +581,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6350",
+  "id": "k-noun-لسان",
   "type": "noun",
   "english": "tongue",
   "arabic": [
@@ -602,7 +602,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-2953",
+  "id": "k-adj-عادي",
   "type": "adj",
   "english": "normal, regular, ordinary",
   "arabic": [
@@ -623,7 +623,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4315",
+  "id": "k-noun-انسانية",
   "type": "noun",
   "english": "humanity",
   "arabic": [
@@ -643,7 +643,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2069",
+  "id": "k-noun-قارئ",
   "type": "noun",
   "english": "reader",
   "arabic": [
@@ -664,7 +664,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5814",
+  "id": "k-noun-ذل",
   "type": "noun",
   "english": "humiliation, abasement",
   "arabic": [
@@ -685,7 +685,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3691",
+  "id": "k-noun-تيار",
   "type": "noun",
   "english": "stream, flow, current",
   "arabic": [
@@ -706,7 +706,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4583",
+  "id": "k-noun-نمو",
   "type": "noun",
   "english": "growth",
   "arabic": [
@@ -727,7 +727,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6192",
+  "id": "k-noun-نصر",
   "type": "noun",
   "english": "victory, triumph",
   "arabic": [
@@ -748,7 +748,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5524",
+  "id": "k-noun-خوف",
   "type": "noun",
   "english": "fear",
   "arabic": [
@@ -769,7 +769,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5514",
+  "id": "k-noun-تقريب",
   "type": "noun",
   "english": "approximation",
   "arabic": [
@@ -789,7 +789,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4076",
+  "id": "k-noun-كمية",
   "type": "noun",
   "english": "quantity, amount",
   "arabic": [
@@ -810,7 +810,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2257",
+  "id": "k-noun-معركة",
   "type": "noun",
   "english": "battle",
   "arabic": [
@@ -831,7 +831,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5033",
+  "id": "k-noun-فئة",
   "type": "noun",
   "english": "class",
   "arabic": [
@@ -851,7 +851,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1839",
+  "id": "k-noun-حلم",
   "type": "noun",
   "english": "dream",
   "arabic": [
@@ -872,7 +872,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-1120",
+  "id": "k-verb-اخرج",
   "type": "verb",
   "english": "move out, take out",
   "arabic": [
@@ -900,7 +900,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5775",
+  "id": "k-noun-تفكير",
   "type": "noun",
   "english": "thinking",
   "arabic": [
@@ -921,7 +921,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-4024",
+  "id": "k-verb-اخبر",
   "type": "verb",
   "english": "notify, advise",
   "arabic": [
@@ -948,7 +948,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2072",
+  "id": "k-noun-لعبة",
   "type": "noun",
   "english": "toy, plaything",
   "arabic": [
@@ -969,7 +969,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2588",
+  "id": "k-noun-خطر",
   "type": "noun",
   "english": "danger, risk, peril",
   "arabic": [
@@ -990,7 +990,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-4545",
+  "id": "k-verb-رحل",
   "type": "verb",
   "english": "set out",
   "arabic": [
@@ -1018,7 +1018,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4946",
+  "id": "k-noun-احترام",
   "type": "noun",
   "english": "respect",
   "arabic": [
@@ -1039,7 +1039,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-187",
+  "id": "k-adj-فعال",
   "type": "adj",
   "english": "effective, effectual, efficacious",
   "arabic": [
@@ -1059,7 +1059,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1502",
+  "id": "k-noun-مقال",
   "type": "noun",
   "english": "article, essay",
   "arabic": [

@@ -1,10 +1,10 @@
 kept 2700 verified words in 54 packs of 50 (target 2000)
-meaning confirmed by: English Wiktionary translations 2423, Arabic WordNet 2000, Buckwalter 2573
+meaning confirmed by: English Wiktionary translations 2423, Arabic WordNet 1999, Buckwalter 2573
 dropped 304: also a function word or name
   e.g. كان أول عند أحد يعني مرة قدم مسلم حالة حال جانب حمل رب إسلام مال خاصة نحو ضد آية بُعد حسب خارج عبر ربما نسبة
 dropped 200: already in the app
   e.g. عام عمل يوم سنة كبير واحد جديد رجل رأى بيت كتب يد امرأة طالب حرب شهر ظهر كتاب باب ساعة رأي عين ماء ذهب سوق
-dropped 1379: meaning not confirmed by 2 independent sources
+dropped 1378: meaning not confirmed by 2 independent sources
   e.g. تم رغم حب دع معلومة عرب نساء مزيد قيام إعلام بشر جامع تعلق منتدى محافظة تنفيذ قضاء قائمة تعرض سورة معين عهد فضل ثورة صحفي
 dropped 519: spelling not found in Buckwalter or Arabic WordNet
   e.g. يمكن يجب يجوز يلي تقل يختلف تضم تشمل تسمح يستحق تعتمد أرجو يستخدم تشهد أستطيع يطر يؤثر تعبر تحتوي تسعى تربو تعتقد تفعل أظن نعلم
@@ -1570,6 +1570,7 @@ every kept word (frequency order): english = arabic (translit) [confirmed by]
   horizon = أفق (ufuq) [wiktionary-en, buckwalter]
   mixture = خليط (khaliit) [wiktionary-en, arabic-wordnet, buckwalter]
   injury, damage = أذى (adhaa) [arabic-wordnet, buckwalter]
+  imamate = إمامة (imaama) [wiktionary-en, buckwalter]
   branch = شعبة (shu'ba) [wiktionary-en, buckwalter]
   listening = استماع (istimaa') [wiktionary-en, arabic-wordnet, buckwalter]
   bow, kneel = ركع (raka'a) [wiktionary-en, arabic-wordnet, buckwalter]
@@ -2743,4 +2744,3 @@ every kept word (frequency order): english = arabic (translit) [confirmed by]
   care, custody = رعاية (ri'aaya) [wiktionary-en, arabic-wordnet, buckwalter]
   tremor = رعشة (ra'sha) [arabic-wordnet, buckwalter]
   wish = رغبة (raghba) [wiktionary-en, arabic-wordnet, buckwalter]
-  shelf = رف (raff) [wiktionary-en, arabic-wordnet, buckwalter]

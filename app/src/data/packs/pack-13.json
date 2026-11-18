@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-5920",
+  "id": "k-noun-حماية",
   "type": "noun",
   "english": "protection",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-957",
+  "id": "k-verb-تكلم",
   "type": "verb",
   "english": "talk, conversation",
   "arabic": [
@@ -49,7 +49,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-2197",
+  "id": "k-verb-تصرف",
   "type": "verb",
   "english": "behave, act",
   "arabic": [
@@ -77,7 +77,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1112",
+  "id": "k-noun-شخصية",
   "type": "noun",
   "english": "personality",
   "arabic": [
@@ -98,7 +98,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1230",
+  "id": "k-verb-اعتمد",
   "type": "verb",
   "english": "rely, depend",
   "arabic": [
@@ -126,7 +126,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2721",
+  "id": "k-noun-مسيحي",
   "type": "noun",
   "english": "christian",
   "arabic": [
@@ -147,7 +147,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4204",
+  "id": "k-adj-غربي",
   "type": "adj",
   "english": "western",
   "arabic": [
@@ -168,7 +168,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4371",
+  "id": "k-noun-طب",
   "type": "noun",
   "english": "medicine",
   "arabic": [
@@ -188,7 +188,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1271",
+  "id": "k-noun-وثيقة",
   "type": "noun",
   "english": "document",
   "arabic": [
@@ -209,7 +209,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4232",
+  "id": "k-verb-شد",
   "type": "verb",
   "english": "tighten",
   "arabic": [
@@ -236,7 +236,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3247",
+  "id": "k-adj-مستقل",
   "type": "adj",
   "english": "independent",
   "arabic": [
@@ -256,7 +256,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1661",
+  "id": "k-noun-يمين",
   "type": "noun",
   "english": "right",
   "arabic": [
@@ -277,7 +277,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5228",
+  "id": "k-noun-ولي",
   "type": "noun",
   "english": "saint",
   "arabic": [
@@ -297,7 +297,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-2431",
+  "id": "k-verb-بارك",
   "type": "verb",
   "english": "bless",
   "arabic": [
@@ -325,7 +325,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-1845",
+  "id": "k-adj-اداري",
   "type": "adj",
   "english": "administrative",
   "arabic": [
@@ -345,7 +345,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-236",
+  "id": "k-noun-دعاء",
   "type": "noun",
   "english": "supplication, prayer",
   "arabic": [
@@ -366,7 +366,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2515",
+  "id": "k-noun-حضور",
   "type": "noun",
   "english": "presence",
   "arabic": [
@@ -387,7 +387,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-536",
+  "id": "k-noun-دينار",
   "type": "noun",
   "english": "dinar",
   "arabic": [
@@ -408,7 +408,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6267",
+  "id": "k-noun-مقارنة",
   "type": "noun",
   "english": "comparison",
   "arabic": [
@@ -429,7 +429,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4768",
+  "id": "k-verb-استمر",
   "type": "verb",
   "english": "continue",
   "arabic": [
@@ -457,7 +457,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3661",
+  "id": "k-noun-فقر",
   "type": "noun",
   "english": "poverty",
   "arabic": [
@@ -478,7 +478,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-5065",
+  "id": "k-verb-لقي",
   "type": "verb",
   "english": "meet, encounter",
   "arabic": [
@@ -506,7 +506,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-3563",
+  "id": "k-verb-توصل",
   "type": "verb",
   "english": "get",
   "arabic": [
@@ -533,7 +533,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4223",
+  "id": "k-noun-استقرار",
   "type": "noun",
   "english": "stability",
   "arabic": [
@@ -553,7 +553,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1256",
+  "id": "k-noun-اسف",
   "type": "noun",
   "english": "regret, sorrow",
   "arabic": [
@@ -574,7 +574,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2629",
+  "id": "k-noun-التزام",
   "type": "noun",
   "english": "commitment",
   "arabic": [
@@ -595,7 +595,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4662",
+  "id": "k-noun-استعمال",
   "type": "noun",
   "english": "use",
   "arabic": [
@@ -616,7 +616,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2",
+  "id": "k-noun-فوز",
   "type": "noun",
   "english": "win",
   "arabic": [
@@ -636,7 +636,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3169",
+  "id": "k-noun-توزيع",
   "type": "noun",
   "english": "distribution",
   "arabic": [
@@ -657,7 +657,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1315",
+  "id": "k-noun-كف",
   "type": "noun",
   "english": "glove",
   "arabic": [
@@ -677,7 +677,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3615",
+  "id": "k-adj-انساني",
   "type": "adj",
   "english": "human",
   "arabic": [
@@ -698,7 +698,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6365",
+  "id": "k-noun-محيط",
   "type": "noun",
   "english": "ocean",
   "arabic": [
@@ -719,7 +719,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1734",
+  "id": "k-verb-حضر",
   "type": "verb",
   "english": "attend",
   "arabic": [
@@ -747,7 +747,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-1713",
+  "id": "k-adj-مناسب",
   "type": "adj",
   "english": "appropriate, suitable",
   "arabic": [
@@ -767,7 +767,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4971",
+  "id": "k-adj-عميق",
   "type": "adj",
   "english": "deep",
   "arabic": [
@@ -788,7 +788,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-1326",
+  "id": "k-adj-فعلي",
   "type": "adj",
   "english": "actual, real",
   "arabic": [
@@ -808,7 +808,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6000",
+  "id": "k-noun-صعوبة",
   "type": "noun",
   "english": "difficulty",
   "arabic": [
@@ -829,7 +829,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-5963",
+  "id": "k-verb-صح",
   "type": "verb",
   "english": "correct",
   "arabic": [
@@ -856,7 +856,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6415",
+  "id": "k-noun-قصد",
   "type": "noun",
   "english": "intention, purpose, aim",
   "arabic": [
@@ -877,7 +877,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5879",
+  "id": "k-noun-فساد",
   "type": "noun",
   "english": "corruption, depravity",
   "arabic": [
@@ -897,7 +897,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6684",
+  "id": "k-noun-ثمن",
   "type": "noun",
   "english": "price",
   "arabic": [
@@ -918,7 +918,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1275",
+  "id": "k-noun-شعور",
   "type": "noun",
   "english": "feeling, sensation",
   "arabic": [
@@ -939,7 +939,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3504",
+  "id": "k-adj-صهيوني",
   "type": "adj",
   "english": "zionist",
   "arabic": [
@@ -959,7 +959,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-573",
+  "id": "k-noun-سكن",
   "type": "noun",
   "english": "abode, dwelling, habitation",
   "arabic": [
@@ -980,7 +980,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1085",
+  "id": "k-noun-عقار",
   "type": "noun",
   "english": "real estate",
   "arabic": [
@@ -1001,7 +1001,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1885",
+  "id": "k-verb-عاش",
   "type": "verb",
   "english": "live",
   "arabic": [
@@ -1029,7 +1029,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3326",
+  "id": "k-noun-خبرة",
   "type": "noun",
   "english": "experience",
   "arabic": [
@@ -1050,7 +1050,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-419",
+  "id": "k-noun-جد",
   "type": "noun",
   "english": "grandfather",
   "arabic": [
@@ -1071,7 +1071,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1469",
+  "id": "k-noun-بيئة",
   "type": "noun",
   "english": "milieu",
   "arabic": [
@@ -1091,7 +1091,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-192",
+  "id": "k-verb-تضمن",
   "type": "verb",
   "english": "comprise",
   "arabic": [

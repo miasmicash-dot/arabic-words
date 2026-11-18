@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-4656",
+  "id": "k-noun-قارة",
   "type": "noun",
   "english": "continent",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4522",
+  "id": "k-noun-قناع",
   "type": "noun",
   "english": "mask",
   "arabic": [
@@ -42,7 +42,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-5975",
+  "id": "k-adj-امامي",
   "type": "adj",
   "english": "front",
   "arabic": [
@@ -62,7 +62,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-5436",
+  "id": "k-adj-شيوعي",
   "type": "adj",
   "english": "communist",
   "arabic": [
@@ -83,7 +83,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-3730",
+  "id": "k-verb-ركز",
   "type": "verb",
   "english": "concentrate, focus",
   "arabic": [
@@ -111,7 +111,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2492",
+  "id": "k-noun-ضمان",
   "type": "noun",
   "english": "warranty",
   "arabic": [
@@ -132,7 +132,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5807",
+  "id": "k-noun-صدمة",
   "type": "noun",
   "english": "shock",
   "arabic": [
@@ -153,7 +153,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-348",
+  "id": "k-adj-وفير",
   "type": "adj",
   "english": "abundant",
   "arabic": [
@@ -173,7 +173,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-5901",
+  "id": "k-verb-تدهور",
   "type": "verb",
   "english": "deteriorate",
   "arabic": [
@@ -200,7 +200,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-4297",
+  "id": "k-verb-نصح",
   "type": "verb",
   "english": "counsel",
   "arabic": [
@@ -228,7 +228,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-3173",
+  "id": "k-verb-سرق",
   "type": "verb",
   "english": "steal",
   "arabic": [
@@ -256,7 +256,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2539",
+  "id": "k-noun-اجرة",
   "type": "noun",
   "english": "pay",
   "arabic": [
@@ -276,7 +276,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-605",
+  "id": "k-adj-سوري",
   "type": "adj",
   "english": "syrian",
   "arabic": [
@@ -297,7 +297,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-5082",
+  "id": "k-verb-تصنع",
   "type": "verb",
   "english": "simulate, feign",
   "arabic": [
@@ -325,7 +325,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5011",
+  "id": "k-noun-تحذير",
   "type": "noun",
   "english": "warning",
   "arabic": [
@@ -346,7 +346,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5986",
+  "id": "k-noun-خصم",
   "type": "noun",
   "english": "adversary, opponent",
   "arabic": [
@@ -367,7 +367,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1468",
+  "id": "k-noun-امكانية",
   "type": "noun",
   "english": "possibility, capacity",
   "arabic": [
@@ -388,7 +388,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-5803",
+  "id": "k-adj-مائي",
   "type": "adj",
   "english": "aquatic",
   "arabic": [
@@ -408,7 +408,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-2144",
+  "id": "k-verb-حك",
   "type": "verb",
   "english": "rub",
   "arabic": [
@@ -436,7 +436,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1524",
+  "id": "k-verb-اضطر",
   "type": "verb",
   "english": "force, compel",
   "arabic": [
@@ -464,7 +464,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-2773",
+  "id": "k-adj-شفاف",
   "type": "adj",
   "english": "see-through, transparent",
   "arabic": [
@@ -484,7 +484,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-1206",
+  "id": "k-adj-كيميائي",
   "type": "adj",
   "english": "chemical",
   "arabic": [
@@ -505,7 +505,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-49",
+  "id": "k-noun-كاميرا",
   "type": "noun",
   "english": "camera",
   "arabic": [
@@ -525,7 +525,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5178",
+  "id": "k-noun-تصنيع",
   "type": "noun",
   "english": "manufacture, fabrication",
   "arabic": [
@@ -546,7 +546,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2988",
+  "id": "k-noun-مكسب",
   "type": "noun",
   "english": "profit, gain, earnings",
   "arabic": [
@@ -566,7 +566,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-4922",
+  "id": "k-verb-ورث",
   "type": "verb",
   "english": "inherit",
   "arabic": [
@@ -594,7 +594,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3814",
+  "id": "k-noun-عمي",
   "type": "noun",
   "english": "blindness",
   "arabic": [
@@ -614,7 +614,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2387",
+  "id": "k-noun-جزاء",
   "type": "noun",
   "english": "punishment, penalty",
   "arabic": [
@@ -635,7 +635,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6710",
+  "id": "k-noun-نقيب",
   "type": "noun",
   "english": "captain",
   "arabic": [
@@ -656,7 +656,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-2666",
+  "id": "k-verb-خصص",
   "type": "verb",
   "english": "allocate, designate",
   "arabic": [
@@ -684,7 +684,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1173",
+  "id": "k-noun-ملح",
   "type": "noun",
   "english": "salt",
   "arabic": [
@@ -705,7 +705,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-3963",
+  "id": "k-verb-تمرد",
   "type": "verb",
   "english": "revolt, rebel",
   "arabic": [
@@ -733,7 +733,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5629",
+  "id": "k-noun-خيط",
   "type": "noun",
   "english": "thread, string, cord",
   "arabic": [
@@ -754,7 +754,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1663",
+  "id": "k-verb-عثر",
   "type": "verb",
   "english": "stumble, trip",
   "arabic": [
@@ -781,7 +781,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-2362",
+  "id": "k-verb-خفي",
   "type": "verb",
   "english": "hidden",
   "arabic": [
@@ -808,7 +808,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-295",
+  "id": "k-noun-قصيدة",
   "type": "noun",
   "english": "poem",
   "arabic": [
@@ -829,7 +829,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-2567",
+  "id": "k-verb-طعن",
   "type": "verb",
   "english": "stab",
   "arabic": [
@@ -857,7 +857,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-355",
+  "id": "k-noun-وصلة",
   "type": "noun",
   "english": "link",
   "arabic": [
@@ -878,7 +878,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3571",
+  "id": "k-noun-ايراد",
   "type": "noun",
   "english": "income, revenue, yield",
   "arabic": [
@@ -899,7 +899,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5450",
+  "id": "k-noun-رابطة",
   "type": "noun",
   "english": "association",
   "arabic": [
@@ -919,7 +919,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1859",
+  "id": "k-verb-وهب",
   "type": "verb",
   "english": "grant, accord",
   "arabic": [
@@ -947,7 +947,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1681",
+  "id": "k-noun-فيروس",
   "type": "noun",
   "english": "virus",
   "arabic": [
@@ -968,7 +968,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-1850",
+  "id": "k-adj-متواضع",
   "type": "adj",
   "english": "humble, modest",
   "arabic": [
@@ -988,7 +988,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1749",
+  "id": "k-noun-لعنة",
   "type": "noun",
   "english": "curse",
   "arabic": [
@@ -1008,7 +1008,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3583",
+  "id": "k-noun-عروض",
   "type": "noun",
   "english": "prosody",
   "arabic": [
@@ -1029,7 +1029,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-3662",
+  "id": "k-adj-جوال",
   "type": "adj",
   "english": "mobile",
   "arabic": [
@@ -1049,7 +1049,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-4659",
+  "id": "k-adj-حلال",
   "type": "adj",
   "english": "halal",
   "arabic": [
@@ -1069,7 +1069,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5127",
+  "id": "k-noun-قنبلة",
   "type": "noun",
   "english": "bomb, grenade",
   "arabic": [
@@ -1090,7 +1090,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5447",
+  "id": "k-noun-محرر",
   "type": "noun",
   "english": "editor",
   "arabic": [
@@ -1111,7 +1111,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6339",
+  "id": "k-noun-قبة",
   "type": "noun",
   "english": "dome, cupola",
   "arabic": [

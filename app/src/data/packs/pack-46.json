@@ -1,6 +1,26 @@
 [
  {
-  "id": "k-verb-undefined",
+  "id": "k-adj-ابدي",
+  "type": "adj",
+  "english": "eternal, everlasting, endless",
+  "arabic": [
+   "أبدي"
+  ],
+  "translit": [
+   "abadiyy"
+  ],
+  "vocalized": "أَبَدِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2251,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-ابعد",
   "type": "verb",
   "english": "remove",
   "arabic": [
@@ -23,11 +43,11 @@
    "we": "نحن نبعد",
    "they": "هم يبعدون"
   },
-  "frequencyRank": 2251,
+  "frequencyRank": 2252,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-ابكم",
   "type": "adj",
   "english": "mute",
   "arabic": [
@@ -43,11 +63,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2252,
+  "frequencyRank": 2253,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اثاث",
   "type": "noun",
   "english": "furniture",
   "arabic": [
@@ -64,11 +84,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2253,
+  "frequencyRank": 2254,
   "level": "A2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-احاط",
   "type": "verb",
   "english": "surround, ring",
   "arabic": [
@@ -92,11 +112,11 @@
    "we": "نحن نحيط",
    "they": "هم يحيطون"
   },
-  "frequencyRank": 2254,
+  "frequencyRank": 2255,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-احرق",
   "type": "verb",
   "english": "burn",
   "arabic": [
@@ -120,11 +140,11 @@
    "we": "نحن نحرق",
    "they": "هم يحرقون"
   },
-  "frequencyRank": 2255,
+  "frequencyRank": 2256,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-احمق",
   "type": "adj",
   "english": "stupid",
   "arabic": [
@@ -140,11 +160,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2256,
+  "frequencyRank": 2257,
   "level": "A2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اخفي",
   "type": "verb",
   "english": "hide, conceal",
   "arabic": [
@@ -168,11 +188,11 @@
    "we": "نحن نخفي",
    "they": "هم يخفون"
   },
-  "frequencyRank": 2257,
+  "frequencyRank": 2258,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-اخلاقي",
   "type": "adj",
   "english": "moral, ethical",
   "arabic": [
@@ -189,11 +209,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2258,
+  "frequencyRank": 2259,
   "level": "A1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-ادار",
   "type": "verb",
   "english": "manage",
   "arabic": [
@@ -217,11 +237,11 @@
    "we": "نحن ندير",
    "they": "هم يديرون"
   },
-  "frequencyRank": 2259,
+  "frequencyRank": 2260,
   "level": "C1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-ادبي",
   "type": "adj",
   "english": "literary",
   "arabic": [
@@ -238,11 +258,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2260,
+  "frequencyRank": 2261,
   "level": "A1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-ادني",
   "type": "adj",
   "english": "lower",
   "arabic": [
@@ -258,11 +278,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2261,
+  "frequencyRank": 2262,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اذاع",
   "type": "verb",
   "english": "broadcast",
   "arabic": [
@@ -286,11 +306,11 @@
    "we": "نحن نذيع",
    "they": "هم يذيعون"
   },
-  "frequencyRank": 2262,
+  "frequencyRank": 2263,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-ارثوذكسي",
   "type": "adj",
   "english": "orthodox",
   "arabic": [
@@ -306,11 +326,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2263,
+  "frequencyRank": 2264,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-ارشد",
   "type": "verb",
   "english": "guide",
   "arabic": [
@@ -334,11 +354,11 @@
    "we": "نحن نرشد",
    "they": "هم يرشدون"
   },
-  "frequencyRank": 2264,
+  "frequencyRank": 2265,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ارمل",
   "type": "noun",
   "english": "widower",
   "arabic": [
@@ -354,11 +374,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2265,
+  "frequencyRank": 2266,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ارملة",
   "type": "noun",
   "english": "widow",
   "arabic": [
@@ -374,11 +394,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2266,
+  "frequencyRank": 2267,
   "level": "B1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ارنب",
   "type": "noun",
   "english": "rabbit",
   "arabic": [
@@ -395,11 +415,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2267,
+  "frequencyRank": 2268,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اريكة",
   "type": "noun",
   "english": "sofa",
   "arabic": [
@@ -415,11 +435,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2268,
+  "frequencyRank": 2269,
   "level": "A1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-ازعج",
   "type": "verb",
   "english": "bother",
   "arabic": [
@@ -443,11 +463,11 @@
    "we": "نحن نزعج",
    "they": "هم يزعجون"
   },
-  "frequencyRank": 2269,
+  "frequencyRank": 2270,
   "level": "C1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-اسباني",
   "type": "adj",
   "english": "spanish",
   "arabic": [
@@ -463,11 +483,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2270,
+  "frequencyRank": 2271,
   "level": "A1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-اسبوعي",
   "type": "adj",
   "english": "weekly",
   "arabic": [
@@ -483,11 +503,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2271,
+  "frequencyRank": 2272,
   "level": "B1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-استرالي",
   "type": "adj",
   "english": "australian",
   "arabic": [
@@ -503,11 +523,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2272,
+  "frequencyRank": 2273,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اسطوانة",
   "type": "noun",
   "english": "cylinder",
   "arabic": [
@@ -524,11 +544,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2273,
+  "frequencyRank": 2274,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-اسطوري",
   "type": "adj",
   "english": "legendary",
   "arabic": [
@@ -544,11 +564,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2274,
+  "frequencyRank": 2275,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اسطول",
   "type": "noun",
   "english": "fleet",
   "arabic": [
@@ -565,11 +585,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2275,
+  "frequencyRank": 2276,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اسفلت",
   "type": "noun",
   "english": "asphalt",
   "arabic": [
@@ -585,11 +605,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2276,
+  "frequencyRank": 2277,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اسقط",
   "type": "verb",
   "english": "drop",
   "arabic": [
@@ -612,11 +632,11 @@
    "we": "نحن نسقط",
    "they": "هم يسقطون"
   },
-  "frequencyRank": 2277,
+  "frequencyRank": 2278,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اسقف",
   "type": "noun",
   "english": "bishop",
   "arabic": [
@@ -632,11 +652,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2278,
+  "frequencyRank": 2279,
   "level": "A1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-اشقر",
   "type": "adj",
   "english": "blond",
   "arabic": [
@@ -652,11 +672,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2279,
+  "frequencyRank": 2280,
   "level": "A2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-اشيب",
   "type": "adj",
   "english": "white-haired",
   "arabic": [
@@ -672,11 +692,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2280,
+  "frequencyRank": 2281,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اصبع",
   "type": "noun",
   "english": "finger",
   "arabic": [
@@ -692,11 +712,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2281,
+  "frequencyRank": 2282,
   "level": "B1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اصلح",
   "type": "verb",
   "english": "fix",
   "arabic": [
@@ -720,11 +740,11 @@
    "we": "نحن نصلح",
    "they": "هم يصلحون"
   },
-  "frequencyRank": 2282,
+  "frequencyRank": 2283,
   "level": "C2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-اصم",
   "type": "adj",
   "english": "deaf",
   "arabic": [
@@ -741,11 +761,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2283,
+  "frequencyRank": 2284,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اضاء",
   "type": "verb",
   "english": "illuminate",
   "arabic": [
@@ -769,11 +789,11 @@
    "we": "نحن نضيء",
    "they": "هم يضيئون"
   },
-  "frequencyRank": 2284,
+  "frequencyRank": 2285,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اضاع",
   "type": "verb",
   "english": "lose",
   "arabic": [
@@ -796,11 +816,11 @@
    "we": "نحن نضيع",
    "they": "هم يضيعون"
   },
-  "frequencyRank": 2285,
+  "frequencyRank": 2286,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اضر",
   "type": "verb",
   "english": "damage",
   "arabic": [
@@ -823,11 +843,11 @@
    "we": "نحن نضر",
    "they": "هم يضرون"
   },
-  "frequencyRank": 2286,
+  "frequencyRank": 2287,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اطروحة",
   "type": "noun",
   "english": "thesis",
   "arabic": [
@@ -843,11 +863,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2287,
+  "frequencyRank": 2288,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اطفا",
   "type": "verb",
   "english": "extinguish",
   "arabic": [
@@ -870,11 +890,11 @@
    "we": "نحن نطفئ",
    "they": "هم يطفئون"
   },
-  "frequencyRank": 2288,
+  "frequencyRank": 2289,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اعدي",
   "type": "verb",
   "english": "infect",
   "arabic": [
@@ -897,11 +917,11 @@
    "we": "نحن نعدي",
    "they": "هم يعدون"
   },
-  "frequencyRank": 2289,
+  "frequencyRank": 2290,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اغرق",
   "type": "verb",
   "english": "drown",
   "arabic": [
@@ -925,11 +945,11 @@
    "we": "نحن نغرق",
    "they": "هم يغرقون"
   },
-  "frequencyRank": 2290,
+  "frequencyRank": 2291,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اغضب",
   "type": "verb",
   "english": "irritate",
   "arabic": [
@@ -952,11 +972,11 @@
    "we": "نحن نغضب",
    "they": "هم يغضبون"
   },
-  "frequencyRank": 2291,
+  "frequencyRank": 2292,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اغلبية",
   "type": "noun",
   "english": "majority",
   "arabic": [
@@ -973,11 +993,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2292,
+  "frequencyRank": 2293,
   "level": "A1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-افريقي",
   "type": "adj",
   "english": "african",
   "arabic": [
@@ -993,11 +1013,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2293,
+  "frequencyRank": 2294,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-افضلية",
   "type": "noun",
   "english": "preference",
   "arabic": [
@@ -1013,11 +1033,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2294,
+  "frequencyRank": 2295,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-افغاني",
   "type": "noun",
   "english": "afghan",
   "arabic": [
@@ -1034,11 +1054,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2295,
+  "frequencyRank": 2296,
   "level": "A2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-افقي",
   "type": "adj",
   "english": "horizontal",
   "arabic": [
@@ -1055,11 +1075,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2296,
+  "frequencyRank": 2297,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اقال",
   "type": "verb",
   "english": "dismiss, fire",
   "arabic": [
@@ -1083,11 +1103,11 @@
    "we": "نحن نقيل",
    "they": "هم يقيلون"
   },
-  "frequencyRank": 2297,
+  "frequencyRank": 2298,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اقسم",
   "type": "verb",
   "english": "swear",
   "arabic": [
@@ -1111,11 +1131,11 @@
    "we": "نحن نقسم",
    "they": "هم يقسمون"
   },
-  "frequencyRank": 2298,
+  "frequencyRank": 2299,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اقلية",
   "type": "noun",
   "english": "minority",
   "arabic": [
@@ -1131,35 +1151,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2299,
-  "level": "A1"
- },
- {
-  "id": "k-verb-undefined",
-  "type": "verb",
-  "english": "convince",
-  "arabic": [
-   "أقنع"
-  ],
-  "translit": [
-   "aqna'a"
-  ],
-  "vocalized": "أَقْنَعَ",
-  "verified": [
-   "kelly",
-   "wiktionary-ar",
-   "wiktionary-en",
-   "arabic-wordnet",
-   "buckwalter"
-  ],
-  "conjugations": {
-   "I": "أنا أقنع",
-   "he": "هو يقنع",
-   "she": "هي تقنع",
-   "we": "نحن نقنع",
-   "they": "هم يقنعون"
-  },
   "frequencyRank": 2300,
-  "level": "B2"
+  "level": "A1"
  }
 ]

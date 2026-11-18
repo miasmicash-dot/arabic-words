@@ -280,7 +280,7 @@ for (const k of kelly) {
   }
   if (!made) { why(reason, k.word); continue }
   if (haveEn.has(made.english) || out.some((o) => o.arabic[0] === made.arabic[0])) { why('duplicate', k.word); continue }
-  out.push({ id: `k-${k.pos}-${k.id}`, ...made, frequencyRank: out.length + 1, level: k.cefr })
+  out.push({ id: `k-${k.pos}-${key(made.arabic[0])}`, ...made, frequencyRank: out.length + 1, level: k.cefr })
 }
 
 // ---------- check the built-in words the same way (report only; her list is never changed silently) ----------

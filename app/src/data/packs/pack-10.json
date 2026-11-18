@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-4255",
+  "id": "k-noun-ارهاب",
   "type": "noun",
   "english": "terrorism",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4790",
+  "id": "k-noun-كنيسة",
   "type": "noun",
   "english": "church",
   "arabic": [
@@ -42,7 +42,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-43",
+  "id": "k-adj-دخيل",
   "type": "adj",
   "english": "alien",
   "arabic": [
@@ -62,7 +62,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2919",
+  "id": "k-noun-حادث",
   "type": "noun",
   "english": "accident",
   "arabic": [
@@ -83,7 +83,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-5335",
+  "id": "k-adj-صحي",
   "type": "adj",
   "english": "healthy",
   "arabic": [
@@ -103,7 +103,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2713",
+  "id": "k-noun-مسؤولية",
   "type": "noun",
   "english": "responsibility",
   "arabic": [
@@ -123,7 +123,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-372",
+  "id": "k-noun-نظرة",
   "type": "noun",
   "english": "perspective",
   "arabic": [
@@ -144,7 +144,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6520",
+  "id": "k-noun-تصريح",
   "type": "noun",
   "english": "statement, declaration",
   "arabic": [
@@ -165,7 +165,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-1667",
+  "id": "k-verb-سمح",
   "type": "verb",
   "english": "allow, permit",
   "arabic": [
@@ -193,7 +193,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3929",
+  "id": "k-noun-ديمقراطية",
   "type": "noun",
   "english": "democracy",
   "arabic": [
@@ -214,7 +214,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-5766",
+  "id": "k-adj-خامس",
   "type": "adj",
   "english": "fifth",
   "arabic": [
@@ -234,7 +234,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4414",
+  "id": "k-noun-قمة",
   "type": "noun",
   "english": "top, peak, crown",
   "arabic": [
@@ -255,7 +255,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2455",
+  "id": "k-noun-ضعف",
   "type": "noun",
   "english": "weakness",
   "arabic": [
@@ -276,7 +276,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5727",
+  "id": "k-noun-قناة",
   "type": "noun",
   "english": "channel, canal",
   "arabic": [
@@ -297,7 +297,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6335",
+  "id": "k-noun-مجلة",
   "type": "noun",
   "english": "magazine",
   "arabic": [
@@ -317,7 +317,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6705",
+  "id": "k-noun-شراء",
   "type": "noun",
   "english": "buying",
   "arabic": [
@@ -338,7 +338,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-432",
+  "id": "k-noun-تعديل",
   "type": "noun",
   "english": "adjustment",
   "arabic": [
@@ -359,7 +359,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-6194",
+  "id": "k-adj-طبي",
   "type": "adj",
   "english": "medical",
   "arabic": [
@@ -380,7 +380,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6414",
+  "id": "k-noun-اختلاف",
   "type": "noun",
   "english": "variant",
   "arabic": [
@@ -401,7 +401,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-4647",
+  "id": "k-adj-اجنبي",
   "type": "adj",
   "english": "foreign",
   "arabic": [
@@ -422,7 +422,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5578",
+  "id": "k-noun-حظ",
   "type": "noun",
   "english": "portion, lot",
   "arabic": [
@@ -443,7 +443,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4035",
+  "id": "k-noun-فنان",
   "type": "noun",
   "english": "artist",
   "arabic": [
@@ -464,7 +464,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2116",
+  "id": "k-noun-اعلان",
   "type": "noun",
   "english": "announcement",
   "arabic": [
@@ -484,7 +484,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5313",
+  "id": "k-noun-نسخة",
   "type": "noun",
   "english": "copy",
   "arabic": [
@@ -505,7 +505,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1024",
+  "id": "k-noun-جار",
   "type": "noun",
   "english": "neighbor",
   "arabic": [
@@ -526,7 +526,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-5275",
+  "id": "k-adj-رائع",
   "type": "adj",
   "english": "wonderful",
   "arabic": [
@@ -546,7 +546,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4935",
+  "id": "k-noun-محطة",
   "type": "noun",
   "english": "station",
   "arabic": [
@@ -567,7 +567,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1891",
+  "id": "k-noun-قبول",
   "type": "noun",
   "english": "acceptance",
   "arabic": [
@@ -588,7 +588,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2326",
+  "id": "k-noun-نظرية",
   "type": "noun",
   "english": "theory",
   "arabic": [
@@ -609,7 +609,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6256",
+  "id": "k-noun-تسجيل",
   "type": "noun",
   "english": "registration",
   "arabic": [
@@ -630,7 +630,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-4725",
+  "id": "k-adj-ديمقراطي",
   "type": "adj",
   "english": "democratic",
   "arabic": [
@@ -651,7 +651,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-2674",
+  "id": "k-verb-تحقق",
   "type": "verb",
   "english": "materialize",
   "arabic": [
@@ -678,7 +678,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-6188",
+  "id": "k-adj-مطلق",
   "type": "adj",
   "english": "absolute",
   "arabic": [
@@ -698,7 +698,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4905",
+  "id": "k-noun-نهار",
   "type": "noun",
   "english": "daytime, day",
   "arabic": [
@@ -719,7 +719,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3934",
+  "id": "k-noun-تشكيل",
   "type": "noun",
   "english": "formation, establishment",
   "arabic": [
@@ -740,7 +740,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-563",
+  "id": "k-adj-مقدس",
   "type": "adj",
   "english": "sacred, holy",
   "arabic": [
@@ -760,7 +760,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1933",
+  "id": "k-noun-معرض",
   "type": "noun",
   "english": "exhibition, exposition",
   "arabic": [
@@ -781,7 +781,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5085",
+  "id": "k-noun-شرط",
   "type": "noun",
   "english": "condition, stipulation, requirement",
   "arabic": [
@@ -802,7 +802,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5559",
+  "id": "k-noun-مبلغ",
   "type": "noun",
   "english": "sum, amount",
   "arabic": [
@@ -823,7 +823,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3006",
+  "id": "k-noun-تاكيد",
   "type": "noun",
   "english": "confirmation, affirmation",
   "arabic": [
@@ -844,7 +844,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1639",
+  "id": "k-noun-اصابة",
   "type": "noun",
   "english": "injury, trauma",
   "arabic": [
@@ -865,7 +865,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-406",
+  "id": "k-noun-سيدة",
   "type": "noun",
   "english": "madam, lady",
   "arabic": [
@@ -885,7 +885,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2343",
+  "id": "k-noun-شرح",
   "type": "noun",
   "english": "explanation",
   "arabic": [
@@ -906,7 +906,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3161",
+  "id": "k-noun-مستشفي",
   "type": "noun",
   "english": "hospital",
   "arabic": [
@@ -926,7 +926,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2918",
+  "id": "k-noun-ساحة",
   "type": "noun",
   "english": "field, area",
   "arabic": [
@@ -947,7 +947,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4241",
+  "id": "k-noun-سهم",
   "type": "noun",
   "english": "arrow",
   "arabic": [
@@ -968,7 +968,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5142",
+  "id": "k-noun-معدل",
   "type": "noun",
   "english": "rate",
   "arabic": [
@@ -989,7 +989,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-2333",
+  "id": "k-verb-توقف",
   "type": "verb",
   "english": "stop",
   "arabic": [
@@ -1017,7 +1017,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-5537",
+  "id": "k-verb-صادر",
   "type": "verb",
   "english": "seize, impound",
   "arabic": [
@@ -1045,7 +1045,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-677",
+  "id": "k-verb-شارك",
   "type": "verb",
   "english": "share, participate",
   "arabic": [

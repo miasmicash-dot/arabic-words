@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-adj-2732",
+  "id": "k-adj-مختلف",
   "type": "adj",
   "english": "different",
   "arabic": [
@@ -20,7 +20,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6562",
+  "id": "k-noun-وجه",
   "type": "noun",
   "english": "face",
   "arabic": [
@@ -41,7 +41,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3747",
+  "id": "k-noun-مثال",
   "type": "noun",
   "english": "model, example",
   "arabic": [
@@ -62,7 +62,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1697",
+  "id": "k-noun-طريقة",
   "type": "noun",
   "english": "manner, mode, means",
   "arabic": [
@@ -83,7 +83,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6087",
+  "id": "k-noun-ادارة",
   "type": "noun",
   "english": "management, direction",
   "arabic": [
@@ -104,7 +104,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6714",
+  "id": "k-noun-مركز",
   "type": "noun",
   "english": "center",
   "arabic": [
@@ -125,7 +125,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4672",
+  "id": "k-verb-دخل",
   "type": "verb",
   "english": "enter, go in",
   "arabic": [
@@ -153,7 +153,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4969",
+  "id": "k-noun-تحقيق",
   "type": "noun",
   "english": "investigation, research",
   "arabic": [
@@ -174,7 +174,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-28",
+  "id": "k-adj-اخير",
   "type": "adj",
   "english": "last, final",
   "arabic": [
@@ -194,7 +194,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6450",
+  "id": "k-noun-حاجة",
   "type": "noun",
   "english": "need",
   "arabic": [
@@ -215,7 +215,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3108",
+  "id": "k-noun-حل",
   "type": "noun",
   "english": "solution",
   "arabic": [
@@ -236,7 +236,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-6312",
+  "id": "k-adj-صحيح",
   "type": "adj",
   "english": "correct",
   "arabic": [
@@ -257,7 +257,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1412",
+  "id": "k-noun-فترة",
   "type": "noun",
   "english": "period of time, interval",
   "arabic": [
@@ -278,7 +278,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-520",
+  "id": "k-noun-واقع",
   "type": "noun",
   "english": "reality",
   "arabic": [
@@ -298,7 +298,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-840",
+  "id": "k-noun-صلاة",
   "type": "noun",
   "english": "prayer",
   "arabic": [
@@ -319,7 +319,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-2312",
+  "id": "k-adj-وطني",
   "type": "adj",
   "english": "national",
   "arabic": [
@@ -340,7 +340,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-5320",
+  "id": "k-noun-رد",
   "type": "noun",
   "english": "restitution, return",
   "arabic": [
@@ -361,7 +361,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6003",
+  "id": "k-noun-بناء",
   "type": "noun",
   "english": "building, construction",
   "arabic": [
@@ -382,7 +382,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-2059",
+  "id": "k-verb-اعتبر",
   "type": "verb",
   "english": "consider",
   "arabic": [
@@ -410,7 +410,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-6678",
+  "id": "k-adj-عالمي",
   "type": "adj",
   "english": "world, worldwide, global",
   "arabic": [
@@ -430,7 +430,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-5680",
+  "id": "k-verb-اتي",
   "type": "verb",
   "english": "come",
   "arabic": [
@@ -458,7 +458,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6467",
+  "id": "k-noun-تعليم",
   "type": "noun",
   "english": "teaching, education",
   "arabic": [
@@ -479,7 +479,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-1305",
+  "id": "k-verb-اكد",
   "type": "verb",
   "english": "assure",
   "arabic": [
@@ -507,7 +507,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5095",
+  "id": "k-noun-قيمة",
   "type": "noun",
   "english": "value, worth",
   "arabic": [
@@ -528,7 +528,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2135",
+  "id": "k-noun-رقم",
   "type": "noun",
   "english": "numeral, number, figure",
   "arabic": [
@@ -549,7 +549,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-4477",
+  "id": "k-adj-اجتماعي",
   "type": "adj",
   "english": "social, societal",
   "arabic": [
@@ -570,7 +570,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1657",
+  "id": "k-noun-لغة",
   "type": "noun",
   "english": "language",
   "arabic": [
@@ -591,7 +591,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-675",
+  "id": "k-noun-نقل",
   "type": "noun",
   "english": "transfer, transport",
   "arabic": [
@@ -612,7 +612,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6502",
+  "id": "k-noun-جزء",
   "type": "noun",
   "english": "component, constituent",
   "arabic": [
@@ -633,7 +633,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4845",
+  "id": "k-noun-نص",
   "type": "noun",
   "english": "text",
   "arabic": [
@@ -654,7 +654,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3286",
+  "id": "k-noun-مصدر",
   "type": "noun",
   "english": "origin, source",
   "arabic": [
@@ -675,7 +675,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-1279",
+  "id": "k-adj-اقتصادي",
   "type": "adj",
   "english": "economic",
   "arabic": [
@@ -696,7 +696,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6558",
+  "id": "k-noun-عامل",
   "type": "noun",
   "english": "factor, constituent, element",
   "arabic": [
@@ -717,7 +717,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5058",
+  "id": "k-noun-عقد",
   "type": "noun",
   "english": "contract",
   "arabic": [
@@ -738,7 +738,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-157",
+  "id": "k-adj-حر",
   "type": "adj",
   "english": "free",
   "arabic": [
@@ -759,7 +759,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2112",
+  "id": "k-noun-امة",
   "type": "noun",
   "english": "nation",
   "arabic": [
@@ -780,7 +780,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-6540",
+  "id": "k-noun-مشاركة",
   "type": "noun",
   "english": "participation, involvement",
   "arabic": [
@@ -801,7 +801,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-5576",
+  "id": "k-verb-قتل",
   "type": "verb",
   "english": "kill, slay",
   "arabic": [
@@ -829,7 +829,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5604",
+  "id": "k-noun-وزارة",
   "type": "noun",
   "english": "ministry",
   "arabic": [
@@ -850,7 +850,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-5774",
+  "id": "k-noun-انتخاب",
   "type": "noun",
   "english": "election",
   "arabic": [
@@ -871,7 +871,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3996",
+  "id": "k-noun-مادة",
   "type": "noun",
   "english": "matter, stuff, material",
   "arabic": [
@@ -892,7 +892,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3024",
+  "id": "k-noun-زمن",
   "type": "noun",
   "english": "time",
   "arabic": [
@@ -913,7 +913,7 @@
   "level": "C2"
  },
  {
-  "id": "k-noun-1517",
+  "id": "k-noun-مرحلة",
   "type": "noun",
   "english": "phase, stage",
   "arabic": [
@@ -934,7 +934,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-3647",
+  "id": "k-verb-بلغ",
   "type": "verb",
   "english": "reach, arrive at",
   "arabic": [
@@ -962,7 +962,7 @@
   "level": "C1"
  },
  {
-  "id": "k-adj-391",
+  "id": "k-adj-شخصي",
   "type": "adj",
   "english": "personal",
   "arabic": [
@@ -982,7 +982,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1175",
+  "id": "k-noun-بيان",
   "type": "noun",
   "english": "statement",
   "arabic": [
@@ -1003,7 +1003,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-5699",
+  "id": "k-noun-اساس",
   "type": "noun",
   "english": "foundation, basis, base",
   "arabic": [
@@ -1024,7 +1024,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4847",
+  "id": "k-noun-صوت",
   "type": "noun",
   "english": "voice",
   "arabic": [
@@ -1045,7 +1045,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-829",
+  "id": "k-noun-مواطن",
   "type": "noun",
   "english": "citizen",
   "arabic": [
@@ -1066,7 +1066,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2611",
+  "id": "k-noun-جهة",
   "type": "noun",
   "english": "direction",
   "arabic": [

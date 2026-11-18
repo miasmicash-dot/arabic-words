@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-2335",
+  "id": "k-noun-بقر",
   "type": "noun",
   "english": "cattle, oxen",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3987",
+  "id": "k-noun-اكتشاف",
   "type": "noun",
   "english": "discovery",
   "arabic": [
@@ -42,7 +42,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-765",
+  "id": "k-noun-عصب",
   "type": "noun",
   "english": "nerve",
   "arabic": [
@@ -62,7 +62,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-5193",
+  "id": "k-adj-سائد",
   "type": "adj",
   "english": "prevailing, predominant",
   "arabic": [
@@ -82,7 +82,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1237",
+  "id": "k-noun-قياس",
   "type": "noun",
   "english": "measurement",
   "arabic": [
@@ -102,7 +102,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6686",
+  "id": "k-noun-مدخل",
   "type": "noun",
   "english": "entrance, ingress",
   "arabic": [
@@ -123,7 +123,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-1408",
+  "id": "k-adj-مجاور",
   "type": "adj",
   "english": "adjacent, neighboring",
   "arabic": [
@@ -143,7 +143,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-379",
+  "id": "k-noun-ثوب",
   "type": "noun",
   "english": "garment, dress",
   "arabic": [
@@ -164,7 +164,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-6663",
+  "id": "k-verb-نهض",
   "type": "verb",
   "english": "rise, get up",
   "arabic": [
@@ -192,7 +192,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1463",
+  "id": "k-noun-غناء",
   "type": "noun",
   "english": "singing",
   "arabic": [
@@ -212,7 +212,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4094",
+  "id": "k-noun-زائر",
   "type": "noun",
   "english": "visitor",
   "arabic": [
@@ -233,7 +233,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6259",
+  "id": "k-noun-تدمير",
   "type": "noun",
   "english": "destruction",
   "arabic": [
@@ -254,7 +254,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-2157",
+  "id": "k-adj-ممتاز",
   "type": "adj",
   "english": "excellent",
   "arabic": [
@@ -274,7 +274,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4388",
+  "id": "k-noun-جرو",
   "type": "noun",
   "english": "puppy",
   "arabic": [
@@ -294,7 +294,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-266",
+  "id": "k-noun-هدوء",
   "type": "noun",
   "english": "calm, quiet, tranquility",
   "arabic": [
@@ -315,7 +315,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-52",
+  "id": "k-noun-عجز",
   "type": "noun",
   "english": "weakness",
   "arabic": [
@@ -335,7 +335,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4802",
+  "id": "k-noun-موسوعة",
   "type": "noun",
   "english": "encyclopedia",
   "arabic": [
@@ -355,7 +355,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3431",
+  "id": "k-noun-رحمة",
   "type": "noun",
   "english": "mercy, compassion",
   "arabic": [
@@ -376,7 +376,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3866",
+  "id": "k-noun-برميل",
   "type": "noun",
   "english": "barrel, cask, drum",
   "arabic": [
@@ -396,7 +396,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-5299",
+  "id": "k-adj-جغرافي",
   "type": "adj",
   "english": "geographic",
   "arabic": [
@@ -416,7 +416,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-4353",
+  "id": "k-adj-عجيب",
   "type": "adj",
   "english": "foreign",
   "arabic": [
@@ -436,7 +436,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3312",
+  "id": "k-noun-منية",
   "type": "noun",
   "english": "death",
   "arabic": [
@@ -456,7 +456,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2418",
+  "id": "k-noun-احتياج",
   "type": "noun",
   "english": "need, requirement",
   "arabic": [
@@ -477,7 +477,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-197",
+  "id": "k-noun-شوق",
   "type": "noun",
   "english": "longing, yearning",
   "arabic": [
@@ -497,7 +497,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3084",
+  "id": "k-noun-افتتاح",
   "type": "noun",
   "english": "opening",
   "arabic": [
@@ -517,7 +517,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2273",
+  "id": "k-noun-ساحل",
   "type": "noun",
   "english": "coast",
   "arabic": [
@@ -538,7 +538,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-668",
+  "id": "k-noun-توازن",
   "type": "noun",
   "english": "equilibrium, equipoise",
   "arabic": [
@@ -559,7 +559,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-1337",
+  "id": "k-adj-شائع",
   "type": "adj",
   "english": "common",
   "arabic": [
@@ -579,7 +579,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-1040",
+  "id": "k-adj-اضافي",
   "type": "adj",
   "english": "additional",
   "arabic": [
@@ -599,7 +599,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2427",
+  "id": "k-noun-بطاقة",
   "type": "noun",
   "english": "card",
   "arabic": [
@@ -620,7 +620,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-548",
+  "id": "k-noun-علامة",
   "type": "noun",
   "english": "sign, mark",
   "arabic": [
@@ -641,7 +641,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4803",
+  "id": "k-verb-اتخذ",
   "type": "verb",
   "english": "take",
   "arabic": [
@@ -669,7 +669,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-3424",
+  "id": "k-adj-كهربائي",
   "type": "adj",
   "english": "electric",
   "arabic": [
@@ -690,7 +690,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-1097",
+  "id": "k-adj-متنوع",
   "type": "adj",
   "english": "diverse",
   "arabic": [
@@ -710,7 +710,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4618",
+  "id": "k-verb-كره",
   "type": "verb",
   "english": "hate, dislike",
   "arabic": [
@@ -738,7 +738,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4562",
+  "id": "k-verb-اجاب",
   "type": "verb",
   "english": "respond, reply",
   "arabic": [
@@ -766,7 +766,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-679",
+  "id": "k-noun-جلد",
   "type": "noun",
   "english": "skin, hide",
   "arabic": [
@@ -787,7 +787,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5870",
+  "id": "k-noun-حارس",
   "type": "noun",
   "english": "guard, watchman",
   "arabic": [
@@ -808,7 +808,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-3818",
+  "id": "k-verb-تلقي",
   "type": "verb",
   "english": "receive, obtain",
   "arabic": [
@@ -835,7 +835,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-2348",
+  "id": "k-verb-لفت",
   "type": "verb",
   "english": "draw, attract",
   "arabic": [
@@ -863,7 +863,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3829",
+  "id": "k-noun-مطعم",
   "type": "noun",
   "english": "restaurant",
   "arabic": [
@@ -884,7 +884,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1065",
+  "id": "k-noun-صهيونية",
   "type": "noun",
   "english": "zionism",
   "arabic": [
@@ -904,7 +904,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3443",
+  "id": "k-noun-ابداع",
   "type": "noun",
   "english": "creativity",
   "arabic": [
@@ -924,7 +924,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1687",
+  "id": "k-noun-قوس",
   "type": "noun",
   "english": "bow",
   "arabic": [
@@ -945,7 +945,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1419",
+  "id": "k-noun-تمثيل",
   "type": "noun",
   "english": "acting",
   "arabic": [
@@ -966,7 +966,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-915",
+  "id": "k-adj-متاح",
   "type": "adj",
   "english": "available",
   "arabic": [
@@ -986,7 +986,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6462",
+  "id": "k-noun-مصرف",
   "type": "noun",
   "english": "bank",
   "arabic": [
@@ -1006,7 +1006,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4338",
+  "id": "k-noun-تجديد",
   "type": "noun",
   "english": "restoration, renewal",
   "arabic": [
@@ -1027,7 +1027,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-3651",
+  "id": "k-adj-موسيقي",
   "type": "adj",
   "english": "musical",
   "arabic": [
@@ -1048,7 +1048,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1673",
+  "id": "k-noun-رائحة",
   "type": "noun",
   "english": "smell, scent, odor",
   "arabic": [

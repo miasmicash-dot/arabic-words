@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-1762",
+  "id": "k-noun-مؤسسة",
   "type": "noun",
   "english": "foundation, establishment",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "C1"
  },
  {
-  "id": "k-verb-3770",
+  "id": "k-verb-حرك",
   "type": "verb",
   "english": "move",
   "arabic": [
@@ -48,7 +48,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2113",
+  "id": "k-noun-جهاز",
   "type": "noun",
   "english": "appliance, contrivance, gadget",
   "arabic": [
@@ -69,7 +69,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-109",
+  "id": "k-noun-قسم",
   "type": "noun",
   "english": "section",
   "arabic": [
@@ -90,7 +90,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-164",
+  "id": "k-noun-سعر",
   "type": "noun",
   "english": "price",
   "arabic": [
@@ -111,7 +111,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-543",
+  "id": "k-noun-اتفاق",
   "type": "noun",
   "english": "agreement, concord",
   "arabic": [
@@ -132,7 +132,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-886",
+  "id": "k-adj-موجود",
   "type": "adj",
   "english": "existing",
   "arabic": [
@@ -152,7 +152,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-549",
+  "id": "k-noun-طرف",
   "type": "noun",
   "english": "party",
   "arabic": [
@@ -173,7 +173,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2787",
+  "id": "k-noun-سياسة",
   "type": "noun",
   "english": "policy",
   "arabic": [
@@ -194,7 +194,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-4601",
+  "id": "k-noun-خط",
   "type": "noun",
   "english": "line",
   "arabic": [
@@ -215,7 +215,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4565",
+  "id": "k-noun-قطاع",
   "type": "noun",
   "english": "sector, section",
   "arabic": [
@@ -236,7 +236,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-5045",
+  "id": "k-verb-نشر",
   "type": "verb",
   "english": "spread out",
   "arabic": [
@@ -264,7 +264,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1871",
+  "id": "k-verb-ادي",
   "type": "verb",
   "english": "contribute",
   "arabic": [
@@ -292,7 +292,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5265",
+  "id": "k-noun-مسالة",
   "type": "noun",
   "english": "issue, problem",
   "arabic": [
@@ -313,7 +313,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-1829",
+  "id": "k-noun-خبر",
   "type": "noun",
   "english": "news",
   "arabic": [
@@ -334,7 +334,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4582",
+  "id": "k-verb-حصل",
   "type": "verb",
   "english": "happen, befall",
   "arabic": [
@@ -362,7 +362,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6477",
+  "id": "k-adj-عسكري",
   "type": "adj",
   "english": "military",
   "arabic": [
@@ -383,7 +383,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-4083",
+  "id": "k-noun-ملك",
   "type": "noun",
   "english": "angel",
   "arabic": [
@@ -403,7 +403,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5620",
+  "id": "k-noun-اضافة",
   "type": "noun",
   "english": "addition",
   "arabic": [
@@ -423,7 +423,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4466",
+  "id": "k-noun-استخدام",
   "type": "noun",
   "english": "use, employment",
   "arabic": [
@@ -444,7 +444,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6028",
+  "id": "k-adj-عديد",
   "type": "adj",
   "english": "numerous, many",
   "arabic": [
@@ -465,7 +465,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6218",
+  "id": "k-noun-صفحة",
   "type": "noun",
   "english": "page",
   "arabic": [
@@ -486,7 +486,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3396",
+  "id": "k-adj-سابق",
   "type": "adj",
   "english": "previous, preceding",
   "arabic": [
@@ -507,7 +507,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2460",
+  "id": "k-noun-رسالة",
   "type": "noun",
   "english": "letter",
   "arabic": [
@@ -528,7 +528,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3746",
+  "id": "k-noun-موقف",
   "type": "noun",
   "english": "position, attitude",
   "arabic": [
@@ -549,7 +549,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-2293",
+  "id": "k-adj-قوي",
   "type": "adj",
   "english": "strong, powerful",
   "arabic": [
@@ -570,7 +570,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6452",
+  "id": "k-adj-حالي",
   "type": "adj",
   "english": "present",
   "arabic": [
@@ -590,7 +590,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1955",
+  "id": "k-noun-راس",
   "type": "noun",
   "english": "head",
   "arabic": [
@@ -611,7 +611,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-5222",
+  "id": "k-adj-عظيم",
   "type": "adj",
   "english": "great",
   "arabic": [
@@ -631,7 +631,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-3282",
+  "id": "k-verb-اشار",
   "type": "verb",
   "english": "point, indicate",
   "arabic": [
@@ -659,7 +659,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3969",
+  "id": "k-noun-مستوي",
   "type": "noun",
   "english": "level",
   "arabic": [
@@ -680,7 +680,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5598",
+  "id": "k-noun-نهاية",
   "type": "noun",
   "english": "end",
   "arabic": [
@@ -700,7 +700,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-6095",
+  "id": "k-verb-سمع",
   "type": "verb",
   "english": "hear",
   "arabic": [
@@ -728,7 +728,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-5764",
+  "id": "k-verb-فهم",
   "type": "verb",
   "english": "understand",
   "arabic": [
@@ -756,7 +756,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5541",
+  "id": "k-noun-روح",
   "type": "noun",
   "english": "spirit",
   "arabic": [
@@ -777,7 +777,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-6221",
+  "id": "k-noun-قصة",
   "type": "noun",
   "english": "story, tale",
   "arabic": [
@@ -798,7 +798,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-5722",
+  "id": "k-verb-خلق",
   "type": "verb",
   "english": "create, make",
   "arabic": [
@@ -826,7 +826,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-2781",
+  "id": "k-noun-زيادة",
   "type": "noun",
   "english": "increase, addition",
   "arabic": [
@@ -847,7 +847,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3256",
+  "id": "k-noun-قدرة",
   "type": "noun",
   "english": "power, capacity",
   "arabic": [
@@ -868,7 +868,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2012",
+  "id": "k-noun-صحيفة",
   "type": "noun",
   "english": "newspaper",
   "arabic": [
@@ -889,7 +889,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1926",
+  "id": "k-noun-فريق",
   "type": "noun",
   "english": "team",
   "arabic": [
@@ -910,7 +910,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-704",
+  "id": "k-noun-اتحاد",
   "type": "noun",
   "english": "union",
   "arabic": [
@@ -931,7 +931,7 @@
   "level": "C1"
  },
  {
-  "id": "k-verb-188",
+  "id": "k-verb-دفع",
   "type": "verb",
   "english": "pay",
   "arabic": [
@@ -959,7 +959,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4107",
+  "id": "k-noun-وسيلة",
   "type": "noun",
   "english": "means",
   "arabic": [
@@ -979,7 +979,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1383",
+  "id": "k-verb-وقف",
   "type": "verb",
   "english": "stop",
   "arabic": [
@@ -1007,7 +1007,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5605",
+  "id": "k-noun-دعم",
   "type": "noun",
   "english": "support",
   "arabic": [
@@ -1028,7 +1028,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-1089",
+  "id": "k-noun-بداية",
   "type": "noun",
   "english": "beginning, start",
   "arabic": [
@@ -1049,7 +1049,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4776",
+  "id": "k-verb-زال",
   "type": "verb",
   "english": "go away",
   "arabic": [
@@ -1077,7 +1077,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-664",
+  "id": "k-noun-فرد",
   "type": "noun",
   "english": "individual",
   "arabic": [
@@ -1098,7 +1098,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-284",
+  "id": "k-noun-نائب",
   "type": "noun",
   "english": "deputy",
   "arabic": [

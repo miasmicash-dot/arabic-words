@@ -1,6 +1,26 @@
 [
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-امبراطوري",
+  "type": "adj",
+  "english": "imperial",
+  "arabic": [
+   "إمبراطوري"
+  ],
+  "translit": [
+   "imbaraatuuriyy"
+  ],
+  "vocalized": "إمْبَرَاطُورِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2351,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-امبريالي",
   "type": "adj",
   "english": "imperialist",
   "arabic": [
@@ -16,11 +36,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2351,
+  "frequencyRank": 2352,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-انقضي",
   "type": "verb",
   "english": "pass",
   "arabic": [
@@ -44,11 +64,11 @@
    "we": "نحن ننقضي",
    "they": "هم ينقضون"
   },
-  "frequencyRank": 2352,
+  "frequencyRank": 2353,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ايجار",
   "type": "noun",
   "english": "rent",
   "arabic": [
@@ -65,11 +85,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2353,
+  "frequencyRank": 2354,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ايضاح",
   "type": "noun",
   "english": "explanation",
   "arabic": [
@@ -86,11 +106,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2354,
+  "frequencyRank": 2355,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-ايطالي",
   "type": "adj",
   "english": "italian",
   "arabic": [
@@ -107,11 +127,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2355,
+  "frequencyRank": 2356,
   "level": "A1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-ابتدا",
   "type": "verb",
   "english": "begin, commence",
   "arabic": [
@@ -135,11 +155,11 @@
    "we": "نحن نبتدئ",
    "they": "هم يبتدئون"
   },
-  "frequencyRank": 2356,
+  "frequencyRank": 2357,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ابتسامة",
   "type": "noun",
   "english": "smile",
   "arabic": [
@@ -155,11 +175,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2357,
+  "frequencyRank": 2358,
   "level": "A1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ابتهاج",
   "type": "noun",
   "english": "jubilation, delight",
   "arabic": [
@@ -175,11 +195,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2358,
+  "frequencyRank": 2359,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ابنة",
   "type": "noun",
   "english": "daughter",
   "arabic": [
@@ -195,11 +215,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2359,
+  "frequencyRank": 2360,
   "level": "A1"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-اتحادي",
   "type": "adj",
   "english": "federal",
   "arabic": [
@@ -215,11 +235,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2360,
+  "frequencyRank": 2361,
   "level": "B1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اتساق",
   "type": "noun",
   "english": "consistency",
   "arabic": [
@@ -235,11 +255,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 2361,
+  "frequencyRank": 2362,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اتفاقية",
   "type": "noun",
   "english": "agreement",
   "arabic": [
@@ -255,11 +275,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2362,
+  "frequencyRank": 2363,
   "level": "A2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-احتج",
   "type": "verb",
   "english": "protest",
   "arabic": [
@@ -283,11 +303,11 @@
    "we": "نحن نحتج",
    "they": "هم يحتجون"
   },
-  "frequencyRank": 2363,
+  "frequencyRank": 2364,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-احتراق",
   "type": "noun",
   "english": "combustion",
   "arabic": [
@@ -304,11 +324,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2364,
+  "frequencyRank": 2365,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-احترم",
   "type": "verb",
   "english": "honor, esteem",
   "arabic": [
@@ -332,11 +352,11 @@
    "we": "نحن نحترم",
    "they": "هم يحترمون"
   },
-  "frequencyRank": 2365,
+  "frequencyRank": 2366,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-احتفل",
   "type": "verb",
   "english": "celebrate",
   "arabic": [
@@ -360,11 +380,11 @@
    "we": "نحن نحتفل",
    "they": "هم يحتفلون"
   },
-  "frequencyRank": 2366,
+  "frequencyRank": 2367,
   "level": "A2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-احتقار",
   "type": "noun",
   "english": "contempt",
   "arabic": [
@@ -381,11 +401,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2367,
+  "frequencyRank": 2368,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-احتوي",
   "type": "verb",
   "english": "contain",
   "arabic": [
@@ -409,11 +429,11 @@
    "we": "نحن نحتوي",
    "they": "هم يحتوون"
   },
-  "frequencyRank": 2368,
+  "frequencyRank": 2369,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اختبر",
   "type": "verb",
   "english": "test, examine",
   "arabic": [
@@ -437,11 +457,11 @@
    "we": "نحن نختبر",
    "they": "هم يختبرون"
   },
-  "frequencyRank": 2369,
+  "frequencyRank": 2370,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-اخترع",
   "type": "verb",
   "english": "invent",
   "arabic": [
@@ -465,11 +485,11 @@
    "we": "نحن نخترع",
    "they": "هم يخترعون"
   },
-  "frequencyRank": 2370,
+  "frequencyRank": 2371,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-اختياري",
   "type": "adj",
   "english": "voluntary",
   "arabic": [
@@ -485,11 +505,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2371,
+  "frequencyRank": 2372,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-اخصائي",
   "type": "noun",
   "english": "specialist",
   "arabic": [
@@ -505,11 +525,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2372,
+  "frequencyRank": 2373,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-ارتدي",
   "type": "verb",
   "english": "put on, wear",
   "arabic": [
@@ -533,11 +553,11 @@
    "we": "نحن نرتدي",
    "they": "هم يرتدون"
   },
-  "frequencyRank": 2373,
+  "frequencyRank": 2374,
   "level": "C2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ارتقاء",
   "type": "noun",
   "english": "rising",
   "arabic": [
@@ -553,11 +573,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2374,
+  "frequencyRank": 2375,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-ازدهار",
   "type": "noun",
   "english": "prosperity",
   "arabic": [
@@ -574,11 +594,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2375,
+  "frequencyRank": 2376,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-ازدهر",
   "type": "verb",
   "english": "thrive, flourish",
   "arabic": [
@@ -602,11 +622,11 @@
    "we": "نحن نزدهر",
    "they": "هم يزدهرون"
   },
-  "frequencyRank": 2376,
+  "frequencyRank": 2377,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استانف",
   "type": "verb",
   "english": "resume",
   "arabic": [
@@ -630,11 +650,11 @@
    "we": "نحن نستأنف",
    "they": "هم يستأنفون"
   },
-  "frequencyRank": 2377,
+  "frequencyRank": 2378,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استبعد",
   "type": "verb",
   "english": "rule out",
   "arabic": [
@@ -657,11 +677,11 @@
    "we": "نحن نستبعد",
    "they": "هم يستبعدون"
   },
-  "frequencyRank": 2378,
+  "frequencyRank": 2379,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استثمر",
   "type": "verb",
   "english": "invest",
   "arabic": [
@@ -685,11 +705,11 @@
    "we": "نحن نستثمر",
    "they": "هم يستثمرون"
   },
-  "frequencyRank": 2379,
+  "frequencyRank": 2380,
   "level": "B2"
  },
  {
-  "id": "k-adj-undefined",
+  "id": "k-adj-استثنائي",
   "type": "adj",
   "english": "exceptional, extraordinary",
   "arabic": [
@@ -705,11 +725,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2380,
+  "frequencyRank": 2381,
   "level": "B1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استجاب",
   "type": "verb",
   "english": "respond",
   "arabic": [
@@ -732,11 +752,11 @@
    "we": "نحن نستجيب",
    "they": "هم يستجيبون"
   },
-  "frequencyRank": 2381,
+  "frequencyRank": 2382,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-استجمام",
   "type": "noun",
   "english": "recreation",
   "arabic": [
@@ -753,11 +773,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2382,
+  "frequencyRank": 2383,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استجوب",
   "type": "verb",
   "english": "question",
   "arabic": [
@@ -780,11 +800,11 @@
    "we": "نحن نستجوب",
    "they": "هم يستجوبون"
   },
-  "frequencyRank": 2383,
+  "frequencyRank": 2384,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-استحسان",
   "type": "noun",
   "english": "approval",
   "arabic": [
@@ -800,11 +820,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2384,
+  "frequencyRank": 2385,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استحق",
   "type": "verb",
   "english": "deserve, merit",
   "arabic": [
@@ -827,11 +847,11 @@
    "we": "نحن نستحق",
    "they": "هم يستحقون"
   },
-  "frequencyRank": 2385,
+  "frequencyRank": 2386,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استدار",
   "type": "verb",
   "english": "turn around",
   "arabic": [
@@ -854,11 +874,11 @@
    "we": "نحن نستدير",
    "they": "هم يستديرون"
   },
-  "frequencyRank": 2386,
+  "frequencyRank": 2387,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استدعي",
   "type": "verb",
   "english": "summon",
   "arabic": [
@@ -881,11 +901,11 @@
    "we": "نحن نستدعي",
    "they": "هم يستدعون"
   },
-  "frequencyRank": 2387,
+  "frequencyRank": 2388,
   "level": "C2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استرجع",
   "type": "verb",
   "english": "retrieve, recover",
   "arabic": [
@@ -909,11 +929,11 @@
    "we": "نحن نسترجع",
    "they": "هم يسترجعون"
   },
-  "frequencyRank": 2388,
+  "frequencyRank": 2389,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-استرخاء",
   "type": "noun",
   "english": "relaxation",
   "arabic": [
@@ -929,11 +949,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2389,
+  "frequencyRank": 2390,
   "level": "B1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استرخي",
   "type": "verb",
   "english": "slacken",
   "arabic": [
@@ -957,11 +977,11 @@
    "we": "نحن نسترخي",
    "they": "هم يسترخون"
   },
-  "frequencyRank": 2390,
+  "frequencyRank": 2391,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استشار",
   "type": "verb",
   "english": "consult",
   "arabic": [
@@ -985,11 +1005,11 @@
    "we": "نحن نستشير",
    "they": "هم يستشيرون"
   },
-  "frequencyRank": 2391,
+  "frequencyRank": 2392,
   "level": "B2"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-استشارة",
   "type": "noun",
   "english": "consultation",
   "arabic": [
@@ -1006,11 +1026,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2392,
+  "frequencyRank": 2393,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استعاد",
   "type": "verb",
   "english": "recover, regain",
   "arabic": [
@@ -1033,11 +1053,11 @@
    "we": "نحن نستعيد",
    "they": "هم يستعيدون"
   },
-  "frequencyRank": 2393,
+  "frequencyRank": 2394,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-استعجال",
   "type": "noun",
   "english": "hastiness",
   "arabic": [
@@ -1053,11 +1073,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 2394,
+  "frequencyRank": 2395,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استعجل",
   "type": "verb",
   "english": "rush, hurry",
   "arabic": [
@@ -1080,11 +1100,11 @@
    "we": "نحن نستعجل",
    "they": "هم يستعجلون"
   },
-  "frequencyRank": 2395,
+  "frequencyRank": 2396,
   "level": "B2"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استعرض",
   "type": "verb",
   "english": "inspect",
   "arabic": [
@@ -1107,11 +1127,11 @@
    "we": "نحن نستعرض",
    "they": "هم يستعرضون"
   },
-  "frequencyRank": 2396,
+  "frequencyRank": 2397,
   "level": "C1"
  },
  {
-  "id": "k-noun-undefined",
+  "id": "k-noun-استفزاز",
   "type": "noun",
   "english": "provocation, incitement",
   "arabic": [
@@ -1128,11 +1148,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 2397,
+  "frequencyRank": 2398,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استقال",
   "type": "verb",
   "english": "resign",
   "arabic": [
@@ -1156,11 +1176,11 @@
    "we": "نحن نستقيل",
    "they": "هم يستقيلون"
   },
-  "frequencyRank": 2398,
+  "frequencyRank": 2399,
   "level": "C1"
  },
  {
-  "id": "k-verb-undefined",
+  "id": "k-verb-استلقي",
   "type": "verb",
   "english": "lie down",
   "arabic": [
@@ -1184,35 +1204,7 @@
    "we": "نحن نستلقي",
    "they": "هم يستلقون"
   },
-  "frequencyRank": 2399,
-  "level": "B2"
- },
- {
-  "id": "k-verb-undefined",
-  "type": "verb",
-  "english": "receive, obtain",
-  "arabic": [
-   "استلم"
-  ],
-  "translit": [
-   "istalama"
-  ],
-  "vocalized": "اِسْتَلَمَ",
-  "verified": [
-   "kelly",
-   "wiktionary-ar",
-   "wiktionary-en",
-   "arabic-wordnet",
-   "buckwalter"
-  ],
-  "conjugations": {
-   "I": "أنا أستلم",
-   "he": "هو يستلم",
-   "she": "هي تستلم",
-   "we": "نحن نستلم",
-   "they": "هم يستلمون"
-  },
   "frequencyRank": 2400,
-  "level": "C2"
+  "level": "B2"
  }
 ]

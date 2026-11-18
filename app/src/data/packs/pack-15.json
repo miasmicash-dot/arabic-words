@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-4160",
+  "id": "k-noun-تقييم",
   "type": "noun",
   "english": "assessment, appraisal, evaluation",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4986",
+  "id": "k-adj-ضعيف",
   "type": "adj",
   "english": "weak",
   "arabic": [
@@ -41,7 +41,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-4854",
+  "id": "k-adj-ثامن",
   "type": "adj",
   "english": "eighth",
   "arabic": [
@@ -61,7 +61,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4708",
+  "id": "k-noun-اعتقال",
   "type": "noun",
   "english": "arrest, apprehension",
   "arabic": [
@@ -82,7 +82,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1156",
+  "id": "k-noun-جر",
   "type": "noun",
   "english": "pulling, pull",
   "arabic": [
@@ -103,7 +103,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5643",
+  "id": "k-noun-الية",
   "type": "noun",
   "english": "buttock",
   "arabic": [
@@ -123,7 +123,7 @@
   "level": "C1"
  },
  {
-  "id": "k-noun-4808",
+  "id": "k-noun-عدالة",
   "type": "noun",
   "english": "justice",
   "arabic": [
@@ -143,7 +143,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-2008",
+  "id": "k-adj-مكتوب",
   "type": "adj",
   "english": "written",
   "arabic": [
@@ -163,7 +163,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-3707",
+  "id": "k-adj-غائب",
   "type": "adj",
   "english": "absent",
   "arabic": [
@@ -183,7 +183,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2955",
+  "id": "k-noun-ظلم",
   "type": "noun",
   "english": "wrong, injustice",
   "arabic": [
@@ -204,7 +204,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-848",
+  "id": "k-noun-مشاهدة",
   "type": "noun",
   "english": "observation",
   "arabic": [
@@ -225,7 +225,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6106",
+  "id": "k-noun-جدل",
   "type": "noun",
   "english": "argument",
   "arabic": [
@@ -246,7 +246,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-1654",
+  "id": "k-adj-بحري",
   "type": "adj",
   "english": "maritime, nautical",
   "arabic": [
@@ -266,7 +266,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-861",
+  "id": "k-noun-شرق",
   "type": "noun",
   "english": "east, orient",
   "arabic": [
@@ -287,7 +287,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-5525",
+  "id": "k-adj-محدود",
   "type": "adj",
   "english": "circumscribed",
   "arabic": [
@@ -307,7 +307,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1080",
+  "id": "k-noun-حس",
   "type": "noun",
   "english": "feeling",
   "arabic": [
@@ -328,7 +328,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3259",
+  "id": "k-noun-سفر",
   "type": "noun",
   "english": "journey, travel",
   "arabic": [
@@ -349,7 +349,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1094",
+  "id": "k-noun-استثناء",
   "type": "noun",
   "english": "exception",
   "arabic": [
@@ -370,7 +370,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3354",
+  "id": "k-noun-تهديد",
   "type": "noun",
   "english": "threat",
   "arabic": [
@@ -390,7 +390,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3789",
+  "id": "k-noun-مصطلح",
   "type": "noun",
   "english": "term",
   "arabic": [
@@ -410,7 +410,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4295",
+  "id": "k-noun-حصار",
   "type": "noun",
   "english": "blockade",
   "arabic": [
@@ -431,7 +431,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2947",
+  "id": "k-noun-انتشار",
   "type": "noun",
   "english": "spread",
   "arabic": [
@@ -452,7 +452,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-6715",
+  "id": "k-adj-متقدم",
   "type": "adj",
   "english": "advanced",
   "arabic": [
@@ -472,7 +472,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6417",
+  "id": "k-noun-اداة",
   "type": "noun",
   "english": "tool, instrument",
   "arabic": [
@@ -493,7 +493,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5488",
+  "id": "k-noun-هوية",
   "type": "noun",
   "english": "identity",
   "arabic": [
@@ -514,7 +514,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2454",
+  "id": "k-noun-مرجع",
   "type": "noun",
   "english": "reference",
   "arabic": [
@@ -535,7 +535,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2816",
+  "id": "k-noun-مبني",
   "type": "noun",
   "english": "building",
   "arabic": [
@@ -556,7 +556,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3054",
+  "id": "k-noun-بطل",
   "type": "noun",
   "english": "hero",
   "arabic": [
@@ -577,7 +577,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4433",
+  "id": "k-noun-استعداد",
   "type": "noun",
   "english": "preparation",
   "arabic": [
@@ -597,7 +597,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-123",
+  "id": "k-adj-تاسع",
   "type": "adj",
   "english": "ninth",
   "arabic": [
@@ -617,7 +617,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-1311",
+  "id": "k-verb-اطلق",
   "type": "verb",
   "english": "free, liberate",
   "arabic": [
@@ -645,7 +645,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6465",
+  "id": "k-noun-شعار",
   "type": "noun",
   "english": "emblem",
   "arabic": [
@@ -665,7 +665,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-897",
+  "id": "k-noun-محبة",
   "type": "noun",
   "english": "love",
   "arabic": [
@@ -685,7 +685,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5974",
+  "id": "k-noun-سيرة",
   "type": "noun",
   "english": "biography",
   "arabic": [
@@ -706,7 +706,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2482",
+  "id": "k-noun-تكوين",
   "type": "noun",
   "english": "formation",
   "arabic": [
@@ -727,7 +727,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5816",
+  "id": "k-noun-ضرر",
   "type": "noun",
   "english": "damage, injury, hurt",
   "arabic": [
@@ -748,7 +748,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2678",
+  "id": "k-noun-ربيع",
   "type": "noun",
   "english": "spring",
   "arabic": [
@@ -769,7 +769,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-273",
+  "id": "k-noun-معامل",
   "type": "noun",
   "english": "coefficient",
   "arabic": [
@@ -789,7 +789,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4402",
+  "id": "k-verb-راح",
   "type": "verb",
   "english": "go",
   "arabic": [
@@ -817,7 +817,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1506",
+  "id": "k-noun-صلة",
   "type": "noun",
   "english": "link, connection",
   "arabic": [
@@ -838,7 +838,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5438",
+  "id": "k-noun-خيار",
   "type": "noun",
   "english": "cucumber",
   "arabic": [
@@ -858,7 +858,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1109",
+  "id": "k-noun-ضريبة",
   "type": "noun",
   "english": "tax",
   "arabic": [
@@ -879,7 +879,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1081",
+  "id": "k-noun-نعمة",
   "type": "noun",
   "english": "blessing, grace",
   "arabic": [
@@ -899,7 +899,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-2643",
+  "id": "k-adj-ذكري",
   "type": "adj",
   "english": "manly, virile",
   "arabic": [
@@ -920,7 +920,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3289",
+  "id": "k-noun-سيف",
   "type": "noun",
   "english": "sword",
   "arabic": [
@@ -941,7 +941,7 @@
   "level": "A2"
  },
  {
-  "id": "k-adj-286",
+  "id": "k-adj-حكيم",
   "type": "adj",
   "english": "wise",
   "arabic": [
@@ -961,7 +961,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4882",
+  "id": "k-noun-بصر",
   "type": "noun",
   "english": "vision, sight",
   "arabic": [
@@ -982,7 +982,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5832",
+  "id": "k-noun-تمييز",
   "type": "noun",
   "english": "discrimination",
   "arabic": [
@@ -1003,7 +1003,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-2583",
+  "id": "k-noun-قلق",
   "type": "noun",
   "english": "worry, trouble, anxiety",
   "arabic": [
@@ -1024,7 +1024,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1312",
+  "id": "k-noun-ابتداء",
   "type": "noun",
   "english": "beginning",
   "arabic": [

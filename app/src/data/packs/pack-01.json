@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-verb-4118",
+  "id": "k-verb-قال",
   "type": "verb",
   "english": "say",
   "arabic": [
@@ -27,7 +27,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4412",
+  "id": "k-noun-اخر",
   "type": "noun",
   "english": "end, conclusion",
   "arabic": [
@@ -48,7 +48,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2463",
+  "id": "k-noun-انسان",
   "type": "noun",
   "english": "human",
   "arabic": [
@@ -69,7 +69,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5574",
+  "id": "k-noun-دولة",
   "type": "noun",
   "english": "state",
   "arabic": [
@@ -90,7 +90,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3561",
+  "id": "k-noun-امر",
   "type": "noun",
   "english": "commander",
   "arabic": [
@@ -110,7 +110,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1239",
+  "id": "k-noun-رئيس",
   "type": "noun",
   "english": "chief, boss, leader",
   "arabic": [
@@ -131,7 +131,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2537",
+  "id": "k-noun-حق",
   "type": "noun",
   "english": "right",
   "arabic": [
@@ -152,7 +152,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-303",
+  "id": "k-adj-عربي",
   "type": "adj",
   "english": "arab",
   "arabic": [
@@ -173,7 +173,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-812",
+  "id": "k-adj-كثير",
   "type": "adj",
   "english": "many, much, numerous",
   "arabic": [
@@ -194,7 +194,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2319",
+  "id": "k-noun-شيء",
   "type": "noun",
   "english": "thing",
   "arabic": [
@@ -214,7 +214,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6330",
+  "id": "k-noun-عدد",
   "type": "noun",
   "english": "number",
   "arabic": [
@@ -235,7 +235,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-5055",
+  "id": "k-verb-قام",
   "type": "verb",
   "english": "get up",
   "arabic": [
@@ -262,7 +262,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3414",
+  "id": "k-noun-شكل",
   "type": "noun",
   "english": "pattern",
   "arabic": [
@@ -283,7 +283,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3123",
+  "id": "k-noun-علم",
   "type": "noun",
   "english": "science",
   "arabic": [
@@ -304,7 +304,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4702",
+  "id": "k-noun-بلد",
   "type": "noun",
   "english": "country, land",
   "arabic": [
@@ -325,7 +325,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4473",
+  "id": "k-noun-اسم",
   "type": "noun",
   "english": "name",
   "arabic": [
@@ -346,7 +346,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4951",
+  "id": "k-noun-سبب",
   "type": "noun",
   "english": "cause, grounds",
   "arabic": [
@@ -367,7 +367,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-61",
+  "id": "k-noun-عالم",
   "type": "noun",
   "english": "world",
   "arabic": [
@@ -388,7 +388,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-6451",
+  "id": "k-noun-قول",
   "type": "noun",
   "english": "saying, statement, assertion",
   "arabic": [
@@ -409,7 +409,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-1128",
+  "id": "k-verb-وجد",
   "type": "verb",
   "english": "find",
   "arabic": [
@@ -437,7 +437,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-6144",
+  "id": "k-verb-وضع",
   "type": "verb",
   "english": "put, lay",
   "arabic": [
@@ -465,7 +465,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5784",
+  "id": "k-noun-وقت",
   "type": "noun",
   "english": "time",
   "arabic": [
@@ -486,7 +486,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-1690",
+  "id": "k-noun-ارض",
   "type": "noun",
   "english": "earth, land",
   "arabic": [
@@ -507,7 +507,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-4510",
+  "id": "k-noun-قوة",
   "type": "noun",
   "english": "power, strength, might",
   "arabic": [
@@ -528,7 +528,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5174",
+  "id": "k-noun-صورة",
   "type": "noun",
   "english": "image, picture, photograph",
   "arabic": [
@@ -549,7 +549,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-2081",
+  "id": "k-noun-حديث",
   "type": "noun",
   "english": "speech",
   "arabic": [
@@ -569,7 +569,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1515",
+  "id": "k-noun-دور",
   "type": "noun",
   "english": "role",
   "arabic": [
@@ -590,7 +590,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1123",
+  "id": "k-noun-حدث",
   "type": "noun",
   "english": "event",
   "arabic": [
@@ -610,7 +610,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-538",
+  "id": "k-noun-موضوع",
   "type": "noun",
   "english": "topic, subject, theme",
   "arabic": [
@@ -631,7 +631,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-417",
+  "id": "k-noun-مجلس",
   "type": "noun",
   "english": "council, board",
   "arabic": [
@@ -652,7 +652,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-3251",
+  "id": "k-adj-سياسي",
   "type": "adj",
   "english": "political",
   "arabic": [
@@ -673,7 +673,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4039",
+  "id": "k-noun-دين",
   "type": "noun",
   "english": "religion, faith",
   "arabic": [
@@ -694,7 +694,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-3624",
+  "id": "k-noun-عملية",
   "type": "noun",
   "english": "process, procedure",
   "arabic": [
@@ -715,7 +715,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4899",
+  "id": "k-noun-منطقة",
   "type": "noun",
   "english": "zone",
   "arabic": [
@@ -736,7 +736,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-5584",
+  "id": "k-noun-حكومة",
   "type": "noun",
   "english": "government",
   "arabic": [
@@ -757,7 +757,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2673",
+  "id": "k-noun-عدم",
   "type": "noun",
   "english": "nonentity",
   "arabic": [
@@ -777,7 +777,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2676",
+  "id": "k-noun-شركة",
   "type": "noun",
   "english": "company",
   "arabic": [
@@ -798,7 +798,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-388",
+  "id": "k-noun-حياة",
   "type": "noun",
   "english": "life",
   "arabic": [
@@ -818,7 +818,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-6066",
+  "id": "k-noun-طريق",
   "type": "noun",
   "english": "way, road, path",
   "arabic": [
@@ -839,7 +839,7 @@
   "level": "A1"
  },
  {
-  "id": "k-adj-1104",
+  "id": "k-adj-اسلامي",
   "type": "adj",
   "english": "islamic",
   "arabic": [
@@ -859,7 +859,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-4",
+  "id": "k-verb-اراد",
   "type": "verb",
   "english": "want, will",
   "arabic": [
@@ -887,7 +887,7 @@
   "level": "A2"
  },
  {
-  "id": "k-verb-797",
+  "id": "k-verb-بدا",
   "type": "verb",
   "english": "begin",
   "arabic": [
@@ -915,7 +915,7 @@
   "level": "A1"
  },
  {
-  "id": "k-verb-592",
+  "id": "k-verb-اصبح",
   "type": "verb",
   "english": "become",
   "arabic": [
@@ -943,7 +943,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-1595",
+  "id": "k-noun-ذكر",
   "type": "noun",
   "english": "citation",
   "arabic": [
@@ -964,7 +964,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-3055",
+  "id": "k-noun-تاريخ",
   "type": "noun",
   "english": "date",
   "arabic": [
@@ -985,7 +985,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5053",
+  "id": "k-noun-نظام",
   "type": "noun",
   "english": "system",
   "arabic": [
@@ -1006,7 +1006,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1366",
+  "id": "k-noun-موقع",
   "type": "noun",
   "english": "position, emplacement, place",
   "arabic": [
@@ -1027,7 +1027,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-981",
+  "id": "k-noun-نظر",
   "type": "noun",
   "english": "look",
   "arabic": [
@@ -1048,7 +1048,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-423",
+  "id": "k-noun-برنامج",
   "type": "noun",
   "english": "program",
   "arabic": [
@@ -1069,7 +1069,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4374",
+  "id": "k-noun-اهل",
   "type": "noun",
   "english": "family, household, people",
   "arabic": [

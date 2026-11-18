@@ -1,6 +1,26 @@
 [
  {
-  "id": "k-noun-3809",
+  "id": "k-noun-خلل",
+  "type": "noun",
+  "english": "flaw",
+  "arabic": [
+   "خلل"
+  ],
+  "translit": [
+   "khalal"
+  ],
+  "vocalized": "خَلَل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1551,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-نقاد",
   "type": "noun",
   "english": "critic",
   "arabic": [
@@ -16,11 +36,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1551,
+  "frequencyRank": 1552,
   "level": "B2"
  },
  {
-  "id": "k-verb-2962",
+  "id": "k-verb-تفقد",
   "type": "verb",
   "english": "inspect",
   "arabic": [
@@ -44,11 +64,11 @@
    "we": "نحن نتفقد",
    "they": "هم يتفقدون"
   },
-  "frequencyRank": 1552,
+  "frequencyRank": 1553,
   "level": "B2"
  },
  {
-  "id": "k-adj-4850",
+  "id": "k-adj-منفصل",
   "type": "adj",
   "english": "separate",
   "arabic": [
@@ -65,11 +85,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1553,
+  "frequencyRank": 1554,
   "level": "B2"
  },
  {
-  "id": "k-adj-6013",
+  "id": "k-adj-هادئ",
   "type": "adj",
   "english": "calm, quiet, tranquil",
   "arabic": [
@@ -85,11 +105,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1554,
+  "frequencyRank": 1555,
   "level": "B2"
  },
  {
-  "id": "k-verb-1416",
+  "id": "k-verb-اغلق",
   "type": "verb",
   "english": "close, shut",
   "arabic": [
@@ -112,11 +132,11 @@
    "we": "نحن نغلق",
    "they": "هم يغلقون"
   },
-  "frequencyRank": 1555,
+  "frequencyRank": 1556,
   "level": "B2"
  },
  {
-  "id": "k-noun-6422",
+  "id": "k-noun-مستهلك",
   "type": "noun",
   "english": "consumer",
   "arabic": [
@@ -133,11 +153,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1556,
+  "frequencyRank": 1557,
   "level": "B2"
  },
  {
-  "id": "k-adj-6293",
+  "id": "k-adj-عبري",
   "type": "adj",
   "english": "hebrew, hebraic",
   "arabic": [
@@ -154,11 +174,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1557,
+  "frequencyRank": 1558,
   "level": "B2"
  },
  {
-  "id": "k-adj-2502",
+  "id": "k-adj-فاسد",
   "type": "adj",
   "english": "corrupt",
   "arabic": [
@@ -175,11 +195,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1558,
+  "frequencyRank": 1559,
   "level": "B2"
  },
  {
-  "id": "k-verb-2469",
+  "id": "k-verb-قفز",
   "type": "verb",
   "english": "jump, leap",
   "arabic": [
@@ -203,11 +223,11 @@
    "we": "نحن نقفز",
    "they": "هم يقفزون"
   },
-  "frequencyRank": 1559,
+  "frequencyRank": 1560,
   "level": "B2"
  },
  {
-  "id": "k-noun-631",
+  "id": "k-noun-عنق",
   "type": "noun",
   "english": "neck",
   "arabic": [
@@ -224,11 +244,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1560,
+  "frequencyRank": 1561,
   "level": "B2"
  },
  {
-  "id": "k-noun-5810",
+  "id": "k-noun-نتاج",
   "type": "noun",
   "english": "yield",
   "arabic": [
@@ -245,11 +265,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1561,
+  "frequencyRank": 1562,
   "level": "B2"
  },
  {
-  "id": "k-verb-2093",
+  "id": "k-verb-تفرق",
   "type": "verb",
   "english": "disperse, scatter",
   "arabic": [
@@ -273,11 +293,11 @@
    "we": "نحن نتفرق",
    "they": "هم يتفرقون"
   },
-  "frequencyRank": 1562,
+  "frequencyRank": 1563,
   "level": "B2"
  },
  {
-  "id": "k-noun-4512",
+  "id": "k-noun-ارشيف",
   "type": "noun",
   "english": "archive",
   "arabic": [
@@ -293,11 +313,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1563,
+  "frequencyRank": 1564,
   "level": "B2"
  },
  {
-  "id": "k-noun-5141",
+  "id": "k-noun-سارق",
   "type": "noun",
   "english": "thief, stealer",
   "arabic": [
@@ -314,11 +334,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1564,
+  "frequencyRank": 1565,
   "level": "B2"
  },
  {
-  "id": "k-noun-4966",
+  "id": "k-noun-شاحنة",
   "type": "noun",
   "english": "truck",
   "arabic": [
@@ -335,11 +355,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1565,
+  "frequencyRank": 1566,
   "level": "B2"
  },
  {
-  "id": "k-verb-5836",
+  "id": "k-verb-نكر",
   "type": "verb",
   "english": "deny",
   "arabic": [
@@ -362,11 +382,11 @@
    "we": "نحن ننكر",
    "they": "هم ينكرون"
   },
-  "frequencyRank": 1566,
+  "frequencyRank": 1567,
   "level": "B2"
  },
  {
-  "id": "k-noun-5273",
+  "id": "k-noun-مسافر",
   "type": "noun",
   "english": "traveller",
   "arabic": [
@@ -383,11 +403,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1567,
+  "frequencyRank": 1568,
   "level": "B2"
  },
  {
-  "id": "k-noun-4037",
+  "id": "k-noun-اقتراع",
   "type": "noun",
   "english": "vote, voting",
   "arabic": [
@@ -404,11 +424,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1568,
+  "frequencyRank": 1569,
   "level": "B2"
  },
  {
-  "id": "k-adj-5219",
+  "id": "k-adj-اكيد",
   "type": "adj",
   "english": "certain, sure",
   "arabic": [
@@ -424,11 +444,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1569,
+  "frequencyRank": 1570,
   "level": "B2"
  },
  {
-  "id": "k-noun-3851",
+  "id": "k-noun-اختراع",
   "type": "noun",
   "english": "invention",
   "arabic": [
@@ -445,11 +465,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1570,
+  "frequencyRank": 1571,
   "level": "B2"
  },
  {
-  "id": "k-noun-6543",
+  "id": "k-noun-سلعة",
   "type": "noun",
   "english": "commodity, good",
   "arabic": [
@@ -466,11 +486,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1571,
+  "frequencyRank": 1572,
   "level": "B2"
  },
  {
-  "id": "k-noun-2800",
+  "id": "k-noun-انحراف",
   "type": "noun",
   "english": "deviation",
   "arabic": [
@@ -487,11 +507,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1572,
+  "frequencyRank": 1573,
   "level": "B2"
  },
  {
-  "id": "k-verb-580",
+  "id": "k-verb-فاق",
   "type": "verb",
   "english": "exceed, surpass",
   "arabic": [
@@ -515,11 +535,11 @@
    "we": "نحن نفوق",
    "they": "هم يفوقون"
   },
-  "frequencyRank": 1573,
+  "frequencyRank": 1574,
   "level": "B2"
  },
  {
-  "id": "k-noun-5028",
+  "id": "k-noun-تكلفة",
   "type": "noun",
   "english": "cost",
   "arabic": [
@@ -535,11 +555,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 1574,
+  "frequencyRank": 1575,
   "level": "B2"
  },
  {
-  "id": "k-adj-923",
+  "id": "k-adj-عثماني",
   "type": "adj",
   "english": "ottoman",
   "arabic": [
@@ -555,11 +575,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1575,
+  "frequencyRank": 1576,
   "level": "B2"
  },
  {
-  "id": "k-noun-5224",
+  "id": "k-noun-ريق",
   "type": "noun",
   "english": "saliva, spittle",
   "arabic": [
@@ -575,11 +595,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1576,
+  "frequencyRank": 1577,
   "level": "B2"
  },
  {
-  "id": "k-noun-3985",
+  "id": "k-noun-بلاء",
   "type": "noun",
   "english": "affliction",
   "arabic": [
@@ -595,11 +615,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1577,
+  "frequencyRank": 1578,
   "level": "B2"
  },
  {
-  "id": "k-noun-1003",
+  "id": "k-noun-تكفير",
   "type": "noun",
   "english": "penance",
   "arabic": [
@@ -615,11 +635,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1578,
+  "frequencyRank": 1579,
   "level": "B2"
  },
  {
-  "id": "k-adj-5006",
+  "id": "k-adj-راسي",
   "type": "adj",
   "english": "vertical",
   "arabic": [
@@ -635,11 +655,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 1579,
+  "frequencyRank": 1580,
   "level": "B2"
  },
  {
-  "id": "k-noun-1763",
+  "id": "k-noun-نبات",
   "type": "noun",
   "english": "vegetation, plant",
   "arabic": [
@@ -656,11 +676,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1580,
+  "frequencyRank": 1581,
   "level": "B2"
  },
  {
-  "id": "k-adj-1939",
+  "id": "k-adj-جائع",
   "type": "adj",
   "english": "hungry",
   "arabic": [
@@ -676,11 +696,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1581,
+  "frequencyRank": 1582,
   "level": "B2"
  },
  {
-  "id": "k-verb-5508",
+  "id": "k-verb-خاطر",
   "type": "verb",
   "english": "risk, stake",
   "arabic": [
@@ -704,11 +724,11 @@
    "we": "نحن نخاطر",
    "they": "هم يخاطرون"
   },
-  "frequencyRank": 1582,
+  "frequencyRank": 1583,
   "level": "B2"
  },
  {
-  "id": "k-noun-569",
+  "id": "k-noun-كثافة",
   "type": "noun",
   "english": "density",
   "arabic": [
@@ -725,11 +745,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1583,
+  "frequencyRank": 1584,
   "level": "B2"
  },
  {
-  "id": "k-verb-2975",
+  "id": "k-verb-اثار",
   "type": "verb",
   "english": "arouse, stimulate",
   "arabic": [
@@ -752,11 +772,11 @@
    "we": "نحن نثير",
    "they": "هم يثيرون"
   },
-  "frequencyRank": 1584,
+  "frequencyRank": 1585,
   "level": "B2"
  },
  {
-  "id": "k-noun-2984",
+  "id": "k-noun-قسوة",
   "type": "noun",
   "english": "harshness, cruelty, severity",
   "arabic": [
@@ -773,11 +793,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1585,
+  "frequencyRank": 1586,
   "level": "B2"
  },
  {
-  "id": "k-noun-857",
+  "id": "k-noun-فرجة",
   "type": "noun",
   "english": "crack",
   "arabic": [
@@ -793,11 +813,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1586,
+  "frequencyRank": 1587,
   "level": "B2"
  },
  {
-  "id": "k-noun-2322",
+  "id": "k-noun-خريف",
   "type": "noun",
   "english": "autumn, fall",
   "arabic": [
@@ -814,11 +834,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1587,
+  "frequencyRank": 1588,
   "level": "A2"
  },
  {
-  "id": "k-noun-2650",
+  "id": "k-noun-وحش",
   "type": "noun",
   "english": "beast",
   "arabic": [
@@ -835,11 +855,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1588,
+  "frequencyRank": 1589,
   "level": "B2"
  },
  {
-  "id": "k-noun-2886",
+  "id": "k-noun-التهاب",
   "type": "noun",
   "english": "inflammation",
   "arabic": [
@@ -856,11 +876,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1589,
+  "frequencyRank": 1590,
   "level": "B2"
  },
  {
-  "id": "k-noun-4930",
+  "id": "k-noun-ائتلاف",
   "type": "noun",
   "english": "alliance, coalition",
   "arabic": [
@@ -877,11 +897,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1590,
+  "frequencyRank": 1591,
   "level": "B2"
  },
  {
-  "id": "k-noun-2372",
+  "id": "k-noun-جحيم",
   "type": "noun",
   "english": "inferno",
   "arabic": [
@@ -898,11 +918,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1591,
+  "frequencyRank": 1592,
   "level": "B2"
  },
  {
-  "id": "k-adj-5960",
+  "id": "k-adj-عاصف",
   "type": "adj",
   "english": "stormy",
   "arabic": [
@@ -918,11 +938,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1592,
+  "frequencyRank": 1593,
   "level": "B2"
  },
  {
-  "id": "k-noun-4859",
+  "id": "k-noun-برتوكول",
   "type": "noun",
   "english": "protocol",
   "arabic": [
@@ -938,11 +958,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1593,
+  "frequencyRank": 1594,
   "level": "B2"
  },
  {
-  "id": "k-verb-6022",
+  "id": "k-verb-قهر",
   "type": "verb",
   "english": "defeat",
   "arabic": [
@@ -966,11 +986,11 @@
    "we": "نحن نقهر",
    "they": "هم يقهرون"
   },
-  "frequencyRank": 1594,
+  "frequencyRank": 1595,
   "level": "B2"
  },
  {
-  "id": "k-noun-5421",
+  "id": "k-noun-تجهيز",
   "type": "noun",
   "english": "preparation",
   "arabic": [
@@ -986,11 +1006,11 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 1595,
+  "frequencyRank": 1596,
   "level": "B2"
  },
  {
-  "id": "k-verb-3365",
+  "id": "k-verb-عاقب",
   "type": "verb",
   "english": "punish",
   "arabic": [
@@ -1014,11 +1034,11 @@
    "we": "نحن نعاقب",
    "they": "هم يعاقبون"
   },
-  "frequencyRank": 1596,
+  "frequencyRank": 1597,
   "level": "B2"
  },
  {
-  "id": "k-noun-1589",
+  "id": "k-noun-حبس",
   "type": "noun",
   "english": "confinement",
   "arabic": [
@@ -1034,11 +1054,11 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1597,
+  "frequencyRank": 1598,
   "level": "B2"
  },
  {
-  "id": "k-noun-1655",
+  "id": "k-noun-حبة",
   "type": "noun",
   "english": "grain",
   "arabic": [
@@ -1054,11 +1074,11 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1598,
+  "frequencyRank": 1599,
   "level": "B2"
  },
  {
-  "id": "k-noun-4260",
+  "id": "k-noun-مندوب",
   "type": "noun",
   "english": "representative",
   "arabic": [
@@ -1068,26 +1088,6 @@
    "manduub"
   ],
   "vocalized": "مَنْدُوب",
-  "verified": [
-   "kelly",
-   "wiktionary-ar",
-   "arabic-wordnet",
-   "buckwalter"
-  ],
-  "frequencyRank": 1599,
-  "level": "B2"
- },
- {
-  "id": "k-noun-5372",
-  "type": "noun",
-  "english": "protection, care",
-  "arabic": [
-   "وقاية"
-  ],
-  "translit": [
-   "wiqaaya"
-  ],
-  "vocalized": "وِقَايَة",
   "verified": [
    "kelly",
    "wiktionary-ar",

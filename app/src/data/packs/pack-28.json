@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-2778",
+  "id": "k-noun-استئناف",
   "type": "noun",
   "english": "appeal",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2652",
+  "id": "k-noun-حوض",
   "type": "noun",
   "english": "basin",
   "arabic": [
@@ -41,7 +41,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-468",
+  "id": "k-noun-محقق",
   "type": "noun",
   "english": "detective",
   "arabic": [
@@ -62,7 +62,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1250",
+  "id": "k-noun-ربع",
   "type": "noun",
   "english": "fourth, quarter",
   "arabic": [
@@ -83,7 +83,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2793",
+  "id": "k-noun-تاويل",
   "type": "noun",
   "english": "interpretation",
   "arabic": [
@@ -103,7 +103,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6099",
+  "id": "k-noun-قصف",
   "type": "noun",
   "english": "bombardment, shelling, bombing",
   "arabic": [
@@ -124,7 +124,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4793",
+  "id": "k-noun-بحار",
   "type": "noun",
   "english": "sailor",
   "arabic": [
@@ -144,7 +144,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-970",
+  "id": "k-adj-مخلص",
   "type": "adj",
   "english": "sincere",
   "arabic": [
@@ -164,7 +164,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2189",
+  "id": "k-noun-تاييد",
   "type": "noun",
   "english": "support",
   "arabic": [
@@ -185,7 +185,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5912",
+  "id": "k-noun-شريك",
   "type": "noun",
   "english": "partner, fellow",
   "arabic": [
@@ -206,7 +206,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-313",
+  "id": "k-verb-اظهر",
   "type": "verb",
   "english": "show",
   "arabic": [
@@ -234,7 +234,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-2641",
+  "id": "k-adj-بريء",
   "type": "adj",
   "english": "guiltless, innocent",
   "arabic": [
@@ -254,7 +254,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4387",
+  "id": "k-noun-اغنية",
   "type": "noun",
   "english": "song, melody, tune",
   "arabic": [
@@ -275,7 +275,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2191",
+  "id": "k-noun-فوضي",
   "type": "noun",
   "english": "anarchy, chaos",
   "arabic": [
@@ -296,7 +296,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-2238",
+  "id": "k-verb-شوي",
   "type": "verb",
   "english": "grill",
   "arabic": [
@@ -324,7 +324,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1596",
+  "id": "k-noun-استقالة",
   "type": "noun",
   "english": "resignation",
   "arabic": [
@@ -344,7 +344,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1391",
+  "id": "k-noun-تشخيص",
   "type": "noun",
   "english": "diagnosis",
   "arabic": [
@@ -364,7 +364,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2400",
+  "id": "k-noun-ناخب",
   "type": "noun",
   "english": "elector, voter",
   "arabic": [
@@ -385,7 +385,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5205",
+  "id": "k-noun-خاصية",
   "type": "noun",
   "english": "property",
   "arabic": [
@@ -405,7 +405,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-3668",
+  "id": "k-verb-انتشر",
   "type": "verb",
   "english": "disperse",
   "arabic": [
@@ -432,7 +432,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-6658",
+  "id": "k-adj-اصفر",
   "type": "adj",
   "english": "yellow",
   "arabic": [
@@ -452,7 +452,7 @@
   "level": "A1"
  },
  {
-  "id": "k-noun-5652",
+  "id": "k-noun-صداقة",
   "type": "noun",
   "english": "friendship",
   "arabic": [
@@ -473,7 +473,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1831",
+  "id": "k-noun-صوف",
   "type": "noun",
   "english": "wool",
   "arabic": [
@@ -493,7 +493,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-3593",
+  "id": "k-verb-تفكر",
   "type": "verb",
   "english": "ponder, reflect",
   "arabic": [
@@ -521,7 +521,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4631",
+  "id": "k-noun-عظم",
   "type": "noun",
   "english": "bone",
   "arabic": [
@@ -542,7 +542,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6364",
+  "id": "k-noun-بابا",
   "type": "noun",
   "english": "pope",
   "arabic": [
@@ -562,7 +562,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3151",
+  "id": "k-noun-مملكة",
   "type": "noun",
   "english": "kingdom",
   "arabic": [
@@ -583,7 +583,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-4511",
+  "id": "k-verb-استقر",
   "type": "verb",
   "english": "calm",
   "arabic": [
@@ -611,7 +611,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1317",
+  "id": "k-noun-ماساة",
   "type": "noun",
   "english": "tragedy, calamity",
   "arabic": [
@@ -631,7 +631,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1668",
+  "id": "k-verb-وضح",
   "type": "verb",
   "english": "clarify, elucidate",
   "arabic": [
@@ -658,7 +658,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-6128",
+  "id": "k-noun-شتاء",
   "type": "noun",
   "english": "winter",
   "arabic": [
@@ -679,7 +679,7 @@
   "level": "A2"
  },
  {
-  "id": "k-noun-4092",
+  "id": "k-noun-بذلة",
   "type": "noun",
   "english": "suit",
   "arabic": [
@@ -700,7 +700,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-263",
+  "id": "k-verb-نحل",
   "type": "verb",
   "english": "lose weight",
   "arabic": [
@@ -727,7 +727,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4778",
+  "id": "k-noun-تهذيب",
   "type": "noun",
   "english": "discipline, cultivation",
   "arabic": [
@@ -748,7 +748,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1029",
+  "id": "k-noun-عشق",
   "type": "noun",
   "english": "passion",
   "arabic": [
@@ -769,7 +769,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3218",
+  "id": "k-noun-معجم",
   "type": "noun",
   "english": "dictionary",
   "arabic": [
@@ -789,7 +789,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1",
+  "id": "k-noun-كبد",
   "type": "noun",
   "english": "liver",
   "arabic": [
@@ -810,7 +810,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-56",
+  "id": "k-noun-شوط",
   "type": "noun",
   "english": "stage, phase",
   "arabic": [
@@ -830,7 +830,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-3569",
+  "id": "k-noun-سمعة",
   "type": "noun",
   "english": "reputation",
   "arabic": [
@@ -851,7 +851,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-3739",
+  "id": "k-verb-اقترب",
   "type": "verb",
   "english": "approach, near",
   "arabic": [
@@ -879,7 +879,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1817",
+  "id": "k-verb-خان",
   "type": "verb",
   "english": "cheat, deceive",
   "arabic": [
@@ -907,7 +907,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-2831",
+  "id": "k-adj-معقد",
   "type": "adj",
   "english": "complicated",
   "arabic": [
@@ -927,7 +927,7 @@
   "level": "B2"
  },
  {
-  "id": "k-verb-1743",
+  "id": "k-verb-خضع",
   "type": "verb",
   "english": "submit",
   "arabic": [
@@ -954,7 +954,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-2710",
+  "id": "k-noun-تقليل",
   "type": "noun",
   "english": "reduction",
   "arabic": [
@@ -974,7 +974,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4758",
+  "id": "k-noun-خيانة",
   "type": "noun",
   "english": "treachery, perfidy",
   "arabic": [
@@ -995,7 +995,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-4432",
+  "id": "k-adj-نافع",
   "type": "adj",
   "english": "useful",
   "arabic": [
@@ -1015,7 +1015,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-5387",
+  "id": "k-noun-عنصرية",
   "type": "noun",
   "english": "racism",
   "arabic": [
@@ -1036,7 +1036,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-4825",
+  "id": "k-noun-عجب",
   "type": "noun",
   "english": "wonder, marvel",
   "arabic": [
@@ -1057,7 +1057,7 @@
   "level": "B2"
  },
  {
-  "id": "k-noun-1575",
+  "id": "k-noun-قبرة",
   "type": "noun",
   "english": "lark",
   "arabic": [
@@ -1077,7 +1077,7 @@
   "level": "B2"
  },
  {
-  "id": "k-adj-3172",
+  "id": "k-adj-سماوي",
   "type": "adj",
   "english": "celestial",
   "arabic": [

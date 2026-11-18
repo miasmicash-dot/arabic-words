@@ -1,6 +1,6 @@
 [
  {
-  "id": "k-noun-3675",
+  "id": "k-noun-انفجار",
   "type": "noun",
   "english": "explosion",
   "arabic": [
@@ -21,7 +21,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5321",
+  "id": "k-noun-مستشار",
   "type": "noun",
   "english": "adviser, consultant",
   "arabic": [
@@ -41,7 +41,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4886",
+  "id": "k-noun-خالق",
   "type": "noun",
   "english": "creator, maker",
   "arabic": [
@@ -62,7 +62,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-19",
+  "id": "k-noun-طبعة",
   "type": "noun",
   "english": "edition",
   "arabic": [
@@ -83,7 +83,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6550",
+  "id": "k-noun-اثبات",
   "type": "noun",
   "english": "proof",
   "arabic": [
@@ -103,7 +103,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-4408",
+  "id": "k-verb-اصدر",
   "type": "verb",
   "english": "issue",
   "arabic": [
@@ -131,7 +131,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3586",
+  "id": "k-noun-حرفة",
   "type": "noun",
   "english": "craft",
   "arabic": [
@@ -151,7 +151,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5",
+  "id": "k-noun-دمار",
   "type": "noun",
   "english": "ruin, destruction, demolition",
   "arabic": [
@@ -171,7 +171,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2605",
+  "id": "k-noun-جهل",
   "type": "noun",
   "english": "ignorance",
   "arabic": [
@@ -191,7 +191,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4351",
+  "id": "k-noun-ملعب",
   "type": "noun",
   "english": "stadium, playing field",
   "arabic": [
@@ -212,7 +212,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-5154",
+  "id": "k-adj-نقدي",
   "type": "adj",
   "english": "monetary",
   "arabic": [
@@ -232,7 +232,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-882",
+  "id": "k-noun-وقود",
   "type": "noun",
   "english": "fuel",
   "arabic": [
@@ -253,7 +253,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-1044",
+  "id": "k-verb-اعلم",
   "type": "verb",
   "english": "inform",
   "arabic": [
@@ -280,7 +280,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1499",
+  "id": "k-noun-نفوذ",
   "type": "noun",
   "english": "influence",
   "arabic": [
@@ -301,7 +301,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1932",
+  "id": "k-noun-مشارك",
   "type": "noun",
   "english": "participant",
   "arabic": [
@@ -322,7 +322,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2906",
+  "id": "k-noun-ضمير",
   "type": "noun",
   "english": "conscience",
   "arabic": [
@@ -342,7 +342,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5209",
+  "id": "k-noun-ازمة",
   "type": "noun",
   "english": "crisis",
   "arabic": [
@@ -363,7 +363,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-1427",
+  "id": "k-verb-افاد",
   "type": "verb",
   "english": "benefit",
   "arabic": [
@@ -390,7 +390,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4361",
+  "id": "k-noun-اضطراب",
   "type": "noun",
   "english": "turmoil, disturbance, upheaval",
   "arabic": [
@@ -411,7 +411,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4860",
+  "id": "k-noun-تعويض",
   "type": "noun",
   "english": "compensation",
   "arabic": [
@@ -431,7 +431,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5433",
+  "id": "k-noun-عائد",
   "type": "noun",
   "english": "return, gain, yield",
   "arabic": [
@@ -452,7 +452,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2860",
+  "id": "k-noun-تفتيش",
   "type": "noun",
   "english": "search",
   "arabic": [
@@ -472,7 +472,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1043",
+  "id": "k-noun-ارتباط",
   "type": "noun",
   "english": "link, connection",
   "arabic": [
@@ -492,7 +492,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5760",
+  "id": "k-noun-قاع",
   "type": "noun",
   "english": "bottom",
   "arabic": [
@@ -512,7 +512,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2624",
+  "id": "k-noun-يقين",
   "type": "noun",
   "english": "certainty",
   "arabic": [
@@ -533,7 +533,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6220",
+  "id": "k-noun-مطلع",
   "type": "noun",
   "english": "beginning, outset",
   "arabic": [
@@ -553,7 +553,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3288",
+  "id": "k-noun-كعب",
   "type": "noun",
   "english": "die",
   "arabic": [
@@ -573,7 +573,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4236",
+  "id": "k-noun-مجاهد",
   "type": "noun",
   "english": "mujahid",
   "arabic": [
@@ -593,7 +593,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4874",
+  "id": "k-noun-صعود",
   "type": "noun",
   "english": "ascension",
   "arabic": [
@@ -614,7 +614,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-3016",
+  "id": "k-adj-جنائي",
   "type": "adj",
   "english": "criminal",
   "arabic": [
@@ -634,7 +634,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5342",
+  "id": "k-noun-كفر",
   "type": "noun",
   "english": "village",
   "arabic": [
@@ -654,7 +654,7 @@
   "level": "B1"
  },
  {
-  "id": "k-verb-141",
+  "id": "k-verb-ساهم",
   "type": "verb",
   "english": "contribute",
   "arabic": [
@@ -682,7 +682,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-274",
+  "id": "k-noun-صحافي",
   "type": "noun",
   "english": "journalist",
   "arabic": [
@@ -703,7 +703,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-3305",
+  "id": "k-adj-متصل",
   "type": "adj",
   "english": "continuous, uninterrupted",
   "arabic": [
@@ -723,7 +723,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4894",
+  "id": "k-noun-استطلاع",
   "type": "noun",
   "english": "reconnaissance",
   "arabic": [
@@ -744,7 +744,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2358",
+  "id": "k-noun-فضاء",
   "type": "noun",
   "english": "outer space, cosmos",
   "arabic": [
@@ -765,7 +765,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-5819",
+  "id": "k-adj-اشتراكي",
   "type": "adj",
   "english": "socialist",
   "arabic": [
@@ -785,7 +785,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-2161",
+  "id": "k-adj-زائد",
   "type": "adj",
   "english": "excessive",
   "arabic": [
@@ -805,7 +805,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1445",
+  "id": "k-noun-مقترح",
   "type": "noun",
   "english": "proposition, suggestion, proposal",
   "arabic": [
@@ -826,7 +826,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3246",
+  "id": "k-noun-عرق",
   "type": "noun",
   "english": "sweat, perspiration",
   "arabic": [
@@ -847,7 +847,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-2952",
+  "id": "k-noun-نصيب",
   "type": "noun",
   "english": "share, portion",
   "arabic": [
@@ -868,7 +868,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4738",
+  "id": "k-noun-مسجل",
   "type": "noun",
   "english": "registrar",
   "arabic": [
@@ -888,7 +888,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1801",
+  "id": "k-noun-نسمة",
   "type": "noun",
   "english": "breeze",
   "arabic": [
@@ -908,7 +908,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-6118",
+  "id": "k-noun-خطيب",
   "type": "noun",
   "english": "speaker",
   "arabic": [
@@ -928,7 +928,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4926",
+  "id": "k-noun-مناخ",
   "type": "noun",
   "english": "climate",
   "arabic": [
@@ -948,7 +948,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-1496",
+  "id": "k-noun-تسمية",
   "type": "noun",
   "english": "denomination",
   "arabic": [
@@ -968,7 +968,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-4683",
+  "id": "k-noun-اولوية",
   "type": "noun",
   "english": "priority, precedence",
   "arabic": [
@@ -989,7 +989,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-5343",
+  "id": "k-noun-توبة",
   "type": "noun",
   "english": "repentance",
   "arabic": [
@@ -1010,7 +1010,7 @@
   "level": "B1"
  },
  {
-  "id": "k-noun-3439",
+  "id": "k-noun-طبقة",
   "type": "noun",
   "english": "layer, stratum, level",
   "arabic": [
@@ -1031,7 +1031,7 @@
   "level": "B1"
  },
  {
-  "id": "k-adj-2979",
+  "id": "k-adj-جزئي",
   "type": "adj",
   "english": "partial",
   "arabic": [
