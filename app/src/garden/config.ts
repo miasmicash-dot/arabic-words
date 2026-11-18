@@ -26,6 +26,6 @@ export const GARDEN = {
   },
 
   /** Progress fraction of the goal at which each stage 2..10 starts. */
-  stageStarts: [0.03, 0.1, 0.2, 0.3, 0.42, 0.55, 0.68, 0.8, 0.92],
+  stageStarts: [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.55, 0.75, 0.95],
   goalOptions: [50, 100, 250, 500],
 } as const

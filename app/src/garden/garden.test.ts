@@ -60,8 +60,8 @@ describe('activity', () => {
 describe('state', () => {
   it('stages follow progress toward the goal', () => {
     expect(stageFor(0, 100)).toBe(1)
-    expect(stageFor(50, 100)).toBe(6)
-    expect(stageFor(100, 100)).toBe(10)
+    expect(stageFor(50, 100)).toBe(8)
+    expect(stageFor(80, 100)).toBe(10)
     expect(stageFor(120, 100)).toBe(11)
   })
 

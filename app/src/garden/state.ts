@@ -50,7 +50,6 @@ export function newGarden(goalWords: number, today: string, learnedNow: number):
 /** Stage of the plant given words learned since planting and the goal. Reaching the goal gives stage 10; extra words give the forest (11). */
 export function stageFor(learnedSincePlanting: number, goal: number): GrowthStage {
   const f = Math.max(0, learnedSincePlanting) / Math.max(1, goal)
-  if (f >= 1.0) return learnedSincePlanting >= goal * 1.1 ? 11 : 10
   let stage = 1
   GARDEN.stageStarts.forEach((start, idx) => {
     if (f >= start) stage = idx + 2
