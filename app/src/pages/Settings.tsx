@@ -151,7 +151,9 @@ export default function Settings() {
         )}
       </div>
 
-      <Link to="/garden-preview" className="btn ghost w-full block text-center">✨ Garden playground (try every stage, weather and time)</Link>
+      {import.meta.env.DEV && (
+        <Link to="/garden-preview" className="btn ghost w-full block text-center">✨ Garden playground (try every stage, weather and time)</Link>
+      )}
 
       <button className="btn ghost w-full" onClick={resetAll}>Reset all progress</button>
     </div>
