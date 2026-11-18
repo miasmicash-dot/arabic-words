@@ -1,10 +1,10 @@
 kept 3255 verified words in 65 packs of 50 (target 2000)
-meaning confirmed by: English Wiktionary translations 2938, Arabic WordNet 2311, Buckwalter 3095
-dropped 350: also a function word or name
+meaning confirmed by: English Wiktionary translations 2938, Arabic WordNet 2310, Buckwalter 3095
+dropped 351: also a function word or name
   e.g. كان أول عند أحد يعني مرة قدم مسلم حالة حال جانب حمل رب إسلام مال خاصة نحو ضد آية بُعد حسب خارج عبر ربما نسبة
 dropped 230: already in the app
   e.g. عام عمل يوم سنة كبير واحد جديد رجل رأى بيت كتب يد امرأة طالب حرب شهر ظهر كتاب باب ساعة رأي عين ماء ذهب سوق
-dropped 1583: meaning not confirmed by 2 independent sources
+dropped 1582: meaning not confirmed by 2 independent sources
   e.g. تم رغم حب دع معلومة عرب نساء مزيد قيام إعلام بشر جامع تعلق منتدى محافظة تنفيذ قضاء قائمة تعرض سورة معين عهد فضل ثورة صحفي
 dropped 534: spelling not found in Buckwalter or Arabic WordNet
   e.g. يمكن يجب يجوز يلي تقل يختلف تضم تشمل تسمح يستحق تعتمد أرجو يستخدم تشهد أستطيع يطر يؤثر تعبر تحتوي تسعى تربو تعتقد تفعل أظن نعلم
@@ -13,7 +13,7 @@ dropped 1043: not in Wiktionary as this part of speech
 dropped 165: transliteration does not match the spelling
   e.g. ثاني نادي أخر تدخل تقن ممثل تالي أعرف تعد أرد أضف تحد مؤشر مرشح تعيش تغط إنجليزي تواجه نتم تحصل تملك تقف أضيف تضع تدل
 dropped 72: duplicate
-  e.g. قرآن دكتور عود جو ضوء حديد أسد آمَن حجرة منحة بساط ثمرة يسار فرس نجمة مزارع نام حريق وجّه طابق نظر تقدّم سِرّ غنم خفي
+  e.g. قرآن دكتور عود جو ضوء حديد أسد آمَن حجرة منحة بساط ثمرة فرس نجمة مزارع نام حريق وجّه طابق نظر تقدّم سِرّ غنم خفي فنى
 dropped 2: present tense does not match Buckwalter
   e.g. أرى ذَل
 dropped 1: no full present-tense table
@@ -21,27 +21,13 @@ dropped 1: no full present-tense table
 dropped 4: no romanisation
   e.g. انواع سود ديزل طفولي
 
-built-in words whose meaning no source confirms (20), please check:
-  gait = مشية  ->  sources say: walk, step, proceed, make walk, adjust, made to walk
-  working = عمل  ->  sources say: work, action, do, go, business, act
+built-in words whose meaning no source confirms (6), please check:
   people praying = مصلّين  ->  sources say: (not found)
-  road = شارع  ->  sources say: street, avenue, legislator, roadway, thoroughfare
-  fridge = ثلاجة  ->  sources say: refrigerator, fridge-freezer, icebox
-  rose = زهرة  ->  sources say: flower, blossom, bloom, radiate, shine, glow
-  bedroom = غرف النوم  ->  sources say: (not found)
+  bedroom = غرفة النوم  ->  sources say: (not found)
   living room = غرفة الجلوس / غرفة معيشة  ->  sources say: (not found)
-  childrens room = غرفة الأطفال  ->  sources say: (not found)
-  board = سبورة  ->  sources say: blackboard, chalkboard, slate, slates, blackboards, sport
-  corkboard = لوحة / anything hung on the wall  ->  sources say: board, painting, billboard, signboard, plate, appear
+  children's room = غرفة الأطفال  ->  sources say: (not found)
   fruit basket = سلة فواكه  ->  sources say: (not found)
-  rubbish basket = سلة قمامة  ->  sources say: (not found)
-  to = إلى  ->  sources say: automatic, who, down, into, toward, unto
-  left = خرج / klmnop  ->  sources say: exit, yield, come out, go out, sound, go
-  went = ذهب  ->  sources say: gold, go, gild, au, atomic number 79, head
-  dad = أب  ->  sources say: father, august, male parent, begetter, clergyman, reverend
-  sandal = نعل  ->  sources say: shoe, sole, horseshoe, slipper, footwear, footgear
-  hellfire = جهنم  ->  sources say: hell, inferno, jahannam, gehenna, perdition, infernal region
-  priminister = الوزير  ->  sources say: (not found)
+  rubbish basket = سلة قمامة / سلة المهملات  ->  sources say: (not found)
 
 every kept word (frequency order): english = arabic (translit) [confirmed by]
   say = قال (qaala) [wiktionary-en, arabic-wordnet]
@@ -1098,6 +1084,7 @@ every kept word (frequency order): english = arabic (translit) [confirmed by]
   adviser, consultant = مستشار (mustashaar) [wiktionary-en, buckwalter]
   creator, maker = خالق (khaaliq) [wiktionary-en, arabic-wordnet, buckwalter]
   edition = طبعة (tab'a) [wiktionary-en, arabic-wordnet, buckwalter]
+  left = يسار (yasaar) [wiktionary-en, buckwalter]
   proof = إثبات (ithbaat) [wiktionary-en, arabic-wordnet]
   issue = أصدر (asdara) [wiktionary-en, arabic-wordnet, buckwalter]
   craft = حرفة (hirfa) [wiktionary-en, buckwalter]
@@ -2031,7 +2018,6 @@ every kept word (frequency order): english = arabic (translit) [confirmed by]
   washing = غسيل (ghasiil) [wiktionary-en, buckwalter]
   outlet = منفذ (manfadh) [arabic-wordnet, buckwalter]
   reservation, booking = حجز (hajz) [wiktionary-en, arabic-wordnet, buckwalter]
-  work = اشتغل (ishtaghala) [wiktionary-en, arabic-wordnet, buckwalter]
   persecution = اضطهاد (idtihaad) [wiktionary-en, arabic-wordnet, buckwalter]
   livelihood = معاش (ma'aash) [wiktionary-en, arabic-wordnet]
   package, pack = عبوة ('ubuwwa) [wiktionary-en, buckwalter]

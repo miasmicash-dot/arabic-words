@@ -28,12 +28,14 @@
  },
  {
   "id": "a-gait",
-  "type": "adj",
-  "english": "gait",
+  "type": "noun",
+  "english": "walk, gait",
   "arabic": [
    "مشية"
   ],
-  "translit": []
+  "translit": [
+   "mishya"
+  ]
  },
  {
   "id": "p-whats-your-name",
@@ -386,11 +388,13 @@
  {
   "id": "v-working",
   "type": "verb",
-  "english": "working",
+  "english": "work",
   "arabic": [
    "عمل"
   ],
-  "translit": [],
+  "translit": [
+   "'amila"
+  ],
   "conjugations": {
    "I": "أنا أعمل",
    "he": "هو يعمل",
@@ -1150,7 +1154,7 @@
    "مصلّين"
   ],
   "translit": [
-   "mussalleen"
+   "musalliin"
   ]
  },
  {
@@ -1487,12 +1491,12 @@
  {
   "id": "n-road",
   "type": "noun",
-  "english": "road",
+  "english": "street",
   "arabic": [
    "شارع"
   ],
   "translit": [
-   "shaariun"
+   "shaari'"
   ]
  },
  {
@@ -1520,12 +1524,12 @@
  {
   "id": "n-fridge",
   "type": "noun",
-  "english": "fridge",
+  "english": "fridge, refrigerator",
   "arabic": [
    "ثلاجة"
   ],
   "translit": [
-   "thalajah"
+   "thallaaja"
   ]
  },
  {
@@ -1880,10 +1884,10 @@
   "type": "noun",
   "english": "rose",
   "arabic": [
-   "زهرة"
+   "وردة"
   ],
   "translit": [
-   "zahra"
+   "warda"
   ]
  },
  {
@@ -2138,10 +2142,10 @@
   "type": "noun",
   "english": "bedroom",
   "arabic": [
-   "غرف النوم"
+   "غرفة النوم"
   ],
   "translit": [
-   "ghuraftun nowm"
+   "ghurfat an-nawm"
   ]
  },
  {
@@ -2164,19 +2168,19 @@
    "غرفة معيشة"
   ],
   "translit": [
-   "ghurfatul julusi",
-   "ghurfatum maeesha"
+   "ghurfat al-juluus",
+   "ghurfat ma'iisha"
   ]
  },
  {
   "id": "n-childrens-room",
   "type": "noun",
-  "english": "childrens room",
+  "english": "children's room",
   "arabic": [
    "غرفة الأطفال"
   ],
   "translit": [
-   "ghurfatul athfaal"
+   "ghurfat al-atfaal"
   ]
  },
  {
@@ -2281,12 +2285,12 @@
  {
   "id": "n-board",
   "type": "noun",
-  "english": "board",
+  "english": "blackboard, whiteboard",
   "arabic": [
    "سبورة"
   ],
   "translit": [
-   "saboor"
+   "sabbuura"
   ]
  },
  {
@@ -2303,13 +2307,14 @@
  {
   "id": "n-corkboard",
   "type": "noun",
-  "english": "corkboard",
+  "english": "notice board",
   "arabic": [
-   "لوحة",
-   "anything hung on the wall"
+   "لوحة إعلانات",
+   "لوحة"
   ],
   "translit": [
-   "lawhat"
+   "lawhat i'laanaat",
+   "lawha"
   ]
  },
  {
@@ -2342,7 +2347,7 @@
    "سلة فواكه"
   ],
   "translit": [
-   "salatuf fawakih"
+   "sallat fawaakih"
   ]
  },
  {
@@ -2364,10 +2369,12 @@
   "type": "noun",
   "english": "rubbish basket",
   "arabic": [
-   "سلة قمامة"
+   "سلة قمامة",
+   "سلة المهملات"
   ],
   "translit": [
-   "salatu qamama"
+   "sallat qumaama",
+   "sallat al-muhmalaat"
   ]
  },
  {
@@ -2394,13 +2401,13 @@
  },
  {
   "id": "n-to",
-  "type": "noun",
-  "english": "to",
+  "type": "phrase",
+  "english": "to (towards)",
   "arabic": [
    "إلى"
   ],
   "translit": [
-   "ila"
+   "ilaa"
   ]
  },
  {
@@ -2449,26 +2456,39 @@
  },
  {
   "id": "n-left",
-  "type": "noun",
-  "english": "left",
+  "type": "verb",
+  "english": "go out, leave",
   "arabic": [
-   "خرج",
-   "klmnop"
+   "خرج"
   ],
   "translit": [
    "kharaja"
-  ]
+  ],
+  "conjugations": {
+   "I": "أنا أخرج",
+   "he": "هو يخرج",
+   "she": "هي تخرج",
+   "we": "نحن نخرج",
+   "they": "هم يخرجون"
+  }
  },
  {
   "id": "n-went",
-  "type": "noun",
-  "english": "went",
+  "type": "verb",
+  "english": "go (went)",
   "arabic": [
    "ذهب"
   ],
   "translit": [
-   "dhahab"
-  ]
+   "dhahaba"
+  ],
+  "conjugations": {
+   "I": "أنا أذهب",
+   "he": "هو يذهب",
+   "she": "هي تذهب",
+   "we": "نحن نذهب",
+   "they": "هم يذهبون"
+  }
  },
  {
   "id": "n-manager",
@@ -2770,12 +2790,12 @@
  {
   "id": "n-dad",
   "type": "noun",
-  "english": "dad",
+  "english": "father, dad",
   "arabic": [
    "أب"
   ],
   "translit": [
-   "abb"
+   "ab"
   ]
  },
  {
@@ -2871,10 +2891,12 @@
   "type": "noun",
   "english": "sandal",
   "arabic": [
+   "صندل",
    "نعل"
   ],
   "translit": [
-   "n3l"
+   "sandal",
+   "na'l"
   ]
  },
  {
@@ -2891,7 +2913,7 @@
  {
   "id": "n-hellfire",
   "type": "noun",
-  "english": "hellfire",
+  "english": "hell, hellfire",
   "arabic": [
    "جهنم"
   ],
@@ -2946,12 +2968,12 @@
  {
   "id": "n-priminister",
   "type": "noun",
-  "english": "priminister",
+  "english": "prime minister",
   "arabic": [
-   "الوزير"
+   "رئيس الوزراء"
   ],
   "translit": [
-   "wazeer"
+   "ra'iis al-wuzaraa'"
   ]
  },
  {

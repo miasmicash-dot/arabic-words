@@ -1,5 +1,25 @@
 [
  {
+  "id": "k-noun-برغوث",
+  "type": "noun",
+  "english": "flea",
+  "arabic": [
+   "برغوث"
+  ],
+  "translit": [
+   "burghuuth"
+  ],
+  "vocalized": "بُرْغُوث",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1951,
+  "level": "C2"
+ },
+ {
   "id": "k-noun-حلاوة",
   "type": "noun",
   "english": "sweetness",
@@ -16,7 +36,7 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 1951,
+  "frequencyRank": 1952,
   "level": "C2"
  },
  {
@@ -37,7 +57,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1952,
+  "frequencyRank": 1953,
   "level": "C2"
  },
  {
@@ -58,7 +78,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1953,
+  "frequencyRank": 1954,
   "level": "C2"
  },
  {
@@ -79,7 +99,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1954,
+  "frequencyRank": 1955,
   "level": "B2"
  },
  {
@@ -100,7 +120,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1955,
+  "frequencyRank": 1956,
   "level": "C2"
  },
  {
@@ -127,7 +147,7 @@
    "we": "نحن نرهب",
    "they": "هم يرهبون"
   },
-  "frequencyRank": 1956,
+  "frequencyRank": 1957,
   "level": "C2"
  },
  {
@@ -148,7 +168,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1957,
+  "frequencyRank": 1958,
   "level": "C2"
  },
  {
@@ -168,7 +188,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1958,
+  "frequencyRank": 1959,
   "level": "C2"
  },
  {
@@ -188,7 +208,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1959,
+  "frequencyRank": 1960,
   "level": "C2"
  },
  {
@@ -215,7 +235,7 @@
    "we": "نحن نتجسس",
    "they": "هم يتجسسون"
   },
-  "frequencyRank": 1960,
+  "frequencyRank": 1961,
   "level": "C2"
  },
  {
@@ -236,7 +256,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1961,
+  "frequencyRank": 1962,
   "level": "C2"
  },
  {
@@ -257,7 +277,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1962,
+  "frequencyRank": 1963,
   "level": "C2"
  },
  {
@@ -277,7 +297,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1963,
+  "frequencyRank": 1964,
   "level": "C2"
  },
  {
@@ -305,7 +325,7 @@
    "we": "نحن نخلط",
    "they": "هم يخلطون"
   },
-  "frequencyRank": 1964,
+  "frequencyRank": 1965,
   "level": "C2"
  },
  {
@@ -333,7 +353,7 @@
    "we": "نحن ننهي",
    "they": "هم ينهون"
   },
-  "frequencyRank": 1965,
+  "frequencyRank": 1966,
   "level": "C2"
  },
  {
@@ -361,7 +381,7 @@
    "we": "نحن نمتنع",
    "they": "هم يمتنعون"
   },
-  "frequencyRank": 1966,
+  "frequencyRank": 1967,
   "level": "C2"
  },
  {
@@ -382,7 +402,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1967,
+  "frequencyRank": 1968,
   "level": "C2"
  },
  {
@@ -403,7 +423,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1968,
+  "frequencyRank": 1969,
   "level": "C2"
  },
  {
@@ -423,7 +443,7 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 1969,
+  "frequencyRank": 1970,
   "level": "C2"
  },
  {
@@ -443,7 +463,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1970,
+  "frequencyRank": 1971,
   "level": "C2"
  },
  {
@@ -464,7 +484,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1971,
+  "frequencyRank": 1972,
   "level": "C2"
  },
  {
@@ -484,7 +504,7 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 1972,
+  "frequencyRank": 1973,
   "level": "C2"
  },
  {
@@ -511,7 +531,7 @@
    "we": "نحن نكفل",
    "they": "هم يكفلون"
   },
-  "frequencyRank": 1973,
+  "frequencyRank": 1974,
   "level": "C2"
  },
  {
@@ -531,7 +551,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1974,
+  "frequencyRank": 1975,
   "level": "C2"
  },
  {
@@ -551,7 +571,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1975,
+  "frequencyRank": 1976,
   "level": "C2"
  },
  {
@@ -571,7 +591,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1976,
+  "frequencyRank": 1977,
   "level": "C2"
  },
  {
@@ -591,7 +611,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1977,
+  "frequencyRank": 1978,
   "level": "C2"
  },
  {
@@ -611,7 +631,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1978,
+  "frequencyRank": 1979,
   "level": "C2"
  },
  {
@@ -631,7 +651,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1979,
+  "frequencyRank": 1980,
   "level": "C2"
  },
  {
@@ -652,7 +672,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1980,
+  "frequencyRank": 1981,
   "level": "C2"
  },
  {
@@ -672,7 +692,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1981,
+  "frequencyRank": 1982,
   "level": "C2"
  },
  {
@@ -700,7 +720,7 @@
    "we": "نحن نعتذر",
    "they": "هم يعتذرون"
   },
-  "frequencyRank": 1982,
+  "frequencyRank": 1983,
   "level": "C2"
  },
  {
@@ -727,7 +747,7 @@
    "we": "نحن نخطأ",
    "they": "هم يخطؤون"
   },
-  "frequencyRank": 1983,
+  "frequencyRank": 1984,
   "level": "C2"
  },
  {
@@ -748,7 +768,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1984,
+  "frequencyRank": 1985,
   "level": "C2"
  },
  {
@@ -768,7 +788,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1985,
+  "frequencyRank": 1986,
   "level": "C2"
  },
  {
@@ -788,7 +808,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1986,
+  "frequencyRank": 1987,
   "level": "C2"
  },
  {
@@ -809,34 +829,6 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1987,
-  "level": "C2"
- },
- {
-  "id": "k-verb-اشتغل",
-  "type": "verb",
-  "english": "work",
-  "arabic": [
-   "اشتغل"
-  ],
-  "translit": [
-   "ishtaghala"
-  ],
-  "vocalized": "اِشْتَغَلَ",
-  "verified": [
-   "kelly",
-   "wiktionary-ar",
-   "wiktionary-en",
-   "arabic-wordnet",
-   "buckwalter"
-  ],
-  "conjugations": {
-   "I": "أنا أشتغل",
-   "he": "هو يشتغل",
-   "she": "هي تشتغل",
-   "we": "نحن نشتغل",
-   "they": "هم يشتغلون"
-  },
   "frequencyRank": 1988,
   "level": "C2"
  },

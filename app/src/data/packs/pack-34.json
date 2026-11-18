@@ -1,5 +1,26 @@
 [
  {
+  "id": "k-noun-مراهق",
+  "type": "noun",
+  "english": "adolescent, teenager",
+  "arabic": [
+   "مراهق"
+  ],
+  "translit": [
+   "muraahiq"
+  ],
+  "vocalized": "مُراهِق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1651,
+  "level": "B2"
+ },
+ {
   "id": "k-adj-ملموس",
   "type": "adj",
   "english": "tangible",
@@ -16,7 +37,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1651,
+  "frequencyRank": 1652,
   "level": "B2"
  },
  {
@@ -37,7 +58,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1652,
+  "frequencyRank": 1653,
   "level": "B2"
  },
  {
@@ -57,7 +78,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1653,
+  "frequencyRank": 1654,
   "level": "B2"
  },
  {
@@ -77,7 +98,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1654,
+  "frequencyRank": 1655,
   "level": "B2"
  },
  {
@@ -105,7 +126,7 @@
    "we": "نحن نذبح",
    "they": "هم يذبحون"
   },
-  "frequencyRank": 1655,
+  "frequencyRank": 1656,
   "level": "C1"
  },
  {
@@ -132,7 +153,7 @@
    "we": "نحن نتصدى",
    "they": "هم يتصدون"
   },
-  "frequencyRank": 1656,
+  "frequencyRank": 1657,
   "level": "C1"
  },
  {
@@ -152,7 +173,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1657,
+  "frequencyRank": 1658,
   "level": "C1"
  },
  {
@@ -172,7 +193,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1658,
+  "frequencyRank": 1659,
   "level": "C1"
  },
  {
@@ -192,7 +213,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1659,
+  "frequencyRank": 1660,
   "level": "C1"
  },
  {
@@ -212,7 +233,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1660,
+  "frequencyRank": 1661,
   "level": "C1"
  },
  {
@@ -232,7 +253,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1661,
+  "frequencyRank": 1662,
   "level": "C1"
  },
  {
@@ -253,7 +274,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1662,
+  "frequencyRank": 1663,
   "level": "C1"
  },
  {
@@ -274,7 +295,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1663,
+  "frequencyRank": 1664,
   "level": "C1"
  },
  {
@@ -295,7 +316,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1664,
+  "frequencyRank": 1665,
   "level": "C1"
  },
  {
@@ -315,7 +336,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1665,
+  "frequencyRank": 1666,
   "level": "C1"
  },
  {
@@ -336,7 +357,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1666,
+  "frequencyRank": 1667,
   "level": "C1"
  },
  {
@@ -357,7 +378,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1667,
+  "frequencyRank": 1668,
   "level": "C1"
  },
  {
@@ -377,7 +398,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1668,
+  "frequencyRank": 1669,
   "level": "C1"
  },
  {
@@ -397,7 +418,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1669,
+  "frequencyRank": 1670,
   "level": "C1"
  },
  {
@@ -418,7 +439,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1670,
+  "frequencyRank": 1671,
   "level": "C1"
  },
  {
@@ -439,7 +460,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1671,
+  "frequencyRank": 1672,
   "level": "C1"
  },
  {
@@ -459,7 +480,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1672,
+  "frequencyRank": 1673,
   "level": "C1"
  },
  {
@@ -479,7 +500,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1673,
+  "frequencyRank": 1674,
   "level": "C1"
  },
  {
@@ -499,7 +520,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1674,
+  "frequencyRank": 1675,
   "level": "C1"
  },
  {
@@ -519,7 +540,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1675,
+  "frequencyRank": 1676,
   "level": "A1"
  },
  {
@@ -540,7 +561,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1676,
+  "frequencyRank": 1677,
   "level": "C1"
  },
  {
@@ -560,7 +581,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1677,
+  "frequencyRank": 1678,
   "level": "C1"
  },
  {
@@ -587,7 +608,7 @@
    "we": "نحن نتدفق",
    "they": "هم يتدفقون"
   },
-  "frequencyRank": 1678,
+  "frequencyRank": 1679,
   "level": "C1"
  },
  {
@@ -615,7 +636,7 @@
    "we": "نحن نتحرك",
    "they": "هم يتحركون"
   },
-  "frequencyRank": 1679,
+  "frequencyRank": 1680,
   "level": "C1"
  },
  {
@@ -642,7 +663,7 @@
    "we": "نحن نستفيد",
    "they": "هم يستفيدون"
   },
-  "frequencyRank": 1680,
+  "frequencyRank": 1681,
   "level": "C1"
  },
  {
@@ -662,7 +683,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1681,
+  "frequencyRank": 1682,
   "level": "C1"
  },
  {
@@ -682,7 +703,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1682,
+  "frequencyRank": 1683,
   "level": "C1"
  },
  {
@@ -710,7 +731,7 @@
    "we": "نحن ننسى",
    "they": "هم ينسون"
   },
-  "frequencyRank": 1683,
+  "frequencyRank": 1684,
   "level": "C1"
  },
  {
@@ -731,7 +752,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1684,
+  "frequencyRank": 1685,
   "level": "C1"
  },
  {
@@ -752,7 +773,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1685,
+  "frequencyRank": 1686,
   "level": "C1"
  },
  {
@@ -779,7 +800,7 @@
    "we": "نحن نكمل",
    "they": "هم يكملون"
   },
-  "frequencyRank": 1686,
+  "frequencyRank": 1687,
   "level": "C1"
  },
  {
@@ -799,7 +820,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1687,
+  "frequencyRank": 1688,
   "level": "C1"
  },
  {
@@ -820,7 +841,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1688,
+  "frequencyRank": 1689,
   "level": "C1"
  },
  {
@@ -847,7 +868,7 @@
    "we": "نحن نوصي",
    "they": "هم يوصون"
   },
-  "frequencyRank": 1689,
+  "frequencyRank": 1690,
   "level": "C1"
  },
  {
@@ -867,7 +888,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1690,
+  "frequencyRank": 1691,
   "level": "C1"
  },
  {
@@ -895,7 +916,7 @@
    "we": "نحن نترجم",
    "they": "هم يترجمون"
   },
-  "frequencyRank": 1691,
+  "frequencyRank": 1692,
   "level": "C1"
  },
  {
@@ -916,7 +937,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1692,
+  "frequencyRank": 1693,
   "level": "C1"
  },
  {
@@ -944,7 +965,7 @@
    "we": "نحن نستمع",
    "they": "هم يستمعون"
   },
-  "frequencyRank": 1693,
+  "frequencyRank": 1694,
   "level": "C1"
  },
  {
@@ -964,7 +985,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1694,
+  "frequencyRank": 1695,
   "level": "C1"
  },
  {
@@ -984,7 +1005,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1695,
+  "frequencyRank": 1696,
   "level": "C1"
  },
  {
@@ -1004,7 +1025,7 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 1696,
+  "frequencyRank": 1697,
   "level": "C1"
  },
  {
@@ -1032,7 +1053,7 @@
    "we": "نحن نقترح",
    "they": "هم يقترحون"
   },
-  "frequencyRank": 1697,
+  "frequencyRank": 1698,
   "level": "C1"
  },
  {
@@ -1060,7 +1081,7 @@
    "we": "نحن نقلل",
    "they": "هم يقللون"
   },
-  "frequencyRank": 1698,
+  "frequencyRank": 1699,
   "level": "C1"
  },
  {
@@ -1081,28 +1102,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1699,
-  "level": "C1"
- },
- {
-  "id": "k-noun-ذراع",
-  "type": "noun",
-  "english": "arm",
-  "arabic": [
-   "ذراع"
-  ],
-  "translit": [
-   "dhiraa'"
-  ],
-  "vocalized": "ذِرَاع",
-  "verified": [
-   "kelly",
-   "wiktionary-ar",
-   "wiktionary-en",
-   "arabic-wordnet",
-   "buckwalter"
-  ],
   "frequencyRank": 1700,
-  "level": "A2"
+  "level": "C1"
  }
 ]

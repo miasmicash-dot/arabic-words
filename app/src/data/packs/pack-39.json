@@ -1,5 +1,26 @@
 [
  {
+  "id": "k-noun-حفلة",
+  "type": "noun",
+  "english": "party",
+  "arabic": [
+   "حفلة"
+  ],
+  "translit": [
+   "hafla"
+  ],
+  "vocalized": "حَفْلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1901,
+  "level": "C2"
+ },
+ {
   "id": "k-noun-ميعاد",
   "type": "noun",
   "english": "appointment, date",
@@ -17,7 +38,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1901,
+  "frequencyRank": 1902,
   "level": "C2"
  },
  {
@@ -38,7 +59,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1902,
+  "frequencyRank": 1903,
   "level": "C2"
  },
  {
@@ -58,7 +79,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1903,
+  "frequencyRank": 1904,
   "level": "C2"
  },
  {
@@ -79,7 +100,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1904,
+  "frequencyRank": 1905,
   "level": "C2"
  },
  {
@@ -99,7 +120,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1905,
+  "frequencyRank": 1906,
   "level": "C2"
  },
  {
@@ -119,7 +140,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1906,
+  "frequencyRank": 1907,
   "level": "C2"
  },
  {
@@ -139,7 +160,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1907,
+  "frequencyRank": 1908,
   "level": "C2"
  },
  {
@@ -167,7 +188,7 @@
    "we": "نحن نبلغ",
    "they": "هم يبلغون"
   },
-  "frequencyRank": 1908,
+  "frequencyRank": 1909,
   "level": "C2"
  },
  {
@@ -188,7 +209,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1909,
+  "frequencyRank": 1910,
   "level": "C2"
  },
  {
@@ -208,7 +229,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1910,
+  "frequencyRank": 1911,
   "level": "C2"
  },
  {
@@ -229,7 +250,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1911,
+  "frequencyRank": 1912,
   "level": "C2"
  },
  {
@@ -249,7 +270,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1912,
+  "frequencyRank": 1913,
   "level": "C2"
  },
  {
@@ -269,7 +290,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1913,
+  "frequencyRank": 1914,
   "level": "C2"
  },
  {
@@ -289,7 +310,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1914,
+  "frequencyRank": 1915,
   "level": "C2"
  },
  {
@@ -316,7 +337,7 @@
    "we": "نحن نأوي",
    "they": "هم يأوون"
   },
-  "frequencyRank": 1915,
+  "frequencyRank": 1916,
   "level": "C2"
  },
  {
@@ -336,7 +357,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1916,
+  "frequencyRank": 1917,
   "level": "C2"
  },
  {
@@ -357,7 +378,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1917,
+  "frequencyRank": 1918,
   "level": "C2"
  },
  {
@@ -377,7 +398,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1918,
+  "frequencyRank": 1919,
   "level": "C2"
  },
  {
@@ -405,7 +426,7 @@
    "we": "نحن نهرس",
    "they": "هم يهرسون"
   },
-  "frequencyRank": 1919,
+  "frequencyRank": 1920,
   "level": "C2"
  },
  {
@@ -432,7 +453,7 @@
    "we": "نحن نعجب",
    "they": "هم يعجبون"
   },
-  "frequencyRank": 1920,
+  "frequencyRank": 1921,
   "level": "C2"
  },
  {
@@ -452,7 +473,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1921,
+  "frequencyRank": 1922,
   "level": "C2"
  },
  {
@@ -472,7 +493,7 @@
    "wiktionary-en",
    "arabic-wordnet"
   ],
-  "frequencyRank": 1922,
+  "frequencyRank": 1923,
   "level": "C2"
  },
  {
@@ -492,7 +513,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1923,
+  "frequencyRank": 1924,
   "level": "C2"
  },
  {
@@ -513,7 +534,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1924,
+  "frequencyRank": 1925,
   "level": "C2"
  },
  {
@@ -533,7 +554,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1925,
+  "frequencyRank": 1926,
   "level": "C2"
  },
  {
@@ -554,7 +575,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1926,
+  "frequencyRank": 1927,
   "level": "C2"
  },
  {
@@ -575,7 +596,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1927,
+  "frequencyRank": 1928,
   "level": "B1"
  },
  {
@@ -603,7 +624,7 @@
    "we": "نحن نصعد",
    "they": "هم يصعدون"
   },
-  "frequencyRank": 1928,
+  "frequencyRank": 1929,
   "level": "C2"
  },
  {
@@ -623,7 +644,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1929,
+  "frequencyRank": 1930,
   "level": "C2"
  },
  {
@@ -651,7 +672,7 @@
    "we": "نحن نؤسس",
    "they": "هم يؤسسون"
   },
-  "frequencyRank": 1930,
+  "frequencyRank": 1931,
   "level": "B2"
  },
  {
@@ -672,7 +693,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1931,
+  "frequencyRank": 1932,
   "level": "A2"
  },
  {
@@ -692,7 +713,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1932,
+  "frequencyRank": 1933,
   "level": "C2"
  },
  {
@@ -712,7 +733,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1933,
+  "frequencyRank": 1934,
   "level": "C2"
  },
  {
@@ -732,7 +753,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1934,
+  "frequencyRank": 1935,
   "level": "A2"
  },
  {
@@ -752,7 +773,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1935,
+  "frequencyRank": 1936,
   "level": "C2"
  },
  {
@@ -779,7 +800,7 @@
    "we": "نحن نتألف",
    "they": "هم يتألفون"
   },
-  "frequencyRank": 1936,
+  "frequencyRank": 1937,
   "level": "C2"
  },
  {
@@ -799,7 +820,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1937,
+  "frequencyRank": 1938,
   "level": "C2"
  },
  {
@@ -820,7 +841,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1938,
+  "frequencyRank": 1939,
   "level": "C2"
  },
  {
@@ -840,7 +861,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1939,
+  "frequencyRank": 1940,
   "level": "C2"
  },
  {
@@ -861,7 +882,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1940,
+  "frequencyRank": 1941,
   "level": "C2"
  },
  {
@@ -882,7 +903,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1941,
+  "frequencyRank": 1942,
   "level": "C2"
  },
  {
@@ -902,7 +923,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1942,
+  "frequencyRank": 1943,
   "level": "C2"
  },
  {
@@ -923,7 +944,7 @@
    "buckwalter",
    "wiktionary-en"
   ],
-  "frequencyRank": 1943,
+  "frequencyRank": 1944,
   "level": "C2"
  },
  {
@@ -944,7 +965,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1944,
+  "frequencyRank": 1945,
   "level": "C2"
  },
  {
@@ -972,7 +993,7 @@
    "we": "نحن نرقع",
    "they": "هم يرقعون"
   },
-  "frequencyRank": 1945,
+  "frequencyRank": 1946,
   "level": "C2"
  },
  {
@@ -993,7 +1014,7 @@
    "arabic-wordnet",
    "buckwalter"
   ],
-  "frequencyRank": 1946,
+  "frequencyRank": 1947,
   "level": "C2"
  },
  {
@@ -1021,7 +1042,7 @@
    "we": "نحن نعاني",
    "they": "هم يعانون"
   },
-  "frequencyRank": 1947,
+  "frequencyRank": 1948,
   "level": "C2"
  },
  {
@@ -1041,7 +1062,7 @@
    "wiktionary-en",
    "buckwalter"
   ],
-  "frequencyRank": 1948,
+  "frequencyRank": 1949,
   "level": "C2"
  },
  {
@@ -1069,26 +1090,6 @@
    "we": "نحن نحتل",
    "they": "هم يحتلون"
   },
-  "frequencyRank": 1949,
-  "level": "C2"
- },
- {
-  "id": "k-noun-برغوث",
-  "type": "noun",
-  "english": "flea",
-  "arabic": [
-   "برغوث"
-  ],
-  "translit": [
-   "burghuuth"
-  ],
-  "vocalized": "بُرْغُوث",
-  "verified": [
-   "kelly",
-   "wiktionary-ar",
-   "wiktionary-en",
-   "buckwalter"
-  ],
   "frequencyRank": 1950,
   "level": "C2"
  }
