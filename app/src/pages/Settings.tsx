@@ -6,6 +6,7 @@ import { GoalPicker } from '../garden/GardenPanel'
 import { loadGarden, setGoal, setMuted, startGarden, syncGarden } from '../garden/service'
 import type { GardenState } from '../garden/state'
 import { getPlayerName, setPlayerName } from '../intro/player'
+import { disableRealWeather, enableRealWeather, weatherAllowed } from '../garden/realWeather'
 
 export default function Settings() {
   const [s, setS] = useState<S>(DEFAULT_SETTINGS)
@@ -13,6 +14,8 @@ export default function Settings() {
   const [garden, setGarden] = useState<GardenState | null>(null)
   const [name, setName] = useState(getPlayerName)
   const [editGoal, setEditGoal] = useState(false)
+  const [wx, setWx] = useState(weatherAllowed)
+  const [wxMsg, setWxMsg] = useState('')
 
   useEffect(() => {
     db.settings.get('main').then((x) => x && setS(x))
@@ -143,12 +146,43 @@ export default function Settings() {
                   setGarden({ ...garden, soundMuted: !e.target.checked })
                 }}
               />
-              Nature sounds (birds, wind, crickets)
+              Nature sounds (birds, wind, rain, stream)
             </label>
           </>
         ) : (
           <GoalPicker title="Pick a goal to plant your first seed" onPick={async (g) => { await startGarden(g); setGarden(await loadGarden()) }} />
         )}
+      </div>
+
+      <div className="card p-4 space-y-2">
+        <div className="font-semibold text-sm">Real weather in the garden</div>
+        <label className="flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={wx}
+            onChange={async (e) => {
+              setWxMsg('')
+              if (e.target.checked) {
+                const ok = await enableRealWeather()
+                setWx(ok)
+                if (!ok) setWxMsg('Location was not allowed. You can allow it in your phone settings.')
+              } else {
+                disableRealWeather()
+                setWx(false)
+              }
+            }}
+          />
+          Show my local rain, snow and wind
+        </label>
+        <p className="text-xs muted">Only for looks. Your plant's health comes from studying alone.</p>
+        {wxMsg && <p className="text-xs" style={{ color: '#b45309' }}>{wxMsg}</p>}
+      </div>
+
+      <button className="btn ghost w-full" onClick={() => window.dispatchEvent(new Event('show-tutorial'))}>📖 How the app works</button>
+
+      <div className="card p-4 space-y-1 text-xs muted">
+        <div className="font-semibold text-sm" style={{ color: 'var(--ink)' }}>Word sources</div>
+        <p>Extra words are picked in order of how common they are from the Kelly Project Arabic frequency list (University of Leeds, CC BY-NC-SA), with spellings, meanings, pronunciations and verb forms from English Wiktionary (CC BY-SA). New packs open as you learn.</p>
       </div>
 
       {import.meta.env.DEV && (

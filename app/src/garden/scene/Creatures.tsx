@@ -3,6 +3,7 @@ import { useSid } from './ids'
 import { memo, useEffect, useMemo, useState } from 'react'
 import { brush, mix, rng, type P } from './ink'
 import { LINES, yAt } from './Landscape'
+import './critters.css'
 import type { Palette } from './palette'
 
 type Shade = (c: string) => string
@@ -172,25 +173,38 @@ export function Elephant({ s, ink, act }: { s: Shade; ink: string; act?: boolean
 export function Skunk({ s, ink, act }: { s: Shade; ink: string; act?: boolean }) {
   const fur = s('#26262e')
   const white = s('#f4f2ec')
+  // tapped: an angry little stomp of the front feet (with dust and a cross mark), then the tail goes up
   return (
     <g className={act ? undefined : 'gs-bob gs-bob-slow'}>
       <Leg d="M-10,-4 L-11,0" cls="gs-leg gs-leg-fast" delay={0} color={fur} />
-      <Leg d="M12,-4 L13,0" cls="gs-leg gs-leg-fast" delay={-0.14} color={fur} />
-      <g className={act ? 'gs-skunktail' : 'gs-tail'}>
+      <g className={act ? 'gs-skunktail cr-later' : 'gs-tail'}>
         <path d="M-16,-10 C-32,-14 -40,-32 -32,-46 C-26,-55 -12,-51 -14,-40 C-16,-31 -14,-22 -9,-16Z" fill={fur} stroke={ink} strokeWidth={1.4} />
         <path d="M-14,-14 C-26,-20 -32,-34 -26,-44" stroke={white} strokeWidth={3.4} fill="none" strokeLinecap="round" />
       </g>
-      <path d="M-18,-5 C-22,-16 -10,-24 4,-23 C16,-22 22,-14 20,-6 C18,-1 8,0 -4,0 C-12,0 -17,-2 -18,-5Z" fill={fur} stroke={ink} strokeWidth={1.4} />
-      <path d="M-14,-15 C-6,-22 8,-22 17,-14" stroke={white} strokeWidth={3.6} fill="none" strokeLinecap="round" />
-      <path d="M16,-14 C20,-20 30,-16 33,-9 C34,-6 30,-4 26,-5 C21,-6 17,-9 16,-14Z" fill={fur} stroke={ink} strokeWidth={1.3} />
-      <path d="M19,-16 C24,-15 29,-12 32,-9" stroke={white} strokeWidth={1.6} fill="none" strokeLinecap="round" />
-      <circle cx={24} cy={-12} r={1.2} fill="#f4f2ec" />
-      <circle cx={33} cy={-8.5} r={1.2} fill={ink} />
+      <g className={act ? 'cr-stomp' : undefined}>
+        <Leg d="M12,-4 L13,0" cls={act ? '' : 'gs-leg gs-leg-fast'} delay={-0.14} color={fur} />
+        <path d="M-18,-5 C-22,-16 -10,-24 4,-23 C16,-22 22,-14 20,-6 C18,-1 8,0 -4,0 C-12,0 -17,-2 -18,-5Z" fill={fur} stroke={ink} strokeWidth={1.4} />
+        <path d="M-14,-15 C-6,-22 8,-22 17,-14" stroke={white} strokeWidth={3.6} fill="none" strokeLinecap="round" />
+        <path d="M16,-14 C20,-20 30,-16 33,-9 C34,-6 30,-4 26,-5 C21,-6 17,-9 16,-14Z" fill={fur} stroke={ink} strokeWidth={1.3} />
+        <path d="M19,-16 C24,-15 29,-12 32,-9" stroke={white} strokeWidth={1.6} fill="none" strokeLinecap="round" />
+        <circle cx={24} cy={-12} r={1.2} fill="#f4f2ec" />
+        <circle cx={33} cy={-8.5} r={1.2} fill={ink} />
+        {act && <path d="M21,-15 l5,2" stroke={ink} strokeWidth={1.2} strokeLinecap="round" />}
+      </g>
       {act && (
-        <g className="gs-stink">
-          <path d="M-46,-40 c-6,-6 2,-14 8,-10 c2,-8 14,-6 12,2 c8,0 8,10 0,11 c-2,7 -14,7 -15,1 c-7,2 -11,-3 -5,-4Z" fill="#c9d77a" opacity={0.55} stroke="#8a9a3a" strokeWidth={0.8} />
-          <path d="M-52,-58 q3,-4 0,-8 q-3,-4 0,-8 M-40,-60 q3,-4 0,-8 q-3,-4 0,-8" stroke="#8a9a3a" strokeWidth={1.3} fill="none" strokeLinecap="round" />
-        </g>
+        <>
+          <g className="cr-stompdust">
+            <ellipse cx={14} cy={-1} rx={7} ry={2.4} fill={s('#cdb58a')} opacity={0.8} />
+            <circle cx={6} cy={-3} r={1.6} fill={s('#cdb58a')} /><circle cx={22} cy={-3} r={1.4} fill={s('#cdb58a')} />
+          </g>
+          <g transform="translate(36,-30)" className="cr-angry">
+            <path d="M-4,-4 q2,2 0,4 M4,-4 q-2,2 0,4 M-4,-4 q2,-2 4,0 M-4,4 q2,2 4,0" stroke="#d9342b" strokeWidth={1.8} fill="none" strokeLinecap="round" transform="rotate(45)" />
+          </g>
+          <g className="gs-stink cr-later">
+            <path d="M-46,-40 c-6,-6 2,-14 8,-10 c2,-8 14,-6 12,2 c8,0 8,10 0,11 c-2,7 -14,7 -15,1 c-7,2 -11,-3 -5,-4Z" fill="#c9d77a" opacity={0.55} stroke="#8a9a3a" strokeWidth={0.8} />
+            <path d="M-52,-58 q3,-4 0,-8 q-3,-4 0,-8 M-40,-60 q3,-4 0,-8 q-3,-4 0,-8" stroke="#8a9a3a" strokeWidth={1.3} fill="none" strokeLinecap="round" />
+          </g>
+        </>
       )}
     </g>
   )
@@ -253,7 +267,7 @@ export const PATH_CSS = (['path', 'mid', 'far'] as const)
   .join('\n')
 
 /** How long each animal stops for when tapped (ms). */
-const REACT_MS: Partial<Record<AnimalKind, number>> = { skunk: 2600, ferret: 1800, horse: 1600, foal: 1600, elephant: 2400, calf: 1200, hedgehog: 2400, fox: 1200, rabbit: 900, deer: 1600, squirrel: 900 }
+const REACT_MS: Partial<Record<AnimalKind, number>> = { skunk: 3600, ferret: 1800, horse: 1600, foal: 1600, elephant: 2400, calf: 1200, hedgehog: 2400, fox: 1200, rabbit: 900, deer: 1600, squirrel: 900 }
 
 function Body({ kind, pal, act }: { kind: AnimalKind; pal: Palette; act: boolean }) {
   const s = pal.shade

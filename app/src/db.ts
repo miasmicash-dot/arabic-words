@@ -18,6 +18,10 @@ export interface Word {
   /** reserved for the future "discover new words" mode */
   frequencyRank?: number
   topic?: string
+  /** pack words: the spelling with vowel marks, the CEFR level and where the word came from */
+  vocalized?: string
+  level?: string
+  source?: string
 }
 
 /**
@@ -61,6 +65,8 @@ export interface Settings {
   timezone: string
   remindersEnabled: boolean
   directions: Direction[]
+  /** number of extra word packs added so far (see packs.ts) */
+  unlockedPacks?: number
 }
 
 export const DEFAULT_SETTINGS: Settings = {

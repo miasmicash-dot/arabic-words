@@ -1,0 +1,808 @@
+[
+ {
+  "id": "k-verb-4118",
+  "type": "verb",
+  "english": "say",
+  "arabic": [
+   "قال"
+  ],
+  "translit": [
+   "qaala"
+  ],
+  "vocalized": "قَالَ",
+  "frequencyRank": 1,
+  "level": "A1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أقول",
+   "he": "هو يقول",
+   "she": "هي تقول",
+   "we": "نحن نقول",
+   "they": "هم يقولون"
+  }
+ },
+ {
+  "id": "k-noun-4412",
+  "type": "noun",
+  "english": "end, conclusion",
+  "arabic": [
+   "آخر"
+  ],
+  "translit": [
+   "aakhir"
+  ],
+  "vocalized": "آخِر",
+  "frequencyRank": 2,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2463",
+  "type": "noun",
+  "english": "human",
+  "arabic": [
+   "إنسان"
+  ],
+  "translit": [
+   "insaan"
+  ],
+  "vocalized": "إِنْسَان",
+  "frequencyRank": 3,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5574",
+  "type": "noun",
+  "english": "state",
+  "arabic": [
+   "دولة"
+  ],
+  "translit": [
+   "dawla"
+  ],
+  "vocalized": "دَوْلَة",
+  "frequencyRank": 4,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3561",
+  "type": "noun",
+  "english": "order, command, instruction",
+  "arabic": [
+   "أمر"
+  ],
+  "translit": [
+   "amr"
+  ],
+  "vocalized": "أَمْر",
+  "frequencyRank": 5,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-1239",
+  "type": "noun",
+  "english": "boss, chief, leader",
+  "arabic": [
+   "رئيس"
+  ],
+  "translit": [
+   "ra'iis"
+  ],
+  "vocalized": "رَئِيس",
+  "frequencyRank": 6,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2537",
+  "type": "noun",
+  "english": "equity",
+  "arabic": [
+   "حق"
+  ],
+  "translit": [
+   "haqq"
+  ],
+  "vocalized": "حَقّ",
+  "frequencyRank": 7,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-303",
+  "type": "adj",
+  "english": "Arab",
+  "arabic": [
+   "عربي"
+  ],
+  "translit": [
+   "'arabiyy"
+  ],
+  "vocalized": "عَرَبِيّ",
+  "frequencyRank": 8,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-812",
+  "type": "adj",
+  "english": "many, much, numerous",
+  "arabic": [
+   "كثير"
+  ],
+  "translit": [
+   "kathiir"
+  ],
+  "vocalized": "كَثِير",
+  "frequencyRank": 9,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2319",
+  "type": "noun",
+  "english": "thing",
+  "arabic": [
+   "شيء"
+  ],
+  "translit": [
+   "shay'"
+  ],
+  "vocalized": "شَيْء",
+  "frequencyRank": 10,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-2995",
+  "type": "verb",
+  "english": "be fulfilled, be completed",
+  "arabic": [
+   "تم"
+  ],
+  "translit": [
+   "tamma"
+  ],
+  "vocalized": "تَمَّ",
+  "frequencyRank": 11,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أتم",
+   "he": "هو يتم",
+   "she": "هي تتم",
+   "we": "نحن نتم",
+   "they": "هم يتمون"
+  }
+ },
+ {
+  "id": "k-noun-6330",
+  "type": "noun",
+  "english": "number",
+  "arabic": [
+   "عدد"
+  ],
+  "translit": [
+   "'adad"
+  ],
+  "vocalized": "عَدَد",
+  "frequencyRank": 12,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-5055",
+  "type": "verb",
+  "english": "stand up, get up",
+  "arabic": [
+   "قام"
+  ],
+  "translit": [
+   "qaama"
+  ],
+  "vocalized": "قَامَ",
+  "frequencyRank": 13,
+  "level": "A2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أقوم",
+   "he": "هو يقوم",
+   "she": "هي تقوم",
+   "we": "نحن نقوم",
+   "they": "هم يقومون"
+  }
+ },
+ {
+  "id": "k-noun-3414",
+  "type": "noun",
+  "english": "likeness, resemblance, semblance",
+  "arabic": [
+   "شكل"
+  ],
+  "translit": [
+   "shakl"
+  ],
+  "vocalized": "شَكْل",
+  "frequencyRank": 14,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3123",
+  "type": "noun",
+  "english": "sign, token, mark",
+  "arabic": [
+   "علم"
+  ],
+  "translit": [
+   "'alam"
+  ],
+  "vocalized": "عَلَم",
+  "frequencyRank": 15,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4702",
+  "type": "noun",
+  "english": "country, land, homeland",
+  "arabic": [
+   "بلد"
+  ],
+  "translit": [
+   "balad"
+  ],
+  "vocalized": "بَلَد",
+  "frequencyRank": 16,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4473",
+  "type": "noun",
+  "english": "name",
+  "arabic": [
+   "اسم"
+  ],
+  "translit": [
+   "ism"
+  ],
+  "vocalized": "اِسْم",
+  "frequencyRank": 17,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4951",
+  "type": "noun",
+  "english": "cause, grounds, aetiological reason",
+  "arabic": [
+   "سبب"
+  ],
+  "translit": [
+   "sabab"
+  ],
+  "vocalized": "سَبَب",
+  "frequencyRank": 18,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-61",
+  "type": "noun",
+  "english": "world",
+  "arabic": [
+   "عالم"
+  ],
+  "translit": [
+   "'aalam"
+  ],
+  "vocalized": "عَالَم",
+  "frequencyRank": 19,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6451",
+  "type": "noun",
+  "english": "saying, declaration, statement",
+  "arabic": [
+   "قول"
+  ],
+  "translit": [
+   "qawl"
+  ],
+  "vocalized": "قَوْل",
+  "frequencyRank": 20,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-1128",
+  "type": "verb",
+  "english": "find, hit upon",
+  "arabic": [
+   "وجد"
+  ],
+  "translit": [
+   "wajada"
+  ],
+  "vocalized": "وَجَدَ",
+  "frequencyRank": 21,
+  "level": "A1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أجد",
+   "he": "هو يجد",
+   "she": "هي تجد",
+   "we": "نحن نجد",
+   "they": "هم يجدون"
+  }
+ },
+ {
+  "id": "k-verb-6144",
+  "type": "verb",
+  "english": "put, lay",
+  "arabic": [
+   "وضع"
+  ],
+  "translit": [
+   "wada'a"
+  ],
+  "vocalized": "وَضَعَ",
+  "frequencyRank": 22,
+  "level": "A1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أضع",
+   "he": "هو يضع",
+   "she": "هي تضع",
+   "we": "نحن نضع",
+   "they": "هم يضعون"
+  }
+ },
+ {
+  "id": "k-noun-5784",
+  "type": "noun",
+  "english": "time",
+  "arabic": [
+   "وقت"
+  ],
+  "translit": [
+   "waqt"
+  ],
+  "vocalized": "وَقْت",
+  "frequencyRank": 23,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-1690",
+  "type": "noun",
+  "english": "earth, land",
+  "arabic": [
+   "أرض"
+  ],
+  "translit": [
+   "ard"
+  ],
+  "vocalized": "أَرْض",
+  "frequencyRank": 24,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4510",
+  "type": "noun",
+  "english": "power, strength, might",
+  "arabic": [
+   "قوة"
+  ],
+  "translit": [
+   "quwwa"
+  ],
+  "vocalized": "قُوَّة",
+  "frequencyRank": 25,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5174",
+  "type": "noun",
+  "english": "image, picture, photograph",
+  "arabic": [
+   "صورة"
+  ],
+  "translit": [
+   "suura"
+  ],
+  "vocalized": "صُورَة",
+  "frequencyRank": 26,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2081",
+  "type": "noun",
+  "english": "recent event, fresh news",
+  "arabic": [
+   "حديث"
+  ],
+  "translit": [
+   "hadiith"
+  ],
+  "vocalized": "حَدِيث",
+  "frequencyRank": 27,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-1515",
+  "type": "noun",
+  "english": "role",
+  "arabic": [
+   "دور"
+  ],
+  "translit": [
+   "dawr"
+  ],
+  "vocalized": "دَوْر",
+  "frequencyRank": 28,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-1123",
+  "type": "noun",
+  "english": "novelty, innovation",
+  "arabic": [
+   "حدث"
+  ],
+  "translit": [
+   "hadath"
+  ],
+  "vocalized": "حَدَث",
+  "frequencyRank": 29,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-538",
+  "type": "noun",
+  "english": "topic, subject, theme",
+  "arabic": [
+   "موضوع"
+  ],
+  "translit": [
+   "mawduu'"
+  ],
+  "vocalized": "مَوْضُوع",
+  "frequencyRank": 30,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-417",
+  "type": "noun",
+  "english": "seat",
+  "arabic": [
+   "مجلس"
+  ],
+  "translit": [
+   "majlis"
+  ],
+  "vocalized": "مَجْلِس",
+  "frequencyRank": 31,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-3251",
+  "type": "adj",
+  "english": "political",
+  "arabic": [
+   "سياسي"
+  ],
+  "translit": [
+   "siyaasiyy"
+  ],
+  "vocalized": "سِيَاسِيّ",
+  "frequencyRank": 32,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4039",
+  "type": "noun",
+  "english": "religion, creed, credo",
+  "arabic": [
+   "دين"
+  ],
+  "translit": [
+   "diin"
+  ],
+  "vocalized": "دِين",
+  "frequencyRank": 33,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3624",
+  "type": "noun",
+  "english": "work, action, activity",
+  "arabic": [
+   "عملية"
+  ],
+  "translit": [
+   "'amaliyya"
+  ],
+  "vocalized": "عَمَلِيَّة",
+  "frequencyRank": 34,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4899",
+  "type": "noun",
+  "english": "zone",
+  "arabic": [
+   "منطقة"
+  ],
+  "translit": [
+   "mintaqa"
+  ],
+  "vocalized": "مِنْطَقَة",
+  "frequencyRank": 35,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5584",
+  "type": "noun",
+  "english": "government",
+  "arabic": [
+   "حكومة"
+  ],
+  "translit": [
+   "hukuuma"
+  ],
+  "vocalized": "حُكُومَة",
+  "frequencyRank": 36,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2673",
+  "type": "noun",
+  "english": "non-existence, nothingness",
+  "arabic": [
+   "عدم"
+  ],
+  "translit": [
+   "'adam"
+  ],
+  "vocalized": "عَدَم",
+  "frequencyRank": 37,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2676",
+  "type": "noun",
+  "english": "company",
+  "arabic": [
+   "شركة"
+  ],
+  "translit": [
+   "sharika"
+  ],
+  "vocalized": "شَرِكَة",
+  "frequencyRank": 38,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-388",
+  "type": "noun",
+  "english": "life",
+  "arabic": [
+   "حياة"
+  ],
+  "translit": [
+   "hayaah"
+  ],
+  "vocalized": "حَيَاة",
+  "frequencyRank": 39,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6066",
+  "type": "noun",
+  "english": "way, road, path",
+  "arabic": [
+   "طريق"
+  ],
+  "translit": [
+   "tariiq"
+  ],
+  "vocalized": "طَرِيق",
+  "frequencyRank": 40,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-1104",
+  "type": "adj",
+  "english": "of, relating to, associated with",
+  "arabic": [
+   "إسلامي"
+  ],
+  "translit": [
+   "islaamiyy"
+  ],
+  "vocalized": "إِسْلَامِيّ",
+  "frequencyRank": 41,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-4",
+  "type": "verb",
+  "english": "want, will",
+  "arabic": [
+   "أراد"
+  ],
+  "translit": [
+   "araada"
+  ],
+  "vocalized": "أَرَادَ",
+  "frequencyRank": 42,
+  "level": "A2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أريد",
+   "he": "هو يريد",
+   "she": "هي تريد",
+   "we": "نحن نريد",
+   "they": "هم يريدون"
+  }
+ },
+ {
+  "id": "k-verb-797",
+  "type": "verb",
+  "english": "appear",
+  "arabic": [
+   "بدا"
+  ],
+  "translit": [
+   "badaa"
+  ],
+  "vocalized": "بَدَا",
+  "frequencyRank": 43,
+  "level": "A1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أبدو",
+   "he": "هو يبدو",
+   "she": "هي تبدو",
+   "we": "نحن نبدو",
+   "they": "هم يبدون"
+  }
+ },
+ {
+  "id": "k-verb-592",
+  "type": "verb",
+  "english": "enter upon morning",
+  "arabic": [
+   "أصبح"
+  ],
+  "translit": [
+   "asbaha"
+  ],
+  "vocalized": "أَصْبَحَ",
+  "frequencyRank": 44,
+  "level": "A2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أصبح",
+   "he": "هو يصبح",
+   "she": "هي تصبح",
+   "we": "نحن نصبح",
+   "they": "هم يصبحون"
+  }
+ },
+ {
+  "id": "k-noun-1595",
+  "type": "noun",
+  "english": "recollection, remembrance",
+  "arabic": [
+   "ذكر"
+  ],
+  "translit": [
+   "dhikr"
+  ],
+  "vocalized": "ذِكْر",
+  "frequencyRank": 45,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3055",
+  "type": "noun",
+  "english": "date, time",
+  "arabic": [
+   "تاريخ"
+  ],
+  "translit": [
+   "taariikh"
+  ],
+  "vocalized": "تَارِيخ",
+  "frequencyRank": 46,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5053",
+  "type": "noun",
+  "english": "system",
+  "arabic": [
+   "نظام"
+  ],
+  "translit": [
+   "nizaam"
+  ],
+  "vocalized": "نِظَام",
+  "frequencyRank": 47,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-1366",
+  "type": "noun",
+  "english": "site, position, emplacement",
+  "arabic": [
+   "موقع"
+  ],
+  "translit": [
+   "mawqi'"
+  ],
+  "vocalized": "مَوْقِع",
+  "frequencyRank": 48,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-981",
+  "type": "noun",
+  "english": "seeing, eyesight, vision",
+  "arabic": [
+   "نظر"
+  ],
+  "translit": [
+   "nazar"
+  ],
+  "vocalized": "نَظَر",
+  "frequencyRank": 49,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-423",
+  "type": "noun",
+  "english": "agenda",
+  "arabic": [
+   "برنامج"
+  ],
+  "translit": [
+   "barnaamaj"
+  ],
+  "vocalized": "بَرْنَامَج",
+  "frequencyRank": 50,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ }
+]

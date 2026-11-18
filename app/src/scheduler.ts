@@ -3,11 +3,13 @@ import { DEFAULT_SETTINGS, db, type Direction, type ReviewLog, type Settings, ty
 
 const DAY_MS = 86_400_000
 const MATURE_STABILITY_DAYS = 21
+/** A word never comes back sooner than this after being answered. */
+export const MIN_GAP_MS = 3_600_000
 
 type GradeNum = 1 | 2 | 3 | 4
 
 function makeScheduler(retention: number) {
-  return fsrs(generatorParameters({ request_retention: retention, enable_fuzz: false }))
+  return fsrs(generatorParameters({ request_retention: retention, enable_fuzz: false, learning_steps: ['1h'], relearning_steps: ['1h'] }))
 }
 
 // ---------- local-day helpers ----------
@@ -85,7 +87,7 @@ export async function getSession(now: Date, settings: Settings): Promise<Session
     )
     if (candidates.length) {
       const words = await db.words.toArray()
-      const order = new Map(words.map((w, i) => [w.id, [w.frequencyRank ?? Infinity, i] as const]))
+      const order = new Map(words.map((w, i) => [w.id, [w.frequencyRank ?? -1, i] as const]))
       const key = (c: StudyCard) => order.get(c.wordId) ?? [Infinity, Infinity]
       candidates.sort((a, b) => {
         const ka = key(a)
@@ -136,7 +138,9 @@ export async function answerCard(cardId: string, grade: GradeNum, responseMs: nu
     if (!card) throw new Error(`Unknown card ${cardId}`)
     const settings = await getSettings()
     const before = card.fsrs
-    const { card: after } = makeScheduler(settings.desiredRetention).next(before, now, grade as Grade)
+    const { card: next } = makeScheduler(settings.desiredRetention).next(before, now, grade as Grade)
+    const soonest = new Date(now.getTime() + MIN_GAP_MS)
+    const after = next.due < soonest ? { ...next, due: soonest } : next
 
     const elapsedDays = before.last_review ? Math.max(0, (now.getTime() - before.last_review.getTime()) / DAY_MS) : 0
     const updated: StudyCard = { ...card, fsrs: after, due: after.due, introduced: true }

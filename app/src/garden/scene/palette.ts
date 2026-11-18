@@ -52,17 +52,18 @@ export function sunArc(h: number): number | null {
   return (h - 5.6) / 14
 }
 
-/** Moon progress across the sky (evening to morning) or null in the day. */
+/** Moon progress across the sky (evening to morning) or null in the day. It rises after the sun has set and sets
+ *  before the sun rises, so the two are never in the sky together. */
 export function moonArc(h: number): number | null {
   const hh = h < 12 ? h + 24 : h
-  if (hh < 18.6 || hh > 30.6) return null
-  return (hh - 18.6) / 12
+  if (hh < 19.9 || hh > 29.3) return null
+  return (hh - 19.9) / 9.4
 }
 
 // Daylight landscape colours (sunny), and their dry versions for drought.
 const BASE = {
-  farHill: '#93c2bb',
-  farHill2: '#b5d5cf',
+  farHill: '#86b97a',
+  farHill2: '#aed39e',
   midA: '#a4c873',
   midB: '#8dbb62',
   ochre: '#dfa964',

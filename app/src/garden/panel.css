@@ -44,3 +44,17 @@
   .gp-whisper { animation: gp-whisper-still 5s linear forwards; }
   @keyframes gp-whisper-still { 0%, 70% { opacity: 1; } 100% { opacity: 0; } }
 }
+
+/* the garden runs edge to edge on the page, and can fill the whole screen */
+.gp-stage { position: relative; margin: 0 -16px; }
+.gp-stage .gs { border-radius: 0; }
+@media (min-width: 640px) { .gp-stage { margin: 0; } .gp-stage .gs { border-radius: 18px; } }
+.gp-fs { right: 54px; }
+.gp-full { position: fixed; inset: 0; margin: 0; z-index: 60; background: #000; }
+.gp-full .gs { width: 100vw; height: 100vh; height: 100dvh; aspect-ratio: auto; border-radius: 0; }
+.gp-full .gp-mute { top: calc(10px + env(safe-area-inset-top)); }
+html.garden-full, html.garden-full body { overflow: hidden; }
+/* on a tall phone screen keep the plant (and Nova beside it) in the middle of the crop */
+@media (max-aspect-ratio: 1000/720) {
+  .gp-full .gs { position: absolute; top: 0; width: calc(100dvh * 1000 / 720); left: calc(50vw - 100dvh * 1000 / 720 * .58); }
+}

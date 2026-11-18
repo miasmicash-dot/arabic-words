@@ -1,12 +1,20 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { db, DEFAULT_SETTINGS, type StudyCard, type Word } from '../db'
-import { answerCard, getSession, getStats, previewIntervals } from '../scheduler'
+import { answerCard, getSession, getStats } from '../scheduler'
+import { State } from 'ts-fsrs'
+import { celebrate } from '../confetti'
+import { unlockPacks } from '../boot'
 import { updateDueCount } from '../push'
 import { markWatered } from '../garden/service'
 
-const LABELS = { 1: 'Again', 2: 'Hard', 3: 'Good', 4: 'Easy' } as const
-const COLORS = { 1: '#dc2626', 2: '#d97706', 3: '#0f766e', 4: '#2563eb' } as const
+/** The four answers, in plain words. How soon a word comes back is worked out for you, so no timings are shown. */
+export const RATINGS = {
+  1: { label: 'Forgot', icon: '🌧️', help: "I didn't know it. Show it again soon.", color: '#d9534f' },
+  2: { label: 'Hard', icon: '🌱', help: 'I got it, but it took real effort.', color: '#e0912f' },
+  3: { label: 'Good', icon: '🌿', help: 'I knew it after a moment.', color: '#2f9a68' },
+  4: { label: 'Easy', icon: '🌸', help: 'I knew it instantly. Show it much later.', color: '#3a7bd5' },
+} as const
 
 export default function Review() {
   const [queue, setQueue] = useState<StudyCard[] | null>(null)
@@ -30,7 +38,11 @@ export default function Review() {
 
   useEffect(() => {
     if (queue && queue.length === 0) {
-      if (done > 0) markWatered()
+      if (done > 0) {
+        markWatered()
+        celebrate('big')
+        unlockPacks().then((u) => u && setTimeout(() => celebrate('big'), 1400))
+      }
       getStats(new Date()).then((s) => updateDueCount(s.dueNow).catch(() => {}))
     }
   }, [queue]) // eslint-disable-line react-hooks/exhaustive-deps
@@ -50,12 +62,15 @@ export default function Review() {
   const card = queue[0]
   const word = words.get(card.wordId)
   if (!word) return <p>Missing word.</p>
-  const preview = previewIntervals(card)
 
-  async function rate(g: 1 | 2 | 3 | 4) {
-    const updated = await answerCard(card.id, g, Date.now() - shownAt.current, new Date())
-    const rest = queue!.slice(1)
-    setQueue(g === 1 ? [...rest, updated] : rest)
+  async function rate(g: 1 | 2 | 3 | 4, e: React.MouseEvent) {
+    const wasNew = card.fsrs.state === State.New
+    const at = { x: e.clientX, y: e.clientY }
+    await answerCard(card.id, g, Date.now() - shownAt.current, new Date())
+    // a word you got right for the first time is a small win
+    if (wasNew && g >= 3) celebrate('small', at)
+    // the shortest gap before a word comes back is an hour, so it never repeats within the same sitting
+    setQueue(queue!.slice(1))
     setRevealed(false)
     setDone((d) => d + 1)
   }
@@ -98,13 +113,16 @@ export default function Review() {
       {!revealed ? (
         <button className="btn w-full" onClick={() => setRevealed(true)}>Show answer</button>
       ) : (
-        <div className="grid grid-cols-4 gap-2">
-          {([1, 2, 3, 4] as const).map((g) => (
-            <button key={g} className="btn" style={{ background: COLORS[g] }} onClick={() => rate(g)}>
-              <div>{LABELS[g]}</div>
-              <div className="text-xs font-normal opacity-80">{preview[g]}</div>
-            </button>
-          ))}
+        <div className="space-y-2">
+          <p className="rate-help muted">How well did you know it?</p>
+          <div className="rate-grid">
+            {([1, 2, 3, 4] as const).map((g) => (
+              <button key={g} className="rate" style={{ ['--c' as string]: RATINGS[g].color }} onClick={(e) => rate(g, e)}>
+                <b><span aria-hidden>{RATINGS[g].icon}</span>{RATINGS[g].label}</b>
+                <small>{RATINGS[g].help}</small>
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </div>

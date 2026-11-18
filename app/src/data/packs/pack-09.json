@@ -1,0 +1,822 @@
+[
+ {
+  "id": "k-noun-5364",
+  "type": "noun",
+  "english": "liberation, release, emancipation",
+  "arabic": [
+   "تحرير"
+  ],
+  "translit": [
+   "tahriir"
+  ],
+  "vocalized": "تَحْرِير",
+  "frequencyRank": 401,
+  "level": "C1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3391",
+  "type": "noun",
+  "english": "family",
+  "arabic": [
+   "عائلة"
+  ],
+  "translit": [
+   "'aa'ila"
+  ],
+  "vocalized": "عَائِلَة",
+  "frequencyRank": 402,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6268",
+  "type": "noun",
+  "english": "leader",
+  "arabic": [
+   "قائد"
+  ],
+  "translit": [
+   "qaa'id"
+  ],
+  "vocalized": "قَائِد",
+  "frequencyRank": 403,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-349",
+  "type": "adj",
+  "english": "national",
+  "arabic": [
+   "قومي"
+  ],
+  "translit": [
+   "qawmiyy"
+  ],
+  "vocalized": "قَوْمِيّ",
+  "frequencyRank": 404,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4382",
+  "type": "noun",
+  "english": "economy",
+  "arabic": [
+   "اقتصاد"
+  ],
+  "translit": [
+   "iqtisaad"
+  ],
+  "vocalized": "اِقْتِصَاد",
+  "frequencyRank": 405,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-1074",
+  "type": "adj",
+  "english": "important",
+  "arabic": [
+   "مهم"
+  ],
+  "translit": [
+   "muhimm"
+  ],
+  "vocalized": "مُهِمّ",
+  "frequencyRank": 406,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5851",
+  "type": "noun",
+  "english": "truthfulness, sincerity, honesty",
+  "arabic": [
+   "صدق"
+  ],
+  "translit": [
+   "sidq"
+  ],
+  "vocalized": "صِدْق",
+  "frequencyRank": 407,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-252",
+  "type": "noun",
+  "english": "college, academy, school",
+  "arabic": [
+   "كلية"
+  ],
+  "translit": [
+   "kulliyya"
+  ],
+  "vocalized": "كُلِّيَّة",
+  "frequencyRank": 408,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-2797",
+  "type": "verb",
+  "english": "overcome, defeat",
+  "arabic": [
+   "حج"
+  ],
+  "translit": [
+   "hajja"
+  ],
+  "vocalized": "حَجَّ",
+  "frequencyRank": 409,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أحج",
+   "he": "هو يحج",
+   "she": "هي تحج",
+   "we": "نحن نحج",
+   "they": "هم يحجون"
+  }
+ },
+ {
+  "id": "k-noun-5381",
+  "type": "noun",
+  "english": "civilization",
+  "arabic": [
+   "حضارة"
+  ],
+  "translit": [
+   "hadaara"
+  ],
+  "vocalized": "حَضَارَة",
+  "frequencyRank": 410,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4341",
+  "type": "noun",
+  "english": "commerce",
+  "arabic": [
+   "تجارة"
+  ],
+  "translit": [
+   "tijaara"
+  ],
+  "vocalized": "تِجَارَة",
+  "frequencyRank": 411,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-758",
+  "type": "noun",
+  "english": "net, fishing net",
+  "arabic": [
+   "شبكة"
+  ],
+  "translit": [
+   "shabaka"
+  ],
+  "vocalized": "شَبَكَة",
+  "frequencyRank": 412,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6328",
+  "type": "noun",
+  "english": "beginning, start",
+  "arabic": [
+   "مبدأ"
+  ],
+  "translit": [
+   "mabda'"
+  ],
+  "vocalized": "مَبْدَأ",
+  "frequencyRank": 413,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2561",
+  "type": "noun",
+  "english": "speech, oration",
+  "arabic": [
+   "خطاب"
+  ],
+  "translit": [
+   "khitaab"
+  ],
+  "vocalized": "خِطَاب",
+  "frequencyRank": 414,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-2365",
+  "type": "adj",
+  "english": "domesticated, tame",
+  "arabic": [
+   "أهلي"
+  ],
+  "translit": [
+   "ahliyy"
+  ],
+  "vocalized": "أَهْلِيّ",
+  "frequencyRank": 415,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5565",
+  "type": "noun",
+  "english": "particularity, speciality, specialty",
+  "arabic": [
+   "خصوص"
+  ],
+  "translit": [
+   "khusuus"
+  ],
+  "vocalized": "خُصُوص",
+  "frequencyRank": 416,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-4475",
+  "type": "verb",
+  "english": "interfere in)",
+  "arabic": [
+   "تدخل"
+  ],
+  "translit": [
+   "tadakhkhala"
+  ],
+  "vocalized": "تَدَخَّلَ",
+  "frequencyRank": 417,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أتدخل",
+   "he": "هو يتدخل",
+   "she": "هي تتدخل",
+   "we": "نحن نتدخل",
+   "they": "هم يتدخلون"
+  }
+ },
+ {
+  "id": "k-verb-3220",
+  "type": "verb",
+  "english": "crown",
+  "arabic": [
+   "توج"
+  ],
+  "translit": [
+   "tawwaja"
+  ],
+  "vocalized": "تَوَّجَ",
+  "frequencyRank": 418,
+  "level": "C2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أتوج",
+   "he": "هو يتوج",
+   "she": "هي تتوج",
+   "we": "نحن نتوج",
+   "they": "هم يتوجون"
+  }
+ },
+ {
+  "id": "k-adj-800",
+  "type": "adj",
+  "english": "precise, accurate, exact",
+  "arabic": [
+   "دقيق"
+  ],
+  "translit": [
+   "daqiiq"
+  ],
+  "vocalized": "دَقِيق",
+  "frequencyRank": 419,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-5383",
+  "type": "verb",
+  "english": "deprive, dispossess",
+  "arabic": [
+   "حرم"
+  ],
+  "translit": [
+   "harama"
+  ],
+  "vocalized": "حَرَمَ",
+  "frequencyRank": 420,
+  "level": "B2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أحرم",
+   "he": "هو يحرم",
+   "she": "هي تحرم",
+   "we": "نحن نحرم",
+   "they": "هم يحرمون"
+  }
+ },
+ {
+  "id": "k-noun-3048",
+  "type": "noun",
+  "english": "testimony, witness",
+  "arabic": [
+   "شهادة"
+  ],
+  "translit": [
+   "shahaada"
+  ],
+  "vocalized": "شَهَادَة",
+  "frequencyRank": 421,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-5238",
+  "type": "adj",
+  "english": "historical",
+  "arabic": [
+   "تاريخي"
+  ],
+  "translit": [
+   "taariikhiyy"
+  ],
+  "vocalized": "تَارِيخِيّ",
+  "frequencyRank": 422,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6493",
+  "type": "noun",
+  "english": "choice",
+  "arabic": [
+   "اختيار"
+  ],
+  "translit": [
+   "ikhtiyaar"
+  ],
+  "vocalized": "اِخْتِيَار",
+  "frequencyRank": 423,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2360",
+  "type": "noun",
+  "english": "judge",
+  "arabic": [
+   "حاكم"
+  ],
+  "translit": [
+   "haakim"
+  ],
+  "vocalized": "حَاكِم",
+  "frequencyRank": 424,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-37",
+  "type": "noun",
+  "english": "side, flank, half of the body",
+  "arabic": [
+   "جنب"
+  ],
+  "translit": [
+   "janb"
+  ],
+  "vocalized": "جَنْب",
+  "frequencyRank": 425,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-831",
+  "type": "noun",
+  "english": "conflict, warfare",
+  "arabic": [
+   "صراع"
+  ],
+  "translit": [
+   "siraa'"
+  ],
+  "vocalized": "صِرَاع",
+  "frequencyRank": 426,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6434",
+  "type": "noun",
+  "english": "development, advancement, improvement",
+  "arabic": [
+   "تنمية"
+  ],
+  "translit": [
+   "tanmiya"
+  ],
+  "vocalized": "تَنْمِيَة",
+  "frequencyRank": 427,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6494",
+  "type": "noun",
+  "english": "constitution",
+  "arabic": [
+   "دستور"
+  ],
+  "translit": [
+   "dustuur"
+  ],
+  "vocalized": "دُسْتُور",
+  "frequencyRank": 428,
+  "level": "C1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-618",
+  "type": "noun",
+  "english": "training",
+  "arabic": [
+   "تدريب"
+  ],
+  "translit": [
+   "tadriib"
+  ],
+  "vocalized": "تَدْرِيب",
+  "frequencyRank": 429,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-1967",
+  "type": "verb",
+  "english": "cut, break",
+  "arabic": [
+   "قطع"
+  ],
+  "translit": [
+   "qata'a"
+  ],
+  "vocalized": "قَطَعَ",
+  "frequencyRank": 430,
+  "level": "A2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أقطع",
+   "he": "هو يقطع",
+   "she": "هي تقطع",
+   "we": "نحن نقطع",
+   "they": "هم يقطعون"
+  }
+ },
+ {
+  "id": "k-noun-2968",
+  "type": "noun",
+  "english": "establishment, foundation, creation",
+  "arabic": [
+   "إنشاء"
+  ],
+  "translit": [
+   "inshaa'"
+  ],
+  "vocalized": "إِنْشَاء",
+  "frequencyRank": 431,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5632",
+  "type": "noun",
+  "english": "sea",
+  "arabic": [
+   "بحر"
+  ],
+  "translit": [
+   "bahr"
+  ],
+  "vocalized": "بَحْر",
+  "frequencyRank": 432,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5742",
+  "type": "noun",
+  "english": "expression",
+  "arabic": [
+   "عبارة"
+  ],
+  "translit": [
+   "'ibaara"
+  ],
+  "vocalized": "عِبَارَة",
+  "frequencyRank": 433,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-6429",
+  "type": "verb",
+  "english": "shift, change",
+  "arabic": [
+   "تحول"
+  ],
+  "translit": [
+   "tahawwala"
+  ],
+  "vocalized": "تَحَوَّلَ",
+  "frequencyRank": 434,
+  "level": "B2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أتحول",
+   "he": "هو يتحول",
+   "she": "هي تتحول",
+   "we": "نحن نتحول",
+   "they": "هم يتحولون"
+  }
+ },
+ {
+  "id": "k-noun-2185",
+  "type": "noun",
+  "english": "arrival",
+  "arabic": [
+   "وصول"
+  ],
+  "translit": [
+   "wusuul"
+  ],
+  "vocalized": "وُصُول",
+  "frequencyRank": 435,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4933",
+  "type": "noun",
+  "english": "majority",
+  "arabic": [
+   "جمهور"
+  ],
+  "translit": [
+   "jumhuur"
+  ],
+  "vocalized": "جُمْهُور",
+  "frequencyRank": 436,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3023",
+  "type": "noun",
+  "english": "old man",
+  "arabic": [
+   "شيخ"
+  ],
+  "translit": [
+   "shaykh"
+  ],
+  "vocalized": "شَيْخ",
+  "frequencyRank": 437,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-3149",
+  "type": "adj",
+  "english": "large in area, extensive, vast",
+  "arabic": [
+   "واسع"
+  ],
+  "translit": [
+   "waasi'"
+  ],
+  "vocalized": "وَاسِع",
+  "frequencyRank": 438,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-1470",
+  "type": "noun",
+  "english": "ring, loop",
+  "arabic": [
+   "حلقة"
+  ],
+  "translit": [
+   "halqa"
+  ],
+  "vocalized": "حَلْقَة",
+  "frequencyRank": 439,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4147",
+  "type": "noun",
+  "english": "expression",
+  "arabic": [
+   "تعبير"
+  ],
+  "translit": [
+   "ta'biir"
+  ],
+  "vocalized": "تَعْبِير",
+  "frequencyRank": 440,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2155",
+  "type": "noun",
+  "english": "movement",
+  "arabic": [
+   "حركة"
+  ],
+  "translit": [
+   "haraka"
+  ],
+  "vocalized": "حَرَكَة",
+  "frequencyRank": 441,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-1709",
+  "type": "noun",
+  "english": "sign, signal",
+  "arabic": [
+   "إشارة"
+  ],
+  "translit": [
+   "ishaara"
+  ],
+  "vocalized": "إِشَارَة",
+  "frequencyRank": 442,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-6388",
+  "type": "verb",
+  "english": "change, be altered",
+  "arabic": [
+   "تغير"
+  ],
+  "translit": [
+   "taghayyara"
+  ],
+  "vocalized": "تَغَيَّرَ",
+  "frequencyRank": 443,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أتغير",
+   "he": "هو يتغير",
+   "she": "هي تتغير",
+   "we": "نحن نتغير",
+   "they": "هم يتغيرون"
+  }
+ },
+ {
+  "id": "k-verb-6150",
+  "type": "verb",
+  "english": "publish, publicize",
+  "arabic": [
+   "أعلن"
+  ],
+  "translit": [
+   "a'lana"
+  ],
+  "vocalized": "أَعْلَنَ",
+  "frequencyRank": 444,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أعلن",
+   "he": "هو يعلن",
+   "she": "هي تعلن",
+   "we": "نحن نعلن",
+   "they": "هم يعلنون"
+  }
+ },
+ {
+  "id": "k-verb-6151",
+  "type": "verb",
+  "english": "realize, actualize",
+  "arabic": [
+   "حقق"
+  ],
+  "translit": [
+   "haqqaqa"
+  ],
+  "vocalized": "حَقَّقَ",
+  "frequencyRank": 445,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أحقق",
+   "he": "هو يحقق",
+   "she": "هي تحقق",
+   "we": "نحن نحقق",
+   "they": "هم يحققون"
+  }
+ },
+ {
+  "id": "k-noun-624",
+  "type": "noun",
+  "english": "possibility",
+  "arabic": [
+   "إمكان"
+  ],
+  "translit": [
+   "imkaan"
+  ],
+  "vocalized": "إِمْكَان",
+  "frequencyRank": 446,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2717",
+  "type": "noun",
+  "english": "exercise, practice",
+  "arabic": [
+   "ممارسة"
+  ],
+  "translit": [
+   "mumaarasa"
+  ],
+  "vocalized": "مُمَارَسَة",
+  "frequencyRank": 447,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-928",
+  "type": "noun",
+  "english": "evidence, piece of evidence",
+  "arabic": [
+   "شاهد"
+  ],
+  "translit": [
+   "shaahid"
+  ],
+  "vocalized": "شَاهِد",
+  "frequencyRank": 448,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-146",
+  "type": "verb",
+  "english": "believe in, have faith in",
+  "arabic": [
+   "اعتقد"
+  ],
+  "translit": [
+   "i'taqada"
+  ],
+  "vocalized": "اِعْتَقَدَ",
+  "frequencyRank": 449,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أعتقد",
+   "he": "هو يعتقد",
+   "she": "هي تعتقد",
+   "we": "نحن نعتقد",
+   "they": "هم يعتقدون"
+  }
+ },
+ {
+  "id": "k-noun-4989",
+  "type": "noun",
+  "english": "staying, remaining, stopping",
+  "arabic": [
+   "إقامة"
+  ],
+  "translit": [
+   "iqaama"
+  ],
+  "vocalized": "إِقَامَة",
+  "frequencyRank": 450,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ }
+]

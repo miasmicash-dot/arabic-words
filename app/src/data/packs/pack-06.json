@@ -1,0 +1,815 @@
+[
+ {
+  "id": "k-noun-6281",
+  "type": "noun",
+  "english": "century",
+  "arabic": [
+   "قرن"
+  ],
+  "translit": [
+   "qarn"
+  ],
+  "vocalized": "قَرْن",
+  "frequencyRank": 251,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-3679",
+  "type": "verb",
+  "english": "try",
+  "arabic": [
+   "حاول"
+  ],
+  "translit": [
+   "haawala"
+  ],
+  "vocalized": "حَاوَلَ",
+  "frequencyRank": 252,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أحاول",
+   "he": "هو يحاول",
+   "she": "هي تحاول",
+   "we": "نحن نحاول",
+   "they": "هم يحاولون"
+  }
+ },
+ {
+  "id": "k-noun-2680",
+  "type": "noun",
+  "english": "death",
+  "arabic": [
+   "موت"
+  ],
+  "translit": [
+   "mawt"
+  ],
+  "vocalized": "مَوْت",
+  "frequencyRank": 253,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-3403",
+  "type": "adj",
+  "english": "outer, external, extraneous",
+  "arabic": [
+   "خارجي"
+  ],
+  "translit": [
+   "khaarijiyy"
+  ],
+  "vocalized": "خَارِجِيّ",
+  "frequencyRank": 254,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-662",
+  "type": "noun",
+  "english": "repeating, reiterating",
+  "arabic": [
+   "إعادة"
+  ],
+  "translit": [
+   "i'aada"
+  ],
+  "vocalized": "إِعَادَة",
+  "frequencyRank": 255,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5769",
+  "type": "noun",
+  "english": "appearance",
+  "arabic": [
+   "هيئة"
+  ],
+  "translit": [
+   "hay'a"
+  ],
+  "vocalized": "هَيْئَة",
+  "frequencyRank": 256,
+  "level": "C1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6243",
+  "type": "noun",
+  "english": "ointment, salve, unguent",
+  "arabic": [
+   "دم"
+  ],
+  "translit": [
+   "damm"
+  ],
+  "vocalized": "دَمّ",
+  "frequencyRank": 257,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3050",
+  "type": "noun",
+  "english": "happening",
+  "arabic": [
+   "حصول"
+  ],
+  "translit": [
+   "husuul"
+  ],
+  "vocalized": "حُصُول",
+  "frequencyRank": 258,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-2699",
+  "type": "adj",
+  "english": "cultural",
+  "arabic": [
+   "ثقافي"
+  ],
+  "translit": [
+   "thaqaafiyy"
+  ],
+  "vocalized": "ثَقَافِيّ",
+  "frequencyRank": 259,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6402",
+  "type": "noun",
+  "english": "half, semi-, hemi-",
+  "arabic": [
+   "نصف"
+  ],
+  "translit": [
+   "nisf"
+  ],
+  "vocalized": "نِصْف",
+  "frequencyRank": 260,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-6482",
+  "type": "verb",
+  "english": "hinder, prevent",
+  "arabic": [
+   "منع"
+  ],
+  "translit": [
+   "mana'a"
+  ],
+  "vocalized": "مَنَعَ",
+  "frequencyRank": 261,
+  "level": "B2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أمنع",
+   "he": "هو يمنع",
+   "she": "هي تمنع",
+   "we": "نحن نمنع",
+   "they": "هم يمنعون"
+  }
+ },
+ {
+  "id": "k-verb-155",
+  "type": "verb",
+  "english": "be suspended, hang from)",
+  "arabic": [
+   "تعلق"
+  ],
+  "translit": [
+   "ta'allaqa"
+  ],
+  "vocalized": "تَعَلَّقَ",
+  "frequencyRank": 262,
+  "level": "B2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أتعلق",
+   "he": "هو يتعلق",
+   "she": "هي تتعلق",
+   "we": "نحن نتعلق",
+   "they": "هم يتعلقون"
+  }
+ },
+ {
+  "id": "k-adj-3486",
+  "type": "adj",
+  "english": "known",
+  "arabic": [
+   "معروف"
+  ],
+  "translit": [
+   "ma'ruuf"
+  ],
+  "vocalized": "مَعْرُوف",
+  "frequencyRank": 263,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-919",
+  "type": "verb",
+  "english": "become",
+  "arabic": [
+   "صار"
+  ],
+  "translit": [
+   "saara"
+  ],
+  "vocalized": "صَارَ",
+  "frequencyRank": 264,
+  "level": "C1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أصير",
+   "he": "هو يصير",
+   "she": "هي تصير",
+   "we": "نحن نصير",
+   "they": "هم يصيرون"
+  }
+ },
+ {
+  "id": "k-verb-4301",
+  "type": "verb",
+  "english": "reject, refuse",
+  "arabic": [
+   "رفض"
+  ],
+  "translit": [
+   "rafada"
+  ],
+  "vocalized": "رَفَضَ",
+  "frequencyRank": 265,
+  "level": "B2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أرفض",
+   "he": "هو يرفض",
+   "she": "هي ترفض",
+   "we": "نحن نرفض",
+   "they": "هم يرفضون"
+  }
+ },
+ {
+  "id": "k-noun-6706",
+  "type": "noun",
+  "english": "production",
+  "arabic": [
+   "إنتاج"
+  ],
+  "translit": [
+   "intaaj"
+  ],
+  "vocalized": "إِنْتَاج",
+  "frequencyRank": 266,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-956",
+  "type": "noun",
+  "english": "writing",
+  "arabic": [
+   "كتابة"
+  ],
+  "translit": [
+   "kitaaba"
+  ],
+  "vocalized": "كِتَابَة",
+  "frequencyRank": 267,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-2285",
+  "type": "adj",
+  "english": "natural",
+  "arabic": [
+   "طبيعي"
+  ],
+  "translit": [
+   "tabii'iyy"
+  ],
+  "vocalized": "طَبِيعِيّ",
+  "frequencyRank": 268,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-14",
+  "type": "noun",
+  "english": "regard, respect",
+  "arabic": [
+   "اعتبار"
+  ],
+  "translit": [
+   "i'tibaar"
+  ],
+  "vocalized": "اِعْتِبَار",
+  "frequencyRank": 269,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4839",
+  "type": "noun",
+  "english": "official, functionary",
+  "arabic": [
+   "مسؤول"
+  ],
+  "translit": [
+   "mas'uul"
+  ],
+  "vocalized": "مَسْؤُول",
+  "frequencyRank": 270,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2160",
+  "type": "noun",
+  "english": "defence/defense",
+  "arabic": [
+   "دفاع"
+  ],
+  "translit": [
+   "difaa'"
+  ],
+  "vocalized": "دِفَاع",
+  "frequencyRank": 271,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2049",
+  "type": "noun",
+  "english": "friend",
+  "arabic": [
+   "صديق"
+  ],
+  "translit": [
+   "sadiiq"
+  ],
+  "vocalized": "صَدِيق",
+  "frequencyRank": 272,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-4547",
+  "type": "verb",
+  "english": "describe, depict",
+  "arabic": [
+   "وصف"
+  ],
+  "translit": [
+   "wasafa"
+  ],
+  "vocalized": "وَصَفَ",
+  "frequencyRank": 273,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أصف",
+   "he": "هو يصف",
+   "she": "هي تصف",
+   "we": "نحن نصف",
+   "they": "هم يصفون"
+  }
+ },
+ {
+  "id": "k-noun-6603",
+  "type": "noun",
+  "english": "gathering place, meeting location, forum",
+  "arabic": [
+   "منتدى"
+  ],
+  "translit": [
+   "muntadan"
+  ],
+  "vocalized": "مُنْتَدًى",
+  "frequencyRank": 274,
+  "level": "C1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4991",
+  "type": "noun",
+  "english": "necessity, compulsion, want",
+  "arabic": [
+   "ضرورة"
+  ],
+  "translit": [
+   "daruura"
+  ],
+  "vocalized": "ضَرُورَة",
+  "frequencyRank": 275,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-1772",
+  "type": "noun",
+  "english": "way, path, road",
+  "arabic": [
+   "سبيل"
+  ],
+  "translit": [
+   "sabiil"
+  ],
+  "vocalized": "سَبِيل",
+  "frequencyRank": 276,
+  "level": "C1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-717",
+  "type": "noun",
+  "english": "sale, exchange",
+  "arabic": [
+   "بيع"
+  ],
+  "translit": [
+   "bay'"
+  ],
+  "vocalized": "بَيْع",
+  "frequencyRank": 277,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-279",
+  "type": "noun",
+  "english": "preservation",
+  "arabic": [
+   "محافظة"
+  ],
+  "translit": [
+   "muhaafaza"
+  ],
+  "vocalized": "مُحَافَظَة",
+  "frequencyRank": 278,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-2188",
+  "type": "verb",
+  "english": "ask, inquire",
+  "arabic": [
+   "سأل"
+  ],
+  "translit": [
+   "sa'ala"
+  ],
+  "vocalized": "سَأَلَ",
+  "frequencyRank": 279,
+  "level": "A2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أسأل",
+   "he": "هو يسأل",
+   "she": "هي تسأل",
+   "we": "نحن نسأل",
+   "they": "هم يسألون"
+  }
+ },
+ {
+  "id": "k-noun-3344",
+  "type": "noun",
+  "english": "procedure, work, deed",
+  "arabic": [
+   "إجراء"
+  ],
+  "translit": [
+   "ijraa'"
+  ],
+  "vocalized": "إِجْرَاء",
+  "frequencyRank": 280,
+  "level": "C1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6260",
+  "type": "noun",
+  "english": "introduction",
+  "arabic": [
+   "تقديم"
+  ],
+  "translit": [
+   "taqdiim"
+  ],
+  "vocalized": "تَقْدِيم",
+  "frequencyRank": 281,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6098",
+  "type": "noun",
+  "english": "union",
+  "arabic": [
+   "اتصال"
+  ],
+  "translit": [
+   "ittisaal"
+  ],
+  "vocalized": "اِتِّصَال",
+  "frequencyRank": 282,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5777",
+  "type": "noun",
+  "english": "oil, petroleum, naphtha",
+  "arabic": [
+   "نفط"
+  ],
+  "translit": [
+   "nift"
+  ],
+  "vocalized": "نِفْط",
+  "frequencyRank": 283,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-554",
+  "type": "noun",
+  "english": "morning",
+  "arabic": [
+   "صباح"
+  ],
+  "translit": [
+   "sabaah"
+  ],
+  "vocalized": "صَبَاح",
+  "frequencyRank": 284,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-4644",
+  "type": "verb",
+  "english": "add, append",
+  "arabic": [
+   "أضاف"
+  ],
+  "translit": [
+   "adaafa"
+  ],
+  "vocalized": "أَضَافَ",
+  "frequencyRank": 285,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أضيف",
+   "he": "هو يضيف",
+   "she": "هي تضيف",
+   "we": "نحن نضيف",
+   "they": "هم يضيفون"
+  }
+ },
+ {
+  "id": "k-noun-6644",
+  "type": "noun",
+  "english": "poet",
+  "arabic": [
+   "شاعر"
+  ],
+  "translit": [
+   "shaa'ir"
+  ],
+  "vocalized": "شَاعِر",
+  "frequencyRank": 286,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6204",
+  "type": "noun",
+  "english": "court",
+  "arabic": [
+   "محكمة"
+  ],
+  "translit": [
+   "mahkama"
+  ],
+  "vocalized": "مَحْكَمَة",
+  "frequencyRank": 287,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-910",
+  "type": "noun",
+  "english": "Jew",
+  "arabic": [
+   "يهودي"
+  ],
+  "translit": [
+   "yahuudiyy"
+  ],
+  "vocalized": "يَهُودِيّ",
+  "frequencyRank": 288,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3544",
+  "type": "noun",
+  "english": "extension, extending",
+  "arabic": [
+   "مدى"
+  ],
+  "translit": [
+   "madan"
+  ],
+  "vocalized": "مَدًى",
+  "frequencyRank": 289,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2287",
+  "type": "noun",
+  "english": "attempt, trial",
+  "arabic": [
+   "محاولة"
+  ],
+  "translit": [
+   "muhaawala"
+  ],
+  "vocalized": "مُحَاوَلَة",
+  "frequencyRank": 290,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6421",
+  "type": "noun",
+  "english": "instance noun of عَادَ",
+  "arabic": [
+   "عودة"
+  ],
+  "translit": [
+   "'awda"
+  ],
+  "vocalized": "عَوْدَة",
+  "frequencyRank": 291,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-2176",
+  "type": "verb",
+  "english": "tell, narrate",
+  "arabic": [
+   "روى"
+  ],
+  "translit": [
+   "rawaa"
+  ],
+  "vocalized": "رَوَى",
+  "frequencyRank": 292,
+  "level": "C2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أروي",
+   "he": "هو يروي",
+   "she": "هي تروي",
+   "we": "نحن نروي",
+   "they": "هم يروون"
+  }
+ },
+ {
+  "id": "k-noun-5091",
+  "type": "noun",
+  "english": "this mortal life, life in this world",
+  "arabic": [
+   "دنيا"
+  ],
+  "translit": [
+   "dunyaa"
+  ],
+  "vocalized": "دُنْيَا",
+  "frequencyRank": 293,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-4524",
+  "type": "adj",
+  "english": "violent, strong, intense",
+  "arabic": [
+   "شديد"
+  ],
+  "translit": [
+   "shadiid"
+  ],
+  "vocalized": "شَدِيد",
+  "frequencyRank": 294,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6170",
+  "type": "noun",
+  "english": "security, safety, peace",
+  "arabic": [
+   "أمان"
+  ],
+  "translit": [
+   "amaan"
+  ],
+  "vocalized": "أَمَان",
+  "frequencyRank": 295,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-5801",
+  "type": "adj",
+  "english": "abstract, absolute",
+  "arabic": [
+   "مجرد"
+  ],
+  "translit": [
+   "mujarrad"
+  ],
+  "vocalized": "مُجَرَّد",
+  "frequencyRank": 296,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3073",
+  "type": "noun",
+  "english": "definition",
+  "arabic": [
+   "تحديد"
+  ],
+  "translit": [
+   "tahdiid"
+  ],
+  "vocalized": "تَحْدِيد",
+  "frequencyRank": 297,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-987",
+  "type": "adj",
+  "english": "local, regional, native",
+  "arabic": [
+   "محلي"
+  ],
+  "translit": [
+   "mahalliyy"
+  ],
+  "vocalized": "مَحَلِّيّ",
+  "frequencyRank": 298,
+  "level": "C1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4735",
+  "type": "noun",
+  "english": "understanding, reason, wisdom",
+  "arabic": [
+   "عقل"
+  ],
+  "translit": [
+   "'aql"
+  ],
+  "vocalized": "عَقْل",
+  "frequencyRank": 299,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-1047",
+  "type": "noun",
+  "english": "evil",
+  "arabic": [
+   "شر"
+  ],
+  "translit": [
+   "sharr"
+  ],
+  "vocalized": "شَرّ",
+  "frequencyRank": 300,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ }
+]

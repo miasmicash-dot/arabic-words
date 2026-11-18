@@ -3,8 +3,32 @@
 import { useEffect } from 'react'
 import type { Weather } from './types'
 
-type Layer = 'birds' | 'wind' | 'crickets' | 'stream'
-const LAYERS: Layer[] = ['birds', 'wind', 'crickets', 'stream']
+type Layer = 'birds' | 'wind' | 'rain' | 'stream'
+const LAYERS: Layer[] = ['birds', 'wind', 'rain', 'stream']
+type Sky = 'clear' | 'cloudy' | 'rain' | 'snow' | 'windy'
+
+/** Soft rain made on the device (filtered noise with random drops), so no recording is needed. */
+function makeRain(ctx: BaseAudioContext): AudioBuffer {
+  const len = ctx.sampleRate * 6
+  const b = ctx.createBuffer(2, len, ctx.sampleRate)
+  for (let ch = 0; ch < 2; ch++) {
+    const d = b.getChannelData(ch)
+    let lp = 0
+    for (let i = 0; i < len; i++) {
+      lp += (Math.random() * 2 - 1 - lp) * 0.18 // gentle low-pass hiss
+      let v = lp * 0.5
+      if (Math.random() < 0.0009) v += (Math.random() * 2 - 1) * 0.6 // a nearby drop
+      d[i] = v
+    }
+    // fade the loop seam
+    for (let i = 0; i < 2000; i++) {
+      const k = i / 2000
+      d[i] *= k
+      d[len - 1 - i] *= k
+    }
+  }
+  return b
+}
 const ONE_SHOTS = ['owl'] as const
 
 const url = (name: string) => `${import.meta.env.BASE_URL}audio/${name}.mp3`
@@ -15,7 +39,7 @@ class Engine {
   gains = new Map<string, GainNode>()
   buffers = new Map<string, AudioBuffer>()
   started = new Set<string>()
-  target: Record<Layer, number> = { birds: 0, wind: 0, crickets: 0, stream: 0 }
+  target: Record<Layer, number> = { birds: 0, wind: 0, rain: 0, stream: 0 }
   muted = true
   visible = true
   wantOwl = false
@@ -49,6 +73,10 @@ class Engine {
     const ctx = this.ctx
     this.loading = Promise.all(
       [...LAYERS, ...ONE_SHOTS].map(async (name) => {
+        if (name === 'rain') {
+          this.buffers.set(name, makeRain(ctx))
+          return
+        }
         try {
           const res = await fetch(url(name))
           if (!res.ok) return
@@ -136,17 +164,17 @@ class Engine {
 const engine = new Engine()
 if (import.meta.env.DEV) (window as unknown as { __gardenAudio: Engine }).__gardenAudio = engine
 
-function mixFor(weather: Weather, night: number): Record<Layer, number> {
+function mixFor(weather: Weather, sky: Sky, night: number): Record<Layer, number> {
   const day = 1 - night
   return {
-    birds: weather === 'sunny' ? 0.55 * day : weather === 'partly-cloudy' ? 0.1 * day : 0,
-    wind: { sunny: 0.1, 'partly-cloudy': 0.18, overcast: 0.42, drought: 0.12 }[weather] * (1 - night * 0.3),
-    crickets: weather === 'drought' ? 0 : (weather === 'overcast' ? 0.12 : 0.4) * Math.max(0, night * 1.4 - 0.4),
+    birds: sky === 'rain' || sky === 'snow' ? 0 : weather === 'sunny' ? 0.55 * day : 0.2 * day,
+    wind: { clear: 0.08, cloudy: 0.14, rain: 0.2, snow: 0.16, windy: 0.6 }[sky] * (1 - night * 0.3),
+    rain: sky === 'rain' ? 0.5 : 0,
     stream: weather === 'drought' ? 0 : 0.12,
   }
 }
 
-export function useGardenAudio({ muted, weather, night, visible }: { muted: boolean; weather: Weather; night: number; visible: boolean }) {
+export function useGardenAudio({ muted, weather, sky = 'clear', night, visible }: { muted: boolean; weather: Weather; sky?: Sky; night: number; visible: boolean }) {
   useEffect(() => {
     engine.users++
     const unlock = () => {
@@ -173,11 +201,11 @@ export function useGardenAudio({ muted, weather, night, visible }: { muted: bool
   useEffect(() => {
     engine.muted = muted
     engine.visible = visible
-    engine.target = mixFor(weather, night)
-    engine.wantOwl = night > 0.6 && (weather === 'sunny' || weather === 'partly-cloudy')
+    engine.target = mixFor(weather, sky, night)
+    engine.wantOwl = night > 0.6 && sky !== 'rain' && sky !== 'snow'
     engine.scheduleOwl()
     engine.apply()
-  }, [muted, weather, Math.round(night * 20), visible]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [muted, weather, sky, Math.round(night * 20), visible]) // eslint-disable-line react-hooks/exhaustive-deps
 }
 
 /** Play one owl hoot now (when the owl is tapped), if sound is on. */

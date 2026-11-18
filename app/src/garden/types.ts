@@ -24,7 +24,10 @@ export interface GardenSceneProps {
   health: number
   /** true when the plant has died: draw a stump / bare dead trunk, no leaves */
   dead: boolean
+  /** how well she has been studying lately (from activity): only 'drought' changes the look (dry ground) */
   weather: Weather
+  /** the real sky where she is (looks only). Defaults to clear. */
+  sky?: 'clear' | 'cloudy' | 'rain' | 'snow' | 'windy'
   /** Local decimal hour 0..24 from the phone clock, e.g. 18.5 = 18:30. Drives sun, moon, stars, dusk. */
   timeOfDay: number
   /** Neighbour trees for stage 11 and for finished past goals. */

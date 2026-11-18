@@ -10,6 +10,9 @@ import { celestial, Front, H, Land, LINES, moonPhase, Paper, PLANT_BASE, Sky, W,
 import { GroundTuft, Plant } from './Plant'
 import SkyShader, { webglAvailable, type SkyUniforms } from './SkyShader'
 import Pond from './Pond'
+import Precip from './Precip'
+import { Clover, Critters, EggEffects, FarLife, type EggFx } from './Critters'
+import { celebrate } from '../../confetti'
 import { Burrow, Nest, NutSprouts, Snail, SquirrelAct } from './Eggs'
 import { ageDays, auroraNight, loadEggs, saveEggs, type EggMemory } from './eggMemory'
 import {
@@ -83,8 +86,12 @@ function neighbour(t: ForestTree) {
   return { stage, x, y, scale, seed: hashNum(t.id) % 1000 }
 }
 
-export default function GardenScene({ stage, health, dead, weather, timeOfDay, trees, muted, waterPulse, onTap, dev }: GardenSceneProps) {
+export default function GardenScene({ stage, health, dead, weather: condition, sky = 'clear', timeOfDay, trees, muted, waterPulse, onTap, dev }: GardenSceneProps) {
   const hour = Math.round(timeOfDay * 20) / 20
+  // What the sky looks like comes from the real weather; health (studying) alone decides how alive the garden is.
+  // A long break from studying still dries the ground out, unless it is actually raining or snowing.
+  const wet = sky === 'rain' || sky === 'snow'
+  const weather = condition === 'drought' && !wet ? 'drought' : sky === 'clear' ? 'sunny' : wet ? 'overcast' : 'partly-cloudy'
   // how alive the garden is: a neglected garden turns grey, gathers clouds and the animals stay away
   const vital = dead ? 0 : Math.max(0, Math.min(1, health))
   const gloom = Math.round(Math.max(0, Math.min(1, (0.92 - vital) / 0.92)) * 20) / 20
@@ -99,9 +106,9 @@ export default function GardenScene({ stage, health, dead, weather, timeOfDay, t
   const sunnyDay = weather === 'sunny' && day
   const nightLife = night > 0.6 && clear && vital > 0.3
   const { sun, moon } = celestial(hour)
-  /** 0..1: how much wildlife is about right now (health, capped by the weather; none at night) */
-  const life = day ? Math.min(vital, { sunny: 1, 'partly-cloudy': 0.72, overcast: 0.25, drought: 0.1 }[weather]) : 0
-  useGardenAudio({ muted, weather, night, visible })
+  /** 0..1: how much wildlife is about right now (health alone; none at night) */
+  const life = day ? vital : 0
+  useGardenAudio({ muted, weather, sky, night, visible })
 
   // ---------- day-to-day stories ----------
   const today = dev?.today ?? localKey(new Date())
@@ -175,6 +182,46 @@ export default function GardenScene({ stage, health, dead, weather, timeOfDay, t
   }, [dev?.far])
   const [monkeyFlip, setMonkeyFlip] = useState(0)
 
+  // ---------- hidden secrets ----------
+  // tap Nova for hearts; tap the farmer's hat three times for a shower of hay; tap the plant seven times quickly for a
+  // rainbow; find the four-leaf clover in the long grass. A rainbow also appears when real rain clears in the day.
+  const [eggFx, setEggFx] = useState<EggFx | null>(null)
+  const taps = useRef<Record<string, number[]>>({})
+  const [clover, setClover] = useState(() => {
+    try { return localStorage.getItem('garden-clover') === '1' } catch { return false }
+  })
+  const onEgg = (name: string) => {
+    const t = Date.now()
+    const list = (taps.current[name] = [...(taps.current[name] ?? []).filter((x) => t - x < 4000), t])
+    if (name === 'nova') setEggFx({ kind: 'hearts', id: t })
+    if (name === 'hat' && list.length >= 3) {
+      taps.current.hat = []
+      setEggFx({ kind: 'hay', id: t })
+    }
+    if (name === 'plant' && list.length >= 7) {
+      taps.current.plant = []
+      setEggFx({ kind: 'rainbow', id: t })
+    }
+    if (name === 'clover') {
+      setEggFx({ kind: 'clover', id: t })
+      celebrate('big')
+      if (!clover) {
+        setClover(true)
+        try { localStorage.setItem('garden-clover', '1') } catch { /* ignore */ }
+      }
+    }
+  }
+  const lastSky = useRef(sky)
+  useEffect(() => {
+    if (lastSky.current === 'rain' && (sky === 'clear' || sky === 'cloudy') && day) setEggFx({ kind: 'rainbow', id: Date.now() })
+    lastSky.current = sky
+  }, [sky, day])
+  useEffect(() => {
+    if (!eggFx) return
+    const t = setTimeout(() => setEggFx(null), eggFx.kind === 'rainbow' ? 10500 : 2600)
+    return () => clearTimeout(t)
+  }, [eggFx])
+
   // ---------- watering ----------
   const [watering, setWatering] = useState(0)
   useEffect(() => {
@@ -240,7 +287,7 @@ export default function GardenScene({ stage, health, dead, weather, timeOfDay, t
   // ---------- layout numbers ----------
   const isTree = stage >= 9
   const plantHeight = [0, 30, 50, 100, 140, 160, 200, 230, 260, 320, 400, 400][stage] * PLANT_SCALE[stage]
-  const windy = weather === 'overcast' || weather === 'drought'
+  const windy = sky === 'windy' || sky === 'rain' || weather === 'drought'
   const swirlCount = { sunny: 2, 'partly-cloudy': 3, overcast: 6, drought: 3 }[weather] - (night > 0.5 ? 1 : 0)
   // a young tree in blossom sheds pink petals on the breeze instead of leaves
   const petals = stage === 9 && health > 0.75 && !dead
@@ -269,7 +316,7 @@ export default function GardenScene({ stage, health, dead, weather, timeOfDay, t
 
   return (
     <SceneId.Provider value={sid}>
-      <div ref={box} className={`gs${visible ? '' : ' gs-paused'}`} onClick={onTap} role="img" aria-label={`Your garden: stage ${stage} of 11, ${weather.replace('-', ' ')}`}
+      <div ref={box} className={`gs${visible ? '' : ' gs-paused'}`} onClick={onTap} role="img" aria-label={`Your garden: stage ${stage} of 11, ${sky}`}
         data-gloom={gloom}>
         <style>{PATH_CSS}</style>
         {shader && <SkyShader uniforms={uniforms} occlusion={occlusion} running={visible && !reduced} onFail={() => setGpu(false)} />}
@@ -290,6 +337,7 @@ export default function GardenScene({ stage, health, dead, weather, timeOfDay, t
           <g className="gs-camg" style={cam}>
             {mistOpacity > 0.02 && <Mist color={mix(pal.sky.bottom, '#ffffff', 0.5)} opacity={Math.min(0.8, mistOpacity)} />}
             <Grove pal={pal} monkeys={life >= 0.8 && !reduced} flip={monkeyFlip} onTap={() => setMonkeyFlip(Date.now())} />
+            <FarLife pal={pal} life={vital} night={night} reduced={reduced} />
             {far && <Troupe key={far.id} event={far.event} reverse={far.reverse} pal={pal} onDone={() => setFar(null)} />}
             {walker && FAR_KINDS.includes(walker.kind) && <Walker key={walker.id} kind={walker.kind} reverse={walker.reverse} pal={pal} onDone={() => setWalker(null)} />}
             {behind.map(renderNb)}
@@ -300,7 +348,7 @@ export default function GardenScene({ stage, health, dead, weather, timeOfDay, t
             {burrowAge >= 0 && <Burrow pal={pal} age={burrowAge} peeking={life > 0.5 && !reduced} sid={(n) => `${sid}-${n}`} />}
             <g transform={`translate(${PLANT_BASE[0]},${PLANT_BASE[1]})`}>
               <g className="gs-t" style={{ transform: `scale(${PLANT_SCALE[stage]})` }}>
-                <g key={watering || 'still'} className={watering ? 'gs-bounce' : undefined}>
+                <g key={watering || 'still'} className={watering ? 'gs-bounce gs-tap' : 'gs-tap'} onClick={() => onEgg('plant')}>
                   <Plant stage={stage} health={health} dead={dead} pal={pal} seed={7} uid={`${sid}main`} windy={windy} />
                 </g>
                 {isTree && !dead && health > 0.3 && nestAge >= 0 && (
@@ -353,6 +401,8 @@ export default function GardenScene({ stage, health, dead, weather, timeOfDay, t
               />
             )}
             {nightLife && !reduced && vital > 0.5 && <Fireflies />}
+            <Critters pal={pal} life={vital} night={night} stage={stage} dead={dead} reduced={reduced} onEgg={onEgg} />
+            {!reduced && <EggEffects fx={eggFx} />}
             {weather === 'drought' && !reduced && <Dust />}
             {!reduced && <Swirls count={Math.max(0, swirlCount)} ink={pal.c.ink} />}
           </g>
@@ -361,8 +411,13 @@ export default function GardenScene({ stage, health, dead, weather, timeOfDay, t
         <svg viewBox={VB} preserveAspectRatio="xMidYMid slice" className="gs-layer">
           <g className="gs-camg" style={cam}>
             <Front pal={pal} />
+            {vital > 0.3 && <Clover found={clover} onTap={() => onEgg('clover')} />}
           </g>
         </svg>
+        {/* real weather: rain, snow, wind */}
+        {(wet || sky === 'windy') && !reduced && (
+          <Precip rain={sky === 'rain' ? 1 : 0} snow={sky === 'snow' ? 1 : 0} wind={sky === 'windy' ? 1 : sky === 'rain' ? 0.3 : 0} night={night} running={visible} />
+        )}
         {/* watercolour paper texture and night vignette */}
         <svg viewBox={VB} preserveAspectRatio="xMidYMid slice" className="gs-layer gs-paper" aria-hidden>
           <Paper />

@@ -55,12 +55,16 @@ function Chips<T extends string | number>({ items, value, onPick, label }: { ite
   )
 }
 
+type Sky = 'clear' | 'cloudy' | 'rain' | 'snow' | 'windy'
+const SKIES: Sky[] = ['clear', 'cloudy', 'rain', 'snow', 'windy']
+
 export default function GardenPreview() {
   const q = new URLSearchParams(location.hash.split('?')[1] ?? '')
   const [stage, setStage] = useState<GrowthStage>((Number(q.get('stage')) || 10) as GrowthStage)
   const [health, setHealth] = useState(Number(q.get('health') ?? 1))
   const [dead, setDead] = useState(q.get('dead') === '1')
   const [weather, setWeather] = useState<Weather>((q.get('weather') as Weather) || 'sunny')
+  const [sky, setSky] = useState<Sky>((q.get('sky') as Sky) || 'clear')
   const [time, setTime] = useState(Number(q.get('time') ?? new Date().getHours() + new Date().getMinutes() / 60))
   const [speed, setSpeed] = useState(0)
   const [muted, setMuted] = useState(true)
@@ -150,6 +154,7 @@ export default function GardenPreview() {
         health={health}
         dead={dead}
         weather={weather}
+        sky={sky}
         timeOfDay={time}
         trees={stage === 11 && !forest ? demoForest : trees}
         muted={muted}
@@ -200,6 +205,8 @@ export default function GardenPreview() {
 
       <Section title="Weather">
         <Chips items={WEATHERS} value={weather} onPick={setWeather} />
+        <div className="text-xs muted">Real sky (looks only)</div>
+        <Chips items={SKIES} value={sky} onPick={setSky} />
       </Section>
 
       <Section title={`Time of day · ${fmt(time)}`}>

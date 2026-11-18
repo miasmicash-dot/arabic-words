@@ -1,0 +1,801 @@
+[
+ {
+  "id": "k-noun-4374",
+  "type": "noun",
+  "english": "family, household, people",
+  "arabic": [
+   "أهل"
+  ],
+  "translit": [
+   "ahl"
+  ],
+  "vocalized": "أَهْل",
+  "frequencyRank": 51,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4016",
+  "type": "noun",
+  "english": "tribe, race",
+  "arabic": [
+   "شعب"
+  ],
+  "translit": [
+   "sha'b"
+  ],
+  "vocalized": "شَعْب",
+  "frequencyRank": 52,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4597",
+  "type": "noun",
+  "english": "person, individual",
+  "arabic": [
+   "شخص"
+  ],
+  "translit": [
+   "shakhs"
+  ],
+  "vocalized": "شَخْص",
+  "frequencyRank": 53,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-4398",
+  "type": "verb",
+  "english": "be familiar with, know",
+  "arabic": [
+   "عرف"
+  ],
+  "translit": [
+   "'arafa"
+  ],
+  "vocalized": "عَرَفَ",
+  "frequencyRank": 54,
+  "level": "A1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أعرف",
+   "he": "هو يعرف",
+   "she": "هي تعرف",
+   "we": "نحن نعرف",
+   "they": "هم يعرفون"
+  }
+ },
+ {
+  "id": "k-adj-4210",
+  "type": "adj",
+  "english": "special",
+  "arabic": [
+   "خاص"
+  ],
+  "translit": [
+   "khaass"
+  ],
+  "vocalized": "خَاصّ",
+  "frequencyRank": 55,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-adj-1547",
+  "type": "adj",
+  "english": "international",
+  "arabic": [
+   "دولي"
+  ],
+  "translit": [
+   "duwaliyy"
+  ],
+  "vocalized": "دُوَلِيّ",
+  "frequencyRank": 56,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6210",
+  "type": "noun",
+  "english": "minister, cabinet minister",
+  "arabic": [
+   "وزير"
+  ],
+  "translit": [
+   "waziir"
+  ],
+  "vocalized": "وَزِير",
+  "frequencyRank": 57,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2054",
+  "type": "noun",
+  "english": "canon",
+  "arabic": [
+   "قانون"
+  ],
+  "translit": [
+   "qaanuun"
+  ],
+  "vocalized": "قَانُون",
+  "frequencyRank": 58,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4798",
+  "type": "noun",
+  "english": "scheme, project",
+  "arabic": [
+   "مشروع"
+  ],
+  "translit": [
+   "mashruu'"
+  ],
+  "vocalized": "مَشْرُوع",
+  "frequencyRank": 59,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2731",
+  "type": "noun",
+  "english": "search, quest",
+  "arabic": [
+   "بحث"
+  ],
+  "translit": [
+   "bahth"
+  ],
+  "vocalized": "بَحْث",
+  "frequencyRank": 60,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-428",
+  "type": "noun",
+  "english": "writer, author",
+  "arabic": [
+   "كاتب"
+  ],
+  "translit": [
+   "kaatib"
+  ],
+  "vocalized": "كَاتِب",
+  "frequencyRank": 61,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-930",
+  "type": "noun",
+  "english": "place of assembly",
+  "arabic": [
+   "مجتمع"
+  ],
+  "translit": [
+   "mujtama'"
+  ],
+  "vocalized": "مُجْتَمَع",
+  "frequencyRank": 62,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3433",
+  "type": "noun",
+  "english": "question",
+  "arabic": [
+   "سؤال"
+  ],
+  "translit": [
+   "su'aal"
+  ],
+  "vocalized": "سُؤَال",
+  "frequencyRank": 63,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4131",
+  "type": "noun",
+  "english": "conjunction",
+  "arabic": [
+   "قران"
+  ],
+  "translit": [
+   "qiraan"
+  ],
+  "vocalized": "قِرَان",
+  "frequencyRank": 64,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-167",
+  "type": "noun",
+  "english": "place, location, position",
+  "arabic": [
+   "مكان"
+  ],
+  "translit": [
+   "makaan"
+  ],
+  "vocalized": "مَكَان",
+  "frequencyRank": 65,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2086",
+  "type": "noun",
+  "english": "case, lawsuit",
+  "arabic": [
+   "قضية"
+  ],
+  "translit": [
+   "qadiyya"
+  ],
+  "vocalized": "قَضِيَّة",
+  "frequencyRank": 66,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-6538",
+  "type": "verb",
+  "english": "come",
+  "arabic": [
+   "جاء"
+  ],
+  "translit": [
+   "jaa'a"
+  ],
+  "vocalized": "جَاءَ",
+  "frequencyRank": 67,
+  "level": "A2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أجيء",
+   "he": "هو يجيء",
+   "she": "هي تجيء",
+   "we": "نحن نجيء",
+   "they": "هم يجيئون"
+  }
+ },
+ {
+  "id": "k-noun-5882",
+  "type": "noun",
+  "english": "forcefulness, dislike",
+  "arabic": [
+   "رغم"
+  ],
+  "translit": [
+   "raghm"
+  ],
+  "vocalized": "رَغْم",
+  "frequencyRank": 68,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4574",
+  "type": "noun",
+  "english": "heart",
+  "arabic": [
+   "قلب"
+  ],
+  "translit": [
+   "qalb"
+  ],
+  "vocalized": "قَلْب",
+  "frequencyRank": 69,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-6092",
+  "type": "verb",
+  "english": "put, place",
+  "arabic": [
+   "جعل"
+  ],
+  "translit": [
+   "ja'ala"
+  ],
+  "vocalized": "جَعَلَ",
+  "frequencyRank": 70,
+  "level": "B1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أجعل",
+   "he": "هو يجعل",
+   "she": "هي تجعل",
+   "we": "نحن نجعل",
+   "they": "هم يجعلون"
+  }
+ },
+ {
+  "id": "k-noun-6575",
+  "type": "noun",
+  "english": "speech, utterance, statement",
+  "arabic": [
+   "كلمة"
+  ],
+  "translit": [
+   "kalima"
+  ],
+  "vocalized": "كَلِمَة",
+  "frequencyRank": 71,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2364",
+  "type": "noun",
+  "english": "search, quest, pursuit",
+  "arabic": [
+   "طلب"
+  ],
+  "translit": [
+   "talab"
+  ],
+  "vocalized": "طَلَب",
+  "frequencyRank": 72,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-716",
+  "type": "noun",
+  "english": "union, connection",
+  "arabic": [
+   "وصل"
+  ],
+  "translit": [
+   "wasl"
+  ],
+  "vocalized": "وَصْل",
+  "frequencyRank": 73,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5249",
+  "type": "noun",
+  "english": "relationship, kinship",
+  "arabic": [
+   "علاقة"
+  ],
+  "translit": [
+   "'alaaqa"
+  ],
+  "vocalized": "عَلَاقَة",
+  "frequencyRank": 74,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3175",
+  "type": "noun",
+  "english": "comment, commentary, notation",
+  "arabic": [
+   "تعليق"
+  ],
+  "translit": [
+   "ta'liiq"
+  ],
+  "vocalized": "تَعْلِيق",
+  "frequencyRank": 75,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-44",
+  "type": "noun",
+  "english": "problem, difficulty",
+  "arabic": [
+   "مشكلة"
+  ],
+  "translit": [
+   "mushkila"
+  ],
+  "vocalized": "مُشْكِلَة",
+  "frequencyRank": 76,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2441",
+  "type": "noun",
+  "english": "political party",
+  "arabic": [
+   "حزب"
+  ],
+  "translit": [
+   "hizb"
+  ],
+  "vocalized": "حِزْب",
+  "frequencyRank": 77,
+  "level": "C1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-5204",
+  "type": "verb",
+  "english": "gather, assemble",
+  "arabic": [
+   "جمع"
+  ],
+  "translit": [
+   "jama'a"
+  ],
+  "vocalized": "جَمَعَ",
+  "frequencyRank": 78,
+  "level": "A1",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أجمع",
+   "he": "هو يجمع",
+   "she": "هي تجمع",
+   "we": "نحن نجمع",
+   "they": "هم يجمعون"
+  }
+ },
+ {
+  "id": "k-noun-845",
+  "type": "noun",
+  "english": "associate, companion, comrade",
+  "arabic": [
+   "صاحب"
+  ],
+  "translit": [
+   "saahib"
+  ],
+  "vocalized": "صَاحِب",
+  "frequencyRank": 79,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-262",
+  "type": "noun",
+  "english": "child",
+  "arabic": [
+   "طفل"
+  ],
+  "translit": [
+   "tifl"
+  ],
+  "vocalized": "طِفْل",
+  "frequencyRank": 80,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2843",
+  "type": "noun",
+  "english": "existence",
+  "arabic": [
+   "وجود"
+  ],
+  "translit": [
+   "wujuud"
+  ],
+  "vocalized": "وُجُود",
+  "frequencyRank": 81,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4449",
+  "type": "noun",
+  "english": "town, city",
+  "arabic": [
+   "مدينة"
+  ],
+  "translit": [
+   "madiina"
+  ],
+  "vocalized": "مَدِينَة",
+  "frequencyRank": 82,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6108",
+  "type": "noun",
+  "english": "talking, speaking",
+  "arabic": [
+   "كلام"
+  ],
+  "translit": [
+   "kalaam"
+  ],
+  "vocalized": "كَلَام",
+  "frequencyRank": 83,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3043",
+  "type": "noun",
+  "english": "type, variety",
+  "arabic": [
+   "نوع"
+  ],
+  "translit": [
+   "naw'"
+  ],
+  "vocalized": "نَوْع",
+  "frequencyRank": 84,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-269",
+  "type": "verb",
+  "english": "rebuff",
+  "arabic": [
+   "دع"
+  ],
+  "translit": [
+   "da''a"
+  ],
+  "vocalized": "دَعَّ",
+  "frequencyRank": 85,
+  "level": "B2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أدع",
+   "he": "هو يدع",
+   "she": "هي تدع",
+   "we": "نحن ندع",
+   "they": "هم يدعون"
+  }
+ },
+ {
+  "id": "k-verb-4332",
+  "type": "verb",
+  "english": "take",
+  "arabic": [
+   "أخذ"
+  ],
+  "translit": [
+   "akhadha"
+  ],
+  "vocalized": "أَخَذَ",
+  "frequencyRank": 86,
+  "level": "A2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا آخذ",
+   "he": "هو يأخذ",
+   "she": "هي تأخذ",
+   "we": "نحن نأخذ",
+   "they": "هم يأخذون"
+  }
+ },
+ {
+  "id": "k-noun-2092",
+  "type": "noun",
+  "english": "decision",
+  "arabic": [
+   "قرار"
+  ],
+  "translit": [
+   "qaraar"
+  ],
+  "vocalized": "قَرَار",
+  "frequencyRank": 87,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3232",
+  "type": "noun",
+  "english": "result",
+  "arabic": [
+   "نتيجة"
+  ],
+  "translit": [
+   "natiija"
+  ],
+  "vocalized": "نَتِيجَة",
+  "frequencyRank": 88,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4959",
+  "type": "noun",
+  "english": "one of a pair",
+  "arabic": [
+   "زوج"
+  ],
+  "translit": [
+   "zawj"
+  ],
+  "vocalized": "زَوْج",
+  "frequencyRank": 89,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4609",
+  "type": "noun",
+  "english": "thought, reflection",
+  "arabic": [
+   "فكرة"
+  ],
+  "translit": [
+   "fikra"
+  ],
+  "vocalized": "فِكْرَة",
+  "frequencyRank": 90,
+  "level": "A2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-5103",
+  "type": "noun",
+  "english": "study, research, examination",
+  "arabic": [
+   "دراسة"
+  ],
+  "translit": [
+   "diraasa"
+  ],
+  "vocalized": "دِرَاسَة",
+  "frequencyRank": 91,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2302",
+  "type": "noun",
+  "english": "truth, reality",
+  "arabic": [
+   "حقيقة"
+  ],
+  "translit": [
+   "haqiiqa"
+  ],
+  "vocalized": "حَقِيقَة",
+  "frequencyRank": 92,
+  "level": "B1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3931",
+  "type": "noun",
+  "english": "goodness, good",
+  "arabic": [
+   "خير"
+  ],
+  "translit": [
+   "khayr"
+  ],
+  "vocalized": "خَيْر",
+  "frequencyRank": 93,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-3177",
+  "type": "noun",
+  "english": "collection, compilation, anthology",
+  "arabic": [
+   "مجموعة"
+  ],
+  "translit": [
+   "majmuu'a"
+  ],
+  "vocalized": "مَجْمُوعَة",
+  "frequencyRank": 94,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-4314",
+  "type": "noun",
+  "english": "thing, matter, affair",
+  "arabic": [
+   "شأن"
+  ],
+  "translit": [
+   "sha'n"
+  ],
+  "vocalized": "شَأْن",
+  "frequencyRank": 95,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-verb-3865",
+  "type": "verb",
+  "english": "be able to, be capable of",
+  "arabic": [
+   "استطاع"
+  ],
+  "translit": [
+   "istataa'a"
+  ],
+  "vocalized": "اِسْتَطَاعَ",
+  "frequencyRank": 96,
+  "level": "A2",
+  "source": "Kelly + Wiktionary",
+  "conjugations": {
+   "I": "أنا أستطيع",
+   "he": "هو يستطيع",
+   "she": "هي تستطيع",
+   "we": "نحن نستطيع",
+   "they": "هم يستطيعون"
+  }
+ },
+ {
+  "id": "k-noun-1892",
+  "type": "noun",
+  "english": "safety, security",
+  "arabic": [
+   "أمن"
+  ],
+  "translit": [
+   "amn"
+  ],
+  "vocalized": "أَمْن",
+  "frequencyRank": 97,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-648",
+  "type": "noun",
+  "english": "target, object, aim",
+  "arabic": [
+   "هدف"
+  ],
+  "translit": [
+   "hadaf"
+  ],
+  "vocalized": "هَدَف",
+  "frequencyRank": 98,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-6653",
+  "type": "noun",
+  "english": "meaning, import, sense",
+  "arabic": [
+   "معنى"
+  ],
+  "translit": [
+   "ma'nan"
+  ],
+  "vocalized": "مَعْنًى",
+  "frequencyRank": 99,
+  "level": "A1",
+  "source": "Kelly + Wiktionary"
+ },
+ {
+  "id": "k-noun-2808",
+  "type": "noun",
+  "english": "organ",
+  "arabic": [
+   "عضو"
+  ],
+  "translit": [
+   "'udw"
+  ],
+  "vocalized": "عُضْو",
+  "frequencyRank": 100,
+  "level": "B2",
+  "source": "Kelly + Wiktionary"
+ }
+]

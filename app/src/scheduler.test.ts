@@ -61,7 +61,7 @@ describe('intervals', () => {
     await ensureCards(mkWords(1), settings)
     const card = (await db.cards.get('w000:en-ar'))!
     const p = previewIntervals(card, 0.9, new Date())
-    expect(p[1]).toMatch(/^\d+m$/)
+    expect(p[1]).toBe('1h') // never sooner than an hour
     for (const g of [1, 2, 3, 4] as const) expect(p[g]).toMatch(/^\d+(m|h|d|mo|y)$/)
   })
 })
@@ -75,13 +75,13 @@ describe('session', () => {
     expect(s.reviews).toHaveLength(0)
 
     await answerCard(s.newCards[0].id, 4, 500, t0) // easy -> review, due in days
-    await answerCard(s.newCards[1].id, 1, 500, t0) // again -> learning, due in minutes
+    await answerCard(s.newCards[1].id, 1, 500, t0) // again -> learning, due in an hour
     s = await getSession(new Date(t0.getTime() + 60_000), settings)
     expect(s.newCards).toHaveLength(1) // 3 - 2 introduced today
     expect(s.newIntroducedToday).toBe(2)
 
-    // 20 minutes later the learning card is due, and it comes before new cards
-    s = await getSession(new Date(t0.getTime() + 20 * 60_000), settings)
+    // an hour later the learning card is due, and it comes before new cards
+    s = await getSession(new Date(t0.getTime() + 61 * 60_000), settings)
     expect(s.queue[0].id).toBe(s.reviews[0].id)
     expect(s.reviews.map((c) => c.id)).toContain('w001:en-ar')
     expect(s.queue.slice(s.reviews.length)).toEqual(s.newCards)

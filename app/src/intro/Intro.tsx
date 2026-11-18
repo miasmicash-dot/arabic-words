@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { currentMood, type Mood } from '../garden/theme'
 import { mix } from '../garden/scene/ink'
 import { finishIntro, gardenTitle, getPlayerName, setPlayerName } from './player'
+import Tutorial, { tutorialSeen } from './Tutorial'
 import './intro.css'
 
 /** Ink for the title, from the first letter to the last, by the garden's mood. */
@@ -130,13 +131,24 @@ function Splash({ name, onDone }: { name: string; onDone: () => void }) {
 
 export default function Intro() {
   const [name, setName] = useState(getPlayerName)
-  const [phase, setPhase] = useState<'ask' | 'play' | 'done'>(() => (getPlayerName() ? 'play' : 'ask'))
+  const replayed = useRef(false)
+  const [phase, setPhase] = useState<'ask' | 'tour' | 'play' | 'done'>(() => (!getPlayerName() ? 'ask' : tutorialSeen() ? 'play' : 'tour'))
+  // Settings can open the tour again
+  useEffect(() => {
+    const again = () => {
+      replayed.current = true
+      setPhase('tour')
+    }
+    window.addEventListener('show-tutorial', again)
+    return () => window.removeEventListener('show-tutorial', again)
+  }, [])
 
   useEffect(() => {
     if (phase === 'play') document.documentElement.classList.add('intro-playing')
   }, [phase])
 
   if (phase === 'done') return null
+  if (phase === 'tour') return <Tutorial name={name} onDone={() => setPhase(replayed.current ? 'done' : 'play')} />
   if (phase === 'ask')
     return (
       <NamePrompt
@@ -144,7 +156,7 @@ export default function Intro() {
           setPlayerName(n)
           setName(n)
           window.dispatchEvent(new Event('player-name'))
-          setPhase('play')
+          setPhase('tour')
         }}
       />
     )

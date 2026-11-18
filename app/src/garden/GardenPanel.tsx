@@ -5,6 +5,8 @@ import { markCelebrated, plantNewSeed, setMuted, startGarden, syncGarden, takeWa
 import type { GrowthStage, Weather } from './types'
 import { applyMood, moodOf } from './theme'
 import Whisper from './Whisper'
+import { useRealWeather } from './realWeather'
+import { celebrate } from '../confetti'
 import './panel.css'
 
 const GardenScene = lazy(() => import('./scene/GardenScene'))
@@ -38,10 +40,10 @@ const STAGE_LINES: Record<GrowthStage, string> = {
 }
 
 const WEATHER_LINES: Record<Weather, string> = {
-  sunny: 'Sunny skies. Your garden is thriving.',
-  'partly-cloudy': 'A few clouds. A quick review brings the sun back.',
-  overcast: 'Grey skies. Your plant misses you.',
-  drought: 'Drought! Your plant is thirsty. A review will water it.',
+  sunny: 'Your garden is thriving. Lovely, steady studying.',
+  'partly-cloudy': 'Doing well. A quick review keeps it growing.',
+  overcast: 'Your plant misses you. A review will perk it up.',
+  drought: 'A dry spell! Your plant is thirsty. A review will water it.',
 }
 
 function useClock() {
@@ -127,6 +129,29 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
   const [replanting, setReplanting] = useState(false)
   const [celebrating, setCelebrating] = useState<GrowthStage | null>(null)
   const now = useClock()
+  const sky = useRealWeather()
+  const [full, setFull] = useState(false)
+  const toggleFull = () => {
+    const next = !full
+    setFull(next)
+    // real full screen where the browser allows it (not on iPhone, where the garden still fills the screen)
+    try {
+      if (next && document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(() => {})
+      else if (!next && document.fullscreenElement) document.exitFullscreen().catch(() => {})
+    } catch { /* ignore */ }
+  }
+  useEffect(() => {
+    const off = () => !document.fullscreenElement && setFull((f) => (f && document.fullscreenEnabled ? false : f))
+    document.addEventListener('fullscreenchange', off)
+    return () => document.removeEventListener('fullscreenchange', off)
+  }, [])
+  useEffect(() => {
+    document.documentElement.classList.toggle('garden-full', full)
+    return () => document.documentElement.classList.remove('garden-full')
+  }, [full])
+  useEffect(() => {
+    if (celebrating) celebrate('big')
+  }, [celebrating])
 
   const refresh = useCallback(async () => {
     const v = await syncGarden(new Date())
@@ -171,13 +196,14 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
 
   return (
     <div className="space-y-3">
-      <div className="relative">
+      <div className={`gp-stage${full ? ' gp-full' : ''}`}>
         <Suspense fallback={<div className="gp-skeleton" />}>
           <GardenScene
             stage={stage}
             health={s.health}
             dead={s.dead}
             weather={s.weather}
+            sky={sky}
             timeOfDay={now.getHours() + now.getMinutes() / 60}
             trees={view.trees}
             muted={s.soundMuted}
@@ -196,6 +222,16 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
           }}
         >
           {s.soundMuted ? '🔇' : '🔊'}
+        </button>
+        <button
+          className="gp-mute gp-fs"
+          aria-label={full ? 'Leave full screen' : 'Full screen'}
+          onClick={(e) => {
+            e.stopPropagation()
+            toggleFull()
+          }}
+        >
+          {full ? '✕' : '⛶'}
         </button>
       </div>
 
