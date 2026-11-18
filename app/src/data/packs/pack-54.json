@@ -1,0 +1,1056 @@
+[
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "sewing",
+  "arabic": [
+   "خياطة"
+  ],
+  "translit": [
+   "khiyaata"
+  ],
+  "vocalized": "خِيَاطَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2651,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "imaginary",
+  "arabic": [
+   "خيالي"
+  ],
+  "translit": [
+   "khayaaliyy"
+  ],
+  "vocalized": "خَيَالِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2652,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "circular, round",
+  "arabic": [
+   "دائري"
+  ],
+  "translit": [
+   "daa'iriyy"
+  ],
+  "vocalized": "دَائِرِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2653,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "warm",
+  "arabic": [
+   "دافئ"
+  ],
+  "translit": [
+   "daafi'"
+  ],
+  "vocalized": "دَافِئ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2654,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "tank",
+  "arabic": [
+   "دبابة"
+  ],
+  "translit": [
+   "dabbaaba"
+  ],
+  "vocalized": "دَبَّابَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2655,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "pin",
+  "arabic": [
+   "دبوس"
+  ],
+  "translit": [
+   "dabbuus"
+  ],
+  "vocalized": "دَبُّوس",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2656,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "smoke, fume",
+  "arabic": [
+   "دخان"
+  ],
+  "translit": [
+   "dukhaan"
+  ],
+  "vocalized": "دُخَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2657,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "advertising",
+  "arabic": [
+   "دعاية"
+  ],
+  "translit": [
+   "di'aaya"
+  ],
+  "vocalized": "دِعَايَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2658,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "warm up",
+  "arabic": [
+   "دفأ"
+  ],
+  "translit": [
+   "daffa'a"
+  ],
+  "vocalized": "دَفَّأَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أدفئ",
+   "he": "هو يدفئ",
+   "she": "هي تدفئ",
+   "we": "نحن ندفئ",
+   "they": "هم يدفئون"
+  },
+  "frequencyRank": 2659,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "pour out",
+  "arabic": [
+   "دفق"
+  ],
+  "translit": [
+   "dafaqa"
+  ],
+  "vocalized": "دَفَقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أدفق",
+   "he": "هو يدفق",
+   "she": "هي تدفق",
+   "we": "نحن ندفق",
+   "they": "هم يدفقون"
+  },
+  "frequencyRank": 2660,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "burying, burial, interment",
+  "arabic": [
+   "دفن"
+  ],
+  "translit": [
+   "dafn"
+  ],
+  "vocalized": "دَفْن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2661,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "accuracy",
+  "arabic": [
+   "دقة"
+  ],
+  "translit": [
+   "diqqa"
+  ],
+  "vocalized": "دِقَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2662,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "dictator",
+  "arabic": [
+   "دكتاتور"
+  ],
+  "translit": [
+   "diktaatuur"
+  ],
+  "vocalized": "دِكْتَاتُور",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2663,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "pail, bucket",
+  "arabic": [
+   "دلو"
+  ],
+  "translit": [
+   "dalw"
+  ],
+  "vocalized": "دَلْو",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2664,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "tear",
+  "arabic": [
+   "دمعة"
+  ],
+  "translit": [
+   "dam'a"
+  ],
+  "vocalized": "دَمْعَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2665,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "doll, puppet",
+  "arabic": [
+   "دمية"
+  ],
+  "translit": [
+   "dumya"
+  ],
+  "vocalized": "دُمْيَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2666,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "surprise, astonishment",
+  "arabic": [
+   "دهشة"
+  ],
+  "translit": [
+   "dahsha"
+  ],
+  "vocalized": "دَهْشَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2667,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "greasy, oily",
+  "arabic": [
+   "دهني"
+  ],
+  "translit": [
+   "duhniyy"
+  ],
+  "vocalized": "دُهْنِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2668,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "worm",
+  "arabic": [
+   "دودة"
+  ],
+  "translit": [
+   "duuda"
+  ],
+  "vocalized": "دُودَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2669,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "rotation",
+  "arabic": [
+   "دوران"
+  ],
+  "translit": [
+   "dawaraan"
+  ],
+  "vocalized": "دَوَرَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2670,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "cycle, rotation, gyration",
+  "arabic": [
+   "دورة"
+  ],
+  "translit": [
+   "dawra"
+  ],
+  "vocalized": "دَوْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2671,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "religion",
+  "arabic": [
+   "ديانة"
+  ],
+  "translit": [
+   "diyaana"
+  ],
+  "vocalized": "دِيَانَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2672,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "memory",
+  "arabic": [
+   "ذاكرة"
+  ],
+  "translit": [
+   "dhaakira"
+  ],
+  "vocalized": "ذَاكِرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2673,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "fly",
+  "arabic": [
+   "ذبابة"
+  ],
+  "translit": [
+   "dhubaaba"
+  ],
+  "vocalized": "ذُبَابَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2674,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "ammunition",
+  "arabic": [
+   "ذخيرة"
+  ],
+  "translit": [
+   "dhakhiira"
+  ],
+  "vocalized": "ذَخِيرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2675,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "speck, mote",
+  "arabic": [
+   "ذرة"
+  ],
+  "translit": [
+   "dharra"
+  ],
+  "vocalized": "ذَرَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2676,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "panic, fear, fright",
+  "arabic": [
+   "ذعر"
+  ],
+  "translit": [
+   "dhu'r"
+  ],
+  "vocalized": "ذُعْر",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2677,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "chin",
+  "arabic": [
+   "ذقن"
+  ],
+  "translit": [
+   "dhaqan"
+  ],
+  "vocalized": "ذَقَن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2678,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "remembrance, recollection",
+  "arabic": [
+   "ذكرى"
+  ],
+  "translit": [
+   "dhikraa"
+  ],
+  "vocalized": "ذِكْرَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2679,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "golden",
+  "arabic": [
+   "ذهبي"
+  ],
+  "translit": [
+   "dhahabiyy"
+  ],
+  "vocalized": "ذَهَبِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2680,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "capitalist, capitalistic",
+  "arabic": [
+   "رأسمالي"
+  ],
+  "translit": [
+   "ra'samaaliyy"
+  ],
+  "vocalized": "رَأْسَمَالِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2681,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "capitalism",
+  "arabic": [
+   "رأسمالية"
+  ],
+  "translit": [
+   "ra'simaaliyya"
+  ],
+  "vocalized": "رَأْسِمَالِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2682,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "lung",
+  "arabic": [
+   "رئة"
+  ],
+  "translit": [
+   "ri'a"
+  ],
+  "vocalized": "رِئَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2683,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "main, chief, principal",
+  "arabic": [
+   "رئيسي"
+  ],
+  "translit": [
+   "ra'iisiyy"
+  ],
+  "vocalized": "رَئِيسِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2684,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "crane, hoist",
+  "arabic": [
+   "رافعة"
+  ],
+  "translit": [
+   "raafi'a"
+  ],
+  "vocalized": "رَافِعَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2685,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "accompany",
+  "arabic": [
+   "رافق"
+  ],
+  "translit": [
+   "raafaqa"
+  ],
+  "vocalized": "رَافَقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أرافق",
+   "he": "هو يرافق",
+   "she": "هي ترافق",
+   "we": "نحن نرافق",
+   "they": "هم يرافقون"
+  },
+  "frequencyRank": 2686,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "monk",
+  "arabic": [
+   "راهب"
+  ],
+  "translit": [
+   "raahib"
+  ],
+  "vocalized": "رَاهِب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2687,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "nun",
+  "arabic": [
+   "راهبة"
+  ],
+  "translit": [
+   "raahiba"
+  ],
+  "vocalized": "رَاهِبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2688,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "reactionary",
+  "arabic": [
+   "رجعي"
+  ],
+  "translit": [
+   "raj'iyy"
+  ],
+  "vocalized": "رَجْعِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2689,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "spacious",
+  "arabic": [
+   "رحب"
+  ],
+  "translit": [
+   "rahiba"
+  ],
+  "vocalized": "رَحِبَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أرحب",
+   "he": "هو يرحب",
+   "she": "هي ترحب",
+   "we": "نحن نرحب",
+   "they": "هم يرحبون"
+  },
+  "frequencyRank": 2690,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "bundle, packet",
+  "arabic": [
+   "رزمة"
+  ],
+  "translit": [
+   "rizma"
+  ],
+  "vocalized": "رِزْمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2691,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "painter, artist",
+  "arabic": [
+   "رسام"
+  ],
+  "translit": [
+   "rassaam"
+  ],
+  "vocalized": "رَسَّام",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2692,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "elegant, graceful, svelte",
+  "arabic": [
+   "رشيق"
+  ],
+  "translit": [
+   "rashiiq"
+  ],
+  "vocalized": "رَشِيق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2693,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "bullet",
+  "arabic": [
+   "رصاصة"
+  ],
+  "translit": [
+   "rasaasa"
+  ],
+  "vocalized": "رَصَاصَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2694,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "baby, infant",
+  "arabic": [
+   "رضيع"
+  ],
+  "translit": [
+   "radii'"
+  ],
+  "vocalized": "رَضِيع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2695,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "moist",
+  "arabic": [
+   "رطب"
+  ],
+  "translit": [
+   "ratb"
+  ],
+  "vocalized": "رَطْب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2696,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "care, custody",
+  "arabic": [
+   "رعاية"
+  ],
+  "translit": [
+   "ri'aaya"
+  ],
+  "vocalized": "رِعايَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2697,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "tremor",
+  "arabic": [
+   "رعشة"
+  ],
+  "translit": [
+   "ra'sha"
+  ],
+  "vocalized": "رَعْشَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2698,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "wish",
+  "arabic": [
+   "رغبة"
+  ],
+  "translit": [
+   "raghba"
+  ],
+  "vocalized": "رَغْبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2699,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "shelf",
+  "arabic": [
+   "رف"
+  ],
+  "translit": [
+   "raff"
+  ],
+  "vocalized": "رَفّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2700,
+  "level": "B1"
+ }
+]

@@ -1,0 +1,1150 @@
+[
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "taxi, cab, taxicab",
+  "arabic": [
+   "تاكسي"
+  ],
+  "translit": [
+   "taaksii"
+  ],
+  "vocalized": "تَاكْسِي",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2501,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "interchange, exchange",
+  "arabic": [
+   "تبادل"
+  ],
+  "translit": [
+   "tabaadala"
+  ],
+  "vocalized": "تَبَادَلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتبادل",
+   "he": "هو يتبادل",
+   "she": "هي تتبادل",
+   "we": "نحن نتبادل",
+   "they": "هم يتبادلون"
+  },
+  "frequencyRank": 2502,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "brag",
+  "arabic": [
+   "تباهى"
+  ],
+  "translit": [
+   "tabaahaa"
+  ],
+  "vocalized": "تَبَاهَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتباهى",
+   "he": "هو يتباهى",
+   "she": "هي تتباهى",
+   "we": "نحن نتباهى",
+   "they": "هم يتباهون"
+  },
+  "frequencyRank": 2503,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "simplification",
+  "arabic": [
+   "تبسيط"
+  ],
+  "translit": [
+   "tabsiit"
+  ],
+  "vocalized": "تَبْسِيط",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2504,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "dependency",
+  "arabic": [
+   "تبعية"
+  ],
+  "translit": [
+   "taba'iyya"
+  ],
+  "vocalized": "تَبَعِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2505,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "argue, dispute",
+  "arabic": [
+   "تجادل"
+  ],
+  "translit": [
+   "tajaadala"
+  ],
+  "vocalized": "تَجَادَلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتجادل",
+   "he": "هو يتجادل",
+   "she": "هي تتجادل",
+   "we": "نحن نتجادل",
+   "they": "هم يتجادلون"
+  },
+  "frequencyRank": 2506,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "abstract",
+  "arabic": [
+   "تجريدي"
+  ],
+  "translit": [
+   "tajriidiyy"
+  ],
+  "vocalized": "تَجْرِيدِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2507,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "roam, wander",
+  "arabic": [
+   "تجول"
+  ],
+  "translit": [
+   "tajawwala"
+  ],
+  "vocalized": "تَجَوَّلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتجول",
+   "he": "هو يتجول",
+   "she": "هي تتجول",
+   "we": "نحن نتجول",
+   "they": "هم يتجولون"
+  },
+  "frequencyRank": 2508,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "cavity",
+  "arabic": [
+   "تجويف"
+  ],
+  "translit": [
+   "tajwiif"
+  ],
+  "vocalized": "تَجْوِيف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2509,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "challenge",
+  "arabic": [
+   "تحدى"
+  ],
+  "translit": [
+   "tahaddaa"
+  ],
+  "vocalized": "تَحَدَّى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتحدى",
+   "he": "هو يتحدى",
+   "she": "هي تتحدى",
+   "we": "نحن نتحدى",
+   "they": "هم يتحدون"
+  },
+  "frequencyRank": 2510,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "flying, flight",
+  "arabic": [
+   "تحليق"
+  ],
+  "translit": [
+   "tahliiq"
+  ],
+  "vocalized": "تَحْلِيق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2511,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "analytical",
+  "arabic": [
+   "تحليلي"
+  ],
+  "translit": [
+   "tahliiliyy"
+  ],
+  "vocalized": "تَحْلِيلِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2512,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "tolerate, bear",
+  "arabic": [
+   "تحمل"
+  ],
+  "translit": [
+   "tahammala"
+  ],
+  "vocalized": "تَحَمَّلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتحمل",
+   "he": "هو يتحمل",
+   "she": "هي تتحمل",
+   "we": "نحن نتحمل",
+   "they": "هم يتحملون"
+  },
+  "frequencyRank": 2513,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "greeting",
+  "arabic": [
+   "تحية"
+  ],
+  "translit": [
+   "tahiyya"
+  ],
+  "vocalized": "تَحِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2514,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "overstep",
+  "arabic": [
+   "تخطى"
+  ],
+  "translit": [
+   "takhattaa"
+  ],
+  "vocalized": "تَخَطَّى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتخطى",
+   "he": "هو يتخطى",
+   "she": "هي تتخطى",
+   "we": "نحن نتخطى",
+   "they": "هم يتخطون"
+  },
+  "frequencyRank": 2515,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "roll",
+  "arabic": [
+   "تدحرج"
+  ],
+  "translit": [
+   "tadahraja"
+  ],
+  "vocalized": "تَدَحْرَجَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتدحرج",
+   "he": "هو يتدحرج",
+   "she": "هي تتدحرج",
+   "we": "نحن نتدحرج",
+   "they": "هم يتدحرجون"
+  },
+  "frequencyRank": 2516,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "complain, grumble",
+  "arabic": [
+   "تذمر"
+  ],
+  "translit": [
+   "tadhammara"
+  ],
+  "vocalized": "تَذَمَّرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتذمر",
+   "he": "هو يتذمر",
+   "she": "هي تتذمر",
+   "we": "نحن نتذمر",
+   "they": "هم يتذمرون"
+  },
+  "frequencyRank": 2517,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "taste, savour",
+  "arabic": [
+   "تذوق"
+  ],
+  "translit": [
+   "tadhawwaqa"
+  ],
+  "vocalized": "تَذَوَّقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتذوق",
+   "he": "هو يتذوق",
+   "she": "هي تتذوق",
+   "we": "نحن نتذوق",
+   "they": "هم يتذوقون"
+  },
+  "frequencyRank": 2518,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "accumulate",
+  "arabic": [
+   "تراكم"
+  ],
+  "translit": [
+   "taraakama"
+  ],
+  "vocalized": "تَرَاكَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتراكم",
+   "he": "هو يتراكم",
+   "she": "هي تتراكم",
+   "we": "نحن نتراكم",
+   "they": "هم يتراكمون"
+  },
+  "frequencyRank": 2519,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "tram, streetcar",
+  "arabic": [
+   "ترام"
+  ],
+  "translit": [
+   "traam"
+  ],
+  "vocalized": "تْرَام",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2520,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "upgrade",
+  "arabic": [
+   "ترقية"
+  ],
+  "translit": [
+   "tarqiya"
+  ],
+  "vocalized": "تَرْقِيَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2521,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "turkish",
+  "arabic": [
+   "تركي"
+  ],
+  "translit": [
+   "turkiyy"
+  ],
+  "vocalized": "تُرْكِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2522,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "slide, ski",
+  "arabic": [
+   "تزحلق"
+  ],
+  "translit": [
+   "tazahlaqa"
+  ],
+  "vocalized": "تَزَحْلَقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتزحلق",
+   "he": "هو يتزحلق",
+   "she": "هي تتزحلق",
+   "we": "نحن نتزحلق",
+   "they": "هم يتزحلقون"
+  },
+  "frequencyRank": 2523,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "skiing",
+  "arabic": [
+   "تزلج"
+  ],
+  "translit": [
+   "tazalluj"
+  ],
+  "vocalized": "تَزَلُّج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2524,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "climb",
+  "arabic": [
+   "تسلق"
+  ],
+  "translit": [
+   "tasallaqa"
+  ],
+  "vocalized": "تَسَلَّقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتسلق",
+   "he": "هو يتسلق",
+   "she": "هي تتسلق",
+   "we": "نحن نتسلق",
+   "they": "هم يتسلقون"
+  },
+  "frequencyRank": 2525,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "entertainment, amusement",
+  "arabic": [
+   "تسلية"
+  ],
+  "translit": [
+   "tasliya"
+  ],
+  "vocalized": "تَسْلِيَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2526,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "quarrel",
+  "arabic": [
+   "تشاجر"
+  ],
+  "translit": [
+   "tashaajara"
+  ],
+  "vocalized": "تَشَاجَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتشاجر",
+   "he": "هو يتشاجر",
+   "she": "هي تتشاجر",
+   "we": "نحن نتشاجر",
+   "they": "هم يتشاجرون"
+  },
+  "frequencyRank": 2527,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "formation",
+  "arabic": [
+   "تشكيلة"
+  ],
+  "translit": [
+   "tashkiila"
+  ],
+  "vocalized": "تَشْكِيلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2528,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "czech",
+  "arabic": [
+   "تشيكي"
+  ],
+  "translit": [
+   "tshiikiyy"
+  ],
+  "vocalized": "تْشِيكِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2529,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "purification",
+  "arabic": [
+   "تصفية"
+  ],
+  "translit": [
+   "tasfiya"
+  ],
+  "vocalized": "تَصْفِيَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2530,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "applause, clapping",
+  "arabic": [
+   "تصفيق"
+  ],
+  "translit": [
+   "tasfiiq"
+  ],
+  "vocalized": "تَصْفِيق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2531,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "fixing, mending",
+  "arabic": [
+   "تصليح"
+  ],
+  "translit": [
+   "tasliih"
+  ],
+  "vocalized": "تَصْلِيح",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2532,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "voting",
+  "arabic": [
+   "تصويت"
+  ],
+  "translit": [
+   "taswiit"
+  ],
+  "vocalized": "تَصْوِيت",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2533,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "volunteer",
+  "arabic": [
+   "تطوع"
+  ],
+  "translit": [
+   "tatawwa'a"
+  ],
+  "vocalized": "تَطَوَّعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتطوع",
+   "he": "هو يتطوع",
+   "she": "هي تتطوع",
+   "we": "نحن نتطوع",
+   "they": "هم يتطوعون"
+  },
+  "frequencyRank": 2534,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "sympathy",
+  "arabic": [
+   "تعاطف"
+  ],
+  "translit": [
+   "ta'aatuf"
+  ],
+  "vocalized": "تَعَاطُف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2535,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "cooperation",
+  "arabic": [
+   "تعاون"
+  ],
+  "translit": [
+   "ta'aawun"
+  ],
+  "vocalized": "تَعَاوُن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2536,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "cooperative",
+  "arabic": [
+   "تعاوني"
+  ],
+  "translit": [
+   "ta'aawuniyy"
+  ],
+  "vocalized": "تَعَاوُنِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2537,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "mining",
+  "arabic": [
+   "تعدين"
+  ],
+  "translit": [
+   "ta'diin"
+  ],
+  "vocalized": "تَعْدِين",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2538,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "explanation",
+  "arabic": [
+   "تعليل"
+  ],
+  "translit": [
+   "ta'liil"
+  ],
+  "vocalized": "تَعْلِيل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2539,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "educational",
+  "arabic": [
+   "تعليمي"
+  ],
+  "translit": [
+   "ta'liimiyy"
+  ],
+  "vocalized": "تَعْلِيمِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2540,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "baptism",
+  "arabic": [
+   "تعميد"
+  ],
+  "translit": [
+   "ta'miid"
+  ],
+  "vocalized": "تَعْمِيد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2541,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "appointment",
+  "arabic": [
+   "تعيين"
+  ],
+  "translit": [
+   "ta'yiin"
+  ],
+  "vocalized": "تَعْيِين",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2542,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "disassemble, dismantle",
+  "arabic": [
+   "تفكك"
+  ],
+  "translit": [
+   "tafakkaka"
+  ],
+  "vocalized": "تَفَكَّكَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتفكك",
+   "he": "هو يتفكك",
+   "she": "هي تتفكك",
+   "we": "نحن نتفكك",
+   "they": "هم يتفككون"
+  },
+  "frequencyRank": 2543,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "retire",
+  "arabic": [
+   "تقاعد"
+  ],
+  "translit": [
+   "taqaa'ada"
+  ],
+  "vocalized": "تَقَاعَدَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتقاعد",
+   "he": "هو يتقاعد",
+   "she": "هي تتقاعد",
+   "we": "نحن نتقاعد",
+   "they": "هم يتقاعدون"
+  },
+  "frequencyRank": 2544,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "progressive",
+  "arabic": [
+   "تقدمي"
+  ],
+  "translit": [
+   "taqaddumiyy"
+  ],
+  "vocalized": "تَقَدُّمِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2545,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "traditional",
+  "arabic": [
+   "تقليدي"
+  ],
+  "translit": [
+   "taqliidiyy"
+  ],
+  "vocalized": "تَقْلِيدِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2546,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "technology",
+  "arabic": [
+   "تقنية"
+  ],
+  "translit": [
+   "tiqniya"
+  ],
+  "vocalized": "تِقْنِيَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2547,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "reproduction",
+  "arabic": [
+   "تكاثر"
+  ],
+  "translit": [
+   "takaathur"
+  ],
+  "vocalized": "تَكَاثُر",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2548,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "technology",
+  "arabic": [
+   "تكنولوجيا"
+  ],
+  "translit": [
+   "teknoloojyaa"
+  ],
+  "vocalized": "تِكْنُولُوجْيا",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2549,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "conditioning",
+  "arabic": [
+   "تكييف"
+  ],
+  "translit": [
+   "takyiif"
+  ],
+  "vocalized": "تَكْيِيف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2550,
+  "level": "B2"
+ }
+]

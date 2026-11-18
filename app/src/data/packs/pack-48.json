@@ -1,0 +1,1218 @@
+[
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "imperialist",
+  "arabic": [
+   "إمبريالي"
+  ],
+  "translit": [
+   "imbiryaaliyy"
+  ],
+  "vocalized": "إِمْبِرْيالِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2351,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "pass",
+  "arabic": [
+   "انقضى"
+  ],
+  "translit": [
+   "inqadaa"
+  ],
+  "vocalized": "اِنْقَضَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنقضي",
+   "he": "هو ينقضي",
+   "she": "هي تنقضي",
+   "we": "نحن ننقضي",
+   "they": "هم ينقضون"
+  },
+  "frequencyRank": 2352,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "rent",
+  "arabic": [
+   "إيجار"
+  ],
+  "translit": [
+   "iijaar"
+  ],
+  "vocalized": "إِيجَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2353,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "explanation",
+  "arabic": [
+   "إيضاح"
+  ],
+  "translit": [
+   "iidaah"
+  ],
+  "vocalized": "إِيضَاح",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2354,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "italian",
+  "arabic": [
+   "إيطالي"
+  ],
+  "translit": [
+   "iitaaliyy"
+  ],
+  "vocalized": "إِيطَالِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2355,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "begin, commence",
+  "arabic": [
+   "ابتدأ"
+  ],
+  "translit": [
+   "ibtada'a"
+  ],
+  "vocalized": "اِبْتَدَأَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أبتدئ",
+   "he": "هو يبتدئ",
+   "she": "هي تبتدئ",
+   "we": "نحن نبتدئ",
+   "they": "هم يبتدئون"
+  },
+  "frequencyRank": 2356,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "smile",
+  "arabic": [
+   "ابتسامة"
+  ],
+  "translit": [
+   "ibtisaama"
+  ],
+  "vocalized": "اِبْتِسَامَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2357,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "jubilation, delight",
+  "arabic": [
+   "ابتهاج"
+  ],
+  "translit": [
+   "ibtihaaj"
+  ],
+  "vocalized": "اِبْتِهَاج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2358,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "daughter",
+  "arabic": [
+   "ابنة"
+  ],
+  "translit": [
+   "ibna"
+  ],
+  "vocalized": "اِبْنَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2359,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "federal",
+  "arabic": [
+   "اتحادي"
+  ],
+  "translit": [
+   "ittihaadiyy"
+  ],
+  "vocalized": "اِتِّحَادِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2360,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "consistency",
+  "arabic": [
+   "اتساق"
+  ],
+  "translit": [
+   "ittisaaq"
+  ],
+  "vocalized": "اِتِّسَاق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2361,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "agreement",
+  "arabic": [
+   "اتفاقية"
+  ],
+  "translit": [
+   "ittifaaqiyya"
+  ],
+  "vocalized": "اِتِّفَاقِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2362,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "protest",
+  "arabic": [
+   "احتج"
+  ],
+  "translit": [
+   "ihtajja"
+  ],
+  "vocalized": "اِحْتَجَّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحتج",
+   "he": "هو يحتج",
+   "she": "هي تحتج",
+   "we": "نحن نحتج",
+   "they": "هم يحتجون"
+  },
+  "frequencyRank": 2363,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "combustion",
+  "arabic": [
+   "احتراق"
+  ],
+  "translit": [
+   "ihtiraaq"
+  ],
+  "vocalized": "اِحْتِرَاق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2364,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "honor, esteem",
+  "arabic": [
+   "احترم"
+  ],
+  "translit": [
+   "ihtarama"
+  ],
+  "vocalized": "اِحْتَرَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحترم",
+   "he": "هو يحترم",
+   "she": "هي تحترم",
+   "we": "نحن نحترم",
+   "they": "هم يحترمون"
+  },
+  "frequencyRank": 2365,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "celebrate",
+  "arabic": [
+   "احتفل"
+  ],
+  "translit": [
+   "ihtafala"
+  ],
+  "vocalized": "اِحْتَفَلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحتفل",
+   "he": "هو يحتفل",
+   "she": "هي تحتفل",
+   "we": "نحن نحتفل",
+   "they": "هم يحتفلون"
+  },
+  "frequencyRank": 2366,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "contempt",
+  "arabic": [
+   "احتقار"
+  ],
+  "translit": [
+   "ihtiqaar"
+  ],
+  "vocalized": "اِحْتِقَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2367,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "contain",
+  "arabic": [
+   "احتوى"
+  ],
+  "translit": [
+   "ihtawaa"
+  ],
+  "vocalized": "اِحْتَوَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحتوي",
+   "he": "هو يحتوي",
+   "she": "هي تحتوي",
+   "we": "نحن نحتوي",
+   "they": "هم يحتوون"
+  },
+  "frequencyRank": 2368,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "test, examine",
+  "arabic": [
+   "اختبر"
+  ],
+  "translit": [
+   "ikhtabara"
+  ],
+  "vocalized": "اِخْتَبَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أختبر",
+   "he": "هو يختبر",
+   "she": "هي تختبر",
+   "we": "نحن نختبر",
+   "they": "هم يختبرون"
+  },
+  "frequencyRank": 2369,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "invent",
+  "arabic": [
+   "اخترع"
+  ],
+  "translit": [
+   "ikhtara'a"
+  ],
+  "vocalized": "اِخْتَرَعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخترع",
+   "he": "هو يخترع",
+   "she": "هي تخترع",
+   "we": "نحن نخترع",
+   "they": "هم يخترعون"
+  },
+  "frequencyRank": 2370,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "voluntary",
+  "arabic": [
+   "اختياري"
+  ],
+  "translit": [
+   "ikhtiyaariyy"
+  ],
+  "vocalized": "اِخْتِيَارِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2371,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "specialist",
+  "arabic": [
+   "أخصائي"
+  ],
+  "translit": [
+   "akhissaa'iyy"
+  ],
+  "vocalized": "أَخِصَّائِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2372,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "put on, wear",
+  "arabic": [
+   "ارتدى"
+  ],
+  "translit": [
+   "irtadaa"
+  ],
+  "vocalized": "اِرْتَدَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أرتدي",
+   "he": "هو يرتدي",
+   "she": "هي ترتدي",
+   "we": "نحن نرتدي",
+   "they": "هم يرتدون"
+  },
+  "frequencyRank": 2373,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "rising",
+  "arabic": [
+   "ارتقاء"
+  ],
+  "translit": [
+   "irtiqaa'"
+  ],
+  "vocalized": "اِرْتِقَاء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2374,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "prosperity",
+  "arabic": [
+   "ازدهار"
+  ],
+  "translit": [
+   "izdihaar"
+  ],
+  "vocalized": "اِزْدِهَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2375,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "thrive, flourish",
+  "arabic": [
+   "ازدهر"
+  ],
+  "translit": [
+   "izdahara"
+  ],
+  "vocalized": "اِزْدَهَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أزدهر",
+   "he": "هو يزدهر",
+   "she": "هي تزدهر",
+   "we": "نحن نزدهر",
+   "they": "هم يزدهرون"
+  },
+  "frequencyRank": 2376,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "resume",
+  "arabic": [
+   "استأنف"
+  ],
+  "translit": [
+   "ista'nafa"
+  ],
+  "vocalized": "اِسْتَأْنَفَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستأنف",
+   "he": "هو يستأنف",
+   "she": "هي تستأنف",
+   "we": "نحن نستأنف",
+   "they": "هم يستأنفون"
+  },
+  "frequencyRank": 2377,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "rule out",
+  "arabic": [
+   "استبعد"
+  ],
+  "translit": [
+   "istab'ada"
+  ],
+  "vocalized": "اِسْتَبْعَدَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستبعد",
+   "he": "هو يستبعد",
+   "she": "هي تستبعد",
+   "we": "نحن نستبعد",
+   "they": "هم يستبعدون"
+  },
+  "frequencyRank": 2378,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "invest",
+  "arabic": [
+   "استثمر"
+  ],
+  "translit": [
+   "istathmara"
+  ],
+  "vocalized": "اِسْتَثْمَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستثمر",
+   "he": "هو يستثمر",
+   "she": "هي تستثمر",
+   "we": "نحن نستثمر",
+   "they": "هم يستثمرون"
+  },
+  "frequencyRank": 2379,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "exceptional, extraordinary",
+  "arabic": [
+   "استثنائي"
+  ],
+  "translit": [
+   "istithnaa'iyy"
+  ],
+  "vocalized": "اِسْتِثْنَائِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2380,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "respond",
+  "arabic": [
+   "استجاب"
+  ],
+  "translit": [
+   "istajaaba"
+  ],
+  "vocalized": "اِسْتَجَابَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستجيب",
+   "he": "هو يستجيب",
+   "she": "هي تستجيب",
+   "we": "نحن نستجيب",
+   "they": "هم يستجيبون"
+  },
+  "frequencyRank": 2381,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "recreation",
+  "arabic": [
+   "استجمام"
+  ],
+  "translit": [
+   "istijmaam"
+  ],
+  "vocalized": "اِسْتِجْمَام",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2382,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "question",
+  "arabic": [
+   "استجوب"
+  ],
+  "translit": [
+   "istajwaba"
+  ],
+  "vocalized": "اِسْتَجْوَبَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستجوب",
+   "he": "هو يستجوب",
+   "she": "هي تستجوب",
+   "we": "نحن نستجوب",
+   "they": "هم يستجوبون"
+  },
+  "frequencyRank": 2383,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "approval",
+  "arabic": [
+   "استحسان"
+  ],
+  "translit": [
+   "istihsaan"
+  ],
+  "vocalized": "اِسْتِحْسَان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2384,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "deserve, merit",
+  "arabic": [
+   "استحق"
+  ],
+  "translit": [
+   "istahaqqa"
+  ],
+  "vocalized": "اِسْتَحَقَّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستحق",
+   "he": "هو يستحق",
+   "she": "هي تستحق",
+   "we": "نحن نستحق",
+   "they": "هم يستحقون"
+  },
+  "frequencyRank": 2385,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "turn around",
+  "arabic": [
+   "استدار"
+  ],
+  "translit": [
+   "istadaara"
+  ],
+  "vocalized": "اِسْتَدَارَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستدير",
+   "he": "هو يستدير",
+   "she": "هي تستدير",
+   "we": "نحن نستدير",
+   "they": "هم يستديرون"
+  },
+  "frequencyRank": 2386,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "summon",
+  "arabic": [
+   "استدعى"
+  ],
+  "translit": [
+   "istad'aa"
+  ],
+  "vocalized": "اِسْتَدْعَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستدعي",
+   "he": "هو يستدعي",
+   "she": "هي تستدعي",
+   "we": "نحن نستدعي",
+   "they": "هم يستدعون"
+  },
+  "frequencyRank": 2387,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "retrieve, recover",
+  "arabic": [
+   "استرجع"
+  ],
+  "translit": [
+   "istarja'a"
+  ],
+  "vocalized": "اِسْتَرْجَعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أسترجع",
+   "he": "هو يسترجع",
+   "she": "هي تسترجع",
+   "we": "نحن نسترجع",
+   "they": "هم يسترجعون"
+  },
+  "frequencyRank": 2388,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "relaxation",
+  "arabic": [
+   "استرخاء"
+  ],
+  "translit": [
+   "istirkhaa'"
+  ],
+  "vocalized": "اِسْتِرْخاء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2389,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "slacken",
+  "arabic": [
+   "استرخى"
+  ],
+  "translit": [
+   "istarkhaa"
+  ],
+  "vocalized": "اِسْتَرْخَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أسترخي",
+   "he": "هو يسترخي",
+   "she": "هي تسترخي",
+   "we": "نحن نسترخي",
+   "they": "هم يسترخون"
+  },
+  "frequencyRank": 2390,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "consult",
+  "arabic": [
+   "استشار"
+  ],
+  "translit": [
+   "istashaara"
+  ],
+  "vocalized": "اِسْتَشَارَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستشير",
+   "he": "هو يستشير",
+   "she": "هي تستشير",
+   "we": "نحن نستشير",
+   "they": "هم يستشيرون"
+  },
+  "frequencyRank": 2391,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "consultation",
+  "arabic": [
+   "استشارة"
+  ],
+  "translit": [
+   "istishaara"
+  ],
+  "vocalized": "اِسْتِشَارَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2392,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "recover, regain",
+  "arabic": [
+   "استعاد"
+  ],
+  "translit": [
+   "ista'aada"
+  ],
+  "vocalized": "اِسْتَعَادَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستعيد",
+   "he": "هو يستعيد",
+   "she": "هي تستعيد",
+   "we": "نحن نستعيد",
+   "they": "هم يستعيدون"
+  },
+  "frequencyRank": 2393,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "hastiness",
+  "arabic": [
+   "استعجال"
+  ],
+  "translit": [
+   "isti'jaal"
+  ],
+  "vocalized": "اِسْتِعْجَال",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2394,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "rush, hurry",
+  "arabic": [
+   "استعجل"
+  ],
+  "translit": [
+   "ista'jala"
+  ],
+  "vocalized": "اِسْتَعْجَلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستعجل",
+   "he": "هو يستعجل",
+   "she": "هي تستعجل",
+   "we": "نحن نستعجل",
+   "they": "هم يستعجلون"
+  },
+  "frequencyRank": 2395,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "inspect",
+  "arabic": [
+   "استعرض"
+  ],
+  "translit": [
+   "ista'rada"
+  ],
+  "vocalized": "اِسْتَعْرَضَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستعرض",
+   "he": "هو يستعرض",
+   "she": "هي تستعرض",
+   "we": "نحن نستعرض",
+   "they": "هم يستعرضون"
+  },
+  "frequencyRank": 2396,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "provocation, incitement",
+  "arabic": [
+   "استفزاز"
+  ],
+  "translit": [
+   "istifzaaz"
+  ],
+  "vocalized": "اِسْتِفْزَاز",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2397,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "resign",
+  "arabic": [
+   "استقال"
+  ],
+  "translit": [
+   "istaqaala"
+  ],
+  "vocalized": "اِسْتَقَالَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستقيل",
+   "he": "هو يستقيل",
+   "she": "هي تستقيل",
+   "we": "نحن نستقيل",
+   "they": "هم يستقيلون"
+  },
+  "frequencyRank": 2398,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "lie down",
+  "arabic": [
+   "استلقى"
+  ],
+  "translit": [
+   "istalqaa"
+  ],
+  "vocalized": "اِسْتَلْقَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستلقي",
+   "he": "هو يستلقي",
+   "she": "هي تستلقي",
+   "we": "نحن نستلقي",
+   "they": "هم يستلقون"
+  },
+  "frequencyRank": 2399,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "receive, obtain",
+  "arabic": [
+   "استلم"
+  ],
+  "translit": [
+   "istalama"
+  ],
+  "vocalized": "اِسْتَلَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستلم",
+   "he": "هو يستلم",
+   "she": "هي تستلم",
+   "we": "نحن نستلم",
+   "they": "هم يستلمون"
+  },
+  "frequencyRank": 2400,
+  "level": "C2"
+ }
+]

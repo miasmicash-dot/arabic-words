@@ -1,291 +1,8 @@
 [
  {
-  "id": "k-noun-5152",
-  "type": "noun",
-  "english": "file, dossier",
-  "arabic": [
-   "ملف"
-  ],
-  "translit": [
-   "milaff"
-  ],
-  "vocalized": "مِلَفّ",
-  "frequencyRank": 301,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-1894",
-  "type": "noun",
-  "english": "justice, equity",
-  "arabic": [
-   "عدل"
-  ],
-  "translit": [
-   "'adl"
-  ],
-  "vocalized": "عَدْل",
-  "frequencyRank": 302,
-  "level": "C1",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-verb-1465",
-  "type": "verb",
-  "english": "call",
-  "arabic": [
-   "دعا"
-  ],
-  "translit": [
-   "da'aa"
-  ],
-  "vocalized": "دَعَا",
-  "frequencyRank": 303,
-  "level": "B2",
-  "source": "Kelly + Wiktionary",
-  "conjugations": {
-   "I": "أنا أدعو",
-   "he": "هو يدعو",
-   "she": "هي تدعو",
-   "we": "نحن ندعو",
-   "they": "هم يدعون"
-  }
- },
- {
-  "id": "k-noun-2089",
-  "type": "noun",
-  "english": "judgement",
-  "arabic": [
-   "قضاء"
-  ],
-  "translit": [
-   "qadaa'"
-  ],
-  "vocalized": "قَضَاء",
-  "frequencyRank": 304,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-4606",
-  "type": "noun",
-  "english": "living, life",
-  "arabic": [
-   "عيش"
-  ],
-  "translit": [
-   "'aysh"
-  ],
-  "vocalized": "عَيْش",
-  "frequencyRank": 305,
-  "level": "A2",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-verb-2626",
-  "type": "verb",
-  "english": "become acquainted, with",
-  "arabic": [
-   "تعرف"
-  ],
-  "translit": [
-   "ta'arrafa"
-  ],
-  "vocalized": "تَعَرَّفَ",
-  "frequencyRank": 306,
-  "level": "B1",
-  "source": "Kelly + Wiktionary",
-  "conjugations": {
-   "I": "أنا أتعرف",
-   "he": "هو يتعرف",
-   "she": "هي تتعرف",
-   "we": "نحن نتعرف",
-   "they": "هم يتعرفون"
-  }
- },
- {
-  "id": "k-noun-3798",
-  "type": "noun",
-  "english": "occupation",
-  "arabic": [
-   "احتلال"
-  ],
-  "translit": [
-   "ihtilaal"
-  ],
-  "vocalized": "اِحْتِلال",
-  "frequencyRank": 307,
-  "level": "C1",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-verb-1841",
-  "type": "verb",
-  "english": "be empty",
-  "arabic": [
-   "مات"
-  ],
-  "translit": [
-   "maata"
-  ],
-  "vocalized": "مَاتَ",
-  "frequencyRank": 308,
-  "level": "A2",
-  "source": "Kelly + Wiktionary",
-  "conjugations": {
-   "I": "أنا أموت",
-   "he": "هو يموت",
-   "she": "هي تموت",
-   "we": "نحن نموت",
-   "they": "هم يموتون"
-  }
- },
- {
-  "id": "k-noun-1766",
-  "type": "noun",
-  "english": "kind, variety, breed",
-  "arabic": [
-   "جنس"
-  ],
-  "translit": [
-   "jins"
-  ],
-  "vocalized": "جِنْس",
-  "frequencyRank": 309,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-3869",
-  "type": "noun",
-  "english": "list",
-  "arabic": [
-   "قائمة"
-  ],
-  "translit": [
-   "qaa'ima"
-  ],
-  "vocalized": "قَائِمَة",
-  "frequencyRank": 310,
-  "level": "A2",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-6082",
-  "type": "noun",
-  "english": "trial, essay, experiment",
-  "arabic": [
-   "تجربة"
-  ],
-  "translit": [
-   "tajriba"
-  ],
-  "vocalized": "تَجْرِبَة",
-  "frequencyRank": 311,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-5069",
-  "type": "noun",
-  "english": "family",
-  "arabic": [
-   "أسرة"
-  ],
-  "translit": [
-   "usra"
-  ],
-  "vocalized": "أُسْرَة",
-  "frequencyRank": 312,
-  "level": "A1",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-4610",
-  "type": "noun",
-  "english": "discipline",
-  "arabic": [
-   "أدب"
-  ],
-  "translit": [
-   "adab"
-  ],
-  "vocalized": "أَدَب",
-  "frequencyRank": 313,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-4146",
-  "type": "noun",
-  "english": "future",
-  "arabic": [
-   "مستقبل"
-  ],
-  "translit": [
-   "mustaqbal"
-  ],
-  "vocalized": "مُسْتَقْبَل",
-  "frequencyRank": 314,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-409",
-  "type": "noun",
-  "english": "bench, stone bench",
-  "arabic": [
-   "صفة"
-  ],
-  "translit": [
-   "suffa"
-  ],
-  "vocalized": "صُفَّة",
-  "frequencyRank": 315,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-verb-5292",
-  "type": "verb",
-  "english": "expose oneself to",
-  "arabic": [
-   "تعرض"
-  ],
-  "translit": [
-   "ta'arrada"
-  ],
-  "vocalized": "تَعَرَّضَ",
-  "frequencyRank": 316,
-  "level": "B1",
-  "source": "Kelly + Wiktionary",
-  "conjugations": {
-   "I": "أنا أتعرض",
-   "he": "هو يتعرض",
-   "she": "هي تتعرض",
-   "we": "نحن نتعرض",
-   "they": "هم يتعرضون"
-  }
- },
- {
-  "id": "k-noun-533",
-  "type": "noun",
-  "english": "sura, surah",
-  "arabic": [
-   "سورة"
-  ],
-  "translit": [
-   "suura"
-  ],
-  "vocalized": "سُورَة",
-  "frequencyRank": 317,
-  "level": "C1",
-  "source": "Kelly + Wiktionary"
- },
- {
   "id": "k-adj-4283",
   "type": "adj",
-  "english": "urban",
+  "english": "civilian",
   "arabic": [
    "مدني"
   ],
@@ -293,14 +10,20 @@
    "madaniyy"
   ],
   "vocalized": "مَدَنِيّ",
-  "frequencyRank": 318,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 301,
+  "level": "B2"
  },
  {
   "id": "k-verb-1432",
   "type": "verb",
-  "english": "run, flow",
+  "english": "run",
   "arabic": [
    "جرى"
   ],
@@ -308,21 +31,27 @@
    "jaraa"
   ],
   "vocalized": "جَرَى",
-  "frequencyRank": 319,
-  "level": "B1",
-  "source": "Kelly + Wiktionary",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
   "conjugations": {
    "I": "أنا أجري",
    "he": "هو يجري",
    "she": "هي تجري",
    "we": "نحن نجري",
    "they": "هم يجرون"
-  }
+  },
+  "frequencyRank": 302,
+  "level": "B1"
  },
  {
   "id": "k-noun-515",
   "type": "noun",
-  "english": "ground",
+  "english": "origin, source",
   "arabic": [
    "أصل"
   ],
@@ -330,29 +59,20 @@
    "asl"
   ],
   "vocalized": "أَصْل",
-  "frequencyRank": 320,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-5001",
-  "type": "noun",
-  "english": "wood, timber",
-  "arabic": [
-   "عود"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
   ],
-  "translit": [
-   "'uud"
-  ],
-  "vocalized": "عُود",
-  "frequencyRank": 321,
-  "level": "A2",
-  "source": "Kelly + Wiktionary"
+  "frequencyRank": 303,
+  "level": "B1"
  },
  {
   "id": "k-verb-6377",
   "type": "verb",
-  "english": "repent, be penitent",
+  "english": "repent",
   "arabic": [
    "تاب"
   ],
@@ -360,21 +80,26 @@
    "taaba"
   ],
   "vocalized": "تَابَ",
-  "frequencyRank": 322,
-  "level": "B1",
-  "source": "Kelly + Wiktionary",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
   "conjugations": {
    "I": "أنا أتوب",
    "he": "هو يتوب",
    "she": "هي تتوب",
    "we": "نحن نتوب",
    "they": "هم يتوبون"
-  }
+  },
+  "frequencyRank": 304,
+  "level": "B1"
  },
  {
   "id": "k-noun-2404",
   "type": "noun",
-  "english": "secret, secret thought",
+  "english": "secret",
   "arabic": [
    "سر"
   ],
@@ -382,14 +107,20 @@
    "sirr"
   ],
   "vocalized": "سِرّ",
-  "frequencyRank": 323,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 305,
+  "level": "B1"
  },
  {
   "id": "k-verb-3937",
   "type": "verb",
-  "english": "doubt, be doubtful",
+  "english": "doubt",
   "arabic": [
    "شك"
   ],
@@ -397,16 +128,22 @@
    "shakka"
   ],
   "vocalized": "شَكَّ",
-  "frequencyRank": 324,
-  "level": "C1",
-  "source": "Kelly + Wiktionary",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
   "conjugations": {
    "I": "أنا أشك",
    "he": "هو يشك",
    "she": "هي تشك",
    "we": "نحن نشك",
    "they": "هم يشكون"
-  }
+  },
+  "frequencyRank": 306,
+  "level": "C1"
  },
  {
   "id": "k-noun-6320",
@@ -416,12 +153,18 @@
    "فكر"
   ],
   "translit": [
-   "fikr"
+   "fakr"
   ],
-  "vocalized": "فِكْر",
-  "frequencyRank": 325,
-  "level": "A2",
-  "source": "Kelly + Wiktionary"
+  "vocalized": "فَكْر",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 307,
+  "level": "A2"
  },
  {
   "id": "k-noun-1421",
@@ -434,14 +177,20 @@
    "daght"
   ],
   "vocalized": "ضَغْط",
-  "frequencyRank": 326,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 308,
+  "level": "B2"
  },
  {
   "id": "k-noun-4326",
   "type": "noun",
-  "english": "meeting with someone), assembly",
+  "english": "assembly",
   "arabic": [
    "اجتماع"
   ],
@@ -449,9 +198,15 @@
    "ijtimaa'"
   ],
   "vocalized": "اِجْتِمَاع",
-  "frequencyRank": 327,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 309,
+  "level": "B1"
  },
  {
   "id": "k-noun-4234",
@@ -464,9 +219,14 @@
    "saakin"
   ],
   "vocalized": "سَاكِن",
-  "frequencyRank": 328,
-  "level": "A1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 310,
+  "level": "A1"
  },
  {
   "id": "k-noun-1213",
@@ -479,24 +239,15 @@
    "maqaala"
   ],
   "vocalized": "مَقَالَة",
-  "frequencyRank": 329,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-5117",
-  "type": "noun",
-  "english": "covenant",
-  "arabic": [
-   "عهد"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
   ],
-  "translit": [
-   "'ahd"
-  ],
-  "vocalized": "عَهْد",
-  "frequencyRank": 330,
-  "level": "C1",
-  "source": "Kelly + Wiktionary"
+  "frequencyRank": 311,
+  "level": "B2"
  },
  {
   "id": "k-noun-1686",
@@ -509,9 +260,35 @@
    "bank"
   ],
   "vocalized": "بَنْك",
-  "frequencyRank": 331,
-  "level": "A1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 312,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-586",
+  "type": "noun",
+  "english": "organization",
+  "arabic": [
+   "تنظيم"
+  ],
+  "translit": [
+   "tanziim"
+  ],
+  "vocalized": "تَنْظِيم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 313,
+  "level": "B1"
  },
  {
   "id": "k-noun-6215",
@@ -524,9 +301,15 @@
    "muqaawama"
   ],
   "vocalized": "مُقَاوَمَة",
-  "frequencyRank": 332,
-  "level": "C1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 314,
+  "level": "C1"
  },
  {
   "id": "k-noun-4750",
@@ -539,9 +322,15 @@
    "zawaaj"
   ],
   "vocalized": "زَوَاج",
-  "frequencyRank": 333,
-  "level": "A1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 315,
+  "level": "A1"
  },
  {
   "id": "k-adj-1430",
@@ -554,14 +343,19 @@
    "qaadim"
   ],
   "vocalized": "قَادِم",
-  "frequencyRank": 334,
-  "level": "A2",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 316,
+  "level": "A2"
  },
  {
   "id": "k-noun-807",
   "type": "noun",
-  "english": "stair, step",
+  "english": "degree",
   "arabic": [
    "درجة"
   ],
@@ -569,14 +363,20 @@
    "daraja"
   ],
   "vocalized": "دَرَجَة",
-  "frequencyRank": 335,
-  "level": "A1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 317,
+  "level": "A1"
  },
  {
   "id": "k-adj-67",
   "type": "adj",
-  "english": "national, people’s",
+  "english": "popular",
   "arabic": [
    "شعبي"
   ],
@@ -584,9 +384,14 @@
    "sha'biyy"
   ],
   "vocalized": "شَعْبِيّ",
-  "frequencyRank": 336,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 318,
+  "level": "B1"
  },
  {
   "id": "k-noun-629",
@@ -599,14 +404,20 @@
    "hajm"
   ],
   "vocalized": "حَجْم",
-  "frequencyRank": 337,
-  "level": "A2",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 319,
+  "level": "A2"
  },
  {
   "id": "k-noun-6063",
   "type": "noun",
-  "english": "method, manner, mode",
+  "english": "manner, mode, style",
   "arabic": [
    "أسلوب"
   ],
@@ -614,24 +425,15 @@
    "usluub"
   ],
   "vocalized": "أُسْلُوب",
-  "frequencyRank": 338,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
- },
- {
-  "id": "k-noun-834",
-  "type": "noun",
-  "english": "grace, favor, courtesy",
-  "arabic": [
-   "فضل"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
   ],
-  "translit": [
-   "fadl"
-  ],
-  "vocalized": "فَضْل",
-  "frequencyRank": 339,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
+  "frequencyRank": 320,
+  "level": "B2"
  },
  {
   "id": "k-noun-4785",
@@ -644,9 +446,15 @@
    "shurta"
   ],
   "vocalized": "شُرْطَة",
-  "frequencyRank": 340,
-  "level": "A1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 321,
+  "level": "A1"
  },
  {
   "id": "k-noun-3657",
@@ -659,9 +467,15 @@
    "nuqta"
   ],
   "vocalized": "نُقْطَة",
-  "frequencyRank": 341,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 322,
+  "level": "B1"
  },
  {
   "id": "k-noun-6370",
@@ -674,14 +488,20 @@
    "ziraa'a"
   ],
   "vocalized": "زِرَاعَة",
-  "frequencyRank": 342,
-  "level": "C1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 323,
+  "level": "C1"
  },
  {
   "id": "k-noun-2799",
   "type": "noun",
-  "english": "genre",
+  "english": "art",
   "arabic": [
    "فن"
   ],
@@ -689,14 +509,20 @@
    "fann"
   ],
   "vocalized": "فَنّ",
-  "frequencyRank": 343,
-  "level": "A2",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 324,
+  "level": "A2"
  },
  {
   "id": "k-noun-5733",
   "type": "noun",
-  "english": "altitude",
+  "english": "height",
   "arabic": [
    "ارتفاع"
   ],
@@ -704,14 +530,20 @@
    "irtifaa'"
   ],
   "vocalized": "اِرْتِفَاع",
-  "frequencyRank": 344,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 325,
+  "level": "B1"
  },
  {
   "id": "k-noun-6300",
   "type": "noun",
-  "english": "participant, subscriber",
+  "english": "participant",
   "arabic": [
    "مشترك"
   ],
@@ -719,9 +551,14 @@
    "mushtarik"
   ],
   "vocalized": "مُشْتَرِك",
-  "frequencyRank": 345,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 326,
+  "level": "B1"
  },
  {
   "id": "k-noun-5471",
@@ -734,9 +571,15 @@
    "hisaab"
   ],
   "vocalized": "حِسَاب",
-  "frequencyRank": 346,
-  "level": "A2",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 327,
+  "level": "A2"
  },
  {
   "id": "k-noun-721",
@@ -749,14 +592,20 @@
    "januub"
   ],
   "vocalized": "جَنُوب",
-  "frequencyRank": 347,
-  "level": "A1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 328,
+  "level": "A1"
  },
  {
   "id": "k-noun-1747",
   "type": "noun",
-  "english": "vessel, container, receptacle",
+  "english": "envelope",
   "arabic": [
    "ظرف"
   ],
@@ -764,9 +613,15 @@
    "zarf"
   ],
   "vocalized": "ظَرْف",
-  "frequencyRank": 348,
-  "level": "B1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 329,
+  "level": "B1"
  },
  {
   "id": "k-noun-5247",
@@ -779,14 +634,20 @@
    "layl"
   ],
   "vocalized": "لَيْل",
-  "frequencyRank": 349,
-  "level": "A1",
-  "source": "Kelly + Wiktionary"
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 330,
+  "level": "A1"
  },
  {
   "id": "k-noun-260",
   "type": "noun",
-  "english": "division into chapters, analysis",
+  "english": "detail",
   "arabic": [
    "تفصيل"
   ],
@@ -794,8 +655,414 @@
    "tafsiil"
   ],
   "vocalized": "تَفْصِيل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 331,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-2129",
+  "type": "noun",
+  "english": "nation, home, homeland",
+  "arabic": [
+   "وطن"
+  ],
+  "translit": [
+   "watan"
+  ],
+  "vocalized": "وَطَن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 332,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-249",
+  "type": "noun",
+  "english": "most, majority",
+  "arabic": [
+   "معظم"
+  ],
+  "translit": [
+   "mu'zam"
+  ],
+  "vocalized": "مُعْظَم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 333,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-1138",
+  "type": "noun",
+  "english": "nature",
+  "arabic": [
+   "طبيعة"
+  ],
+  "translit": [
+   "tabii'a"
+  ],
+  "vocalized": "طَبِيعَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 334,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-5493",
+  "type": "adj",
+  "english": "artistic",
+  "arabic": [
+   "فني"
+  ],
+  "translit": [
+   "fanniyy"
+  ],
+  "vocalized": "فَنِّيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 335,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-5702",
+  "type": "noun",
+  "english": "influence, impression",
+  "arabic": [
+   "تأثير"
+  ],
+  "translit": [
+   "ta'thiir"
+  ],
+  "vocalized": "تَأْثِير",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 336,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-6329",
+  "type": "verb",
+  "english": "send",
+  "arabic": [
+   "أرسل"
+  ],
+  "translit": [
+   "arsala"
+  ],
+  "vocalized": "أَرْسَلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أرسل",
+   "he": "هو يرسل",
+   "she": "هي ترسل",
+   "we": "نحن نرسل",
+   "they": "هم يرسلون"
+  },
+  "frequencyRank": 337,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-3202",
+  "type": "adj",
+  "english": "laborious, hard, difficult",
+  "arabic": [
+   "صعب"
+  ],
+  "translit": [
+   "sa'b"
+  ],
+  "vocalized": "صَعْب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 338,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-2202",
+  "type": "noun",
+  "english": "player",
+  "arabic": [
+   "لاعب"
+  ],
+  "translit": [
+   "laa'ib"
+  ],
+  "vocalized": "لَاعِب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 339,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-839",
+  "type": "noun",
+  "english": "application",
+  "arabic": [
+   "تطبيق"
+  ],
+  "translit": [
+   "tatbiiq"
+  ],
+  "vocalized": "تَطْبِيق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 340,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-1115",
+  "type": "noun",
+  "english": "success",
+  "arabic": [
+   "نجاح"
+  ],
+  "translit": [
+   "najaah"
+  ],
+  "vocalized": "نَجَاح",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 341,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-5925",
+  "type": "noun",
+  "english": "difference",
+  "arabic": [
+   "فرق"
+  ],
+  "translit": [
+   "farq"
+  ],
+  "vocalized": "فَرْق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 342,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-925",
+  "type": "noun",
+  "english": "visit",
+  "arabic": [
+   "زيارة"
+  ],
+  "translit": [
+   "ziyaara"
+  ],
+  "vocalized": "زِيَارَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 343,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-3530",
+  "type": "noun",
+  "english": "lieutenant colonel",
+  "arabic": [
+   "مقدم"
+  ],
+  "translit": [
+   "muqaddam"
+  ],
+  "vocalized": "مُقَدَّم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 344,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-5323",
+  "type": "noun",
+  "english": "importance, significance",
+  "arabic": [
+   "أهمية"
+  ],
+  "translit": [
+   "ahammiyya"
+  ],
+  "vocalized": "أَهَمِّيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 345,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-3811",
+  "type": "noun",
+  "english": "color",
+  "arabic": [
+   "لون"
+  ],
+  "translit": [
+   "lawn"
+  ],
+  "vocalized": "لَوْن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 346,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-161",
+  "type": "noun",
+  "english": "element",
+  "arabic": [
+   "عنصر"
+  ],
+  "translit": [
+   "'unsur"
+  ],
+  "vocalized": "عُنْصُر",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 347,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-1966",
+  "type": "noun",
+  "english": "sight, vision",
+  "arabic": [
+   "رؤية"
+  ],
+  "translit": [
+   "ru'ya"
+  ],
+  "vocalized": "رُؤْيَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 348,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-6466",
+  "type": "noun",
+  "english": "weapon, arm",
+  "arabic": [
+   "سلاح"
+  ],
+  "translit": [
+   "silaah"
+  ],
+  "vocalized": "سِلَاح",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 349,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-5285",
+  "type": "noun",
+  "english": "occasion",
+  "arabic": [
+   "مناسبة"
+  ],
+  "translit": [
+   "munaasaba"
+  ],
+  "vocalized": "مُنَاسَبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
   "frequencyRank": 350,
-  "level": "B2",
-  "source": "Kelly + Wiktionary"
+  "level": "A2"
  }
 ]

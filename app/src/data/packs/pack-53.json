@@ -1,0 +1,1132 @@
+[
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "edge, border",
+  "arabic": [
+   "حافة"
+  ],
+  "translit": [
+   "haafa"
+  ],
+  "vocalized": "حَافَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2601,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "bus",
+  "arabic": [
+   "حافلة"
+  ],
+  "translit": [
+   "haafila"
+  ],
+  "vocalized": "حَافِلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2602,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "tavern",
+  "arabic": [
+   "حانة"
+  ],
+  "translit": [
+   "haana"
+  ],
+  "vocalized": "حَانَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2603,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "limit",
+  "arabic": [
+   "حد"
+  ],
+  "translit": [
+   "hadd"
+  ],
+  "vocalized": "حَدّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2604,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "thermic, thermal",
+  "arabic": [
+   "حراري"
+  ],
+  "translit": [
+   "haraariyy"
+  ],
+  "vocalized": "حَرَارِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2605,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "free, liberate",
+  "arabic": [
+   "حرر"
+  ],
+  "translit": [
+   "harrara"
+  ],
+  "vocalized": "حَرَّرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحرر",
+   "he": "هو يحرر",
+   "she": "هي تحرر",
+   "we": "نحن نحرر",
+   "they": "هم يحررون"
+  },
+  "frequencyRank": 2606,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "burn",
+  "arabic": [
+   "حرق"
+  ],
+  "translit": [
+   "haraqa"
+  ],
+  "vocalized": "حَرَقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحرق",
+   "he": "هو يحرق",
+   "she": "هي تحرق",
+   "we": "نحن نحرق",
+   "they": "هم يحرقون"
+  },
+  "frequencyRank": 2607,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "bundle",
+  "arabic": [
+   "حزمة"
+  ],
+  "translit": [
+   "huzma"
+  ],
+  "vocalized": "حُزْمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2608,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "soup",
+  "arabic": [
+   "حساء"
+  ],
+  "translit": [
+   "hasaa'"
+  ],
+  "vocalized": "حَسَاء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2609,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "crowd, gathering, assembly",
+  "arabic": [
+   "حشد"
+  ],
+  "translit": [
+   "hashd"
+  ],
+  "vocalized": "حَشْد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2610,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "insect",
+  "arabic": [
+   "حشرة"
+  ],
+  "translit": [
+   "hashara"
+  ],
+  "vocalized": "حَشَرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2611,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "harvest, reap",
+  "arabic": [
+   "حصد"
+  ],
+  "translit": [
+   "hasada"
+  ],
+  "vocalized": "حَصَدَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحصد",
+   "he": "هو يحصد",
+   "she": "هي تحصد",
+   "we": "نحن نحصد",
+   "they": "هم يحصدون"
+  },
+  "frequencyRank": 2612,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "break",
+  "arabic": [
+   "حطم"
+  ],
+  "translit": [
+   "hatama"
+  ],
+  "vocalized": "حَطَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحطم",
+   "he": "هو يحطم",
+   "she": "هي تحطم",
+   "we": "نحن نحطم",
+   "they": "هم يحطمون"
+  },
+  "frequencyRank": 2613,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "grandson",
+  "arabic": [
+   "حفيد"
+  ],
+  "translit": [
+   "hafiid"
+  ],
+  "vocalized": "حَفِيد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2614,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "granddaughter",
+  "arabic": [
+   "حفيدة"
+  ],
+  "translit": [
+   "hafiida"
+  ],
+  "vocalized": "حَفِيدَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2615,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "story, tale",
+  "arabic": [
+   "حكاية"
+  ],
+  "translit": [
+   "hikaaya"
+  ],
+  "vocalized": "حِكَايَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2616,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "rule, reign",
+  "arabic": [
+   "حكم"
+  ],
+  "translit": [
+   "hakama"
+  ],
+  "vocalized": "حَكَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحكم",
+   "he": "هو يحكم",
+   "she": "هي تحكم",
+   "we": "نحن نحكم",
+   "they": "هم يحكمون"
+  },
+  "frequencyRank": 2617,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "wisdom",
+  "arabic": [
+   "حكمة"
+  ],
+  "translit": [
+   "hikma"
+  ],
+  "vocalized": "حِكْمَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2618,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "analyze",
+  "arabic": [
+   "حلل"
+  ],
+  "translit": [
+   "hallala"
+  ],
+  "vocalized": "حَلَّلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أحلل",
+   "he": "هو يحلل",
+   "she": "هي تحلل",
+   "we": "نحن نحلل",
+   "they": "هم يحللون"
+  },
+  "frequencyRank": 2619,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "dessert",
+  "arabic": [
+   "حلوى"
+  ],
+  "translit": [
+   "halwaa"
+  ],
+  "vocalized": "حَلْوَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2620,
+  "level": "A1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "enthusiasm",
+  "arabic": [
+   "حماسة"
+  ],
+  "translit": [
+   "hamaasa"
+  ],
+  "vocalized": "حَمَاسَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2621,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "foolishness, stupidity",
+  "arabic": [
+   "حماقة"
+  ],
+  "translit": [
+   "hamaaqa"
+  ],
+  "vocalized": "حَمَاقَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2622,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "cargo, freight, payload",
+  "arabic": [
+   "حمولة"
+  ],
+  "translit": [
+   "humuula"
+  ],
+  "vocalized": "حُمُولَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2623,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "diet",
+  "arabic": [
+   "حمية"
+  ],
+  "translit": [
+   "himya"
+  ],
+  "vocalized": "حِمْيَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2624,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "throat, larynx",
+  "arabic": [
+   "حنجرة"
+  ],
+  "translit": [
+   "hanjara"
+  ],
+  "vocalized": "حَنْجَرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter",
+   "wiktionary-en"
+  ],
+  "frequencyRank": 2625,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "zoological",
+  "arabic": [
+   "حيواني"
+  ],
+  "translit": [
+   "hayawaaniyy"
+  ],
+  "vocalized": "حَيَوانِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2626,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "hide, conceal",
+  "arabic": [
+   "خبأ"
+  ],
+  "translit": [
+   "khaba'a"
+  ],
+  "vocalized": "خَبَأَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخبأ",
+   "he": "هو يخبأ",
+   "she": "هي تخبأ",
+   "we": "نحن نخبأ",
+   "they": "هم يخبؤون"
+  },
+  "frequencyRank": 2627,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "knock",
+  "arabic": [
+   "خبط"
+  ],
+  "translit": [
+   "khabbata"
+  ],
+  "vocalized": "خَبَّطَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "conjugations": {
+   "I": "أنا أخبط",
+   "he": "هو يخبط",
+   "she": "هي تخبط",
+   "we": "نحن نخبط",
+   "they": "هم يخبطون"
+  },
+  "frequencyRank": 2628,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "cheek",
+  "arabic": [
+   "خد"
+  ],
+  "translit": [
+   "khadd"
+  ],
+  "vocalized": "خَدّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2629,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "deceive",
+  "arabic": [
+   "خدع"
+  ],
+  "translit": [
+   "khada'a"
+  ],
+  "vocalized": "خَدَعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخدع",
+   "he": "هو يخدع",
+   "she": "هي تخدع",
+   "we": "نحن نخدع",
+   "they": "هم يخدعون"
+  },
+  "frequencyRank": 2630,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "trick, deception",
+  "arabic": [
+   "خدعة"
+  ],
+  "translit": [
+   "khud'a"
+  ],
+  "vocalized": "خُدْعَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2631,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "serve",
+  "arabic": [
+   "خدم"
+  ],
+  "translit": [
+   "khadama"
+  ],
+  "vocalized": "خَدَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخدم",
+   "he": "هو يخدم",
+   "she": "هي تخدم",
+   "we": "نحن نخدم",
+   "they": "هم يخدمون"
+  },
+  "frequencyRank": 2632,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "myth, cock-and-bull story",
+  "arabic": [
+   "خرافة"
+  ],
+  "translit": [
+   "khuraafa"
+  ],
+  "vocalized": "خُرَافَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2633,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "beads",
+  "arabic": [
+   "خرز"
+  ],
+  "translit": [
+   "kharaz"
+  ],
+  "vocalized": "خَرَز",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2634,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "break",
+  "arabic": [
+   "خرق"
+  ],
+  "translit": [
+   "kharaqa"
+  ],
+  "vocalized": "خَرَقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخرق",
+   "he": "هو يخرق",
+   "she": "هي تخرق",
+   "we": "نحن نخرق",
+   "they": "هم يخرقون"
+  },
+  "frequencyRank": 2635,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "wardrobe, closet, coffer",
+  "arabic": [
+   "خزانة"
+  ],
+  "translit": [
+   "khizaana"
+  ],
+  "vocalized": "خِزَانَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2636,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "store",
+  "arabic": [
+   "خزن"
+  ],
+  "translit": [
+   "khazana"
+  ],
+  "vocalized": "خَزَنَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخزن",
+   "he": "هو يخزن",
+   "she": "هي تخزن",
+   "we": "نحن نخزن",
+   "they": "هم يخزنون"
+  },
+  "frequencyRank": 2637,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "safe",
+  "arabic": [
+   "خزنة"
+  ],
+  "translit": [
+   "khazna"
+  ],
+  "vocalized": "خَزْنَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2638,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "wooden",
+  "arabic": [
+   "خشبي"
+  ],
+  "translit": [
+   "khashabiyy"
+  ],
+  "vocalized": "خَشَبِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2639,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "rough",
+  "arabic": [
+   "خشن"
+  ],
+  "translit": [
+   "khashin"
+  ],
+  "vocalized": "خَشِن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2640,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "particular, peculiar, special",
+  "arabic": [
+   "خصوصي"
+  ],
+  "translit": [
+   "khusuusiyy"
+  ],
+  "vocalized": "خُصُوصِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2641,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "hook",
+  "arabic": [
+   "خطاف"
+  ],
+  "translit": [
+   "khuttaaf"
+  ],
+  "vocalized": "خُطَّاف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2642,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "background",
+  "arabic": [
+   "خلفية"
+  ],
+  "translit": [
+   "khalfiyya"
+  ],
+  "vocalized": "خَلْفِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2643,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "cellular",
+  "arabic": [
+   "خلوي"
+  ],
+  "translit": [
+   "khalawiyy"
+  ],
+  "vocalized": "خَلَوِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2644,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "gulf",
+  "arabic": [
+   "خليج"
+  ],
+  "translit": [
+   "khaliij"
+  ],
+  "vocalized": "خَلِيج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2645,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "guess, conjecture",
+  "arabic": [
+   "خمن"
+  ],
+  "translit": [
+   "khammana"
+  ],
+  "vocalized": "خَمَّنَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخمن",
+   "he": "هو يخمن",
+   "she": "هي تخمن",
+   "we": "نحن نخمن",
+   "they": "هم يخمنون"
+  },
+  "frequencyRank": 2646,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "trench",
+  "arabic": [
+   "خندق"
+  ],
+  "translit": [
+   "khandaq"
+  ],
+  "vocalized": "خَنْدَق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2647,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "strangle, choke",
+  "arabic": [
+   "خنق"
+  ],
+  "translit": [
+   "khanaqa"
+  ],
+  "vocalized": "خَنَقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخنق",
+   "he": "هو يخنق",
+   "she": "هي تخنق",
+   "we": "نحن نخنق",
+   "they": "هم يخنقون"
+  },
+  "frequencyRank": 2648,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "peach",
+  "arabic": [
+   "خوخ"
+  ],
+  "translit": [
+   "khawkh"
+  ],
+  "vocalized": "خَوْخ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2649,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "helmet",
+  "arabic": [
+   "خوذة"
+  ],
+  "translit": [
+   "khuudha"
+  ],
+  "vocalized": "خُوذَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2650,
+  "level": "B2"
+ }
+]

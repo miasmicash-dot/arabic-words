@@ -22,6 +22,8 @@ export interface Word {
   vocalized?: string
   level?: string
   source?: string
+  /** pack words: the sources that confirmed this word (always the frequency list, Wiktionary and at least one more) */
+  verified?: string[]
 }
 
 /**

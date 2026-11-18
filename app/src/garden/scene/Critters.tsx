@@ -4,6 +4,7 @@
 // Flies make no sound and there are no crickets.
 import { useEffect, useState, type ReactNode } from 'react'
 import { mix } from './ink'
+import { useSid } from './ids'
 import { LINES, yAt } from './Landscape'
 import type { Palette } from './palette'
 import './critters.css'
@@ -450,38 +451,64 @@ function Bat({ ink }: { ink: string }) {
 
 // ---------- Nova the cat ----------
 
-/** Nova's coat. Change these to match her. */
-const NOVA = { coat: '#8f8a86', stripe: '#5d5854', light: '#efe9e2', eye: '#9cc46a' }
+/** Nova is a dilute calico: a white cat with soft blue-grey and cream (blonde) patches, and green eyes. */
+const NOVA = { white: '#f6f2ec', grey: '#9ea3aa', greyDark: '#83888f', cream: '#ecc995', eye: '#9cc46a' }
+const BODY = 'M-13,0 C-16,-10 -12,-22 -2,-26 C6,-28 12,-22 12,-12 C12,-6 11,-2 9,0Z'
+const HAUNCH = 'M-14,0 C-16,-8 -10,-13 -4,-12 C1,-11 2,-5 0,0Z'
+const HEAD = 'M-2.4,-32 C-2.4,-38 2,-41.4 7,-41.4 C12.4,-41.4 16.4,-37.6 16.4,-32 C16.4,-26.6 12.4,-23.4 7,-23.4 C1.8,-23.4 -2.4,-26.6 -2.4,-32Z'
 
 function Nova({ s, ink, groom }: Art & { groom: boolean }) {
-  const c = s(NOVA.coat)
-  const d = s(NOVA.stripe)
-  const l = s(NOVA.light)
+  const sid = useSid()
+  const w = s(NOVA.white)
+  const g = s(NOVA.grey)
+  const cr = s(NOVA.cream)
+  const tail = 'M-11,-2 C-21,-4 -21,5 -8,3.4 C2,2.4 9,3 14,1'
   return (
     <g>
+      <defs>
+        <clipPath id={`${sid}-nb`}><path d={BODY} /><path d={HAUNCH} /></clipPath>
+        <clipPath id={`${sid}-nh`}><path d={HEAD} /></clipPath>
+      </defs>
       <ellipse cx={0} cy={1} rx={17} ry={3} fill="#000" opacity={0.15} />
-      {/* tail wrapped round her feet; the tip flicks */}
-      <path className="cr-tailflick" d="M-11,-2 C-21,-4 -21,5 -8,3.4 C2,2.4 9,3 14,1" stroke={c} strokeWidth={4.2} fill="none" strokeLinecap="round" />
-      <path d="M-11,-2 C-21,-4 -21,5 -8,3.4 C2,2.4 9,3 14,1" stroke={ink} strokeWidth={0.5} fill="none" opacity={0.5} transform="translate(0,2.1)" />
-      {/* body, haunch and white chest */}
-      <path d="M-13,0 C-16,-10 -12,-22 -2,-26 C6,-28 12,-22 12,-12 C12,-6 11,-2 9,0Z" fill={c} stroke={ink} strokeWidth={1} />
-      <path d="M-14,0 C-16,-8 -10,-13 -4,-12 C1,-11 2,-5 0,0Z" fill={c} stroke={ink} strokeWidth={0.9} />
-      <path d="M-11,-8 q3,-1.5 5,0.4 M-12,-4 q3,-1.5 5,0.4 M-6,-20 q3,-2 6,-1" stroke={d} strokeWidth={1.3} fill="none" strokeLinecap="round" />
-      <path d="M4,-22 C9,-18 10,-8 8,0 L2,0 C3.5,-8 3,-16 4,-22Z" fill={l} />
-      {/* front legs; while grooming one paw comes up to her mouth */}
-      <path d="M4,-11 L3.6,-0.6" stroke={c} strokeWidth={3.4} strokeLinecap="round" />
-      <ellipse cx={3.8} cy={-0.4} rx={2.2} ry={1.2} fill={l} stroke={ink} strokeWidth={0.5} />
-      <g className={groom ? 'cr-pawlift' : undefined}>
-        <path d="M8.4,-11 L8.6,-0.6" stroke={c} strokeWidth={3.4} strokeLinecap="round" />
-        <ellipse cx={8.8} cy={-0.4} rx={2.2} ry={1.2} fill={l} stroke={ink} strokeWidth={0.5} />
+      {/* tail wrapped round her feet: grey with a cream band; the tip flicks */}
+      <g className="cr-tailflick">
+        <path d={tail} stroke={g} strokeWidth={4.2} fill="none" strokeLinecap="round" />
+        <path d="M-17,-1 C-19,1 -17,3.6 -12,3.6" stroke={cr} strokeWidth={4.2} fill="none" strokeLinecap="round" />
       </g>
-      {/* head: dips to lick the paw, or looks about */}
+      <path d={tail} stroke={ink} strokeWidth={0.5} fill="none" opacity={0.5} transform="translate(0,2.1)" />
+      {/* white body with soft calico patches */}
+      <path d={BODY} fill={w} />
+      <path d={HAUNCH} fill={w} />
+      <g clipPath={`url(#${sid}-nb)`}>
+        <path d="M-18,-14 C-12,-30 4,-32 8,-24 C6,-18 -2,-16 -6,-12 C-10,-8 -14,-8 -18,-8Z" fill={g} />
+        <path d="M-6,-12 C-2,-16 4,-18 8,-17 C9,-13 5,-10 0,-9 C-3,-9 -5,-10 -6,-12Z" fill={cr} />
+        <path d="M-18,-6 C-14,-10 -8,-11 -5,-8 C-4,-4 -8,0 -14,1 L-18,1Z" fill={cr} />
+        <path d="M-10,-4 C-7,-6 -3,-6 -1,-3 C-2,0 -6,1 -9,0Z" fill={g} />
+      </g>
+      <path d={BODY} fill="none" stroke={ink} strokeWidth={1} />
+      <path d={HAUNCH} fill="none" stroke={ink} strokeWidth={0.9} />
+      {/* front legs and white paws; while grooming one paw comes up to her mouth */}
+      <path d="M4,-11 L3.6,-0.6" stroke={w} strokeWidth={3.4} strokeLinecap="round" />
+      <path d="M4,-11 L3.6,-0.6" stroke={ink} strokeWidth={0.4} opacity={0.4} transform="translate(-1.8,0)" />
+      <ellipse cx={3.8} cy={-0.4} rx={2.2} ry={1.2} fill={w} stroke={ink} strokeWidth={0.5} />
+      <g className={groom ? 'cr-pawlift' : undefined}>
+        <path d="M8.4,-11 L8.6,-0.6" stroke={w} strokeWidth={3.4} strokeLinecap="round" />
+        <path d="M8.4,-11 L8.6,-0.6" stroke={ink} strokeWidth={0.4} opacity={0.4} transform="translate(1.8,0)" />
+        <ellipse cx={8.8} cy={-0.4} rx={2.2} ry={1.2} fill={w} stroke={ink} strokeWidth={0.5} />
+      </g>
+      {/* head: a grey cap over one eye and a cream patch over the other, white muzzle; dips to lick, or looks about */}
       <g className={groom ? 'cr-lick' : 'cr-look'}>
-        <path d="M-1,-38 L0.5,-46 L5,-40Z M10,-40 L14.6,-46 L15,-37.6Z" fill={c} stroke={ink} strokeWidth={0.9} strokeLinejoin="round" />
+        <path d="M-1,-38 L0.5,-46 L5,-40Z" fill={g} stroke={ink} strokeWidth={0.9} strokeLinejoin="round" />
+        <path d="M10,-40 L14.6,-46 L15,-37.6Z" fill={cr} stroke={ink} strokeWidth={0.9} strokeLinejoin="round" />
         <path d="M0.8,-39.6 L1.4,-43.6 L3.6,-40.6Z M11.4,-40.4 L13.8,-43.4 L14,-39Z" fill={s('#e9b4b4')} />
-        <path d="M-2.4,-32 C-2.4,-38 2,-41.4 7,-41.4 C12.4,-41.4 16.4,-37.6 16.4,-32 C16.4,-26.6 12.4,-23.4 7,-23.4 C1.8,-23.4 -2.4,-26.6 -2.4,-32Z" fill={c} stroke={ink} strokeWidth={1} />
-        <path d="M5,-40.6 l0.6,3.4 M8,-41 l0,3.6 M11,-40.4 l-0.6,3.2" stroke={d} strokeWidth={1.1} strokeLinecap="round" />
-        <ellipse cx={7.2} cy={-27} rx={4.2} ry={2.8} fill={l} />
+        <path d={HEAD} fill={w} />
+        <g clipPath={`url(#${sid}-nh)`}>
+          <path d="M-4,-44 L7.6,-44 C7,-38 6.4,-33 5,-30 C2,-28 -1,-29 -4,-30Z" fill={g} />
+          <path d="M7.6,-44 L19,-44 L19,-29 C15,-28 12,-29 10,-31 C9,-35 8.6,-39 7.6,-44Z" fill={cr} />
+          <path d="M7,-42 C6,-37 6.4,-33 7.2,-30" stroke={w} strokeWidth={1.6} fill="none" />
+        </g>
+        <path d={HEAD} fill="none" stroke={ink} strokeWidth={1} />
+        <ellipse cx={7.2} cy={-27} rx={4.2} ry={2.8} fill={w} />
         {groom ? (
           <path d="M2.4,-31.6 q1.6,1.2 3.2,0 M9,-31.6 q1.6,1.2 3.2,0" stroke={ink} strokeWidth={0.9} fill="none" strokeLinecap="round" />
         ) : (

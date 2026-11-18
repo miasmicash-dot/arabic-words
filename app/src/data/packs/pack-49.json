@@ -1,0 +1,1187 @@
+[
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "enjoy",
+  "arabic": [
+   "استمتع"
+  ],
+  "translit": [
+   "istamta'a"
+  ],
+  "vocalized": "اِسْتَمْتَعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستمتع",
+   "he": "هو يستمتع",
+   "she": "هي تستمتع",
+   "we": "نحن نستمتع",
+   "they": "هم يستمتعون"
+  },
+  "frequencyRank": 2401,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "infer, deduce",
+  "arabic": [
+   "استنتج"
+  ],
+  "translit": [
+   "istantaja"
+  ],
+  "vocalized": "اِسْتَنْتَجَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستنتج",
+   "he": "هو يستنتج",
+   "she": "هي تستنتج",
+   "we": "نحن نستنتج",
+   "they": "هم يستنتجون"
+  },
+  "frequencyRank": 2402,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "exhaust, consume",
+  "arabic": [
+   "استنفد"
+  ],
+  "translit": [
+   "istanfada"
+  ],
+  "vocalized": "اِسْتَنْفَدَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستنفد",
+   "he": "هو يستنفد",
+   "she": "هي تستنفد",
+   "we": "نحن نستنفد",
+   "they": "هم يستنفدون"
+  },
+  "frequencyRank": 2403,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "exhaust",
+  "arabic": [
+   "استهلك"
+  ],
+  "translit": [
+   "istahlaka"
+  ],
+  "vocalized": "اِسْتَهْلَكَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستهلك",
+   "he": "هو يستهلك",
+   "she": "هي تستهلك",
+   "we": "نحن نستهلك",
+   "they": "هم يستهلكون"
+  },
+  "frequencyRank": 2404,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "captivate, enchant",
+  "arabic": [
+   "استهوى"
+  ],
+  "translit": [
+   "istahwaa"
+  ],
+  "vocalized": "اِسْتَهْوَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستهوي",
+   "he": "هو يستهوي",
+   "she": "هي تستهوي",
+   "we": "نحن نستهوي",
+   "they": "هم يستهوون"
+  },
+  "frequencyRank": 2405,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "entrust",
+  "arabic": [
+   "استودع"
+  ],
+  "translit": [
+   "istawda'a"
+  ],
+  "vocalized": "اِسْتَوْدَعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستودع",
+   "he": "هو يستودع",
+   "she": "هي تستودع",
+   "we": "نحن نستودع",
+   "they": "هم يستودعون"
+  },
+  "frequencyRank": 2406,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "studio",
+  "arabic": [
+   "إستوديو"
+  ],
+  "translit": [
+   "istuudiyoo"
+  ],
+  "vocalized": "إِسْتُودِيُو",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2407,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "import",
+  "arabic": [
+   "استورد"
+  ],
+  "translit": [
+   "istawrada"
+  ],
+  "vocalized": "اِسْتَوْرَدَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أستورد",
+   "he": "هو يستورد",
+   "she": "هي تستورد",
+   "we": "نحن نستورد",
+   "they": "هم يستوردون"
+  },
+  "frequencyRank": 2408,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "socialism",
+  "arabic": [
+   "اشتراكية"
+  ],
+  "translit": [
+   "ishtiraakiyya"
+  ],
+  "vocalized": "اِشْتِرَاكِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2409,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "hunt",
+  "arabic": [
+   "اصطاد"
+  ],
+  "translit": [
+   "istaada"
+  ],
+  "vocalized": "اِصْطَادَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أصطاد",
+   "he": "هو يصطاد",
+   "she": "هي تصطاد",
+   "we": "نحن نصطاد",
+   "they": "هم يصطادون"
+  },
+  "frequencyRank": 2410,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "clash, collide",
+  "arabic": [
+   "اصطدم"
+  ],
+  "translit": [
+   "istadama"
+  ],
+  "vocalized": "اِصْطَدَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أصطدم",
+   "he": "هو يصطدم",
+   "she": "هي تصطدم",
+   "we": "نحن نصطدم",
+   "they": "هم يصطدمون"
+  },
+  "frequencyRank": 2411,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "obey",
+  "arabic": [
+   "أطاع"
+  ],
+  "translit": [
+   "ataa'a"
+  ],
+  "vocalized": "أَطَاعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أطيع",
+   "he": "هو يطيع",
+   "she": "هي تطيع",
+   "we": "نحن نطيع",
+   "they": "هم يطيعون"
+  },
+  "frequencyRank": 2412,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "apology",
+  "arabic": [
+   "اعتذار"
+  ],
+  "translit": [
+   "i'tidhaar"
+  ],
+  "vocalized": "اِعْتِذَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2413,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "bathe",
+  "arabic": [
+   "اغتسل"
+  ],
+  "translit": [
+   "ightasala"
+  ],
+  "vocalized": "اِغْتَسَلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أغتسل",
+   "he": "هو يغتسل",
+   "she": "هي تغتسل",
+   "we": "نحن نغتسل",
+   "they": "هم يغتسلون"
+  },
+  "frequencyRank": 2414,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "hypothetical",
+  "arabic": [
+   "افتراضي"
+  ],
+  "translit": [
+   "iftiraadiyy"
+  ],
+  "vocalized": "اِفْتِرَاضِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2415,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "quote",
+  "arabic": [
+   "اقتبس"
+  ],
+  "translit": [
+   "iqtabasa"
+  ],
+  "vocalized": "اِقْتَبَسَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أقتبس",
+   "he": "هو يقتبس",
+   "she": "هي تقتبس",
+   "we": "نحن نقتبس",
+   "they": "هم يقتبسون"
+  },
+  "frequencyRank": 2416,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "deduction, discount",
+  "arabic": [
+   "اقتطاع"
+  ],
+  "translit": [
+   "iqtitaa'"
+  ],
+  "vocalized": "اِقْتِطَاع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2417,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "adherence, adhesion, adhesiveness",
+  "arabic": [
+   "التصاق"
+  ],
+  "translit": [
+   "iltisaaq"
+  ],
+  "vocalized": "اِلْتِصَاق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2418,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "meeting",
+  "arabic": [
+   "التقاء"
+  ],
+  "translit": [
+   "iltiqaa'"
+  ],
+  "vocalized": "اِلْتِقَاء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2419,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "pick up",
+  "arabic": [
+   "التقط"
+  ],
+  "translit": [
+   "iltaqata"
+  ],
+  "vocalized": "اِلْتَقَطَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا ألتقط",
+   "he": "هو يلتقط",
+   "she": "هي تلتقط",
+   "we": "نحن نلتقط",
+   "they": "هم يلتقطون"
+  },
+  "frequencyRank": 2420,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "meet",
+  "arabic": [
+   "التقى"
+  ],
+  "translit": [
+   "iltaqaa"
+  ],
+  "vocalized": "اِلْتَقَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا ألتقي",
+   "he": "هو يلتقي",
+   "she": "هي تلتقي",
+   "we": "نحن نلتقي",
+   "they": "هم يلتقون"
+  },
+  "frequencyRank": 2421,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "compliance",
+  "arabic": [
+   "امتثال"
+  ],
+  "translit": [
+   "imtithaal"
+  ],
+  "vocalized": "اِمْتِثَال",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2422,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "obey",
+  "arabic": [
+   "امتثل"
+  ],
+  "translit": [
+   "imtathala"
+  ],
+  "vocalized": "اِمْتَثَلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أمتثل",
+   "he": "هو يمتثل",
+   "she": "هي تمتثل",
+   "we": "نحن نمتثل",
+   "they": "هم يمتثلون"
+  },
+  "frequencyRank": 2423,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "absorb, sip",
+  "arabic": [
+   "امتص"
+  ],
+  "translit": [
+   "imtassa"
+  ],
+  "vocalized": "اِمْتَصَّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أمتص",
+   "he": "هو يمتص",
+   "she": "هي تمتص",
+   "we": "نحن نمتص",
+   "they": "هم يمتصون"
+  },
+  "frequencyRank": 2424,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "possess, own",
+  "arabic": [
+   "امتلك"
+  ],
+  "translit": [
+   "imtalaka"
+  ],
+  "vocalized": "اِمْتَلَكَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أمتلك",
+   "he": "هو يمتلك",
+   "she": "هي تمتلك",
+   "we": "نحن نمتلك",
+   "they": "هم يمتلكون"
+  },
+  "frequencyRank": 2425,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "elect",
+  "arabic": [
+   "انتخب"
+  ],
+  "translit": [
+   "intakhaba"
+  ],
+  "vocalized": "اِنْتَخَبَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنتخب",
+   "he": "هو ينتخب",
+   "she": "هي تنتخب",
+   "we": "نحن ننتخب",
+   "they": "هم ينتخبون"
+  },
+  "frequencyRank": 2426,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "selection",
+  "arabic": [
+   "انتقاء"
+  ],
+  "translit": [
+   "intiqaa'"
+  ],
+  "vocalized": "اِنْتِقَاء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2427,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "pick out, select",
+  "arabic": [
+   "انتقى"
+  ],
+  "translit": [
+   "intaqaa"
+  ],
+  "vocalized": "اِنْتَقَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنتقي",
+   "he": "هو ينتقي",
+   "she": "هي تنتقي",
+   "we": "نحن ننتقي",
+   "they": "هم ينتقون"
+  },
+  "frequencyRank": 2428,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "belong",
+  "arabic": [
+   "انتمى"
+  ],
+  "translit": [
+   "intamaa"
+  ],
+  "vocalized": "اِنْتَمَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنتمي",
+   "he": "هو ينتمي",
+   "she": "هي تنتمي",
+   "we": "نحن ننتمي",
+   "they": "هم ينتمون"
+  },
+  "frequencyRank": 2429,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "decline",
+  "arabic": [
+   "انحدار"
+  ],
+  "translit": [
+   "inhidaar"
+  ],
+  "vocalized": "اِنْحِدَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2430,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "curvature",
+  "arabic": [
+   "انحناء"
+  ],
+  "translit": [
+   "inhinaa'"
+  ],
+  "vocalized": "اِنْحِنَاء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2431,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "trouble",
+  "arabic": [
+   "انزعاج"
+  ],
+  "translit": [
+   "inzi'aaj"
+  ],
+  "vocalized": "اِنْزِعَاج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2432,
+  "level": "C2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "slip, slide",
+  "arabic": [
+   "انزلق"
+  ],
+  "translit": [
+   "inzalaqa"
+  ],
+  "vocalized": "اِنْزَلَقَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنزلق",
+   "he": "هو ينزلق",
+   "she": "هي تنزلق",
+   "we": "نحن ننزلق",
+   "they": "هم ينزلقون"
+  },
+  "frequencyRank": 2433,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "harmony",
+  "arabic": [
+   "انسجام"
+  ],
+  "translit": [
+   "insijaam"
+  ],
+  "vocalized": "اِنْسِجَام",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2434,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "discipline",
+  "arabic": [
+   "انضباط"
+  ],
+  "translit": [
+   "indibaat"
+  ],
+  "vocalized": "اِنْضِبَاط",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2435,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "impression",
+  "arabic": [
+   "انطباع"
+  ],
+  "translit": [
+   "intibaa'"
+  ],
+  "vocalized": "اِنْطِبَاع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2436,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "break",
+  "arabic": [
+   "انكسر"
+  ],
+  "translit": [
+   "inkasara"
+  ],
+  "vocalized": "اِنْكَسَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "conjugations": {
+   "I": "أنا أنكسر",
+   "he": "هو ينكسر",
+   "she": "هي تنكسر",
+   "we": "نحن ننكسر",
+   "they": "هم ينكسرون"
+  },
+  "frequencyRank": 2437,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "tremble, quiver",
+  "arabic": [
+   "اهتز"
+  ],
+  "translit": [
+   "ihtazza"
+  ],
+  "vocalized": "اِهْتَزَّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أهتز",
+   "he": "هو يهتز",
+   "she": "هي تهتز",
+   "we": "نحن نهتز",
+   "they": "هم يهتزون"
+  },
+  "frequencyRank": 2438,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "miserable, wretched, dejected",
+  "arabic": [
+   "بائس"
+  ],
+  "translit": [
+   "baa'is"
+  ],
+  "vocalized": "بَائِس",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2439,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "skillful, skilled",
+  "arabic": [
+   "بارع"
+  ],
+  "translit": [
+   "baari'"
+  ],
+  "vocalized": "بَارِع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2440,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "gunpowder",
+  "arabic": [
+   "بارود"
+  ],
+  "translit": [
+   "baaruud"
+  ],
+  "vocalized": "بَارُود",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2441,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "baron",
+  "arabic": [
+   "بارون"
+  ],
+  "translit": [
+   "baaroon"
+  ],
+  "vocalized": "بارون",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2442,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "pakistani",
+  "arabic": [
+   "باكستاني"
+  ],
+  "translit": [
+   "baakistaaniyy"
+  ],
+  "vocalized": "بَاكِسْتَانِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2443,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "balloon",
+  "arabic": [
+   "بالون"
+  ],
+  "translit": [
+   "baaluun"
+  ],
+  "vocalized": "بالُون",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2444,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "vapor",
+  "arabic": [
+   "بخار"
+  ],
+  "translit": [
+   "bukhaar"
+  ],
+  "vocalized": "بُخَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2445,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "beginning, start",
+  "arabic": [
+   "بدء"
+  ],
+  "translit": [
+   "bad'"
+  ],
+  "vocalized": "بَدْء",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2446,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "suit",
+  "arabic": [
+   "بدلة"
+  ],
+  "translit": [
+   "badla"
+  ],
+  "vocalized": "بَدْلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2447,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "bodily, corporal, physical",
+  "arabic": [
+   "بدني"
+  ],
+  "translit": [
+   "badaniyy"
+  ],
+  "vocalized": "بَدَنِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2448,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "fat",
+  "arabic": [
+   "بدين"
+  ],
+  "translit": [
+   "badiin"
+  ],
+  "vocalized": "بَدِين",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2449,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "obvious",
+  "arabic": [
+   "بديهي"
+  ],
+  "translit": [
+   "badiihiyy"
+  ],
+  "vocalized": "بَدِيهِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2450,
+  "level": "C1"
+ }
+]

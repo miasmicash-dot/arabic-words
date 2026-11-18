@@ -182,7 +182,7 @@ export default function Settings() {
 
       <div className="card p-4 space-y-1 text-xs muted">
         <div className="font-semibold text-sm" style={{ color: 'var(--ink)' }}>Word sources</div>
-        <p>Extra words are picked in order of how common they are from the Kelly Project Arabic frequency list (University of Leeds, CC BY-NC-SA), with spellings, meanings, pronunciations and verb forms from English Wiktionary (CC BY-SA). New packs open as you learn.</p>
+        <p>Extra words are picked in order of how common they are from the Kelly Project Arabic frequency list (University of Leeds). Each word's spelling, meaning, pronunciation and verb forms come from English Wiktionary, and every meaning is confirmed by at least one more source: Wiktionary's English-to-Arabic translations, Arabic WordNet (with Princeton WordNet), or Tim Buckwalter's Arabic lexicon. Words that fail any check are left out. New packs open as you learn.</p>
       </div>
 
       {import.meta.env.DEV && (

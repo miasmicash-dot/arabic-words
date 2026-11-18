@@ -17,13 +17,16 @@ beforeEach(async () => {
 
 describe('word packs', () => {
   it('ships packs of real dictionary words with meaning, transliteration and verb forms', () => {
-    expect(PACKS.length).toBeGreaterThanOrEqual(10)
+    expect(PACKS.flat().length).toBeGreaterThanOrEqual(2000)
     for (const p of PACKS) {
       expect(p.length).toBe(50)
       for (const w of p) {
         expect(w.english).toBeTruthy()
         expect(w.arabic[0]).toMatch(/[؀-ۿ]/)
         expect(w.translit[0]).toMatch(/^[a-z' -]+$/)
+        // every meaning is confirmed by at least one source besides the frequency list and Wiktionary
+        expect(w.verified?.slice(0, 2)).toEqual(['kelly', 'wiktionary-ar'])
+        expect(w.verified!.length).toBeGreaterThanOrEqual(3)
         if (w.type === 'verb') expect(Object.keys(w.conjugations ?? {})).toEqual(['I', 'he', 'she', 'we', 'they'])
       }
     }

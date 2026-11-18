@@ -1,0 +1,1095 @@
+[
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "academy",
+  "arabic": [
+   "أكاديمية"
+  ],
+  "translit": [
+   "akaadiimiyya"
+  ],
+  "vocalized": "أَكَادِيمِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2301,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "oxygen",
+  "arabic": [
+   "أكسجين"
+  ],
+  "translit": [
+   "uksijiin"
+  ],
+  "vocalized": "أُكْسِجِين",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2302,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "finish, complete",
+  "arabic": [
+   "أكمل"
+  ],
+  "translit": [
+   "akmala"
+  ],
+  "vocalized": "أَكْمَلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أكمل",
+   "he": "هو يكمل",
+   "she": "هي تكمل",
+   "we": "نحن نكمل",
+   "they": "هم يكملون"
+  },
+  "frequencyRank": 2303,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "album",
+  "arabic": [
+   "ألبوم"
+  ],
+  "translit": [
+   "albuum"
+  ],
+  "vocalized": "أَلْبُوم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2304,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "cancel",
+  "arabic": [
+   "ألغى"
+  ],
+  "translit": [
+   "alghaa"
+  ],
+  "vocalized": "أَلْغَى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا ألغي",
+   "he": "هو يلغي",
+   "she": "هي تلغي",
+   "we": "نحن نلغي",
+   "they": "هم يلغون"
+  },
+  "frequencyRank": 2305,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "german",
+  "arabic": [
+   "ألماني"
+  ],
+  "translit": [
+   "almaaniyy"
+  ],
+  "vocalized": "أَلْمَانِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2306,
+  "level": "A1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "order, command",
+  "arabic": [
+   "أمر"
+  ],
+  "translit": [
+   "amara"
+  ],
+  "vocalized": "أَمَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا آمر",
+   "he": "هو يأمر",
+   "she": "هي تأمر",
+   "we": "نحن نأمر",
+   "they": "هم يأمرون"
+  },
+  "frequencyRank": 2307,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "american",
+  "arabic": [
+   "أمريكي"
+  ],
+  "translit": [
+   "amriikiyy"
+  ],
+  "vocalized": "أَمْرِيكِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2308,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "smooth",
+  "arabic": [
+   "أملس"
+  ],
+  "translit": [
+   "amlas"
+  ],
+  "vocalized": "أَمْلَس",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2309,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "motherhood",
+  "arabic": [
+   "أمومة"
+  ],
+  "translit": [
+   "umuuma"
+  ],
+  "vocalized": "أُمُومَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2310,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "tube, pipe",
+  "arabic": [
+   "أنبوب"
+  ],
+  "translit": [
+   "unbuub"
+  ],
+  "vocalized": "أُنْبُوب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2311,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "produce, bring about",
+  "arabic": [
+   "أنتج"
+  ],
+  "translit": [
+   "antaja"
+  ],
+  "vocalized": "أَنْتَجَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنتج",
+   "he": "هو ينتج",
+   "she": "هي تنتج",
+   "we": "نحن ننتج",
+   "they": "هم ينتجون"
+  },
+  "frequencyRank": 2312,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "carry out, execute",
+  "arabic": [
+   "أنجز"
+  ],
+  "translit": [
+   "anjaza"
+  ],
+  "vocalized": "أَنْجَزَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنجز",
+   "he": "هو ينجز",
+   "she": "هي تنجز",
+   "we": "نحن ننجز",
+   "they": "هم ينجزون"
+  },
+  "frequencyRank": 2313,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "save, rescue",
+  "arabic": [
+   "أنقذ"
+  ],
+  "translit": [
+   "anqadha"
+  ],
+  "vocalized": "أَنْقَذَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنقذ",
+   "he": "هو ينقذ",
+   "she": "هي تنقذ",
+   "we": "نحن ننقذ",
+   "they": "هم ينقذون"
+  },
+  "frequencyRank": 2314,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "elegant",
+  "arabic": [
+   "أنيق"
+  ],
+  "translit": [
+   "aniiq"
+  ],
+  "vocalized": "أَنِيق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2315,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "neglect",
+  "arabic": [
+   "أهمل"
+  ],
+  "translit": [
+   "ahmala"
+  ],
+  "vocalized": "أَهْمَلَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أهمل",
+   "he": "هو يهمل",
+   "she": "هي تهمل",
+   "we": "نحن نهمل",
+   "they": "هم يهملون"
+  },
+  "frequencyRank": 2316,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "opera",
+  "arabic": [
+   "أوبرا"
+  ],
+  "translit": [
+   "obira"
+  ],
+  "vocalized": "أُوبِرَا",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2317,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "automatic",
+  "arabic": [
+   "أوتوماتيكي"
+  ],
+  "translit": [
+   "utumaatiikiyy"
+  ],
+  "vocalized": "أُوتُوماتِيكِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2318,
+  "level": "B1"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "deposit",
+  "arabic": [
+   "أودع"
+  ],
+  "translit": [
+   "awda'a"
+  ],
+  "vocalized": "أَوْدَعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أودع",
+   "he": "هو يودع",
+   "she": "هي تودع",
+   "we": "نحن نودع",
+   "they": "هم يودعون"
+  },
+  "frequencyRank": 2319,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "orchestra",
+  "arabic": [
+   "أوركسترا"
+  ],
+  "translit": [
+   "orkestraa"
+  ],
+  "vocalized": "أُورْكِسْتْرَا",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2320,
+  "level": "B2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "european",
+  "arabic": [
+   "أوروبي"
+  ],
+  "translit": [
+   "uurubbiyy"
+  ],
+  "vocalized": "أُورُوبِّيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2321,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "middle",
+  "arabic": [
+   "أوسط"
+  ],
+  "translit": [
+   "awsat"
+  ],
+  "vocalized": "أَوْسَط",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2322,
+  "level": "A2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "delay",
+  "arabic": [
+   "أوقف"
+  ],
+  "translit": [
+   "awqafa"
+  ],
+  "vocalized": "أَوْقَفَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أوقف",
+   "he": "هو يوقف",
+   "she": "هي توقف",
+   "we": "نحن نوقف",
+   "they": "هم يوقفون"
+  },
+  "frequencyRank": 2323,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "ukrainian",
+  "arabic": [
+   "أوكراني"
+  ],
+  "translit": [
+   "ukraaniyy"
+  ],
+  "vocalized": "أُوكْرَانِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2324,
+  "level": "A2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "olympic",
+  "arabic": [
+   "أولمبي"
+  ],
+  "translit": [
+   "olimbiyy"
+  ],
+  "vocalized": "أُولِمْبِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2325,
+  "level": "B2"
+ },
+ {
+  "id": "k-verb-undefined",
+  "type": "verb",
+  "english": "awaken, wake up",
+  "arabic": [
+   "أيقظ"
+  ],
+  "translit": [
+   "ayqaza"
+  ],
+  "vocalized": "أَيْقَظَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أوقظ",
+   "he": "هو يوقظ",
+   "she": "هي توقظ",
+   "we": "نحن نوقظ",
+   "they": "هم يوقظون"
+  },
+  "frequencyRank": 2326,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "icon",
+  "arabic": [
+   "أيقونة"
+  ],
+  "translit": [
+   "ayquuna"
+  ],
+  "vocalized": "أَيْقُونَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2327,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "deer, stag, hart",
+  "arabic": [
+   "أيل"
+  ],
+  "translit": [
+   "ayyal"
+  ],
+  "vocalized": "أَيَّل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2328,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "sailing, navigation, seafaring",
+  "arabic": [
+   "إبحار"
+  ],
+  "translit": [
+   "ibhaar"
+  ],
+  "vocalized": "إِبْحَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2329,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "needle",
+  "arabic": [
+   "إبرة"
+  ],
+  "translit": [
+   "ibra"
+  ],
+  "vocalized": "إِبْرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2330,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "obscurity",
+  "arabic": [
+   "إبهام"
+  ],
+  "translit": [
+   "ibhaam"
+  ],
+  "vocalized": "إِبْهَام",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2331,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "compulsion",
+  "arabic": [
+   "إجبار"
+  ],
+  "translit": [
+   "ijbaar"
+  ],
+  "vocalized": "إِجْبَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2332,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "abortion, miscarriage",
+  "arabic": [
+   "إجهاض"
+  ],
+  "translit": [
+   "ijhaad"
+  ],
+  "vocalized": "إِجْهَاض",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2333,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "restitution",
+  "arabic": [
+   "إرجاع"
+  ],
+  "translit": [
+   "irjaa'"
+  ],
+  "vocalized": "إِرْجَاع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2334,
+  "level": "B2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "disturbance",
+  "arabic": [
+   "إزعاج"
+  ],
+  "translit": [
+   "iz'aaj"
+  ],
+  "vocalized": "إِزْعَاج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2335,
+  "level": "B1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "israeli",
+  "arabic": [
+   "إسرائيلي"
+  ],
+  "translit": [
+   "israa'iiliyy"
+  ],
+  "vocalized": "إِسْرَائِيلِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2336,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "extravagance, prodigality",
+  "arabic": [
+   "إسراف"
+  ],
+  "translit": [
+   "israaf"
+  ],
+  "vocalized": "إِسْرَاف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2337,
+  "level": "C2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "sponge",
+  "arabic": [
+   "إسفنج"
+  ],
+  "translit": [
+   "isfanj"
+  ],
+  "vocalized": "إِسْفَنْج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2338,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "rumor",
+  "arabic": [
+   "إشاعة"
+  ],
+  "translit": [
+   "ishaa'a"
+  ],
+  "vocalized": "إِشَاعَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2339,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "luster",
+  "arabic": [
+   "إشراق"
+  ],
+  "translit": [
+   "ishraaq"
+  ],
+  "vocalized": "إشْراق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2340,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "notification",
+  "arabic": [
+   "إشعار"
+  ],
+  "translit": [
+   "ish'aar"
+  ],
+  "vocalized": "إِشْعَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2341,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "radiation",
+  "arabic": [
+   "إشعاع"
+  ],
+  "translit": [
+   "ish'aa'"
+  ],
+  "vocalized": "إِشْعَاع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2342,
+  "level": "B1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "compassion",
+  "arabic": [
+   "إشفاق"
+  ],
+  "translit": [
+   "ishfaaq"
+  ],
+  "vocalized": "إِشْفَاق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2343,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "illumination",
+  "arabic": [
+   "إضاءة"
+  ],
+  "translit": [
+   "idaa'a"
+  ],
+  "vocalized": "إِضَاءَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 2344,
+  "level": "A2"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "firefighter",
+  "arabic": [
+   "إطفائي"
+  ],
+  "translit": [
+   "itfaa'iyy"
+  ],
+  "vocalized": "إِطْفَائِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 2345,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-undefined",
+  "type": "noun",
+  "english": "drowning",
+  "arabic": [
+   "إغراق"
+  ],
+  "translit": [
+   "ighraaq"
+  ],
+  "vocalized": "إِغْرَاق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2346,
+  "level": "C2"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "greek",
+  "arabic": [
+   "إغريقي"
+  ],
+  "translit": [
+   "ighriiqiyy"
+  ],
+  "vocalized": "إِغْرِيقِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2347,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "regional",
+  "arabic": [
+   "إقليمي"
+  ],
+  "translit": [
+   "iqliimiyy"
+  ],
+  "vocalized": "إِقْلِيمِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2348,
+  "level": "A1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "mandatory, compulsory",
+  "arabic": [
+   "إلزامي"
+  ],
+  "translit": [
+   "ilzaamiyy"
+  ],
+  "vocalized": "إِلْزَامِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2349,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-undefined",
+  "type": "adj",
+  "english": "imperial",
+  "arabic": [
+   "إمبراطوري"
+  ],
+  "translit": [
+   "imbaraatuuriyy"
+  ],
+  "vocalized": "إمْبَرَاطُورِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 2350,
+  "level": "C1"
+ }
+]

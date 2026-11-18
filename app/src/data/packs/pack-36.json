@@ -1,0 +1,1123 @@
+[
+ {
+  "id": "k-verb-2100",
+  "type": "verb",
+  "english": "relinquish, surrender",
+  "arabic": [
+   "تخلى"
+  ],
+  "translit": [
+   "takhallaa"
+  ],
+  "vocalized": "تَخَلَّى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتخلى",
+   "he": "هو يتخلى",
+   "she": "هي تتخلى",
+   "we": "نحن نتخلى",
+   "they": "هم يتخلون"
+  },
+  "frequencyRank": 1751,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-608",
+  "type": "noun",
+  "english": "passageway, corridor",
+  "arabic": [
+   "ممر"
+  ],
+  "translit": [
+   "mamarr"
+  ],
+  "vocalized": "مَمَرّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter",
+   "wiktionary-en"
+  ],
+  "frequencyRank": 1752,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-5349",
+  "type": "noun",
+  "english": "flood, torrent",
+  "arabic": [
+   "سيل"
+  ],
+  "translit": [
+   "sayl"
+  ],
+  "vocalized": "سَيْل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 1753,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-3596",
+  "type": "noun",
+  "english": "assemblage",
+  "arabic": [
+   "تجميع"
+  ],
+  "translit": [
+   "tajmii'"
+  ],
+  "vocalized": "تَجْمِيع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1754,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-2083",
+  "type": "noun",
+  "english": "graduate, alumnus",
+  "arabic": [
+   "خريج"
+  ],
+  "translit": [
+   "khirriij"
+  ],
+  "vocalized": "خِرِّيج",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1755,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-4047",
+  "type": "noun",
+  "english": "reservoir",
+  "arabic": [
+   "خزان"
+  ],
+  "translit": [
+   "khazzaan"
+  ],
+  "vocalized": "خَزَّان",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1756,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-5938",
+  "type": "noun",
+  "english": "threshold, doorsill",
+  "arabic": [
+   "عتبة"
+  ],
+  "translit": [
+   "'ataba"
+  ],
+  "vocalized": "عَتَبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1757,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-3222",
+  "type": "noun",
+  "english": "factory, mill",
+  "arabic": [
+   "معمل"
+  ],
+  "translit": [
+   "ma'mal"
+  ],
+  "vocalized": "مَعْمَل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1758,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-1444",
+  "type": "noun",
+  "english": "will, testament",
+  "arabic": [
+   "وصية"
+  ],
+  "translit": [
+   "wasiyya"
+  ],
+  "vocalized": "وَصِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1759,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-2379",
+  "type": "noun",
+  "english": "monastery, convent",
+  "arabic": [
+   "دير"
+  ],
+  "translit": [
+   "dayr"
+  ],
+  "vocalized": "دَيْر",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1760,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-5018",
+  "type": "verb",
+  "english": "support, endorse",
+  "arabic": [
+   "أيد"
+  ],
+  "translit": [
+   "ayyada"
+  ],
+  "vocalized": "أَيَّدَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أؤيد",
+   "he": "هو يؤيد",
+   "she": "هي تؤيد",
+   "we": "نحن نؤيد",
+   "they": "هم يؤيدون"
+  },
+  "frequencyRank": 1761,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-790",
+  "type": "verb",
+  "english": "paint",
+  "arabic": [
+   "دهن"
+  ],
+  "translit": [
+   "dahana"
+  ],
+  "vocalized": "دَهَنَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أدهن",
+   "he": "هو يدهن",
+   "she": "هي تدهن",
+   "we": "نحن ندهن",
+   "they": "هم يدهنون"
+  },
+  "frequencyRank": 1762,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-1947",
+  "type": "verb",
+  "english": "understand, realize",
+  "arabic": [
+   "أدرك"
+  ],
+  "translit": [
+   "adraka"
+  ],
+  "vocalized": "أَدْرَكَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أدرك",
+   "he": "هو يدرك",
+   "she": "هي تدرك",
+   "we": "نحن ندرك",
+   "they": "هم يدركون"
+  },
+  "frequencyRank": 1763,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-298",
+  "type": "noun",
+  "english": "programming",
+  "arabic": [
+   "برمجة"
+  ],
+  "translit": [
+   "barmaja"
+  ],
+  "vocalized": "بَرْمَجَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1764,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-2788",
+  "type": "noun",
+  "english": "sabotage",
+  "arabic": [
+   "تخريب"
+  ],
+  "translit": [
+   "takhriib"
+  ],
+  "vocalized": "تَخْرِيب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1765,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-3355",
+  "type": "noun",
+  "english": "detention",
+  "arabic": [
+   "توقيف"
+  ],
+  "translit": [
+   "tawqiif"
+  ],
+  "vocalized": "تَوْقِيف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1766,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-3135",
+  "type": "noun",
+  "english": "import",
+  "arabic": [
+   "استيراد"
+  ],
+  "translit": [
+   "istiiraad"
+  ],
+  "vocalized": "اِسْتِيرَاد",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1767,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-2748",
+  "type": "noun",
+  "english": "race",
+  "arabic": [
+   "سباق"
+  ],
+  "translit": [
+   "sibaaq"
+  ],
+  "vocalized": "سِبَاق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1768,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-4813",
+  "type": "noun",
+  "english": "journey",
+  "arabic": [
+   "رحلة"
+  ],
+  "translit": [
+   "rihla"
+  ],
+  "vocalized": "رِحْلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1769,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-2271",
+  "type": "noun",
+  "english": "expense",
+  "arabic": [
+   "نفقة"
+  ],
+  "translit": [
+   "nafaqa"
+  ],
+  "vocalized": "نَفَقَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1770,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-4982",
+  "type": "verb",
+  "english": "frighten",
+  "arabic": [
+   "أخاف"
+  ],
+  "translit": [
+   "akhaafa"
+  ],
+  "vocalized": "أَخَافَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخيف",
+   "he": "هو يخيف",
+   "she": "هي تخيف",
+   "we": "نحن نخيف",
+   "they": "هم يخيفون"
+  },
+  "frequencyRank": 1771,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-5296",
+  "type": "verb",
+  "english": "destroy",
+  "arabic": [
+   "دمر"
+  ],
+  "translit": [
+   "dammara"
+  ],
+  "vocalized": "دَمَّرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أدمر",
+   "he": "هو يدمر",
+   "she": "هي تدمر",
+   "we": "نحن ندمر",
+   "they": "هم يدمرون"
+  },
+  "frequencyRank": 1772,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-3425",
+  "type": "adj",
+  "english": "kurdish",
+  "arabic": [
+   "كردي"
+  ],
+  "translit": [
+   "kurdiyy"
+  ],
+  "vocalized": "كُرْدِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1773,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-1946",
+  "type": "noun",
+  "english": "accordance, conformity",
+  "arabic": [
+   "وفاق"
+  ],
+  "translit": [
+   "wifaaq"
+  ],
+  "vocalized": "وِفَاق",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1774,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-637",
+  "type": "noun",
+  "english": "funnel",
+  "arabic": [
+   "قمع"
+  ],
+  "translit": [
+   "qam'"
+  ],
+  "vocalized": "قَمْع",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1775,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-5860",
+  "type": "verb",
+  "english": "breathe, respire",
+  "arabic": [
+   "تنفس"
+  ],
+  "translit": [
+   "tanaffasa"
+  ],
+  "vocalized": "تَنَفَّسَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتنفس",
+   "he": "هو يتنفس",
+   "she": "هي تتنفس",
+   "we": "نحن نتنفس",
+   "they": "هم يتنفسون"
+  },
+  "frequencyRank": 1776,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-4828",
+  "type": "noun",
+  "english": "blame",
+  "arabic": [
+   "لوم"
+  ],
+  "translit": [
+   "lawm"
+  ],
+  "vocalized": "لَوْم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1777,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-3363",
+  "type": "verb",
+  "english": "feed",
+  "arabic": [
+   "أطعم"
+  ],
+  "translit": [
+   "at'ama"
+  ],
+  "vocalized": "أَطْعَمَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أطعم",
+   "he": "هو يطعم",
+   "she": "هي تطعم",
+   "we": "نحن نطعم",
+   "they": "هم يطعمون"
+  },
+  "frequencyRank": 1778,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-73",
+  "type": "noun",
+  "english": "suicide",
+  "arabic": [
+   "انتحار"
+  ],
+  "translit": [
+   "intihaar"
+  ],
+  "vocalized": "اِنْتِحَار",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1779,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-5441",
+  "type": "noun",
+  "english": "lineage",
+  "arabic": [
+   "نسب"
+  ],
+  "translit": [
+   "nasab"
+  ],
+  "vocalized": "نَسَب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1780,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-1286",
+  "type": "verb",
+  "english": "await",
+  "arabic": [
+   "انتظر"
+  ],
+  "translit": [
+   "intazara"
+  ],
+  "vocalized": "اِنْتَظَرَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أنتظر",
+   "he": "هو ينتظر",
+   "she": "هي تنتظر",
+   "we": "نحن ننتظر",
+   "they": "هم ينتظرون"
+  },
+  "frequencyRank": 1781,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-4806",
+  "type": "noun",
+  "english": "cave",
+  "arabic": [
+   "كهف"
+  ],
+  "translit": [
+   "kahf"
+  ],
+  "vocalized": "كَهْف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1782,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-4723",
+  "type": "noun",
+  "english": "cirrhosis",
+  "arabic": [
+   "تليف"
+  ],
+  "translit": [
+   "talayyuf"
+  ],
+  "vocalized": "تَلَيُّف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1783,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-2730",
+  "type": "adj",
+  "english": "aerial",
+  "arabic": [
+   "هوائي"
+  ],
+  "translit": [
+   "hawaa'iyy"
+  ],
+  "vocalized": "هَوَائِيّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1784,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-3192",
+  "type": "noun",
+  "english": "battalion",
+  "arabic": [
+   "كتيبة"
+  ],
+  "translit": [
+   "katiiba"
+  ],
+  "vocalized": "كَتِيبَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 1785,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-2996",
+  "type": "verb",
+  "english": "suit, fit",
+  "arabic": [
+   "ناسب"
+  ],
+  "translit": [
+   "naasaba"
+  ],
+  "vocalized": "نَاسَبَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "conjugations": {
+   "I": "أنا أناسب",
+   "he": "هو يناسب",
+   "she": "هي تناسب",
+   "we": "نحن نناسب",
+   "they": "هم يناسبون"
+  },
+  "frequencyRank": 1786,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-1480",
+  "type": "verb",
+  "english": "prostrate, bow down",
+  "arabic": [
+   "سجد"
+  ],
+  "translit": [
+   "sajada"
+  ],
+  "vocalized": "سَجَدَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أسجد",
+   "he": "هو يسجد",
+   "she": "هي تسجد",
+   "we": "نحن نسجد",
+   "they": "هم يسجدون"
+  },
+  "frequencyRank": 1787,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-2653",
+  "type": "noun",
+  "english": "evening",
+  "arabic": [
+   "عشية"
+  ],
+  "translit": [
+   "'ashiyya"
+  ],
+  "vocalized": "عَشِيَّة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1788,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-2752",
+  "type": "noun",
+  "english": "spectrum",
+  "arabic": [
+   "طيف"
+  ],
+  "translit": [
+   "tayf"
+  ],
+  "vocalized": "طَيْف",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1789,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-5982",
+  "type": "noun",
+  "english": "cord, cable",
+  "arabic": [
+   "حبل"
+  ],
+  "translit": [
+   "habl"
+  ],
+  "vocalized": "حَبْل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1790,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-5674",
+  "type": "noun",
+  "english": "ritual, rite",
+  "arabic": [
+   "شعيرة"
+  ],
+  "translit": [
+   "sha'iira"
+  ],
+  "vocalized": "شَعِيرَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 1791,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-344",
+  "type": "noun",
+  "english": "calf",
+  "arabic": [
+   "عجل"
+  ],
+  "translit": [
+   "'ijl"
+  ],
+  "vocalized": "عِجْل",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet"
+  ],
+  "frequencyRank": 1792,
+  "level": "C1"
+ },
+ {
+  "id": "k-adj-794",
+  "type": "adj",
+  "english": "soft",
+  "arabic": [
+   "لين"
+  ],
+  "translit": [
+   "layyin"
+  ],
+  "vocalized": "لَيِّن",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1793,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-3117",
+  "type": "verb",
+  "english": "murmur",
+  "arabic": [
+   "خر"
+  ],
+  "translit": [
+   "kharra"
+  ],
+  "vocalized": "خَرَّ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخر",
+   "he": "هو يخر",
+   "she": "هي تخر",
+   "we": "نحن نخر",
+   "they": "هم يخرون"
+  },
+  "frequencyRank": 1794,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-2909",
+  "type": "verb",
+  "english": "grab",
+  "arabic": [
+   "خطف"
+  ],
+  "translit": [
+   "khatifa"
+  ],
+  "vocalized": "خَطِفَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أخطف",
+   "he": "هو يخطف",
+   "she": "هي تخطف",
+   "we": "نحن نخطف",
+   "they": "هم يخطفون"
+  },
+  "frequencyRank": 1795,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-153",
+  "type": "noun",
+  "english": "echo",
+  "arabic": [
+   "صدى"
+  ],
+  "translit": [
+   "sadaa"
+  ],
+  "vocalized": "صَدًى",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1796,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-3810",
+  "type": "noun",
+  "english": "translator, interpreter",
+  "arabic": [
+   "مترجم"
+  ],
+  "translit": [
+   "mutarjim"
+  ],
+  "vocalized": "مُتَرْجِم",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1797,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-4727",
+  "type": "noun",
+  "english": "kill",
+  "arabic": [
+   "قتلة"
+  ],
+  "translit": [
+   "qatla"
+  ],
+  "vocalized": "قَتْلَة",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "buckwalter"
+  ],
+  "frequencyRank": 1798,
+  "level": "C1"
+ },
+ {
+  "id": "k-noun-3546",
+  "type": "noun",
+  "english": "cube",
+  "arabic": [
+   "مكعب"
+  ],
+  "translit": [
+   "muka''ab"
+  ],
+  "vocalized": "مُكَعَّب",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "frequencyRank": 1799,
+  "level": "C1"
+ },
+ {
+  "id": "k-verb-2170",
+  "type": "verb",
+  "english": "follow",
+  "arabic": [
+   "اتبع"
+  ],
+  "translit": [
+   "ittaba'a"
+  ],
+  "vocalized": "اِتَّبَعَ",
+  "verified": [
+   "kelly",
+   "wiktionary-ar",
+   "wiktionary-en",
+   "arabic-wordnet",
+   "buckwalter"
+  ],
+  "conjugations": {
+   "I": "أنا أتبع",
+   "he": "هو يتبع",
+   "she": "هي تتبع",
+   "we": "نحن نتبع",
+   "they": "هم يتبعون"
+  },
+  "frequencyRank": 1800,
+  "level": "C1"
+ }
+]
