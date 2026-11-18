@@ -19,3 +19,28 @@
 @keyframes gp-pop { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 @keyframes gp-fall { from { transform: translateY(0) rotate(0deg); } to { transform: translateY(110vh) rotate(540deg); } }
 @media (prefers-reduced-motion: reduce) { .gp-bit { display: none; } .gp-cele-card { animation: none; } }
+
+/* handwritten status over the garden; fades into the scene after about 3 seconds */
+.gp-whisper {
+  position: absolute; left: 0; right: 0; top: 8%; z-index: 2; display: flex; justify-content: center;
+  padding: 0 14px; text-align: center; pointer-events: none; animation: gp-whisper 5.4s ease forwards;
+}
+.gp-whisper span { line-height: 1.25; padding: .15em .9em .25em; background: radial-gradient(closest-side, var(--halo, rgba(12, 32, 22, .42)), transparent); }
+@keyframes gp-whisper {
+  0% { opacity: 0; transform: translateY(10px); filter: blur(8px); }
+  13% { opacity: 1; transform: none; filter: blur(0); }
+  56% { opacity: 1; transform: none; filter: blur(0); }
+  100% { opacity: 0; transform: translateY(-6px) scale(1.04); filter: blur(5px); }
+}
+.gp-whisper-lush span { font-family: "Great Vibes", cursive; font-size: clamp(30px, 8.4vw, 46px); color: #fffdf0; text-shadow: 0 0 2px rgba(10, 40, 20, .9), 0 2px 10px rgba(10, 40, 20, .55), 0 0 24px rgba(255, 230, 150, .55); }
+.gp-whisper-fair span { font-family: "Dancing Script", cursive; font-weight: 600; font-size: clamp(25px, 6.8vw, 37px); color: #fffaf0; text-shadow: 0 0 2px rgba(20, 40, 30, .9), 0 2px 10px rgba(20, 40, 30, .5); }
+.gp-whisper-grey { --halo: rgba(25, 30, 35, .45); }
+.gp-whisper-drought { --halo: rgba(60, 30, 8, .45); }
+.gp-whisper-dead { --halo: rgba(0, 0, 0, .45); }
+.gp-whisper-grey span { font-family: "Caveat", cursive; font-weight: 500; font-size: clamp(26px, 7.4vw, 38px); color: #eef1f3; text-shadow: 0 1px 3px rgba(20, 25, 30, .7); }
+.gp-whisper-drought span { font-family: "Rock Salt", cursive; font-size: clamp(15px, 4.4vw, 22px); color: #fff0d2; letter-spacing: .02em; text-shadow: 0 1px 2px rgba(80, 40, 10, .8), 0 0 10px rgba(200, 120, 40, .55); }
+.gp-whisper-dead span { font-family: "Rock Salt", cursive; font-size: clamp(14px, 4vw, 20px); color: #e6e6e6; text-shadow: 0 1px 3px rgba(0, 0, 0, .7); }
+@media (prefers-reduced-motion: reduce) {
+  .gp-whisper { animation: gp-whisper-still 5s linear forwards; }
+  @keyframes gp-whisper-still { 0%, 70% { opacity: 1; } 100% { opacity: 0; } }
+}

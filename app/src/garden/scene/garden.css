@@ -21,7 +21,7 @@
 @keyframes gs-sway-big { from { transform: rotate(-1.8deg); } to { transform: rotate(1.6deg); } }
 .gs-sparkle { animation: gs-sparkle 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
 @keyframes gs-sparkle { 0%,100% { opacity: .15; transform: scale(.6) rotate(0deg); } 50% { opacity: 1; transform: scale(1.1) rotate(20deg); } }
-.gs-bounce { animation: gs-bounce 1.2s ease-out 0.9s 1 both; }
+.gs-bounce { animation: gs-bounce 1.2s ease-out 3s 1 both; }
 @keyframes gs-bounce { 0% { transform: scale(1); } 35% { transform: scale(1.035, 1.05); } 70% { transform: scale(.995, .99); } 100% { transform: scale(1); } }
 
 /* sky */
@@ -169,4 +169,63 @@
 
 @media (prefers-reduced-motion: reduce) {
   .gs-camg { transition: none !important; }
+}
+
+/* ---- v3: more animals, tap reactions, monkeys, watering can, blossoms and fruit ---- */
+.gs-crop { animation: gs-in 2.4s ease both; }
+.gs-fadein { animation: gs-in 2.5s ease both; }
+.gs-gallop { animation-duration: .16s; }
+.gs-leg-gallop { animation-duration: .32s; }
+.gs-leg-heavy { animation-duration: 1.2s; }
+.gs-rear { animation: gs-rear 1.6s ease-in-out 1 both; transform-box: fill-box; transform-origin: 18% 100%; }
+@keyframes gs-rear { 0%, 100% { transform: rotate(0); } 30%, 65% { transform: rotate(-24deg); } 45% { transform: rotate(-20deg); } }
+.gs-trunk { animation: gs-trunk 4s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 50% 0%; }
+@keyframes gs-trunk { from { transform: rotate(-8deg); } to { transform: rotate(10deg); } }
+.gs-trumpet { animation: gs-trumpet 2.4s ease-in-out 1 both; transform-box: fill-box; transform-origin: 50% 0%; }
+@keyframes gs-trumpet { 0%, 100% { transform: rotate(0); } 25%, 70% { transform: rotate(-125deg); } 45% { transform: rotate(-115deg); } }
+.gs-ear { animation: gs-ear 3s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 85% 30%; }
+@keyframes gs-ear { from { transform: rotate(0); } to { transform: rotate(-8deg); } }
+.gs-spray { opacity: 0; animation: gs-spray 1.6s ease-out .6s 1 both; }
+@keyframes gs-spray { 0% { opacity: 0; transform: translate(0, 10px); } 30% { opacity: 1; } 100% { opacity: 0; transform: translate(14px, -16px); } }
+.gs-skunktail { animation: gs-skunktail 2.6s ease-in-out 1 both; transform-box: fill-box; transform-origin: 85% 90%; }
+@keyframes gs-skunktail { 0%, 100% { transform: rotate(0); } 20%, 80% { transform: rotate(16deg) scale(1.12); } 40% { transform: rotate(10deg) scale(1.15); } 60% { transform: rotate(18deg) scale(1.1); } }
+.gs-stink { opacity: 0; animation: gs-stink 2.4s ease-out .5s 1 both; }
+@keyframes gs-stink { 0% { opacity: 0; transform: translate(0, 0) scale(.6); } 25% { opacity: 1; } 100% { opacity: 0; transform: translate(-14px, -20px) scale(1.2); } }
+.gs-hop-ferret { animation-duration: .36s; }
+.gs-wardance { animation: gs-wardance 1.8s ease-in-out 1 both; }
+@keyframes gs-wardance { 0%, 100% { transform: translate(0,0) rotate(0); } 15% { transform: translate(-8px,-12px) rotate(-12deg); } 30% { transform: translate(-14px,0) rotate(8deg); } 45% { transform: translate(-4px,-14px) rotate(-14deg); } 60% { transform: translate(6px,0) rotate(10deg); } 75% { transform: translate(2px,-10px) rotate(-8deg); } }
+.gs-pounce { animation: gs-pounce 1.2s ease-in-out 1 both; }
+@keyframes gs-pounce { 0%, 100% { transform: translate(0,0) rotate(0); } 20% { transform: translate(-4px,2px) rotate(4deg); } 50% { transform: translate(18px,-30px) rotate(-18deg); } 75% { transform: translate(30px,0) rotate(14deg); } }
+.gs-bighop { animation: gs-bighop .9s ease-in-out 1 both; }
+@keyframes gs-bighop { 0%, 100% { transform: translateY(0); } 45% { transform: translateY(-30px); } }
+.gs-curl { animation: gs-curl 2.4s ease-in-out 1 both; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes gs-curl { 0%, 100% { transform: scale(1) rotate(0); } 20%, 75% { transform: scale(.78, .74) rotate(-14deg); } }
+.gs-monkeyswing { animation: gs-monkeyswing 2.8s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 50% 0%; }
+@keyframes gs-monkeyswing { from { transform: rotate(-26deg); } to { transform: rotate(26deg); } }
+.gs-monkeyflip { animation: gs-monkeyflip 1.2s ease-in-out 1 both; transform-box: fill-box; transform-origin: 50% 0%; }
+@keyframes gs-monkeyflip { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+.gs-monkeyleap { animation: gs-monkeyleap 15s ease-in-out infinite; }
+@keyframes gs-monkeyleap { 0%, 70% { transform: translate(0,0); } 74% { transform: translate(-26px,-20px); } 78%, 92% { transform: translate(-54px,2px); } 95% { transform: translate(-26px,-20px); } 98%, 100% { transform: translate(0,0); } }
+.gs-scratch { animation: gs-bob 1.4s ease-in-out infinite alternate; }
+.gs-scratcharm { animation: gs-scratcharm .3s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 0% 100%; }
+@keyframes gs-scratcharm { from { transform: rotate(-8deg); } to { transform: rotate(10deg); } }
+
+.gs-can { opacity: 0; animation: gs-can 4.6s ease-in-out 1 both; }
+@keyframes gs-can { 0% { opacity: 0; transform: translate(150px,-70px) rotate(12deg) scale(var(--s)); } 10% { opacity: 1; } 18% { transform: translate(0,0) rotate(0) scale(var(--s)); } 26%, 64% { transform: translate(0,0) rotate(-32deg) scale(var(--s)); } 72% { transform: translate(0,0) rotate(0) scale(var(--s)); } 90% { opacity: 1; } 100% { opacity: 0; transform: translate(150px,-70px) rotate(12deg) scale(var(--s)); } }
+.gs-pour { opacity: 0; animation: gs-pour 4.6s linear 1 both; }
+@keyframes gs-pour { 0%, 25% { opacity: 0; } 30%, 63% { opacity: 1; } 69%, 100% { opacity: 0; } }
+.gs-stream { animation: gs-stream .4s linear infinite; }
+@keyframes gs-stream { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -32; } }
+.gs-pdrop { animation: gs-pdrop .6s cubic-bezier(.45,0,1,1) infinite; }
+@keyframes gs-pdrop { 0% { opacity: 0; transform: translate(0,0); } 12% { opacity: 1; } 90% { opacity: 1; } 100% { opacity: 0; transform: translate(var(--dx), var(--dy)); } }
+.gs-splashloop { animation: gs-splashloop .6s ease-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes gs-splashloop { from { opacity: 1; transform: scale(.3); } to { opacity: 0; transform: scale(1.6); } }
+.gs-rainbow { animation: gs-rainbow 4.6s ease-in-out 1 both; }
+@keyframes gs-rainbow { 0%, 40% { opacity: 0; } 50%, 60% { opacity: .55; } 68%, 100% { opacity: 0; } }
+.gs-wet { opacity: 0; animation: gs-wet 6s ease-in-out 1 both; }
+@keyframes gs-wet { 0%, 28% { opacity: 0; } 50%, 75% { opacity: .32; } 100% { opacity: 0; } }
+.gs-watering .gs-wglow { animation-delay: 2.8s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gs-can, .gs-pour, .gs-wet, .gs-monkeyleap, .gs-stink, .gs-spray { display: none; }
 }

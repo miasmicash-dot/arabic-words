@@ -1,0 +1,60 @@
+/* Opening sequence: name prompt and the black title screen that morphs into the Home page. */
+@property --r { syntax: '<percentage>'; inherits: false; initial-value: 0%; }
+
+.intro { position: fixed; inset: 0; z-index: 1000; overflow: hidden; -webkit-tap-highlight-color: transparent; }
+.intro-black {
+  position: absolute; inset: 0; background: #000; --r: 0%;
+  -webkit-mask-image: radial-gradient(circle at 50% 42%, transparent calc(var(--r) - 22%), #000 var(--r));
+  mask-image: radial-gradient(circle at 50% 42%, transparent calc(var(--r) - 22%), #000 var(--r));
+}
+.intro-morph .intro-black, .intro-fade .intro-black { animation: intro-reveal 1.3s cubic-bezier(.55,0,.35,1) forwards; }
+.intro-fade .intro-black { opacity: 0; transition: opacity .6s ease; }
+@keyframes intro-reveal { from { --r: 0%; } to { --r: 170%; } }
+
+.intro-stage { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 0 16px 8vh; pointer-events: none; }
+.intro-title {
+  font-family: "Great Vibes", "Noto Naskh Arabic", cursive; font-size: clamp(48px, 14vw, 92px); line-height: 1.25;
+  white-space: nowrap; transform-origin: 50% 50%;
+  transition: transform 1.25s cubic-bezier(.65,0,.25,1), opacity .55s ease, filter 1.25s ease;
+}
+.intro-letter {
+  display: inline-block; opacity: 0; text-shadow: 0 0 22px color-mix(in srgb, var(--glow) 55%, transparent), 0 0 2px rgba(255,255,255,.35);
+  animation: intro-write .9s cubic-bezier(.2,.7,.2,1) both;
+}
+@keyframes intro-write {
+  0% { opacity: 0; transform: translateY(.18em) scale(.86); filter: blur(10px); }
+  60% { opacity: 1; filter: blur(0); }
+  100% { opacity: 1; transform: none; filter: none; }
+}
+.intro-fade .intro-title { opacity: 0; }
+.intro-quick .intro-letter { animation-duration: .4s; }
+
+.intro-motes { position: absolute; inset: 0; pointer-events: none; transition: opacity .8s; }
+.intro-motes span {
+  position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #ffeeb0;
+  box-shadow: 0 0 8px 2px rgba(255, 220, 120, .55); opacity: 0; animation: intro-mote 6s ease-in-out infinite;
+}
+@keyframes intro-mote { 0%, 100% { opacity: 0; transform: translate(0, 0); } 40% { opacity: .9; } 70% { opacity: .2; transform: translate(14px, -22px); } }
+.intro-morph .intro-motes, .intro-fade .intro-motes { opacity: 0; }
+
+html.intro-playing [data-intro-target] { opacity: 0; }
+[data-intro-target] { transition: opacity .7s ease; }
+
+/* first launch: ask for a name */
+.intro-ask { background: radial-gradient(ellipse at 50% 15%, #1f4430 0%, #0b1a12 45%, #030705 100%); display: flex; align-items: center; justify-content: center; padding: 16px; animation: intro-in .8s ease both; }
+@keyframes intro-in { from { opacity: 0; } to { opacity: 1; } }
+.intro-card { position: relative; width: 100%; max-width: 380px; text-align: center; color: #eef5ea; display: flex; flex-direction: column; gap: 14px; }
+.intro-hello { font-family: "Great Vibes", cursive; font-size: 72px; line-height: 1.1; color: #ffd77a; text-shadow: 0 0 24px rgba(255, 210, 110, .45); }
+.intro-sub { color: #b9cdbf; font-size: 15px; line-height: 1.5; }
+.intro-input {
+  font-size: 18px; text-align: center; padding: 14px 16px; border-radius: 14px; color: #fff;
+  background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .22); outline: none;
+}
+.intro-input:focus { border-color: #ffd77a; box-shadow: 0 0 0 3px rgba(255, 215, 122, .2); }
+.intro-go { font-size: 17px; font-weight: 700; padding: 14px; border-radius: 14px; border: 0; color: #10241a; background: linear-gradient(100deg, #ffe08a, #f2b955); cursor: pointer; }
+.intro-go:disabled { opacity: .45; }
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-motes { display: none; }
+  .intro-title { transition-duration: .3s; }
+}

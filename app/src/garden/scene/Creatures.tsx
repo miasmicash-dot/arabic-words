@@ -1,6 +1,6 @@
 import { useSid } from './ids'
 // Wildlife and little atmospheric effects. All motion is CSS transform/opacity animation (see garden.css).
-import { memo, useMemo } from 'react'
+import { memo, useEffect, useMemo, useState } from 'react'
 import { brush, mix, rng, type P } from './ink'
 import { LINES, yAt } from './Landscape'
 import type { Palette } from './palette'
@@ -114,46 +114,369 @@ export function Deer({ s, ink }: { s: Shade; ink: string }) {
   )
 }
 
-export type AnimalKind = 'fox' | 'rabbit' | 'deer' | 'squirrel' | 'hedgehog'
-export const ANIMALS: AnimalKind[] = ['fox', 'rabbit', 'deer', 'squirrel', 'hedgehog', 'rabbit', 'fox']
+export function Horse({ s, ink, coat = '#8a5a36', act }: { s: Shade; ink: string; coat?: string; act?: boolean }) {
+  const fur = s(coat)
+  const dark = s(mix(coat, '#1e130c', 0.6))
+  const light = s(mix(coat, '#fff1dc', 0.35))
+  return (
+    <g className={act ? 'gs-rear' : 'gs-bob gs-gallop'}>
+      <Leg d="M-30,-44 L-36,-20 L-32,0" cls="gs-leg gs-leg-gallop" delay={0} color={dark} />
+      <Leg d="M22,-42 L26,-20 L24,0" cls="gs-leg gs-leg-gallop" delay={-0.16} color={dark} />
+      <path d="M-40,-58 C-52,-58 -60,-46 -63,-28 C-56,-36 -50,-44 -44,-50Z" fill={dark} stroke={ink} strokeWidth={1.2} className="gs-tail" />
+      <path d="M-42,-58 C-32,-71 22,-71 34,-61 C41,-55 41,-45 33,-41 C14,-36 -26,-36 -38,-42 C-46,-46 -47,-53 -42,-58Z" fill={fur} stroke={ink} strokeWidth={1.6} />
+      <path d="M-30,-62 C-14,-68 10,-68 26,-62" stroke={light} strokeWidth={3} fill="none" strokeLinecap="round" opacity={0.7} />
+      <Leg d="M-36,-44 L-41,-20 L-38,0" cls="gs-leg gs-leg-gallop" delay={-0.16} color={fur} />
+      <Leg d="M28,-42 L33,-20 L30,0" cls="gs-leg gs-leg-gallop" delay={0} color={fur} />
+      <path d="M24,-62 C30,-74 38,-88 46,-96 C50,-100 56,-100 60,-96 L71,-82 C73,-79 71,-75 66,-76 L58,-79 C52,-73 45,-61 37,-47Z" fill={fur} stroke={ink} strokeWidth={1.5} strokeLinejoin="round" />
+      <path d="M49,-97 L51,-108 L56,-98Z" fill={fur} stroke={ink} strokeWidth={1.1} />
+      <path d="M47,-97 C40,-90 33,-79 26,-66 M44,-93 C38,-88 33,-82 30,-74" stroke={dark} strokeWidth={4} fill="none" strokeLinecap="round" />
+      <circle cx={57} cy={-90} r={1.5} fill={ink} />
+      <circle cx={68} cy={-79} r={1} fill={ink} />
+      {act && <path d="M78,-92 q6,-3 10,0 M80,-84 q6,-1 9,2" stroke={ink} strokeWidth={1.4} fill="none" strokeLinecap="round" />}
+    </g>
+  )
+}
 
-const SPEC: Record<AnimalKind, { line: 'path' | 'mid'; scale: number; dur: number }> = {
+export function Elephant({ s, ink, act }: { s: Shade; ink: string; act?: boolean }) {
+  const hide = s('#9c9894')
+  const dark = s('#6f6a66')
+  return (
+    <g className="gs-bob gs-bob-slow">
+      <Leg d="M-36,-28 L-36,0" cls="gs-leg gs-leg-heavy" delay={0} color={dark} />
+      <Leg d="M26,-28 L27,0" cls="gs-leg gs-leg-heavy" delay={-0.6} color={dark} />
+      <path d="M-50,-50 q-9,8 -7,24" stroke={ink} strokeWidth={1.4} fill="none" className="gs-tail" />
+      <path d="M-50,-32 C-56,-70 -30,-92 6,-90 C40,-88 58,-68 52,-36 C50,-28 44,-24 36,-24 L-40,-24 C-48,-24 -50,-28 -50,-32Z" fill={hide} stroke={ink} strokeWidth={1.7} />
+      <path d="M-40,-76 C-24,-86 8,-88 30,-80" stroke={s('#c4c0ba')} strokeWidth={3} fill="none" strokeLinecap="round" opacity={0.6} />
+      <path d="M-30,-40 q4,-3 8,0 M-6,-36 q4,-3 8,0" stroke={dark} strokeWidth={1} fill="none" opacity={0.6} />
+      <Leg d="M-26,-28 L-27,0" cls="gs-leg gs-leg-heavy" delay={-0.6} color={hide} />
+      <Leg d="M36,-28 L36,0" cls="gs-leg gs-leg-heavy" delay={0} color={hide} />
+      <path d="M40,-82 C56,-92 78,-82 77,-62 C77,-54 74,-48 70,-44 L58,-40 C50,-42 44,-48 40,-56Z" fill={hide} stroke={ink} strokeWidth={1.6} />
+      <g className={act ? 'gs-trumpet' : 'gs-trunk'}>
+        <path d="M70,-48 C70,-30 70,-16 77,-8 C79,-5 77,-2 73,-3 C63,-9 60,-24 60,-42Z" fill={hide} stroke={ink} strokeWidth={1.5} />
+        <path d="M66,-36 l5,0 M66,-28 l6,-1 M68,-20 l5,-1" stroke={dark} strokeWidth={0.9} />
+      </g>
+      <path d="M46,-80 C30,-86 22,-66 28,-52 C34,-42 48,-46 52,-56 C55,-66 53,-76 46,-80Z" fill={s('#b3aca6')} stroke={ink} strokeWidth={1.4} className="gs-ear" />
+      <path d="M64,-44 q6,5 13,3" stroke="#f6f1e4" strokeWidth={3} fill="none" strokeLinecap="round" />
+      <circle cx={63} cy={-68} r={1.6} fill={ink} />
+      {act && (
+        <g className="gs-spray">
+          {[0, 1, 2, 3, 4, 5].map((i) => (
+            <circle key={i} cx={84 + i * 5} cy={-112 + (i % 2) * 6} r={2.4} fill="#bfe6f5" stroke={ink} strokeWidth={0.5} />
+          ))}
+        </g>
+      )}
+    </g>
+  )
+}
+
+export function Skunk({ s, ink, act }: { s: Shade; ink: string; act?: boolean }) {
+  const fur = s('#26262e')
+  const white = s('#f4f2ec')
+  return (
+    <g className={act ? undefined : 'gs-bob gs-bob-slow'}>
+      <Leg d="M-10,-4 L-11,0" cls="gs-leg gs-leg-fast" delay={0} color={fur} />
+      <Leg d="M12,-4 L13,0" cls="gs-leg gs-leg-fast" delay={-0.14} color={fur} />
+      <g className={act ? 'gs-skunktail' : 'gs-tail'}>
+        <path d="M-16,-10 C-32,-14 -40,-32 -32,-46 C-26,-55 -12,-51 -14,-40 C-16,-31 -14,-22 -9,-16Z" fill={fur} stroke={ink} strokeWidth={1.4} />
+        <path d="M-14,-14 C-26,-20 -32,-34 -26,-44" stroke={white} strokeWidth={3.4} fill="none" strokeLinecap="round" />
+      </g>
+      <path d="M-18,-5 C-22,-16 -10,-24 4,-23 C16,-22 22,-14 20,-6 C18,-1 8,0 -4,0 C-12,0 -17,-2 -18,-5Z" fill={fur} stroke={ink} strokeWidth={1.4} />
+      <path d="M-14,-15 C-6,-22 8,-22 17,-14" stroke={white} strokeWidth={3.6} fill="none" strokeLinecap="round" />
+      <path d="M16,-14 C20,-20 30,-16 33,-9 C34,-6 30,-4 26,-5 C21,-6 17,-9 16,-14Z" fill={fur} stroke={ink} strokeWidth={1.3} />
+      <path d="M19,-16 C24,-15 29,-12 32,-9" stroke={white} strokeWidth={1.6} fill="none" strokeLinecap="round" />
+      <circle cx={24} cy={-12} r={1.2} fill="#f4f2ec" />
+      <circle cx={33} cy={-8.5} r={1.2} fill={ink} />
+      {act && (
+        <g className="gs-stink">
+          <path d="M-46,-40 c-6,-6 2,-14 8,-10 c2,-8 14,-6 12,2 c8,0 8,10 0,11 c-2,7 -14,7 -15,1 c-7,2 -11,-3 -5,-4Z" fill="#c9d77a" opacity={0.55} stroke="#8a9a3a" strokeWidth={0.8} />
+          <path d="M-52,-58 q3,-4 0,-8 q-3,-4 0,-8 M-40,-60 q3,-4 0,-8 q-3,-4 0,-8" stroke="#8a9a3a" strokeWidth={1.3} fill="none" strokeLinecap="round" />
+        </g>
+      )}
+    </g>
+  )
+}
+
+export function Ferret({ s, ink, act }: { s: Shade; ink: string; act?: boolean }) {
+  const fur = s('#7d5a3e')
+  const cream = s('#f1e2c4')
+  const dark = s('#3e2a1c')
+  return (
+    <g className={act ? 'gs-wardance' : 'gs-hop gs-hop-ferret'}>
+      <Leg d="M-22,-5 L-24,0" cls="gs-leg gs-leg-fast" delay={0} color={dark} />
+      <Leg d="M15,-5 L17,0" cls="gs-leg gs-leg-fast" delay={-0.14} color={dark} />
+      <path d="M-30,-9 C-40,-10 -46,-6 -51,-2 C-45,-4 -38,-5 -30,-6Z" fill={dark} stroke={ink} strokeWidth={1.1} />
+      <path d="M-31,-8 C-33,-17 -20,-21 -4,-20 C12,-19 22,-17 26,-12 C28,-8 22,-4 10,-4 C-8,-3 -25,-2 -31,-8Z" fill={fur} stroke={ink} strokeWidth={1.4} />
+      <path d="M-20,-6 C-6,-5 8,-5 18,-7" stroke={cream} strokeWidth={2} fill="none" strokeLinecap="round" opacity={0.7} />
+      <Leg d="M-17,-5 L-18,0" cls="gs-leg gs-leg-fast" delay={-0.14} color={dark} />
+      <Leg d="M19,-5 L20,0" cls="gs-leg gs-leg-fast" delay={0} color={dark} />
+      <path d="M21,-16 C27,-23 38,-21 43,-14 C43,-11 39,-9 33,-9 C27,-9 22,-11 21,-16Z" fill={cream} stroke={ink} strokeWidth={1.3} />
+      <path d="M27,-17 C31,-18 36,-16 39,-14" stroke={dark} strokeWidth={2.4} fill="none" strokeLinecap="round" />
+      <circle cx={26} cy={-20} r={2.4} fill={fur} stroke={ink} strokeWidth={0.9} />
+      <circle cx={35} cy={-15.5} r={1.1} fill="#111" />
+      <circle cx={43} cy={-13} r={1} fill={s('#d88a8a')} />
+      {act && <path d="M30,-34 l0,-8 M30,-27 l0,1" stroke={ink} strokeWidth={2.2} strokeLinecap="round" />}
+    </g>
+  )
+}
+
+export type AnimalKind = 'fox' | 'rabbit' | 'deer' | 'squirrel' | 'hedgehog' | 'horse' | 'foal' | 'elephant' | 'calf' | 'skunk' | 'ferret'
+/** Animals that wander along the path. */
+export const ANIMALS: AnimalKind[] = ['rabbit', 'hedgehog', 'fox', 'squirrel', 'deer', 'ferret', 'skunk']
+
+type Line = 'path' | 'mid' | 'far'
+const SPEC: Record<AnimalKind, { line: Line; scale: number; dur: number }> = {
   fox: { line: 'path', scale: 0.95, dur: 13 },
   rabbit: { line: 'path', scale: 0.95, dur: 15 },
   deer: { line: 'mid', scale: 0.55, dur: 34 },
   squirrel: { line: 'path', scale: 1, dur: 10 },
   hedgehog: { line: 'path', scale: 0.9, dur: 30 },
+  horse: { line: 'mid', scale: 0.42, dur: 15 },
+  foal: { line: 'mid', scale: 0.27, dur: 15 },
+  elephant: { line: 'far', scale: 0.3, dur: 80 },
+  calf: { line: 'far', scale: 0.17, dur: 80 },
+  skunk: { line: 'path', scale: 0.95, dur: 24 },
+  ferret: { line: 'path', scale: 0.9, dur: 9 },
 }
 
 /** CSS keyframes that move a walker along a terrain line, generated once. */
-export const PATH_CSS = (['path', 'mid'] as const)
+export const PATH_CSS = (['path', 'mid', 'far'] as const)
   .map((name) => {
     const line = LINES[name]
-    const steps = 20
+    const steps = 24
     const frames = Array.from({ length: steps + 1 }, (_, i) => {
-      const x = -90 + (1180 * i) / steps
-      const y = yAt(line, x) + (name === 'path' ? 3 : 6)
+      const x = -110 + (1220 * i) / steps
+      const y = yAt(line, x) + (name === 'path' ? 3 : name === 'mid' ? 6 : 4)
       return `${((i / steps) * 100).toFixed(1)}%{transform:translate(${x.toFixed(1)}px,${y.toFixed(1)}px)}`
     }).join('')
     return `@keyframes gs-along-${name}{${frames}}`
   })
   .join('\n')
 
-export function Walker({ kind, reverse, pal, onDone }: { kind: AnimalKind; reverse: boolean; pal: Palette; onDone: () => void }) {
+/** How long each animal stops for when tapped (ms). */
+const REACT_MS: Partial<Record<AnimalKind, number>> = { skunk: 2600, ferret: 1800, horse: 1600, foal: 1600, elephant: 2400, calf: 1200, hedgehog: 2400, fox: 1200, rabbit: 900, deer: 1600, squirrel: 900 }
+
+function Body({ kind, pal, act }: { kind: AnimalKind; pal: Palette; act: boolean }) {
+  const s = pal.shade
+  const ink = pal.c.ink
+  switch (kind) {
+    case 'horse':
+      return <Horse s={s} ink={ink} act={act} />
+    case 'foal':
+      return <Horse s={s} ink={ink} coat="#b98a5e" act={act} />
+    case 'elephant':
+    case 'calf':
+      return <Elephant s={s} ink={ink} act={act} />
+    case 'skunk':
+      return <Skunk s={s} ink={ink} act={act} />
+    case 'ferret':
+      return <Ferret s={s} ink={ink} act={act} />
+    case 'fox':
+      return <g className={act ? 'gs-pounce' : undefined}><Fox s={s} ink={ink} /></g>
+    case 'rabbit':
+      return <g className={act ? 'gs-bighop' : undefined}><Rabbit s={s} ink={ink} /></g>
+    case 'deer':
+      return <Deer s={s} ink={ink} />
+    case 'squirrel':
+      return <g className={act ? 'gs-bighop' : undefined}><Squirrel s={s} ink={ink} /></g>
+    case 'hedgehog':
+      return <g className={act ? 'gs-curl' : undefined}><Hedgehog s={s} ink={ink} /></g>
+  }
+}
+
+/** An animal crossing the scene along a terrain line. Tap it and it stops to do its thing. */
+export function Walker({ kind, reverse, pal, onDone, delay = 0, dur }: { kind: AnimalKind; reverse: boolean; pal: Palette; onDone: () => void; delay?: number; dur?: number }) {
   const spec = SPEC[kind]
-  const A = { fox: Fox, rabbit: Rabbit, deer: Deer, squirrel: Squirrel, hedgehog: Hedgehog }[kind]
+  const [act, setAct] = useState(false)
+  useEffect(() => {
+    if (!act) return
+    const t = setTimeout(() => setAct(false), REACT_MS[kind] ?? 1200)
+    return () => clearTimeout(t)
+  }, [act, kind])
+  const tall = kind === 'horse' || kind === 'foal' || kind === 'elephant' || kind === 'calf' || kind === 'deer'
   return (
     <g
       className="gs-walker"
-      style={{ animation: `gs-along-${spec.line} ${spec.dur}s linear 1 both${reverse ? ' reverse' : ''}` }}
+      style={{ animation: `gs-along-${spec.line} ${dur ?? spec.dur}s linear ${delay}s 1 both${reverse ? ' reverse' : ''}`, animationPlayState: act ? 'paused' : undefined }}
       onAnimationEnd={(e) => {
         if (e.target === e.currentTarget) onDone()
       }}
     >
-      <ellipse cx={0} cy={1} rx={28 * spec.scale} ry={4 * spec.scale} fill="#000" opacity={0.12} />
+      <ellipse cx={0} cy={1} rx={28 * spec.scale * (tall ? 1.6 : 1)} ry={4 * spec.scale} fill="#000" opacity={0.12} />
       <g transform={`scale(${reverse ? -spec.scale : spec.scale},${spec.scale})`}>
-        <A s={pal.shade} ink={pal.c.ink} />
+        <g
+          className="gs-tap"
+          onClick={(e) => {
+            e.stopPropagation()
+            setAct(true)
+          }}
+        >
+          <rect x={-60} y={tall ? -120 : -60} width={130} height={tall ? 125 : 66} fill="transparent" />
+          <Body kind={kind} pal={pal} act={act} />
+        </g>
       </g>
+    </g>
+  )
+}
+
+export type FarEvent = 'horses' | 'elephants' | 'chase'
+
+/** Something happening in the distance: a mare and her foal galloping, an elephant family, a fox chasing a rabbit. */
+export function Troupe({ event, reverse, pal, onDone }: { event: FarEvent; reverse: boolean; pal: Palette; onDone: () => void }) {
+  if (event === 'chase') {
+    return (
+      <g>
+        <ChaseRunner kind="rabbit" reverse={reverse} pal={pal} delay={0} />
+        <ChaseRunner kind="fox" reverse={reverse} pal={pal} delay={0.9} onDone={onDone} />
+      </g>
+    )
+  }
+  const members: { kind: AnimalKind; delay: number }[] =
+    event === 'horses'
+      ? [{ kind: 'horse', delay: 0 }, { kind: 'foal', delay: 1.1 }]
+      : [{ kind: 'elephant', delay: 0 }, { kind: 'calf', delay: 5 }, { kind: 'elephant', delay: 11 }]
+  const last = members.length - 1
+  return (
+    <g>
+      {members.map((m, i) => (
+        <Walker key={i} kind={m.kind} reverse={reverse} pal={pal} delay={m.delay} onDone={i === last ? onDone : () => {}} />
+      ))}
+    </g>
+  )
+}
+
+/** A small, fast runner along the distant hill (for chases). */
+function ChaseRunner({ kind, reverse, pal, delay, onDone }: { kind: AnimalKind; reverse: boolean; pal: Palette; delay: number; onDone?: () => void }) {
+  const sc = 0.5
+  return (
+    <g
+      className="gs-walker"
+      style={{ animation: `gs-along-mid 9s linear ${delay}s 1 both${reverse ? ' reverse' : ''}` }}
+      onAnimationEnd={(e) => {
+        if (e.target === e.currentTarget) onDone?.()
+      }}
+    >
+      <g transform={`scale(${reverse ? -sc : sc},${sc})`}>
+        <g className="gs-hop gs-hop-fast">
+          <Body kind={kind} pal={pal} act={false} />
+        </g>
+      </g>
+    </g>
+  )
+}
+
+// ---------- monkeys in a distant grove ----------
+
+function scallopish(cx: number, cy: number, rr: number, r: ReturnType<typeof rng>): string {
+  const n = 9
+  let d = ''
+  for (let i = 0; i <= n; i++) {
+    const a = (i / n) * Math.PI * 2
+    const x = cx + Math.cos(a) * rr
+    const y = cy + Math.sin(a) * rr * 0.8
+    if (i === 0) d += `M${x.toFixed(1)},${y.toFixed(1)}`
+    else {
+      const am = a - Math.PI / n
+      const k = rr * r.range(1.15, 1.28)
+      d += ` Q${(cx + Math.cos(am) * k).toFixed(1)},${(cy + Math.sin(am) * k * 0.8).toFixed(1)} ${x.toFixed(1)},${y.toFixed(1)}`
+    }
+  }
+  return d + 'Z'
+}
+
+/** A few tall trees on the far hill, where monkeys play when the garden is thriving. Tap them! */
+export function Grove({ pal, monkeys, onTap, flip }: { pal: Palette; monkeys: boolean; onTap: () => void; flip: number }) {
+  const sid = useSid()
+  const trees = useMemo(() => {
+    const r = rng(808)
+    return [
+      { x: 846, h: 92, w: 44 },
+      { x: 902, h: 110, w: 52 },
+      { x: 950, h: 84, w: 40 },
+    ].map((t) => {
+      const base = yAt(LINES.far, t.x) + 6
+      const crown: string[] = []
+      for (let i = 0; i < 6; i++) crown.push(scallopish(t.x + r.range(-t.w * 0.6, t.w * 0.6), base - t.h + r.range(-10, 18), t.w * r.range(0.42, 0.6), r))
+      return { ...t, base, crown: crown.join(' '), trunk: brush([[t.x, base], [t.x + r.range(-3, 3), base - t.h * 0.5], [t.x + r.range(-4, 4), base - t.h * 0.85]], 7, 3, r, { taperIn: 0, taperOut: 0.2 }) }
+    })
+  }, [])
+  const haze = (c: string) => mix(pal.shade(c), pal.c.farHill2, 0.35)
+  const ink = pal.c.ink
+  const t1 = trees[0]
+  const t2 = trees[1]
+  // a hanging vine between the first two trees
+  const vineX = (t1.x + t2.x) / 2
+  const vineY = t1.base - t1.h + 14
+  return (
+    <g>
+      {trees.map((t, i) => (
+        <g key={i}>
+          <path d={t.trunk} fill={haze('#6b5440')} stroke={ink} strokeWidth={0.8} opacity={0.9} />
+          <path d={t.crown} fill={haze('#4f8a52')} stroke={ink} strokeWidth={0.8} strokeOpacity={0.6} />
+          <path d={t.crown} fill={`url(#${sid('grovehi')})`} />
+        </g>
+      ))}
+      <path d={`M${t1.x + 8},${vineY - 4} Q${vineX},${vineY + 10} ${t2.x - 8},${vineY - 8}`} stroke={haze('#4a6a34')} strokeWidth={1.4} fill="none" />
+      {monkeys && (
+        <g className="gs-tap gs-fadein" onClick={(e) => { e.stopPropagation(); onTap() }}>
+          <rect x={t1.x - 30} y={t1.base - t1.h - 40} width={t2.x - t1.x + 70} height={90} fill="transparent" />
+          {/* one swings from the vine by its tail */}
+          <g transform={`translate(${vineX},${vineY + 6})`}>
+            <g key={flip} className={flip ? 'gs-monkeyflip' : 'gs-monkeyswing'}>
+              <Monkey s={pal.shade} ink={ink} hanging />
+            </g>
+          </g>
+          {/* another sits on top of the tall tree and scratches its head */}
+          <g transform={`translate(${t2.x + 6},${t2.base - t2.h - 14}) scale(0.9)`}>
+            <Monkey s={pal.shade} ink={ink} />
+          </g>
+          {/* a third leaps between the trees now and then */}
+          <g transform={`translate(${t2.x + 18},${t2.base - t2.h + 6})`}>
+            <g className="gs-monkeyleap">
+              <g transform="scale(-0.85,0.85)">
+                <Monkey s={pal.shade} ink={ink} leaping />
+              </g>
+            </g>
+          </g>
+        </g>
+      )}
+      <defs>
+        <radialGradient id={sid('grovehi')} cx="0.35" cy="0.25" r="0.7">
+          <stop offset="0" stopColor="#ffffff" stopOpacity={0.25} />
+          <stop offset="1" stopColor="#ffffff" stopOpacity={0} />
+        </radialGradient>
+      </defs>
+    </g>
+  )
+}
+
+/** A small monkey, about 14 units tall. */
+function Monkey({ s, ink, hanging, leaping }: { s: Shade; ink: string; hanging?: boolean; leaping?: boolean }) {
+  const fur = s('#6b4a32')
+  const face = s('#e2c4a0')
+  if (hanging) {
+    // tail curled over the vine, body and arms hanging down
+    return (
+      <g>
+        <path d="M0,-6 C-4,-12 2,-16 4,-11 C5,-8 2,-4 1,0" stroke={fur} strokeWidth={1.6} fill="none" strokeLinecap="round" />
+        <ellipse cx={1} cy={6} rx={3.6} ry={5.2} fill={fur} stroke={ink} strokeWidth={0.7} />
+        <circle cx={1} cy={13.5} r={3.6} fill={fur} stroke={ink} strokeWidth={0.7} />
+        <ellipse cx={1} cy={14.4} rx={2.3} ry={1.9} fill={face} />
+        <path d="M-2,4 l-4,10 M4,4 l4,10" stroke={fur} strokeWidth={1.5} strokeLinecap="round" />
+      </g>
+    )
+  }
+  return (
+    <g className={leaping ? undefined : 'gs-scratch'}>
+      <path d="M-4,-2 C-12,-2 -12,-12 -6,-12" stroke={fur} strokeWidth={1.5} fill="none" strokeLinecap="round" />
+      <ellipse cx={0} cy={-6} rx={4} ry={5} fill={fur} stroke={ink} strokeWidth={0.7} />
+      <circle cx={2} cy={-13} r={3.7} fill={fur} stroke={ink} strokeWidth={0.7} />
+      <ellipse cx={3} cy={-12.4} rx={2.4} ry={2} fill={face} />
+      <circle cx={-1.5} cy={-14} r={1.3} fill={face} stroke={ink} strokeWidth={0.4} />
+      {leaping ? (
+        <path d="M-2,-8 l-7,-5 M3,-8 l7,-5 M-2,-2 l-6,4 M2,-2 l6,4" stroke={fur} strokeWidth={1.5} strokeLinecap="round" />
+      ) : (
+        <path d="M3,-8 q5,-4 2,-9" stroke={fur} strokeWidth={1.5} fill="none" strokeLinecap="round" className="gs-scratcharm" />
+      )}
     </g>
   )
 }
@@ -386,27 +709,81 @@ export function PondShimmer() {
   )
 }
 
-/** Short watering animation: droplets fall on the plant, splash, and a warm glow with sparkles. */
+/**
+ * Watering after a review: a watering can glides in, tips, and showers the plant (streams, drops, splashes,
+ * darkening soil, a little rainbow in the spray), then leaves; the plant glows and sparkles. About 5 seconds.
+ */
 export function Watering({ height }: { height: number }) {
   const sid = useSid()
+  // the can hovers beside the plant; when tipped its rose sits at about (19, -H + 24)
+  const H = Math.round(Math.min(190, Math.max(110, height * 0.55)))
+  const S = 1.55
+  const canX = 116
+  const rose: P = [canX - 53 * S, -H + 24 * S]
+  const fall = -rose[1]
   const drops = useMemo(() => {
     const r = rng(71)
-    return [...Array(14)].map(() => ({ x: r.range(-60, 60) * (0.4 + height / 400), y: -height - r.range(20, 80), dl: r.range(0, 0.9) }))
-  }, [height])
+    return [...Array(26)].map((_, i) => ({ dx: r.range(-50, 12), dy: fall + r.range(-4, 4), dl: -(i / 26) * 0.6 - r.range(0, 0.1), s: r.range(0.8, 1.3) }))
+  }, [fall])
+  const streams = [-42, -28, -15, -3, 8].map((dx) => `M${rose[0].toFixed(0)},${rose[1].toFixed(0)} q${(dx * 0.35).toFixed(0)},${(fall * 0.2).toFixed(0)} ${dx},${fall.toFixed(0)}`)
+  const glowR = height * 0.55 + 50
   return (
     <g className="gs-watering">
-      <ellipse cx={0} cy={-height * 0.45} rx={height * 0.55 + 50} ry={height * 0.55 + 40} fill={`url(#${sid('waterglow')})`} className="gs-wglow" />
-      {drops.map((d, i) => (
-        <g key={i} transform={`translate(${d.x.toFixed(0)},${d.y.toFixed(0)})`}>
-          <path d="M0,-7 C3,-2 4,1 4,3 A4,4 0 0 1 -4,3 C-4,1 -3,-2 0,-7Z" fill="#9fd8f0" stroke="#2c5a70" strokeWidth={0.9} className="gs-drop" style={{ animationDelay: `${d.dl.toFixed(2)}s`, ['--fall' as string]: `${(-d.y).toFixed(0)}px` }} />
+      <ellipse cx={0} cy={-height * 0.45} rx={glowR} ry={height * 0.55 + 40} fill={`url(#${sid('waterglow')})`} className="gs-wglow" />
+      {/* the soil darkens where the water soaks in */}
+      <ellipse cx={-6} cy={3} rx={54} ry={7} fill="#3a2a1c" className="gs-wet" />
+      <g className="gs-pour">
+        {streams.map((d, i) => (
+          <path key={i} d={d} fill="none" stroke="#c8ecfa" strokeWidth={2} strokeLinecap="round" strokeDasharray="7 9" className="gs-stream" style={{ animationDelay: `${-i * 0.07}s` }} opacity={0.85} />
+        ))}
+        {drops.map((d, i) => (
+          <g key={i} transform={`translate(${rose[0]},${rose[1]})`}>
+            <path
+              d="M0,-4 C2,-1 2.6,1 2.6,2 A2.6,2.6 0 0 1 -2.6,2 C-2.6,1 -2,-1 0,-4Z"
+              transform={`scale(${d.s.toFixed(2)})`}
+              fill="#a9dcf2"
+              stroke="#2c5a70"
+              strokeWidth={0.6}
+              className="gs-pdrop"
+              style={{ animationDelay: `${d.dl.toFixed(2)}s`, ['--dx' as string]: `${d.dx.toFixed(0)}px`, ['--dy' as string]: `${d.dy.toFixed(0)}px` }}
+            />
+          </g>
+        ))}
+        {/* splashes where the shower lands */}
+        {[-34, -14, 4].map((x, i) => (
+          <g key={i} transform={`translate(${x},1)`}>
+            <ellipse rx={9} ry={2.4} fill="none" stroke="#c8ecfa" strokeWidth={1.3} className="gs-splashloop" style={{ animationDelay: `${i * 0.18}s` }} />
+            <path d="M-5,-2 l-3,-5 M0,-3 l0,-6 M5,-2 l3,-5" stroke="#c8ecfa" strokeWidth={1.2} strokeLinecap="round" className="gs-splashloop" style={{ animationDelay: `${i * 0.18 + 0.1}s` }} />
+          </g>
+        ))}
+        {/* a tiny rainbow in the spray */}
+        <g className="gs-rainbow" opacity={0.5}>
+          {['#ff6b6b', '#ffb347', '#ffe66d', '#7bd389', '#6fb7ff', '#a98bff'].map((col, i) => (
+            <path key={col} d={`M${-44 + i * 2},0 A${30 - i * 2},${26 - i * 2} 0 0 1 ${16 - i * 2},0`} fill="none" stroke={col} strokeWidth={2} transform="translate(-8,-6)" />
+          ))}
         </g>
-      ))}
-      <ellipse cx={0} cy={2} rx={30} ry={6} fill="none" stroke="#9fd8f0" strokeWidth={2} className="gs-splash" />
-      {[...Array(8)].map((_, i) => {
-        const a = (i / 8) * Math.PI * 2
+      </g>
+      {/* the watering can */}
+      <g transform={`translate(${canX},${-H})`}>
+        <g className="gs-can" style={{ ['--s' as string]: S }}>
+          <path d="M22,-12 C40,-12 40,14 24,14" stroke={'#2c3632'} strokeWidth={5} fill="none" strokeLinecap="round" />
+          <path d="M22,-12 C40,-12 40,14 24,14" stroke="#5aa58a" strokeWidth={2.6} fill="none" strokeLinecap="round" />
+          <path d="M-22,8 L-55,-6 L-53,-12 L-22,-2Z" fill="#4f9a80" stroke="#2c3632" strokeWidth={1.4} strokeLinejoin="round" />
+          <ellipse cx={-57} cy={-8} rx={3.6} ry={7.5} transform="rotate(-22 -57 -8)" fill="#3f8a72" stroke="#2c3632" strokeWidth={1.2} />
+          <path d="M-24,-20 L22,-20 L26,22 L-26,22Z" fill="#5aa58a" stroke="#2c3632" strokeWidth={1.6} strokeLinejoin="round" />
+          <path d="M-25,-12 L23,-12 M-26,15 L25,15" stroke="#3f8a72" strokeWidth={2} />
+          <ellipse cx={-1} cy={-20} rx={23} ry={4} fill="#3f8a72" stroke="#2c3632" strokeWidth={1.2} />
+          <path d="M-12,-21 C-12,-44 20,-44 20,-21" stroke="#2c3632" strokeWidth={5.4} fill="none" strokeLinecap="round" />
+          <path d="M-12,-21 C-12,-44 20,-44 20,-21" stroke="#5aa58a" strokeWidth={3} fill="none" strokeLinecap="round" />
+          <path d="M-17,-8 L-19,12" stroke="#ffffff" strokeWidth={3} strokeLinecap="round" opacity={0.45} />
+          <path d="M14,-8 L16,12" stroke="#2c3632" strokeWidth={4} strokeLinecap="round" opacity={0.15} />
+        </g>
+      </g>
+      {[...Array(9)].map((_, i) => {
+        const a = (i / 9) * Math.PI * 2
         const rr = height * 0.4 + 40
         return (
-          <path key={i} transform={`translate(${(Math.cos(a) * rr).toFixed(0)},${(-height * 0.45 + Math.sin(a) * rr * 0.8).toFixed(0)})`} d="M0,-6 l1.5,4.5 l4.5,1.5 l-4.5,1.5 l-1.5,4.5 l-1.5,-4.5 l-4.5,-1.5 l4.5,-1.5Z" fill="#fff4b0" className="gs-spark" style={{ animationDelay: `${(0.9 + i * 0.08).toFixed(2)}s` }} />
+          <path key={i} transform={`translate(${(Math.cos(a) * rr).toFixed(0)},${(-height * 0.45 + Math.sin(a) * rr * 0.8).toFixed(0)})`} d="M0,-6 l1.5,4.5 l4.5,1.5 l-4.5,1.5 l-1.5,4.5 l-1.5,-4.5 l-4.5,-1.5 l4.5,-1.5Z" fill="#fff4b0" className="gs-spark" style={{ animationDelay: `${(3 + i * 0.09).toFixed(2)}s` }} />
         )
       })}
       <defs>

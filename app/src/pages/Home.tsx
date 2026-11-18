@@ -3,11 +3,19 @@ import { Link } from 'react-router-dom'
 import { db, DEFAULT_SETTINGS } from '../db'
 import { getSession, getStats, type Stats } from '../scheduler'
 import GardenPanel from '../garden/GardenPanel'
+import { gardenTitle, getPlayerName } from '../intro/player'
 
 export default function Home() {
   const [stats, setStats] = useState<Stats | null>(null)
   const [due, setDue] = useState(0)
   const [fresh, setFresh] = useState(0)
+  const [counted, setCounted] = useState(false)
+  const [name, setName] = useState(getPlayerName)
+  useEffect(() => {
+    const on = () => setName(getPlayerName())
+    window.addEventListener('player-name', on)
+    return () => window.removeEventListener('player-name', on)
+  }, [])
 
   useEffect(() => {
     ;(async () => {
@@ -16,6 +24,7 @@ export default function Home() {
       const s = await getSession(now, settings)
       setDue(s.reviews.length)
       setFresh(s.newCards.length)
+      setCounted(true)
       setStats(await getStats(now))
     })()
   }, [])
@@ -23,8 +32,13 @@ export default function Home() {
   const total = due + fresh
   return (
     <div className="space-y-4">
-      <h1 className="text-2xl font-bold">مرحباً 👋</h1>
-      <GardenPanel />
+      <div className="flex items-baseline justify-between gap-3">
+        <h1 className="garden-title" data-intro-target>
+          {gardenTitle(name)}
+        </h1>
+        <span className="ar muted text-lg">مرحباً 👋</span>
+      </div>
+      <GardenPanel waiting={counted ? due + fresh : null} />
       <div className="card p-6 text-center space-y-3">
         <div className="text-5xl font-bold">{total}</div>
         <div className="muted">

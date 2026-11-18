@@ -20,8 +20,9 @@
 }
 html, body, #root { min-height: 100%; }
 body {
-  background: var(--bg);
+  background: radial-gradient(130% 55% at 50% -12%, var(--glow, transparent) 0%, transparent 62%) no-repeat, var(--bg);
   color: var(--ink);
+  transition: background-color 1.2s ease, color 1.2s ease;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   padding-bottom: env(safe-area-inset-bottom);
 }
@@ -31,7 +32,14 @@ body {
   unicode-bidi: isolate;
   line-height: 1.6;
 }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; transition: background-color 1.2s ease, border-color 1.2s ease; }
+.btn { transition: background-color 1.2s ease; }
+/* the garden's name on Home, written in the same flowing hand as the intro */
+.garden-title {
+  font-family: "Great Vibes", "Noto Naskh Arabic", cursive; font-size: 42px; line-height: 1.15; font-weight: 400;
+  color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
 .btn {
   border-radius: 12px; padding: 12px 16px; font-weight: 600;
   background: var(--accent); color: #fff; border: 0; cursor: pointer;

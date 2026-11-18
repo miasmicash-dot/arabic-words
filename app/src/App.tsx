@@ -6,6 +6,9 @@ import Review from './pages/Review'
 import Progress from './pages/Progress'
 import Words from './pages/Words'
 import Settings from './pages/Settings'
+import Intro from './intro/Intro'
+import { syncGarden } from './garden/service'
+import { applyMood, moodOf } from './garden/theme'
 
 const GardenPreview = lazy(() => import('./pages/GardenPreview'))
 
@@ -19,9 +22,24 @@ const tabs = [
 export default function App() {
   const [ready, setReady] = useState(false)
   useEffect(() => {
-    boot().then(() => setReady(true))
+    boot().then(() => {
+      setReady(true)
+      // paint every page in the garden's current colours, whichever page the app opens on
+      // (Home does this itself)
+      const home = location.hash === '' || location.hash === '#/' || location.hash.startsWith('#/?')
+      if (!home) syncGarden(new Date()).then((v) => applyMood(moodOf(v?.state ?? null)), () => {})
+    })
   }, [])
-  if (!ready) return <p className="p-6 muted">Loading…</p>
+  return (
+    <>
+      {/* the intro stays mounted while the app loads underneath it */}
+      <Intro />
+      {ready ? <Main /> : <p className="p-6 muted">Loading…</p>}
+    </>
+  )
+}
+
+function Main() {
   return (
     <HashRouter>
       <div className="mx-auto max-w-xl px-4 pt-4 pb-24">

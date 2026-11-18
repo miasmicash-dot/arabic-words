@@ -1,7 +1,7 @@
 import { useSid } from './ids'
 // Static-ish scenery layers: sky (sun, moon, stars, clouds), rolling hills, pond, path and foreground.
 import { memo, useMemo, type ReactNode } from 'react'
-import { brush, jitter, mix, resample, rng, scallop, smooth, type P, type Rng } from './ink'
+import { brush, desaturate, jitter, mix, resample, rng, scallop, smooth, type P, type Rng } from './ink'
 import { moonArc, sunArc, type Palette } from './palette'
 
 export const W = 1000
@@ -374,6 +374,12 @@ const CLOUDS = {
   overcast: [...makeClouds(5, 16, 2), ...makeClouds(7, 13, 1), ...makeClouds(4, 14, 0)],
   drought: makeClouds(2, 15, 0),
 }
+/** Extra clouds that gather as the garden is neglected (added one by one with the gloom). */
+const GATHERING = (() => {
+  const big = makeClouds(5, 23, 2)
+  const mid = makeClouds(6, 22, 1)
+  return [mid[0], mid[1], big[0], mid[2], big[1], mid[3], big[2], mid[4], big[3], mid[5], big[4]]
+})()
 
 /** Where the sun and moon are (scene units), or null when below the horizon. Shared with the sky shader. */
 export function celestial(hour: number) {
@@ -457,10 +463,15 @@ export function Sky({ pal, children, shader, phase }: { pal: Palette; children?:
     return smooth(jitter(pts, r, 0.8), true)
   }, [])
   const starsVis = night * (weather === 'overcast' ? 0.12 : weather === 'partly-cloudy' ? 0.7 : 1)
-  const sunVis = weather === 'overcast' ? 0.15 : 1
+  const sunVis = (weather === 'overcast' ? 0.15 : 1) * (1 - pal.gloom * 0.45)
+  const sunC = (c: string) => desaturate(c, pal.gloom * 0.85)
   const lowSun = sun?.low ?? 0
+  const g = pal.gloom
   const cloudFill = (k: number) =>
-    weather === 'overcast' ? pal.shade(mix('#a9b1b7', '#7d8790', k)) : pal.shade(mix('#ffffff', weather === 'drought' ? '#efe1c0' : '#cddbe4', k))
+    weather === 'overcast'
+      ? pal.shade(mix('#a9b1b7', '#7d8790', k))
+      : pal.shade(mix(mix('#ffffff', weather === 'drought' ? '#efe1c0' : '#cddbe4', k), mix('#b3b9bd', '#8a939a', k), g * 0.7))
+  const clouds = weather === 'overcast' ? CLOUDS.overcast : [...CLOUDS[weather], ...GATHERING.slice(0, Math.round(g * GATHERING.length))]
   const rim = mix(sky.glow, '#ffffff', 0.5)
   return (
     <g>
@@ -476,9 +487,9 @@ export function Sky({ pal, children, shader, phase }: { pal: Palette; children?:
           <stop offset="1" stopColor={sky.glow} stopOpacity={0} />
         </radialGradient>
         <radialGradient id={sid('sun')} cx="0.4" cy="0.38">
-          <stop offset="0" stopColor={mix('#fffbe0', '#ffd0a0', lowSun)} />
-          <stop offset="0.55" stopColor={mix('#ffe27a', '#ffb070', lowSun)} />
-          <stop offset="1" stopColor={mix('#f6b93b', '#ee7d45', lowSun)} />
+          <stop offset="0" stopColor={sunC(mix('#fffbe0', '#ffd0a0', lowSun))} />
+          <stop offset="0.55" stopColor={sunC(mix('#ffe27a', '#ffb070', lowSun))} />
+          <stop offset="1" stopColor={sunC(mix('#f6b93b', '#ee7d45', lowSun))} />
         </radialGradient>
         <radialGradient id={sid('moonglow')}>
           <stop offset="0" stopColor="#e8ecff" stopOpacity={0.45} />
@@ -522,13 +533,13 @@ export function Sky({ pal, children, shader, phase }: { pal: Palette; children?:
         </g>
       )}
       {/* clouds */}
-      {CLOUDS[weather].map((cl, i) => (
+      {clouds.map((cl, i) => (
         <g key={`${weather}-${i}`} transform={`translate(0,${cl.y.toFixed(0)}) scale(${cl.s.toFixed(2)})`}>
           <g className="gs-drift" style={{ animationDuration: `${cl.dur.toFixed(0)}s`, animationDelay: `${cl.delay.toFixed(0)}s` }}>
             <path d={cl.d} transform="translate(4,6)" fill={cloudFill(1)} opacity={0.45} />
             <path d={cl.d} className="gs-cloudbody" fill={`url(#${sid('cloud')})`} />
             {/* sunlit upper rim */}
-            <path d={cl.d} fill="none" stroke={rim} strokeWidth={3} opacity={weather === 'overcast' ? 0.15 : 0.55 * (1 - night)} transform="translate(-1,-1.5)" />
+            <path d={cl.d} fill="none" stroke={rim} strokeWidth={3} opacity={weather === 'overcast' ? 0.15 : 0.55 * (1 - night) * (1 - g * 0.7)} transform="translate(-1,-1.5)" />
             <path d={cl.d} fill="none" stroke={pal.c.ink} strokeWidth={1.4} strokeLinejoin="round" opacity={0.8} />
             <path d={`M${cl.w * 0.12},${-cl.h * 0.08} C${cl.w * 0.35},${cl.h * 0.02} ${cl.w * 0.6},${cl.h * 0.02} ${cl.w * 0.86},${-cl.h * 0.1}`} stroke={pal.c.ink} strokeWidth={0.9} fill="none" opacity={0.3} />
           </g>

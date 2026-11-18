@@ -51,7 +51,9 @@ export interface GardenDevOptions {
   /** storage key for the day-to-day stories (the playground keeps its own) */
   eggsKey?: string
   /** change to make this animal walk by now */
-  walker?: { kind: 'fox' | 'rabbit' | 'deer' | 'squirrel' | 'hedgehog'; id: number }
+  walker?: { kind: 'fox' | 'rabbit' | 'deer' | 'squirrel' | 'hedgehog' | 'skunk' | 'ferret' | 'horse' | 'elephant'; id: number }
+  /** change to start something in the distance now */
+  far?: { event: 'horses' | 'elephants' | 'chase'; id: number }
   /** change to make the squirrel come now */
   squirrel?: number
   /** pretend a cloud covers this much of the sun (0..1), to see the light shafts */

@@ -31,29 +31,50 @@ interface ClumpM {
   /** where the broken ink outline starts (0..100) */
   dash: number
 }
+interface BarkM {
+  /** darker band down the side away from the sun */
+  shadow: string
+  /** thin light line on the sunny side */
+  hi: string
+  /** broken furrows that follow the limb */
+  furrows: string
+  w: number
+}
 interface BranchM {
   base: P
   path: string
+  bark?: BarkM
   /** -1 left, 1 right: which way it droops */
   side: number
   depth: number
   rank: number
   /** true for the finest twigs (hidden first when wilting) */
   twig: boolean
+  /** grows on from the parent's tip: drawn over the parent so the parent's end never shows */
+  cont?: boolean
   kids: BranchM[]
   leaves: LeafM[]
   buds: P[]
   /** little blossoms on a full-grown plant (stage 8) */
   blooms: P[]
 }
+export type FruitKind = 'apple' | 'orange' | 'pear' | 'lemon' | 'pomegranate'
+/** Blossoms (young tree) or fruit (grown tree), merged into a few paths per group so they draw fast. */
+interface CropM {
+  /** three groups: the first to drop when the tree gets thirsty is group 0 */
+  groups: { a: string; b: string; c: string; d: string }[]
+  fallen: string
+}
 interface PlantM {
   kind: 'seed' | 'herb' | 'tree'
   root: BranchM | null
   clumps: ClumpM[]
-  trunkDetail: string
   roots: string
   height: number
   stage: GrowthStage
+  fruit: FruitKind
+  blossoms: CropM | null
+  fruits: CropM | null
 }
 
 const deg = (a: number) => (a * Math.PI) / 180
@@ -69,6 +90,70 @@ const angleAt = (pts: P[], t: number) => {
   const a = s[i - 1]
   const b = s[i]
   return (Math.atan2(b[1] - a[1], b[0] - a[0]) * 180) / Math.PI
+}
+
+/** Unit normal of a sampled centre line at index i. For a line going up it points to the right (+x). */
+function normalAt(c: P[], i: number): P {
+  const a = c[Math.max(0, i - 1)]
+  const b = c[Math.min(c.length - 1, i + 1)]
+  const dx = b[0] - a[0]
+  const dy = b[1] - a[1]
+  const l = Math.hypot(dx, dy) || 1
+  return [-dy / l, dx / l]
+}
+
+/** Like brush(), but the width follows a function of t (0 at the base, 1 at the tip). */
+function brushW(pts: P[], wAt: (t: number) => number, r: Rng, wob = 0.03, n = 30): string {
+  const c = resample(pts, n)
+  const left: P[] = []
+  const right: P[] = []
+  for (let i = 0; i < n; i++) {
+    const [nx, ny] = normalAt(c, i)
+    const h = (wAt(i / (n - 1)) * (1 + r.range(-wob, wob))) / 2
+    left.push([c[i][0] - nx * h, c[i][1] - ny * h])
+    right.push([c[i][0] + nx * h, c[i][1] + ny * h])
+  }
+  return smooth([...left, ...right.reverse()], true)
+}
+
+/** Points along the centre line, pushed sideways by u (−0.5 = left edge, 0.5 = right edge). */
+function offsetLine(c: P[], wAt: (t: number) => number, u: (t: number) => number, t0: number, t1: number, jit: number, r: Rng): P[] {
+  const n = c.length
+  const out: P[] = []
+  for (let i = Math.round(t0 * (n - 1)); i <= Math.round(t1 * (n - 1)); i++) {
+    const t = i / (n - 1)
+    const [nx, ny] = normalAt(c, i)
+    const off = u(t) * wAt(t) + r.range(-jit, jit)
+    out.push([c[i][0] + nx * off, c[i][1] + ny * off])
+  }
+  return out
+}
+
+/** Rounded bark: a shaded side, a sunlit edge and furrows that follow the curve of the limb. */
+function barkOf(pts: P[], wAt: (t: number) => number, r: Rng, furrows: number): BarkM {
+  const c = resample(pts, 34)
+  const a = offsetLine(c, wAt, () => 0.08, 0, 0.96, 0, r)
+  const b = offsetLine(c, wAt, () => 0.46, 0, 0.96, 0, r)
+  const lines: string[] = []
+  for (let k = 0; k < furrows; k++) {
+    const u0 = -0.4 + (0.8 * (k + 0.5)) / furrows + r.range(-0.04, 0.04)
+    const ph = r.range(0, 6)
+    let t = r.range(0, 0.08)
+    while (t < 0.9) {
+      const t2 = Math.min(0.95, t + r.range(0.1, 0.32))
+      if (t2 - t > 0.06 && r.next() < 0.85) {
+        const seg = offsetLine(c, wAt, (tt) => u0 + 0.05 * Math.sin(tt * 11 + ph), t, t2, wAt(t) * 0.015, r)
+        if (seg.length > 1) lines.push(smooth(seg))
+      }
+      t = t2 + r.range(0.02, 0.09)
+    }
+  }
+  return {
+    shadow: smooth([...a, ...b.reverse()], true),
+    hi: smooth(offsetLine(c, wAt, () => -0.32, 0.02, 0.88, 0, r)),
+    furrows: lines.join(' '),
+    w: wAt(0),
+  }
 }
 
 function mkBranch(r: Rng, pts: P[], w0: number, w1: number, depth: number, side: number, twig = false): BranchM {
@@ -109,7 +194,7 @@ function herb(stage: GrowthStage, r: Rng): PlantM {
   }
   if (stage <= 3) {
     if (stage === 3) stem.buds.push(top)
-    return { kind: 'herb', root: stem, clumps: [], trunkDetail: '', roots: '', height: H, stage }
+    return { kind: 'herb', root: stem, clumps: [], roots: '', height: H, stage, fruit: 'apple', blossoms: null, fruits: null }
   }
 
   const n = { 4: 1, 5: 1, 6: 3, 7: 4, 8: 7 }[stage as 4 | 5 | 6 | 7 | 8]
@@ -169,7 +254,7 @@ function herb(stage: GrowthStage, r: Rng): PlantM {
       stem.leaves.push({ x: p[0], y: p[1], a: -90 + s * r.range(55, 80), len: r.range(30, 38), wid: r.range(14, 17), rank: r.next() })
     }
   }
-  return { kind: 'herb', root: stem, clumps: [], trunkDetail: '', roots: '', height: H, stage }
+  return { kind: 'herb', root: stem, clumps: [], roots: '', height: H, stage, fruit: 'apple', blossoms: null, fruits: null }
 }
 
 /** A small almond-shaped leaf mark centred at (x, y). */
@@ -186,15 +271,17 @@ function leafDab(x: number, y: number, len: number, a: number): string {
 }
 
 /** Stages 9-11 (and forest neighbours): a woody tree with a clumped canopy like the reference picture. */
-function tree(stage: GrowthStage, r: Rng): PlantM {
+function tree(stage: GrowthStage, r: Rng, fruit: FruitKind): PlantM {
   const big = stage >= 10
   const trunkLen = big ? 165 : 128
-  const baseW = big ? 44 : 18
+  const baseW = big ? 46 : 19
   const maxD = big ? 3 : 2
   const clumpR = big ? 64 : 44
   const clumps: Omit<ClumpM, 'path' | 'hi' | 'light' | 'dark' | 'rim' | 'dash'>[] = []
 
   const clampUp = (a: number) => Math.max(-162, Math.min(-18, a))
+  // the trunk flares at the foot and tapers gently; limbs taper from base to tip
+  const trunkW = (t: number) => baseW * (0.56 + 0.44 * Math.pow(1 - t, 1.4)) + baseW * 0.42 * Math.exp(-t * 16)
 
   function limb(base: P, ang: number, len: number, w: number, depth: number, side: number): BranchM {
     const drift = depth === 0 ? 3 : 10
@@ -204,7 +291,9 @@ function tree(stage: GrowthStage, r: Rng): PlantM {
     const end = add(mid, dirv(a2), len * 0.5)
     const pts: P[] = depth === 0 ? [base, add(base, dirv(-90 + r.range(-2, 2)), len * 0.22), mid, end] : [base, mid, end]
     const node = mkBranch(r, pts, w, w * (depth === 0 ? 0.6 : 0.5), depth, side, depth >= maxD)
-    if (depth === 0) node.path = brush(pts, w, w * 0.5, r, { taperIn: 0, taperOut: 0.25, wobble: 0.04 })
+    const wAt = depth === 0 ? trunkW : (t: number) => w * (1 - 0.5 * t)
+    if (depth === 0) node.path = brushW(pts, trunkW, r, 0.025, 34)
+    if (depth <= (big ? 2 : 1)) node.bark = barkOf(pts, wAt, r, depth === 0 ? (big ? 7 : 3) : depth === 1 ? (big ? 3 : 2) : 1)
     if (depth >= maxD) {
       clumps.push({ x: end[0], y: end[1] - clumpR * 0.15, r: clumpR * r.range(0.85, 1.2), rank: r.next(), tone: 1 })
       // fine bare twigs: visible when the leaves drop
@@ -218,13 +307,16 @@ function tree(stage: GrowthStage, r: Rng): PlantM {
     }
     const k = depth === 0 ? 3 : r.pick([2, 3, 3])
     for (let j = 0; j < k; j++) {
-      const t = depth === 0 ? [0.66, 0.8, 0.9][j] : 0.55 + (0.45 * j) / Math.max(1, k - 1)
+      const t = depth === 0 ? [0.66, 0.8, 0.9][j] : 0.55 + (0.4 * j) / Math.max(1, k - 1)
       const p = at(pts, t)
       const spread = depth === 0 ? [-44, 40, r.range(-6, 6)][j] : (j - (k - 1) / 2) * r.range(34, 46)
       const ca = clampUp(a2 + spread + r.range(-6, 6))
       const cl = len * (depth === 0 ? (big ? 0.72 : 0.78) : 0.78) * r.range(0.88, 1.1)
-      const cw = w * (depth === 0 ? (j === 2 ? 0.52 : 0.58) : 0.6)
-      node.kids.push(limb(p, ca, cl, cw, depth + 1, ca < -90 ? -1 : 1))
+      // a limb is never wider than its parent where it joins, so the join stays smooth
+      const cw = Math.min(w * (depth === 0 ? (j === 2 ? 0.6 : 0.56) : 0.6), wAt(t) * 0.95)
+      const kid = limb(p, ca, cl, cw, depth + 1, ca < -90 ? -1 : 1)
+      kid.cont = t >= 0.85
+      node.kids.push(kid)
     }
     return node
   }
@@ -274,36 +366,123 @@ function tree(stage: GrowthStage, r: Rng): PlantM {
     }
   })
 
-  // bark lines and root flare
-  const H = trunkLen
-  const bark: string[] = []
-  for (let i = 0; i < (big ? 10 : 4); i++) {
-    const x = r.range(-baseW * 0.3, baseW * 0.3)
-    const yb = -r.range(6, H * 0.6)
-    bark.push(smooth([[x, yb], [x + r.range(-2, 2), yb - r.range(10, 22)], [x + r.range(-2.5, 2.5), yb - r.range(24, 44)]]))
-  }
-  for (let i = 0; i < (big ? 8 : 3); i++) {
-    const x = r.range(-baseW * 0.28, baseW * 0.28)
-    const yb = -r.range(10, H * 0.7)
-    bark.push(`M${x.toFixed(1)},${yb.toFixed(1)} l${r.range(2, 5).toFixed(1)},${r.range(-1, 1).toFixed(1)}`)
-  }
   const roots = big
     ? [
-        brush([[-baseW * 0.3, -16], [-baseW * 0.65, -4], [-baseW * 1.05, 3]], 16, 3, r, { taperIn: 0, taperOut: 0.6 }),
-        brush([[baseW * 0.3, -16], [baseW * 0.7, -3], [baseW * 1.15, 3]], 16, 3, r, { taperIn: 0, taperOut: 0.6 }),
+        brush([[-baseW * 0.25, -18], [-baseW * 0.6, -5], [-baseW * 1.05, 3]], 18, 3, r, { taperIn: 0, taperOut: 0.6 }),
+        brush([[baseW * 0.25, -18], [baseW * 0.65, -4], [baseW * 1.1, 3]], 18, 3, r, { taperIn: 0, taperOut: 0.6 }),
+        brush([[baseW * 0.05, -12], [baseW * 0.3, -2], [baseW * 0.55, 5]], 11, 2.5, r, { taperIn: 0, taperOut: 0.6 }),
       ].join(' ')
-    : brush([[-baseW * 0.3, -6], [-baseW * 0.9, 2]], 8, 2, r, { taperIn: 0, taperOut: 0.6 }) +
+    : brush([[-baseW * 0.3, -7], [-baseW * 0.95, 2]], 9, 2, r, { taperIn: 0, taperOut: 0.6 }) +
       ' ' +
-      brush([[baseW * 0.3, -6], [baseW * 0.95, 2]], 8, 2, r, { taperIn: 0, taperOut: 0.6 })
+      brush([[baseW * 0.3, -7], [baseW * 1, 2]], 9, 2, r, { taperIn: 0, taperOut: 0.6 })
 
-  return { kind: 'tree', root, clumps: full, trunkDetail: bark.join(' '), roots, height: H * 2.2, stage }
+  return {
+    kind: 'tree',
+    root,
+    clumps: full,
+    roots,
+    height: trunkLen * 2.2,
+    stage,
+    fruit,
+    blossoms: stage === 9 ? blossomsOn(full, r, big) : null,
+    fruits: stage >= 10 ? fruitsOn(full, r, fruit, stage >= 11) : null,
+  }
 }
+
+const f1 = (v: number) => v.toFixed(1)
+const circ = (x: number, y: number, rr: number) => `M${f1(x + rr)},${f1(y)} a${f1(rr)},${f1(rr)} 0 1,0 ${f1(-2 * rr)},0 a${f1(rr)},${f1(rr)} 0 1,0 ${f1(2 * rr)},0Z`
+
+/** Clusters of five-petal blossoms spread over the crown. a = petals, b = petal shade, c = hearts, d = buds. */
+function blossomsOn(clumps: ClumpM[], r: Rng, big: boolean): CropM {
+  const groups = [0, 1, 2].map(() => ({ a: [] as string[], b: [] as string[], c: [] as string[], d: [] as string[] }))
+  for (const cl of clumps) {
+    const n = big ? 14 : 17
+    for (let k = 0; k < n; k++) {
+      const a = r.range(-Math.PI, Math.PI)
+      const rr = cl.r * Math.sqrt(r.range(0.04, 0.9))
+      const x = cl.x + Math.cos(a) * rr
+      const y = cl.y + Math.sin(a) * rr * 0.82
+      const s = r.range(2.5, 3.6) * (big ? 1.15 : 1)
+      const g = groups[Math.min(2, Math.floor(r.next() * 3))]
+      if (r.next() < 0.22) {
+        g.d.push(circ(x, y, s * 0.7))
+        continue
+      }
+      const rot = r.range(0, Math.PI)
+      for (let p = 0; p < 5; p++) {
+        const pa = rot + (p / 5) * Math.PI * 2
+        g.a.push(circ(x + Math.cos(pa) * s * 0.85, y + Math.sin(pa) * s * 0.85, s * 0.72))
+        if (p === 1 || p === 2) g.b.push(circ(x + Math.cos(pa) * s * 0.95, y + Math.sin(pa) * s * 0.95, s * 0.4))
+      }
+      g.c.push(circ(x, y, s * 0.42))
+    }
+  }
+  return { groups: groups.map((g) => ({ a: g.a.join(''), b: g.b.join(''), c: g.c.join(''), d: g.d.join('') })), fallen: '' }
+}
+
+/** One fruit at (x, y): body, shaded side, highlight and stem/leaf paths. */
+function fruitShape(kind: FruitKind, x: number, y: number, s: number, tilt: number): { a: string; b: string; c: string; d: string } {
+  const cx = x
+  let body: string
+  let shade: string
+  let top = y - s
+  if (kind === 'pear') {
+    body = `M${f1(cx)},${f1(y - s * 1.5)} C${f1(cx + s * 0.55)},${f1(y - s * 1.45)} ${f1(cx + s * 0.4)},${f1(y - s * 0.55)} ${f1(cx + s * 0.95)},${f1(y + s * 0.15)} C${f1(cx + s * 1.25)},${f1(y + s * 0.9)} ${f1(cx - s * 1.25)},${f1(y + s * 0.9)} ${f1(cx - s * 0.95)},${f1(y + s * 0.15)} C${f1(cx - s * 0.4)},${f1(y - s * 0.55)} ${f1(cx - s * 0.55)},${f1(y - s * 1.45)} ${f1(cx)},${f1(y - s * 1.5)}Z`
+    shade = circ(cx + s * 0.35, y + s * 0.35, s * 0.55)
+    top = y - s * 1.5
+  } else if (kind === 'lemon') {
+    body = `M${f1(cx - s * 1.25)},${f1(y)} C${f1(cx - s)},${f1(y - s * 0.95)} ${f1(cx + s)},${f1(y - s * 0.95)} ${f1(cx + s * 1.25)},${f1(y)} C${f1(cx + s)},${f1(y + s * 0.95)} ${f1(cx - s)},${f1(y + s * 0.95)} ${f1(cx - s * 1.25)},${f1(y)}Z`
+    shade = circ(cx + s * 0.35, y + s * 0.3, s * 0.45)
+    top = y - s * 0.75
+  } else if (kind === 'apple') {
+    body = `M${f1(cx)},${f1(y - s * 0.72)} C${f1(cx + s * 1.15)},${f1(y - s * 1.25)} ${f1(cx + s * 1.25)},${f1(y + s * 0.9)} ${f1(cx)},${f1(y + s * 0.98)} C${f1(cx - s * 1.25)},${f1(y + s * 0.9)} ${f1(cx - s * 1.15)},${f1(y - s * 1.25)} ${f1(cx)},${f1(y - s * 0.72)}Z`
+    shade = circ(cx + s * 0.38, y + s * 0.32, s * 0.55)
+    top = y - s * 0.72
+  } else {
+    body = circ(cx, y, s)
+    shade = circ(cx + s * 0.35, y + s * 0.35, s * 0.55)
+  }
+  const hi = circ(cx - s * 0.38, y - s * 0.32, s * 0.26)
+  const crown = kind === 'pomegranate' ? ` M${f1(cx - s * 0.35)},${f1(top + 0.6)} l${f1(s * 0.12)},${f1(-s * 0.45)} l${f1(s * 0.23)},${f1(s * 0.3)} l${f1(s * 0.23)},${f1(-s * 0.3)} l${f1(s * 0.12)},${f1(s * 0.45)}` : ''
+  const stem = `M${f1(cx)},${f1(top + 0.5)} q${f1(tilt)},${f1(-s * 0.45)} ${f1(tilt * 1.8)},${f1(-s * 0.75)}` + crown
+  return { a: body, b: shade, c: hi, d: stem }
+}
+
+/** Ripe fruit hanging mostly from the lower half of each lobe of the crown, plus a few on the grass. */
+function fruitsOn(clumps: ClumpM[], r: Rng, kind: FruitKind, fallen: boolean): CropM {
+  const groups = [0, 1, 2].map(() => ({ a: [] as string[], b: [] as string[], c: [] as string[], d: [] as string[] }))
+  const size = { apple: 6.2, orange: 6, pear: 5.3, lemon: 5.3, pomegranate: 6.4 }[kind]
+  for (const cl of clumps) {
+    for (let k = 0; k < 3; k++) {
+      const low = k < 2
+      const a = low ? r.range(Math.PI * 0.12, Math.PI * 0.88) : r.range(-Math.PI, 0)
+      const rr = cl.r * (low ? r.range(0.5, 0.9) : r.range(0.2, 0.7))
+      const f = fruitShape(kind, cl.x + Math.cos(a) * rr, cl.y + Math.sin(a) * rr * 0.82, size * r.range(0.88, 1.12), r.range(-1.5, 1.5))
+      const g = groups[Math.min(2, Math.floor(r.next() * 3))]
+      g.a.push(f.a)
+      g.b.push(f.b)
+      g.c.push(f.c)
+      g.d.push(f.d)
+    }
+  }
+  const down: string[] = []
+  if (fallen) {
+    for (let k = 0; k < 4; k++) {
+      const x = r.sign() * r.range(70, 150)
+      down.push(fruitShape(kind, x, r.range(-2, 4), size * 0.95, 0).a)
+    }
+  }
+  return { groups: groups.map((g) => ({ a: g.a.join(''), b: g.b.join(''), c: g.c.join(''), d: g.d.join('') })), fallen: down.join('') }
+}
+
+const FRUITS: FruitKind[] = ['apple', 'orange', 'pear', 'pomegranate', 'lemon']
 
 export function buildPlant(stage: GrowthStage, seed: number): PlantM {
   const r = rng(seed * 97 + stage * 13)
-  if (stage === 1) return { kind: 'seed', root: null, clumps: [], trunkDetail: '', roots: '', height: 0, stage }
+  if (stage === 1) return { kind: 'seed', root: null, clumps: [], roots: '', height: 0, stage, fruit: 'apple', blossoms: null, fruits: null }
   if (stage <= 8) return herb(stage, r)
-  return tree(stage, r)
+  // the main garden tree (seed 7) is an apple tree; forest neighbours vary
+  return tree(stage, r, seed === 7 ? 'apple' : FRUITS[seed % FRUITS.length])
 }
 
 // ---------- rendering ----------
@@ -351,6 +530,10 @@ interface Inks {
   tree: boolean
   bloom: string
   bloomHeart: string
+  /** outline colour for branches (a little softer than the ink on a tree) */
+  outline: string
+  furrow: string
+  barkHi: string
 }
 
 function LeafV({ l, look, c, uid }: { l: LeafM; look: ReturnType<typeof looks>; c: Inks; uid: string }) {
@@ -379,39 +562,56 @@ function LeafV({ l, look, c, uid }: { l: LeafM; look: ReturnType<typeof looks>; 
   )
 }
 
-function BranchV({ b, look, c, uid, droopMax }: { b: BranchM; look: ReturnType<typeof looks>; c: Inks; uid: string; droopMax: number }) {
+type Pass = 'outline' | 'fill' | 'top'
+
+/**
+ * One branch and its children. The plant is drawn in passes (all ink outlines, then all fills, then leaves),
+ * so where a branch grows out of its parent the two merge into one shape, like a real limb, with no seams.
+ */
+function BranchV({ b, look, c, uid, droopMax, pass }: { b: BranchM; look: ReturnType<typeof looks>; c: Inks; uid: string; droopMax: number; pass: Pass }) {
   const hideTwig = b.twig && b.rank > look.twigsKept
   const droop = b.depth === 0 ? b.side * look.wilt * droopMax * 0.4 : b.side * look.wilt * droopMax * (b.depth === 1 ? 1 : 0.6)
+  const line = b.twig ? 0.8 : c.tree ? 1.15 : 1.5
   return (
     <Rot x={b.base[0]} y={b.base[1]} a={droop}>
       <g className="gs-t" style={{ opacity: hideTwig ? 0 : 1 }}>
-        {b.kids.map((k, i) => (
-          <BranchV key={i} b={k} look={look} c={c} uid={uid} droopMax={droopMax} />
-        ))}
-        <path
-          d={b.path}
-          fill={b.depth === 0 || (c.tree && b.depth === 1) ? `url(#${uid}-stem)` : c.stem}
-          stroke={c.ink}
-          strokeWidth={b.twig ? 0.8 : c.tree ? 1.1 : 1.5}
-          strokeOpacity={c.tree ? 0.8 : 1}
-          strokeLinejoin="round"
-        />
-        {b.buds.map(([x, y], i) => (
-          <path key={i} d={`M${x - 4},${y + 2} C${x - 5},${y - 6} ${x - 1},${y - 11} ${x + 1},${y - 12} C${x + 4},${y - 8} ${x + 5},${y - 2} ${x + 3},${y + 2}Z`} fill={c.leafLight} stroke={c.ink} strokeWidth={1.3} />
-        ))}
-        {b.leaves.map((l, i) => (
-          <LeafV key={i} l={l} look={look} c={c} uid={uid} />
-        ))}
-        {b.blooms.map(([x, y], i) => (
-          <g key={`b${i}`} transform={`translate(${x.toFixed(1)},${y.toFixed(1)})`}>
-            <g className="gs-t" style={{ opacity: look.keep > 0.95 ? 1 : 0, transform: `scale(${look.keep > 0.95 ? 1 : 0.3})` }}>
-              {[0, 72, 144, 216, 288].map((a) => (
-                <ellipse key={a} cx={0} cy={-5} rx={3.6} ry={5.6} transform={`rotate(${a})`} fill={c.bloom} stroke={c.ink} strokeWidth={0.9} />
-              ))}
-              <circle r={2.6} fill={c.bloomHeart} stroke={c.ink} strokeWidth={0.7} />
-            </g>
-          </g>
-        ))}
+        {b.kids.map((k, i) =>
+          pass === 'fill' && k.cont ? null : <BranchV key={i} b={k} look={look} c={c} uid={uid} droopMax={droopMax} pass={pass} />,
+        )}
+        {pass === 'outline' && <path d={b.path} fill={c.outline} stroke={c.outline} strokeWidth={line * 2} strokeLinejoin="round" />}
+        {pass === 'fill' && (
+          <>
+            <path d={b.path} fill={c.tree ? c.stem : b.depth === 0 ? `url(#${uid}-stem)` : c.stem} />
+            {b.bark && (
+              <g>
+                <path d={b.bark.shadow} fill={c.stemDark} opacity={0.42} />
+                <path d={b.bark.furrows} fill="none" stroke={c.furrow} strokeWidth={b.bark.w > 30 ? 1.3 : 1} strokeLinecap="round" opacity={0.6} />
+                <path d={b.bark.hi} fill="none" stroke={c.barkHi} strokeWidth={Math.max(1.2, b.bark.w * 0.07)} strokeLinecap="round" opacity={0.55} />
+              </g>
+            )}
+            {b.kids.map((k, i) => (k.cont ? <BranchV key={`c${i}`} b={k} look={look} c={c} uid={uid} droopMax={droopMax} pass={pass} /> : null))}
+          </>
+        )}
+        {pass === 'top' && (
+          <>
+            {b.buds.map(([x, y], i) => (
+              <path key={i} d={`M${x - 4},${y + 2} C${x - 5},${y - 6} ${x - 1},${y - 11} ${x + 1},${y - 12} C${x + 4},${y - 8} ${x + 5},${y - 2} ${x + 3},${y + 2}Z`} fill={c.leafLight} stroke={c.ink} strokeWidth={1.3} />
+            ))}
+            {b.leaves.map((l, i) => (
+              <LeafV key={i} l={l} look={look} c={c} uid={uid} />
+            ))}
+            {b.blooms.map(([x, y], i) => (
+              <g key={`b${i}`} transform={`translate(${x.toFixed(1)},${y.toFixed(1)})`}>
+                <g className="gs-t" style={{ opacity: look.keep > 0.95 ? 1 : 0, transform: `scale(${look.keep > 0.95 ? 1 : 0.3})` }}>
+                  {[0, 72, 144, 216, 288].map((a) => (
+                    <ellipse key={a} cx={0} cy={-5} rx={3.6} ry={5.6} transform={`rotate(${a})`} fill={c.bloom} stroke={c.ink} strokeWidth={0.9} />
+                  ))}
+                  <circle r={2.6} fill={c.bloomHeart} stroke={c.ink} strokeWidth={0.7} />
+                </g>
+              </g>
+            ))}
+          </>
+        )}
       </g>
     </Rot>
   )
@@ -493,6 +693,48 @@ function Canopy({ m, look, pal }: { m: PlantM; look: ReturnType<typeof looks>; p
   )
 }
 
+const FRUIT_COLORS: Record<FruitKind, [string, string]> = {
+  apple: ['#d9412e', '#8f1f1a'],
+  orange: ['#f39324', '#b8560f'],
+  pear: ['#c8d150', '#7f8a26'],
+  lemon: ['#f5d93c', '#b89a12'],
+  pomegranate: ['#c02c3e', '#6e1424'],
+}
+
+/** Blossoms or fruit on the crown. The groups drop one by one as the tree gets thirsty. */
+function Crops({ m, look, pal, dead }: { m: PlantM; look: ReturnType<typeof looks>; pal: Palette; dead: boolean }) {
+  const crop = m.blossoms ?? m.fruits
+  if (!crop || dead) return null
+  const ink = pal.c.ink
+  const blossom = !!m.blossoms
+  const pink = m.fruit === 'apple' || m.fruit === 'pomegranate'
+  const [body, shadeC] = FRUIT_COLORS[m.fruit]
+  const keepAt = [0.97, 0.86, 0.7]
+  return (
+    <g className="gs-crop">
+      {crop.groups.map((g, i) => {
+        const on = look.keep >= keepAt[i]
+        const st = { opacity: on ? 1 : 0 }
+        return blossom ? (
+          <g key={i} className="gs-t" style={st}>
+            <path d={g.d} fill={pal.shade(pink ? '#e98aa6' : '#f3e4d8')} stroke={ink} strokeWidth={0.5} strokeOpacity={0.5} />
+            <path d={g.a} fill={pal.shade(pink ? '#fbd9e3' : '#fffaf4')} stroke={ink} strokeWidth={0.45} strokeOpacity={0.45} />
+            <path d={g.b} fill={pal.shade(pink ? '#f2a9bf' : '#eadfd6')} opacity={0.7} />
+            <path d={g.c} fill={pal.shade('#f4c542')} />
+          </g>
+        ) : (
+          <g key={i} className="gs-t" style={st}>
+            <path d={g.d} fill="none" stroke={pal.shade('#5a3e22')} strokeWidth={1.2} strokeLinecap="round" />
+            <path d={g.a} fill={pal.shade(body)} stroke={ink} strokeWidth={0.8} />
+            <path d={g.b} fill={pal.shade(shadeC)} opacity={0.45} />
+            <path d={g.c} fill="#fffaf0" opacity={0.75} />
+          </g>
+        )
+      })}
+    </g>
+  )
+}
+
 export interface PlantProps {
   stage: GrowthStage
   health: number
@@ -521,6 +763,9 @@ export const Plant = memo(function Plant({ stage, health, dead, pal, seed = 1, u
     tree: m.kind === 'tree',
     bloom: pal.shade('#fbf4f0'),
     bloomHeart: pal.shade('#f2c94c'),
+    outline: m.kind === 'tree' ? mix(pal.c.ink, pal.shade('#3a2a1c'), 0.35) : pal.c.ink,
+    furrow: pal.shade(dead ? '#5a5652' : '#3e2c1e'),
+    barkHi: pal.shade(dead ? '#b5b0a8' : '#d9bf98'),
   }
   const droopMax = m.kind === 'tree' ? 4 : dead ? 48 : 30
 
@@ -567,19 +812,23 @@ export const Plant = memo(function Plant({ stage, health, dead, pal, seed = 1, u
       </defs>
       {stage <= 5 && <Mound w={stage === 2 ? 56 : 46} pal={pal} seed={seed} />}
       {stage === 2 && <Seed pal={pal} cracked />}
-      {m.kind === 'tree' && <path d={m.roots} fill={`url(#${uid}-stem)`} stroke={c.ink} strokeWidth={1.2} strokeOpacity={0.8} strokeLinejoin="round" />}
+      {m.kind === 'tree' && <path d={m.roots} fill={c.outline} stroke={c.outline} strokeWidth={2.3} strokeLinejoin="round" />}
+      <g className={windy ? 'gs-sway gs-sway-windy' : 'gs-sway'}>
+        {m.root && <BranchV b={m.root} look={look} c={c} uid={uid} droopMax={droopMax} pass="outline" />}
+      </g>
+      {m.kind === 'tree' && <path d={m.roots} fill={c.stem} />}
       {m.kind === 'tree' && !dead && (
         <path d="M-30,-2 q4,-7 9,-3 M-14,-4 q3,-5 7,-2 M14,-3 q3,-6 8,-2 M26,-1 q2,-4 6,-1" stroke={pal.shade('#6f9a3a')} strokeWidth={2.4} strokeLinecap="round" fill="none" opacity={0.8} />
       )}
+      {m.fruits?.fallen && !dead && look.keep > 0.6 && <path d={m.fruits.fallen} fill={pal.shade(FRUIT_COLORS[m.fruit][0])} stroke={c.ink} strokeWidth={0.8} />}
       <g className={windy ? 'gs-sway gs-sway-windy' : 'gs-sway'}>
-        {m.root && <BranchV b={m.root} look={look} c={c} uid={uid} droopMax={droopMax} />}
+        {m.root && <BranchV b={m.root} look={look} c={c} uid={uid} droopMax={droopMax} pass="fill" />}
+        {m.root && m.kind !== 'tree' && <BranchV b={m.root} look={look} c={c} uid={uid} droopMax={droopMax} pass="top" />}
         {m.kind === 'tree' && (
-          <>
-            <path d={m.trunkDetail} fill="none" stroke={c.stemDark} strokeWidth={1.1} strokeLinecap="round" opacity={0.75} />
-            <g className="gs-canopy">
-              <Canopy m={m} look={look} pal={pal} />
-            </g>
-          </>
+          <g className="gs-canopy">
+            <Canopy m={m} look={look} pal={pal} />
+            <Crops m={m} look={look} pal={pal} dead={dead} />
+          </g>
         )}
       </g>
       {/* fallen leaves at the foot of a thirsty plant */}

@@ -3,6 +3,8 @@ import { lazy, Suspense, useCallback, useEffect, useState } from 'react'
 import { GARDEN } from './config'
 import { markCelebrated, plantNewSeed, setMuted, startGarden, syncGarden, takeWatered, type GardenView } from './service'
 import type { GrowthStage, Weather } from './types'
+import { applyMood, moodOf } from './theme'
+import Whisper from './Whisper'
 import './panel.css'
 
 const GardenScene = lazy(() => import('./scene/GardenScene'))
@@ -117,8 +119,10 @@ function Celebration({ stage, onClose }: { stage: GrowthStage; onClose: () => vo
   )
 }
 
-export default function GardenPanel() {
+/** `waiting` = words to review and learn today (null while counting), shown as handwriting over the garden. */
+export default function GardenPanel({ waiting = null }: { waiting?: number | null }) {
   const [view, setView] = useState<GardenView | null | undefined>(undefined)
+  const [replay, setReplay] = useState(0)
   const [pulse, setPulse] = useState(0)
   const [replanting, setReplanting] = useState(false)
   const [celebrating, setCelebrating] = useState<GrowthStage | null>(null)
@@ -127,6 +131,7 @@ export default function GardenPanel() {
   const refresh = useCallback(async () => {
     const v = await syncGarden(new Date())
     setView(v)
+    applyMood(moodOf(v?.state ?? null))
     if (v?.celebrate) setCelebrating(v.celebrate)
   }, [])
 
@@ -177,8 +182,10 @@ export default function GardenPanel() {
             trees={view.trees}
             muted={s.soundMuted}
             waterPulse={pulse}
+            onTap={() => setReplay(Date.now())}
           />
         </Suspense>
+        <Whisper mood={moodOf(s).mood} waiting={waiting} replay={replay} />
         <button
           className="gp-mute"
           aria-label={s.soundMuted ? 'Turn nature sounds on' : 'Turn nature sounds off'}
@@ -205,7 +212,9 @@ export default function GardenPanel() {
               initial={s.goalWords}
               onPick={async (g) => {
                 setReplanting(false)
-                setView(await plantNewSeed(g))
+                const v = await plantNewSeed(g)
+                setView(v)
+                applyMood(moodOf(v?.state ?? null))
               }}
             />
           ) : (

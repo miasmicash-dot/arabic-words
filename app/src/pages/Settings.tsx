@@ -5,11 +5,13 @@ import { disableReminders, enableReminders, isIosNotInstalled, pushSupported } f
 import { GoalPicker } from '../garden/GardenPanel'
 import { loadGarden, setGoal, setMuted, startGarden, syncGarden } from '../garden/service'
 import type { GardenState } from '../garden/state'
+import { getPlayerName, setPlayerName } from '../intro/player'
 
 export default function Settings() {
   const [s, setS] = useState<S>(DEFAULT_SETTINGS)
   const [msg, setMsg] = useState('')
   const [garden, setGarden] = useState<GardenState | null>(null)
+  const [name, setName] = useState(getPlayerName)
   const [editGoal, setEditGoal] = useState(false)
 
   useEffect(() => {
@@ -96,6 +98,22 @@ export default function Settings() {
 
       <div className="card p-4 space-y-3">
         <div className="font-semibold text-sm">Garden</div>
+        <label className="flex items-center gap-2 text-sm">
+          <span className="muted">Your name</span>
+          <input
+            className="card px-3 py-2 flex-1 min-w-0"
+            maxLength={30}
+            value={name}
+            placeholder="Your name"
+            onChange={(e) => setName(e.target.value)}
+            onBlur={() => {
+              if (name.trim()) {
+                setPlayerName(name)
+                window.dispatchEvent(new Event('player-name'))
+              }
+            }}
+          />
+        </label>
         {garden ? (
           <>
             <div className="text-sm">

@@ -114,13 +114,17 @@ export interface Palette {
   night: number
   weather: Weather
   hour: number
+  /** 0 = thriving and colourful, 1 = the plant has died and everything is grey */
+  gloom: number
 }
 
-export function palette(hour: number, weather: Weather): Palette {
+export function palette(hour: number, weather: Weather, gloom = 0): Palette {
   const k = at(hour)
   const night = nightness(hour)
-  const desat = { sunny: 0, 'partly-cloudy': 0.12, overcast: 0.5, drought: 0.15 }[weather]
-  const darken = { sunny: 0, 'partly-cloudy': 0.03, overcast: 0.2, drought: 0 }[weather]
+  const g = Math.max(0, Math.min(1, gloom))
+  // a neglected garden loses its colour little by little, until it is almost monotone
+  const desat = 1 - (1 - { sunny: 0, 'partly-cloudy': 0.12, overcast: 0.5, drought: 0.15 }[weather]) * (1 - g * 0.88)
+  const darken = { sunny: 0, 'partly-cloudy': 0.03, overcast: 0.2, drought: 0 }[weather] + g * 0.1
   const shade = (c: string) => {
     let x = desaturate(c, desat)
     if (darken) x = multiply(x, '#8d97a0', darken * 2.2)
@@ -144,7 +148,15 @@ export function palette(hour: number, weather: Weather): Palette {
     bottom = mix(bottom, mix('#f6dfae', '#3a3a58', night), 0.5)
   }
 
+  if (g > 0) {
+    const grey = (x: string, dn: string, amt: number) => mix(desaturate(x, g), mix(dn, '#1c2230', night), amt)
+    top = grey(top, '#a7adb2', g * 0.55)
+    mid = grey(mid, '#bfc3c4', g * 0.5)
+    bottom = grey(bottom, '#cfd0cb', g * 0.45)
+    glow = desaturate(glow, g * 0.8)
+  }
+
   const c = { ...BASE, ...(weather === 'drought' ? DRY : {}) }
   const lit = Object.fromEntries(Object.entries(c).map(([n, v]) => [n, n === 'ink' ? mix(v, '#0e1424', night * 0.5) : shade(v)])) as Colors
-  return { sky: { top, mid, bottom, glow }, c: lit, shade, night, weather, hour }
+  return { sky: { top, mid, bottom, glow }, c: lit, shade, night, weather, hour, gloom: g }
 }

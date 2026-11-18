@@ -123,13 +123,14 @@ export function forestTrees(s: GardenState, learnedSinceSeed: number): ForestTre
   const extra = learnedSinceSeed - s.goalWords * 1.1
   if (!s.dead && extra >= 0) {
     const step = Math.max(2, Math.round(s.goalWords * 0.06))
-    const count = Math.min(10, Math.floor(extra / step) + 1)
+    // a couple of little plants come up straight away, then one more every few words; each grows through every stage
+    const count = Math.min(10, Math.floor(extra / step) + 2)
     for (let i = 0; i < count; i++) {
       const id = `seedling-${s.seedsPlanted}-${i}`
       const left = i % 2 === 1
       const x = left ? 0.04 + hash01(id) * 0.3 : 0.7 + hash01(id) * 0.27
-      const growth = Math.max(0.08, Math.min(1, (extra - i * step) / (step * 5)))
-      trees.push({ id, x, growth, depth: 0.35 + hash01(id, 3) * 0.6 })
+      const growth = Math.max(0.02, Math.min(1, (extra - i * step + step) / (step * 8)))
+      trees.push({ id, x, growth, depth: 0.08 + hash01(id, 3) * 0.42 })
     }
   }
   return trees

@@ -5,9 +5,13 @@ import GardenScene from '../garden/scene/GardenScene'
 import { STAGE_NAMES } from '../garden/GardenPanel'
 import { clearEggs, loadEggs } from '../garden/scene/eggMemory'
 import type { ForestTree, GardenDevOptions, GardenSceneProps, GrowthStage, Weather } from '../garden/types'
+import { applyMood, moodOf, restoreMood } from '../garden/theme'
+import Whisper from '../garden/Whisper'
+import { setPlayerName } from '../intro/player'
 
 const WEATHERS: Weather[] = ['sunny', 'partly-cloudy', 'overcast', 'drought']
-const ANIMALS = ['fox', 'rabbit', 'deer', 'squirrel', 'hedgehog'] as const
+const ANIMALS = ['fox', 'rabbit', 'deer', 'squirrel', 'hedgehog', 'skunk', 'ferret', 'horse', 'elephant'] as const
+const FAR = ['horses', 'elephants', 'chase'] as const
 const EGGS_KEY = 'garden-eggs-playground'
 const TIMES: [string, number][] = [
   ['Dawn', 6.2],
@@ -67,6 +71,7 @@ export default function GardenPreview() {
   const [shader, setShader] = useState(q.get('shader') !== '0')
   const [dayOffset, setDayOffset] = useState(0)
   const [walker, setWalker] = useState<GardenDevOptions['walker']>()
+  const [far, setFar] = useState<GardenDevOptions['far']>()
   const [squirrel, setSquirrel] = useState(0)
   const [eggsVersion, setEggsVersion] = useState(0)
   const [big, setBig] = useState(q.get('big') === '1')
@@ -102,7 +107,18 @@ export default function GardenPreview() {
     return out
   }, [forest])
 
-  const dev: GardenDevOptions = { aurora, shader, moonPhase: phase ?? undefined, today, eggsKey: EGGS_KEY, walker, squirrel, eggsVersion, occlusion: cover ? 1 : undefined }
+  const dev: GardenDevOptions = { aurora, shader, moonPhase: phase ?? undefined, today, eggsKey: EGGS_KEY, walker, far, squirrel, eggsVersion, occlusion: cover ? 1 : undefined }
+
+  // preview the whole app's colours for this garden while the playground is open
+  const [themeAll, setThemeAll] = useState(true)
+  const mood = moodOf({ health, dead, weather })
+  useEffect(() => {
+    if (themeAll) applyMood(moodOf({ health, dead, weather }), false)
+    else restoreMood()
+  }, [themeAll, health, dead, weather])
+  useEffect(() => () => restoreMood(), [])
+  const [whisper, setWhisper] = useState(0)
+  const [waiting, setWaiting] = useState(12)
 
   const gallery = q.get('gallery')
   if (gallery) {
@@ -128,7 +144,21 @@ export default function GardenPreview() {
   }
 
   const scene = (
-    <GardenScene stage={stage} health={health} dead={dead} weather={weather} timeOfDay={time} trees={stage === 11 && !forest ? demoForest : trees} muted={muted} waterPulse={pulse} dev={dev} />
+    <div className="relative">
+      <GardenScene
+        stage={stage}
+        health={health}
+        dead={dead}
+        weather={weather}
+        timeOfDay={time}
+        trees={stage === 11 && !forest ? demoForest : trees}
+        muted={muted}
+        waterPulse={pulse}
+        dev={dev}
+        onTap={() => setWhisper(Date.now())}
+      />
+      <Whisper mood={mood.mood} waiting={waiting} replay={whisper} />
+    </div>
   )
 
   return (
@@ -199,8 +229,13 @@ export default function GardenPreview() {
       </Section>
 
       <Section title="Wildlife">
-        <Chips items={ANIMALS} onPick={(k) => setWalker({ kind: k, id: Date.now() })} label={(k) => `${{ fox: '🦊', rabbit: '🐇', deer: '🦌', squirrel: '🐿️', hedgehog: '🦔' }[k]} ${k}`} />
-        <p className="text-xs muted">Animals walk by on their own every 20-40 s on sunny days.</p>
+        <Chips items={ANIMALS} onPick={(k) => setWalker({ kind: k, id: Date.now() })} label={(k) => `${{ fox: '🦊', rabbit: '🐇', deer: '🦌', squirrel: '🐿️', hedgehog: '🦔', skunk: '🦨', ferret: '🐾', horse: '🐎', elephant: '🐘' }[k]} ${k}`} />
+        <div className="text-sm font-semibold pt-1">In the distance</div>
+        <Chips items={FAR} onPick={(k) => setFar({ event: k, id: Date.now() })} label={(k) => ({ horses: '🐎 mare & foal', elephants: '🐘 elephant family', chase: '🦊🐇 a chase' })[k]} />
+        <p className="text-xs muted">
+          Tap any animal and it reacts (the skunk is a bad idea). The monkeys in the far trees and the frog are tappable too. The healthier the garden, the more
+          animals come: below about 85% health the big animals, monkeys and chases stay away; below 35% nothing comes at all.
+        </p>
       </Section>
 
       <Section title={`Day-to-day stories · ${dayOffset === 0 ? 'today' : `day +${dayOffset}`} (${today})`}>
@@ -231,6 +266,39 @@ export default function GardenPreview() {
           </li>
           <li>🐌 A snail crosses the path on grey days. 🐸 Tap the frog. 🦉 Tap the owl at night.</li>
         </ul>
+      </Section>
+
+      <Section title={`Mood of the whole app · ${mood.mood}`}>
+        <label className="flex items-center gap-2 text-sm">
+          <input type="checkbox" checked={themeAll} onChange={(e) => setThemeAll(e.target.checked)} /> Colour the whole app to match this garden (preview only)
+        </label>
+        <label className="flex items-center gap-2 text-sm">
+          Words waiting: <b>{waiting}</b>
+          <input type="range" min={0} max={40} value={waiting} onChange={(e) => setWaiting(Number(e.target.value))} className="flex-1" />
+        </label>
+        <div className="flex flex-wrap gap-2">
+          <button className="btn" onClick={() => setWhisper(Date.now())}>✍️ Show the status text</button>
+          <button
+            className="btn ghost"
+            onClick={() => {
+              location.hash = '#/'
+              location.reload()
+            }}
+          >
+            ▶ Replay the opening
+          </button>
+          <button
+            className="btn ghost"
+            onClick={() => {
+              setPlayerName('')
+              location.hash = '#/'
+              location.reload()
+            }}
+          >
+            Ask my name again
+          </button>
+        </div>
+        <p className="text-xs muted">Tap the garden to show the status text again. Its handwriting changes with the mood: flowing when lush, plain when grey, scratchy in a drought.</p>
       </Section>
 
       <Section title="Display">
