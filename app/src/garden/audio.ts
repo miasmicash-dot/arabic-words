@@ -179,3 +179,8 @@ export function useGardenAudio({ muted, weather, night, visible }: { muted: bool
     engine.apply()
   }, [muted, weather, Math.round(night * 20), visible]) // eslint-disable-line react-hooks/exhaustive-deps
 }
+
+/** Play one owl hoot now (when the owl is tapped), if sound is on. */
+export function playOwlNow() {
+  if (!engine.muted && engine.ctx?.state === "running") engine.playOwl()
+}

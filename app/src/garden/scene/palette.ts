@@ -6,8 +6,8 @@ type Key = { h: number; top: string; mid: string; bottom: string; tint: string; 
 
 // Sky gradient and landscape light, keyed by local hour.
 const KEYS: Key[] = [
-  { h: 0, top: '#0a1430', mid: '#13214a', bottom: '#1f2d58', tint: '#2a3768', amt: 0.66, glow: '#40508a' },
-  { h: 4.6, top: '#0c1734', mid: '#17254f', bottom: '#28365e', tint: '#2d3a6a', amt: 0.64, glow: '#48558a' },
+  { h: 0, top: '#050d2a', mid: '#0c2048', bottom: '#1a3c60', tint: '#465a94', amt: 0.62, glow: '#40508a' },
+  { h: 4.6, top: '#071030', mid: '#102552', bottom: '#22466a', tint: '#4a5c96', amt: 0.6, glow: '#48558a' },
   { h: 5.7, top: '#2a3a70', mid: '#7a6a96', bottom: '#eba584', tint: '#b07c8a', amt: 0.42, glow: '#ffb88a' },
   { h: 6.8, top: '#86b7d2', mid: '#d5d9d0', bottom: '#f8ddb0', tint: '#ffd9b0', amt: 0.18, glow: '#ffe2a8' },
   { h: 8.5, top: '#a8d4e3', mid: '#d6e8e2', bottom: '#f3eccc', tint: '#fff6e0', amt: 0.05, glow: '#fff3c4' },
@@ -16,8 +16,8 @@ const KEYS: Key[] = [
   { h: 17.6, top: '#93bcd4', mid: '#e8d6b4', bottom: '#f8c582', tint: '#f6b066', amt: 0.26, glow: '#ffc070' },
   { h: 18.8, top: '#56639a', mid: '#c4859a', bottom: '#f09a6c', tint: '#c07a7a', amt: 0.4, glow: '#ff9a6a' },
   { h: 19.8, top: '#26315f', mid: '#4f4a7c', bottom: '#8a6488', tint: '#4a4a7a', amt: 0.55, glow: '#9a6a8a' },
-  { h: 20.8, top: '#0f1a3c', mid: '#1a2850', bottom: '#2a3660', tint: '#2d3a6a', amt: 0.64, glow: '#465488' },
-  { h: 24, top: '#0a1430', mid: '#13214a', bottom: '#1f2d58', tint: '#2a3768', amt: 0.66, glow: '#40508a' },
+  { h: 20.8, top: '#081436', mid: '#122a56', bottom: '#24486c', tint: '#4a5c96', amt: 0.6, glow: '#465488' },
+  { h: 24, top: '#050d2a', mid: '#0c2048', bottom: '#1a3c60', tint: '#465a94', amt: 0.62, glow: '#40508a' },
 ]
 
 function at(h: number) {

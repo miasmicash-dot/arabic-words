@@ -65,6 +65,36 @@ function ticks(line: P[], r: Rng, n: number, dy: [number, number], size = 7): st
   return parts.join(' ')
 }
 
+/** Tiny far-away trees standing along a hill top. */
+function treeLine(line: P[], r: Rng, s = 1): string {
+  const out: string[] = []
+  let x = r.range(10, 40)
+  while (x < 1000) {
+    if (r.next() < 0.55) {
+      const y = yAt(line, x) + 2
+      const h = r.range(7, 15) * s
+      const w = h * r.range(0.45, 0.65)
+      if (r.next() < 0.5) out.push(`M${(x - w / 2).toFixed(1)},${y.toFixed(1)} L${x.toFixed(1)},${(y - h).toFixed(1)} L${(x + w / 2).toFixed(1)},${y.toFixed(1)}Z`)
+      else out.push(`M${(x - w / 2).toFixed(1)},${y.toFixed(1)} a${(w / 2).toFixed(1)},${(h / 2).toFixed(1)} 0 1 1 ${w.toFixed(1)},0Z`)
+    }
+    x += r.range(6, 22)
+  }
+  return out.join(' ')
+}
+
+/** Fine grass blades scattered below a hill line (painted texture, not ink). */
+function grassTexture(line: P[], r: Rng, n: number, dy: [number, number], size: number): string {
+  const parts: string[] = []
+  for (let i = 0; i < n; i++) {
+    const x = r.range(line[0][0] + 5, line[line.length - 1][0] - 5)
+    const y = yAt(line, x) + r.range(dy[0], dy[1])
+    const h = size * r.range(0.5, 1.1)
+    const l = r.range(-2.5, 2.5)
+    parts.push(`M${x.toFixed(1)},${y.toFixed(1)} q${(l * 0.3).toFixed(1)},${(-h * 0.5).toFixed(1)} ${l.toFixed(1)},${(-h).toFixed(1)}`)
+  }
+  return parts.join(' ')
+}
+
 function Bush({ x, y, s, pal, seed }: { x: number; y: number; s: number; pal: Palette; seed: number }) {
   const r = rng(seed)
   const blobs = [
@@ -138,51 +168,58 @@ export const Land = memo(function Land({ pal }: { pal: Palette }) {
         const branch = `M${pts[2][0].toFixed(1)},${pts[2][1].toFixed(1)} l${r.range(-10, 10).toFixed(1)},${r.range(4, 10).toFixed(1)}`
         return `M${pts.map((p) => p.map((v) => v.toFixed(1)).join(',')).join(' L')} ${branch}`
       }),
-      reeds: [...Array(7)].map((_, i) => {
-        const x = 196 + i * 7 + r.range(-2, 2)
-        const h = r.range(26, 40)
-        return { x, h, bend: r.range(-5, 5) }
+      treeline: treeLine(LINES.far, r),
+      treelineBack: treeLine(LINES.farBack, r, 0.6),
+      grassNear: grassTexture(LINES.near, r, 260, [8, 150], 7),
+      grassMid: grassTexture(LINES.midLeft, r, 110, [6, 60], 5),
+      grassMidR: grassTexture(LINES.mid, r, 70, [6, 40], 4),
+      pebbles: [...Array(26)].map(() => {
+        const x = r.range(0, 1000)
+        return { x, y: yAt(LINES.path, x) + r.range(-8, 10), rx: r.range(1.2, 3), ry: r.range(0.8, 1.8) }
       }),
     }
   }, [])
-  const pondY = 552
+  const pondY = 556
   return (
-    <g filter={`url(#${sid('wc')})`}>
+    <g>
       {/* far hills, hazy blue like distance */}
       <path d={area(LINES.farBack)} fill={c.farHill2} />
       <path d={g.farBackEdge} fill={c.ink} opacity={0.35} />
+      <path d={g.treelineBack} fill={mix(c.farHill2, c.farHill, 0.6)} />
       <path d={area(LINES.far)} fill={`url(#${sid('far')})`} />
-      <path d={g.farEdge} fill={c.ink} opacity={0.6} />
+      <path d={g.treeline} fill={mix(c.farHill, '#2e5a52', 0.35)} />
+      <path d={smooth(LINES.far.map(([x, y]) => [x, y + 3] as P))} fill="none" stroke={mix(c.farHill2, '#ffffff', 0.4)} strokeWidth={3} opacity={0.35} />
+      <path d={g.farEdge} fill={c.ink} opacity={0.55} />
       {/* middle hills: green slope and an ochre field */}
       <path d={area(LINES.mid)} fill={`url(#${sid('mid')})`} />
+      <path d={g.grassMidR} stroke={mix(c.midB, '#24401a', 0.3)} strokeWidth={1} opacity={0.5} strokeLinecap="round" />
+      <path d={smooth(LINES.mid.map(([x, y]) => [x, y + 3] as P))} fill="none" stroke={mix(c.midA, '#fffbe0', 0.45)} strokeWidth={3} opacity={0.4} />
       <path d={g.midEdge} fill={c.ink} opacity={0.8} />
       <path d={area(LINES.field)} fill={`url(#${sid('field')})`} />
       <path d={g.fieldRows} fill="none" stroke={mix(c.ochre, '#7a4a20', 0.25)} strokeWidth={1.6} opacity={0.45} strokeLinecap="round" />
       <path d={g.fieldEdge} fill={c.ink} opacity={0.8} />
       <path d={g.ticksMid} stroke={c.ink} strokeWidth={1.1} opacity={0.5} strokeLinecap="round" />
       <path d={area(LINES.midLeft)} fill={mix(c.midA, c.midB, 0.3)} />
+      <path d={g.grassMid} stroke={mix(c.midB, '#24401a', 0.35)} strokeWidth={1.1} opacity={0.55} strokeLinecap="round" />
+      <path d={smooth(LINES.midLeft.map(([x, y]) => [x, y + 3] as P))} fill="none" stroke={mix(c.midA, '#fffbe0', 0.5)} strokeWidth={3} opacity={0.4} />
       <path d={g.midLeftEdge} fill={c.ink} opacity={0.85} />
       <Bush x={60} y={404} s={0.9} pal={pal} seed={3} />
       <Bush x={135} y={402} s={0.7} pal={pal} seed={4} />
       <Bush x={960} y={430} s={0.75} pal={pal} seed={6} />
       {/* near hill where the plant lives */}
       <path d={area(LINES.near)} fill={`url(#${sid('near')})`} />
+      <path d={g.grassNear} stroke={mix(c.near2, '#1f3a14', 0.35)} strokeWidth={1.1} opacity={0.55} strokeLinecap="round" />
+      <path d={smooth(LINES.near.map(([x, y]) => [x, y + 3] as P))} fill="none" stroke={mix(c.near, '#fffbe0', 0.5)} strokeWidth={3.5} opacity={0.45} />
       <path d={g.nearEdge} fill={c.ink} />
       <path d={g.ticksNear} stroke={c.ink} strokeWidth={1.2} opacity={0.6} strokeLinecap="round" />
       <Bush x={905} y={530} s={1} pal={pal} seed={8} />
       <Bush x={40} y={514} s={0.8} pal={pal} seed={9} />
       {/* pond with reeds (a cracked mud patch in drought) */}
-      <ellipse cx={262} cy={pondY} rx={76} ry={14} fill={mix(c.near2, '#3a3020', 0.25)} />
-      <ellipse cx={262} cy={pondY - 1} rx={70} ry={11} fill={dry ? c.pond : `url(#${sid('pond')})`} stroke={c.ink} strokeWidth={1.8} />
-      {dry ? (
-        <path d="M205,552 l18,-4 l14,6 l20,-5 l18,5 l22,-4 M230,549 l6,7 M262,553 l-4,6 M290,548 l5,7" stroke={mix(c.pond, '#3a2a1a', 0.45)} strokeWidth={1.4} fill="none" />
-      ) : (
-        g.reeds.map((rd, i) => (
-          <g key={i}>
-            <path d={`M${rd.x},${pondY - 4} q${rd.bend},-${rd.h / 2} ${rd.bend * 1.4},-${rd.h}`} stroke={c.grass} strokeWidth={2} fill="none" />
-            {i % 2 === 0 && <rect x={rd.x + rd.bend * 1.2 - 2.2} y={pondY - 4 - rd.h * 0.95} width={4.4} height={11} rx={2.2} fill={c.barkDark} stroke={c.ink} strokeWidth={0.8} />}
-          </g>
-        ))
+      <ellipse cx={258} cy={pondY + 1} rx={107} ry={20} fill={mix(c.near2, '#3a3020', 0.25)} />
+      <ellipse cx={258} cy={pondY - 3} rx={104} ry={16} fill={mix(c.near, '#ffffff', 0.15)} opacity={0.6} />
+      <ellipse cx={258} cy={pondY} rx={100} ry={16} fill={dry ? c.pond : `url(#${sid('pond')})`} stroke={c.ink} strokeWidth={1.8} />
+      {dry && (
+        <path d="M175,556 l22,-5 l18,7 l24,-6 l22,6 l26,-5 l24,4 l20,-3 M205,552 l7,9 M243,557 l-5,8 M282,551 l6,9 M318,555 l-4,7" stroke={mix(c.pond, '#3a2a1a', 0.45)} strokeWidth={1.4} fill="none" />
       )}
       {/* old stump (the owl's perch at night) */}
       <g transform="translate(108,534)">
@@ -196,6 +233,10 @@ export const Land = memo(function Land({ pal }: { pal: Palette }) {
       <path d={smooth(g.pathTop)} fill="none" stroke={c.ink} strokeWidth={1.5} strokeDasharray="7 10" strokeLinecap="round" opacity={0.75} />
       <path d={smooth(g.pathBot)} fill="none" stroke={c.ink} strokeWidth={1.5} strokeDasharray="9 8" strokeLinecap="round" opacity={0.75} />
       <path d={smooth(g.pathBot.map(([x, y]) => [x, y - 4] as P))} fill="none" stroke={c.pathEdge} strokeWidth={4} opacity={0.6} />
+      <path d={smooth(g.pathTop.map(([x, y]) => [x, y + 4] as P))} fill="none" stroke={mix(c.path, '#ffffff', 0.5)} strokeWidth={3} opacity={0.5} />
+      {g.pebbles.map((pb, i) => (
+        <ellipse key={i} cx={pb.x} cy={pb.y} rx={pb.rx} ry={pb.ry} fill={mix(c.pathEdge, '#6a5a40', 0.35)} opacity={0.7} />
+      ))}
       {dry && <path d={g.cracks.join(' ')} stroke={mix(c.near, '#4a3018', 0.5)} strokeWidth={1.3} fill="none" strokeLinecap="round" strokeLinejoin="round" />}
       <defs>
         <linearGradient id={sid('far')} x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
@@ -247,12 +288,13 @@ export const Front = memo(function Front({ pal }: { pal: Palette }) {
       const x = r.range(40, 980)
       const onNear = i < 7
       const y = onNear ? yAt(LINES.near, x) + r.range(14, 32) : yAt(LINES.front, x) + r.range(10, 40)
-      if (onNear && Math.abs(x - 262) < 90) continue
+      if (onNear && Math.abs(x - 258) < 120) continue
       flowers.push({ x, y, color: colors[i % colors.length], s: onNear ? 0.75 : 1 })
     }
     return {
       edge: inkEdge(LINES.front, r, 2.4, 2),
       ticks: ticks(LINES.front, r, 18, [8, 40], 9),
+      grass: grassTexture(LINES.front, r, 220, [6, 60], 9),
       left: blades(-20, 120, 14, 70, 150, 20),
       right: blades(840, 1000, 8, 40, 90, -14),
       flowers,
@@ -260,8 +302,10 @@ export const Front = memo(function Front({ pal }: { pal: Palette }) {
     }
   }, [])
   return (
-    <g filter={`url(#${sid('wc')})`}>
+    <g>
       <path d={area(LINES.front)} fill={`url(#${sid('front')})`} />
+      <path d={g.grass} stroke={mix(c.front2, '#1a3310', 0.35)} strokeWidth={1.2} opacity={0.5} strokeLinecap="round" />
+      <path d={smooth(LINES.front.map(([x, y]) => [x, y + 3] as P))} fill="none" stroke={mix(c.front, '#fffbe0', 0.45)} strokeWidth={3.5} opacity={0.4} />
       <path d={g.edge} fill={c.ink} />
       <path d={g.ticks} stroke={c.ink} strokeWidth={1.2} opacity={0.55} strokeLinecap="round" />
       {g.flowers.map((f, i) => (
@@ -331,38 +375,93 @@ const CLOUDS = {
   drought: makeClouds(2, 15, 0),
 }
 
-export function Sky({ pal, children }: { pal: Palette; children?: ReactNode }) {
-  const sid = useSid()
-  const { sky, night, weather, hour } = pal
+/** Where the sun and moon are (scene units), or null when below the horizon. Shared with the sky shader. */
+export function celestial(hour: number) {
   const sun = sunArc(hour)
   const moon = moonArc(hour)
+  return {
+    sun: sun === null ? null : { x: 40 + sun * 250, y: 330 - Math.sin(sun * Math.PI) * 250, low: 1 - Math.min(1, Math.sin(sun * Math.PI) * 2.2) },
+    moon: moon === null ? null : { x: 290 - moon * 230, y: 320 - Math.sin(moon * Math.PI) * 230 },
+  }
+}
+
+/** Moon phase for a date: 0 = new, 0.5 = full (from a known new moon, 29.53-day cycle). */
+export function moonPhase(d: Date): number {
+  const ref = Date.UTC(2000, 0, 6, 18, 14)
+  const days = (d.getTime() - ref) / 86_400_000
+  return (((days / 29.530588853) % 1) + 1) % 1
+}
+
+/** Lit part of the moon disk of radius r for phase p. */
+function moonLit(p: number, r: number): string {
+  const k = Math.cos(2 * Math.PI * p)
+  const rx = Math.abs(k) * r
+  const sweep = k > 0 ? 0 : 1
+  const d = `M0,${-r} A${r},${r} 0 0,1 0,${r} A${rx.toFixed(2)},${r} 0 0,${sweep} 0,${-r}Z`
+  return d
+}
+
+export function Moon({ phase, ink }: { phase: number; ink: string }) {
+  const sid = useSid()
+  const r = 26
+  const waning = phase > 0.5
+  const lit = moonLit(waning ? 1 - phase : phase, r)
+  return (
+    <g>
+      <defs>
+        <clipPath id={sid('moonlit')}>
+          <path d={lit} transform={waning ? 'scale(-1,1)' : undefined} />
+        </clipPath>
+        <radialGradient id={sid('moonface')} cx="0.42" cy="0.4">
+          <stop offset="0" stopColor="#fffdf0" />
+          <stop offset="1" stopColor="#e9e3c8" />
+        </radialGradient>
+      </defs>
+      {/* earthshine: the dark part of the moon faintly visible */}
+      <circle r={r} fill="#25304d" opacity={0.55} />
+      <g clipPath={`url(#${sid('moonlit')})`}>
+        <circle r={r} fill={`url(#${sid('moonface')})`} />
+        <path d="M-12,-10 c5,-4 12,-2 11,4 c-1,6 -9,7 -12,3 c-2,-2 -1,-5 1,-7Z" fill="#d9d2b4" opacity={0.8} />
+        <path d="M4,4 c6,-2 11,2 9,7 c-2,4 -8,4 -10,1 c-2,-3 -1,-6 1,-8Z" fill="#d9d2b4" opacity={0.7} />
+        <path d="M-6,10 c3,-1 6,1 5,4 c-1,2 -5,2 -6,0Z" fill="#d9d2b4" opacity={0.7} />
+        <circle cx={10} cy={-13} r={2.4} fill="none" stroke="#cfc7a6" strokeWidth={0.9} />
+        <circle cx={-15} cy={6} r={1.6} fill="none" stroke="#cfc7a6" strokeWidth={0.8} />
+        <circle cx={-2} cy={-18} r={1.3} fill="#d6cfb0" />
+      </g>
+      <circle r={r} fill="none" stroke={ink} strokeWidth={1.1} opacity={0.5} />
+    </g>
+  )
+}
+
+export function Sky({ pal, children, shader, phase }: { pal: Palette; children?: ReactNode; shader: boolean; phase: number }) {
+  const sid = useSid()
+  const { sky, night, weather, hour } = pal
+  const { sun, moon } = celestial(hour)
   const stars = useMemo(() => {
     const r = rng(5)
     return [...Array(70)].map(() => ({ x: r.range(0, W), y: r.range(0, 330), s: r.range(0.6, 1.8), tw: r.next() < 0.35, d: r.range(2, 6), dl: -r.range(0, 6) }))
   }, [])
   const rays = useMemo(() => {
     const r = rng(8)
-    return [...Array(12)].map((_, i) => {
-      const a = (i / 12) * Math.PI * 2 + r.range(-0.1, 0.1)
-      const r0 = 58 + r.range(0, 6)
-      const r1 = r0 + r.range(14, 26)
-      return brush([[Math.cos(a) * r0, Math.sin(a) * r0], [Math.cos(a) * r1, Math.sin(a) * r1]], 2.4, 1, r, { taperIn: 0.2, taperOut: 0.5, samples: 8 })
+    return [...Array(16)].map((_, i) => {
+      const a = (i / 16) * Math.PI * 2 + r.range(-0.05, 0.05)
+      const long = i % 2 === 0
+      const r0 = 54 + r.range(0, 3)
+      const r1 = r0 + (long ? r.range(22, 30) : r.range(10, 15))
+      return brush([[Math.cos(a) * r0, Math.sin(a) * r0], [Math.cos(a) * r1, Math.sin(a) * r1]], long ? 2.2 : 1.6, 0.8, r, { taperIn: 0.15, taperOut: 0.55, samples: 8, wobble: 0.05 })
     }).join(' ')
   }, [])
   const sunOutline = useMemo(() => {
     const r = rng(9)
-    const pts: P[] = [...Array(14)].map((_, i) => [Math.cos((i / 14) * Math.PI * 2) * 44, Math.sin((i / 14) * Math.PI * 2) * 44])
-    return smooth(jitter(pts, r, 1.6), true)
+    const pts: P[] = [...Array(18)].map((_, i) => [Math.cos((i / 18) * Math.PI * 2) * 44, Math.sin((i / 18) * Math.PI * 2) * 44])
+    return smooth(jitter(pts, r, 0.8), true)
   }, [])
   const starsVis = night * (weather === 'overcast' ? 0.12 : weather === 'partly-cloudy' ? 0.7 : 1)
   const sunVis = weather === 'overcast' ? 0.15 : 1
-  const sx = sun === null ? 0 : 40 + sun * 250
-  const sy = sun === null ? 0 : 330 - Math.sin(sun * Math.PI) * 250
-  const mx = moon === null ? 0 : 290 - moon * 230
-  const my = moon === null ? 0 : 320 - Math.sin(moon * Math.PI) * 230
-  const lowSun = sun === null ? 0 : 1 - Math.min(1, Math.sin(sun * Math.PI) * 2.2)
+  const lowSun = sun?.low ?? 0
   const cloudFill = (k: number) =>
     weather === 'overcast' ? pal.shade(mix('#a9b1b7', '#7d8790', k)) : pal.shade(mix('#ffffff', weather === 'drought' ? '#efe1c0' : '#cddbe4', k))
+  const rim = mix(sky.glow, '#ffffff', 0.5)
   return (
     <g>
       <defs>
@@ -377,8 +476,9 @@ export function Sky({ pal, children }: { pal: Palette; children?: ReactNode }) {
           <stop offset="1" stopColor={sky.glow} stopOpacity={0} />
         </radialGradient>
         <radialGradient id={sid('sun')} cx="0.4" cy="0.38">
-          <stop offset="0" stopColor={mix('#fff2a8', '#ffb070', lowSun)} />
-          <stop offset="1" stopColor={mix('#f9c443', '#f08a4a', lowSun)} />
+          <stop offset="0" stopColor={mix('#fffbe0', '#ffd0a0', lowSun)} />
+          <stop offset="0.55" stopColor={mix('#ffe27a', '#ffb070', lowSun)} />
+          <stop offset="1" stopColor={mix('#f6b93b', '#ee7d45', lowSun)} />
         </radialGradient>
         <radialGradient id={sid('moonglow')}>
           <stop offset="0" stopColor="#e8ecff" stopOpacity={0.45} />
@@ -386,52 +486,51 @@ export function Sky({ pal, children }: { pal: Palette; children?: ReactNode }) {
         </radialGradient>
         <linearGradient id={sid('cloud')} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={cloudFill(0)} />
+          <stop offset="0.7" stopColor={mix(cloudFill(0), cloudFill(1), 0.6)} />
           <stop offset="1" stopColor={cloudFill(1)} />
         </linearGradient>
       </defs>
-      <rect x={-10} y={-10} width={W + 20} height={H + 20} fill={`url(#${sid('sky')})`} />
-      {/* stars */}
-      <g style={{ opacity: starsVis }} className="gs-fade">
-        {stars.map((s, i) => (
-          <circle key={i} cx={s.x} cy={s.y} r={s.s} fill="#fffbe8" className={s.tw ? 'gs-twinkle' : undefined} style={s.tw ? { animationDuration: `${s.d}s`, animationDelay: `${s.dl}s` } : undefined} />
-        ))}
-        {night > 0.6 && weather !== 'overcast' && (
-          <g className="gs-shoot">
-            <path d="M0,0 L-70,30" stroke={`url(#${sid('glow')})`} strokeWidth={2} />
-            <path d="M0,0 L-60,26" stroke="#fffbe8" strokeWidth={1.4} strokeLinecap="round" opacity={0.9} />
+      {!shader && (
+        <>
+          <rect x={-10} y={-10} width={W + 20} height={H + 20} fill={`url(#${sid('sky')})`} />
+          <g style={{ opacity: starsVis }} className="gs-fade">
+            {stars.map((s, i) => (
+              <circle key={i} cx={s.x} cy={s.y} r={s.s} fill="#fffbe8" className={s.tw ? 'gs-twinkle' : undefined} style={s.tw ? { animationDuration: `${s.d}s`, animationDelay: `${s.dl}s` } : undefined} />
+            ))}
           </g>
-        )}
-      </g>
+        </>
+      )}
       {/* sun */}
-      {sun !== null && (
-        <g transform={`translate(${sx.toFixed(1)},${sy.toFixed(1)})`} style={{ opacity: sunVis }}>
-          <circle r={230} fill={`url(#${sid('glow')})`} opacity={1 - night * 0.7} />
+      {sun && (
+        <g transform={`translate(${sun.x.toFixed(1)},${sun.y.toFixed(1)})`} style={{ opacity: sunVis }}>
+          {!shader && <circle r={230} fill={`url(#${sid('glow')})`} opacity={1 - night * 0.7} />}
           <g className="gs-spin">
-            <path d={rays} fill={pal.c.ink} opacity={0.85} />
+            <path d={rays} fill={pal.c.ink} opacity={0.8} />
           </g>
+          <circle r={44} fill="transparent" data-sun="1" />
           <path d={sunOutline} fill={`url(#${sid('sun')})`} />
-          <path d={sunOutline} fill="none" stroke={pal.c.ink} strokeWidth={2} opacity={0.85} />
-          <path d="M-22,-14 q8,-12 22,-12" stroke="#fffbe0" strokeWidth={4} fill="none" strokeLinecap="round" opacity={0.6} />
+          <path d={sunOutline} fill="none" stroke={pal.c.ink} strokeWidth={1.6} opacity={0.75} />
+          <path d="M-24,-12 q8,-15 26,-16" stroke="#fffdf0" strokeWidth={3.5} fill="none" strokeLinecap="round" opacity={0.7} />
+          <path d="M-30,4 q-1,8 3,14" stroke="#fffdf0" strokeWidth={2} fill="none" strokeLinecap="round" opacity={0.45} />
         </g>
       )}
       {/* moon */}
-      {moon !== null && (
-        <g transform={`translate(${mx.toFixed(1)},${my.toFixed(1)})`} style={{ opacity: Math.min(1, night * 1.6) * (weather === 'overcast' ? 0.3 : 1) }}>
-          <circle r={110} fill={`url(#${sid('moonglow')})`} />
-          <circle r={28} fill="#f5f1dc" stroke="#2c3346" strokeWidth={1.6} />
-          <circle cx={-8} cy={-6} r={6} fill="#e2dcc0" />
-          <circle cx={9} cy={7} r={4.5} fill="#e2dcc0" />
-          <circle cx={4} cy={-12} r={2.6} fill="#e2dcc0" />
-          <path d="M-20,8 a22,22 0 0 0 30,12" stroke="#d5ceb2" strokeWidth={3} fill="none" />
+      {moon && (
+        <g transform={`translate(${moon.x.toFixed(1)},${moon.y.toFixed(1)})`} style={{ opacity: Math.min(1, night * 1.6) * (weather === 'overcast' ? 0.3 : 1) }}>
+          {!shader && <circle r={110} fill={`url(#${sid('moonglow')})`} />}
+          <Moon phase={phase} ink={pal.c.ink} />
         </g>
       )}
       {/* clouds */}
       {CLOUDS[weather].map((cl, i) => (
         <g key={`${weather}-${i}`} transform={`translate(0,${cl.y.toFixed(0)}) scale(${cl.s.toFixed(2)})`}>
           <g className="gs-drift" style={{ animationDuration: `${cl.dur.toFixed(0)}s`, animationDelay: `${cl.delay.toFixed(0)}s` }}>
-            <path d={cl.d} transform="translate(4,6)" fill={cloudFill(1)} opacity={0.5} />
-            <path d={cl.d} fill={`url(#${sid('cloud')})`} stroke={pal.c.ink} strokeWidth={1.8} strokeLinejoin="round" opacity={weather === 'overcast' ? 0.95 : 1} />
-            <path d={`M${cl.w * 0.12},${-cl.h * 0.08} C${cl.w * 0.35},${cl.h * 0.02} ${cl.w * 0.6},${cl.h * 0.02} ${cl.w * 0.86},${-cl.h * 0.1}`} stroke={pal.c.ink} strokeWidth={1.1} fill="none" opacity={0.35} />
+            <path d={cl.d} transform="translate(4,6)" fill={cloudFill(1)} opacity={0.45} />
+            <path d={cl.d} className="gs-cloudbody" fill={`url(#${sid('cloud')})`} />
+            {/* sunlit upper rim */}
+            <path d={cl.d} fill="none" stroke={rim} strokeWidth={3} opacity={weather === 'overcast' ? 0.15 : 0.55 * (1 - night)} transform="translate(-1,-1.5)" />
+            <path d={cl.d} fill="none" stroke={pal.c.ink} strokeWidth={1.4} strokeLinejoin="round" opacity={0.8} />
+            <path d={`M${cl.w * 0.12},${-cl.h * 0.08} C${cl.w * 0.35},${cl.h * 0.02} ${cl.w * 0.6},${cl.h * 0.02} ${cl.w * 0.86},${-cl.h * 0.1}`} stroke={pal.c.ink} strokeWidth={0.9} fill="none" opacity={0.3} />
           </g>
         </g>
       ))}
@@ -440,24 +539,23 @@ export function Sky({ pal, children }: { pal: Palette; children?: ReactNode }) {
   )
 }
 
-// ---------- filters and grain ----------
+// ---------- paper texture ----------
 
-export function Filters() {
+/** A watercolour-paper texture laid over the whole scene with a multiply blend (crisp, nothing is blurred). */
+export function Paper() {
   const sid = useSid()
   return (
-    <defs>
-      <filter id={sid('wc')} x="-2%" y="-2%" width="104%" height="104%" colorInterpolationFilters="sRGB">
-        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves={2} seed={4} result="warp" />
-        <feDisplacementMap in="SourceGraphic" in2="warp" scale={4} xChannelSelector="R" yChannelSelector="G" result="wob" />
-        <feTurbulence type="fractalNoise" baseFrequency="0.006 0.018" numOctaves={3} seed={9} result="pig" />
-        <feColorMatrix in="pig" type="matrix" values="0.32 0 0 0 0.78  0.32 0 0 0 0.78  0.32 0 0 0 0.78  0 0 0 0 1" result="pigGrey" />
-        <feBlend in="wob" in2="pigGrey" mode="multiply" result="painted" />
-        <feComposite in="painted" in2="wob" operator="in" />
-      </filter>
-      <filter id={sid('grain')} x="0" y="0" width="100%" height="100%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={1} seed={2} result="n" />
-        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 0 0.12  1.5 0 0 0 -0.62" />
-      </filter>
-    </defs>
+    <>
+      <defs>
+        <filter id={sid('paper')} x="0" y="0" width="100%" height="100%" colorInterpolationFilters="sRGB">
+          <feTurbulence type="fractalNoise" baseFrequency="0.005 0.014" numOctaves={3} seed={9} result="pig" />
+          <feColorMatrix in="pig" type="matrix" values="0.28 0 0 0 0.8  0.28 0 0 0 0.8  0.28 0 0 0 0.79  0 0 0 0 1" result="pigGrey" />
+          <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves={2} seed={2} result="fine" />
+          <feColorMatrix in="fine" type="matrix" values="0.18 0 0 0 0.88  0.18 0 0 0 0.87  0.18 0 0 0 0.85  0 0 0 0 1" result="fineGrey" />
+          <feBlend in="pigGrey" in2="fineGrey" mode="multiply" />
+        </filter>
+      </defs>
+      <rect width={W} height={H} filter={`url(#${sid('paper')})`} />
+    </>
   )
 }

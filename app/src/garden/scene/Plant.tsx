@@ -24,7 +24,10 @@ interface ClumpM {
   tone: 0 | 1 | 2
   path: string
   hi: string
-  marks: string
+  /** small leaf dabs: lit side, shaded side, and leaves sticking out of the edge */
+  light: string
+  dark: string
+  rim: string
   /** where the broken ink outline starts (0..100) */
   dash: number
 }
@@ -169,6 +172,19 @@ function herb(stage: GrowthStage, r: Rng): PlantM {
   return { kind: 'herb', root: stem, clumps: [], trunkDetail: '', roots: '', height: H, stage }
 }
 
+/** A small almond-shaped leaf mark centred at (x, y). */
+function leafDab(x: number, y: number, len: number, a: number): string {
+  const cx = Math.cos(a)
+  const sy = Math.sin(a)
+  const h = len / 2
+  const w = len * 0.32
+  const p0 = [x - cx * h, y - sy * h]
+  const p1 = [x + cx * h, y + sy * h]
+  const n = [-sy * w, cx * w]
+  const f = (v: number) => v.toFixed(1)
+  return `M${f(p0[0])},${f(p0[1])} Q${f(x + n[0])},${f(y + n[1])} ${f(p1[0])},${f(p1[1])} Q${f(x - n[0])},${f(y - n[1])} ${f(p0[0])},${f(p0[1])}Z`
+}
+
 /** Stages 9-11 (and forest neighbours): a woody tree with a clumped canopy like the reference picture. */
 function tree(stage: GrowthStage, r: Rng): PlantM {
   const big = stage >= 10
@@ -176,7 +192,7 @@ function tree(stage: GrowthStage, r: Rng): PlantM {
   const baseW = big ? 44 : 18
   const maxD = big ? 3 : 2
   const clumpR = big ? 64 : 44
-  const clumps: Omit<ClumpM, 'path' | 'hi' | 'marks' | 'dash'>[] = []
+  const clumps: Omit<ClumpM, 'path' | 'hi' | 'light' | 'dark' | 'rim' | 'dash'>[] = []
 
   const clampUp = (a: number) => Math.max(-162, Math.min(-18, a))
 
@@ -186,7 +202,7 @@ function tree(stage: GrowthStage, r: Rng): PlantM {
     const mid = add(base, dirv(a1), len * 0.5)
     const a2 = clampUp(a1 + r.range(-drift * 1.3, drift * 1.3))
     const end = add(mid, dirv(a2), len * 0.5)
-    const pts: P[] = depth === 0 ? [base, add(base, dirv(-90 + r.range(-2, 2)), len * 0.45), mid, end] : [base, mid, end]
+    const pts: P[] = depth === 0 ? [base, add(base, dirv(-90 + r.range(-2, 2)), len * 0.22), mid, end] : [base, mid, end]
     const node = mkBranch(r, pts, w, w * (depth === 0 ? 0.6 : 0.5), depth, side, depth >= maxD)
     if (depth === 0) node.path = brush(pts, w, w * 0.5, r, { taperIn: 0, taperOut: 0.25, wobble: 0.04 })
     if (depth >= maxD) {
@@ -202,7 +218,7 @@ function tree(stage: GrowthStage, r: Rng): PlantM {
     }
     const k = depth === 0 ? 3 : r.pick([2, 3, 3])
     for (let j = 0; j < k; j++) {
-      const t = depth === 0 ? [0.66, 0.8, 1][j] : 0.55 + (0.45 * j) / Math.max(1, k - 1)
+      const t = depth === 0 ? [0.66, 0.8, 0.9][j] : 0.55 + (0.45 * j) / Math.max(1, k - 1)
       const p = at(pts, t)
       const spread = depth === 0 ? [-44, 40, r.range(-6, 6)][j] : (j - (k - 1) / 2) * r.range(34, 46)
       const ca = clampUp(a2 + spread + r.range(-6, 6))
@@ -236,20 +252,24 @@ function tree(stage: GrowthStage, r: Rng): PlantM {
   const full: ClumpM[] = clumps.map((c) => {
     const rel = (c.y - y0) / Math.max(1, y1 - y0)
     const tone: 0 | 1 | 2 = rel < 0.3 ? 2 : rel < 0.7 ? 1 : 0
-    const bumps = Math.round(r.range(6, 9))
-    const marks: string[] = []
-    for (let m = 0; m < 2; m++) {
-      const mx = c.x + r.range(-c.r * 0.45, c.r * 0.35)
-      const my = c.y + r.range(-c.r * 0.1, c.r * 0.45)
-      const s = c.r * r.range(0.08, 0.12)
-      marks.push(`M${(mx - s * 2).toFixed(1)},${my.toFixed(1)} q${s},${-s * 1.6} ${s * 2},0 q${s},${-s * 1.6} ${s * 2},0`)
+    const bumps = Math.round(r.range(13, 18))
+    const dabs = (n: number, a0: number, a1: number, r0: number, r1: number, len: [number, number]) => {
+      const out: string[] = []
+      for (let k = 0; k < n; k++) {
+        const a = r.range(a0, a1)
+        const rr = c.r * r.range(r0, r1)
+        out.push(leafDab(c.x + Math.cos(a) * rr, c.y + Math.sin(a) * rr * 0.84, r.range(len[0], len[1]) * (big ? 1 : 0.85), a + r.range(-1.2, 1.2)))
+      }
+      return out.join(' ')
     }
     return {
       ...c,
       tone,
-      path: scallop(c.x, c.y, c.r, c.r * 0.84, bumps, r, 0.32),
-      hi: scallop(c.x - c.r * 0.2, c.y - c.r * 0.32, c.r * 0.6, c.r * 0.4, 6, r, 0.3),
-      marks: marks.join(' '),
+      path: scallop(c.x, c.y, c.r, c.r * 0.82, bumps, r, 0.16),
+      hi: scallop(c.x - c.r * 0.22, c.y - c.r * 0.3, c.r * 0.58, c.r * 0.4, 9, r, 0.18),
+      light: dabs(big ? 18 : 12, -Math.PI * 0.95, -Math.PI * 0.1, 0.15, 0.85, [7, 11]),
+      dark: dabs(big ? 14 : 9, Math.PI * 0.05, Math.PI * 0.9, 0.2, 0.85, [7, 10]),
+      rim: dabs(big ? 12 : 8, -Math.PI, 0, 0.92, 1.08, [8, 12]),
       dash: r.range(0, 100),
     }
   })
@@ -257,12 +277,16 @@ function tree(stage: GrowthStage, r: Rng): PlantM {
   // bark lines and root flare
   const H = trunkLen
   const bark: string[] = []
-  for (let i = 0; i < (big ? 4 : 2); i++) {
-    const x = r.range(-baseW * 0.22, baseW * 0.22)
-    const yb = -r.range(10, H * 0.45)
-    bark.push(smooth([[x, yb], [x + r.range(-3, 3), yb - r.range(16, 30)], [x + r.range(-3, 3), yb - r.range(36, 56)]]))
+  for (let i = 0; i < (big ? 10 : 4); i++) {
+    const x = r.range(-baseW * 0.3, baseW * 0.3)
+    const yb = -r.range(6, H * 0.6)
+    bark.push(smooth([[x, yb], [x + r.range(-2, 2), yb - r.range(10, 22)], [x + r.range(-2.5, 2.5), yb - r.range(24, 44)]]))
   }
-  if (big) bark.push(`M${baseW * 0.05},${-H * 0.32} c-5,-3 -5,-11 1,-12 c6,-1 8,6 3,10`)
+  for (let i = 0; i < (big ? 8 : 3); i++) {
+    const x = r.range(-baseW * 0.28, baseW * 0.28)
+    const yb = -r.range(10, H * 0.7)
+    bark.push(`M${x.toFixed(1)},${yb.toFixed(1)} l${r.range(2, 5).toFixed(1)},${r.range(-1, 1).toFixed(1)}`)
+  }
   const roots = big
     ? [
         brush([[-baseW * 0.3, -16], [-baseW * 0.65, -4], [-baseW * 1.05, 3]], 16, 3, r, { taperIn: 0, taperOut: 0.6 }),
@@ -323,6 +347,8 @@ interface Inks {
   leafLight: string
   vein: string
   coty: string
+  /** woody tree: trunk and main limbs get a rounded bark shading */
+  tree: boolean
   bloom: string
   bloomHeart: string
 }
@@ -362,7 +388,14 @@ function BranchV({ b, look, c, uid, droopMax }: { b: BranchM; look: ReturnType<t
         {b.kids.map((k, i) => (
           <BranchV key={i} b={k} look={look} c={c} uid={uid} droopMax={droopMax} />
         ))}
-        <path d={b.path} fill={b.depth === 0 ? `url(#${uid}-stem)` : c.stem} stroke={c.ink} strokeWidth={b.twig ? 1 : 1.5} strokeLinejoin="round" />
+        <path
+          d={b.path}
+          fill={b.depth === 0 || (c.tree && b.depth === 1) ? `url(#${uid}-stem)` : c.stem}
+          stroke={c.ink}
+          strokeWidth={b.twig ? 0.8 : c.tree ? 1.1 : 1.5}
+          strokeOpacity={c.tree ? 0.8 : 1}
+          strokeLinejoin="round"
+        />
         {b.buds.map(([x, y], i) => (
           <path key={i} d={`M${x - 4},${y + 2} C${x - 5},${y - 6} ${x - 1},${y - 11} ${x + 1},${y - 12} C${x + 4},${y - 8} ${x + 5},${y - 2} ${x + 3},${y + 2}Z`} fill={c.leafLight} stroke={c.ink} strokeWidth={1.3} />
         ))}
@@ -424,10 +457,11 @@ function Seed({ pal, cracked }: { pal: Palette; cracked: boolean }) {
 
 function Canopy({ m, look, pal }: { m: PlantM; look: ReturnType<typeof looks>; pal: Palette }) {
   const wither = (g: string) => mix(mix(g, '#d4be55', look.yellow * 0.85), '#9a6c3c', look.brown * 0.8)
-  const tones = ['#62a24a', '#72b04e', '#88c25c'].map((g) => pal.shade(wither(g)))
-  const shadow = pal.shade(wither('#3f7a36'))
-  const deep = pal.shade(wither('#33652e'))
-  const hi = pal.shade(wither('#acd770'))
+  const tones = ['#5c9c46', '#6eae4c', '#83c058'].map((g) => pal.shade(wither(g)))
+  const shadow = pal.shade(wither('#3d7434'))
+  const deep = pal.shade(wither('#2f5f2b'))
+  const hi = pal.shade(wither('#a9d46c'))
+  const sparkle = pal.shade(wither('#c8e68a'))
   const vis = (cl: ClumpM) => cl.rank < look.keep
   const tr = (cl: ClumpM) => ({
     className: 'gs-t',
@@ -441,16 +475,18 @@ function Canopy({ m, look, pal }: { m: PlantM; look: ReturnType<typeof looks>; p
       {/* the dark mass behind every lobe */}
       {m.clumps.map((cl, i) => (
         <g key={`s${i}`} {...tr(cl)}>
-          <path d={cl.path} transform={`translate(${cl.x.toFixed(1)},${(cl.y + 6).toFixed(1)}) scale(1.1) translate(${(-cl.x).toFixed(1)},${(-cl.y).toFixed(1)})`} fill={deep} />
+          <path d={cl.path} transform={`translate(${cl.x.toFixed(1)},${(cl.y + 6).toFixed(1)}) scale(1.08) translate(${(-cl.x).toFixed(1)},${(-cl.y).toFixed(1)})`} fill={deep} />
         </g>
       ))}
       {m.clumps.map((cl, i) => (
         <g key={i} {...tr(cl)}>
-          <path d={cl.path} transform="translate(4,8)" fill={shadow} opacity={0.8} />
+          <path d={cl.path} transform="translate(3,7)" fill={shadow} opacity={0.7} />
           <path d={cl.path} fill={tones[cl.tone]} />
-          {cl.tone > 0 && <path d={cl.hi} fill={hi} opacity={cl.tone === 2 ? 0.85 : 0.55} />}
-          <path d={cl.path} fill="none" stroke={pal.c.ink} strokeWidth={2.2} strokeLinecap="round" pathLength={100} strokeDasharray="58 42" strokeDashoffset={cl.dash} />
-          <path d={cl.marks} fill="none" stroke={shadow} strokeWidth={1.7} strokeLinecap="round" opacity={0.9} />
+          <path d={cl.rim} fill={tones[cl.tone]} stroke={pal.c.ink} strokeWidth={0.5} strokeOpacity={0.35} />
+          <path d={cl.dark} fill={shadow} opacity={0.75} />
+          {cl.tone > 0 && <path d={cl.hi} fill={hi} opacity={cl.tone === 2 ? 0.6 : 0.4} />}
+          <path d={cl.light} fill={cl.tone === 2 ? sparkle : hi} opacity={0.85} />
+          <path d={cl.path} fill="none" stroke={pal.c.ink} strokeWidth={1.2} strokeLinecap="round" pathLength={100} strokeDasharray="34 26 18 22" strokeDashoffset={cl.dash} opacity={0.55} />
         </g>
       ))}
     </g>
@@ -482,6 +518,7 @@ export const Plant = memo(function Plant({ stage, health, dead, pal, seed = 1, u
     leafLight: w('#a6d872'),
     vein: w('#3f7a32'),
     coty: w('#b4dc7a'),
+    tree: m.kind === 'tree',
     bloom: pal.shade('#fbf4f0'),
     bloomHeart: pal.shade('#f2c94c'),
   }
@@ -510,10 +547,18 @@ export const Plant = memo(function Plant({ stage, health, dead, pal, seed = 1, u
   return (
     <g>
       <defs>
-        <linearGradient id={`${uid}-stem`} x1="0" y1="1" x2="0" y2="0">
-          <stop offset="0" stopColor={stage === 8 ? pal.shade(dead ? '#8e8a84' : '#8b6a4c') : stemBottom} />
-          <stop offset="1" stopColor={stemTop} />
-        </linearGradient>
+        {m.kind === 'tree' ? (
+          <linearGradient id={`${uid}-stem`} x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor={mix(c.stem, '#f3e2c4', 0.35)} />
+            <stop offset="0.35" stopColor={c.stem} />
+            <stop offset="1" stopColor={mix(c.stem, '#1f150c', 0.45)} />
+          </linearGradient>
+        ) : (
+          <linearGradient id={`${uid}-stem`} x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stopColor={stage === 8 ? pal.shade(dead ? '#8e8a84' : '#8b6a4c') : stemBottom} />
+            <stop offset="1" stopColor={stemTop} />
+          </linearGradient>
+        )}
         <linearGradient id={`${uid}-leaf`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={c.leafLight} />
           <stop offset="0.55" stopColor={c.leaf} />
@@ -522,12 +567,15 @@ export const Plant = memo(function Plant({ stage, health, dead, pal, seed = 1, u
       </defs>
       {stage <= 5 && <Mound w={stage === 2 ? 56 : 46} pal={pal} seed={seed} />}
       {stage === 2 && <Seed pal={pal} cracked />}
-      {m.kind === 'tree' && <path d={m.roots} fill={c.stem} stroke={c.ink} strokeWidth={1.8} strokeLinejoin="round" />}
+      {m.kind === 'tree' && <path d={m.roots} fill={`url(#${uid}-stem)`} stroke={c.ink} strokeWidth={1.2} strokeOpacity={0.8} strokeLinejoin="round" />}
+      {m.kind === 'tree' && !dead && (
+        <path d="M-30,-2 q4,-7 9,-3 M-14,-4 q3,-5 7,-2 M14,-3 q3,-6 8,-2 M26,-1 q2,-4 6,-1" stroke={pal.shade('#6f9a3a')} strokeWidth={2.4} strokeLinecap="round" fill="none" opacity={0.8} />
+      )}
       <g className={windy ? 'gs-sway gs-sway-windy' : 'gs-sway'}>
         {m.root && <BranchV b={m.root} look={look} c={c} uid={uid} droopMax={droopMax} />}
         {m.kind === 'tree' && (
           <>
-            <path d={m.trunkDetail} fill="none" stroke={c.stemDark} strokeWidth={1.6} strokeLinecap="round" opacity={0.85} />
+            <path d={m.trunkDetail} fill="none" stroke={c.stemDark} strokeWidth={1.1} strokeLinecap="round" opacity={0.75} />
             <g className="gs-canopy">
               <Canopy m={m} look={look} pal={pal} />
             </g>

@@ -55,11 +55,11 @@ export function Rabbit({ s, ink }: { s: Shade; ink: string }) {
   )
 }
 
-export function Squirrel({ s, ink }: { s: Shade; ink: string }) {
+export function Squirrel({ s, ink, still }: { s: Shade; ink: string; still?: boolean }) {
   const fur = s('#b8653a')
   const light = s('#f0d9b8')
   return (
-    <g className="gs-hop gs-hop-fast">
+    <g className={still ? undefined : 'gs-hop gs-hop-fast'}>
       <path d="M-10,-6 C-26,-10 -28,-32 -17,-38 C-8,-42 -1,-36 -6,-29 C-10,-24 -15,-18 -12,-10Z" fill={fur} stroke={ink} strokeWidth={1.4} className="gs-tail" />
       <path d="M-18,-34 C-12,-37 -7,-34 -8,-30" stroke={light} strokeWidth={2} fill="none" strokeLinecap="round" />
       <path d="M-10,-4 C-14,-14 -6,-22 4,-20 C12,-18 14,-10 10,-4 C6,0 -6,0 -10,-4Z" fill={fur} stroke={ink} strokeWidth={1.4} />
@@ -222,16 +222,17 @@ export function Bee({ x, y, dur, delay, ink }: { x: number; y: number; dur: numb
   )
 }
 
-export function Owl({ x, y, pal }: { x: number; y: number; pal: Palette }) {
+export function Owl({ x, y, pal, onTap, spin }: { x: number; y: number; pal: Palette; onTap?: () => void; spin?: number }) {
   const ink = pal.c.ink
   const body = mix('#8a6a50', '#3a3a5a', 0.35)
   const belly = mix('#d8c2a0', '#5a5a7a', 0.3)
   return (
-    <g transform={`translate(${x},${y})`} className="gs-owl">
+    <g transform={`translate(${x},${y})`} className="gs-owl gs-tap" onClick={(e) => { e.stopPropagation(); onTap?.() }}>
+      <rect x={-16} y={-38} width={32} height={40} fill="transparent" />
       <path d="M-13,0 C-16,-12 -13,-27 0,-29 C13,-27 16,-12 13,0Z" fill={body} stroke={ink} strokeWidth={1.5} />
       <path d="M-8,-2 C-10,-10 -8,-17 0,-18 C8,-17 10,-10 8,-2Z" fill={belly} />
       <path d="M-5,-12 l2,2 l2,-2 M1,-12 l2,2 l2,-2 M-3,-7 l2,2 l2,-2 M2,-7 l2,2 l2,-2" stroke={mix(body, '#000', 0.3)} strokeWidth={0.9} fill="none" />
-      <g className="gs-owlhead">
+      <g key={spin} className={spin ? 'gs-owlspin' : 'gs-owlhead'}>
         <path d="M-12,-24 L-13,-35 L-6,-28 M12,-24 L13,-35 L6,-28" fill={body} stroke={ink} strokeWidth={1.3} strokeLinejoin="round" />
         <ellipse cx={0} cy={-26} rx={12} ry={9} fill={body} stroke={ink} strokeWidth={1.4} />
         <circle cx={-5} cy={-26} r={4.6} fill="#ffd85a" stroke={ink} strokeWidth={1} />
@@ -255,21 +256,31 @@ export const Fireflies = memo(function Fireflies() {
   const sid = useSid()
   const flies = useMemo(() => {
     const r = rng(31)
-    return [...Array(16)].map(() => ({ x: r.range(30, 970), y: r.range(440, 650), d: r.range(5, 10), dl: -r.range(0, 10), p: r.pick([1, 2, 3] as const) }))
+    const spots = [
+      [258, 540, 100, 20],
+      [620, 470, 150, 90],
+      [500, 600, 480, 60],
+      [120, 520, 90, 50],
+    ]
+    return [...Array(28)].map((_, i) => {
+      const [cx, cy, rx, ry] = spots[i % spots.length]
+      return { x: cx + r.range(-rx, rx), y: cy + r.range(-ry, ry), d: r.range(5, 11), dl: -r.range(0, 11), p: r.pick([1, 2, 3] as const), s: r.range(0.7, 1.3) }
+    })
   }, [])
   return (
     <g>
       {flies.map((f, i) => (
         <g key={i} transform={`translate(${f.x.toFixed(0)},${f.y.toFixed(0)})`}>
           <g className={`gs-firefly gs-ff-${f.p}`} style={{ animationDuration: `${f.d.toFixed(1)}s`, animationDelay: `${f.dl.toFixed(1)}s` }}>
-            <circle r={9} fill={`url(#${sid('ffglow')})`} />
-            <circle r={2.1} fill="#fffbb0" />
+            <circle r={14 * f.s} fill={`url(#${sid('ffglow')})`} />
+            <circle r={1.8 * f.s} fill="#fdffc8" />
           </g>
         </g>
       ))}
       <defs>
         <radialGradient id={sid('ffglow')}>
-          <stop offset="0" stopColor="#f6ff9a" stopOpacity={0.8} />
+          <stop offset="0" stopColor="#f6ff9a" stopOpacity={0.85} />
+          <stop offset="0.3" stopColor="#d8ff7a" stopOpacity={0.3} />
           <stop offset="1" stopColor="#f6ff9a" stopOpacity={0} />
         </radialGradient>
       </defs>

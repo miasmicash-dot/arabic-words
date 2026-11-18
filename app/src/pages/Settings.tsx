@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { DEFAULT_SETTINGS, db, type Settings as S } from '../db'
 import { disableReminders, enableReminders, isIosNotInstalled, pushSupported } from '../push'
 import { GoalPicker } from '../garden/GardenPanel'
@@ -131,6 +132,8 @@ export default function Settings() {
           <GoalPicker title="Pick a goal to plant your first seed" onPick={async (g) => { await startGarden(g); setGarden(await loadGarden()) }} />
         )}
       </div>
+
+      <Link to="/garden-preview" className="btn ghost w-full block text-center">✨ Garden playground (try every stage, weather and time)</Link>
 
       <button className="btn ghost w-full" onClick={resetAll}>Reset all progress</button>
     </div>
