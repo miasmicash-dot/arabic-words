@@ -193,6 +193,7 @@ export default function Review() {
   const [outcome, setOutcome] = useState<Outcome | null>(null)
   const [retypeOk, setRetypeOk] = useState(false)
   const [shake, setShake] = useState(false)
+  const [latinNudge, setLatinNudge] = useState(false)
   const [keys, setKeys] = useState(readPref)
   const [tally, setTally] = useState<Tally>({ reviewed: 0, right: 0, fixes: 0, missed: [] })
   const met = useRef(new Set<string>())
@@ -264,6 +265,13 @@ export default function Review() {
       focusInput()
       return
     }
+    if (!skipped && card.direction === 'en-ar' && !hasArabic(typed)) {
+      setLatinNudge(true)
+      setShake(true)
+      focusInput()
+      return
+    }
+    setLatinNudge(false)
     const ms = Date.now() - shownAt.current
     const wasNew = card.fsrs.state === State.New
     const result = skipped ? null : checkAnswer(word, card.direction, typed)
@@ -456,12 +464,12 @@ export default function Review() {
           <button type="button" className="btn ghost" onClick={hint}>💡 Hint</button>
           <button type="button" className="btn ghost" onClick={() => submit(true)}>I don't know</button>
         </div>
+        {en && latinNudge && !hasArabic(typed) && <div className="rv-nudge" role="alert">Please type it in Arabic letters. Tap ⌨️ below for Arabic keys.</div>}
         {en && (
           <div className="rv-ar-help">
             <button type="button" className="rv-link" onClick={toggleKeys} aria-pressed={keys}>
               ⌨️ {keys ? 'Use my phone keyboard' : 'Arabic letters on screen'}
             </button>
-            <span className="muted">Latin letters work too, like <i>kitaab</i> for كتاب.</span>
           </div>
         )}
       </div>

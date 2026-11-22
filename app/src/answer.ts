@@ -286,7 +286,7 @@ export function romanize(arabic: string): string {
 
 export function checkArabic(typed: string, word: Pick<Word, 'arabic' | 'translit' | 'vocalized'>): CheckResult {
   const t = typed.trim()
-  if (hasArabic(t) || !/[a-z0-9]/i.test(t)) {
+  {
     const n = normArabic(t)
     const forms = [...word.arabic, ...(word.vocalized ? [word.vocalized] : [])]
     let kind: MatchKind = 'wrong'
@@ -312,26 +312,11 @@ export function checkArabic(typed: string, word: Pick<Word, 'arabic' | 'translit
     const diff = letterDiff(stripHarakat(t).replace(/\s+/g, ' '), display, arEq)
     return { kind, typed: t, expected: display, script: 'ar', typedDiff: diff.typed, expectedDiff: diff.expected }
   }
-  // Latin letters: compare with the transliterations, or with a spelling made from the Arabic
-  const cands = [...word.translit, ...(word.vocalized ? [romanize(word.vocalized)] : [])]
-    .filter(Boolean)
-    .map((display) => ({ norm: normTranslit(display), display }))
-  if (!cands.length) {
-    // no Latin spelling and no vowels to make one: compare the consonants only (vowels and w/y are guesses)
-    const arabic = stripHarakat(word.arabic[0] ?? '')
-    const bones = (s: string) => normTranslit(s).replace(/[aiuwy]/g, '').replace(/(.)\1+/g, '$1')
-    const r = best(bones(t), word.arabic.map((a) => ({ norm: bones(romanize(a)), display: stripHarakat(a) })))
-    const op = r.kind === 'wrong' ? ('extra' as const) : ('same' as const)
-    return { kind: r.kind, typed: t, expected: r.kind === 'wrong' ? arabic : r.display, script: 'latin', typedDiff: [...t].map((ch) => ({ ch, op })), expectedDiff: [] }
-  }
-  const r = best(normTranslit(t), cands)
-  const diff = letterDiff(t.toLowerCase(), r.display.toLowerCase())
-  return { kind: r.kind, typed: t, expected: r.display, script: 'latin', typedDiff: diff.typed, expectedDiff: diff.expected }
 }
 
 // ---------- the whole check ----------
 
-/** ar-en: she sees Arabic and types English. en-ar: she sees English and types Arabic (script or Latin letters). */
+/** ar-en: she sees Arabic and types English. en-ar: she sees English and types Arabic letters. */
 export function checkAnswer(word: Word, direction: Direction, typed: string): CheckResult {
   return direction === 'ar-en' ? checkEnglish(typed, word.english) : checkArabic(typed, word)
 }
@@ -373,11 +358,9 @@ export function reason(g: Grade, r: Pick<GradeInput, 'kind' | 'hinted' | 'justMe
 
 // ---------- hints ----------
 
-/** The answer the hint spells out: English for ar-en, otherwise Arabic, or the transliteration if she is typing Latin letters. */
-export function hintTarget(word: Word, direction: Direction, typed: string): string {
+/** The answer the hint spells out: English for ar-en, otherwise Arabic. */
+export function hintTarget(word: Word, direction: Direction, _typed: string): string {
   if (direction === 'ar-en') return englishAnswers(word.english)[0] ?? word.english
-  const latin = word.translit[0] ?? (word.vocalized ? romanize(word.vocalized) : '')
-  if (latin && typed.trim() && !hasArabic(typed) && /[a-z]/i.test(typed)) return latin
   return stripHarakat(word.arabic[0] ?? '')
 }
 

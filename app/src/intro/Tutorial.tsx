@@ -76,7 +76,7 @@ export default function Tutorial({ name, onDone }: { name: string; onDone: () =>
       body: (
         <>
           <p>You see a word and <b>type the answer</b>. New words are shown to you first, so you meet them before you are tested.</p>
-          <p>Arabic can be typed in Arabic letters or in Latin letters, like <i>kitaab</i>. There are Arabic keys on screen if your phone has none.</p>
+          <p>Type Arabic answers in Arabic letters. There are Arabic keys on screen if your phone has none.</p>
           <p>The app <b>checks your answer</b>, fixes small spelling slips, and shows you the right spelling.</p>
           <p className="tut-note">Stuck? Tap Hint for the next letter, or I don't know to see the answer.</p>
         </>

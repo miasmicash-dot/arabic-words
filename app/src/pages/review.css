@@ -119,6 +119,8 @@ a.rv-cta { display: flex; align-items: center; justify-content: center; text-dec
 .rv-actions { display: flex; flex-direction: column; gap: 10px; }
 .rv-actions .btn { min-height: 50px; }
 
+.rv-nudge { font-size: 14px; text-align: center; color: var(--warm, #e0912f); }
+
 /* retype */
 .rv-target { font-size: 30px; font-weight: 600; color: var(--ok); }
 .rv-target.ar { font-size: 44px; font-weight: 400; }

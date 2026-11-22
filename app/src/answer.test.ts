@@ -12,9 +12,7 @@ import {
   letterDiff,
   normArabic,
   normEnglish,
-  normTranslit,
   reason,
-  romanize,
 } from './answer'
 import type { Word } from './db'
 
@@ -110,29 +108,9 @@ describe('Arabic answers', () => {
     expect(r.kind).toBe('exact')
     expect(r.expected).toBe('تفاح')
   })
-  it('accepts transliteration', () => {
-    expect(normTranslit("maa'a")).toBe('ma')
-    expect(normTranslit('Mā’a')).toBe('ma')
-    expect(checkArabic('maa', water).kind).toBe('exact')
-    expect(checkArabic('ma', water).kind).toBe('exact')
-    expect(checkArabic('madrasa', school).kind).toBe('exact')
-    expect(checkArabic('madrassa', school).kind).toBe('exact')
-    expect(checkArabic('madrsa', school).kind).toBe('typo')
-    expect(checkArabic('kitab', school).kind).toBe('wrong')
-    expect(checkArabic('madrasa', school).script).toBe('latin')
-  })
-  it('makes a Latin spelling when a word has none', () => {
-    expect(romanize('ق\u064Eال\u064E')).toBe('qaala')
-    const eat = w({ arabic: ['أكل'], translit: [], vocalized: 'أ\u064Eك\u064Eل\u064E' })
-    expect(checkArabic('akala', eat).kind).toBe('exact')
-    expect(checkArabic('akal', eat).kind).toBe('typo')
-  })
-  it('compares consonants when there are no vowels and no Latin spelling', () => {
-    const few = w({ arabic: ['قليل'], translit: [] })
-    expect(checkArabic('qaleel', few).kind).toBe('exact')
-    expect(checkArabic('qalil', few).kind).toBe('exact')
-    expect(checkArabic('kabir', few).kind).toBe('wrong')
-    expect(checkArabic('kabir', few).expected).toBe('قليل')
+  it('only accepts Arabic letters', () => {
+    expect(checkArabic('madrasa', school).kind).toBe('wrong')
+    expect(checkArabic('maa', water).kind).toBe('wrong')
   })
 })
 
@@ -202,7 +180,7 @@ describe('hints', () => {
     const word = w({ english: 'apple(s)', arabic: ['ت\u064Fف\u0651احة'], translit: ['tufaha'] })
     expect(hintTarget(word, 'ar-en', '')).toBe('apple')
     expect(hintTarget(word, 'en-ar', '')).toBe('تفاحة')
-    expect(hintTarget(word, 'en-ar', 'tu')).toBe('tufaha')
+    expect(hintTarget(word, 'en-ar', 'tu')).toBe('تفاحة')
   })
 })
 
