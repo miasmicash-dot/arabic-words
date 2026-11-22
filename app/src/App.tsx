@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
-import { HashRouter, NavLink, Route, Routes } from 'react-router-dom'
+import { HashRouter, NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { boot } from './boot'
 import Home from './pages/Home'
 import Review from './pages/Review'
@@ -9,15 +9,21 @@ import Settings from './pages/Settings'
 import Intro from './intro/Intro'
 import { syncGarden } from './garden/service'
 import { applyMood, moodOf } from './garden/theme'
+import Icon, { type IconName } from './ui/Icon'
+import './App.css'
+import './ui/screens.css'
 
 const GardenPreview = lazy(() => import('./pages/GardenPreview'))
 
-const tabs = [
-  ['/', 'Home'],
-  ['/progress', 'Progress'],
-  ['/words', 'Words'],
-  ['/settings', 'Settings'],
-] as const
+const tabs: readonly (readonly [string, string, IconName])[] = [
+  ['/', 'Home', 'home'],
+  ['/words', 'Words', 'book'],
+  ['/progress', 'Progress', 'chart'],
+  ['/settings', 'Settings', 'gear'],
+]
+
+/** Pages that take the whole screen, without the tab bar. */
+const FOCUS = ['/review', '/garden-preview']
 
 export default function App() {
   const [ready, setReady] = useState(false)
@@ -34,7 +40,13 @@ export default function App() {
     <>
       {/* the intro stays mounted while the app loads underneath it */}
       <Intro />
-      {ready ? <Main /> : <p className="p-6 muted">Loading…</p>}
+      {ready ? (
+        <Main />
+      ) : (
+        <div className="app-loading" aria-busy="true" aria-label="Loading">
+          <Icon name="sprout" size={34} />
+        </div>
+      )}
     </>
   )
 }
@@ -42,32 +54,50 @@ export default function App() {
 function Main() {
   return (
     <HashRouter>
-      <div className="mx-auto max-w-xl px-4 pt-4 pb-24">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/review" element={<Review />} />
-          <Route path="/progress" element={<Progress />} />
-          <Route path="/words" element={<Words />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/garden-preview" element={<Suspense fallback={null}><GardenPreview /></Suspense>} />
-        </Routes>
-      </div>
-      <nav
-        className="fixed bottom-0 inset-x-0 flex justify-around border-t"
-        style={{ background: 'var(--card)', borderColor: 'var(--line)', paddingBottom: 'env(safe-area-inset-bottom)' }}
-      >
-        {tabs.map(([to, label]) => (
-          <NavLink
-            key={to}
-            to={to}
-            end
-            className="py-3 px-2 text-sm font-semibold"
-            style={({ isActive }) => ({ color: isActive ? 'var(--accent)' : 'var(--muted)' })}
-          >
-            {label}
-          </NavLink>
-        ))}
-      </nav>
+      <Shell />
     </HashRouter>
+  )
+}
+
+function Shell() {
+  const loc = useLocation()
+  const focus = FOCUS.includes(loc.pathname)
+  // a new page starts at the top
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [loc.pathname])
+  return (
+    <>
+      <main className={`app-main${focus ? ' app-focus' : ''}`}>
+        <div key={loc.pathname} className="page-enter">
+          <Routes location={loc}>
+            <Route path="/" element={<Home />} />
+            <Route path="/review" element={<Review />} />
+            <Route path="/progress" element={<Progress />} />
+            <Route path="/words" element={<Words />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/garden-preview" element={<Suspense fallback={null}><GardenPreview /></Suspense>} />
+          </Routes>
+        </div>
+      </main>
+      {!focus && (
+        <nav className="tabbar" aria-label="Main">
+          <div className="tabbar-inner glass">
+            {tabs.map(([to, label, icon]) => (
+              <NavLink key={to} to={to} end className={({ isActive }) => `tab${isActive ? ' on' : ''}`}>
+                {({ isActive }) => (
+                  <>
+                    <span className="tab-icon">
+                      <Icon name={icon} size={24} strokeWidth={isActive ? 2 : 1.8} fill={isActive ? 'currentColor' : 'none'} fillOpacity={isActive ? 0.16 : 0} />
+                    </span>
+                    <span className="tab-label">{label}</span>
+                  </>
+                )}
+              </NavLink>
+            ))}
+          </div>
+        </nav>
+      )}
+    </>
   )
 }
