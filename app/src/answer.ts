@@ -33,6 +33,7 @@ export function allowedTypos(letters: number): number {
 }
 
 const letterCount = (s: string) => s.replace(/\s/g, '').length
+const squeeze = (s: string) => s.replace(/(.)\1+/g, '$1')
 
 /** Damerau-Levenshtein distance (optimal string alignment): insert, delete, swap a letter, or swap two neighbours. */
 export function editDistance(a: string, b: string, eq: (x: string, y: string) => boolean = (x, y) => x === y): number {
@@ -173,6 +174,8 @@ function best(
   for (const c of candidates) {
     if (!c.norm) continue
     if (c.norm === typedNorm) return { kind: 'exact', display: c.display }
+    // a doubled or undoubled letter (lott / lot, sumer / summer) is a slip even in short words
+    if (typedNorm && squeeze(c.norm) === squeeze(typedNorm)) return { kind: 'typo', display: c.display }
     const d = editDistance(typedNorm, c.norm)
     // prefer the closest candidate relative to what it allows
     if (d - allowedTypos(letterCount(c.norm)) < closestD - allowedTypos(letterCount(closest.norm))) {

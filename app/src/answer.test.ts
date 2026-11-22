@@ -205,3 +205,11 @@ describe('hints', () => {
     expect(hintTarget(word, 'en-ar', 'tu')).toBe('tufaha')
   })
 })
+
+describe('doubled letters', () => {
+  it('counts a doubled or missing double letter as a spelling slip, even in short words', () => {
+    expect(checkEnglish('a lott', 'a lot').kind).toBe('typo')
+    expect(checkEnglish('sumer', 'summer').kind).toBe('typo')
+    expect(checkEnglish('cat', 'dog').kind).toBe('wrong')
+  })
+})
