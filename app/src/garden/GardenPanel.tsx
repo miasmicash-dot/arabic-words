@@ -7,6 +7,7 @@ import { applyMood, moodOf } from './theme'
 import Whisper from './Whisper'
 import { useRealWeather } from './realWeather'
 import { celebrate } from '../confetti'
+import Icon from '../ui/Icon'
 import './panel.css'
 
 const GardenScene = lazy(() => import('./scene/GardenScene'))
@@ -46,6 +47,13 @@ const WEATHER_LINES: Record<Weather, string> = {
   drought: 'A dry spell! Your plant is thirsty. A review will water it.',
 }
 
+const WEATHER_CHIPS: Record<Weather, string> = {
+  sunny: 'Thriving',
+  'partly-cloudy': 'Doing well',
+  overcast: 'Thirsty',
+  drought: 'Dry spell',
+}
+
 function useClock() {
   const [now, setNow] = useState(() => new Date())
   useEffect(() => {
@@ -62,28 +70,31 @@ export function GoalPicker({ initial, onPick, title, note }: { initial?: number;
   const value = custom ? customNum : chosen
   const valid = !!value && value >= 10 && value <= 2000
   return (
-    <div className="space-y-3">
-      <div className="font-semibold">{title}</div>
+    <div className="gp-goal">
+      <div className="gp-goal-title">{title}</div>
       {note && <p className="text-sm muted">{note}</p>}
-      <div className="grid grid-cols-4 gap-2">
+      <div className="gp-goal-opts" role="group" aria-label="Goal in words">
         {GARDEN.goalOptions.map((g) => (
           <button
             key={g}
-            className={`btn ${!custom && chosen === g ? '' : 'ghost'}`}
+            type="button"
+            className="gp-goal-opt"
+            aria-pressed={!custom && chosen === g}
             onClick={() => {
               setCustom('')
               setChosen(g)
             }}
           >
-            {g}
+            <b className="num">{g}</b>
+            <small>words</small>
           </button>
         ))}
       </div>
-      <label className="flex items-center gap-2 text-sm">
-        <span className="muted">Or your own:</span>
+      <label className="gp-goal-custom">
+        <span className="muted">Or your own</span>
         <input
           inputMode="numeric"
-          className="card px-3 py-2 w-24"
+          className="field"
           placeholder="e.g. 150"
           value={custom}
           onChange={(e) => setCustom(e.target.value.replace(/[^0-9]/g, ''))}
@@ -91,7 +102,8 @@ export function GoalPicker({ initial, onPick, title, note }: { initial?: number;
         <span className="muted">words</span>
       </label>
       <button className="btn w-full" disabled={!valid} onClick={() => valid && onPick(value!)}>
-        🌱 Plant my seed{valid ? ` (${value} words)` : ''}
+        <Icon name="sprout" size={20} />
+        Plant my seed{valid ? ` · ${value} words` : ''}
       </button>
     </div>
   )
@@ -110,12 +122,12 @@ function Celebration({ stage, onClose }: { stage: GrowthStage; onClose: () => vo
           {['🍃', '🌸', '✨', '🌿', '🌼'][i % 5]}
         </span>
       ))}
-      <div className="gp-cele-card card">
-        <div className="text-5xl">{stage >= 9 ? '🌳' : stage >= 3 ? '🌿' : '🌱'}</div>
-        <div className="text-sm muted">Stage {stage} of 11</div>
-        <div className="text-2xl font-bold">{STAGE_NAMES[stage]}!</div>
-        <p>{STAGE_LINES[stage]}</p>
-        <button className="btn w-full">Lovely!</button>
+      <div className="gp-cele-card card glass">
+        <div className="gp-cele-emoji">{stage >= 9 ? '🌳' : stage >= 3 ? '🌿' : '🌱'}</div>
+        <div className="eyebrow">Stage {stage} of 11</div>
+        <div className="gp-cele-name">{STAGE_NAMES[stage]}!</div>
+        <p className="muted">{STAGE_LINES[stage]}</p>
+        <button className="btn lg w-full">Lovely!</button>
       </div>
     </div>
   )
@@ -169,13 +181,16 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
     }
   }, [refresh])
 
-  if (view === undefined) return <div className="gp-skeleton" />
+  if (view === undefined) return <div className="gp-stage"><div className="gp-skeleton" /></div>
 
   if (view === null) {
     return (
-      <div className="card p-4 space-y-3">
-        <div className="text-lg font-bold">Your garden 🌱</div>
-        <p className="text-sm muted">
+      <div className="card raised p-5 space-y-4">
+        <div className="flex items-center gap-3">
+          <span className="stat-icon" style={{ margin: 0, width: 40, height: 40, borderRadius: 12 }}><Icon name="sprout" size={22} /></span>
+          <div className="text-lg font-bold">Your garden</div>
+        </div>
+        <p className="text-sm muted" style={{ lineHeight: 1.55 }}>
           Every review waters a seed. As you learn words it grows into a plant, then a tree, then a forest. Pick how many words you want to learn for your
           first tree.
         </p>
@@ -195,7 +210,7 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
   })()
 
   return (
-    <div className="space-y-3">
+    <div className="gp-wrap">
       <div className={`gp-stage${full ? ' gp-full' : ''}`}>
         <Suspense fallback={<div className="gp-skeleton" />}>
           <GardenScene
@@ -213,7 +228,7 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
         </Suspense>
         <Whisper mood={moodOf(s).mood} waiting={waiting} replay={replay} />
         <button
-          className="gp-mute"
+          className="gp-mute icon-btn"
           aria-label={s.soundMuted ? 'Turn nature sounds on' : 'Turn nature sounds off'}
           onClick={async (e) => {
             e.stopPropagation()
@@ -221,22 +236,22 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
             setView({ ...view, state: { ...s, soundMuted: !s.soundMuted } })
           }}
         >
-          {s.soundMuted ? '🔇' : '🔊'}
+          <Icon name={s.soundMuted ? 'mute' : 'volume'} size={20} />
         </button>
         <button
-          className="gp-mute gp-fs"
+          className="gp-mute gp-fs icon-btn"
           aria-label={full ? 'Leave full screen' : 'Full screen'}
           onClick={(e) => {
             e.stopPropagation()
             toggleFull()
           }}
         >
-          {full ? '✕' : '⛶'}
+          <Icon name={full ? 'close' : 'expand'} size={20} />
         </button>
       </div>
 
       {s.dead ? (
-        <div className="card p-4 space-y-3">
+        <div className="card glass gp-status p-4 space-y-3">
           <div className="font-semibold">Your plant has withered 🥀</div>
           <p className="text-sm muted">
             It went without water for too long. Your {view.learnedTotal} learned words are safe, and any trees you finished stay in your forest. Plant a new
@@ -255,15 +270,22 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
             />
           ) : (
             <button className="btn w-full" onClick={() => setReplanting(true)}>
-              🌱 Plant a new seed
+              <Icon name="sprout" size={20} />
+              Plant a new seed
             </button>
           )}
         </div>
       ) : (
-        <div className="card p-4 space-y-2">
-          <div className="flex justify-between items-baseline gap-2">
-            <div className="font-semibold">{STAGE_NAMES[stage]}</div>
-            <div className="text-xs muted">Stage {stage} of 11</div>
+        <div className="card glass gp-status p-4 space-y-2.5">
+          <div className="flex justify-between items-center gap-2">
+            <div className="flex items-center gap-2.5 min-w-0">
+              <span className="gp-stage-badge num" aria-hidden>{stage}</span>
+              <div className="min-w-0">
+                <div className="font-semibold leading-tight truncate">{STAGE_NAMES[stage]}</div>
+                <div className="text-xs muted">Stage {stage} of 11</div>
+              </div>
+            </div>
+            <span className={`chip gp-weather gp-weather-${s.weather}`}>{WEATHER_CHIPS[s.weather]}</span>
           </div>
           {toNext ? (
             <>
@@ -279,8 +301,8 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
               {view.learnedSinceSeed} words learned. Goal of {s.goalWords} reached! Keep going to grow a forest.
             </div>
           )}
-          <div className="text-sm">{WEATHER_LINES[s.weather]}</div>
-          {s.health < 0.6 && <div className="text-sm" style={{ color: '#b45309' }}>Your plant is wilting. Review a little each day to bring it back to life.</div>}
+          <div className="text-sm gp-line">{WEATHER_LINES[s.weather]}</div>
+          {s.health < 0.6 && <div className="text-sm" style={{ color: 'var(--warn)' }}>Your plant is wilting. Review a little each day to bring it back to life.</div>}
           {view.goalReached &&
             (replanting ? (
               <GoalPicker
@@ -294,7 +316,8 @@ export default function GardenPanel({ waiting = null }: { waiting?: number | nul
               />
             ) : (
               <button className="btn ghost w-full" onClick={() => setReplanting(true)}>
-                🌱 Plant a new seed with a new goal
+                <Icon name="sprout" size={20} />
+                Plant a new seed with a new goal
               </button>
             ))}
         </div>

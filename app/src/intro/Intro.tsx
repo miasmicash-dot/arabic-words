@@ -42,8 +42,27 @@ function NamePrompt({ onDone }: { onDone: (name: string) => void }) {
           if (ok) onDone(name.trim())
         }}
       >
+        <svg className="intro-emblem" viewBox="0 0 96 96" aria-hidden>
+          <defs>
+            <radialGradient id="ie-glow" cx="50%" cy="55%" r="50%">
+              <stop offset="0%" stopColor="#ffd77a" stopOpacity=".35" />
+              <stop offset="100%" stopColor="#ffd77a" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="ie-leaf" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#c9ec8e" />
+              <stop offset="100%" stopColor="#4fae6a" />
+            </linearGradient>
+          </defs>
+          <circle cx="48" cy="52" r="46" fill="url(#ie-glow)" />
+          <circle cx="48" cy="50" r="31" fill="none" stroke="#ffd77a" strokeOpacity=".35" strokeWidth="1" />
+          <path d="M28 70c6-3 13-4.5 20-4.5S62 67 68 70" fill="none" stroke="#a9865a" strokeWidth="2.4" strokeLinecap="round" />
+          <path d="M48 66V46" stroke="#7fc47a" strokeWidth="2.6" strokeLinecap="round" />
+          <path className="intro-leaf-l" d="M48 50c-1-9-8-14-18-13 1 9 8 14 18 13Z" fill="url(#ie-leaf)" />
+          <path className="intro-leaf-r" d="M48 45c1-10 8-16 19-15-1 10-8 16-19 15Z" fill="url(#ie-leaf)" />
+        </svg>
         <div className="intro-hello">Welcome</div>
-        <p className="intro-sub">A little garden grows here as you learn. What should we call you?</p>
+        <div className="intro-ar" lang="ar" dir="rtl">أهلاً وسهلاً</div>
+        <p className="intro-sub">A little garden grows here as you learn Arabic. What should we call you?</p>
         <input
           className="intro-input"
           autoFocus
@@ -54,8 +73,9 @@ function NamePrompt({ onDone }: { onDone: (name: string) => void }) {
           onChange={(e) => setName(e.target.value)}
         />
         <button className="intro-go" disabled={!ok}>
-          Begin 🌱
+          Begin
         </button>
+        <p className="intro-foot">Your name stays on this phone.</p>
       </form>
     </div>
   )

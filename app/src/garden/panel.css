@@ -1,28 +1,85 @@
-.gp-skeleton { width: 100%; aspect-ratio: 1000 / 720; border-radius: 18px; background: linear-gradient(#cfe6ea, #eef0d6 55%, #a8d06f 56%); opacity: .6; }
-.gp-mute {
-  position: absolute; top: 8px; right: 8px; width: 38px; height: 38px; border-radius: 999px;
-  background: rgba(255, 255, 255, .72); border: 1px solid rgba(0, 0, 0, .08); font-size: 18px; line-height: 1;
-  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); cursor: pointer;
+/* ------- the garden on Home ------- */
+.gp-wrap { display: flex; flex-direction: column; gap: 12px; }
+.gp-skeleton {
+  width: 100%; aspect-ratio: 1000 / 720; border-radius: 0;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--glow) 70%, #cfe6ea) 0%, color-mix(in srgb, var(--glow) 50%, #eef0d6) 58%, color-mix(in srgb, var(--accent) 35%, #a8d06f) 59%, color-mix(in srgb, var(--accent) 45%, #7fae55) 100%);
+  opacity: .55; animation: gp-breathe 1.8s ease-in-out infinite;
 }
-.gp-bar { height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; }
-.gp-bar > div { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #8cc63f, #3f9b4f); transition: width 1.2s ease; }
+@keyframes gp-breathe { 50% { opacity: .35; } }
+@media (min-width: 640px) { .gp-skeleton { border-radius: var(--r-xl); } }
+
+.gp-mute {
+  position: absolute; z-index: 3; top: 10px; right: 10px; width: 40px; height: 40px;
+  color: #fff; background: rgba(20, 30, 25, .28); border: 1px solid rgba(255, 255, 255, .28);
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, .4);
+}
+.gp-mute:hover { background: rgba(20, 30, 25, .4); }
+.gp-fs { right: 58px; }
+
+/* status card floats over the foot of the scene, glassy */
+.gp-status { position: relative; z-index: 3; margin-top: -40px; }
+.gp-stage-badge {
+  flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 12px;
+  font-weight: 750; font-size: 15px; color: var(--accent-ink);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--accent) 80%, #fff), var(--accent-strong));
+  box-shadow: 0 6px 14px -8px var(--accent), inset 0 1px 0 rgba(255, 255, 255, .3);
+}
+.gp-weather-sunny { color: var(--accent); background: var(--accent-soft); border-color: transparent; }
+.gp-weather-partly-cloudy { color: var(--accent); background: var(--accent-softer); }
+.gp-weather-overcast { color: color-mix(in srgb, var(--sky) 80%, var(--ink)); background: color-mix(in srgb, var(--sky) 12%, transparent); border-color: transparent; }
+.gp-weather-drought { color: color-mix(in srgb, var(--warm) 85%, var(--ink)); background: color-mix(in srgb, var(--warm) 15%, transparent); border-color: transparent; }
+.gp-line { color: var(--ink-2); }
+
+.gp-bar { height: 10px; border-radius: 999px; background: color-mix(in srgb, var(--muted) 16%, var(--line)); overflow: hidden; box-shadow: inset 0 1px 2px rgba(0, 0, 0, .08); }
+.gp-bar > div {
+  position: relative; height: 100%; border-radius: 999px; min-width: 10px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 55%, #b9e27a), var(--accent));
+  box-shadow: 0 0 12px -2px color-mix(in srgb, var(--accent) 60%, transparent);
+  transition: width 1.2s var(--ease);
+}
+.gp-bar > div::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .45), transparent); background-size: 50% 100%; background-repeat: no-repeat;
+  animation: gp-sheen 3.6s ease-in-out infinite;
+}
+@keyframes gp-sheen { 0% { background-position: -60% 0; } 60%, 100% { background-position: 160% 0; } }
+
+/* goal picker (Home and Settings) */
+.gp-goal { display: flex; flex-direction: column; gap: 12px; }
+.gp-goal-title { font-weight: 650; }
+.gp-goal-opts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.gp-goal-opt {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; min-height: 60px; border-radius: var(--r-md);
+  background: var(--surface-sunk); border: 1.5px solid var(--hairline); color: var(--ink); cursor: pointer;
+  transition: transform var(--t-fast) var(--ease), background-color var(--t-med) ease, border-color var(--t-med) ease, color var(--t-med) ease;
+}
+.gp-goal-opt b { font-size: 18px; font-weight: 750; line-height: 1.1; }
+.gp-goal-opt small { font-size: 11px; color: var(--muted); }
+.gp-goal-opt:active { transform: scale(.95); }
+.gp-goal-opt[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); box-shadow: 0 0 0 3px var(--accent-softer); }
+.gp-goal-opt[aria-pressed="true"] small { color: inherit; opacity: .8; }
+.gp-goal-custom { display: flex; align-items: center; gap: 10px; font-size: var(--fs-sm); }
+.gp-goal-custom .field { width: 96px; text-align: center; font-variant-numeric: tabular-nums; }
 
 .gp-cele {
   position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 24px;
-  background: rgba(10, 20, 15, .45); animation: gp-fade .4s ease both; overflow: hidden;
+  background: rgba(10, 20, 15, .5); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); animation: gp-fade .4s ease both; overflow: hidden;
 }
-.gp-cele-card { max-width: 340px; width: 100%; padding: 24px; text-align: center; display: grid; gap: 8px; animation: gp-pop .6s cubic-bezier(.2, 1.4, .4, 1) both; }
+.gp-cele-card { max-width: 340px; width: 100%; padding: 28px 24px 22px; text-align: center; display: grid; gap: 8px; border-radius: var(--r-xl); box-shadow: var(--shadow-lg); animation: gp-pop .6s cubic-bezier(.2, 1.4, .4, 1) both; }
+.gp-cele-emoji { font-size: 64px; line-height: 1.1; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .2)); }
+.gp-cele-name { font-family: "Dancing Script", var(--font-script); font-weight: 600; font-size: 38px; line-height: 1.1; color: var(--accent); }
+.gp-cele-card .btn { margin-top: 8px; }
 .gp-bit { position: absolute; top: -40px; font-size: 26px; animation: gp-fall 3s linear infinite; pointer-events: none; }
 .gp-bit-1 { font-size: 20px; }
 .gp-bit-2 { font-size: 32px; }
 @keyframes gp-fade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes gp-pop { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 @keyframes gp-fall { from { transform: translateY(0) rotate(0deg); } to { transform: translateY(110vh) rotate(540deg); } }
-@media (prefers-reduced-motion: reduce) { .gp-bit { display: none; } .gp-cele-card { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .gp-bit { display: none; } .gp-cele-card, .gp-skeleton, .gp-bar > div::after { animation: none; } }
 
 /* handwritten status over the garden; fades into the scene after about 3 seconds */
 .gp-whisper {
-  position: absolute; left: 0; right: 0; top: 8%; z-index: 2; display: flex; justify-content: center;
+  position: absolute; left: 0; right: 0; top: max(8%, 56px); z-index: 2; display: flex; justify-content: center;
   padding: 0 14px; text-align: center; pointer-events: none; animation: gp-whisper 5.4s ease forwards;
 }
 .gp-whisper span { line-height: 1.25; padding: .15em .9em .25em; background: radial-gradient(closest-side, var(--halo, rgba(12, 32, 22, .42)), transparent); }
@@ -46,13 +103,23 @@
 }
 
 /* the garden runs edge to edge on the page, and can fill the whole screen */
-.gp-stage { position: relative; margin: 0 -16px; }
+.gp-stage { position: relative; margin: 0 calc(-1 * var(--gutter) - var(--safe-right)) 0 calc(-1 * var(--gutter) - var(--safe-left)); }
 .gp-stage .gs { border-radius: 0; }
-@media (min-width: 640px) { .gp-stage { margin: 0; } .gp-stage .gs { border-radius: 18px; } }
-.gp-fs { right: 54px; }
-.gp-full { position: fixed; inset: 0; margin: 0; z-index: 60; background: #000; }
+/* the scene melts into the page below it */
+.gp-stage::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 18%; z-index: 1; pointer-events: none;
+  background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--bg) 40%, transparent) 55%, var(--bg));
+}
+@media (min-width: 640px) {
+  .gp-stage { margin: 0; border-radius: var(--r-xl); box-shadow: var(--shadow-lg); }
+  .gp-stage .gs { border-radius: var(--r-xl); }
+  .gp-stage::after { border-radius: 0 0 var(--r-xl) var(--r-xl); }
+}
+.gp-full::after { display: none; }
+.gp-full { position: fixed; inset: 0; margin: 0; z-index: 60; background: #000; border-radius: 0; box-shadow: none; }
 .gp-full .gs { width: 100vw; height: 100vh; height: 100dvh; aspect-ratio: auto; border-radius: 0; }
-.gp-full .gp-mute { top: calc(10px + env(safe-area-inset-top)); }
+.gp-full .gp-mute { top: calc(10px + env(safe-area-inset-top)); right: calc(10px + env(safe-area-inset-right)); }
+.gp-full .gp-fs { right: calc(58px + env(safe-area-inset-right)); }
 html.garden-full, html.garden-full body { overflow: hidden; }
 /* on a tall phone screen keep the plant (and Nova beside it) in the middle of the crop */
 @media (max-aspect-ratio: 1000/720) {
