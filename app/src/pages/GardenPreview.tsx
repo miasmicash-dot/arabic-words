@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom'
 import GardenScene from '../garden/scene/GardenScene'
 import { STAGE_NAMES } from '../garden/GardenPanel'
 import { clearEggs, loadEggs } from '../garden/scene/eggMemory'
-import type { ForestTree, GardenDevOptions, GardenSceneProps, GrowthStage, Weather } from '../garden/types'
+import type { DirectorSnapshot, ForestTree, GardenDevOptions, GardenSceneProps, GrowthStage, Weather } from '../garden/types'
 import { applyMood, moodOf, restoreMood } from '../garden/theme'
 import Whisper from '../garden/Whisper'
 import { setPlayerName } from '../intro/player'
-import { SPECIES } from '../garden/scene/Critters'
+import { CAST, SPECIES } from '../garden/scene/cast'
+import { SLOTS } from '../garden/scene/director'
 import { celebrate } from '../confetti'
 import { RATINGS } from './Review'
 
 const WEATHERS: Weather[] = ['sunny', 'partly-cloudy', 'overcast', 'drought']
-const ANIMALS = ['nova', 'fox', 'rabbit', 'deer', 'squirrel', 'hedgehog', 'skunk', 'ferret', 'horse', 'elephant'] as const
-const FAR = ['horses', 'elephants', 'chase'] as const
+const SLOT_NAMES: Record<string, string> = { walker: 'On the path', near: 'Small critters in front', pond: 'On the pond', sky: 'In the sky', far: 'Far away' }
 const EGGS_KEY = 'garden-eggs-playground'
 const TIMES: [string, number][] = [
   ['Dawn', 6.2],
@@ -77,14 +77,19 @@ export default function GardenPreview() {
   const [phase, setPhase] = useState<number | null>(q.get('moon') ? Number(q.get('moon')) : null)
   const [shader, setShader] = useState(q.get('shader') !== '0')
   const [dayOffset, setDayOffset] = useState(0)
-  const [walker, setWalker] = useState<GardenDevOptions['walker']>()
-  const [far, setFar] = useState<GardenDevOptions['far']>()
+  const [story, setStory] = useState<GardenDevOptions['story']>()
+  const [quiet, setQuiet] = useState(q.get('quiet') === '1')
+  const [snap, setSnap] = useState<DirectorSnapshot | null>(null)
+  const [now, setNow] = useState(Date.now())
+  useEffect(() => {
+    const t = setInterval(() => setNow(Date.now()), 1000)
+    return () => clearInterval(t)
+  }, [])
   const [squirrel, setSquirrel] = useState(0)
   const [eggsVersion, setEggsVersion] = useState(0)
   const [big, setBig] = useState(q.get('big') === '1')
   const [cover, setCover] = useState(q.get('cover') === '1')
   const [egg, setEgg] = useState<GardenDevOptions['egg']>()
-  const [apples, setApples] = useState(0)
 
   // time-lapse: speed = game hours per real second
   useEffect(() => {
@@ -116,7 +121,7 @@ export default function GardenPreview() {
     return out
   }, [forest])
 
-  const dev: GardenDevOptions = { aurora, shader, moonPhase: phase ?? undefined, today, eggsKey: EGGS_KEY, walker, far, squirrel, eggsVersion, occlusion: cover ? 1 : undefined, egg, apples }
+  const dev: GardenDevOptions = { aurora, shader, moonPhase: phase ?? undefined, today, eggsKey: EGGS_KEY, story, quiet, squirrel, eggsVersion, occlusion: cover ? 1 : undefined, egg }
 
   // preview the whole app's colours for this garden while the playground is open
   const [themeAll, setThemeAll] = useState(true)
@@ -166,7 +171,7 @@ export default function GardenPreview() {
         trees={stage === 11 && !forest ? demoForest : trees}
         muted={muted}
         waterPulse={pulse}
-        dev={dev}
+        dev={{ ...dev, onDirector: setSnap }}
         onTap={() => setWhisper(Date.now())}
       />
       <Whisper mood={mood.mood} waiting={waiting} replay={whisper} />
@@ -190,7 +195,7 @@ export default function GardenPreview() {
           {scene}
         </div>
       )}
-      <p className="text-xs muted">Tap the frog in the pond, or the owl at night. Sound starts after your first tap when it is on.</p>
+      <p className="text-xs muted">Tap any animal that visits, the frog in the pond, or the owl at night. Sound starts after your first tap when it is on.</p>
 
       <Section title={`Growth · stage ${stage}: ${STAGE_NAMES[stage]}`}>
         <input type="range" min={1} max={11} value={stage} onChange={(e) => setStage(+e.target.value as GrowthStage)} className="w-full" />
@@ -243,22 +248,51 @@ export default function GardenPreview() {
         <p className="text-xs muted">Shooting stars appear every half minute or so on clear nights.</p>
       </Section>
 
-      <Section title="Wildlife">
-        <Chips items={ANIMALS} onPick={(k) => setWalker({ kind: k, id: Date.now() })} label={(k) => `${{ nova: '🐈', fox: '🦊', rabbit: '🐇', deer: '🦌', squirrel: '🐿️', hedgehog: '🦔', skunk: '🦨', ferret: '🐾', horse: '🐎', elephant: '🐘' }[k]} ${k}`} />
-        <div className="text-sm font-semibold pt-1">In the distance</div>
-        <Chips items={FAR} onPick={(k) => setFar({ event: k, id: Date.now() })} label={(k) => ({ horses: '🐎 mare & foal', elephants: '🐘 elephant family', chase: '🦊🐇 a chase' })[k]} />
-        <div className="text-sm font-semibold pt-1">Around the plant</div>
-        <div className="flex flex-wrap gap-2">
-          <button className="btn ghost" onClick={() => { setStage(11); setApples(Date.now()) }}>🍎 Horse eats fallen apples (full-grown tree)</button>
+      <Section title={`Wildlife stories · ${snap?.visits.length ?? 0} on stage`}>
+        <div className="text-xs muted">
+          The director lets only a few visitors in at once ({snap ? `at most ${snap.total} now, ${snap.mode}, health ${Math.round(snap.life * 100)}%` : '…'}), each slot rests between visits, and species rotate. Every animal plays its own story and has its own tap reaction.
         </div>
+        <ul className="text-xs space-y-1">
+          {SLOTS.map((slot) => {
+            const here = snap?.visits.filter((v) => v.slot === slot) ?? []
+            const wait = snap ? Math.max(0, Math.round((snap.quiet[slot] - now) / 1000)) : 0
+            return (
+              <li key={slot}>
+                <b>{SLOT_NAMES[slot]}</b> <span className="muted">(room for {snap?.caps[slot] ?? 0})</span>:{' '}
+                {here.length
+                  ? here.map((v) => `${CAST[v.sp]?.icon ?? ''} ${CAST[v.sp]?.name ?? v.sp} (${Math.round((now - v.at) / 1000)}s)`).join(', ')
+                  : <span className="muted">{snap?.caps[slot] ? (wait ? `quiet for ${wait}s` : 'waiting for a visitor') : 'nobody at this health / time'}</span>}
+              </li>
+            )
+          })}
+        </ul>
+        <label className="flex items-center gap-2 text-sm">
+          <input type="checkbox" checked={quiet} onChange={(e) => setQuiet(e.target.checked)} /> Only the animals I send (no automatic visitors)
+        </label>
+        {SLOTS.map((slot) => (
+          <div key={slot} className="space-y-1">
+            <div className="text-sm font-semibold pt-1">{SLOT_NAMES[slot]}</div>
+            <div className="flex flex-wrap gap-2">
+              {Object.entries(CAST)
+                .filter(([, sp]) => sp.slot === slot)
+                .map(([id, sp]) => (
+                  <button key={id} title={sp.tale} className={`btn ${snap?.visits.some((v) => v.sp === id) ? '' : 'ghost'}`} style={{ padding: '6px 10px' }}
+                    onClick={() => { if (id === 'apples') setStage(11); setStory({ sp: id, id: Date.now() }) }}>
+                    {sp.icon} {sp.name}
+                  </button>
+                ))}
+            </div>
+          </div>
+        ))}
         <p className="text-xs muted">
-          Tap any animal and it reacts: the skunk stomps angrily, then sprays. Nova wanders by now and then like the other animals; tap her and she sits down to groom, with a few hearts. The frog catches (silent) flies by itself.
-          Animals depend on health only: below about 85% the big animals, monkeys and chases stay away, below 35% hardly anything comes, and at night only bats, a moth,
-          the badger, the owl and fireflies are out.
+          Tap any animal to see its reaction. Health decides how lively it is: below about 35% hardly anything comes, and at night only night creatures are out
+          (owl, bats, moth, fireflies, badger, hedgehog, toad, spider). Sending one on stage works any time, so you can try night creatures by day.
         </p>
         <details className="text-xs">
-          <summary className="cursor-pointer font-semibold">All {SPECIES.length} species in the garden</summary>
-          <p className="muted pt-1">{SPECIES.join(' · ')}</p>
+          <summary className="cursor-pointer font-semibold">All {SPECIES.length} species and their stories</summary>
+          <ul className="muted pt-1 space-y-1">
+            {Object.values(CAST).map((sp) => <li key={sp.name}>{sp.icon} <b>{sp.name}</b>: {sp.tale}</li>)}
+          </ul>
         </details>
       </Section>
 
@@ -288,7 +322,7 @@ export default function GardenPreview() {
             🕳️ Rabbit burrow: {ageOf(eggs.burrowStart, today) ?? 'dug on the first sunny day'}
             {eggs.burrowStart ? ' days (a bunny peeks out from day 2, two from day 9)' : ''}
           </li>
-          <li>🐌 A snail crosses the path on grey days. 🐸 Tap the frog. 🦉 Tap the owl at night.</li>
+          <li>🐌 A snail slides by on grey and wet days. 🐸 Tap the frog. 🦉 Tap the owl at night.</li>
         </ul>
       </Section>
 

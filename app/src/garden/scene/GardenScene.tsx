@@ -11,29 +11,14 @@ import { GroundTuft, Plant } from './Plant'
 import SkyShader, { webglAvailable, type SkyUniforms } from './SkyShader'
 import Pond from './Pond'
 import Precip from './Precip'
-import { Clover, Critters, EggEffects, FarLife, type EggFx } from './Critters'
+import { Clover, Critters, EggEffects, type EggFx } from './Critters'
 import { celebrate } from '../../confetti'
-import { Burrow, Nest, NutSprouts, Snail, SquirrelAct } from './Eggs'
+import { Burrow, Nest, NutSprouts } from './Eggs'
 import { ageDays, auroraNight, loadEggs, saveEggs, type EggMemory } from './eggMemory'
-import {
-  ANIMALS,
-  Bee,
-  BlowingLeaves,
-  Butterfly,
-  Dust,
-  Fireflies,
-  Flocks,
-  Grove,
-  Mist,
-  Owl,
-  PATH_CSS,
-  Swirls,
-  Troupe,
-  Walker,
-  Watering,
-  type AnimalKind,
-  type FarEvent,
-} from './Creatures'
+import { BlowingLeaves, Dust, Grove, Mist, Swirls, Watering } from './Creatures'
+import { caps, totalCap, useDirector, type Env } from './director'
+import { CAST, Cast, modeOf, stillVisits } from './cast'
+import type { Ctx } from './kit'
 import './garden.css'
 
 const VB = `0 0 ${W} ${H}`
@@ -41,8 +26,6 @@ const ZOOM = [1, 1.35, 1.32, 1.28, 1.24, 1.2, 1.16, 1.12, 1.08, 1.04, 1, 1]
 /** young plants are drawn a little larger than life so they read well on a phone */
 const PLANT_SCALE = [1, 1.7, 1.6, 1.45, 1.35, 1.3, 1.2, 1.1, 1, 1, 1, 1]
 const EGGS_KEY = 'garden-eggs-v1'
-/** animals that walk on the distant hills, drawn behind the plant */
-const FAR_KINDS: AnimalKind[] = ['deer', 'horse', 'foal', 'elephant', 'calf']
 
 function useDocumentVisible() {
   const [v, setV] = useState(() => typeof document === 'undefined' || !document.hidden)
@@ -106,8 +89,6 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
   const sunnyDay = weather === 'sunny' && day
   const nightLife = night > 0.6 && clear && vital > 0.3
   const { sun, moon } = celestial(hour)
-  /** 0..1: how much wildlife is about right now (health alone; none at night) */
-  const life = day ? vital : 0
   useGardenAudio({ muted, weather, sky, night, visible })
 
   // ---------- day-to-day stories ----------
@@ -126,61 +107,25 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
     if (sunnyDay && !eggs.burrowStart) updateEggs((m) => ({ ...m, burrowStart: today }))
   }, [stage, dead, sunnyDay, today, eggs.nestStart, eggs.burrowStart]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // the squirrel visits once a day, in fair daytime weather
-  const [squirrel, setSquirrel] = useState(0)
-  const squirrelOK = day && clear && visible && !reduced && vital > 0.4
+  // ---------- wildlife: the director decides who visits, so the garden is never crowded ----------
+  // (see director.ts: a few slots, quiet gaps, species rotate; health decides how lively it is)
+  const mode = modeOf(night)
+  const squirrelDue = clear && eggs.squirrelDay !== today
+  const env: Env = { life: vital, mode, wet, grey: weather === 'overcast' || sky === 'cloudy', pond: weather !== 'drought', stage, nightLife, boost: squirrelDue ? { squirrel: 4 } : undefined }
+  const forced = [dev?.story, dev?.squirrel ? { sp: 'squirrel', id: dev.squirrel } : undefined].filter(Boolean).sort((a, b) => b!.id - a!.id)[0]
+  const director = useDirector(env, CAST, { on: visible && !reduced, auto: !dev?.quiet, force: forced })
+  const stillCast = useMemo(() => stillVisits(env, today), [reduced, mode, vital > 0.35, today]) // eslint-disable-line react-hooks/exhaustive-deps
+  const visits = reduced ? (vital >= 0.35 ? stillCast : []) : director.state.visits
   useEffect(() => {
-    if (!squirrelOK || squirrel || eggs.squirrelDay === today) return
-    const t = setTimeout(() => setSquirrel(Date.now()), 6000)
+    dev?.onDirector?.({ visits: director.state.visits, quiet: director.state.quiet, caps: caps(vital, mode), total: totalCap(vital), mode, life: vital })
+  }, [director.state, vital, mode]) // eslint-disable-line react-hooks/exhaustive-deps
+  // fallen apples under a full-grown tree; the horse eats them and more fall later
+  const [apples, setApples] = useState(5)
+  useEffect(() => {
+    if (apples >= 5) return
+    const t = setTimeout(() => setApples(5), 40000)
     return () => clearTimeout(t)
-  }, [squirrelOK, squirrel, eggs.squirrelDay, today])
-  useEffect(() => {
-    if (dev?.squirrel) setSquirrel(dev.squirrel)
-  }, [dev?.squirrel])
-
-  // ---------- walkers ----------
-  // The healthier the garden, the more often animals come by and the more kinds there are.
-  const [walker, setWalker] = useState<{ kind: AnimalKind; reverse: boolean; id: number } | null>(null)
-  const lastKind = useRef<AnimalKind | null>(null)
-  const pool: AnimalKind[] = life >= 0.85 ? ANIMALS : life >= 0.6 ? ANIMALS.slice(0, 5) : ['rabbit', 'hedgehog']
-  const walkersOn = life >= 0.35 && visible && !reduced
-  useEffect(() => {
-    if (!walkersOn || walker || squirrel) return
-    const first = lastKind.current === null
-    const gap = life >= 0.85 ? 12000 + Math.random() * 12000 : life >= 0.6 ? 25000 + Math.random() * 20000 : 50000 + Math.random() * 30000
-    const t = setTimeout(
-      () => {
-        let kind = pool[Math.floor(Math.random() * pool.length)]
-        if (kind === lastKind.current) kind = pool[(pool.indexOf(kind) + 1) % pool.length]
-        lastKind.current = kind
-        setWalker({ kind, reverse: Math.random() < 0.5, id: Date.now() })
-      },
-      first ? 3500 : gap,
-    )
-    return () => clearTimeout(t)
-  }, [walkersOn, walker, squirrel, life >= 0.85, life >= 0.6]) // eslint-disable-line react-hooks/exhaustive-deps
-  useEffect(() => {
-    if (dev?.walker) setWalker({ kind: dev.walker.kind, reverse: Math.random() < 0.5, id: dev.walker.id })
-  }, [dev?.walker])
-
-  // ---------- far away: horses, elephants, a chase (only when the garden is thriving) ----------
-  const [far, setFar] = useState<{ event: FarEvent; reverse: boolean; id: number } | null>(null)
-  const farOn = life >= 0.85 && visible && !reduced
-  useEffect(() => {
-    if (!farOn || far) return
-    const t = setTimeout(
-      () => {
-        const events: FarEvent[] = ['horses', 'elephants', 'chase', 'horses', 'chase']
-        setFar({ event: events[Math.floor(Math.random() * events.length)], reverse: Math.random() < 0.5, id: Date.now() })
-      },
-      9000 + Math.random() * 25000,
-    )
-    return () => clearTimeout(t)
-  }, [farOn, far])
-  useEffect(() => {
-    if (dev?.far) setFar({ event: dev.far.event, reverse: Math.random() < 0.5, id: dev.far.id })
-  }, [dev?.far])
-  const [monkeyFlip, setMonkeyFlip] = useState(0)
+  }, [apples])
 
   // ---------- hidden secrets ----------
   // tap Nova for hearts; tap the farmer's hat three times for a shower of hay; tap the plant seven times quickly for a
@@ -233,9 +178,6 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
     const t = setTimeout(() => setWatering(0), 6400)
     return () => clearTimeout(t)
   }, [waterPulse])
-
-  // ---------- owl ----------
-  const [owlSpin, setOwlSpin] = useState(0)
 
   // ---------- GPU sky ----------
   const [gpu, setGpu] = useState(() => typeof document !== 'undefined' && webglAvailable())
@@ -309,6 +251,20 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
   const crownY = PLANT_BASE[1] - (isTree ? (stage >= 10 ? 330 : 230) : plantHeight * 0.8)
   const nestAge = ageDays(eggs.nestStart, today)
   const burrowAge = ageDays(eggs.burrowStart, today)
+  const ctx: Ctx = {
+    pal,
+    plant: { x: PLANT_BASE[0], y: PLANT_BASE[1], h: dead ? 0 : plantHeight, tree: isTree && !dead },
+    view: { x0: PLANT_BASE[0] - PLANT_BASE[0] / ZOOM[stage], x1: PLANT_BASE[0] + (W - PLANT_BASE[0]) / ZOOM[stage] },
+    burrow: burrowAge >= 0,
+    stage,
+    still: reduced,
+    daily: squirrelDue || dev?.squirrel ? { today, memory: eggs, onBury: (x) => updateEggs((m) => (m.nuts.some((n) => n.day === today) ? { ...m, squirrelDay: today } : { ...m, nuts: [...m.nuts, { x, day: today }].slice(-8), squirrelDay: today })) } : null,
+    call: (name) => {
+      if (name === 'hoot') playOwlNow()
+      if (name === 'apple') setApples((a) => Math.max(0, a - 1))
+    },
+  }
+  const skyCtx: Ctx = { ...ctx, view: { x0: 0, x1: W } }
   const cam = { transform: `scale(${ZOOM[stage]})`, transformOrigin: `${PLANT_BASE[0]}px ${PLANT_BASE[1]}px` }
 
   const renderNb = (n: (typeof nb)[number]) => (
@@ -321,12 +277,11 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
     <SceneId.Provider value={sid}>
       <div ref={box} className={`gs${visible ? '' : ' gs-paused'}`} onClick={onTap} role="img" aria-label={`Your garden: stage ${stage} of 11, ${sky}`}
         data-gloom={gloom}>
-        <style>{PATH_CSS}</style>
         {shader && <SkyShader uniforms={uniforms} occlusion={occlusion} running={visible && !reduced} onFail={() => setGpu(false)} />}
         {/* sky details: sun, moon, clouds, birds */}
         <svg viewBox={VB} preserveAspectRatio="xMidYMid slice" className="gs-layer">
           <Sky pal={pal} shader={shader} phase={phase}>
-            {life > 0.55 && !reduced && <Flocks ink={pal.c.ink} />}
+            <Cast layer="sky" visits={visits} ctx={skyCtx} onDone={director.done} />
           </Sky>
         </svg>
         {/* scenery */}
@@ -339,16 +294,15 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
         <svg viewBox={VB} preserveAspectRatio="xMidYMid slice" className="gs-layer">
           <g className="gs-camg" style={cam}>
             {mistOpacity > 0.02 && <Mist color={mix(pal.sky.bottom, '#ffffff', 0.5)} opacity={Math.min(0.8, mistOpacity)} />}
-            <Grove pal={pal} monkeys={life >= 0.8 && !reduced} flip={monkeyFlip} onTap={() => setMonkeyFlip(Date.now())} />
-            <FarLife pal={pal} life={vital} night={night} reduced={reduced} />
-            {far && <Troupe key={far.id} event={far.event} reverse={far.reverse} pal={pal} onDone={() => setFar(null)} />}
-            {walker && FAR_KINDS.includes(walker.kind) && <Walker key={walker.id} kind={walker.kind} reverse={walker.reverse} pal={pal} onDone={() => setWalker(null)} />}
+            <Grove pal={pal} />
+            <Cast layer="far" visits={visits} ctx={ctx} onDone={director.done} />
             {behind.map(renderNb)}
             {weather !== 'drought' && (
-              <Pond pal={pal} sunX={sun ? sun.x : null} moonX={moon ? moon.x : null} night={night} frogOK={!reduced && vital > 0.3} dragonfly={life > 0.6 && !reduced} />
+              <Pond pal={pal} sunX={sun ? sun.x : null} moonX={moon ? moon.x : null} night={night} frogOK={!reduced && vital > 0.3} dragonfly={false} />
             )}
+            <Cast layer="pond" visits={visits} ctx={ctx} onDone={director.done} />
             <NutSprouts pal={pal} memory={eggs} today={today} />
-            {burrowAge >= 0 && <Burrow pal={pal} age={burrowAge} peeking={life > 0.5 && !reduced} sid={(n) => `${sid}-${n}`} />}
+            {burrowAge >= 0 && <Burrow pal={pal} age={burrowAge} />}
             <g transform={`translate(${PLANT_BASE[0]},${PLANT_BASE[1]})`}>
               <g className="gs-t" style={{ transform: `scale(${PLANT_SCALE[stage]})` }}>
                 <g key={watering || 'still'} className={watering ? 'gs-bounce gs-tap' : 'gs-tap'} onClick={() => onEgg('plant')}>
@@ -366,45 +320,11 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
               {watering > 0 && <Watering key={watering} height={plantHeight} />}
             </g>
             {infront.map(renderNb)}
-            {walker && !FAR_KINDS.includes(walker.kind) && <Walker key={walker.id} kind={walker.kind} reverse={walker.reverse} pal={pal} onDone={() => setWalker(null)} />}
-            {squirrel > 0 && (
-              <SquirrelAct
-                key={squirrel}
-                pal={pal}
-                today={today}
-                memory={eggs}
-                onBury={(x) => updateEggs((m) => (m.nuts.some((n) => n.day === today) ? { ...m, squirrelDay: today } : { ...m, nuts: [...m.nuts, { x, day: today }].slice(-8), squirrelDay: today }))}
-                onDone={() => setSquirrel(0)}
-              />
-            )}
-            {weather === 'overcast' && day && !reduced && <Snail pal={pal} />}
-            {life > 0.4 && (
-              <>
-                <Butterfly x={470} y={560} color={pal.shade('#f2a541')} path={1} dur={16} delay={-3} ink={pal.c.ink} />
-                {life > 0.6 && <Butterfly x={800} y={590} color={pal.shade('#f5dc6a')} path={2} dur={19} delay={-9} ink={pal.c.ink} />}
-                {life > 0.85 && <Butterfly x={330} y={620} color={pal.shade('#b8a2e6')} path={3} dur={22} delay={-14} ink={pal.c.ink} />}
-                {life > 0.85 && <Butterfly x={640} y={520} color={pal.shade('#f08aa8')} path={2} dur={17} delay={-6} ink={pal.c.ink} />}
-                {life > 0.5 && <Bee x={700} y={600} dur={7} delay={-2} ink={pal.c.ink} />}
-                {life > 0.7 && <Bee x={150} y={640} dur={8.5} delay={-5} ink={pal.c.ink} />}
-              </>
-            )}
+            <Critters pal={pal} apples={stage >= 10 && !dead ? apples : 0} onEgg={onEgg} />
+            <Cast layer="front" visits={visits} ctx={ctx} onDone={director.done} />
             {leafCount > 0 && !reduced && (
               <BlowingLeaves x={PLANT_BASE[0]} y={crownY} spread={isTree ? 120 : 50} colors={leafColors.map(pal.shade)} count={leafCount} ink={pal.c.ink} />
             )}
-            {nightLife && (
-              <Owl
-                x={108}
-                y={506}
-                pal={pal}
-                spin={owlSpin}
-                onTap={() => {
-                  setOwlSpin(Date.now())
-                  playOwlNow()
-                }}
-              />
-            )}
-            {nightLife && !reduced && vital > 0.5 && <Fireflies />}
-            <Critters pal={pal} life={vital} night={night} stage={stage} dead={dead} reduced={reduced} onEgg={onEgg} appleNow={dev?.apples} />
             {!reduced && <EggEffects fx={eggFx} />}
             {weather === 'drought' && !reduced && <Dust />}
             {!reduced && <Swirls count={Math.max(0, swirlCount)} ink={pal.c.ink} />}
