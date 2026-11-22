@@ -10,6 +10,7 @@ import Whisper from '../garden/Whisper'
 import { setPlayerName } from '../intro/player'
 import { CAST, SPECIES } from '../garden/scene/cast'
 import { SLOTS } from '../garden/scene/director'
+import type { EnvDevOptions } from '../garden/scene/season'
 import { celebrate } from '../confetti'
 import { RATINGS } from './Review'
 
@@ -90,6 +91,8 @@ export default function GardenPreview() {
   const [big, setBig] = useState(q.get('big') === '1')
   const [cover, setCover] = useState(q.get('cover') === '1')
   const [egg, setEgg] = useState<GardenDevOptions['egg']>()
+  const [world, setWorld] = useState<EnvDevOptions>({})
+  const setW = (p: Partial<EnvDevOptions>) => setWorld((w) => ({ ...w, ...p }))
 
   // time-lapse: speed = game hours per real second
   useEffect(() => {
@@ -172,6 +175,7 @@ export default function GardenPreview() {
         muted={muted}
         waterPulse={pulse}
         dev={{ ...dev, onDirector: setSnap }}
+        world={world}
         onTap={() => setWhisper(Date.now())}
       />
       <Whisper mood={mood.mood} waiting={waiting} replay={whisper} />
@@ -220,6 +224,23 @@ export default function GardenPreview() {
         <Chips items={WEATHERS} value={weather} onPick={setWeather} />
         <div className="text-xs muted">Real local weather (looks only, from her location when allowed): GPU rain, snow and wind gusts. A rainbow appears when rain clears in the day.</div>
         <Chips items={SKIES} value={sky} onPick={setSky} />
+      </Section>
+
+      <Section title="Season, wind and ground">
+        <div className="text-xs muted">Seasons follow the real date (flipped south of the equator). Wind follows the real wind speed. Rain leaves the ground wet; snow settles and melts.</div>
+        <Chips items={['auto', 'spring', 'summer', 'autumn', 'winter'] as const} value={world.season ?? 'auto'} onPick={(v) => setW({ season: v === 'auto' ? undefined : v })} />
+        <label className="flex items-center gap-2 text-sm">
+          Date for season <input type="date" value={world.date ?? ''} onChange={(e) => setW({ date: e.target.value || undefined })} />
+        </label>
+        <Chips items={['auto', 'north', 'south'] as const} value={world.hemisphere ?? 'auto'} onPick={(v) => setW({ hemisphere: v === 'auto' ? undefined : v })} label={(v) => (v === 'auto' ? 'Hemisphere: auto' : v)} />
+        {([['wind', 'Wind', 80, ' km/h'], ['wetness', 'Wet ground', 1, ''], ['snow', 'Snow cover', 1, '']] as const).map(([k, name, max, unit]) => (
+          <label key={k} className="flex items-center gap-2 text-sm">
+            <input type="checkbox" checked={world[k] !== undefined} onChange={(e) => setW({ [k]: e.target.checked ? max / 2 : undefined })} />
+            <span className="w-24">{name}</span>
+            <input type="range" min={0} max={max} step={max / 40} disabled={world[k] === undefined} value={world[k] ?? 0} onChange={(e) => setW({ [k]: +e.target.value })} className="flex-1" />
+            <span className="w-16 text-right muted">{world[k] === undefined ? 'auto' : `${Math.round((world[k] as number) * (max === 1 ? 100 : 1))}${max === 1 ? '%' : unit}`}</span>
+          </label>
+        ))}
       </Section>
 
       <Section title={`Time of day · ${fmt(time)}`}>

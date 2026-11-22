@@ -368,7 +368,7 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
               {watering > 0 && <Watering key={watering} height={plantHeight} />}
             </g>
             {infront.map(renderNb)}
-            <Critters pal={pal} apples={stage >= 10 && !dead ? apples : 0} onEgg={onEgg} />
+            <Critters pal={pal} apples={stage >= 10 && !dead && season.spring <= 0.5 && season.winter <= 0.55 ? apples : 0} onEgg={onEgg} />
             <Cast layer="front" visits={visits} ctx={ctx} onDone={director.done} />
             {leafCount > 0 && !reduced && (
               <BlowingLeaves x={PLANT_BASE[0]} y={crownY} spread={isTree ? 120 : 50} colors={leafColors.map(pal.shade)} count={leafCount} ink={pal.c.ink} />
