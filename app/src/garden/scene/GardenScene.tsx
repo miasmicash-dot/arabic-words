@@ -5,9 +5,13 @@ import { SceneId } from './ids'
 import type { ForestTree, GardenSceneProps, GrowthStage } from '../types'
 import { playOwlNow, useGardenAudio } from '../audio'
 import { mix } from './ink'
-import { palette } from './palette'
+import { nightness, palette } from './palette'
 import { celestial, Front, H, Land, LINES, moonPhase, Paper, PLANT_BASE, Sky, W, yAt } from './Landscape'
-import { GroundTuft, Plant } from './Plant'
+import { GroundTuft, Plant, swayClass } from './Plant'
+import { FrontTraces, Ground } from './Ground'
+import { dayOfYear, pureSeason, roundMix, seasonAt, windStrength, type EnvDevOptions } from './season'
+import { useWeatherTraces } from './traces'
+import { useRealConditions } from '../realWeather'
 import SkyShader, { webglAvailable, type SkyUniforms } from './SkyShader'
 import Pond from './Pond'
 import Precip from './Precip'
@@ -86,7 +90,10 @@ function neighbour(t: ForestTree) {
   return { stage, x, y, scale, seed: hashNum(t.id) % 1000 }
 }
 
-export default function GardenScene({ stage, health, dead, weather: condition, sky = 'clear', timeOfDay, trees, muted, waterPulse, onTap, dev }: GardenSceneProps) {
+/** Default wind (km/h) for each sky when the real wind is not known. */
+const SKY_WIND = { clear: 6, cloudy: 11, rain: 18, snow: 10, windy: 40 }
+
+export default function GardenScene({ stage, health, dead, weather: condition, sky = 'clear', timeOfDay, trees, muted, waterPulse, onTap, dev, env }: GardenSceneProps & { env?: EnvDevOptions }) {
   const hour = Math.round(timeOfDay * 20) / 20
   // What the sky looks like comes from the real weather; health (studying) alone decides how alive the garden is.
   // A long break from studying still dries the ground out, unless it is actually raining or snowing.
@@ -95,11 +102,27 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
   // how alive the garden is: a neglected garden turns grey, gathers clouds and the animals stay away
   const vital = dead ? 0 : Math.max(0, Math.min(1, health))
   const gloom = Math.round(Math.max(0, Math.min(1, (0.92 - vital) / 0.92)) * 20) / 20
-  const pal = useMemo(() => palette(hour, weather, gloom), [hour, weather, gloom])
   const sid = 'gs' + useId().replace(/[^a-zA-Z0-9]/g, '')
   const box = useRef<HTMLDivElement>(null)
   const visible = useDocumentVisible()
   const reduced = useReducedMotion()
+  // ---------- the living environment: season, wind, and the traces weather leaves ----------
+  const real = useRealConditions()
+  const seasonDate = env?.date ?? dev?.today
+  const south = env?.hemisphere ? env.hemisphere === 'south' : !!real?.south
+  const seasonKey = env?.season ?? `${seasonDate ?? localKey(new Date())}|${south}`
+  const season = useMemo(
+    () => (env?.season ? pureSeason(env.season) : roundMix(seasonAt(dayOfYear(seasonDate ? new Date(`${seasonDate}T12:00`) : new Date()), south))),
+    [seasonKey], // eslint-disable-line react-hooks/exhaustive-deps
+  )
+  const traces = useWeatherTraces(sky, real?.temp, nightness(hour) < 0.5, visible, dev ? 'garden-traces-playground' : undefined)
+  const snowCover = Math.round((env?.snow ?? traces.snow) * 20) / 20
+  const wetness = Math.round((env?.wetness ?? traces.wet) * 20) / 20
+  const wind = Math.round(windStrength(env?.wind ?? Math.max(real?.wind ?? 0, SKY_WIND[sky])) * 20) / 20
+  const pal = useMemo(
+    () => palette(hour, weather, gloom, { season, snow: snowCover, wet: wetness }),
+    [hour, weather, gloom, season, snowCover, wetness],
+  )
   const night = pal.night
   const day = night < 0.5
   const clear = weather === 'sunny' || weather === 'partly-cloudy'
@@ -108,7 +131,7 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
   const { sun, moon } = celestial(hour)
   /** 0..1: how much wildlife is about right now (health alone; none at night) */
   const life = day ? vital : 0
-  useGardenAudio({ muted, weather, sky, night, visible })
+  useGardenAudio({ muted, weather, sky, night, visible, wind, winter: season.winter })
 
   // ---------- day-to-day stories ----------
   const today = dev?.today ?? localKey(new Date())
@@ -285,24 +308,38 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
     aurora: auroraWanted && vital > 0.5 ? (weather === 'sunny' ? 1 : 0.65) * Math.max(0, night * 1.4 - 0.4) : 0,
     meteors: clear && !reduced ? 1 : 0,
     starVis: weather === 'overcast' ? 0.1 : weather === 'partly-cloudy' ? 0.75 : weather === 'drought' ? 0.9 : 1,
+    wind,
+    // warm glow along the horizon around sunrise and sunset (and the afterglow once the sun has gone)
+    dusk: Math.max(0, 1 - Math.abs(hour - 6.1) / 1.2, 1 - Math.abs(hour - 19.2) / 1.2) * (weather === 'overcast' ? 0.25 : 1) * (1 - gloom * 0.7),
+    wisps: clear ? 0.35 + 0.35 * season.autumn + 0.3 * season.winter : 0,
   }
 
   // ---------- layout numbers ----------
   const isTree = stage >= 9
   const plantHeight = [0, 30, 50, 100, 140, 160, 200, 230, 260, 320, 400, 400][stage] * PLANT_SCALE[stage]
-  const windy = sky === 'windy' || sky === 'rain' || weather === 'drought'
+  const windy = sky === 'windy' || sky === 'rain' || weather === 'drought' || wind >= 0.45
   const swirlCount = { sunny: 2, 'partly-cloudy': 3, overcast: 6, drought: 3 }[weather] - (night > 0.5 ? 1 : 0)
   // a young tree in blossom sheds pink petals on the breeze instead of leaves
-  const petals = stage === 9 && health > 0.75 && !dead
+  // (a grown tree blossoms too in spring)
+  const petals = (stage === 9 || (isTree && season.spring > 0.5)) && health > 0.75 && !dead && season.winter < 0.55
+  const autumnLeaves = season.autumn > 0.45 && health > 0.3
   const leafColors = petals
     ? ['#fbd9e3', '#f6c3d3', '#fff4f6']
-    : health > 0.6
+    : autumnLeaves
+      ? ['#e0892f', '#c4512a', '#efc04a']
+      : health > 0.6
       ? ['#7fbf55', '#a6d06a', '#5f9e45']
       : health > 0.3
         ? ['#d9c050', '#c9a84a', '#a6b04a']
         : ['#b5824a', '#9a6a3a', '#c99a5a']
-  const leafCount = dead || stage < 7 ? 0 : { sunny: 2, 'partly-cloudy': 3, overcast: 6, drought: 5 }[weather] + (health < 0.6 ? 2 : 0) + (petals ? 3 : 0)
-  const mistOpacity = Math.max(hour > 4.8 && hour < 8.5 ? 1 - Math.abs(hour - 6.4) / 2.2 : 0, weather === 'overcast' ? 0.6 : 0, night * 0.35)
+  // more leaves fly in autumn and in a strong wind; a bare winter tree has none left to lose
+  const leafCount =
+    dead || stage < 7 || (season.winter > 0.6 && !petals)
+      ? 0
+      : Math.min(10, { sunny: 2, 'partly-cloudy': 3, overcast: 6, drought: 5 }[weather] + (health < 0.6 ? 2 : 0) + (petals ? 3 : 0) + (autumnLeaves ? 3 : 0) + Math.round(wind * 3))
+  // morning mist is thickest in autumn and winter and after rain; a strong wind blows it away
+  const mistMorning = (hour > 4.8 && hour < 9 ? 1 - Math.abs(hour - 6.6) / 2.4 : 0) * (0.5 + 0.5 * Math.max(season.autumn, season.winter, wetness))
+  const mistOpacity = Math.max(mistMorning, weather === 'overcast' ? 0.6 : 0, night * 0.35) * (1 - Math.max(0, wind - 0.5))
   const nb = trees.map((t) => ({ t, ...neighbour(t) })).sort((a, b) => a.y - b.y)
   const behind = nb.filter((n) => n.y <= PLANT_BASE[1])
   const infront = nb.filter((n) => n.y > PLANT_BASE[1])
@@ -313,7 +350,7 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
 
   const renderNb = (n: (typeof nb)[number]) => (
     <g key={n.t.id} transform={`translate(${n.x.toFixed(1)},${n.y.toFixed(1)}) scale(${n.scale.toFixed(3)})`}>
-      <Plant stage={n.stage} health={Math.max(health, 0.3)} dead={false} pal={pal} seed={n.seed} uid={`${sid}nb${n.t.id}`} />
+      <Plant stage={n.stage} health={Math.max(health, 0.3)} dead={false} pal={pal} seed={n.seed} uid={`${sid}nb${n.t.id}`} wind={wind} />
     </g>
   )
 
@@ -325,7 +362,7 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
         {shader && <SkyShader uniforms={uniforms} occlusion={occlusion} running={visible && !reduced} onFail={() => setGpu(false)} />}
         {/* sky details: sun, moon, clouds, birds */}
         <svg viewBox={VB} preserveAspectRatio="xMidYMid slice" className="gs-layer">
-          <Sky pal={pal} shader={shader} phase={phase}>
+          <Sky pal={pal} shader={shader} phase={phase} wind={wind}>
             {life > 0.55 && !reduced && <Flocks ink={pal.c.ink} />}
           </Sky>
         </svg>
@@ -333,6 +370,17 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
         <svg viewBox={VB} preserveAspectRatio="xMidYMid slice" className="gs-layer">
           <g className="gs-camg" style={cam}>
             <Land pal={pal} />
+            <Ground
+              pal={pal}
+              sun={sun}
+              moon={moon}
+              moonLight={illum}
+              plant={{ h: dead && !isTree ? 0 : plantHeight, crown: isTree ? (stage >= 10 ? 150 : 95) : stage >= 6 ? 30 : 0 }}
+              wind={wind}
+              raining={sky === 'rain'}
+              reduced={reduced}
+              petals={petals && isTree ? 0.8 : 0}
+            />
           </g>
         </svg>
         {/* living things */}
@@ -345,17 +393,17 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
             {walker && FAR_KINDS.includes(walker.kind) && <Walker key={walker.id} kind={walker.kind} reverse={walker.reverse} pal={pal} onDone={() => setWalker(null)} />}
             {behind.map(renderNb)}
             {weather !== 'drought' && (
-              <Pond pal={pal} sunX={sun ? sun.x : null} moonX={moon ? moon.x : null} night={night} frogOK={!reduced && vital > 0.3} dragonfly={life > 0.6 && !reduced} />
+              <Pond pal={pal} sunX={sun ? sun.x : null} moonX={moon ? moon.x : null} night={night} frogOK={!reduced && vital > 0.3} dragonfly={life > 0.6 && !reduced} rain={sky === 'rain' && !reduced} wind={wind} />
             )}
             <NutSprouts pal={pal} memory={eggs} today={today} />
             {burrowAge >= 0 && <Burrow pal={pal} age={burrowAge} peeking={life > 0.5 && !reduced} sid={(n) => `${sid}-${n}`} />}
             <g transform={`translate(${PLANT_BASE[0]},${PLANT_BASE[1]})`}>
               <g className="gs-t" style={{ transform: `scale(${PLANT_SCALE[stage]})` }}>
                 <g key={watering || 'still'} className={watering ? 'gs-bounce gs-tap' : 'gs-tap'} onClick={() => onEgg('plant')}>
-                  <Plant stage={stage} health={health} dead={dead} pal={pal} seed={7} uid={`${sid}main`} windy={windy} />
+                  <Plant stage={stage} health={health} dead={dead} pal={pal} seed={7} uid={`${sid}main`} windy={windy} wind={wind} />
                 </g>
                 {isTree && !dead && health > 0.3 && nestAge >= 0 && (
-                  <g className={windy ? 'gs-sway gs-sway-windy' : 'gs-sway'}>
+                  <g className={swayClass(wind)}>
                     <g transform={stage >= 10 ? 'translate(22,-130) scale(1.35)' : 'translate(12,-100) scale(1.1)'}>
                       <Nest pal={pal} age={nestAge} daytime={day} sunny={weather === 'sunny'} />
                     </g>
@@ -413,13 +461,21 @@ export default function GardenScene({ stage, health, dead, weather: condition, s
         {/* foreground grass and flowers */}
         <svg viewBox={VB} preserveAspectRatio="xMidYMid slice" className="gs-layer">
           <g className="gs-camg" style={cam}>
-            <Front pal={pal} />
+            <Front pal={pal} wind={wind} />
+            <FrontTraces pal={pal} reduced={reduced} />
             {vital > 0.3 && <Clover found={clover} onTap={() => onEgg('clover')} />}
           </g>
         </svg>
         {/* real weather: rain, snow, wind */}
-        {(wet || sky === 'windy') && !reduced && (
-          <Precip rain={sky === 'rain' ? 1 : 0} snow={sky === 'snow' ? 1 : 0} wind={sky === 'windy' ? 1 : sky === 'rain' ? 0.3 : 0} night={night} running={visible} />
+        {(wet || sky === 'windy' || wind >= 0.6) && !reduced && (
+          <Precip
+            rain={sky === 'rain' ? 1 : 0}
+            snow={sky === 'snow' ? 1 : 0}
+            wind={sky === 'windy' || wind >= 0.6 ? Math.min(1, 0.4 + wind * 0.7) : sky === 'rain' ? 0.3 : 0}
+            slant={wind}
+            night={night}
+            running={visible}
+          />
         )}
         {/* watercolour paper texture and night vignette */}
         <svg viewBox={VB} preserveAspectRatio="xMidYMid slice" className="gs-layer gs-paper" aria-hidden>

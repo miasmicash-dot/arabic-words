@@ -9,7 +9,11 @@ const KEY = 'real-weather-v1'
 const ON_KEY = 'real-weather-on'
 const HOUR = 3_600_000
 
-interface Cached { at: number; sky: SkyWeather; temp?: number; wind?: number }
+interface Cached { at: number; sky: SkyWeather; temp?: number; wind?: number; south?: boolean }
+
+/** The rest of the real weather the scene uses for looks: wind (km/h) sways grass, trees and clouds; temperature
+ *  (°C) decides how fast settled snow melts; `south` flips the seasons. */
+export interface RealConditions { wind?: number; temp?: number; south?: boolean }
 
 export function weatherAllowed(): boolean {
   try { return localStorage.getItem(ON_KEY) === '1' } catch { return false }
@@ -38,8 +42,9 @@ async function fetchSky(): Promise<Cached | null> {
   if (!res.ok) return null
   const j = await res.json()
   const c = j.current ?? {}
-  const out: Cached = { at: Date.now(), sky: skyFromCode(+c.weather_code || 0, +c.wind_speed_10m || 0), temp: c.temperature_2m, wind: c.wind_speed_10m }
+  const out: Cached = { at: Date.now(), sky: skyFromCode(+c.weather_code || 0, +c.wind_speed_10m || 0), temp: c.temperature_2m, wind: c.wind_speed_10m, south: pos.coords.latitude < 0 }
   try { localStorage.setItem(KEY, JSON.stringify(out)) } catch { /* ignore */ }
+  window.dispatchEvent(new Event('real-weather-data'))
   return out
 }
 
@@ -85,4 +90,27 @@ export function useRealWeather(): SkyWeather {
     }
   }, [])
   return sky
+}
+
+const conditionsNow = (): RealConditions | null => {
+  if (!weatherAllowed()) return null
+  const c = read()
+  return c ? { wind: c.wind, temp: c.temp, south: c.south } : null
+}
+
+/** Real wind, temperature and hemisphere from the last forecast (null when location is off or unknown). */
+export function useRealConditions(): RealConditions | null {
+  const [c, setC] = useState<RealConditions | null>(conditionsNow)
+  useEffect(() => {
+    const on = () => setC(conditionsNow())
+    window.addEventListener('real-weather', on)
+    window.addEventListener('real-weather-data', on)
+    const t = setInterval(on, 5 * 60_000)
+    return () => {
+      window.removeEventListener('real-weather', on)
+      window.removeEventListener('real-weather-data', on)
+      clearInterval(t)
+    }
+  }, [])
+  return c
 }

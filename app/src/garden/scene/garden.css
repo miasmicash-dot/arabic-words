@@ -230,3 +230,32 @@
   .gs-can, .gs-pour, .gs-wet, .gs-monkeyleap, .gs-stink, .gs-spray { display: none; }
 }
 .gs > .gs-precip { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
+
+/* ---- v4: living environment: wind levels, grass waves, rustling leaves, rain on water ---- */
+.gs-sway-breeze { animation-name: gs-sway-breeze; animation-duration: 4.2s; }
+.gs-sway-gale { animation-name: gs-sway-gale; animation-duration: 1.5s; }
+@keyframes gs-sway-breeze { from { transform: rotate(-1.3deg); } to { transform: rotate(1.2deg); } }
+@keyframes gs-sway-gale { from { transform: rotate(-3deg); } to { transform: rotate(0.6deg); } }
+
+/* grass leans from its foot; neighbouring bands start a moment apart so a wave runs across the hill */
+.gs-grass { transform-box: fill-box; transform-origin: 50% 100%; animation: gs-grass-calm 5s ease-in-out infinite alternate; }
+.gs-grass-breeze { animation-name: gs-grass-breeze; animation-duration: 3.6s; }
+.gs-grass-windy { animation-name: gs-grass-windy; animation-duration: 2.2s; }
+.gs-grass-gale { animation-name: gs-grass-gale; animation-duration: 1.3s; }
+@keyframes gs-grass-calm { from { transform: skewX(-2deg); } to { transform: skewX(2deg); } }
+@keyframes gs-grass-breeze { from { transform: skewX(-6deg); } to { transform: skewX(3deg); } }
+@keyframes gs-grass-windy { from { transform: skewX(-14deg); } to { transform: skewX(0deg); } }
+@keyframes gs-grass-gale { from { transform: skewX(-22deg); } to { transform: skewX(-5deg); } }
+
+.gs-rustle { transform-box: fill-box; transform-origin: 50% 70%; animation: gs-rustle 3.8s ease-in-out infinite alternate; }
+.gs-rustle-breeze { animation-duration: 2.2s; }
+.gs-rustle-windy { animation-name: gs-rustle-big; animation-duration: 1.1s; }
+@keyframes gs-rustle { from { transform: rotate(-0.8deg) translateX(-0.4px); } to { transform: rotate(0.8deg) translateX(0.4px); } }
+@keyframes gs-rustle-big { from { transform: rotate(-2.2deg) translate(-1.2px, 0.4px); } to { transform: rotate(1.4deg) translate(1px, -0.4px); } }
+
+.gs-rainring { opacity: 0; animation: gs-rainring 1.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes gs-rainring { 0% { opacity: 0; transform: scale(.1); } 8% { opacity: .85; } 100% { opacity: 0; transform: scale(1.6); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .gs-rainring { display: none; }
+}

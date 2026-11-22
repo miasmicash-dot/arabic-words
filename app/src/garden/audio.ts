@@ -164,17 +164,39 @@ class Engine {
 const engine = new Engine()
 if (import.meta.env.DEV) (window as unknown as { __gardenAudio: Engine }).__gardenAudio = engine
 
-function mixFor(weather: Weather, sky: Sky, night: number): Record<Layer, number> {
+function mixFor(weather: Weather, sky: Sky, night: number, wind?: number, winter = 0): Record<Layer, number> {
   const day = 1 - night
+  const base = { clear: 0.08, cloudy: 0.14, rain: 0.2, snow: 0.16, windy: 0.6 }[sky]
+  // the real wind strength (0..1) sets how loud the wind is, when it is known
+  const air = wind === undefined ? base : Math.max(base * 0.6, Math.min(0.7, 0.05 + wind * 0.75))
   return {
-    birds: sky === 'rain' || sky === 'snow' ? 0 : weather === 'sunny' ? 0.55 * day : 0.2 * day,
-    wind: { clear: 0.08, cloudy: 0.14, rain: 0.2, snow: 0.16, windy: 0.6 }[sky] * (1 - night * 0.3),
+    // fewer birds sing in winter
+    birds: sky === 'rain' || sky === 'snow' ? 0 : (weather === 'sunny' ? 0.55 : 0.2) * day * (1 - winter * 0.6),
+    wind: air * (1 - night * 0.3),
     rain: sky === 'rain' ? 0.5 : 0,
     stream: weather === 'drought' ? 0 : 0.12,
   }
 }
 
-export function useGardenAudio({ muted, weather, sky = 'clear', night, visible }: { muted: boolean; weather: Weather; sky?: Sky; night: number; visible: boolean }) {
+export function useGardenAudio({
+  muted,
+  weather,
+  sky = 'clear',
+  night,
+  visible,
+  wind,
+  winter = 0,
+}: {
+  muted: boolean
+  weather: Weather
+  sky?: Sky
+  night: number
+  visible: boolean
+  /** 0..1 wind strength */
+  wind?: number
+  /** 0..1 how wintry the season is */
+  winter?: number
+}) {
   useEffect(() => {
     engine.users++
     const unlock = () => {
@@ -201,11 +223,11 @@ export function useGardenAudio({ muted, weather, sky = 'clear', night, visible }
   useEffect(() => {
     engine.muted = muted
     engine.visible = visible
-    engine.target = mixFor(weather, sky, night)
+    engine.target = mixFor(weather, sky, night, wind, winter)
     engine.wantOwl = night > 0.6 && sky !== 'rain' && sky !== 'snow'
     engine.scheduleOwl()
     engine.apply()
-  }, [muted, weather, sky, Math.round(night * 20), visible]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [muted, weather, sky, Math.round(night * 20), visible, wind === undefined ? -1 : Math.round(wind * 20), Math.round(winter * 10)]) // eslint-disable-line react-hooks/exhaustive-deps
 }
 
 /** Play one owl hoot now (when the owl is tapped), if sound is on. */

@@ -6,11 +6,11 @@ const VERT = `attribute vec2 p; void main(){ gl_Position = vec4(p, 0.0, 1.0); }`
 const FRAG = `
 precision mediump float;
 uniform vec2 uRes;
-uniform float uTime, uRain, uSnow, uWind, uNight;
+uniform float uTime, uRain, uSnow, uWind, uNight, uSlant;
 float h(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
 
 float rain(vec2 uv, float cols, float spd, float len, float thin, float t){
-  uv.x += uv.y * (0.12 + uWind * 0.25);
+  uv.x += uv.y * (0.08 + uSlant * 0.45);
   float cx = floor(uv.x * cols);
   float r = h(vec2(cx, cols));
   float fx = fract(uv.x * cols) - 0.5 - (r - 0.5) * 0.6;
@@ -23,7 +23,7 @@ float rain(vec2 uv, float cols, float spd, float len, float thin, float t){
 float snow(vec2 uv, float scale, float spd, float t){
   uv *= scale;
   uv.y += t * spd;
-  uv.x += sin(uv.y * 0.9 + t * 0.7) * 0.3 + t * uWind * 0.6;
+  uv.x += sin(uv.y * 0.9 + t * 0.7) * (0.3 - uSlant * 0.1) + t * uSlant * 1.1;
   vec2 id = floor(uv);
   vec2 f = fract(uv) - 0.5;
   float r = h(id);
@@ -69,10 +69,11 @@ void main(){
   gl_FragColor = vec4(col, a);
 }`
 
-export default function Precip({ rain, snow, wind, night, running }: { rain: number; snow: number; wind: number; night: number; running: boolean }) {
+/** rain and snow 0..1; `wind` 0..1 draws gusts of air; `slant` 0..1 (the real wind) tilts the rain and drifts the snow. */
+export default function Precip({ rain, snow, wind, night, running, slant = wind }: { rain: number; snow: number; wind: number; night: number; running: boolean; slant?: number }) {
   const canvas = useRef<HTMLCanvasElement>(null)
-  const latest = useRef({ rain, snow, wind, night, running })
-  latest.current = { rain, snow, wind, night, running }
+  const latest = useRef({ rain, snow, wind, night, running, slant })
+  latest.current = { rain, snow, wind, night, running, slant }
 
   useEffect(() => {
     const cv = canvas.current
@@ -105,7 +106,7 @@ export default function Precip({ rain, snow, wind, night, running }: { rain: num
     gl.enableVertexAttribArray(loc)
     gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0)
     const U = (n: string) => gl.getUniformLocation(prog, n)
-    const u = { res: U('uRes'), time: U('uTime'), rain: U('uRain'), snow: U('uSnow'), wind: U('uWind'), night: U('uNight') }
+    const u = { res: U('uRes'), time: U('uTime'), rain: U('uRain'), snow: U('uSnow'), wind: U('uWind'), night: U('uNight'), slant: U('uSlant') }
     let raf = 0
     let last = 0
     const t0 = performance.now()
@@ -129,6 +130,7 @@ export default function Precip({ rain, snow, wind, night, running }: { rain: num
       gl.uniform1f(u.snow, v.snow)
       gl.uniform1f(u.wind, v.wind)
       gl.uniform1f(u.night, v.night)
+      gl.uniform1f(u.slant, v.slant)
       gl.clearColor(0, 0, 0, 0)
       gl.clear(gl.COLOR_BUFFER_BIT)
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4)
