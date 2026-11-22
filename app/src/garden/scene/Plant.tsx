@@ -365,7 +365,7 @@ function tree(stage: GrowthStage, r: Rng, fruit: FruitKind): PlantM {
       dark: dabs(big ? 14 : 9, Math.PI * 0.05, Math.PI * 0.9, 0.2, 0.85, [7, 10]),
       rim: dabs(big ? 12 : 8, -Math.PI, 0, 0.92, 1.08, [8, 12]),
       dash: r.range(0, 100),
-      cap: scallop(c.x + c.r * 0.04, c.y - c.r * 0.5, c.r * 0.74, c.r * 0.3, 11, r, 0.12),
+      cap: scallop(c.x - c.r * 0.06, c.y - c.r * 0.66, c.r * 0.6, c.r * 0.17, 9, r, 0.32),
     }
   })
 
@@ -506,7 +506,7 @@ interface Env {
   snow: number
 }
 const envOf = (pal: Palette): Env => ({
-  inLeaf: 1 - 0.22 * pal.season.autumn - 0.62 * pal.season.winter,
+  inLeaf: 1 - 0.25 * pal.season.autumn - 0.82 * pal.season.winter,
   spring: pal.season.spring,
   winter: pal.season.winter,
   snow: pal.snow,

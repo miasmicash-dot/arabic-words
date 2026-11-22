@@ -53,18 +53,28 @@ export interface GardenDevOptions {
   today?: string
   /** storage key for the day-to-day stories (the playground keeps its own) */
   eggsKey?: string
-  /** change to make this animal walk by now */
-  walker?: { kind: 'nova' | 'fox' | 'rabbit' | 'deer' | 'squirrel' | 'hedgehog' | 'skunk' | 'ferret' | 'horse' | 'elephant'; id: number }
-  /** change to start something in the distance now */
-  far?: { event: 'horses' | 'elephants' | 'chase'; id: number }
-  /** change to make the squirrel come now */
+  /** change to send this animal on stage now with its story (any id in the cast, e.g. 'rabbit', 'owl', 'duck') */
+  story?: { sp: string; id: number }
+  /** no automatic visitors: only the ones the playground sends */
+  quiet?: boolean
+  /** told whenever the wildlife director changes what is on stage */
+  onDirector?: (s: DirectorSnapshot) => void
+  /** change to make the squirrel come now and bury today's nut */
   squirrel?: number
   /** pretend a cloud covers this much of the sun (0..1), to see the light shafts */
   occlusion?: number
   /** change to show a hidden secret now */
   egg?: { kind: 'rainbow' | 'hearts' | 'hay' | 'clover'; id: number }
-  /** change to send a horse to the fallen apples now (stage 10+) */
-  apples?: number
   /** change to reload the stories from storage (after a reset) */
   eggsVersion?: number
+}
+
+/** What the wildlife director has on stage (for the playground). Times are Date.now() milliseconds. */
+export interface DirectorSnapshot {
+  visits: { id: number; sp: string; slot: string; at: number }[]
+  quiet: Record<string, number>
+  caps: Record<string, number>
+  total: number
+  mode: string
+  life: number
 }
