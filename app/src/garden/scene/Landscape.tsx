@@ -2,39 +2,11 @@ import { useSid } from './ids'
 // Static-ish scenery layers: sky (sun, moon, stars, clouds), rolling hills, pond, path and foreground.
 import { memo, useMemo, type ReactNode } from 'react'
 import { brush, desaturate, jitter, mix, resample, rng, scallop, smooth, type P, type Rng } from './ink'
+import { area, H, LINES, pathEdges, W, yAt } from './terrain'
 import { moonArc, sunArc, type Palette } from './palette'
+import { FRONT_BANDS, grassClass, GrassWaves } from './Ground'
 
-export const W = 1000
-export const H = 720
-/** Where the main plant stands. */
-export const PLANT_BASE: P = [620, 566]
-
-// ---------- terrain lines ----------
-
-export const LINES = {
-  farBack: [[-20, 338], [90, 316], [220, 300], [360, 322], [470, 312], [600, 330], [740, 292], [880, 282], [1020, 306]] as P[],
-  far: [[-20, 372], [120, 344], [260, 354], [400, 374], [560, 352], [700, 334], [830, 320], [960, 336], [1020, 344]] as P[],
-  mid: [[-20, 402], [100, 392], [230, 404], [380, 430], [520, 452], [700, 446], [860, 428], [1020, 420]] as P[],
-  field: [[360, 486], [470, 458], [610, 432], [760, 414], [900, 406], [1020, 404]] as P[],
-  midLeft: [[-20, 448], [110, 436], [250, 448], [390, 474], [520, 506]] as P[],
-  near: [[-20, 506], [150, 512], [330, 530], [480, 556], [620, 562], [760, 546], [880, 526], [1020, 516]] as P[],
-  path: [[-30, 632], [150, 614], [330, 600], [500, 610], [660, 630], [820, 620], [1030, 598]] as P[],
-  front: [[-20, 668], [160, 660], [360, 674], [560, 664], [760, 678], [1020, 662]] as P[],
-}
-
-/** y of a terrain line at x (linear between resampled points). */
-export function yAt(line: P[], x: number): number {
-  const s = resample(line, 60)
-  for (let i = 0; i < s.length - 1; i++) {
-    if (x >= s[i][0] && x <= s[i + 1][0]) {
-      const t = (x - s[i][0]) / (s[i + 1][0] - s[i][0] || 1)
-      return s[i][1] + (s[i + 1][1] - s[i][1]) * t
-    }
-  }
-  return s[x < s[0][0] ? 0 : s.length - 1][1]
-}
-
-const area = (line: P[], bottom = H + 10) => smooth(line) + `L1030,${bottom} L-30,${bottom} Z`
+export { W, H, PLANT_BASE, LINES, yAt, area, pathEdges } from './terrain'
 
 /** Ink line along a hill top, broken into a few strokes like a quick pen sketch. */
 function inkEdge(line: P[], r: Rng, w = 2.2, gaps = 2): string {
@@ -95,15 +67,38 @@ function grassTexture(line: P[], r: Rng, n: number, dy: [number, number], size: 
   return parts.join(' ')
 }
 
+const BLOBS = [
+  [-22, -16, 20],
+  [0, -24, 25],
+  [24, -14, 18],
+  [-8, -8, 18],
+  [14, -6, 16],
+]
+
+/** Spring blossom dots and snow caps for each lobe of a bush (seeded, so they never move). */
+function bushExtras(seed: number) {
+  const r = rng(seed + 900)
+  return {
+    dots: BLOBS.map(([bx, by, br]) =>
+      [...Array(5)].map(() => {
+        const a = r.range(-Math.PI, Math.PI)
+        const d = br * Math.sqrt(r.range(0.05, 0.7))
+        const cx = bx + Math.cos(a) * d
+        const cy = by + Math.sin(a) * d * 0.8
+        const rr = r.range(1.6, 2.6)
+        return `M${(cx + rr).toFixed(1)},${cy.toFixed(1)} a${rr.toFixed(1)},${rr.toFixed(1)} 0 1,0 ${(-2 * rr).toFixed(1)},0 a${rr.toFixed(1)},${rr.toFixed(1)} 0 1,0 ${(2 * rr).toFixed(1)},0Z`
+      }).join(''),
+    ),
+    caps: BLOBS.map(([bx, by, br]) => scallop(bx, by - br * 0.5, br * 0.82, br * 0.36, 8, r, 0.14)),
+  }
+}
+
 function Bush({ x, y, s, pal, seed }: { x: number; y: number; s: number; pal: Palette; seed: number }) {
   const r = rng(seed)
-  const blobs = [
-    [-22, -16, 20],
-    [0, -24, 25],
-    [24, -14, 18],
-    [-8, -8, 18],
-    [14, -6, 16],
-  ]
+  const blobs = BLOBS
+  const { dots, caps } = useMemo(() => bushExtras(seed), [seed])
+  const bloom = pal.season.spring * (1 - pal.snow) * (pal.weather === 'drought' ? 0.2 : 1)
+  const snowC = pal.shade('#f6f9fc')
   return (
     <g transform={`translate(${x},${y}) scale(${s})`}>
       {blobs.map(([bx, by, br], i) => {
@@ -113,6 +108,8 @@ function Bush({ x, y, s, pal, seed }: { x: number; y: number; s: number; pal: Pa
             <path d={d} transform="translate(3,5)" fill={pal.c.bushDark} />
             <path d={d} fill={i % 2 ? pal.c.bush : mix(pal.c.bush, pal.c.bushLight, 0.4)} stroke={pal.c.ink} strokeWidth={1.8 / s} />
             <path d={scallop(bx - br * 0.25, by - br * 0.3, br * 0.45, br * 0.35, 5, r)} fill={pal.c.bushLight} opacity={0.7} />
+            {bloom > 0.05 && <path d={dots[i]} fill={pal.shade(i % 2 ? '#fbe3ea' : '#fff8f0')} opacity={bloom} />}
+            {pal.snow > 0.05 && <path d={caps[i]} fill={snowC} stroke={pal.c.ink} strokeWidth={0.9 / s} strokeOpacity={0.45} opacity={Math.min(1, pal.snow * 1.4)} />}
           </g>
         )
       })}
@@ -158,8 +155,8 @@ export const Land = memo(function Land({ pal }: { pal: Palette }) {
         .join(' '),
       ticksMid: ticks(LINES.mid, r, 14, [8, 30], 6),
       ticksNear: ticks(LINES.near, r, 26, [10, 36], 8),
-      pathTop: resample(LINES.path, 40).map(([x, y], i) => [x, y - 13 - Math.sin(i / 4) * 2] as P),
-      pathBot: resample(LINES.path, 40).map(([x, y], i) => [x, y + 15 + Math.cos(i / 5) * 2] as P),
+      pathTop: pathEdges().top,
+      pathBot: pathEdges().bot,
       cracks: [...Array(16)].map(() => {
         const x = r.range(30, 960)
         const y = yAt(LINES.near, x) + r.range(20, 60)
@@ -180,16 +177,21 @@ export const Land = memo(function Land({ pal }: { pal: Palette }) {
     }
   }, [])
   const pondY = 556
+  // the colour of the air near the horizon, laid over distant land
+  const air = mix(pal.sky.bottom, pal.sky.mid, 0.25)
+  const haze = (col: string, k: number) => mix(col, air, k * (pal.weather === 'overcast' ? 1.3 : 1))
   return (
     <g>
-      {/* far hills, hazy blue like distance */}
-      <path d={area(LINES.farBack)} fill={c.farHill2} />
-      <path d={g.farBackEdge} fill={c.ink} opacity={0.35} />
-      <path d={g.treelineBack} fill={mix(c.farHill2, c.farHill, 0.6)} />
+      {/* far hills: the further away, the more they take on the colour of the air (atmospheric perspective) */}
+      <path d={area(LINES.farBack)} fill={`url(#${sid('farback')})`} />
+      <path d={g.farBackEdge} fill={c.ink} opacity={0.22} />
+      <path d={g.treelineBack} fill={haze(mix(c.farHill2, c.farHill, 0.6), 0.42)} />
       <path d={area(LINES.far)} fill={`url(#${sid('far')})`} />
-      <path d={g.treeline} fill={mix(c.farHill, '#2e5a52', 0.35)} />
+      <path d={g.treeline} fill={haze(mix(c.farHill, '#2e5a52', 0.35), 0.24)} />
       <path d={smooth(LINES.far.map(([x, y]) => [x, y + 3] as P))} fill="none" stroke={mix(c.farHill2, '#ffffff', 0.4)} strokeWidth={3} opacity={0.35} />
-      <path d={g.farEdge} fill={c.ink} opacity={0.55} />
+      <path d={g.farEdge} fill={c.ink} opacity={0.42} />
+      {/* a low band of haze where the far hills meet the middle distance */}
+      <path d={smooth(LINES.mid.map(([x, y]) => [x, y - 26] as P)) + 'L1030,440 L-30,440Z'} fill={`url(#${sid('lowhaze')})`} />
       {/* middle hills: green slope and an ochre field */}
       <path d={area(LINES.mid)} fill={`url(#${sid('mid')})`} />
       <path d={g.grassMidR} stroke={mix(c.midB, '#24401a', 0.3)} strokeWidth={1} opacity={0.5} strokeLinecap="round" />
@@ -239,9 +241,18 @@ export const Land = memo(function Land({ pal }: { pal: Palette }) {
       ))}
       {dry && <path d={g.cracks.join(' ')} stroke={mix(c.near, '#4a3018', 0.5)} strokeWidth={1.3} fill="none" strokeLinecap="round" strokeLinejoin="round" />}
       <defs>
+        <linearGradient id={sid('farback')} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor={haze(c.farHill2, 0.5)} />
+          <stop offset="0.25" stopColor={haze(c.farHill2, 0.36)} />
+        </linearGradient>
         <linearGradient id={sid('far')} x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
-          <stop offset="0" stopColor={c.farHill} />
-          <stop offset="0.4" stopColor={mix(c.farHill, c.farHill2, 0.5)} />
+          <stop offset="0" stopColor={haze(c.farHill, 0.3)} />
+          <stop offset="0.4" stopColor={haze(mix(c.farHill, c.farHill2, 0.5), 0.18)} />
+        </linearGradient>
+        <linearGradient id={sid('lowhaze')} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor={air} stopOpacity={0} />
+          <stop offset="0.45" stopColor={air} stopOpacity={0.28} />
+          <stop offset="1" stopColor={air} stopOpacity={0} />
         </linearGradient>
         <linearGradient id={sid('mid')} x1="0" y1="0" x2="1" y2="0.3">
           <stop offset="0" stopColor={c.midA} />
@@ -266,10 +277,13 @@ export const Land = memo(function Land({ pal }: { pal: Palette }) {
 
 // ---------- foreground (in front of the animals on the path) ----------
 
-export const Front = memo(function Front({ pal }: { pal: Palette }) {
+export const Front = memo(function Front({ pal, wind = 0.15 }: { pal: Palette; wind?: number }) {
   const sid = useSid()
   const c = pal.c
   const dry = pal.weather === 'drought'
+  const sea = pal.season
+  // most flowers in spring, fewer in autumn, only dry stalks in winter or under snow
+  const flowering = (sea.spring + sea.summer * 0.9 + sea.autumn * 0.45 + sea.winter * 0.05) * (1 - pal.snow)
   const g = useMemo(() => {
     const r = rng(77)
     const blades = (x0: number, x1: number, n: number, hMin: number, hMax: number, lean: number) => {
@@ -308,12 +322,18 @@ export const Front = memo(function Front({ pal }: { pal: Palette }) {
       <path d={smooth(LINES.front.map(([x, y]) => [x, y + 3] as P))} fill="none" stroke={mix(c.front, '#fffbe0', 0.45)} strokeWidth={3.5} opacity={0.4} />
       <path d={g.edge} fill={c.ink} />
       <path d={g.ticks} stroke={c.ink} strokeWidth={1.2} opacity={0.55} strokeLinecap="round" />
+      <GrassWaves pal={pal} wind={wind} front={{ bands: FRONT_BANDS }} />
       {g.flowers.map((f, i) => (
-        <Flower key={i} {...f} color={f.color} pal={pal} dry={dry} />
+        <Flower key={i} {...f} color={f.color} pal={pal} dry={dry || i / g.flowers.length >= flowering} />
       ))}
       <Bush x={985} y={722} s={1.6} pal={pal} seed={12} />
-      <path d={g.right} fill={mix(c.front2, c.grass, 0.5)} stroke={c.ink} strokeWidth={1} />
-      <path d={g.left} fill={c.grass} stroke={c.ink} strokeWidth={1.1} />
+      {/* tall blades in the corners lean with the wind (each pivots at its foot) */}
+      <g className={grassClass(wind)} style={{ animationDelay: '-1.3s' }}>
+        <path d={g.right} fill={mix(c.front2, c.grass, 0.5)} stroke={c.ink} strokeWidth={1} />
+      </g>
+      <g className={grassClass(wind)}>
+        <path d={g.left} fill={c.grass} stroke={c.ink} strokeWidth={1.1} />
+      </g>
       <defs>
         <linearGradient id={sid('front')} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={c.front} />
@@ -439,7 +459,7 @@ export function Moon({ phase, ink }: { phase: number; ink: string }) {
   )
 }
 
-export function Sky({ pal, children, shader, phase }: { pal: Palette; children?: ReactNode; shader: boolean; phase: number }) {
+export function Sky({ pal, children, shader, phase, wind = 0.15 }: { pal: Palette; children?: ReactNode; shader: boolean; phase: number; wind?: number }) {
   const sid = useSid()
   const { sky, night, weather, hour } = pal
   const { sun, moon } = celestial(hour)
@@ -473,6 +493,11 @@ export function Sky({ pal, children, shader, phase }: { pal: Palette; children?:
       : pal.shade(mix(mix('#ffffff', weather === 'drought' ? '#efe1c0' : '#cddbe4', k), mix('#b3b9bd', '#8a939a', k), g * 0.7))
   const clouds = weather === 'overcast' ? CLOUDS.overcast : [...CLOUDS[weather], ...GATHERING.slice(0, Math.round(g * GATHERING.length))]
   const rim = mix(sky.glow, '#ffffff', 0.5)
+  // clouds race in a strong wind and dawdle on a still day
+  const speed = 0.55 + wind * 2.6
+  // at sunrise and sunset the undersides of the clouds catch the low sun
+  const blush = sun ? lowSun * (1 - night) * (weather === 'overcast' ? 0.35 : 0.8) * (1 - g * 0.7) : 0
+  const under = mix(cloudFill(1), mix(sky.glow, '#ff8f6a', 0.35), blush * 0.75)
   return (
     <g>
       <defs>
@@ -497,8 +522,8 @@ export function Sky({ pal, children, shader, phase }: { pal: Palette; children?:
         </radialGradient>
         <linearGradient id={sid('cloud')} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={cloudFill(0)} />
-          <stop offset="0.7" stopColor={mix(cloudFill(0), cloudFill(1), 0.6)} />
-          <stop offset="1" stopColor={cloudFill(1)} />
+          <stop offset="0.7" stopColor={mix(cloudFill(0), under, 0.6)} />
+          <stop offset="1" stopColor={under} />
         </linearGradient>
       </defs>
       {!shader && (
@@ -535,8 +560,8 @@ export function Sky({ pal, children, shader, phase }: { pal: Palette; children?:
       {/* clouds */}
       {clouds.map((cl, i) => (
         <g key={`${weather}-${i}`} transform={`translate(0,${cl.y.toFixed(0)}) scale(${cl.s.toFixed(2)})`}>
-          <g className="gs-drift" style={{ animationDuration: `${cl.dur.toFixed(0)}s`, animationDelay: `${cl.delay.toFixed(0)}s` }}>
-            <path d={cl.d} transform="translate(4,6)" fill={cloudFill(1)} opacity={0.45} />
+          <g className="gs-drift" style={{ animationDuration: `${(cl.dur / speed).toFixed(0)}s`, animationDelay: `${(cl.delay / speed).toFixed(0)}s` }}>
+            <path d={cl.d} transform="translate(4,6)" fill={under} opacity={0.45} />
             <path d={cl.d} className="gs-cloudbody" fill={`url(#${sid('cloud')})`} />
             {/* sunlit upper rim */}
             <path d={cl.d} fill="none" stroke={rim} strokeWidth={3} opacity={weather === 'overcast' ? 0.15 : 0.55 * (1 - night) * (1 - g * 0.7)} transform="translate(-1,-1.5)" />

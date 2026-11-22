@@ -1,8 +1,7 @@
-// The small life of the garden: insects and little animals in the foreground, birds and waterfowl, grazing herds on
-// the far hills, night creatures, Nova the cat, and the farmer's hat on his fence post (he is never seen).
-// Everything is gated by `life` (0..1, from health only) so a neglected garden empties out and a thriving one is busy.
-// Flies make no sound and there are no crickets.
-import { useEffect, useState, type ReactNode } from 'react'
+// The small life of the garden, drawn with named parts (pt-*) so their stories (species*.tsx) can pose them:
+// insects, little animals, birds, pond life, far herds, night creatures and Nova the cat. Also the farmer's fence
+// with his hat (he is never seen) and the hidden secrets. Flies make no sound and there are no crickets.
+import { useState } from 'react'
 import { mix } from './ink'
 import { useSid } from './ids'
 import { LINES, yAt } from './Landscape'
@@ -10,441 +9,547 @@ import type { Palette } from './palette'
 import './critters.css'
 
 type S = (c: string) => string
-interface Art { s: S; ink: string }
+export interface Art { s: S; ink: string; pose?: string }
 
-const At = ({ x, y, k = 1, flip, children, cls, style }: { x: number; y: number; k?: number; flip?: boolean; children: ReactNode; cls?: string; style?: React.CSSProperties }) => (
-  <g transform={`translate(${x},${y}) scale(${flip ? -k : k},${k})`}>
-    <g className={cls} style={style}>{children}</g>
-  </g>
-)
+// ---------- insects and tiny things ----------
 
-// ---------- insects and tiny things (foreground) ----------
-
-function Ladybird({ s, ink }: Art) {
+export function Ladybird({ s, ink }: Art) {
   return (
-    <g>
-      <path d="M-4,0 C-4,-6 4,-6 4,0Z" fill={s('#d7322b')} stroke={ink} strokeWidth={0.7} />
-      <path d="M0,-4.4 L0,0" stroke={ink} strokeWidth={0.6} />
-      <circle cx={-2} cy={-2} r={0.8} fill={ink} /><circle cx={2} cy={-2.4} r={0.8} fill={ink} /><circle cx={1.8} cy={-0.8} r={0.6} fill={ink} />
+    <g className="pt-body">
+      <path className="pt-legs" d="M-3,0 l-1.4,1.4 M0,0 l0,1.6 M3,0 l1.4,1.4" stroke={ink} strokeWidth={0.5} />
+      <g className="pt-buzz"><ellipse cx={-1} cy={-5.5} rx={4.2} ry={1.6} fill="#eef6ff" opacity={0.7} /></g>
+      <g className="pt-shell-l"><path d="M0,-4.4 C-3,-4.4 -4,-2 -4,0 L0,0Z" fill={s('#d7322b')} stroke={ink} strokeWidth={0.6} /><circle cx={-2} cy={-2} r={0.8} fill={ink} /></g>
+      <g className="pt-shell-r"><path d="M0,-4.4 C3,-4.4 4,-2 4,0 L0,0Z" fill={s('#d7322b')} stroke={ink} strokeWidth={0.6} /><circle cx={2} cy={-2.4} r={0.8} fill={ink} /><circle cx={1.8} cy={-0.8} r={0.6} fill={ink} /></g>
       <path d="M3.4,-1.2 C5,-2.6 6,-1.6 5.6,-0.4Z" fill={ink} />
     </g>
   )
 }
 
-function Ant({ ink }: { ink: string }) {
+export function Ant({ ink, crumb }: { ink: string; crumb?: boolean }) {
   return (
-    <g>
+    <g className="pt-body">
       <circle cx={-2.6} cy={-1.4} r={1.4} fill={ink} /><circle cx={0} cy={-1.4} r={0.9} fill={ink} /><circle cx={2.1} cy={-1.7} r={1.1} fill={ink} />
-      <path d="M-1,-1 l-1,1.6 M0,-1 l0,1.6 M1,-1 l1,1.6 M2.6,-2.6 l1.2,-1.4" stroke={ink} strokeWidth={0.4} />
+      <path className="pt-legs" d="M-1,-1 l-1,1.6 M0,-1 l0,1.6 M1,-1 l1,1.6" stroke={ink} strokeWidth={0.4} />
+      <path d="M2.6,-2.6 l1.2,-1.4" stroke={ink} strokeWidth={0.4} />
+      {crumb && <circle cx={4.4} cy={-3.2} r={1.4} fill="#f2e2b8" stroke={ink} strokeWidth={0.3} />}
     </g>
   )
 }
 
-function AntTrail({ s, ink }: Art) {
+export function Worm({ s, ink }: Art) {
   return (
     <g>
-      <ellipse cx={46} cy={0} rx={8} ry={2.6} fill={s('#a07850')} stroke={ink} strokeWidth={0.6} />
-      <path d="M42,-1 q4,-4 8,0" stroke={s('#6e5034')} strokeWidth={1} fill="none" />
-      {[0, 1, 2, 3, 4, 5].map((i) => (
-        <g key={i} className="cr-ant" style={{ animationDelay: `${-i * 0.9}s` }}><Ant ink={ink} /></g>
+      <ellipse cx={0} cy={1} rx={7} ry={1.6} fill={s('#7a5236')} />
+      <g className="pt-worm" style={{ transformBox: 'view-box', transformOrigin: '0px 0px' }}>
+        <path d="M-1,0 C-2,-5 0,-8 2,-9 C3,-9.5 4,-9 4,-8" stroke={s('#d98b84')} strokeWidth={2.2} fill="none" strokeLinecap="round" />
+        <circle cx={3.2} cy={-8.6} r={0.4} fill={ink} />
+      </g>
+    </g>
+  )
+}
+
+export function Caterpillar({ s, ink, pose }: Art) {
+  if (pose === 'curl')
+    return (
+      <g className="pt-body">
+        {[0, 1, 2, 3, 4].map((i) => {
+          const a = (i / 5) * Math.PI * 2
+          return <circle key={i} cx={Math.cos(a) * 3} cy={-3.4 + Math.sin(a) * 3} r={1.9} fill={s(i === 4 ? '#3f8a3a' : '#5aa845')} stroke={ink} strokeWidth={0.45} />
+        })}
+      </g>
+    )
+  const rear = pose === 'eat' || pose === 'alert'
+  return (
+    <g className="pt-body">
+      {[0, 1, 2, 3].map((i) => <circle key={i} cx={-6 + i * 3} cy={-1.9 - (i === 2 ? 0.8 : 0)} r={1.9} fill={s('#5aa845')} stroke={ink} strokeWidth={0.45} />)}
+      <g className="pt-head" transform={rear ? 'translate(-1,-3) rotate(-25 6 -2)' : undefined}>
+        <circle cx={6.2} cy={-2.2} r={2.1} fill={s('#3f8a3a')} stroke={ink} strokeWidth={0.45} />
+        <circle cx={7} cy={-2.8} r={0.45} fill={ink} />
+        <path d="M6,-4 l-0.6,-1.6 M7,-4 l0.6,-1.6" stroke={ink} strokeWidth={0.35} />
+      </g>
+    </g>
+  )
+}
+
+export function Leaf({ s, ink, bitten }: Art & { bitten?: number }) {
+  const b = bitten ?? 0
+  return (
+    <g>
+      <path d="M-14,0 C-8,-10 8,-10 14,0 C8,-3 -8,-3 -14,0Z" fill={s('#7bbf55')} stroke={ink} strokeWidth={0.7} />
+      {b > 0 && <circle cx={9} cy={-4} r={1.8 + b} fill={s('#93c25f')} />}
+    </g>
+  )
+}
+
+export function Beetle({ s, ink }: Art) {
+  const sh = s('#2f4f3a')
+  return (
+    <g className="pt-body">
+      <path className="pt-legs" d="M-2,-0.4 l-1,1.6 M1,-0.4 l1,1.6 M3,-0.6 l1.4,1.4" stroke={ink} strokeWidth={0.5} />
+      <g className="pt-buzz"><ellipse cx={-1} cy={-5.5} rx={4.6} ry={1.8} fill="#eef6ff" opacity={0.7} /></g>
+      <g className="pt-shell-l"><path d="M0,-5.4 C-3,-5.4 -4.4,-4 -4.4,-2.6 C-4.4,-1 -2.5,0 0,0Z" fill={sh} stroke={ink} strokeWidth={0.6} /></g>
+      <g className="pt-shell-r"><path d="M0,-5.4 C3,-5.4 4.4,-4 4.4,-2.6 C4.4,-1 2.5,0 0,0Z" fill={sh} stroke={ink} strokeWidth={0.6} /><path d="M1,-4.4 q2,-.6 3,1" stroke="#fff" strokeWidth={0.5} opacity={0.5} fill="none" /></g>
+      <g className="pt-head">
+        <circle cx={4.6} cy={-2.6} r={1.5} fill={ink} />
+        <path d="M5.6,-3.4 l2,-1.6 M5.6,-2 l2,1" stroke={ink} strokeWidth={0.5} />
+      </g>
+    </g>
+  )
+}
+
+export function Grasshopper({ s, ink, pose }: Art) {
+  const g = s('#86b84a')
+  return (
+    <g className="pt-body">
+      <path d="M-8,-3 C-4,-6 4,-6 7,-4 C6,-2 -4,-1 -8,-3Z" fill={g} stroke={ink} strokeWidth={0.6} />
+      <g className="pt-leg-b" style={{ transformBox: 'view-box', transformOrigin: '-2px -4px' }}>
+        <path d={pose === 'hop' ? 'M-2,-4 L-9,-6 L-15,-2' : 'M-2,-4 L-8,-10 L-11,-1'} stroke={mix(g, '#2a3a1a', 0.3)} strokeWidth={1.1} fill="none" strokeLinejoin="round" />
+      </g>
+      <g className="pt-head">
+        <circle cx={6.6} cy={-4.4} r={1.1} fill={ink} />
+        <path d="M7,-5 q5,-6 9,-5 M7,-5 q4,-7 7,-8" stroke={ink} strokeWidth={0.4} fill="none" />
+      </g>
+      <path className="pt-legs" d="M2,-2 l1,2 M4,-2 l1.4,2" stroke={ink} strokeWidth={0.5} />
+    </g>
+  )
+}
+
+export function Spider({ ink }: { ink: string }) {
+  return (
+    <g className="pt-body">
+      <circle cx={0} cy={0} r={1.8} fill={ink} /><circle cx={0} cy={-2.4} r={1.1} fill={ink} />
+      <path className="pt-legs" d="M-1,0 l-3,-2 M-1,0.6 l-3,1 M1,0 l3,-2 M1,0.6 l3,1 M-1,1 l-2,3 M1,1 l2,3" stroke={ink} strokeWidth={0.4} />
+    </g>
+  )
+}
+
+export function Web({ grow }: { grow: boolean }) {
+  return (
+    <g stroke="#ffffff" strokeWidth={0.5} opacity={0.7} fill="none">
+      {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+        <path key={i} pathLength={1} className={grow ? 'st-draw' : undefined} style={{ ['--d' as string]: '1.2s', animationDelay: `${i * 0.25}s` }} d={`M0,0 L${(Math.cos((i * Math.PI) / 4) * 16).toFixed(1)},${(Math.sin((i * Math.PI) / 4) * 16).toFixed(1)}`} />
+      ))}
+      {[4, 8, 12].map((r, j) => (
+        <polygon key={r} pathLength={1} className={grow ? 'st-draw' : undefined} style={{ ['--d' as string]: '1.6s', animationDelay: `${2.2 + j * 1.2}s` }} points={[0, 1, 2, 3, 4, 5, 6, 7].map((i) => `${(Math.cos((i * Math.PI) / 4) * r).toFixed(1)},${(Math.sin((i * Math.PI) / 4) * r).toFixed(1)}`).join(' ')} />
       ))}
     </g>
   )
 }
 
-function Worm({ s, ink }: Art) {
+export function Bumblebee({ ink }: { ink: string }) {
   return (
-    <g>
-      <ellipse cx={0} cy={1} rx={7} ry={1.6} fill={s('#7a5236')} />
-      <path className="cr-worm" d="M-4,0 C-4,-5 0,-7 2,-4 C3,-2 3,0 3,0" stroke={s('#d98b84')} strokeWidth={2.2} fill="none" strokeLinecap="round" />
-      <circle cx={2.2} cy={-4.6} r={0.4} fill={ink} />
-    </g>
-  )
-}
-
-function Caterpillar({ s, ink }: Art) {
-  return (
-    <g>
-      <path d="M-14,0 C-8,-10 8,-10 14,0 C8,-3 -8,-3 -14,0Z" fill={s('#7bbf55')} stroke={ink} strokeWidth={0.7} />
-      <g className="cr-inch">
-        {[0, 1, 2, 3, 4].map((i) => <circle key={i} cx={-6 + i * 3} cy={-5 - (i === 2 ? 1.6 : i % 2) * 1} r={1.9} fill={s(i === 4 ? '#3f8a3a' : '#5aa845')} stroke={ink} strokeWidth={0.45} />)}
-        <circle cx={6.6} cy={-6.6} r={0.45} fill={ink} />
-      </g>
-    </g>
-  )
-}
-
-function Beetle({ s, ink }: Art) {
-  return (
-    <g className="cr-scuttle">
-      <ellipse cx={0} cy={-2.6} rx={4.4} ry={2.8} fill={s('#2f4f3a')} stroke={ink} strokeWidth={0.6} />
-      <path d="M0,-5.2 L0,-0.2" stroke={mix('#2f4f3a', '#9fe0b2', 0.5)} strokeWidth={0.5} />
-      <circle cx={4.6} cy={-2.6} r={1.5} fill={ink} />
-      <path d="M5.6,-3.4 l2,-1.6 M5.6,-2 l2,1 M-2,-0.4 l-1,1.6 M1,-0.4 l1,1.6" stroke={ink} strokeWidth={0.5} />
-      <path d="M-3,-4 q2,-1 3,0" stroke="#fff" strokeWidth={0.5} opacity={0.5} fill="none" />
-    </g>
-  )
-}
-
-function Grasshopper({ s, ink }: Art) {
-  const g = s('#86b84a')
-  return (
-    <g className="cr-grasshop">
-      <path d="M-8,-3 C-4,-6 4,-6 7,-4 C6,-2 -4,-1 -8,-3Z" fill={g} stroke={ink} strokeWidth={0.6} />
-      <path d="M-2,-4 L-8,-10 L-11,-1" stroke={mix(g, '#2a3a1a', 0.3)} strokeWidth={1.1} fill="none" strokeLinejoin="round" />
-      <circle cx={6.6} cy={-4.4} r={1.1} fill={ink} />
-      <path d="M7,-5 q5,-6 9,-5 M7,-5 q4,-7 7,-8" stroke={ink} strokeWidth={0.4} fill="none" />
-      <path d="M2,-2 l1,2 M4,-2 l1.4,2" stroke={ink} strokeWidth={0.5} />
-    </g>
-  )
-}
-
-function Spider({ ink }: { ink: string }) {
-  return (
-    <g>
-      <g stroke="#ffffff" strokeWidth={0.4} opacity={0.65} fill="none">
-        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <path key={i} d={`M0,0 L${(Math.cos((i * Math.PI) / 4) * 16).toFixed(1)},${(Math.sin((i * Math.PI) / 4) * 16).toFixed(1)}`} />)}
-        {[4, 8, 12].map((r) => <polygon key={r} points={[0, 1, 2, 3, 4, 5, 6, 7].map((i) => `${(Math.cos((i * Math.PI) / 4) * r).toFixed(1)},${(Math.sin((i * Math.PI) / 4) * r).toFixed(1)}`).join(' ')} />)}
-      </g>
-      <g className="cr-dangle">
-        <path d="M0,-16 L0,-2" stroke="#ffffff" strokeWidth={0.3} opacity={0.6} />
-        <circle cx={0} cy={0} r={1.8} fill={ink} /><circle cx={0} cy={-2.4} r={1.1} fill={ink} />
-        <path d="M-1,0 l-3,-2 M-1,0.6 l-3,1 M1,0 l3,-2 M1,0.6 l3,1 M-1,1 l-2,3 M1,1 l2,3" stroke={ink} strokeWidth={0.4} />
-      </g>
-    </g>
-  )
-}
-
-function Bumblebee({ ink }: { ink: string }) {
-  return (
-    <g>
+    <g className="pt-body">
       <ellipse cx={0} cy={0} rx={4.4} ry={3.4} fill="#f1c232" stroke={ink} strokeWidth={0.6} />
       <path d="M-1.2,-3.2 L-1.2,3.2 M1.4,-3 L1.4,3" stroke={ink} strokeWidth={1.2} />
-      <ellipse cx={-1} cy={-4.2} rx={2.6} ry={1.6} fill="#ffffff" opacity={0.75} className="cr-buzzwing" />
+      <g className="pt-buzz"><ellipse cx={-1} cy={-4.2} rx={2.6} ry={1.6} fill="#ffffff" opacity={0.75} /></g>
     </g>
   )
 }
 
-function Fly({ ink }: { ink: string }) {
+export function Fly({ ink }: { ink: string }) {
   return (
-    <g>
+    <g className="pt-body">
       <ellipse cx={0} cy={0} rx={1.6} ry={1.1} fill={ink} />
-      <ellipse cx={-0.6} cy={-1.3} rx={1.4} ry={0.8} fill="#dfe8ef" opacity={0.8} className="cr-buzzwing" />
+      <g className="pt-buzz"><ellipse cx={-0.6} cy={-1.3} rx={1.4} ry={0.8} fill="#dfe8ef" opacity={0.8} /></g>
+      <path className="pt-legs" d="M1,0.6 l1,1 M-1,0.6 l-0.6,1.2" stroke={ink} strokeWidth={0.3} />
     </g>
   )
 }
 
-function Damselfly({ ink }: { ink: string }) {
+export function Damselfly({ ink, color = '#3aa0d8' }: { ink: string; color?: string }) {
   return (
-    <g>
-      <path d="M-12,0 L4,0" stroke="#3aa0d8" strokeWidth={1.3} strokeLinecap="round" />
-      <circle cx={5} cy={0} r={1.4} fill="#2b7fb0" />
-      <g className="cr-buzzwing" opacity={0.6}>
+    <g className="pt-body">
+      <path d="M-12,0 L4,0" stroke={color} strokeWidth={1.3} strokeLinecap="round" />
+      <circle cx={5} cy={0} r={1.4} fill={mix(color, '#000', 0.25)} />
+      <g className="pt-buzz" opacity={0.65}>
         <ellipse cx={0} cy={-2.6} rx={5} ry={1.1} fill="#e9f6ff" stroke={ink} strokeWidth={0.2} />
-        <ellipse cx={-1} cy={2.4} rx={4.4} ry={1} fill="#e9f6ff" stroke={ink} strokeWidth={0.2} />
+        <ellipse cx={-1} cy={-2.2} rx={4.4} ry={1} fill="#e9f6ff" stroke={ink} strokeWidth={0.2} transform="rotate(-14 -1 -2.2)" />
       </g>
     </g>
   )
 }
 
-function Moth({ ink }: { ink: string }) {
+export function Dragonfly({ s, ink }: Art) {
+  const c = s('#2f7f9a')
   return (
-    <g className="cr-flutter">
-      <path d="M0,0 C-6,-6 -9,-2 -7,2 C-5,4 -2,2 0,0 C2,2 5,4 7,2 C9,-2 6,-6 0,0Z" fill="#d9d0bd" stroke={ink} strokeWidth={0.4} />
+    <g className="pt-body">
+      <path d="M-11,0 L9,0" stroke={c} strokeWidth={2} strokeLinecap="round" />
+      <circle cx={9} cy={0} r={1.9} fill={c} />
+      <g className="pt-buzz">
+        <ellipse cx={4} cy={-4} rx={2} ry={6.5} transform="rotate(-62 4 -4)" fill="#e9f6ff" opacity={0.75} stroke={ink} strokeWidth={0.3} />
+        <ellipse cx={1} cy={-4} rx={2} ry={6.5} transform="rotate(62 1 -4)" fill="#e9f6ff" opacity={0.75} stroke={ink} strokeWidth={0.3} />
+      </g>
+    </g>
+  )
+}
+
+export function Moth({ ink }: { ink: string }) {
+  return (
+    <g className="pt-body">
+      <g className="pt-bw-l"><path d="M0,0 C-6,-6 -9,-2 -7,2 C-5,4 -2,2 0,0Z" fill="#d9d0bd" stroke={ink} strokeWidth={0.4} /></g>
+      <g className="pt-bw-r"><path d="M0,0 C6,-6 9,-2 7,2 C5,4 2,2 0,0Z" fill="#d9d0bd" stroke={ink} strokeWidth={0.4} /></g>
       <path d="M0,-2 L0,3" stroke={ink} strokeWidth={0.9} />
     </g>
   )
 }
 
-function ButterflySp({ wing, spot, ink }: { wing: string; spot: string; ink: string }) {
+export function Firefly() {
   return (
-    <g className="cr-flutter">
-      <path d="M0,0 C-8,-10 -12,-4 -9,0 C-12,4 -6,8 0,2 C6,8 12,4 9,0 C12,-4 8,-10 0,0Z" fill={wing} stroke={ink} strokeWidth={0.5} />
-      <circle cx={-6} cy={-3} r={1.2} fill={spot} /><circle cx={6} cy={-3} r={1.2} fill={spot} />
-      <path d="M0,-3 L0,4" stroke={ink} strokeWidth={1} strokeLinecap="round" />
+    <g className="pt-body">
+      <g className="pt-glow">
+        <circle r={12} fill="#f6ff9a" opacity={0.22} />
+        <circle r={5} fill="#e8ff8a" opacity={0.45} />
+        <circle r={1.8} fill="#fdffc8" />
+      </g>
     </g>
   )
 }
 
 // ---------- small animals ----------
 
-function Mouse({ s, ink }: Art) {
+export function Mouse({ s, ink, pose }: Art) {
+  const up = pose === 'sit' || pose === 'eat'
   return (
-    <g className="cr-sniff">
-      <path d="M-7,0 C-8,-6 -2,-8 3,-6 C6,-5 8,-3 8,-1 C6,0 -4,1 -7,0Z" fill={s('#9a8d80')} stroke={ink} strokeWidth={0.6} />
-      <circle cx={2} cy={-6.4} r={2} fill={s('#b8aa9c')} stroke={ink} strokeWidth={0.5} />
-      <circle cx={5.6} cy={-3} r={0.5} fill={ink} /><circle cx={8.2} cy={-1.3} r={0.6} fill={s('#e8a0a0')} />
-      <path d="M-7,-1 C-12,-1 -14,2 -18,1" stroke={s('#c4a49a')} strokeWidth={0.7} fill="none" />
+    <g className="pt-body">
+      <g className="pt-tail"><path d="M-7,-1 C-12,-1 -14,2 -18,1" stroke={s('#c4a49a')} strokeWidth={0.7} fill="none" /></g>
+      <g transform={up ? 'rotate(-40 -6 0)' : undefined}>
+        <path d="M-7,0 C-8,-6 -2,-8 3,-6 C6,-5 8,-3 8,-1 C6,0 -4,1 -7,0Z" fill={s('#9a8d80')} stroke={ink} strokeWidth={0.6} />
+        <g className="pt-head">
+          <circle cx={2} cy={-6.4} r={2} fill={s('#b8aa9c')} stroke={ink} strokeWidth={0.5} />
+          <circle cx={5.6} cy={-3} r={0.5} fill={ink} /><circle cx={8.2} cy={-1.3} r={0.6} fill={s('#e8a0a0')} className="pt-nose" />
+          <path d="M8,-1.4 l3,-1 M8,-1.2 l3,0.6" stroke={ink} strokeWidth={0.2} />
+        </g>
+        {up && <ellipse cx={7.5} cy={-0.5} rx={1.2} ry={0.8} fill="#e8d6a0" stroke={ink} strokeWidth={0.3} />}
+      </g>
     </g>
   )
 }
 
-function Tortoise({ s, ink }: Art) {
+export function Tortoise({ s, ink, pose }: Art) {
+  const hide = pose === 'hide'
   return (
-    <g className="cr-plod">
-      <path d="M8,-3 C11,-6 15,-6 16,-3 C15,-1 11,-1 8,-2Z" fill={s('#a3a06a')} stroke={ink} strokeWidth={0.6} />
+    <g className="pt-body">
+      <g className="pt-head" style={{ transition: 'transform .5s', transform: hide ? 'translateX(-6px) scale(.5)' : undefined }}>
+        <path d="M8,-3 C11,-6 15,-6 16,-3 C15,-1 11,-1 8,-2Z" fill={s('#a3a06a')} stroke={ink} strokeWidth={0.6} />
+        <circle cx={13.6} cy={-4} r={0.5} fill={ink} />
+      </g>
+      <path className="pt-leg-a" d="M-8,-1 l-1,2" stroke={s('#8b8858')} strokeWidth={2} strokeLinecap="round" style={hide ? { opacity: 0 } : undefined} />
+      <path className="pt-leg-b" d="M6,-1 l1,2" stroke={s('#8b8858')} strokeWidth={2} strokeLinecap="round" style={hide ? { opacity: 0 } : undefined} />
       <path d="M-10,-1 C-10,-11 8,-11 9,-1Z" fill={s('#7a6b3e')} stroke={ink} strokeWidth={0.8} />
       <path d="M-6,-2 L-3,-8 L3,-8 L6,-2 M-3,-8 L-1,-2 M3,-8 L1,-2" stroke={mix('#7a6b3e', '#f2deaa', 0.4)} strokeWidth={0.6} fill="none" />
-      <path d="M-8,-1 l-1,2 M6,-1 l1,2" stroke={s('#8b8858')} strokeWidth={2} strokeLinecap="round" />
-      <circle cx={13.6} cy={-4} r={0.5} fill={ink} />
     </g>
   )
 }
 
-function Lizard({ s, ink }: Art) {
+export function Lizard({ s, ink }: Art) {
   const c = s('#7da35a')
   return (
-    <g>
-      <path d="M-14,-9 C-2,-15 12,-14 18,-9 C10,-5 -6,-5 -14,-9Z" fill={s('#a59f94')} stroke={ink} strokeWidth={0.7} />
-      <g className="cr-sniff">
-        <path d="M-12,-10 C-6,-12 4,-13 10,-11 C12,-10.6 12,-9.4 10,-9 C4,-8.6 -6,-9 -12,-10Z" fill={c} stroke={ink} strokeWidth={0.5} />
-        <path d="M-12,-10 C-16,-9 -19,-7 -21,-9" stroke={c} strokeWidth={1.1} fill="none" strokeLinecap="round" />
-        <circle cx={8.6} cy={-10.6} r={0.45} fill={ink} />
-        <path d="M-4,-9.4 l-2,2 M3,-9.4 l2,2" stroke={c} strokeWidth={0.8} />
-      </g>
+    <g className="pt-body">
+      <g className="pt-tail"><path d="M-6,-1 C-12,0 -16,2 -21,1" stroke={c} strokeWidth={1.2} fill="none" strokeLinecap="round" /></g>
+      <path d="M-6,-1 C0,-3 8,-4 12,-2 C12,-1 6,0 -6,0Z" fill={c} stroke={ink} strokeWidth={0.5} />
+      <path className="pt-legs" d="M-3,-0.6 l-2,1.6 M5,-1 l2,1.6" stroke={c} strokeWidth={0.8} />
+      <g className="pt-head"><path d="M10,-2.6 C12,-3.6 15,-3 16,-1.8 C15,-1 12,-0.8 10,-1.2Z" fill={c} stroke={ink} strokeWidth={0.4} /><circle cx={13} cy={-2.4} r={0.45} fill={ink} /></g>
     </g>
   )
 }
 
-function Toad({ s, ink }: Art) {
+export function Toad({ s, ink }: Art) {
   return (
-    <g className="cr-breathe">
+    <g className="pt-body">
+      <ellipse cx={3} cy={-2.2} rx={2.6} ry={1.6} fill={s('#f2e6b0')} className="pt-throat" />
       <path d="M-7,0 C-8,-6 -4,-9 0,-9 C5,-9 8,-6 7,0Z" fill={s('#8a7a4a')} stroke={ink} strokeWidth={0.7} />
       <circle cx={-3} cy={-5} r={0.8} fill={s('#6e5e36')} /><circle cx={2} cy={-3} r={0.9} fill={s('#6e5e36')} />
-      <circle cx={4} cy={-8.4} r={1.6} fill={s('#8a7a4a')} stroke={ink} strokeWidth={0.5} /><circle cx={4.3} cy={-8.6} r={0.7} fill="#c48a16" />
+      <g className="pt-head"><circle cx={4} cy={-8.4} r={1.6} fill={s('#8a7a4a')} stroke={ink} strokeWidth={0.5} /><circle cx={4.3} cy={-8.6} r={0.7} fill="#c48a16" /></g>
     </g>
   )
 }
 
-function Chipmunk({ s, ink }: Art) {
+export function Chipmunk({ s, ink, pose }: Art) {
+  const up = pose === 'sit' || pose === 'stuff' || pose === 'alert'
   return (
-    <g className="cr-nibble">
-      <path d="M-6,-2 C-12,-4 -13,-12 -9,-14 C-6,-15 -6,-11 -7,-8" fill="none" stroke={s('#8a5a32')} strokeWidth={2.6} strokeLinecap="round" />
-      <path d="M-6,0 C-7,-7 -2,-10 3,-9 C6,-8 6,-3 4,0Z" fill={s('#b07a48')} stroke={ink} strokeWidth={0.6} />
-      <path d="M-4,-7 C-2,-8 1,-8 3,-7" stroke={s('#f2e2c4')} strokeWidth={0.9} fill="none" />
-      <circle cx={4} cy={-10} r={3} fill={s('#b07a48')} stroke={ink} strokeWidth={0.5} />
-      <circle cx={5.4} cy={-10.6} r={0.55} fill={ink} />
-      <circle cx={6.6} cy={-6.6} r={1.2} fill={s('#7a4a24')} />
-    </g>
-  )
-}
-
-function Mole({ s, ink }: Art) {
-  return (
-    <g>
-      <path d="M-12,0 C-8,-8 8,-8 12,0Z" fill={s('#7b5a3c')} stroke={ink} strokeWidth={0.6} />
-      <g className="cr-peek">
-        <path d="M-4,-4 C-4,-10 4,-10 4,-4Z" fill={s('#3b3436')} stroke={ink} strokeWidth={0.5} />
-        <ellipse cx={0} cy={-9.6} rx={1.4} ry={1} fill={s('#e8a0a8')} />
-        <path d="M-5,-5 l-2,1 M5,-5 l2,1" stroke={s('#e8c0c0')} strokeWidth={1.2} strokeLinecap="round" />
+    <g className="pt-body">
+      <g className="pt-tail"><path d="M-6,-2 C-12,-4 -13,-12 -9,-14 C-6,-15 -6,-11 -7,-8" fill="none" stroke={s('#8a5a32')} strokeWidth={2.6} strokeLinecap="round" /></g>
+      <g transform={up ? 'rotate(-25 -4 0)' : undefined}>
+        <path d="M-6,0 C-7,-7 -2,-10 3,-9 C6,-8 6,-3 4,0Z" fill={s('#b07a48')} stroke={ink} strokeWidth={0.6} />
+        <path d="M-4,-7 C-2,-8 1,-8 3,-7" stroke={s('#f2e2c4')} strokeWidth={0.9} fill="none" />
+        <g className="pt-head">
+          <circle cx={4} cy={-10} r={3} fill={s('#b07a48')} stroke={ink} strokeWidth={0.5} />
+          <circle cx={5.4} cy={-10.6} r={0.55} fill={ink} />
+          <circle cx={5} cy={-8.4} r={1.6} fill={s('#c98a52')} stroke={ink} strokeWidth={0.3} className="pt-cheek" />
+        </g>
       </g>
+      <path className="pt-leg-a" d="M-4,0 l-1,1 M2,0 l1,1" stroke={s('#7a4a24')} strokeWidth={1} />
     </g>
   )
 }
 
-function Badger({ s, ink }: Art) {
+export function Mole({ s, ink }: Art) {
   return (
-    <g className="cr-plod">
-      <path d="M-14,-1 C-15,-9 -4,-12 6,-11 C12,-10 15,-6 14,-2 C10,0 -10,1 -14,-1Z" fill={s('#7e7a76')} stroke={ink} strokeWidth={0.7} />
-      <path d="M10,-10 C16,-11 21,-7 22,-3 C19,-2 14,-2 11,-4Z" fill="#f4f2ec" stroke={ink} strokeWidth={0.6} />
-      <path d="M11,-9 C15,-8 18,-6 21,-4" stroke="#222" strokeWidth={1.5} fill="none" />
-      <path d="M-10,-1 l0,2 M8,-1 l0,2" stroke="#222" strokeWidth={2} strokeLinecap="round" />
+    <g className="pt-body">
+      <path d="M-4,0 C-4,-6 4,-6 4,0Z" fill={s('#3b3436')} stroke={ink} strokeWidth={0.5} />
+      <ellipse cx={0} cy={-5.6} rx={1.4} ry={1} fill={s('#e8a0a8')} className="pt-nose" />
+      <path d="M-5,-1 l-2,1 M5,-1 l2,1" stroke={s('#e8c0c0')} strokeWidth={1.2} strokeLinecap="round" />
+    </g>
+  )
+}
+
+export function Molehill({ s, ink }: Art) {
+  return <path d="M-12,0 C-8,-8 8,-8 12,0Z" fill={s('#7b5a3c')} stroke={ink} strokeWidth={0.6} />
+}
+
+export function Snail({ s, ink, pose }: Art) {
+  const hide = pose === 'hide'
+  return (
+    <g className="pt-body">
+      <g style={{ transition: 'transform .6s', transform: hide ? 'scaleX(.35)' : undefined, transformBox: 'view-box', transformOrigin: '0px 0px' }}>
+        <path d="M-7,1 C-7,-1 4,-1 8,0 C10,1 6,2 -7,1Z" fill={s('#c9b79a')} stroke={ink} strokeWidth={0.6} />
+        <g className="pt-head" style={{ transition: 'transform .6s', transform: hide ? 'scaleY(0)' : undefined }}>
+          <path d="M8,0 L10,-4 M8,0 L11.4,-3" stroke={s('#b8a688')} strokeWidth={0.9} strokeLinecap="round" />
+          <circle cx={10} cy={-4.2} r={0.6} fill={ink} /><circle cx={11.6} cy={-3.2} r={0.6} fill={ink} />
+        </g>
+      </g>
+      <circle cx={-1} cy={-4} r={4.8} fill={s('#b07a45')} stroke={ink} strokeWidth={0.7} />
+      <path d="M-1,-4 m-2.6,0 a2.6,2.6 0 1 1 2.6,2.6 a1.4,1.4 0 1 1 -1.4,-1.4" stroke={ink} strokeWidth={0.6} fill="none" />
     </g>
   )
 }
 
 // ---------- birds ----------
 
-function Songbird({ body, belly, ink, peck = true }: { body: string; belly: string; ink: string; peck?: boolean }) {
+/** A small bird side-on: head pecks, wing flaps (fly), tail flicks. */
+export function Songbird({ body, belly, ink, pose }: { body: string; belly: string; ink: string; pose?: string }) {
+  const flying = pose === 'fly' || pose === 'glide' || pose === 'hover'
   return (
-    <g className={peck ? 'cr-peck' : 'cr-perch'}>
-      <path d="M-6,-6 L-11,-4 L-6,-4Z" fill={body} stroke={ink} strokeWidth={0.5} />
+    <g className="pt-body">
+      <g className="pt-tail"><path d="M-6,-6 L-11,-4 L-6,-4Z" fill={body} stroke={ink} strokeWidth={0.5} /></g>
       <ellipse cx={-1} cy={-6} rx={6} ry={4.4} fill={body} stroke={ink} strokeWidth={0.6} />
-      <path d="M1,-5 C3,-3 5,-4 5,-6 C4,-8 2,-8 1,-5Z" fill={belly} />
-      <circle cx={4} cy={-9} r={3} fill={body} stroke={ink} strokeWidth={0.6} />
-      <path d="M6.8,-9.4 L9.4,-8.6 L6.8,-8Z" fill="#e2a33a" />
-      <circle cx={4.8} cy={-9.6} r={0.6} fill={ink} />
-      <path d="M-1,-1.6 l-1,2 M1,-1.6 l1,2" stroke={ink} strokeWidth={0.5} />
+      <path d="M1,-5 C3,-3 5,-4 5,-6 C4,-8 2,-8 1,-5Z" fill={belly} className="pt-throat" style={{ transformOrigin: '50% 50%' }} />
+      <g className="pt-wing" style={{ transformBox: 'view-box', transformOrigin: '1px -8px' }}>
+        <path d={flying ? 'M1,-8 C-3,-16 -9,-16 -11,-12 C-6,-11 -3,-9 -1,-6Z' : 'M2,-7 C-1,-9 -6,-8 -7,-5 C-4,-4 -1,-4 2,-5Z'} fill={mix(body, '#000', 0.12)} stroke={ink} strokeWidth={0.5} />
+      </g>
+      <g className="pt-head">
+        <circle cx={4} cy={-9} r={3} fill={body} stroke={ink} strokeWidth={0.6} />
+        <path d={pose === 'sing' || pose === 'coo' ? 'M6.8,-9.8 L9.4,-10.4 M6.8,-8.6 L9.4,-7.8' : 'M6.8,-9.4 L9.4,-8.6 L6.8,-8Z'} fill="#e2a33a" stroke="#c48a2a" strokeWidth={0.6} />
+        <circle cx={4.8} cy={-9.6} r={0.6} fill={ink} />
+        {pose === 'tug' && <path d="M9,-8.6 q3,3 1,7 q-1,2 1,4" stroke="#d98b84" strokeWidth={1.1} fill="none" strokeLinecap="round" />}
+      </g>
+      {!flying && <path d="M-1,-1.6 l-1,2 M1,-1.6 l1,2" stroke={ink} strokeWidth={0.5} />}
     </g>
   )
 }
 
-function Hummingbird({ ink }: { ink: string }) {
+export function Hummingbird({ ink }: { ink: string }) {
   return (
-    <g className="cr-hover">
+    <g className="pt-body">
       <path d="M-5,0 C-3,-3 3,-3 4,-1 C3,1 -3,1 -5,0Z" fill="#3fa36b" stroke={ink} strokeWidth={0.4} />
       <path d="M-5,0 L-9,2 L-8,-1Z" fill="#2c7a50" />
-      <circle cx={4} cy={-1.4} r={1.6} fill="#c43b6a" />
-      <path d="M5.4,-1.6 L11,-2" stroke={ink} strokeWidth={0.5} />
-      <ellipse cx={-1} cy={-3.6} rx={1.6} ry={4} fill="#e9f6ff" opacity={0.6} className="cr-buzzwing" />
+      <g className="pt-head"><circle cx={4} cy={-1.4} r={1.6} fill="#c43b6a" /><path d="M5.4,-1.6 L11,-2" stroke={ink} strokeWidth={0.5} /></g>
+      <g className="pt-buzz"><ellipse cx={-1} cy={-3.6} rx={1.6} ry={4} fill="#e9f6ff" opacity={0.6} /></g>
     </g>
   )
 }
 
-function Woodpecker({ ink }: { ink: string }) {
+export function Woodpecker({ ink }: { ink: string }) {
   return (
-    <g className="cr-tap">
+    <g className="pt-body">
       <path d="M-2,4 C-5,0 -5,-8 -2,-11 C1,-12 3,-9 3,-6 C3,-1 1,3 -2,4Z" fill="#2d2d2d" stroke={ink} strokeWidth={0.5} />
       <path d="M-1,-3 l2,1 M-1,-6 l2,1" stroke="#f4f2ec" strokeWidth={0.8} />
-      <circle cx={1} cy={-11} r={2.4} fill="#f4f2ec" stroke={ink} strokeWidth={0.4} />
-      <path d="M-1,-13.6 C0,-14.6 2,-14.4 2.6,-13" fill="#d23b2b" />
-      <path d="M3.2,-11 L6.8,-10.6" stroke={ink} strokeWidth={0.8} />
-    </g>
-  )
-}
-
-function Duck({ s, ink, baby }: Art & { baby?: boolean }) {
-  const body = baby ? '#f3d65a' : '#9a7a52'
-  return (
-    <g className="cr-bobwater">
-      <path d="M-8,0 C-9,-5 -2,-6 4,-4 C7,-3 7,0 5,0Z" fill={s(body)} stroke={ink} strokeWidth={0.6} />
-      <circle cx={4} cy={-6} r={2.8} fill={s(baby ? body : '#2f7a4a')} stroke={ink} strokeWidth={0.5} />
-      <path d="M6.6,-6 L9.4,-5.4 L6.6,-4.8Z" fill="#e6a032" />
-      <circle cx={4.6} cy={-6.6} r={0.5} fill={ink} />
-      {!baby && <path d="M2,-3.4 L4.6,-3.6" stroke="#f4f2ec" strokeWidth={0.7} />}
-    </g>
-  )
-}
-
-function Swan({ ink }: { ink: string }) {
-  return (
-    <g className="cr-bobwater">
-      <path d="M-14,0 C-16,-8 -6,-10 4,-6 C8,-4 8,0 6,0Z" fill="#fbfbf6" stroke={ink} strokeWidth={0.7} />
-      <path d="M-10,-6 C-6,-12 0,-10 2,-7" stroke="#e6e6de" strokeWidth={1.2} fill="none" />
-      <path d="M4,-5 C8,-10 6,-18 9,-20 C11,-21 13,-20 12,-18" stroke="#fbfbf6" strokeWidth={2.6} fill="none" strokeLinecap="round" />
-      <path d="M4,-5 C8,-10 6,-18 9,-20" stroke={ink} strokeWidth={0.4} fill="none" transform="translate(1.2,0)" />
-      <path d="M12,-19 L15.4,-17.6 L12.4,-17Z" fill="#e2732e" />
-      <circle cx={10.4} cy={-19.4} r={0.5} fill={ink} />
-    </g>
-  )
-}
-
-function Heron({ ink }: { ink: string }) {
-  return (
-    <g>
-      <path d="M-1,0 L-1,-14 M2,0 L1,-14" stroke="#7a7a72" strokeWidth={0.8} />
-      <path d="M-8,-16 C-8,-24 4,-26 6,-20 C6,-16 2,-14 -3,-14 Z" fill="#b8c2c8" stroke={ink} strokeWidth={0.6} />
-      <path d="M-8,-17 L-12,-14" stroke="#8a969c" strokeWidth={1.2} />
-      <g className="cr-strike">
-        <path d="M4,-21 C8,-26 4,-32 7,-36" stroke="#d6dde0" strokeWidth={2} fill="none" strokeLinecap="round" />
-        <circle cx={7.4} cy={-36.4} r={2} fill="#eef1f2" stroke={ink} strokeWidth={0.4} />
-        <path d="M6,-37.6 L1,-38" stroke="#222" strokeWidth={0.8} />
-        <path d="M9,-36.6 L16,-35.4" stroke="#d9a33a" strokeWidth={0.9} />
-        <circle cx={8} cy={-37} r={0.4} fill={ink} />
+      <g className="pt-head" style={{ transformBox: 'view-box', transformOrigin: '0px -9px' }}>
+        <circle cx={1} cy={-11} r={2.4} fill="#f4f2ec" stroke={ink} strokeWidth={0.4} />
+        <path d="M-1,-13.6 C0,-14.6 2,-14.4 2.6,-13" fill="#d23b2b" />
+        <path d="M3.2,-11 L6.8,-10.6" stroke={ink} strokeWidth={0.8} />
       </g>
     </g>
   )
 }
 
-function Kingfisher({ ink }: { ink: string }) {
+export function Duck({ s, ink, baby }: Art & { baby?: boolean }) {
+  const body = baby ? '#f3d65a' : '#9a7a52'
   return (
-    <g className="cr-perch">
+    <g className="pt-body">
+      <path d="M-8,0 C-9,-5 -2,-6 4,-4 C7,-3 7,0 5,0Z" fill={s(body)} stroke={ink} strokeWidth={0.6} />
+      <g className="pt-head" style={{ transformBox: 'view-box', transformOrigin: '3px -3px' }}>
+        <circle cx={4} cy={-6} r={2.8} fill={s(baby ? body : '#2f7a4a')} stroke={ink} strokeWidth={0.5} />
+        <path d="M6.6,-6 L9.4,-5.4 L6.6,-4.8Z" fill="#e6a032" />
+        <circle cx={4.6} cy={-6.6} r={0.5} fill={ink} />
+      </g>
+      {!baby && <path d="M2,-3.4 L4.6,-3.6" stroke="#f4f2ec" strokeWidth={0.7} />}
+      <g className="pt-wing" style={{ transformBox: 'view-box', transformOrigin: '0px -3px' }}><path d="M0,-3 C-3,-5 -6,-4 -6,-2 C-4,-1 -2,-1 0,-2Z" fill={s(mix(body, '#000', 0.12))} /></g>
+    </g>
+  )
+}
+
+export function Swan({ ink, pose }: { ink: string; pose?: string }) {
+  return (
+    <g className="pt-body">
+      {pose === 'wings' && <path d="M-12,-5 C-14,-16 -4,-20 2,-10 C-2,-14 -8,-12 -6,-6Z" fill="#fbfbf6" stroke={ink} strokeWidth={0.6} className="st-grow" />}
+      <path d="M-14,0 C-16,-8 -6,-10 4,-6 C8,-4 8,0 6,0Z" fill="#fbfbf6" stroke={ink} strokeWidth={0.7} />
+      <path d="M-10,-6 C-6,-12 0,-10 2,-7" stroke="#e6e6de" strokeWidth={1.2} fill="none" />
+      <g className="pt-head" style={{ transformBox: 'view-box', transformOrigin: '4px -5px' }}>
+        <path d="M4,-5 C8,-10 6,-18 9,-20 C11,-21 13,-20 12,-18" stroke="#fbfbf6" strokeWidth={2.6} fill="none" strokeLinecap="round" />
+        <path d="M4,-5 C8,-10 6,-18 9,-20" stroke={ink} strokeWidth={0.4} fill="none" transform="translate(1.2,0)" />
+        <path d="M12,-19 L15.4,-17.6 L12.4,-17Z" fill="#e2732e" />
+        <circle cx={10.4} cy={-19.4} r={0.5} fill={ink} />
+      </g>
+    </g>
+  )
+}
+
+export function Heron({ ink, pose }: { ink: string; pose?: string }) {
+  const flying = pose === 'fly' || pose === 'glide'
+  return (
+    <g className="pt-body">
+      {flying ? (
+        <path d="M-1,-14 L-12,-10 M2,-14 L-10,-11" stroke="#7a7a72" strokeWidth={0.8} />
+      ) : (
+        <g><path className="pt-leg-a" d="M-1,-14 L-1,0" stroke="#7a7a72" strokeWidth={0.8} /><path className="pt-leg-b" d="M2,-14 L1,0" stroke="#7a7a72" strokeWidth={0.8} /></g>
+      )}
+      {flying && <g className="pt-wing" style={{ transformBox: 'view-box', transformOrigin: '0px -20px' }}><path d="M2,-20 C-4,-34 -14,-36 -20,-30 C-12,-28 -6,-24 -2,-17Z" fill="#a8b2b8" stroke={ink} strokeWidth={0.6} /></g>}
+      <path d="M-8,-16 C-8,-24 4,-26 6,-20 C6,-16 2,-14 -3,-14 Z" fill="#b8c2c8" stroke={ink} strokeWidth={0.6} />
+      <g className="pt-head" style={{ transformBox: 'view-box', transformOrigin: '4px -21px' }}>
+        <path d={flying ? 'M4,-21 C8,-24 9,-24 12,-22' : 'M4,-21 C8,-26 4,-32 7,-36'} stroke="#d6dde0" strokeWidth={2} fill="none" strokeLinecap="round" />
+        <g transform={flying ? 'translate(6,13)' : undefined}>
+          <circle cx={7.4} cy={-36.4} r={2} fill="#eef1f2" stroke={ink} strokeWidth={0.4} />
+          <path d="M6,-37.6 L1,-38" stroke="#222" strokeWidth={0.8} />
+          <path d="M9,-36.6 L16,-35.4" stroke="#d9a33a" strokeWidth={0.9} />
+          <circle cx={8} cy={-37} r={0.4} fill={ink} />
+          {pose === 'gulp' && <path d="M14,-36 l4,1 l-1,-2Z" fill="#e8873a" />}
+        </g>
+      </g>
+    </g>
+  )
+}
+
+export function Kingfisher({ ink, fish }: { ink: string; fish?: boolean }) {
+  return (
+    <g className="pt-body">
+      <g className="pt-tail"><path d="M-4,-2 L-8,1 L-5,1Z" fill="#1f6f9f" /></g>
       <path d="M-4,-2 C-6,-8 0,-11 3,-9 C5,-7 4,-3 2,-1Z" fill="#2a8fc9" stroke={ink} strokeWidth={0.5} />
       <path d="M0,-3 C2,-3 3,-5 3,-7" stroke="#e8823a" strokeWidth={2} fill="none" />
-      <circle cx={2} cy={-10} r={2.4} fill="#2a8fc9" stroke={ink} strokeWidth={0.4} />
-      <path d="M4,-10.6 L9,-10 L4,-9.4Z" fill="#222" />
-      <circle cx={2.6} cy={-10.4} r={0.45} fill={ink} />
+      <g className="pt-wing" style={{ transformBox: 'view-box', transformOrigin: '0px -7px' }}><path d="M1,-7 C-2,-9 -5,-8 -5,-5 C-3,-4 -1,-4 1,-5Z" fill="#1f78b0" /></g>
+      <g className="pt-head">
+        <circle cx={2} cy={-10} r={2.4} fill="#2a8fc9" stroke={ink} strokeWidth={0.4} />
+        <path d="M4,-10.6 L9,-10 L4,-9.4Z" fill="#222" />
+        <circle cx={2.6} cy={-10.4} r={0.45} fill={ink} />
+        {fish && <path d="M8,-10 l4,0.6 l1,-1.4 l0,3 l-1,-1.2 l-4,0.6Z" fill="#c7cfd6" stroke={ink} strokeWidth={0.3} />}
+      </g>
     </g>
   )
 }
 
-function Turtle({ s, ink }: Art) {
+export function Turtle({ s, ink }: Art) {
   return (
-    <g className="cr-bobwater">
-      <path d="M-14,1 C-10,-3 10,-3 14,1Z" fill={s('#7a5e3e')} stroke={ink} strokeWidth={0.6} />
+    <g className="pt-body">
       <path d="M-6,-1 C-6,-7 6,-7 6,-1Z" fill={s('#4f6a3a')} stroke={ink} strokeWidth={0.6} />
       <path d="M-3,-2 L0,-5.6 L3,-2" stroke={mix('#4f6a3a', '#e8e0b0', 0.4)} strokeWidth={0.5} fill="none" />
-      <path d="M6,-2 C8,-3 10,-3 10,-1.6" stroke={s('#7a9a4a')} strokeWidth={1.6} fill="none" strokeLinecap="round" className="cr-sniff" />
+      <g className="pt-head"><path d="M6,-2 C8,-3 10,-3 10,-1.6" stroke={s('#7a9a4a')} strokeWidth={1.6} fill="none" strokeLinecap="round" /></g>
+      <path className="pt-leg-a" d="M-5,-1 l-2,1.4 M4,-1 l2,1.4" stroke={s('#7a9a4a')} strokeWidth={1.2} strokeLinecap="round" />
     </g>
   )
 }
 
-function Fish({ ink }: { ink: string }) {
+export function Log({ s, ink }: Art) {
+  return <path d="M-16,1 C-16,-3 14,-4 16,0 C14,3 -14,4 -16,1Z" fill={s('#7a5e3e')} stroke={ink} strokeWidth={0.6} />
+}
+
+export function Fish({ ink }: { ink: string }) {
   return (
-    <g className="cr-fishjump">
+    <g className="pt-body">
       <path d="M-6,0 C-3,-4 3,-4 6,0 C3,4 -3,4 -6,0Z M-6,0 L-10,-3 L-10,3Z" fill="#e8873a" stroke={ink} strokeWidth={0.5} />
       <circle cx={3} cy={-0.6} r={0.5} fill={ink} />
     </g>
   )
 }
 
-function Dove({ ink }: { ink: string }) {
-  return <Songbird body="#e7e4df" belly="#f3e9e6" ink={ink} peck={false} />
-}
-
-function Crow({ ink }: { ink: string }) {
-  return <Songbird body="#2c2d33" belly="#3d3f47" ink={ink} peck={false} />
-}
-
-function FarHerdAnimal({ kind, ink }: { kind: 'sheep' | 'goat' | 'cow' | 'camel' | 'donkey'; ink: string }) {
-  // tiny distant silhouettes, simple and readable from far away
-  if (kind === 'sheep')
+export type Herd = 'sheep' | 'lamb' | 'goat' | 'cow' | 'camel' | 'donkey'
+/** Tiny distant animals, simple and readable from far away; the head nods down to graze. */
+export function FarHerdAnimal({ kind, ink }: { kind: Herd; ink: string }) {
+  const legs = (c: string, w = 0.8) => <path className="pt-legs" d="M-4,-2 l0,2.4 M3,-2 l0,2.4" stroke={c} strokeWidth={w} />
+  if (kind === 'sheep' || kind === 'lamb')
     return (
-      <g className="cr-graze">
+      <g className="pt-body" transform={kind === 'lamb' ? 'scale(.65)' : undefined}>
+        {legs('#3a3330')}
         <path d="M-6,-3 C-7,-8 -1,-10 3,-8 C7,-8 8,-4 5,-2 C2,-1 -4,-1 -6,-3Z" fill="#f6f3ea" stroke={ink} strokeWidth={0.5} />
-        <ellipse cx={6} cy={-4} rx={1.8} ry={1.3} fill="#3a3330" />
-        <path d="M-3,-2 l0,2 M3,-2 l0,2" stroke="#3a3330" strokeWidth={0.8} />
+        <g className="pt-head" style={{ transformBox: 'view-box', transformOrigin: '4px -5px' }}><ellipse cx={6} cy={-4.6} rx={1.8} ry={1.3} fill="#3a3330" /></g>
       </g>
     )
   if (kind === 'goat')
     return (
-      <g className="cr-graze">
+      <g className="pt-body">
+        {legs(ink, 0.7)}
         <path d="M-6,-4 C-6,-8 4,-8 5,-5 C5,-3 -4,-2 -6,-4Z" fill="#d9cdb8" stroke={ink} strokeWidth={0.5} />
-        <path d="M4,-6 L7,-9 L8,-6Z" fill="#d9cdb8" stroke={ink} strokeWidth={0.4} />
-        <path d="M7,-9 q-2,-3 -3,-3 M8,-6 l0,2" stroke={ink} strokeWidth={0.5} fill="none" />
-        <path d="M-4,-3 l0,3 M3,-3 l0,3" stroke={ink} strokeWidth={0.7} />
+        <g className="pt-head" style={{ transformBox: 'view-box', transformOrigin: '4px -6px' }}>
+          <path d="M4,-6 L7,-9 L8,-6Z" fill="#d9cdb8" stroke={ink} strokeWidth={0.4} />
+          <path d="M7,-9 q-2,-3 -3,-3 M8,-6 l0,2" stroke={ink} strokeWidth={0.5} fill="none" />
+        </g>
       </g>
     )
   if (kind === 'cow')
     return (
-      <g className="cr-graze">
+      <g className="pt-body">
+        {legs(ink, 0.9)}
+        <g className="pt-tail"><path d="M-8,-6 q-2,2 -1.4,5" stroke={ink} strokeWidth={0.5} fill="none" /></g>
         <path d="M-8,-5 C-8,-10 6,-10 7,-6 C7,-3 -6,-2 -8,-5Z" fill="#f4f0e6" stroke={ink} strokeWidth={0.5} />
         <ellipse cx={-3} cy={-7} rx={2.4} ry={1.6} fill="#3a3330" /><ellipse cx={3} cy={-6} rx={1.6} ry={1.2} fill="#3a3330" />
-        <path d="M7,-7 C9,-8 11,-6 10,-4 L7,-4Z" fill="#f4f0e6" stroke={ink} strokeWidth={0.4} />
-        <path d="M-6,-3 l0,3 M5,-3 l0,3" stroke={ink} strokeWidth={0.9} />
+        <g className="pt-head" style={{ transformBox: 'view-box', transformOrigin: '6px -6px' }}><path d="M7,-7 C9,-8 11,-6 10,-4 L7,-4Z" fill="#f4f0e6" stroke={ink} strokeWidth={0.4} /></g>
       </g>
     )
   if (kind === 'camel')
     return (
-      <g className="cr-plod">
+      <g className="pt-body">
+        <path className="pt-legs" d="M-6,-6 l0,6 M3,-6 l0,6" stroke={ink} strokeWidth={0.7} />
         <path d="M-8,-8 C-8,-12 -4,-14 -2,-11 C0,-14 4,-13 5,-9 C6,-7 4,-6 -6,-6Z" fill="#c9a26a" stroke={ink} strokeWidth={0.5} />
-        <path d="M5,-9 C7,-10 8,-14 10,-14 L11,-13" stroke="#c9a26a" strokeWidth={1.8} fill="none" strokeLinecap="round" />
-        <path d="M-6,-6 l0,6 M3,-6 l0,6" stroke={ink} strokeWidth={0.7} />
+        <g className="pt-head" style={{ transformBox: 'view-box', transformOrigin: '5px -9px' }}><path d="M5,-9 C7,-10 8,-14 10,-14 L11,-13" stroke="#c9a26a" strokeWidth={1.8} fill="none" strokeLinecap="round" /></g>
       </g>
     )
   return (
-    <g className="cr-graze">
+    <g className="pt-body">
+      {legs(ink, 0.7)}
+      <g className="pt-tail"><path d="M-6,-5 q-2,2 -1,4" stroke={ink} strokeWidth={0.5} fill="none" /></g>
       <path d="M-6,-4 C-6,-8 4,-8 5,-5 C5,-3 -4,-2 -6,-4Z" fill="#8f8780" stroke={ink} strokeWidth={0.5} />
-      <path d="M4,-6 L8,-8 L9,-5 L6,-4Z" fill="#8f8780" stroke={ink} strokeWidth={0.4} />
-      <path d="M6,-8 l-1,-3 M7,-8 l0,-3" stroke="#8f8780" strokeWidth={0.8} />
-      <path d="M-4,-3 l0,3 M3,-3 l0,3" stroke={ink} strokeWidth={0.7} />
+      <g className="pt-head" style={{ transformBox: 'view-box', transformOrigin: '4px -6px' }}>
+        <path d="M4,-6 L8,-8 L9,-5 L6,-4Z" fill="#8f8780" stroke={ink} strokeWidth={0.4} />
+        <g className="pt-ear"><path d="M6,-8 l-1,-3 M7,-8 l0,-3" stroke="#8f8780" strokeWidth={0.8} /></g>
+      </g>
     </g>
   )
 }
 
-function Eagle({ ink }: { ink: string }) {
+/** Sky birds seen from below: wings flap (fly) or hold still (glide). */
+export function Eagle({ ink }: { ink: string }) {
   return (
-    <g className="cr-soar">
-      <path d="M0,0 C-6,-3 -12,-3 -18,0 C-12,-1 -6,1 0,2 C6,1 12,-1 18,0 C12,-3 6,-3 0,0Z" fill="#5a4030" stroke={ink} strokeWidth={0.4} />
+    <g className="pt-body">
+      <g className="pt-flap"><path d="M0,0 C-6,-3 -12,-3 -18,0 C-12,-1 -6,1 0,2 C6,1 12,-1 18,0 C12,-3 6,-3 0,0Z" fill="#5a4030" stroke={ink} strokeWidth={0.4} /></g>
       <circle cx={0} cy={-0.6} r={1.2} fill="#f4f2ec" />
     </g>
   )
 }
 
-function Geese({ ink }: { ink: string }) {
+export function Goose({ ink }: { ink: string }) {
   return (
-    <g className="cr-geese">
-      {[[0, 0], [-8, -5], [-8, 5], [-16, -10], [-16, 10]].map(([x, y], i) => (
-        <path key={i} d={`M${x - 4},${y - 2} L${x},${y} L${x - 4},${y + 2}`} stroke={ink} strokeWidth={0.9} fill="none" className="cr-flap" style={{ animationDelay: `${-i * 0.15}s` }} />
-      ))}
+    <g className="pt-body">
+      <path d="M-5,0 L4,0" stroke={ink} strokeWidth={1.2} strokeLinecap="round" />
+      <g className="pt-flap"><path d="M-2,0 L-4,-4 M-2,0 L-4,4" stroke={ink} strokeWidth={0.9} fill="none" strokeLinecap="round" /></g>
     </g>
   )
 }
 
-function Bat({ ink }: { ink: string }) {
+export function Swallow({ ink }: { ink: string }) {
   return (
-    <g className="cr-bat">
-      <path className="cr-flap" d="M0,0 C-3,-3 -6,-4 -10,-2 C-8,-1 -7,1 -8,2 C-5,0 -3,1 0,2 C3,1 5,0 8,2 C7,1 8,-1 10,-2 C6,-4 3,-3 0,0Z" fill="#2a2632" stroke={ink} strokeWidth={0.3} />
+    <g className="pt-body">
+      <path d="M-6,0 L-11,-2 M-6,0 L-11,2" stroke={ink} strokeWidth={0.9} strokeLinecap="round" />
+      <ellipse cx={-1} cy={0} rx={5} ry={1.6} fill="#2a3550" />
+      <circle cx={4} cy={0} r={1.4} fill="#b8503a" />
+      <g className="pt-flap"><path d="M-9,1 Q-4,-7 0,0 Q4,-7 9,1" fill="none" stroke={ink} strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" transform="translate(-1,0)" /></g>
+    </g>
+  )
+}
+
+export function Bat({ ink }: { ink: string }) {
+  return (
+    <g className="pt-body">
+      <g className="pt-flap"><path d="M0,0 C-3,-3 -6,-4 -10,-2 C-8,-1 -7,1 -8,2 C-5,0 -3,1 0,2 C3,1 5,0 8,2 C7,1 8,-1 10,-2 C6,-4 3,-3 0,0Z" fill="#2a2632" stroke={ink} strokeWidth={0.3} /></g>
+      <path d="M-1,-1 l0.4,-1.4 M1,-1 l-0.4,-1.4" stroke="#2a2632" strokeWidth={0.6} />
     </g>
   )
 }
@@ -457,8 +562,11 @@ const BODY = 'M-13,0 C-16,-10 -12,-22 -2,-26 C6,-28 12,-22 12,-12 C12,-6 11,-2 9
 const HAUNCH = 'M-14,0 C-16,-8 -10,-13 -4,-12 C1,-11 2,-5 0,0Z'
 const HEAD = 'M-2.4,-32 C-2.4,-38 2,-41.4 7,-41.4 C12.4,-41.4 16.4,-37.6 16.4,-32 C16.4,-26.6 12.4,-23.4 7,-23.4 C1.8,-23.4 -2.4,-26.6 -2.4,-32Z'
 
-export function Nova({ s, ink, groom }: Art & { groom: boolean }) {
+/** Nova sitting. Poses: sit (looks about, tail flicks), look, groom (paw up, licks), blink (slow cat blink). */
+export function Nova({ s, ink, pose = 'sit' }: Art) {
   const sid = useSid()
+  const groom = pose === 'groom'
+  const shut = groom || pose === 'blink'
   const w = s(NOVA.white)
   const g = s(NOVA.grey)
   const cr = s(NOVA.cream)
@@ -469,14 +577,11 @@ export function Nova({ s, ink, groom }: Art & { groom: boolean }) {
         <clipPath id={`${sid}-nb`}><path d={BODY} /><path d={HAUNCH} /></clipPath>
         <clipPath id={`${sid}-nh`}><path d={HEAD} /></clipPath>
       </defs>
-      <ellipse cx={0} cy={1} rx={17} ry={3} fill="#000" opacity={0.15} />
-      {/* tail wrapped round her feet: grey with a cream band; the tip flicks */}
       <g className="cr-tailflick">
         <path d={tail} stroke={g} strokeWidth={4.2} fill="none" strokeLinecap="round" />
         <path d="M-17,-1 C-19,1 -17,3.6 -12,3.6" stroke={cr} strokeWidth={4.2} fill="none" strokeLinecap="round" />
       </g>
       <path d={tail} stroke={ink} strokeWidth={0.5} fill="none" opacity={0.5} transform="translate(0,2.1)" />
-      {/* white body with soft calico patches */}
       <path d={BODY} fill={w} />
       <path d={HAUNCH} fill={w} />
       <g clipPath={`url(#${sid}-nb)`}>
@@ -487,7 +592,6 @@ export function Nova({ s, ink, groom }: Art & { groom: boolean }) {
       </g>
       <path d={BODY} fill="none" stroke={ink} strokeWidth={1} />
       <path d={HAUNCH} fill="none" stroke={ink} strokeWidth={0.9} />
-      {/* front legs and white paws; while grooming one paw comes up to her mouth */}
       <path d="M4,-11 L3.6,-0.6" stroke={w} strokeWidth={3.4} strokeLinecap="round" />
       <path d="M4,-11 L3.6,-0.6" stroke={ink} strokeWidth={0.4} opacity={0.4} transform="translate(-1.8,0)" />
       <ellipse cx={3.8} cy={-0.4} rx={2.2} ry={1.2} fill={w} stroke={ink} strokeWidth={0.5} />
@@ -496,8 +600,7 @@ export function Nova({ s, ink, groom }: Art & { groom: boolean }) {
         <path d="M8.4,-11 L8.6,-0.6" stroke={ink} strokeWidth={0.4} opacity={0.4} transform="translate(1.8,0)" />
         <ellipse cx={8.8} cy={-0.4} rx={2.2} ry={1.2} fill={w} stroke={ink} strokeWidth={0.5} />
       </g>
-      {/* head: a grey cap over one eye and a cream patch over the other, white muzzle; dips to lick, or looks about */}
-      <g className={groom ? 'cr-lick' : 'cr-look'}>
+      <g className={groom ? 'cr-lick' : 'pt-head'}>
         <path d="M-1,-38 L0.5,-46 L5,-40Z" fill={g} stroke={ink} strokeWidth={0.9} strokeLinejoin="round" />
         <path d="M10,-40 L14.6,-46 L15,-37.6Z" fill={cr} stroke={ink} strokeWidth={0.9} strokeLinejoin="round" />
         <path d="M0.8,-39.6 L1.4,-43.6 L3.6,-40.6Z M11.4,-40.4 L13.8,-43.4 L14,-39Z" fill={s('#e9b4b4')} />
@@ -509,7 +612,7 @@ export function Nova({ s, ink, groom }: Art & { groom: boolean }) {
         </g>
         <path d={HEAD} fill="none" stroke={ink} strokeWidth={1} />
         <ellipse cx={7.2} cy={-27} rx={4.2} ry={2.8} fill={w} />
-        {groom ? (
+        {shut ? (
           <path d="M2.4,-31.6 q1.6,1.2 3.2,0 M9,-31.6 q1.6,1.2 3.2,0" stroke={ink} strokeWidth={0.9} fill="none" strokeLinecap="round" />
         ) : (
           <>
@@ -529,6 +632,14 @@ export function Nova({ s, ink, groom }: Art & { groom: boolean }) {
 
 // ---------- the farmer's fence post (he is never seen) ----------
 
+/** Where things sit on the fence, in scene units. */
+export const FENCE = (() => {
+  const x = 912
+  const base = yAt(LINES.near, x) + 10
+  const k = 1.7
+  return { x, base, k, postL: [x - 36 * k, base - 31 * k] as [number, number], postR: [x + 36 * k, base - 31 * k] as [number, number], rail: (lx: number) => [x + lx * k, base - (22 + ((lx + 40) / 80) * 4) * k - 1] as [number, number] }
+})()
+
 function FarmPost({ s, ink, onTap, spin }: Art & { onTap: () => void; spin: number }) {
   const wood = s('#8b6a4c')
   const straw = s('#e9c66b')
@@ -537,14 +648,12 @@ function FarmPost({ s, ink, onTap, spin }: Art & { onTap: () => void; spin: numb
       <path d="M-40,-22 L40,-26 M-40,-10 L40,-14" stroke={wood} strokeWidth={3} strokeLinecap="round" />
       <path d="M-40,-22 L40,-26 M-40,-10 L40,-14" stroke={ink} strokeWidth={0.5} opacity={0.5} />
       {[-36, 36].map((x) => <path key={x} d={`M${x - 2.5},2 L${x - 2.5},-30 L${x + 2.5},-31 L${x + 2.5},2Z`} fill={wood} stroke={ink} strokeWidth={0.8} />)}
-      {/* pitchfork leaning on the rail */}
       <path d="M20,2 L30,-46" stroke={s('#a07c58')} strokeWidth={1.6} strokeLinecap="round" />
       <path d="M27,-44 L33,-58 M29,-45 L35,-58 M31,-46 L37,-57 M26.6,-45 L32,-47" stroke="#8a8f94" strokeWidth={0.9} />
-      {/* his straw hat on the middle post, a stalk of hay tucked in the band */}
       <path d="M-2,2 L-2,-34 L3,-35 L3,2Z" fill={wood} stroke={ink} strokeWidth={0.8} />
       <g className="gs-tap" onClick={(e) => { e.stopPropagation(); onTap() }}>
         <rect x={-18} y={-52} width={38} height={24} fill="transparent" />
-        <g key={spin} className={spin ? 'cr-hatspin' : 'cr-hatsway'}>
+        <g key={spin} className={spin ? 'cr-hatspin' : undefined}>
           <ellipse cx={0.5} cy={-35} rx={15} ry={3.6} fill={straw} stroke={ink} strokeWidth={0.8} />
           <path d="M-7,-35 C-7,-44 8,-44 8,-35Z" fill={straw} stroke={ink} strokeWidth={0.8} />
           <path d="M-7,-37 C-2,-38.4 3,-38.4 8,-37" stroke={s('#b0472e')} strokeWidth={2} fill="none" />
@@ -557,30 +666,7 @@ function FarmPost({ s, ink, onTap, spin }: Art & { onTap: () => void; spin: numb
   )
 }
 
-// ---------- horses at the fallen apples ----------
-
-function GrazingHorse({ s, ink }: Art) {
-  const fur = s('#8a5a36')
-  const dark = s('#3e2616')
-  return (
-    <g>
-      <ellipse cx={0} cy={1} rx={34} ry={4} fill="#000" opacity={0.13} />
-      <path d="M-30,-44 L-32,0 M22,-42 L24,0" stroke={dark} strokeWidth={4} strokeLinecap="round" />
-      <path d="M-40,-58 C-52,-58 -58,-46 -60,-28 C-54,-36 -48,-44 -44,-50Z" fill={dark} stroke={ink} strokeWidth={1.2} className="gs-tail" />
-      <path d="M-42,-58 C-32,-71 22,-71 34,-61 C41,-55 41,-45 33,-41 C14,-36 -26,-36 -38,-42 C-46,-46 -47,-53 -42,-58Z" fill={fur} stroke={ink} strokeWidth={1.6} />
-      <path d="M-36,-44 L-38,0 M28,-42 L30,0" stroke={fur} strokeWidth={4.4} strokeLinecap="round" />
-      {/* neck down to the grass, jaw chewing */}
-      <g className="cr-munch">
-        <path d="M24,-60 C34,-56 44,-36 50,-14 C52,-8 50,-4 46,-4 L38,-6 C36,-20 30,-36 22,-46Z" fill={fur} stroke={ink} strokeWidth={1.5} strokeLinejoin="round" />
-        <path d="M24,-60 C32,-58 40,-44 44,-30" stroke={dark} strokeWidth={4} fill="none" strokeLinecap="round" />
-        <path d="M38,-24 L42,-30 L44,-22Z" fill={fur} stroke={ink} strokeWidth={1} />
-        <circle cx={46} cy={-16} r={1.4} fill={ink} />
-      </g>
-    </g>
-  )
-}
-
-function Apples({ n, s, ink }: Art & { n: number }) {
+export function Apples({ n, s, ink }: Art & { n: number }) {
   const spots = [[-22, 0], [-6, 3], [10, -1], [26, 2], [38, 0], [-34, 2]]
   return (
     <g>
@@ -594,167 +680,26 @@ function Apples({ n, s, ink }: Art & { n: number }) {
     </g>
   )
 }
+/** where the fallen apples lie (scene units) */
+export const APPLES_AT: [number, number] = [600, 584]
 
-/** Once the apple tree is fully grown, apples fall and now and then a horse wanders over to eat them. */
-function AppleVisit({ pal, on, now }: { pal: Palette; on: boolean; now?: number }) {
-  const [apples, setApples] = useState(5)
-  const [horse, setHorse] = useState(false)
-  useEffect(() => {
-    if (!on) return
-    let t: ReturnType<typeof setTimeout>
-    const cycle = () => {
-      setHorse(true)
-      let eaten = 0
-      const eat = setInterval(() => {
-        eaten++
-        setApples((a) => Math.max(0, a - 1))
-        if (eaten >= 3) clearInterval(eat)
-      }, 3500)
-      t = setTimeout(() => {
-        setHorse(false)
-        // a few more apples fall while the horse is away
-        setTimeout(() => setApples(5), 15000)
-        t = setTimeout(cycle, 45000 + Math.random() * 30000)
-      }, 14000)
-    }
-    t = setTimeout(cycle, now ? 0 : 8000)
-    return () => clearTimeout(t)
-  }, [on, now])
+/**
+ * The still parts of the garden's little world: the farmer's fence with his hat, the lizard's sunning stone, and
+ * fallen apples under a full-grown tree. Everything alive comes and goes through the director.
+ */
+export function Critters({ pal, apples, onEgg }: { pal: Palette; apples: number; onEgg: (name: string) => void }) {
   const art = { s: pal.shade, ink: pal.c.ink }
-  return (
-    <g>
-      <g transform="translate(600,584)"><Apples n={apples} {...art} /></g>
-      {horse && (
-        <g transform="translate(770,590) scale(-0.62,0.62)" className="cr-arrive">
-          <GrazingHorse {...art} />
-        </g>
-      )}
-    </g>
-  )
-}
-
-// ---------- the frog and its flies (silent) ----------
-
-/** A fly loops by the pond; every so often the frog's tongue flicks out and catches it. Frog sits at (302, 554). */
-export function FrogFlies({ ink }: { ink: string }) {
-  return (
-    <g transform="translate(302,548)">
-      <g className="cr-flyloop"><Fly ink={ink} /></g>
-      <path className="cr-tongueflick" d="M0,-1 Q8,-12 16,-14" stroke="#e8788a" strokeWidth={1.4} fill="none" strokeLinecap="round" />
-    </g>
-  )
-}
-
-/** Herds on the far hills, drawn behind the plant and trees. */
-export function FarLife({ pal, life, night, reduced }: { pal: Palette; life: number; night: number; reduced: boolean }) {
-  if (reduced || night > 0.6) return null
-  const ink = pal.c.ink
-  const far = (x: number, line: typeof LINES.far) => yAt(line, x)
-  return (
-    <g>
-      {/* far hills: herds grazing */}
-      {life >= 0.6 && (
-        <g>
-          {[[150, 'sheep'], [168, 'sheep'], [186, 'sheep'], [300, 'goat'], [316, 'goat']].map(([x, k], i) => (
-            <At key={i} x={x as number} y={far(x as number, LINES.far) + 2} k={0.9}><FarHerdAnimal kind={k as 'sheep'} ink={ink} /></At>
-          ))}
-        </g>
-      )}
-      {life >= 0.8 && (
-        <g>
-          {[[820, 'cow'], [848, 'cow'], [905, 'donkey']].map(([x, k], i) => (
-            <At key={i} x={x as number} y={far(x as number, LINES.far) + 2} k={1} flip={i === 1}><FarHerdAnimal kind={k as 'cow'} ink={ink} /></At>
-          ))}
-          <g className="cr-caravan"><At x={0} y={far(500, LINES.farBack) + 1} k={0.8}><FarHerdAnimal kind="camel" ink={ink} /></At><At x={-18} y={far(500, LINES.farBack) + 1} k={0.8}><FarHerdAnimal kind="camel" ink={ink} /></At></g>
-        </g>
-      )}
-    </g>
-  )
-}
-
-// ---------- the whole cast ----------
-
-export function Critters({ pal, life, night, stage, dead, reduced, onEgg, appleNow }: { pal: Palette; life: number; night: number; stage: number; dead: boolean; reduced: boolean; onEgg: (name: string) => void; appleNow?: number }) {
-  const art = { s: pal.shade, ink: pal.c.ink }
-  const ink = pal.c.ink
-  const nightOut = night > 0.6
   const [hat, setHat] = useState(0)
-  if (reduced) return null
   return (
     <g>
-      {/* sky */}
-      {!nightOut && life >= 0.85 && <At x={0} y={120} k={1.3}><Eagle ink={ink} /></At>}
-      {!nightOut && life >= 0.7 && <At x={0} y={170} k={1.2}><Geese ink={ink} /></At>}
-      {nightOut && life >= 0.3 && (
-        <>
-          <At x={0} y={210} k={1.4}><Bat ink={ink} /></At>
-          <g style={{ animationDelay: '-6s' }}><At x={0} y={250} k={1.1} cls="cr-bat-late"><Bat ink={ink} /></At></g>
-          <At x={480} y={520} k={1.3}><g className="cr-mothloop"><Moth ink={ink} /></g></At>
-          <At x={92} y={600} k={1.2}><Badger {...art} /></At>
-        </>
-      )}
-
-      {/* the farmer's fence on the right, with his hat */}
-      <At x={912} y={yAt(LINES.near, 912) + 10} k={1.7}>
+      <g transform={`translate(${FENCE.x},${FENCE.base}) scale(${FENCE.k})`}>
         <FarmPost {...art} spin={hat} onTap={() => { setHat(Date.now()); onEgg('hat') }} />
-        {!nightOut && life >= 0.5 && <At x={-24} y={-27} k={1}><Songbird body={pal.shade('#8a5a3a')} belly={pal.shade('#e2683a')} ink={ink} peck={false} /></At>}
-        {!nightOut && life >= 0.75 && <At x={22} y={-29} k={0.95} flip><Dove ink={ink} /></At>}
-        {!nightOut && life >= 0.85 && <At x={36} y={-32} k={0.95}><Crow ink={ink} /></At>}
-        {!nightOut && life >= 0.7 && <At x={-36} y={-18} k={0.9}><Woodpecker ink={ink} /></At>}
-      </At>
-
-      {/* pond life */}
-      {!nightOut && life >= 0.55 && (
-        <>
-          <g className="cr-swim"><At x={0} y={0}><g transform="translate(232,560)"><Duck {...art} /><g transform="translate(-14,1) scale(0.6)"><Duck {...art} baby /></g><g transform="translate(-24,1) scale(0.6)"><Duck {...art} baby /></g></g></At></g>
-          <At x={192} y={548} k={1.5}><Kingfisher ink={ink} /></At>
-          <At x={258} y={558} k={1.5}><Fish ink={ink} /></At>
-        </>
-      )}
-      {!nightOut && life >= 0.75 && (
-        <>
-          <g className="cr-swim cr-swim-slow"><At x={0} y={0}><g transform="translate(300,562) scale(-1,1)"><Swan ink={ink} /></g></At></g>
-          <At x={348} y={560} k={1.65}><Heron ink={ink} /></At>
-          <At x={210} y={562} k={1.35}><Turtle {...art} /></At>
-        </>
-      )}
-      {life >= 0.4 && !nightOut && <FrogFlies ink={ink} />}
-      {life >= 0.5 && <At x={150} y={572} k={2.1}><Toad {...art} /></At>}
-
-      {/* around the plant */}
-      {stage >= 10 && !dead && <AppleVisit pal={pal} on={(life >= 0.6 && !nightOut) || !!appleNow} now={appleNow} />}
-      {!nightOut && life >= 0.6 && <At x={690} y={520} k={2.47}><Hummingbird ink={ink} /></At>}
-
-      {/* foreground */}
-      {!nightOut && life >= 0.3 && <At x={430} y={640} k={2.88}><AntTrail {...art} /></At>}
-      {life >= 0.3 && <At x={760} y={652} k={2.88}><Ladybird {...art} /></At>}
-      {life >= 0.35 && <At x={360} y={676} k={2.7}><Worm {...art} /></At>}
-      {!nightOut && life >= 0.45 && <At x={840} y={630} k={2.7}><Caterpillar {...art} /></At>}
-      {!nightOut && life >= 0.5 && <g className="cr-walkacross"><At x={0} y={668} k={2.7}><Beetle {...art} /></At></g>}
-      {!nightOut && life >= 0.55 && <At x={250} y={650} k={2.7}><Grasshopper {...art} /></At>}
-      {life >= 0.5 && <At x={60} y={470} k={2.34}><Spider ink={ink} /></At>}
-      {!nightOut && life >= 0.6 && <At x={520} y={662} k={2.52}><Mouse {...art} /></At>}
-      {!nightOut && life >= 0.6 && <g className="cr-tortoise"><At x={0} y={612} k={2.52}><Tortoise {...art} /></At></g>}
-      {!nightOut && life >= 0.65 && <At x={950} y={600} k={2.34}><Lizard {...art} /></At>}
-      {!nightOut && life >= 0.7 && <At x={700} y={660} k={2.52}><Chipmunk {...art} /></At>}
-      {life >= 0.7 && <At x={120} y={652} k={2.52}><Mole {...art} /></At>}
-      {!nightOut && life >= 0.55 && <At x={790} y={600} k={2.34}><Songbird body={pal.shade('#a88b6a')} belly={pal.shade('#efe0c8')} ink={ink} /></At>}
-      {!nightOut && life >= 0.8 && <At x={470} y={605} k={2.34} flip><Songbird body={pal.shade('#4f7fc4')} belly={pal.shade('#e9a066')} ink={ink} /></At>}
-      {!nightOut && life >= 0.6 && <At x={600} y={520} k={2.52}><g className="cr-beeloop"><Bumblebee ink={ink} /></g></At>}
-      {!nightOut && life >= 0.65 && <At x={300} y={530} k={2.52}><g className="cr-damsel"><Damselfly ink={ink} /></g></At>}
-      {!nightOut && life >= 0.7 && <At x={380} y={560} k={2.7}><g className="cr-flyabout"><ButterflySp wing={pal.shade('#f5f1e6')} spot="#333" ink={ink} /></g></At>}
-      {!nightOut && life >= 0.85 && <At x={880} y={560} k={2.88}><g className="cr-flyabout cr-flyabout-2"><ButterflySp wing={pal.shade('#f2d24a')} spot="#1f2a44" ink={ink} /></g></At>}
+      </g>
+      <path d="M936,606 C934,596 952,590 966,594 C976,597 978,604 972,607Z" fill={pal.shade('#a59f94')} stroke={pal.c.ink} strokeWidth={1.2} />
+      {apples > 0 && <g transform={`translate(${APPLES_AT[0]},${APPLES_AT[1]})`}><Apples n={apples} {...art} /></g>}
     </g>
   )
 }
-
-/** Species drawn in the garden, for the count (and the playground). */
-export const SPECIES = [
-  'fox', 'rabbit', 'deer', 'squirrel', 'hedgehog', 'horse', 'elephant', 'skunk', 'ferret', 'monkey', 'owl', 'frog', 'dragonfly', 'snail', 'swallow', 'firefly', 'honeybee', 'painted butterfly',
-  'ladybird', 'ant', 'earthworm', 'caterpillar', 'beetle', 'grasshopper', 'garden spider', 'bumblebee', 'fly', 'damselfly', 'moth', 'cabbage white', 'swallowtail',
-  'mouse', 'tortoise', 'lizard', 'toad', 'chipmunk', 'mole', 'badger', 'robin', 'bluebird', 'sparrow', 'hummingbird', 'woodpecker', 'dove', 'crow', 'duck', 'duckling',
-  'swan', 'heron', 'kingfisher', 'turtle', 'fish', 'sheep', 'goat', 'cow', 'donkey', 'camel', 'eagle', 'goose', 'bat', 'cat (Nova)',
-] as const
 
 // ---------- hidden secrets ----------
 

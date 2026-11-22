@@ -30,6 +30,8 @@ interface ClumpM {
   rim: string
   /** where the broken ink outline starts (0..100) */
   dash: number
+  /** snow lying on top of the lobe */
+  cap: string
 }
 interface BarkM {
   /** darker band down the side away from the sun */
@@ -277,7 +279,7 @@ function tree(stage: GrowthStage, r: Rng, fruit: FruitKind): PlantM {
   const baseW = big ? 46 : 19
   const maxD = big ? 3 : 2
   const clumpR = big ? 64 : 44
-  const clumps: Omit<ClumpM, 'path' | 'hi' | 'light' | 'dark' | 'rim' | 'dash'>[] = []
+  const clumps: Omit<ClumpM, 'path' | 'hi' | 'light' | 'dark' | 'rim' | 'dash' | 'cap'>[] = []
 
   const clampUp = (a: number) => Math.max(-162, Math.min(-18, a))
   // the trunk flares at the foot and tapers gently; limbs taper from base to tip
@@ -363,6 +365,7 @@ function tree(stage: GrowthStage, r: Rng, fruit: FruitKind): PlantM {
       dark: dabs(big ? 14 : 9, Math.PI * 0.05, Math.PI * 0.9, 0.2, 0.85, [7, 10]),
       rim: dabs(big ? 12 : 8, -Math.PI, 0, 0.92, 1.08, [8, 12]),
       dash: r.range(0, 100),
+      cap: scallop(c.x - c.r * 0.06, c.y - c.r * 0.66, c.r * 0.6, c.r * 0.17, 9, r, 0.32),
     }
   })
 
@@ -384,7 +387,8 @@ function tree(stage: GrowthStage, r: Rng, fruit: FruitKind): PlantM {
     height: trunkLen * 2.2,
     stage,
     fruit,
-    blossoms: stage === 9 ? blossomsOn(full, r, big) : null,
+    // a grown tree blossoms in spring and bears fruit later in the year
+    blossoms: blossomsOn(full, r, big),
     fruits: stage >= 10 ? fruitsOn(full, r, fruit, stage >= 11) : null,
   }
 }
@@ -493,6 +497,26 @@ export interface PlantLook {
   pal: Palette
 }
 
+/** Season and snow for the plant's look. */
+interface Env {
+  /** 0..1 how much of the crown is still in leaf (autumn thins it, winter leaves it nearly bare) */
+  inLeaf: number
+  spring: number
+  winter: number
+  snow: number
+}
+const envOf = (pal: Palette): Env => ({
+  inLeaf: 1 - 0.25 * pal.season.autumn - 0.82 * pal.season.winter,
+  spring: pal.season.spring,
+  winter: pal.season.winter,
+  snow: pal.snow,
+})
+
+/** CSS classes for the sway of the plant (and anything hanging in it) at a wind strength 0..1. */
+export function swayClass(wind: number): string {
+  return wind < 0.2 ? 'gs-sway' : wind < 0.45 ? 'gs-sway gs-sway-breeze' : wind < 0.75 ? 'gs-sway gs-sway-windy' : 'gs-sway gs-sway-gale'
+}
+
 function looks(h: number, dead: boolean) {
   const wilt = dead ? 1 : Math.max(0, Math.min(1, (0.65 - h) / 0.65))
   let keep = 1
@@ -534,6 +558,9 @@ interface Inks {
   outline: string
   furrow: string
   barkHi: string
+  /** 0..1 snow lying on the branches */
+  snow: number
+  snowC: string
 }
 
 function LeafV({ l, look, c, uid }: { l: LeafM; look: ReturnType<typeof looks>; c: Inks; uid: string }) {
@@ -587,6 +614,9 @@ function BranchV({ b, look, c, uid, droopMax, pass }: { b: BranchM; look: Return
                 <path d={b.bark.shadow} fill={c.stemDark} opacity={0.42} />
                 <path d={b.bark.furrows} fill="none" stroke={c.furrow} strokeWidth={b.bark.w > 30 ? 1.3 : 1} strokeLinecap="round" opacity={0.6} />
                 <path d={b.bark.hi} fill="none" stroke={c.barkHi} strokeWidth={Math.max(1.2, b.bark.w * 0.07)} strokeLinecap="round" opacity={0.55} />
+                {c.snow > 0.05 && b.depth > 0 && (
+                  <path d={b.bark.hi} fill="none" stroke={c.snowC} strokeWidth={Math.max(2.2, b.bark.w * 0.16)} strokeLinecap="round" opacity={Math.min(1, c.snow * 1.2)} transform="translate(0,-1.5)" />
+                )}
               </g>
             )}
             {b.kids.map((k, i) => (k.cont ? <BranchV key={`c${i}`} b={k} look={look} c={c} uid={uid} droopMax={droopMax} pass={pass} /> : null))}
@@ -630,6 +660,7 @@ function Mound({ w, pal, seed }: { w: number; pal: Palette; seed: number }) {
         <ellipse key={i} cx={r.range(-w * 0.6, w * 0.6)} cy={r.range(-w * 0.12, 2)} rx={r.range(1.5, 3)} ry={r.range(1, 2)} fill={mix(soil, '#000', 0.25)} />
       ))}
       <path d={`M${-w * 0.45},${-w * 0.06} q${w * 0.1},-4 ${w * 0.2},-1 M${w * 0.15},${-w * 0.12} q${w * 0.12},-3 ${w * 0.22},0`} stroke={mix(soil, '#fff', 0.25)} strokeWidth={1.6} fill="none" strokeLinecap="round" />
+      {pal.snow > 0.05 && <path d={smooth(pts.map(([x, y]) => [x * 0.92, y - 1.5] as P), true)} fill={pal.shade('#f6f9fc')} opacity={Math.min(1, pal.snow * 1.3)} transform="scale(1,0.8)" />}
     </g>
   )
 }
@@ -655,14 +686,17 @@ function Seed({ pal, cracked }: { pal: Palette; cracked: boolean }) {
   )
 }
 
-function Canopy({ m, look, pal }: { m: PlantM; look: ReturnType<typeof looks>; pal: Palette }) {
+function Canopy({ m, look, pal, env, rustle }: { m: PlantM; look: ReturnType<typeof looks>; pal: Palette; env: Env; rustle: string }) {
   const wither = (g: string) => mix(mix(g, '#d4be55', look.yellow * 0.85), '#9a6c3c', look.brown * 0.8)
-  const tones = ['#5c9c46', '#6eae4c', '#83c058'].map((g) => pal.shade(wither(g)))
-  const shadow = pal.shade(wither('#3d7434'))
-  const deep = pal.shade(wither('#2f5f2b'))
-  const hi = pal.shade(wither('#a9d46c'))
-  const sparkle = pal.shade(wither('#c8e68a'))
-  const vis = (cl: ClumpM) => cl.rank < look.keep
+  // the crown turns fully in autumn: russet on the shaded lobes, amber and gold on the sunlit ones
+  const k = 1.4
+  const tones = ['#5c9c46', '#6eae4c', '#83c058'].map((g) => pal.leaf(wither(g), k))
+  const shadow = pal.leaf(wither('#3d7434'), k)
+  const deep = pal.leaf(wither('#2f5f2b'), k)
+  const hi = pal.leaf(wither('#a9d46c'), k)
+  const sparkle = pal.leaf(wither('#c8e68a'), k)
+  const snowC = pal.shade('#f6f9fc')
+  const vis = (cl: ClumpM) => cl.rank < look.keep * env.inLeaf
   const tr = (cl: ClumpM) => ({
     className: 'gs-t',
     style: {
@@ -680,6 +714,8 @@ function Canopy({ m, look, pal }: { m: PlantM; look: ReturnType<typeof looks>; p
       ))}
       {m.clumps.map((cl, i) => (
         <g key={i} {...tr(cl)}>
+          {/* every third lobe rustles a little on its own, out of step with the sway of the whole tree */}
+          <g className={i % 3 === 1 ? rustle : undefined} style={i % 3 === 1 ? { animationDelay: `${(-cl.dash / 20).toFixed(1)}s` } : undefined}>
           <path d={cl.path} transform="translate(3,7)" fill={shadow} opacity={0.7} />
           <path d={cl.path} fill={tones[cl.tone]} />
           <path d={cl.rim} fill={tones[cl.tone]} stroke={pal.c.ink} strokeWidth={0.5} strokeOpacity={0.35} />
@@ -687,6 +723,8 @@ function Canopy({ m, look, pal }: { m: PlantM; look: ReturnType<typeof looks>; p
           {cl.tone > 0 && <path d={cl.hi} fill={hi} opacity={cl.tone === 2 ? 0.6 : 0.4} />}
           <path d={cl.light} fill={cl.tone === 2 ? sparkle : hi} opacity={0.85} />
           <path d={cl.path} fill="none" stroke={pal.c.ink} strokeWidth={1.2} strokeLinecap="round" pathLength={100} strokeDasharray="34 26 18 22" strokeDashoffset={cl.dash} opacity={0.55} />
+          {env.snow > 0.05 && <path d={cl.cap} fill={snowC} stroke={pal.c.ink} strokeWidth={0.8} strokeOpacity={0.4} opacity={Math.min(1, env.snow * 1.3)} />}
+          </g>
         </g>
       ))}
     </g>
@@ -702,11 +740,12 @@ const FRUIT_COLORS: Record<FruitKind, [string, string]> = {
 }
 
 /** Blossoms or fruit on the crown. The groups drop one by one as the tree gets thirsty. */
-function Crops({ m, look, pal, dead }: { m: PlantM; look: ReturnType<typeof looks>; pal: Palette; dead: boolean }) {
-  const crop = m.blossoms ?? m.fruits
-  if (!crop || dead) return null
+function Crops({ m, look, pal, dead, env }: { m: PlantM; look: ReturnType<typeof looks>; pal: Palette; dead: boolean; env: Env }) {
+  // a young tree is in blossom; a grown tree blossoms in spring and is in fruit the rest of the year; nothing in winter
+  const blossom = m.stage === 9 || env.spring > 0.5
+  const crop = blossom ? m.blossoms : m.fruits
+  if (!crop || dead || env.winter > 0.55) return null
   const ink = pal.c.ink
-  const blossom = !!m.blossoms
   const pink = m.fruit === 'apple' || m.fruit === 'pomegranate'
   const [body, shadeC] = FRUIT_COLORS[m.fruit]
   const keepAt = [0.97, 0.86, 0.7]
@@ -744,14 +783,21 @@ export interface PlantProps {
   /** unique id prefix for gradients */
   uid: string
   windy?: boolean
+  /** 0..1 wind strength (overrides `windy`): the sway and rustle follow it */
+  wind?: number
 }
 
 /** Draws the plant with its base at (0,0). */
-export const Plant = memo(function Plant({ stage, health, dead, pal, seed = 1, uid, windy }: PlantProps) {
+export const Plant = memo(function Plant({ stage, health, dead, pal, seed = 1, uid, windy, wind }: PlantProps) {
   const m = useMemo(() => buildPlant(stage, seed), [stage, seed])
   const look = looks(health, dead)
+  const env = envOf(pal)
+  const w0 = wind ?? (windy ? 0.6 : 0.1)
+  const sway = swayClass(w0)
+  const rustle = w0 < 0.2 ? 'gs-rustle' : w0 < 0.5 ? 'gs-rustle gs-rustle-breeze' : 'gs-rustle gs-rustle-windy'
   const deadGrey = '#8d8780'
-  const w = (c: string) => pal.shade(dead ? mix(c, deadGrey, 0.85) : mix(mix(c, '#c9b458', look.yellow * 0.6), '#9b7a4a', look.brown * 0.7))
+  // young green plants follow the season a little (they are watered and cared for, so less than the trees)
+  const w = (c: string) => (dead ? pal.shade(mix(c, deadGrey, 0.85)) : pal.leaf(mix(mix(c, '#c9b458', look.yellow * 0.6), '#9b7a4a', look.brown * 0.7), 0.4))
   const c: Inks = {
     ink: pal.c.ink,
     stem: m.kind === 'tree' ? pal.shade(dead ? '#8e8a84' : '#8b6a4c') : w('#86bc5a'),
@@ -766,6 +812,8 @@ export const Plant = memo(function Plant({ stage, health, dead, pal, seed = 1, u
     outline: m.kind === 'tree' ? mix(pal.c.ink, pal.shade('#3a2a1c'), 0.35) : pal.c.ink,
     furrow: pal.shade(dead ? '#5a5652' : '#3e2c1e'),
     barkHi: pal.shade(dead ? '#b5b0a8' : '#d9bf98'),
+    snow: env.snow,
+    snowC: pal.shade('#f6f9fc'),
   }
   const droopMax = m.kind === 'tree' ? 4 : dead ? 48 : 30
 
@@ -813,21 +861,21 @@ export const Plant = memo(function Plant({ stage, health, dead, pal, seed = 1, u
       {stage <= 5 && <Mound w={stage === 2 ? 56 : 46} pal={pal} seed={seed} />}
       {stage === 2 && <Seed pal={pal} cracked />}
       {m.kind === 'tree' && <path d={m.roots} fill={c.outline} stroke={c.outline} strokeWidth={2.3} strokeLinejoin="round" />}
-      <g className={windy ? 'gs-sway gs-sway-windy' : 'gs-sway'}>
+      <g className={sway}>
         {m.root && <BranchV b={m.root} look={look} c={c} uid={uid} droopMax={droopMax} pass="outline" />}
       </g>
       {m.kind === 'tree' && <path d={m.roots} fill={c.stem} />}
       {m.kind === 'tree' && !dead && (
         <path d="M-30,-2 q4,-7 9,-3 M-14,-4 q3,-5 7,-2 M14,-3 q3,-6 8,-2 M26,-1 q2,-4 6,-1" stroke={pal.shade('#6f9a3a')} strokeWidth={2.4} strokeLinecap="round" fill="none" opacity={0.8} />
       )}
-      {m.fruits?.fallen && !dead && look.keep > 0.6 && <path d={m.fruits.fallen} fill={pal.shade(FRUIT_COLORS[m.fruit][0])} stroke={c.ink} strokeWidth={0.8} />}
-      <g className={windy ? 'gs-sway gs-sway-windy' : 'gs-sway'}>
+      {m.fruits?.fallen && !dead && look.keep > 0.6 && env.spring < 0.5 && env.winter < 0.55 && <path d={m.fruits.fallen} fill={pal.shade(FRUIT_COLORS[m.fruit][0])} stroke={c.ink} strokeWidth={0.8} />}
+      <g className={sway}>
         {m.root && <BranchV b={m.root} look={look} c={c} uid={uid} droopMax={droopMax} pass="fill" />}
         {m.root && m.kind !== 'tree' && <BranchV b={m.root} look={look} c={c} uid={uid} droopMax={droopMax} pass="top" />}
         {m.kind === 'tree' && (
           <g className="gs-canopy">
-            <Canopy m={m} look={look} pal={pal} />
-            <Crops m={m} look={look} pal={pal} dead={dead} />
+            <Canopy m={m} look={look} pal={pal} env={env} rustle={rustle} />
+            <Crops m={m} look={look} pal={pal} dead={dead} env={env} />
           </g>
         )}
       </g>

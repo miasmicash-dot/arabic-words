@@ -1,20 +1,12 @@
-// Easter eggs: the forgetful squirrel, its sprouting nuts, a bird family in the tree, a rabbit burrow and a snail.
+// Easter eggs: the forgetful squirrel, its sprouting nuts, a bird family in the tree and the rabbit burrow.
 import { useEffect, useState } from 'react'
 import { mix } from './ink'
 import { LINES, yAt } from './Landscape'
-import { Squirrel } from './Creatures'
+import { Acorn, Squirrel } from './Creatures'
 import type { Palette } from './palette'
 import { ageDays, nutSpot, type EggMemory } from './eggMemory'
 
 const groundY = (x: number) => yAt(LINES.near, x) + 20
-
-const Acorn = ({ ink }: { ink: string }) => (
-  <g>
-    <path d="M-3,-1 C-3,3 -1,5 0,5.5 C1,5 3,3 3,-1Z" fill="#b5793d" stroke={ink} strokeWidth={0.6} />
-    <path d="M-3.6,-1 C-3,-4 3,-4 3.6,-1Z" fill="#7a5530" stroke={ink} strokeWidth={0.6} />
-    <path d="M0,-3.4 l0.6,-1.6" stroke={ink} strokeWidth={0.7} />
-  </g>
-)
 
 // ---------- the squirrel's daily visit ----------
 
@@ -39,7 +31,7 @@ export function SquirrelAct({ pal, today, memory, onBury, onDone }: { pal: Palet
     const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
     let cur = 0
     const go = async (x: number, extra: Partial<Pose> = {}) => {
-      const dur = Math.abs(x - cur) / 190
+      const dur = Math.abs(x - cur) / 170 + 0.25
       const flip = x < cur
       cur = x
       setPose((p) => ({ ...(p as Pose), x, y: groundY(x), flip, mode: 'run', dur, bubble: false, ...extra }))
@@ -93,10 +85,12 @@ export function SquirrelAct({ pal, today, memory, onBury, onDone }: { pal: Palet
     <g>
       {dug !== null && <ellipse cx={dug} cy={groundY(dug) + 1} rx={7} ry={2} fill={mix(pal.c.soil, '#000', 0.2)} className="gs-fadeout" />}
       {mound !== null && <ellipse cx={mound} cy={groundY(mound) + 1} rx={8} ry={2.6} fill={pal.c.soil} />}
-      <g style={{ transform: `translate(${pose.x.toFixed(1)}px,${pose.y.toFixed(1)}px)`, transition: `transform ${pose.dur.toFixed(2)}s linear` }}>
+      <g style={{ transform: `translate(${pose.x.toFixed(1)}px,${pose.y.toFixed(1)}px)`, transition: `transform ${pose.dur.toFixed(2)}s cubic-bezier(.45,.05,.4,1)` }}>
         <g transform={`scale(${pose.flip ? -0.8 : 0.8},0.8)`}>
-          <g className={pose.mode === 'dig' ? 'gs-dig' : pose.mode === 'pat' ? 'gs-pat' : undefined}>
-            <Squirrel s={pal.shade} ink={ink} still={pose.mode !== 'run'} />
+          <g className={pose.mode === 'dig' ? 'gs-dig' : pose.mode === 'pat' ? 'gs-pat' : pose.mode === 'run' ? 'gs-hop gs-hop-fast' : undefined}>
+            <g className={`sp pose-${pose.mode === 'think' ? 'look' : pose.mode === 'run' ? 'hop' : 'idle'}`}>
+              <Squirrel s={pal.shade} ink={ink} pose={pose.mode === 'think' ? 'sit' : undefined} />
+            </g>
           </g>
           {pose.carrying && (
             <g transform="translate(16,-14)">
@@ -246,59 +240,15 @@ export function Nest({ pal, age, daytime, sunny }: { pal: Palette; age: number; 
 
 export const BURROW_X = 438
 
-export function Burrow({ pal, age, peeking, sid }: { pal: Palette; age: number; peeking: boolean; sid: (n: string) => string }) {
+/** The rabbit's burrow (dug on the first sunny day). The rabbit itself comes and goes in its own story. */
+export function Burrow({ pal, age }: { pal: Palette; age: number }) {
   const ink = pal.c.ink
   const y = groundY(BURROW_X) - 4
-  const fur = pal.shade('#a88e74')
-  const Bunny = ({ dx, s, delay }: { dx: number; s: number; delay: number }) => (
-    <g transform={`translate(${dx},0) scale(${s})`}>
-      <g className="gs-peek" style={{ animationDelay: `${delay}s` }}>
-        <path d="M-3,-10 C-5,-20 -3,-25 -1,-24 C1,-23 0,-16 -0.5,-10Z M2,-10 C2,-20 5,-24 6,-22 C7,-19 4,-14 3,-10Z" fill={fur} stroke={ink} strokeWidth={0.8} />
-        <ellipse cx={1} cy={-5} rx={7} ry={6} fill={fur} stroke={ink} strokeWidth={0.9} />
-        <circle cx={-1.5} cy={-6} r={1} fill="#111" />
-        <circle cx={3.5} cy={-6} r={1} fill="#111" />
-        <circle cx={1} cy={-3.5} r={0.9} fill={pal.shade('#d88a8a')} />
-      </g>
-    </g>
-  )
   return (
     <g transform={`translate(${BURROW_X},${y})`}>
       <path d="M-22,4 C-18,-4 -8,-6 -2,-5 C-12,-2 -16,2 -14,5Z" fill={mix(pal.c.soil, pal.c.near2, age > 3 ? 0.5 : 0.1)} />
       <ellipse cx={0} cy={1} rx={11} ry={5.5} fill={mix(pal.c.soil, '#000', 0.55)} stroke={ink} strokeWidth={1} />
-      <defs>
-        <clipPath id={sid('burrow')}>
-          <rect x={-20} y={-40} width={40} height={41} />
-        </clipPath>
-      </defs>
-      {peeking && age >= 2 && (
-        <g clipPath={`url(#${sid('burrow')})`} transform="translate(0,1)">
-          <Bunny dx={0} s={1} delay={-4} />
-          {age >= 9 && <Bunny dx={7} s={0.7} delay={-11} />}
-        </g>
-      )}
       <path d="M-11,1 C-8,-4 8,-4 11,1" stroke={mix(pal.c.near2, '#1f3a14', 0.3)} strokeWidth={2} fill="none" />
-    </g>
-  )
-}
-
-// ---------- a snail crossing the path on grey days ----------
-
-export function Snail({ pal }: { pal: Palette }) {
-  const ink = pal.c.ink
-  const x0 = 520
-  const x1 = 650
-  const y0 = yAt(LINES.path, x0) + 9
-  const y1 = yAt(LINES.path, x1) + 9
-  return (
-    <g>
-      <path d={`M${x0},${y0 + 1} L${x1},${y1 + 1}`} stroke="#dfe8f0" strokeWidth={2} opacity={0.6} className="gs-trail" style={{ transformOrigin: `${x0}px ${y0}px` }} />
-      <g style={{ ['--sx' as string]: `${x1 - x0}px`, ['--sy' as string]: `${y1 - y0}px` }} className="gs-snail">
-        <g transform={`translate(${x0},${y0})`}>
-          <path d="M-7,1 C-7,-1 4,-1 8,0 L10,-4 L11,-3 L9.5,0 C10,1 6,2 -7,1Z" fill={pal.shade('#c9b79a')} stroke={ink} strokeWidth={0.6} />
-          <circle cx={-1} cy={-4} r={4.8} fill={pal.shade('#b07a45')} stroke={ink} strokeWidth={0.7} />
-          <path d="M-1,-4 m-2.6,0 a2.6,2.6 0 1 1 2.6,2.6 a1.4,1.4 0 1 1 -1.4,-1.4" stroke={ink} strokeWidth={0.6} fill="none" />
-        </g>
-      </g>
     </g>
   )
 }

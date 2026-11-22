@@ -1,6 +1,7 @@
 // Colours of the scene by time of day and weather. Everything painted goes through `shade`.
 import type { Weather } from '../types'
 import { desaturate, mix, multiply } from './ink'
+import { fieldColours, pureSeason, seasonGreen, seasonLight, type SeasonMix } from './season'
 
 type Key = { h: number; top: string; mid: string; bottom: string; tint: string; amt: number; glow: string }
 
@@ -107,6 +108,31 @@ const DRY: Partial<typeof BASE> = {
 
 export type Colors = typeof BASE
 
+/** The living environment: season weights and the traces weather has left on the ground. */
+export interface PaletteEnv {
+  season: SeasonMix
+  /** 0..1 settled snow */
+  snow: number
+  /** 0..1 wet ground */
+  wet: number
+}
+const DEFAULT_ENV: PaletteEnv = { season: pureSeason('summer'), snow: 0, wet: 0 }
+
+// how strongly the season changes each colour (tree leaves change most, far hills least)
+const SEASONAL: Partial<Record<keyof Colors, number>> = {
+  farHill: 0.55, farHill2: 0.5, midA: 0.65, midB: 0.65, near: 0.7, near2: 0.7, front: 0.7, front2: 0.7,
+  bush: 0.8, bushDark: 0.8, bushLight: 0.8, grass: 0.7, stem: 0.5,
+}
+// how white each colour gets under a full snow cover (bushes and grass blades keep some colour)
+const SNOWY: Partial<Record<keyof Colors, number>> = {
+  farHill: 0.82, farHill2: 0.85, midA: 0.86, midB: 0.86, ochre: 0.84, ochre2: 0.86, near: 0.9, near2: 0.88,
+  front: 0.9, front2: 0.86, path: 0.78, pathEdge: 0.6, bush: 0.3, bushLight: 0.45, bushDark: 0.15, grass: 0.35,
+}
+const WETTABLE: Partial<Record<keyof Colors, number>> = {
+  midA: 0.5, midB: 0.5, ochre: 0.7, ochre2: 0.7, near: 0.8, near2: 0.8, front: 0.9, front2: 0.9, path: 1, pathEdge: 1, soil: 1,
+}
+const SNOW = '#f3f6fa'
+
 export interface Palette {
   sky: { top: string; mid: string; bottom: string; glow: string }
   c: Colors
@@ -117,11 +143,22 @@ export interface Palette {
   hour: number
   /** 0 = thriving and colourful, 1 = the plant has died and everything is grey */
   gloom: number
+  /** season weights (smooth through the year) */
+  season: SeasonMix
+  /** 0..1 settled snow */
+  snow: number
+  /** 0..1 wet ground */
+  wet: number
+  /** `shade` for leaves and grass: also follows the season (amber in autumn, olive in winter). */
+  leaf: (c: string, strength?: number) => string
 }
 
-export function palette(hour: number, weather: Weather, gloom = 0): Palette {
+export function palette(hour: number, weather: Weather, gloom = 0, env: PaletteEnv = DEFAULT_ENV): Palette {
   const k = at(hour)
   const night = nightness(hour)
+  const sea = env.season
+  const sl = seasonLight(sea)
+  const slAmt = sl.amt * (1 - night * 0.7)
   const g = Math.max(0, Math.min(1, gloom))
   // a neglected garden loses its colour little by little, until it is almost monotone
   const desat = 1 - (1 - { sunny: 0, 'partly-cloudy': 0.12, overcast: 0.5, drought: 0.15 }[weather]) * (1 - g * 0.88)
@@ -130,8 +167,10 @@ export function palette(hour: number, weather: Weather, gloom = 0): Palette {
     let x = desaturate(c, desat)
     if (darken) x = multiply(x, '#8d97a0', darken * 2.2)
     if (weather === 'drought') x = multiply(x, '#fff0d0', 0.4)
+    if (slAmt > 0.001) x = multiply(x, sl.tint, slAmt)
     return multiply(x, k.tint, k.amt)
   }
+  const leaf = (c: string, strength = 1) => shade(seasonGreen(c, sea, strength))
 
   let { top, mid, bottom, glow } = k
   if (weather === 'partly-cloudy') {
@@ -149,6 +188,13 @@ export function palette(hour: number, weather: Weather, gloom = 0): Palette {
     bottom = mix(bottom, mix('#f6dfae', '#3a3a58', night), 0.5)
   }
 
+  // seasons in the sky: pale and cool in winter, a deeper blue in summer, a golden haze low down in autumn
+  const dayK = 1 - night
+  top = mix(top, '#b7cad8', 0.28 * sea.winter * dayK)
+  mid = mix(mid, '#dfe6ea', 0.2 * sea.winter * dayK)
+  top = mix(top, '#7dbde4', 0.16 * sea.summer * dayK * (weather === 'overcast' ? 0.3 : 1))
+  bottom = mix(bottom, '#f6d9a6', 0.14 * sea.autumn * dayK)
+
   if (g > 0) {
     const grey = (x: string, dn: string, amt: number) => mix(desaturate(x, g), mix(dn, '#1c2230', night), amt)
     top = grey(top, '#a7adb2', g * 0.55)
@@ -157,7 +203,16 @@ export function palette(hour: number, weather: Weather, gloom = 0): Palette {
     glow = desaturate(glow, g * 0.8)
   }
 
-  const c = { ...BASE, ...(weather === 'drought' ? DRY : {}) }
+  const [field, field2] = fieldColours(sea)
+  const seasonal = { ...BASE, ochre: field2, ochre2: field }
+  // grass stays mostly green through autumn (only the trees and bushes really turn)
+  const groundSea = { ...sea, summer: sea.summer + sea.autumn * 0.6, autumn: sea.autumn * 0.4 }
+  for (const [n, k] of Object.entries(SEASONAL) as [keyof Colors, number][]) seasonal[n] = seasonGreen(seasonal[n], n.startsWith('bush') ? sea : groundSea, k)
+  // a frozen pond looks pale in deep winter snow
+  if (env.snow > 0.3 && sea.winter > 0.5) seasonal.pond = mix(seasonal.pond, '#dcecf2', 0.5 * env.snow)
+  const c = { ...seasonal, ...(weather === 'drought' ? DRY : {}) }
+  for (const [n, k] of Object.entries(WETTABLE) as [keyof Colors, number][]) if (env.wet > 0) c[n] = multiply(c[n], '#6f7d80', env.wet * k * 0.32)
+  for (const [n, k] of Object.entries(SNOWY) as [keyof Colors, number][]) if (env.snow > 0) c[n] = mix(c[n], SNOW, env.snow * k)
   const lit = Object.fromEntries(Object.entries(c).map(([n, v]) => [n, n === 'ink' ? mix(v, '#0e1424', night * 0.5) : shade(v)])) as Colors
-  return { sky: { top, mid, bottom, glow }, c: lit, shade, night, weather, hour, gloom: g }
+  return { sky: { top, mid, bottom, glow }, c: lit, shade, night, weather, hour, gloom: g, season: sea, snow: env.snow, wet: env.wet, leaf }
 }

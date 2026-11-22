@@ -18,6 +18,12 @@ export interface SkyUniforms {
   aurora: number
   meteors: number
   starVis: number
+  /** 0..1 wind strength: high haze and wisps drift faster */
+  wind?: number
+  /** 0..1 how much warm sunrise/sunset glow lies along the horizon */
+  dusk?: number
+  /** 0..1 wispy high cloud on fair days (more in autumn and winter) */
+  wisps?: number
 }
 
 const VERT = `attribute vec2 p; varying vec2 vUv; void main(){ vUv = p * 0.5 + 0.5; gl_Position = vec4(p, 0.0, 1.0); }`
@@ -25,7 +31,7 @@ const VERT = `attribute vec2 p; varying vec2 vUv; void main(){ vUv = p * 0.5 + 0
 const FRAG = `
 precision highp float;
 varying vec2 vUv;
-uniform float uTime, uNight, uOvercast, uDrought, uSunVis, uSunLow, uOcc, uMoonLight, uAurora, uMeteors, uStarVis;
+uniform float uTime, uNight, uOvercast, uDrought, uSunVis, uSunLow, uOcc, uMoonLight, uAurora, uMeteors, uStarVis, uWind, uDusk, uWisps;
 uniform vec3 uTop, uMid, uBot, uGlow;
 uniform vec2 uSun, uMoon;
 
@@ -40,9 +46,26 @@ void main(){
   vec3 col = y < 0.38 ? mix(uTop, uMid, smoothstep(0.0, 0.38, y)) : mix(uMid, uBot, smoothstep(0.38, 0.62, y));
 
   // soft high cloud texture when overcast or hazy
-  float haze = fbm(vec2(P.x / 260.0 + uTime * 0.004, P.y / 90.0));
+  float drift = uTime * (0.003 + uWind * 0.03);
+  float haze = fbm(vec2(P.x / 260.0 + drift, P.y / 90.0));
   col = mix(col, col * 0.9 + vec3(0.06), uOvercast * smoothstep(0.35, 0.75, haze) * 0.6);
   col = mix(col, col + vec3(0.05, 0.04, 0.0), uDrought * haze * 0.5);
+
+  // high wispy cirrus, stretched along the wind, lit warm when the sun is low
+  if (uWisps > 0.01) {
+    float w = fbm(vec2(P.x / 420.0 + drift * 1.6, P.y / 26.0 + sin(P.x / 300.0) * 0.6));
+    float streak = smoothstep(0.55, 0.85, w) * smoothstep(0.42, 0.12, y) * smoothstep(0.0, 0.08, y);
+    vec3 wc = mix(vec3(1.0), mix(uGlow, vec3(1.0, 0.62, 0.5), 0.4), uSunLow * (1.0 - uNight));
+    col = mix(col, wc * (1.0 - uNight * 0.75), streak * uWisps * 0.4);
+  }
+
+  // sunrise and sunset: a warm band along the horizon, deepest under the sun
+  if (uDusk > 0.01) {
+    float band = exp(-pow((y - 0.56) / 0.09, 2.0));
+    float side = 0.55 + 0.45 * exp(-abs(P.x - uSun.x) / 360.0);
+    col += vec3(1.0, 0.55, 0.32) * band * side * uDusk * 0.22;
+    col = mix(col, col * vec3(1.02, 0.94, 1.06), uDusk * smoothstep(0.35, 0.0, y) * 0.5);
+  }
 
   // ---- night: stars, milky way, aurora, meteors
   if (uNight > 0.01) {
@@ -97,12 +120,12 @@ void main(){
       col += acc * uAurora * uNight * smoothstep(0.62, 0.38, y);
     }
 
-    // shooting stars: a short streak now and then
+    // shooting stars: a short streak now and then (about one a minute, so each one is a little surprise)
     if (uMeteors > 0.0) {
-      float slot = floor(uTime / 7.0);
+      float slot = floor(uTime / 9.0);
       float r = hash(vec2(slot, 4.2));
-      if (r < 0.45) {
-        float t = (uTime - slot * 7.0) / 0.9;
+      if (r < 0.16) {
+        float t = (uTime - slot * 9.0) / 0.9;
         if (t < 1.0) {
           vec2 a0 = vec2(250.0 + hash(vec2(slot, 1.0)) * 700.0, 40.0 + hash(vec2(slot, 2.0)) * 170.0);
           vec2 dir = normalize(vec2(-1.0, 0.45 + hash(vec2(slot, 3.0)) * 0.3));
@@ -207,6 +230,7 @@ export default function SkyShader({
     const u = {
       time: U('uTime'), night: U('uNight'), overcast: U('uOvercast'), drought: U('uDrought'), sunVis: U('uSunVis'), sunLow: U('uSunLow'),
       occ: U('uOcc'), moonLight: U('uMoonLight'), aurora: U('uAurora'), meteors: U('uMeteors'), starVis: U('uStarVis'),
+      wind: U('uWind'), dusk: U('uDusk'), wisps: U('uWisps'),
       top: U('uTop'), mid: U('uMid'), bot: U('uBot'), glow: U('uGlow'), sun: U('uSun'), moon: U('uMoon'),
     }
 
@@ -243,6 +267,9 @@ export default function SkyShader({
       gl.uniform1f(u.aurora, v.aurora)
       gl.uniform1f(u.meteors, v.meteors)
       gl.uniform1f(u.starVis, v.starVis)
+      gl.uniform1f(u.wind, v.wind ?? 0.15)
+      gl.uniform1f(u.dusk, v.dusk ?? 0)
+      gl.uniform1f(u.wisps, v.wisps ?? 0)
       gl.uniform3fv(u.top, rgb(v.top))
       gl.uniform3fv(u.mid, rgb(v.mid))
       gl.uniform3fv(u.bot, rgb(v.bottom))

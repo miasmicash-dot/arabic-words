@@ -58,7 +58,36 @@ function Frog({ pal, onTap, state }: { pal: Palette; onTap: () => void; state: '
   )
 }
 
-export default function Pond({ pal, sunX, moonX, night, frogOK, dragonfly }: { pal: Palette; sunX: number | null; moonX: number | null; night: number; frogOK: boolean; dragonfly: boolean }) {
+const RAIN_DROPS = (() => {
+  const r = rng(515)
+  return [...Array(16)].map(() => {
+    const a = r.range(0, Math.PI * 2)
+    const d = Math.sqrt(r.range(0, 0.8))
+    return { x: CX + Math.cos(a) * RX * 0.85 * d, y: CY + Math.sin(a) * RY * 0.7 * d, dur: r.range(0.9, 1.8), dl: -r.range(0, 1.8), s: r.range(0.7, 1.2) }
+  })
+})()
+
+export default function Pond({
+  pal,
+  sunX,
+  moonX,
+  night,
+  frogOK,
+  dragonfly,
+  rain = false,
+  wind = 0.15,
+}: {
+  pal: Palette
+  sunX: number | null
+  moonX: number | null
+  night: number
+  frogOK: boolean
+  dragonfly: boolean
+  /** raindrops land on the water */
+  rain?: boolean
+  /** 0..1: the surface is ruffled and the glints dance faster in the wind */
+  wind?: number
+}) {
   const sid = useSid()
   const [frog, setFrog] = useState<'sit' | 'jump' | 'gone'>('sit')
   const [splash, setSplash] = useState(0)
@@ -80,6 +109,9 @@ export default function Pond({ pal, sunX, moonX, night, frogOK, dragonfly }: { p
     return [...Array(3)].map(() => ({ x: r.range(CX - 40, CX + 40), y: r.range(CY - 3, CY + 4), dl: -r.range(0, 9), dur: r.range(7, 11) }))
   }, [])
   const { sky, c } = pal
+  // frogs and dragonflies are away for the winter
+  const winter = pal.season.winter > 0.6
+  const ruffle = 2 + wind * 7
   const waterTop = mix(mix(sky.bottom, c.pond, 0.5), '#5a9ab0', 0.25 * (1 - night))
   const waterBot = mix(mix(sky.top, '#2f6f8a', 0.5), '#0e2a3a', 0.25)
   const glint = (x: number | null, color: string, strength: number) =>
@@ -103,11 +135,14 @@ export default function Pond({ pal, sunX, moonX, night, frogOK, dragonfly }: { p
         </linearGradient>
         <filter id={sid('ripple')} x="-10%" y="-50%" width="120%" height="200%">
           <feTurbulence type="fractalNoise" baseFrequency="0.015 0.35" numOctaves={2} seed={3} />
-          <feDisplacementMap in="SourceGraphic" scale={4} xChannelSelector="R" yChannelSelector="G" />
+          <feDisplacementMap in="SourceGraphic" scale={ruffle} xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </defs>
       <g clipPath={`url(#${sid('water')})`}>
         <rect x={CX - RX} y={CY - RY} width={RX * 2} height={RY * 2} fill={`url(#${sid('waterg')})`} />
+        {/* the far edge mirrors the bright sky near the horizon; the middle shows a soft band of reflected light */}
+        <ellipse cx={CX} cy={CY - RY + 3} rx={RX * 0.92} ry={4.5} fill={mix(sky.bottom, '#ffffff', 0.35)} opacity={0.55} />
+        <ellipse cx={CX - 10} cy={CY - 2} rx={RX * 0.7} ry={2.2} fill={mix(sky.mid, '#ffffff', 0.3)} opacity={0.35} />
         {/* mirrored reeds, softly broken up by ripples */}
         <g filter={`url(#${sid('ripple')})`} opacity={0.5}>
           <g className="gs-reflect">
@@ -121,8 +156,23 @@ export default function Pond({ pal, sunX, moonX, night, frogOK, dragonfly }: { p
         {ripples.map((rp, i) => (
           <ellipse key={i} cx={rp.x} cy={rp.y} rx={20} ry={3.6} fill="none" stroke="#ffffff" strokeWidth={0.9} className="gs-ripple" style={{ animationDelay: `${rp.dl}s`, animationDuration: `${rp.dur}s` }} />
         ))}
+        {rain &&
+          RAIN_DROPS.map((d, i) => (
+            <ellipse
+              key={`r${i}`}
+              cx={d.x}
+              cy={d.y}
+              rx={7 * d.s}
+              ry={1.6 * d.s}
+              fill="none"
+              stroke="#ffffff"
+              strokeWidth={0.8}
+              className="gs-rainring"
+              style={{ animationDuration: `${d.dur.toFixed(2)}s`, animationDelay: `${d.dl.toFixed(2)}s` }}
+            />
+          ))}
         {splash > 0 && <ellipse key={splash} cx={CX + 64} cy={CY + 2} rx={14} ry={3} fill="none" stroke="#ffffff" strokeWidth={1.4} className="gs-ripple gs-ripple-once" />}
-        <path d={`M${CX - 44},${CY - 2} l18,0 M${CX + 6},${CY + 4} l24,0 M${CX - 14},${CY + 7} l12,0`} stroke="#ffffff" strokeWidth={1.4} strokeLinecap="round" className="gs-shimmer" opacity={0.7} />
+        <path d={`M${CX - 44},${CY - 2} l18,0 M${CX + 6},${CY + 4} l24,0 M${CX - 14},${CY + 7} l12,0`} stroke="#ffffff" strokeWidth={1.4} strokeLinecap="round" className="gs-shimmer" opacity={0.7} style={{ animationDuration: `${(3.2 / (0.6 + wind * 1.6)).toFixed(2)}s` }} />
         {/* the near bank shades the water a little */}
         <ellipse cx={CX} cy={CY + RY + 2} rx={RX} ry={5} fill="#0d2430" opacity={0.18} />
       </g>
@@ -152,8 +202,8 @@ export default function Pond({ pal, sunX, moonX, night, frogOK, dragonfly }: { p
         )}
       </g>
       <Reeds pal={pal} />
-      {frogOK && <Frog pal={pal} state={frog} onTap={() => frog === 'sit' && setFrog('jump')} />}
-      {dragonfly && (
+      {frogOK && !winter && <Frog pal={pal} state={frog} onTap={() => frog === 'sit' && setFrog('jump')} />}
+      {dragonfly && !winter && (
         <g transform={`translate(${CX - 20},${CY - 26})`}>
           <g className="gs-dragonfly">
             <path d="M-9,0 L9,0" stroke={pal.shade('#2f7f9a')} strokeWidth={2} strokeLinecap="round" />
